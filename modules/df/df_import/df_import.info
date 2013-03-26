@@ -1,0 +1,19 @@
+name = DF Import
+description = Migrations base classes used by the Demo Framework
+core = 7.x
+package = Demo Framework - Basics
+php = 5.3
+version = 7.x-1.0-alpha1
+dependencies[] = commerce
+dependencies[] = commerce_migrate
+dependencies[] = commerce_product
+dependencies[] = migrate
+dependencies[] = migrate_extras
+dependencies[] = migrate_ui
+
+files[] = df_import.base.nodes.inc
+files[] = df_import.base.products.inc
+files[] = df_import.base.commerce_nodes.inc
+files[] = df_import.base.terms.inc
+files[] = df_import.base.users.inc
+

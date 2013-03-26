@@ -1,0 +1,19 @@
+<?php
+/**
+ * Implements hook_migrate_api().
+ */
+function df_import_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DemoFrameworkBaseNodes' => array('class_name' => 'DemoFrameworkBaseNodes'),
+      'DemoFrameworkBaseProducts' => array('class_name' => 'DemoFrameworkBaseProducts'),
+      'DemoFrameworkBaseCommerceNodes' => array('class_name' => 'DemoFrameworkBaseCommerceNodes'),
+      'DemoFrameworkBaseTerms' => array('class_name' => 'DemoFrameworkBaseTerms'),
+      'DemoFrameworkBaseUserPictures' => array('class_name' => 'DemoFrameworkBaseUserPictures'),
+      'DemoFrameworkBaseUsers' => array('class_name' => 'DemoFrameworkBaseUsers'),
+    ),
+  );
+  return $api;
+}
+

@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Code for the DF Engage feature.
+ */
+
+include_once 'df_engage.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function df_engage_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'df_engage enabled ' . $component . ' component');
+}

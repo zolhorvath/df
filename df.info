@@ -1,1 +1,46 @@
 name = Demo Framework
+description = Architects Start Here.
+core = 7.x
+distribution_name = Demo Framework
+exclusive = 1
+
+; Drupal Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = taxonomy
+
+; Demo Framework - Basics
+dependencies[] = df_assembler
+dependencies[] = df_curator
+dependencies[] = df_engage
+dependencies[] = df_import
+
+; Acquia Network Connector (optional)
+;dependencies[] = acquia_spi
+;dependencies[] = acquia_agent
+
+; Contribs
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = module_filter
+dependencies[] = navbar
+dependencies[] = rules
+
+; System Requirements
+php = 5.3
+php_memory_limit = 128M
