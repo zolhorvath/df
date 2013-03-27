@@ -32,7 +32,6 @@ projects[entity][subdir] = "contrib"
 projects[features][version] = "2.x-dev"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][patch][1064472] = "http://drupal.org/files/features-instances-1064472-59.patch"
 
 projects[jquery_update][version] = "2.3"
 projects[jquery_update][type] = "module"
