@@ -37,7 +37,7 @@ projects[jquery_update][version] = "2.3"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
-projects[libraries][version] = "2.0"
+projects[libraries][version] = "2.1"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
@@ -53,7 +53,7 @@ projects[navbar][version] = "1.0-alpha5"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 
-projects[rules][version] = "2.2"
+projects[rules][version] = "2.3"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
