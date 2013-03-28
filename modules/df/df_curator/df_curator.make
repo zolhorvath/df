@@ -13,7 +13,6 @@ projects[date][subdir] = "contrib"
 projects[edit][version] = "1.x-dev"
 projects[edit][type] = "module"
 projects[edit][subdir] = "contrib"
-projects[edit][patch][1953678] = "http://drupal.org/files/edit-filters-for-additional-contribs-0.patch"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
@@ -45,4 +44,4 @@ projects[xautoload][subdir] = "contrib"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0.1/ckeditor_4.0.1_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
