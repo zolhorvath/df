@@ -1,6 +1,12 @@
 api = 2
 core = 7.x
 
+; DF Modules manage own dependencies
+includes[] = modules/df/df_assembler/df_assembler.make
+includes[] = modules/df/df_curator/df_curator.make
+includes[] = modules/df/df_engage/df_engage.make
+includes[] = modules/df/df_import/df_import.make
+
 ; Contributed Modules
 projects[acquia_connector][version] = "2.8"
 projects[acquia_connector][type] = "module"
