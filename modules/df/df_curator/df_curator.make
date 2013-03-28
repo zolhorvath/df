@@ -10,11 +10,9 @@ projects[date][version] = "2.6"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
-projects[edit][version] = "1.x-dev"
+projects[edit][version] = "1.0-alpha8"
 projects[edit][type] = "module"
 projects[edit][subdir] = "contrib"
-projects[edit][download][type] = "git"
-projects[edit][download][branch] = "7.x-1.x"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
