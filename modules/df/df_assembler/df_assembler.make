@@ -20,7 +20,7 @@ projects[json2][version] = "1.1"
 projects[json2][type] = "module"
 projects[json2][subdir] = "contrib"
 
-projects[layout][version] = "1.x-dev"
+projects[layout][version] = "1.0-alpha6"
 projects[layout][type] = "module"
 projects[layout][subdir] = "contrib"
 
