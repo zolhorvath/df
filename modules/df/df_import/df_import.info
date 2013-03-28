@@ -1,7 +1,7 @@
 name = DF Import
 description = Migrations base classes used by the Demo Framework
 core = 7.x
-package = Demo Framework - Basics
+package = Demo Framework
 php = 5.3
 version = 7.x-1.0-alpha1
 dependencies[] = commerce
