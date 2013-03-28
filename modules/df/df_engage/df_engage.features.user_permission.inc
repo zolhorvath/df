@@ -15,7 +15,6 @@ function df_engage_user_default_permissions() {
     'name' => 'access bean overview',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -52,7 +51,6 @@ function df_engage_user_default_permissions() {
     'name' => 'create any bean_tax_listing bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -62,7 +60,6 @@ function df_engage_user_default_permissions() {
     'name' => 'create any bean_tax_related bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -72,7 +69,6 @@ function df_engage_user_default_permissions() {
     'name' => 'delete any bean_tax_listing bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
     ),
     'module' => 'bean',
   );
@@ -82,7 +78,6 @@ function df_engage_user_default_permissions() {
     'name' => 'delete any bean_tax_related bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
     ),
     'module' => 'bean',
   );
@@ -94,7 +89,6 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -104,7 +98,6 @@ function df_engage_user_default_permissions() {
     'name' => 'edit any bean_tax_related bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -114,7 +107,6 @@ function df_engage_user_default_permissions() {
     'name' => 'edit bean view mode',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -124,7 +116,6 @@ function df_engage_user_default_permissions() {
     'name' => 'view any bean_tax_listing bean',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -145,7 +136,6 @@ function df_engage_user_default_permissions() {
     'name' => 'view bean page',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );
@@ -155,7 +145,6 @@ function df_engage_user_default_permissions() {
     'name' => 'view bean revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
     ),
     'module' => 'bean',
   );

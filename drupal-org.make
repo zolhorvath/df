@@ -65,7 +65,7 @@ projects[pathauto][subdir] = "contrib"
 
 projects[responsive_preview][version] = "1.0-beta1"
 projects[responsive_preview][type] = "module"
-projects[responsive_preview][subdir] = "cotnrib"
+projects[responsive_preview][subdir] = "contrib"
 
 projects[rules][version] = "2.3"
 projects[rules][type] = "module"
