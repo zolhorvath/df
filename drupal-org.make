@@ -53,6 +53,14 @@ projects[navbar][version] = "1.0-alpha5"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 
+projects[pathauto][version] = "1.2"
+projects[pathauto][type] = "module"
+projects[pathauto][subdir] = "contrib"
+
+projects[responsive_preview][version] = "1.0-beta1"
+projects[responsive_preview][type] = "module"
+projects[responsive_preview][subdir] = "cotnrib"
+
 projects[rules][version] = "2.3"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"

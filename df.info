@@ -39,7 +39,10 @@ dependencies[] = devel
 dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = navbar
+dependencies[] = pathauto
+dependencies[] = responsive_preview
 dependencies[] = rules
+dependencies[] = token
 
 ; System Requirements
 php = 5.3
