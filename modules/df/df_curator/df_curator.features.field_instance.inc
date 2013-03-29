@@ -14,7 +14,7 @@ function df_curator_field_default_field_instances() {
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
-    'deleted' => '0',
+    'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
@@ -50,14 +50,14 @@ function df_curator_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
-      'text_processing' => '1',
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => '20',
+        'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
@@ -68,7 +68,7 @@ function df_curator_field_default_field_instances() {
   // Exported field_instance: 'node-article-field_collection'
   $field_instances['node-article-field_collection'] = array(
     'bundle' => 'article',
-    'deleted' => '0',
+    'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
@@ -112,7 +112,7 @@ function df_curator_field_default_field_instances() {
   // Exported field_instance: 'node-article-field_image'
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
-    'deleted' => '0',
+    'deleted' => 0,
     'description' => 'Upload an image to go with this article.',
     'display' => array(
       'default' => array(
@@ -123,7 +123,7 @@ function df_curator_field_default_field_instances() {
           'image_style' => 'main',
         ),
         'type' => 'image',
-        'weight' => '-1',
+        'weight' => -1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -164,7 +164,7 @@ function df_curator_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => '-1',
+      'weight' => -1,
     ),
   );
 
@@ -172,7 +172,7 @@ function df_curator_field_default_field_instances() {
   $field_instances['node-article-field_tags'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
-    'deleted' => '0',
+    'deleted' => 0,
     'description' => 'Enter a comma-separated list of words to describe your content.',
     'display' => array(
       'default' => array(

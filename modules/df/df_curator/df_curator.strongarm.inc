@@ -114,7 +114,8 @@ function df_curator_strongarm() {
   $strongarm->name = 'node_options_article';
   $strongarm->value = array(
     0 => 'promote',
-    1 => 'revision',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_article'] = $strongarm;
 

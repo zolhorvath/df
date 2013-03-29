@@ -14,7 +14,7 @@ function df_curator_ckeditor_profile_defaults() {
       'settings' => array(
         'filebrowser' => 'none',
         'quickupload' => 'f',
-        'ss' => '2',
+        'ss' => 2,
         'filters' => array(
           'filter_html' => 1,
         ),
@@ -88,7 +88,7 @@ function df_curator_ckeditor_profile_defaults() {
       'settings' => array(
         'filebrowser' => 'none',
         'quickupload' => 'f',
-        'ss' => '2',
+        'ss' => 2,
         'filters' => array(),
         'default' => 't',
         'show_toggle' => 't',

@@ -59,11 +59,11 @@ function df_curator_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '970',
-          'height' => '970',
+          'width' => 970,
+          'height' => 970,
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );

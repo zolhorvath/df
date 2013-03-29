@@ -82,16 +82,6 @@ function df_curator_user_default_permissions() {
     'module' => 'collection',
   );
 
-  // Exported permission: administer content revisions.
-  $permissions['administer content revisions'] = array(
-    'name' => 'administer content revisions',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
-    ),
-    'module' => 'state_flow',
-  );
-
   // Exported permission: administer menu.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -292,16 +282,6 @@ function df_curator_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: manage content workflow.
-  $permissions['manage content workflow'] = array(
-    'name' => 'manage content workflow',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
-    ),
-    'module' => 'state_flow',
-  );
-
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -310,16 +290,6 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: schedule content workflow.
-  $permissions['schedule content workflow'] = array(
-    'name' => 'schedule content workflow',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
-    ),
-    'module' => 'state_flow_schedule',
   );
 
   // Exported permission: view collections.

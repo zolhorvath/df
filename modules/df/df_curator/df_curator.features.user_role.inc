@@ -13,13 +13,13 @@ function df_curator_user_default_roles() {
   // Exported role: curator.
   $roles['curator'] = array(
     'name' => 'curator',
-    'weight' => '3',
+    'weight' => 3,
   );
 
   // Exported role: reviewer.
   $roles['reviewer'] = array(
     'name' => 'reviewer',
-    'weight' => '4',
+    'weight' => 4,
   );
 
   return $roles;

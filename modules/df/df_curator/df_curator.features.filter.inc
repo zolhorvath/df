@@ -14,20 +14,20 @@ function df_curator_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => '1',
-    'status' => '1',
-    'weight' => '0',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
     'filters' => array(
       'filter_url' => array(
-        'weight' => '0',
-        'status' => '1',
+        'weight' => 0,
+        'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_html' => array(
-        'weight' => '1',
-        'status' => '1',
+        'weight' => 1,
+        'status' => 1,
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
           'filter_html_help' => 1,
@@ -35,13 +35,13 @@ function df_curator_filter_default_formats() {
         ),
       ),
       'filter_autop' => array(
-        'weight' => '2',
-        'status' => '1',
+        'weight' => 2,
+        'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '10',
-        'status' => '1',
+        'weight' => 10,
+        'status' => 1,
         'settings' => array(),
       ),
     ),
@@ -51,20 +51,20 @@ function df_curator_filter_default_formats() {
   $formats['full_html'] = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
-    'cache' => '1',
-    'status' => '1',
-    'weight' => '-13',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => -13,
     'filters' => array(
       'filter_url' => array(
-        'weight' => '0',
-        'status' => '1',
+        'weight' => 0,
+        'status' => 1,
         'settings' => array(
-          'filter_url_length' => '72',
+          'filter_url_length' => 72,
         ),
       ),
       'image_resize_filter' => array(
-        'weight' => '0',
-        'status' => '1',
+        'weight' => 0,
+        'status' => 1,
         'settings' => array(
           'link' => 0,
           'link_class' => '',
@@ -76,14 +76,14 @@ function df_curator_filter_default_formats() {
         ),
       ),
       'wysiwyg' => array(
-        'weight' => '0',
-        'status' => '1',
+        'weight' => 0,
+        'status' => 1,
         'settings' => array(
           'valid_elements' => 'a[!href|target<_blank|title],
 div[align<center?justify?left?right],
 p[align<center?justify?left?right],
 br,span,em,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd',
-          'allow_comments' => '0',
+          'allow_comments' => 0,
           'nofollow_policy' => 'whitelist',
           'nofollow_domains' => array(),
           'style_color' => array(
@@ -205,23 +205,23 @@ br,span,em,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd',
         ),
       ),
       'filter_autop' => array(
-        'weight' => '1',
-        'status' => '1',
+        'weight' => 1,
+        'status' => 1,
         'settings' => array(),
       ),
       'media_filter' => array(
-        'weight' => '2',
-        'status' => '1',
+        'weight' => 2,
+        'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '10',
-        'status' => '1',
+        'weight' => 10,
+        'status' => 1,
         'settings' => array(),
       ),
       'caption_filter' => array(
-        'weight' => '20',
-        'status' => '1',
+        'weight' => 20,
+        'status' => 1,
         'settings' => array(),
       ),
     ),
