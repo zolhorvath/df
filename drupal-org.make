@@ -207,7 +207,7 @@ projects[sps][download][branch] = "7.x-1.x"
 projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490-3.patch"
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-3.patch"
 
-projects[workbench][version] = "1.2"
+projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
 projects[workbench][subdir] = "contrib"
 
