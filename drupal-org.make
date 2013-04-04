@@ -48,6 +48,10 @@ projects[module_filter][version] = "1.7"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
+projects[mollom][version] = "2.4"
+projects[mollom][type] = "module"
+projects[mollom][subdir] = "contrib"
+
 projects[navbar][version] = "1.0-alpha5"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
@@ -189,7 +193,7 @@ projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
 projects[iib][download][revision] = "c91e44c"
 projects[iib][download][branch] = "7.x-1.x"
-projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-4.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-8.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
@@ -269,6 +273,22 @@ projects[entityreference_prepopulate][version] = "1.2"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
+projects[feeds][version] = "2.0-alpha7"
+projects[feeds][type] = "module"
+projects[feeds][subdir] = "contrib"
+
+projects[feeds_jsonpath_parser][version] = "1.x-dev"
+projects[feeds_jsonpath_parser][type] = "module"
+projects[feeds_jsonpath_parser][subdir] = "contrib"
+projects[feeds_jsonpath_parser][download][type] = "git"
+projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
+projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
+projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
+
+projects[job_scheduler][version] = "2.0-alpha3"
+projects[job_scheduler][type] = "module"
+projects[job_scheduler][subdir] = "contrib"
+
 projects[og][version] = "2.0"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
@@ -320,14 +340,17 @@ projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
 
 ; Libraries
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
+
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
+libraries[jsonpath][download][type] = "get"
+libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
-
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
 
 libraries[timeago][download][type] = "get"
 libraries[timeago][download][url] = "https://raw.github.com/rmm5t/jquery-timeago/2877ea8dbca7d659365830898223ec1ea148112a/jquery.timeago.js"
