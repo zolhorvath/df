@@ -10,6 +10,16 @@
 function df_curator_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access administration pages.
+  $permissions['access administration pages'] = array(
+    'name' => 'access administration pages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: access collection list.
   $permissions['access collection list'] = array(
     'name' => 'access collection list',
@@ -72,6 +82,50 @@ function df_curator_user_default_permissions() {
     'module' => 'navbar',
   );
 
+  // Exported permission: access site in maintenance mode.
+  $permissions['access site in maintenance mode'] = array(
+    'name' => 'access site in maintenance mode',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: access site reports.
+  $permissions['access site reports'] = array(
+    'name' => 'access site reports',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: access workbench.
+  $permissions['access workbench'] = array(
+    'name' => 'access workbench',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench',
+  );
+
+  // Exported permission: administer actions.
+  $permissions['administer actions'] = array(
+    'name' => 'administer actions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: administer ckeditor.
+  $permissions['administer ckeditor'] = array(
+    'name' => 'administer ckeditor',
+    'roles' => array(),
+    'module' => 'ckeditor',
+  );
+
   // Exported permission: administer collections.
   $permissions['administer collections'] = array(
     'name' => 'administer collections',
@@ -82,6 +136,16 @@ function df_curator_user_default_permissions() {
     'module' => 'collection',
   );
 
+  // Exported permission: administer content revisions.
+  $permissions['administer content revisions'] = array(
+    'name' => 'administer content revisions',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'nra',
+  );
+
   // Exported permission: administer menu.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -90,6 +154,89 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'menu',
+  );
+
+  // Exported permission: administer modules.
+  $permissions['administer modules'] = array(
+    'name' => 'administer modules',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: administer shortcuts.
+  $permissions['administer shortcuts'] = array(
+    'name' => 'administer shortcuts',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
+  );
+
+  // Exported permission: administer site configuration.
+  $permissions['administer site configuration'] = array(
+    'name' => 'administer site configuration',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: administer software updates.
+  $permissions['administer software updates'] = array(
+    'name' => 'administer software updates',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: administer themes.
+  $permissions['administer themes'] = array(
+    'name' => 'administer themes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: administer workbench.
+  $permissions['administer workbench'] = array(
+    'name' => 'administer workbench',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'workbench',
+  );
+
+  // Exported permission: administer workbench moderation.
+  $permissions['administer workbench moderation'] = array(
+    'name' => 'administer workbench moderation',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: block IP addresses.
+  $permissions['block IP addresses'] = array(
+    'name' => 'block IP addresses',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
+  // Exported permission: bypass workbench moderation.
+  $permissions['bypass workbench moderation'] = array(
+    'name' => 'bypass workbench moderation',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'workbench_moderation',
   );
 
   // Exported permission: create article content.
@@ -130,6 +277,22 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: customize ckeditor.
+  $permissions['customize ckeditor'] = array(
+    'name' => 'customize ckeditor',
+    'roles' => array(),
+    'module' => 'ckeditor',
+  );
+
+  // Exported permission: customize shortcut links.
+  $permissions['customize shortcut links'] = array(
+    'name' => 'customize shortcut links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
   );
 
   // Exported permission: delete any article content.
@@ -282,6 +445,36 @@ function df_curator_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: moderate content from draft to needs_review.
+  $permissions['moderate content from draft to needs_review'] = array(
+    'name' => 'moderate content from draft to needs_review',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from needs_review to draft.
+  $permissions['moderate content from needs_review to draft'] = array(
+    'name' => 'moderate content from needs_review to draft',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from needs_review to published.
+  $permissions['moderate content from needs_review to published'] = array(
+    'name' => 'moderate content from needs_review to published',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -290,6 +483,68 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: switch shortcut sets.
+  $permissions['switch shortcut sets'] = array(
+    'name' => 'switch shortcut sets',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'shortcut',
+  );
+
+  // Exported permission: use text format filtered_html.
+  $permissions['use text format filtered_html'] = array(
+    'name' => 'use text format filtered_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: use text format full_html.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: use workbench_moderation my drafts tab.
+  $permissions['use workbench_moderation my drafts tab'] = array(
+    'name' => 'use workbench_moderation my drafts tab',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: use workbench_moderation needs review tab.
+  $permissions['use workbench_moderation needs review tab'] = array(
+    'name' => 'use workbench_moderation needs review tab',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: view all unpublished content.
+  $permissions['view all unpublished content'] = array(
+    'name' => 'view all unpublished content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
   );
 
   // Exported permission: view collections.
@@ -310,6 +565,26 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'iib',
+  );
+
+  // Exported permission: view moderation history.
+  $permissions['view moderation history'] = array(
+    'name' => 'view moderation history',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: view moderation messages.
+  $permissions['view moderation messages'] = array(
+    'name' => 'view moderation messages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'workbench_moderation',
   );
 
   // Exported permission: view own files.
@@ -350,6 +625,16 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view the administration theme.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'curator' => 'curator',
+    ),
+    'module' => 'system',
   );
 
   return $permissions;
