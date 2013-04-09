@@ -10,6 +10,26 @@
 function df_assembler_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access all views.
+  $permissions['access all views'] = array(
+    'name' => 'access all views',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'views',
+  );
+
+  // Exported permission: access comments.
+  $permissions['access comments'] = array(
+    'name' => 'access comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
+
   // Exported permission: add media from remote sources.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
@@ -25,6 +45,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer advanced pane settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -45,6 +66,15 @@ function df_assembler_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'breakpoints',
+  );
+
+  // Exported permission: administer comments.
+  $permissions['administer comments'] = array(
+    'name' => 'administer comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: administer fieldable panels panes.
@@ -97,6 +127,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer image styles',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'image',
   );
@@ -106,6 +137,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer layouts',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'layout',
   );
@@ -142,6 +174,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer pane access',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -155,95 +188,12 @@ function df_assembler_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: administer panelizer node landing_page content.
-  $permissions['administer panelizer node landing_page content'] = array(
-    'name' => 'administer panelizer node landing_page content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node landing_page context.
-  $permissions['administer panelizer node landing_page context'] = array(
-    'name' => 'administer panelizer node landing_page context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node landing_page defaults.
-  $permissions['administer panelizer node landing_page defaults'] = array(
-    'name' => 'administer panelizer node landing_page defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node landing_page layout.
-  $permissions['administer panelizer node landing_page layout'] = array(
-    'name' => 'administer panelizer node landing_page layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node landing_page overview.
-  $permissions['administer panelizer node landing_page overview'] = array(
-    'name' => 'administer panelizer node landing_page overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node landing_page settings.
-  $permissions['administer panelizer node landing_page settings'] = array(
-    'name' => 'administer panelizer node landing_page settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page content.
-  $permissions['administer panelizer node page content'] = array(
-    'name' => 'administer panelizer node page content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page context.
-  $permissions['administer panelizer node page context'] = array(
-    'name' => 'administer panelizer node page context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page defaults.
-  $permissions['administer panelizer node page defaults'] = array(
-    'name' => 'administer panelizer node page defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page layout.
-  $permissions['administer panelizer node page layout'] = array(
-    'name' => 'administer panelizer node page layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page overview.
-  $permissions['administer panelizer node page overview'] = array(
-    'name' => 'administer panelizer node page overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: administer panelizer node page settings.
-  $permissions['administer panelizer node page settings'] = array(
-    'name' => 'administer panelizer node page settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: administer panels layouts.
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -253,8 +203,18 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer panels styles',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: administer views.
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'views',
   );
 
   // Exported permission: bypass file access.
@@ -271,6 +231,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'change layouts in place editing',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -280,6 +241,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable basic_file',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -289,6 +251,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -298,6 +261,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable image',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -307,6 +271,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable map',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -316,6 +281,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable quick_links',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -325,6 +291,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable spotlight',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -334,6 +301,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable table',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -343,6 +311,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable text',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -352,6 +321,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create fieldable video',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -361,6 +331,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -370,6 +341,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -379,6 +351,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete any landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -388,6 +361,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -397,6 +371,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable basic_file',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -406,6 +381,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -415,6 +391,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable image',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -424,6 +401,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable map',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -433,6 +411,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable quick_links',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -442,6 +421,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable spotlight',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -451,6 +431,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable table',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -460,6 +441,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable text',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -469,6 +451,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete fieldable video',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -478,6 +461,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -487,6 +471,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -496,6 +481,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit any landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -505,6 +491,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -514,6 +501,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable basic_file',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -523,6 +511,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -532,6 +521,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable image',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -541,6 +531,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable map',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -550,6 +541,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable quick_links',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -559,6 +551,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable spotlight',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -568,6 +561,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable table',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -577,6 +571,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable text',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -586,8 +581,18 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit fieldable video',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit own comments.
+  $permissions['edit own comments'] = array(
+    'name' => 'edit own comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: edit own landing_page content.
@@ -595,6 +600,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit own landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -604,6 +610,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
@@ -616,6 +623,16 @@ function df_assembler_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'media',
+  );
+
+  // Exported permission: post comments.
+  $permissions['post comments'] = array(
+    'name' => 'post comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: show format selection for bean.
@@ -762,11 +779,22 @@ function df_assembler_user_default_permissions() {
     'module' => 'better_formats',
   );
 
+  // Exported permission: skip comment approval.
+  $permissions['skip comment approval'] = array(
+    'name' => 'skip comment approval',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
+
   // Exported permission: use ipe with page manager.
   $permissions['use ipe with page manager'] = array(
     'name' => 'use ipe with page manager',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -785,6 +813,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use panels caching features',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -794,6 +823,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use panels dashboard',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -803,6 +833,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use panels in place editing',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -812,6 +843,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use panels locks',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
@@ -821,6 +853,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'filter',
   );
@@ -830,6 +863,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'use text format panopoly_wysiwyg_text',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'filter',
   );
@@ -850,6 +884,7 @@ function df_assembler_user_default_permissions() {
     'name' => 'view pane admin links',
     'roles' => array(
       'administrator' => 'administrator',
+      'marketer' => 'marketer',
     ),
     'module' => 'panels',
   );
