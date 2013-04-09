@@ -24,6 +24,7 @@ function df_engage_user_default_permissions() {
     'name' => 'access checkout',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'commerce_checkout',
   );
