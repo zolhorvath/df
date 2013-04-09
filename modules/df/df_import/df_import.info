@@ -12,7 +12,6 @@ dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = feeds
-dependencies[] = feeds_jsonpath_parser
 dependencies[] = feeds_ui
 dependencies[] = migrate
 dependencies[] = migrate_extras
