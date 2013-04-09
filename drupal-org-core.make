@@ -4,16 +4,13 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.21
+projects[drupal][version] = 7.22
 
 ; CORE PATCHES
 
-; Add 'exclusive' flag to install profiles to auto-select them during
-; installation - http://drupal.org/node/1727430#comment-6623174
-projects[drupal][patch][] = "http://drupal.org/files/drupal-provide_exclusive_property_install_profiles-1727430-35-d7.patch"
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
-projects[drupal][patch][] = "http://drupal.org/files/allow_change_system-requirements-1772316-4.patch"
+;projects[drupal][patch][] = "http://drupal.org/files/allow_change_system-requirements-1772316-4.patch"
 
 ; Site Preview System
 ; Load multiple revisions at once - http://drupal.org/node/1730874
