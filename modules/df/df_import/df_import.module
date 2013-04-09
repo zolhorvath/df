@@ -1,5 +1,12 @@
 <?php
 /**
+ * @file
+ * Code for the DF Import feature.
+ */
+
+include_once 'df_import.features.inc';
+
+/**
  * Implements hook_migrate_api().
  */
 function df_import_migrate_api() {
