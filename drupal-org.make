@@ -72,7 +72,7 @@ projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 
-projects[views][version] = "3.6"
+projects[views][version] = "3.7"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
@@ -120,7 +120,8 @@ projects[panels][download][branch] = "7.x-3.x"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "fb796a2"
+projects[panelizer][download][url] = "http://git.drupal.org/project/panelizer.git"
+projects[panelizer][download][revision] = "c95d655c61c7ff7741b3e73ef5371d5793543a5b"
 projects[panelizer][download][branch] = "7.x-3.x"
 
 projects[panopoly_images][type] = "module"
@@ -133,9 +134,8 @@ projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
 projects[panopoly_magic][download][type] = "git"
 projects[panopoly_magic][download][url] = "http://git.drupal.org/project/panopoly_magic.git"
-projects[panopoly_magic][download][revision] = "959032402fa1feb4d520ddf8f9242e58584448f6"
+projects[panopoly_magic][download][revision] = "3391b5a4459670ea0b238c6f54eb371a06e1d161"
 projects[panopoly_magic][download][branch] = "7.x-1.x"
-projects[panopoly_magic][patch][1899368] = "http://drupal.org/files/panopoly_magic-without-core-1899368-3.patch"
 
 projects[panopoly_theme][type] = "module"
 projects[panopoly_theme][subdir] = "contrib"
@@ -149,9 +149,9 @@ projects[panopoly_widgets][type] = "module"
 projects[panopoly_widgets][subdir] = "contrib"
 projects[panopoly_widgets][download][type] = "git"
 projects[panopoly_widgets][download][url] = "http://git.drupal.org/project/panopoly_widgets.git"
-projects[panopoly_widgets][download][revision] = "2a98c9e75ba1641c02c047fd0da7a9db1e0283d5"
+projects[panopoly_widgets][download][revision] = "2ab01b9f8d77f59c1cc519dc0f7cbfba9dcda822"
 projects[panopoly_widgets][download][branch] = "7.x-1.x"
-projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-1.patch"
+projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-5.patch"
 ; Panopoly Widgets contains a makefile under modules/contrib/panopoly_widgets.
 ; Defer to panopoly_widgets.make to download and patch module dependencies.
 
@@ -276,22 +276,6 @@ projects[entityreference_prepopulate][version] = "1.2"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
-projects[feeds][version] = "2.0-alpha7"
-projects[feeds][type] = "module"
-projects[feeds][subdir] = "contrib"
-
-;projects[feeds_jsonpath_parser][version] = "1.x-dev"
-;projects[feeds_jsonpath_parser][type] = "module"
-;projects[feeds_jsonpath_parser][subdir] = "contrib"
-;projects[feeds_jsonpath_parser][download][type] = "git"
-;projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
-;projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
-;projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
-
-projects[job_scheduler][version] = "2.0-alpha3"
-projects[job_scheduler][type] = "module"
-projects[job_scheduler][subdir] = "contrib"
-
 projects[og][version] = "2.0"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
@@ -335,6 +319,22 @@ projects[uuid_features][patch][1849668] = "http://drupal.org/files/uuid_features
 projects[uuid_features][patch][1962782] = "http://drupal.org/files/uuid_features-term-export-option-variable-1962782-2.patch"
 
 ; DF Import
+projects[feeds][version] = "2.0-alpha7"
+projects[feeds][type] = "module"
+projects[feeds][subdir] = "contrib"
+
+projects[feeds_jsonpath_parser][version] = "1.x-dev"
+projects[feeds_jsonpath_parser][type] = "module"
+projects[feeds_jsonpath_parser][subdir] = "contrib"
+projects[feeds_jsonpath_parser][download][type] = "git"
+projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
+projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
+projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
+
+projects[job_scheduler][version] = "2.0-alpha3"
+projects[job_scheduler][type] = "module"
+projects[job_scheduler][subdir] = "contrib"
+
 projects[migrate][version] = "2.5"
 projects[migrate][type] = "module"
 projects[migrate][subdir] = "contrib"
@@ -350,8 +350,8 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
-;libraries[jsonpath][download][type] = "get"
-;libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+libraries[jsonpath][download][type] = "get"
+libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
