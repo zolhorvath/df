@@ -31,6 +31,7 @@ class DemoFrameworkBaseNodes extends Migration {
     $this->destination = new MigrateDestinationNode('page');
 
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
+    $this->addFieldMapping('status', 'status')->defaultValue(1);
 
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('body', 'body');
