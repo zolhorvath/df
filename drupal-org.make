@@ -134,7 +134,7 @@ projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
 projects[panopoly_magic][download][type] = "git"
 projects[panopoly_magic][download][url] = "http://git.drupal.org/project/panopoly_magic.git"
-projects[panopoly_magic][download][revision] = "3391b5a4459670ea0b238c6f54eb371a06e1d161"
+projects[panopoly_magic][download][revision] = "3a1f8f97f7df67349afdee1c108ed88d38733b76"
 projects[panopoly_magic][download][branch] = "7.x-1.x"
 
 projects[panopoly_theme][type] = "module"
