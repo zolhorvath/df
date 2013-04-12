@@ -353,9 +353,9 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: create product_display content.
-  $permissions['create product_display content'] = array(
-    'name' => 'create product_display content',
+  // Exported permission: create commerce content.
+  $permissions['create commerce content'] = array(
+    'name' => 'create commerce content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -380,18 +380,18 @@ function df_engage_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: delete any product_display content.
-  $permissions['delete any product_display content'] = array(
-    'name' => 'delete any product_display content',
+  // Exported permission: delete any commerce content.
+  $permissions['delete any commerce content'] = array(
+    'name' => 'delete any commerce content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: delete own product_display content.
-  $permissions['delete own product_display content'] = array(
-    'name' => 'delete own product_display content',
+  // Exported permission: delete own commerce content.
+  $permissions['delete own commerce content'] = array(
+    'name' => 'delete own commerce content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -490,9 +490,9 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit any product_display content.
-  $permissions['edit any product_display content'] = array(
-    'name' => 'edit any product_display content',
+  // Exported permission: edit any commerce content.
+  $permissions['edit any commerce content'] = array(
+    'name' => 'edit any commerce content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -571,9 +571,9 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit own product_display content.
-  $permissions['edit own product_display content'] = array(
-    'name' => 'edit own product_display content',
+  // Exported permission: edit own commerce content.
+  $permissions['edit own commerce content'] = array(
+    'name' => 'edit own commerce content',
     'roles' => array(
       'administrator' => 'administrator',
     ),

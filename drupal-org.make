@@ -111,6 +111,10 @@ projects[layout][version] = "1.0-alpha6"
 projects[layout][type] = "module"
 projects[layout][subdir] = "contrib"
 
+projects[metatag][version] = "1.0-beta5"
+projects[metatag][type] = "module"
+projects[metatag][subdir] = "contrib"
+
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
@@ -171,12 +175,9 @@ projects[respondjs][type] = "module"
 projects[respondjs][subdir] = "contrib"
 
 ; DF Curator
-projects[ckeditor][version] = "1.x-dev"
+projects[ckeditor][version] = "1.13"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "83312a38193cc60b34d230f68fe3ffe9bd119ec3"
-projects[ckeditor][download][branch] = "7.x-1.x"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -186,7 +187,7 @@ projects[date][version] = "2.6"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
-projects[edit][version] = "1.0-alpha8"
+projects[edit][version] = "1.0-alpha10"
 projects[edit][type] = "module"
 projects[edit][subdir] = "contrib"
 

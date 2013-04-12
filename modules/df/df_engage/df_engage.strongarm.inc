@@ -13,51 +13,51 @@ function df_engage_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_product_display';
+  $strongarm->name = 'comment_anonymous_commerce';
   $strongarm->value = 0;
-  $export['comment_anonymous_product_display'] = $strongarm;
+  $export['comment_anonymous_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_product_display';
+  $strongarm->name = 'comment_default_mode_commerce';
   $strongarm->value = 1;
-  $export['comment_default_mode_product_display'] = $strongarm;
+  $export['comment_default_mode_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_product_display';
+  $strongarm->name = 'comment_default_per_page_commerce';
   $strongarm->value = '50';
-  $export['comment_default_per_page_product_display'] = $strongarm;
+  $export['comment_default_per_page_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_product_display';
+  $strongarm->name = 'comment_form_location_commerce';
   $strongarm->value = 1;
-  $export['comment_form_location_product_display'] = $strongarm;
+  $export['comment_form_location_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_product_display';
+  $strongarm->name = 'comment_preview_commerce';
   $strongarm->value = '1';
-  $export['comment_preview_product_display'] = $strongarm;
+  $export['comment_preview_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_product_display';
+  $strongarm->name = 'comment_commerce';
   $strongarm->value = '2';
-  $export['comment_product_display'] = $strongarm;
+  $export['comment_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_product_display';
+  $strongarm->name = 'comment_subject_field_commerce';
   $strongarm->value = 1;
-  $export['comment_subject_field_product_display'] = $strongarm;
+  $export['comment_subject_field_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -85,7 +85,7 @@ function df_engage_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__product_display';
+  $strongarm->name = 'field_bundle_settings_node__commerce';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -97,47 +97,47 @@ function df_engage_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__product_display'] = $strongarm;
+  $export['field_bundle_settings_node__commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_product_display';
+  $strongarm->name = 'menu_options_commerce';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_product_display'] = $strongarm;
+  $export['menu_options_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_product_display';
+  $strongarm->name = 'menu_parent_commerce';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_product_display'] = $strongarm;
+  $export['menu_parent_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_product_display';
+  $strongarm->name = 'node_options_commerce';
   $strongarm->value = array(
     0 => 'status',
     1 => 'promote',
   );
-  $export['node_options_product_display'] = $strongarm;
+  $export['node_options_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_product_display';
+  $strongarm->name = 'node_preview_commerce';
   $strongarm->value = '1';
-  $export['node_preview_product_display'] = $strongarm;
+  $export['node_preview_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_product_display';
+  $strongarm->name = 'node_submitted_commerce';
   $strongarm->value = 1;
-  $export['node_submitted_product_display'] = $strongarm;
+  $export['node_submitted_commerce'] = $strongarm;
 
   return $export;
 }

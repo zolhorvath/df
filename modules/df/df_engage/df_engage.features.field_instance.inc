@@ -124,9 +124,9 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_display-body'
-  $field_instances['node-product_display-body'] = array(
-    'bundle' => 'product_display',
+  // Exported field_instance: 'node-commerce-body'
+  $field_instances['node-commerce-body'] = array(
+    'bundle' => 'commerce',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -178,9 +178,9 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_display-field_product'
-  $field_instances['node-product_display-field_product'] = array(
-    'bundle' => 'product_display',
+  // Exported field_instance: 'node-commerce-field_product'
+  $field_instances['node-commerce-field_product'] = array(
+    'bundle' => 'commerce',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

@@ -36,6 +36,7 @@ function df_assembler_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'curator' => 'curator',
+      'marketer' => 'marketer',
     ),
     'module' => 'media_internet',
   );
@@ -621,6 +622,7 @@ function df_assembler_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'curator' => 'curator',
+      'marketer' => 'marketer',
     ),
     'module' => 'media',
   );

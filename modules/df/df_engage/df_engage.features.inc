@@ -35,10 +35,10 @@ function df_engage_ctools_plugin_api() {
  */
 function df_engage_node_info() {
   $items = array(
-    'product_display' => array(
-      'name' => t('Product Display'),
+    'commerce' => array(
+      'name' => t('Commerce Product'),
       'base' => 'node_content',
-      'description' => t('The <em>product display</em> content is linked to a Drupal Commerce Product entity.'),
+      'description' => t('Use <em>commerce product</em> content to display linked Drupal Commerce Product entities.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
