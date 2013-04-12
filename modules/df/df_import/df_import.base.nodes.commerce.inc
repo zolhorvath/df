@@ -26,9 +26,9 @@ class DemoFrameworkBaseCommerceNodes extends DemoFrameworkBaseNodes {
     $import_path = drupal_get_path('module', 'df_import') . '/import/';
 
     // Create a MigrateSource object.
-    $this->source = new MigrateSourceCSV($import_path . 'df_import.base.commerce_nodes.csv', $this->csvcolumns(), array('header_rows' => 1));
+    $this->source = new MigrateSourceCSV($import_path . 'df_import.base.nodes.commerce.csv', $this->csvcolumns(), array('header_rows' => 1));
 
-    $this->destination = new MigrateDestinationNode('product_display');
+    $this->destination = new MigrateDestinationNode('commerce');
 
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
 
