@@ -20,6 +20,13 @@ function df_engage_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_commerce';
+  $strongarm->value = '2';
+  $export['comment_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_commerce';
   $strongarm->value = 1;
   $export['comment_default_mode_commerce'] = $strongarm;
@@ -44,13 +51,6 @@ function df_engage_strongarm() {
   $strongarm->name = 'comment_preview_commerce';
   $strongarm->value = '1';
   $export['comment_preview_commerce'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_commerce';
-  $strongarm->value = '2';
-  $export['comment_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -138,6 +138,13 @@ function df_engage_strongarm() {
   $strongarm->name = 'node_submitted_commerce';
   $strongarm->value = 1;
   $export['node_submitted_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'page_manager_user_view_disabled';
+  $strongarm->value = FALSE;
+  $export['page_manager_user_view_disabled'] = $strongarm;
 
   return $export;
 }

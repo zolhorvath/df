@@ -281,6 +281,15 @@ function df_engage_user_default_permissions() {
     'module' => 'bean',
   );
 
+  // Exported permission: create commerce content.
+  $permissions['create commerce content'] = array(
+    'name' => 'create commerce content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: create commerce_customer_profile entities.
   $permissions['create commerce_customer_profile entities'] = array(
     'name' => 'create commerce_customer_profile entities',
@@ -353,15 +362,6 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: create commerce content.
-  $permissions['create commerce content'] = array(
-    'name' => 'create commerce content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete any bean_tax_listing bean.
   $permissions['delete any bean_tax_listing bean'] = array(
     'name' => 'delete any bean_tax_listing bean',
@@ -427,6 +427,15 @@ function df_engage_user_default_permissions() {
     'module' => 'bean',
   );
 
+  // Exported permission: edit any commerce content.
+  $permissions['edit any commerce content'] = array(
+    'name' => 'edit any commerce content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: edit any commerce_customer_profile entity.
   $permissions['edit any commerce_customer_profile entity'] = array(
     'name' => 'edit any commerce_customer_profile entity',
@@ -490,15 +499,6 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit any commerce content.
-  $permissions['edit any commerce content'] = array(
-    'name' => 'edit any commerce content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: edit bean view mode.
   $permissions['edit bean view mode'] = array(
     'name' => 'edit bean view mode',
@@ -506,6 +506,15 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'bean',
+  );
+
+  // Exported permission: edit own commerce content.
+  $permissions['edit own commerce content'] = array(
+    'name' => 'edit own commerce content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit own commerce_customer_profile entities.
@@ -569,15 +578,6 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'commerce_product',
-  );
-
-  // Exported permission: edit own commerce content.
-  $permissions['edit own commerce content'] = array(
-    'name' => 'edit own commerce content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: manage own identities.

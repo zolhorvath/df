@@ -35,7 +35,6 @@ function df_assembler_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
       'marketer' => 'marketer',
     ),
     'module' => 'media_internet',
@@ -161,6 +160,16 @@ function df_assembler_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: administer meta tags.
+  $permissions['administer meta tags'] = array(
+    'name' => 'administer meta tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'metatag',
+  );
+
   // Exported permission: administer page manager.
   $permissions['administer page manager'] = array(
     'name' => 'administer page manager',
@@ -185,6 +194,24 @@ function df_assembler_user_default_permissions() {
     'name' => 'administer panelizer',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing_page content.
+  $permissions['administer panelizer node landing_page content'] = array(
+    'name' => 'administer panelizer node landing_page content',
+    'roles' => array(
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing_page layout.
+  $permissions['administer panelizer node landing_page layout'] = array(
+    'name' => 'administer panelizer node landing_page layout',
+    'roles' => array(
+      'marketer' => 'marketer',
     ),
     'module' => 'panelizer',
   );
@@ -587,6 +614,16 @@ function df_assembler_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
+  // Exported permission: edit meta tags.
+  $permissions['edit meta tags'] = array(
+    'name' => 'edit meta tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'metatag',
+  );
+
   // Exported permission: edit own comments.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
@@ -621,7 +658,6 @@ function df_assembler_user_default_permissions() {
     'name' => 'import media',
     'roles' => array(
       'administrator' => 'administrator',
-      'curator' => 'curator',
       'marketer' => 'marketer',
     ),
     'module' => 'media',

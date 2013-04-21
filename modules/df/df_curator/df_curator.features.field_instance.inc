@@ -92,7 +92,7 @@ function df_curator_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_collection',
-    'label' => 'Collection',
+    'label' => 'Site Preview Collection',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -217,9 +217,9 @@ function df_curator_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Collection');
   t('Enter a comma-separated list of words to describe your content.');
   t('Image');
+  t('Site Preview Collection');
   t('Tags');
   t('Upload an image to go with this article.');
 

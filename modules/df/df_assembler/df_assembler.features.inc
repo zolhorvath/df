@@ -9,6 +9,14 @@
  */
 function df_assembler_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
@@ -31,14 +39,6 @@ function df_assembler_node_info() {
       'name' => t('Landing Page'),
       'base' => 'node_content',
       'description' => t('Build <em>landing pages</em> to display content using custom layouts.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'page' => array(
-      'name' => t('Basic page'),
-      'base' => 'node_content',
-      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
