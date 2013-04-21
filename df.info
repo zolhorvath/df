@@ -24,16 +24,6 @@ dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = taxonomy
 
-; Demo Framework - Basics
-dependencies[] = df_assembler
-dependencies[] = df_curator
-dependencies[] = df_engage
-dependencies[] = df_import
-
-; Acquia Network Connector (optional)
-;dependencies[] = acquia_spi
-;dependencies[] = acquia_agent
-
 ; Contribs
 dependencies[] = devel
 dependencies[] = diff
@@ -43,6 +33,16 @@ dependencies[] = pathauto
 dependencies[] = responsive_preview
 dependencies[] = rules
 dependencies[] = token
+
+; Demo Framework - Basics
+dependencies[] = df_assembler
+dependencies[] = df_curator
+dependencies[] = df_engage
+dependencies[] = df_import
+
+; Acquia Network Connector (optional)
+;dependencies[] = acquia_spi
+;dependencies[] = acquia_agent
 
 ; System Requirements
 php = 5.3
