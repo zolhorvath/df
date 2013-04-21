@@ -73,7 +73,7 @@ function df_install() {
 
   // Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'bartik');
-  $admin_theme = 'seven';
+  $admin_theme = 'ember';
   $blocks = array(
     array(
       'module' => 'system',
@@ -91,6 +91,16 @@ function df_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -1,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'user',
+      'delta' => 'login',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
       'region' => 'sidebar_first',
       'pages' => '',
       'cache' => -1,
@@ -390,9 +400,9 @@ function df_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'seven')
+    ->condition('name', 'ember')
     ->execute();
-  variable_set('admin_theme', 'seven');
+  variable_set('admin_theme', 'ember');
   variable_set('node_admin_theme', '1');
 
   // Set the jQuery version to 1.7.
