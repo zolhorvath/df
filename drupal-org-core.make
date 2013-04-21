@@ -24,3 +24,8 @@ projects[drupal][patch][] = "http://drupal.org/files/drupal-1470656-14.patch"
 ; http://drupal.org/node/865536
 projects[drupal][patch][] = "http://drupal.org/files/drupal-865536-204.patch"
 
+; Permissions/Features
+; user_role_grant_permissions() throws PDOException when used for a disabled
+; module's permission or with non-existent permissions
+; http://drupal.org/node/737816#comment-6978566
+projects[drupal][patch][] = "http://drupal.org/files/drupal-fix_pdoexception_grant_permissions-737816-36-do-not-test.patch"
