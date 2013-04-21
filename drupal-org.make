@@ -423,8 +423,8 @@ projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
 
 ; Libraries
-libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
+;ilibraries[backbone][download][type] = "get"
+;libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
@@ -438,8 +438,8 @@ libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/b
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
 
-libraries[underscore][download][type] = "get"
-libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
+;libraries[underscore][download][type] = "get"
+;libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
 
 ; Themes
 projects[responsive_bartik][version] = "1.x-dev"
