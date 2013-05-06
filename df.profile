@@ -18,3 +18,15 @@ function df_install_tasks_alter(&$tasks, $install_state) {
   $tasks['install_select_locale']['run'] = INSTALL_TASK_SKIP;
   $install_state['parameters']['locale'] = 'en';
 }
+
+/**
+ * Implements hook_permission().
+ */
+function df_permission() {
+  return array(
+    'administer demo framework' => array(
+      'title' => t('Administer Demo Framework'),
+      'description' => t('Perform administration tasks for demo framework.'),
+    ),
+  );
+}
