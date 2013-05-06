@@ -47,6 +47,16 @@ function df_engage_user_default_permissions() {
     'module' => 'rules',
   );
 
+  // Exported permission: access user profiles.
+  $permissions['access user profiles'] = array(
+    'name' => 'access user profiles',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: administer bean settings.
   $permissions['administer bean settings'] = array(
     'name' => 'administer bean settings',
@@ -182,6 +192,15 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
+  // Exported permission: administer permissions.
+  $permissions['administer permissions'] = array(
+    'name' => 'administer permissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: administer product pricing.
   $permissions['administer product pricing'] = array(
     'name' => 'administer product pricing',
@@ -227,6 +246,15 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_tax_ui',
   );
 
+  // Exported permission: administer users.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: bypass mollom protection.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',
@@ -243,6 +271,24 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
+  );
+
+  // Exported permission: cancel account.
+  $permissions['cancel account'] = array(
+    'name' => 'cancel account',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
+  );
+
+  // Exported permission: change own username.
+  $permissions['change own username'] = array(
+    'name' => 'change own username',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: configure order settings.
@@ -587,6 +633,15 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'rpx_ui',
+  );
+
+  // Exported permission: select account cancellation method.
+  $permissions['select account cancellation method'] = array(
+    'name' => 'select account cancellation method',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: update payments.
