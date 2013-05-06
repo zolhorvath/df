@@ -31,6 +31,7 @@ dependencies[] = module_filter
 dependencies[] = navbar
 dependencies[] = pathauto
 dependencies[] = responsive_preview
+dependencies[] = role_export
 dependencies[] = rules
 dependencies[] = token
 
@@ -39,10 +40,6 @@ dependencies[] = df_assembler
 dependencies[] = df_curator
 dependencies[] = df_engage
 dependencies[] = df_import
-
-; Acquia Network Connector (optional)
-;dependencies[] = acquia_spi
-;dependencies[] = acquia_agent
 
 ; System Requirements
 php = 5.3

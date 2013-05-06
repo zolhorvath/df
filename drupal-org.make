@@ -14,10 +14,11 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
 projects[ctools][download][branch] = "7.x-1.x"
-projects[ctools][download][revision] = "9d092cc"
-; Adding a renderable-array block to a page gives errors in the admin UI
-; http://drupal.org/node/1925018
-projects[ctools][patch][1925018] = "http://drupal.org/files/ctools-n1925018-12.patch"
+projects[ctools][download][revision] = "280ccd0"
+
+projects[filedepot][version] = "1.1"
+projects[filedepot][type] = "module"
+projects[filedepot][subdir] = "contrib"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -34,10 +35,6 @@ projects[entity][subdir] = "contrib"
 projects[features][version] = "2.0-beta2"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-
-projects[field_permissions][version] = "1.0-beta2"
-projects[field_permissions][type] = "module"
-projects[field_permissions][subdir] = "contrib"
 
 projects[jquery_update][version] = "2.3"
 projects[jquery_update][type] = "module"
@@ -60,13 +57,13 @@ projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
 projects[navbar][download][branch] = "7.x-1.x"
-; In vertical orientation, menu cannot scroll past viewport bounds
-; http://drupal.org/node/1971902
-; Currently backported to alpha7 until issue resolved.
-projects[navbar][download][revision] = "3c535e9"
+projects[navbar][download][revision] = "184ce30"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/navbar-contrib-icons-1954912-6.patch"
+; In vertical orientation, menu cannot scroll past viewport bounds
+; http://drupal.org/node/1971902
+projects[navbar][patch][1971902] = "http://drupal.org/files/navbar-vertical-scroll-1971902-6.patch"
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][type] = "module"
@@ -75,6 +72,10 @@ projects[pathauto][subdir] = "contrib"
 projects[responsive_preview][version] = "1.0-beta1"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
+
+projects[role_export][version] = "1.0"
+projects[role_export][type] = "module"
+projects[role_export][subdir] = "contrib"
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
@@ -185,14 +186,11 @@ projects[panopoly_wysiwyg][version] = "1.x-dev"
 projects[panopoly_wysiwyg][type] = "module"
 projects[panopoly_wysiwyg][subdir] = "contrib"
 projects[panopoly_wysiwyg][download][type] = "git"
-projects[panopoly_wysiwyg][download][revision] = "e2f938b"
+projects[panopoly_wysiwyg][download][revision] = "227335f"
 projects[panopoly_wysiwyg][download][branch] = "7.x-1.x"
-; Default Config Prevents Node Export from Working
-; http://drupal.org/node/1904874
-projects[panopoly_wysiwyg][patch][1904874] = "http://drupal.org/files/panopoly_wysiwyg-defaultconfig-free-1904874-3.patch"
-; Panopoly WYSIWYG to install newer WYSIWYG module?
-; http://drupal.org/node/1949542
-projects[panopoly_wysiwyg][patch][1949542] = "http://drupal.org/files/panopoly_wysiwyg-use-wysiwyg-dev-1949542-1.patch"
+; Use Panopoly WYSIWYG outside of Panopoly Distribution
+; http://drupal.org/node/1986308
+projects[panopoly_wysiwyg][patch][1986308] = "http://drupal.org/files/panopoly_wysiwyg-demo-framework-1986308-1.patch"
 ; Panopoly WYSIWYG contains a makefile under modules/contrib/panopoly_wysiwyg.
 ; Defer to panopoly_wysiwyg.make to download and patch module dependencies.
 
@@ -244,6 +242,10 @@ projects[iib][download][branch] = "7.x-1.x"
 ; UX Improvements
 ; http://drupal.org/node/1737036
 projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-8.patch"
+
+projects[linkit][version] = "2.6"
+projects[linkit][type] = "module"
+projects[linkit][subdir] = "contrib"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
@@ -341,6 +343,10 @@ projects[entityreference_prepopulate][version] = "1.2"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
+projects[field_permissions][version] = "1.0-beta2"
+projects[field_permissions][type] = "module"
+projects[field_permissions][subdir] = "contrib"
+
 projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
@@ -366,6 +372,14 @@ projects[rules][subdir] = "contrib"
 projects[salesforce][version] = "3.0-beta2"
 projects[salesforce][type] = "module"
 projects[salesforce][subdir] = "contrib"
+
+projects[marketo_ma][type] = "module"
+projects[marketo_ma][subdir] = "contrib"
+projects[marketo_ma][download][type] = "git"
+projects[marketo_ma][download][branch] = "7.x-1.x"
+projects[marketo_ma][download][revision] = "9df5dd3f3cc2c0489bca0414b891602d5a05c01e"
+projects[marketo_ma][download][url] = "http://git.drupal.org/sandbox/jyokum/1949342.git"
+projects[marketo_ma][patch][1979856] = "http://drupal.org/files/marketo_ma-rules.patch"
 
 projects[taxonomy_entity_index][version] = "1.0-beta6"
 projects[taxonomy_entity_index][type] = "module"
@@ -423,20 +437,32 @@ projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
 
 ; Libraries
+libraries[backbone][download][type] = "get"
+libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
+
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
+libraries[jsonpath][download][type] = "get"
+libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
+
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
 
 ; Themes
 projects[responsive_bartik][version] = "1.x-dev"
 projects[responsive_bartik][type] = "theme"
 projects[responsive_bartik][subdir] = "contrib"
 
-projects[ember][version] = "1.0-alpha5"
+projects[ember][version] = "1.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
+projects[ember][download][type] = "git"
+projects[ember][download][branch] = "7.x-1.x"
+projects[ember][download][revision] = "34027ec"
