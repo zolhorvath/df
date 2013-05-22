@@ -526,20 +526,20 @@ libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
 
-libraries[fitvids][download][type] = "get"
-libraries[fitvids][download][url] = "https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js"
+;libraries[fitvids][download][type] = "get"
+;libraries[fitvids][download][url] = "https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
-libraries[jsonpath][download][type] = "get"
-libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+;libraries[jsonpath][download][type] = "get"
+;libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
 
-libraries[underscore][download][type] = "get"
-libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
+;libraries[underscore][download][type] = "get"
+;libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
@@ -554,7 +554,7 @@ projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-1.x"
 projects[ember][download][revision] = "34027ec"
-; Ember should provide responsive css for Workbench 
+; Ember should provide responsive css for Workbench
 ; htt ://drupal.org/node/1993240
 projects[ember][patch][1993240] = "http://drupal.org/files/ember-workbench-1993240-1.patch"
 
