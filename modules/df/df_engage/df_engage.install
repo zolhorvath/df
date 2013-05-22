@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for DF Engage feature
+ */
+
+/**
+ * Implements hook_install().
+ */
+function df_engage_install() {
+  // Enable the shopping cart block.
+  $default_theme = variable_get('theme_default', 'demonstratie');
+  $admin_theme = 'ember';
+  $blocks = array(
+    array(
+      'module' => 'commerce_cart',
+      'delta' => 'cart',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'header_second',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();
+}
+

@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for DF Curator feature
+ */
+
+/**
+ * Implements hook_install().
+ */
+function df_curator_install() {
+}
+
