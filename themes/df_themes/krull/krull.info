@@ -1,0 +1,24 @@
+; Descriptive information
+name = KRULL
+description = A demonstratie sub-theme.
+core = 7.x
+version = 7.x-1.0-alpha2
+base theme = demonstratie
+
+; Define regions
+regions[page_top] = Page top
+regions[header_first] = Header first
+regions[header_second] = Header second
+regions[search] = Search
+;regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[feature] = Features
+regions[sidebar_first] = Supplementary first
+regions[sidebar_second] = Supplementary second
+regions[footer_first] = Footer first
+regions[footer_second] = Footer second
+regions[page_bottom] = Page bottom
+
+; Load stylesheets
+stylesheets[all][] = krull.css

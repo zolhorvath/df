@@ -1,0 +1,207 @@
+/*
+ * ACQUIA DEMO TEST OVERRIDES
+ * brantwynn
+ */
+
+/* Override to fix UX bug in responsive preview */
+#responsive-preview-frame-container {
+  margin-top: 30px;
+}
+
+/* Overrides for Responsive Panels Layout */
+.layout-responsive-region,
+.bryant-sidebar .node,
+.panelizer-view-mode.node-teaser {
+  position: relative;
+}
+
+img.panopoly-image-full {
+  padding-bottom: 0;
+}
+
+h2.pane-title {
+  margin-bottom: 0.6em;
+}
+
+div.panels-ipe-placeholder {
+  padding: 0;
+}
+
+.page-df-wem-home .panel-responsive h2:not(.pane-title),
+.bryant-sidebar h2:not(.pane-title),
+.panelizer-view-mode.node.node-teaser.node-wem-contest h2:not(.pane-title) {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.page-df-wem-home .panel-responsive h2:not(.pane-title) .field-item,
+.bryant-sidebar h2:not(.pane-title) .field-item {
+  padding: 0.4em;
+}
+
+.layout-responsive-region-header_a h2,
+.panelizer-view-mode.node.node-teaser.node-wem-contest h2 {
+  font-size: 2.4em;
+  bottom: 2em;
+}
+
+div.layout-responsive-region-header_a h2 a,
+.panelizer-view-mode.node.node-teaser.node-wem-contest h2 a {
+  padding: 0.4em;
+}
+
+@media all and (min-width: 1000px) {
+  div.layout-responsive-region-header_a h2 {
+    font-size: 2em;
+    bottom: 1.8em;
+  }
+  .layout-responsive-region-header_b h2,
+  .layout-responsive-region-header_c h2 {
+    font-size: 2.2em;
+    bottom: 0.8em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .layout-responsive-region-header_a h2 {
+    font-size: 1.1em;
+    bottom: 3em;
+  }
+  .layout-responsive-region-header_b h2,
+  .layout-responsive-region-header_c h2 {
+    font-size: 1em;
+    bottom: 0.8em;
+  }
+
+}
+
+@media all and (max-width: 999px) and (min-width: 701px) {
+  .layout-responsive-region-header_b h2,
+  .layout-responsive-region-header_c h2 {
+    font-size: 1.89em;
+    bottom: 1em;
+  }
+}
+
+@media all and (max-width: 700px) and (min-width: 501px) {
+  .layout-responsive-region-header_a h2 {
+    font-size: 1.7em;
+  }
+  .layout-responsive-region-header_b h2,
+  .layout-responsive-region-header_c h2 {
+    font-size: 1.2em;
+    bottom: 0.8em;
+  }
+}
+
+.panels-ipe-region,
+.panels-ipe-sort-container {
+  height: inherit;
+}
+
+.layout-responsive-region-subheader_a h2,
+.layout-responsive-region-subheader_b h2,
+.layout-responsive-region-subheader_c h2,
+.layout-responsive-region-subheader_d h2 {
+  font-size: 1em;
+  bottom: 1em;
+}
+
+.bryant-sidebar h2:not(.pane-title) {
+  font-size: 1em;
+  bottom: 0.6em;
+}
+
+.bryant-sidebar .pane-content div.node {
+  margin-bottom: 0.8em;
+}
+
+.panel-responsive .views-row {
+  padding: 1em;
+}
+
+.panel-responsive .views-row-even {
+  background: rgba(111, 111, 111, 0.3);
+}
+
+/* Remove default AJAX throbber */
+html.js input.form-autocomplete {
+  background-image: none;
+}
+
+/* Travel Friend Finder View */
+.view-wem-travel-friend {
+  position: relative;
+}
+
+.view-wem-travel-friend .views-row {
+  float: left;
+  display: inline-block;
+  padding: 0em 1em 1em 0em;
+}
+
+.view-wem-travel-friend .view-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* User Profile */
+.view-wem-user-picture {
+  -moz-border-radius: 20em;
+  -webkit-border-radius: 20em;
+  border-radius: 30em;
+  overflow: hidden;
+}
+
+.view-wem-user-picture .panopoly-image-full {
+  margin: 0;
+}
+
+/* Override Demonstratie Core */
+.page-title {
+  font-size: 2.7em;
+}
+
+.panels-ipe-form-container input,
+.panels-ipe-form-container input:hover {
+  text-shadow: none;
+}
+
+.layout-responsive-region-subheader_a,
+.layout-responsive-region-subheader_b,
+.layout-responsive-region-subheader_c,
+.layout-responsive-region-subheader_d {
+  background: url('images/lefthash.png') !important;
+}
+
+.pane-wem-contests,
+.cart-contents {
+  background: url('images/righthash.png') !important;
+}
+
+.pane-wem-tweets {
+  background: #000 url('images/twitter.png') top left no-repeat;
+}
+.pane-wem-tweets h2 {
+  color: #000;
+  text-indent:-999em;
+}
+.pane-wem-tweets a {
+  color: #FFF;
+}
+.pane-wem-tweets a>strong {
+  color: #27aae3;
+}
+
+.page-node h1:page-title {
+  background: url('images/righthash.png') !important;
+}
+
+.view-wem-contests table, .view-wem-contests td {
+  border: none;
+}
+
+.cart-contents table, .cart-contents td {
+  border: none;
+}
