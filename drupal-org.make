@@ -13,12 +13,8 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][branch] = "7.x-1.x"
 projects[ctools][download][revision] = "280ccd0"
-
-projects[filedepot][version] = "1.1"
-projects[filedepot][type] = "module"
-projects[filedepot][subdir] = "contrib"
+projects[ctools][download][branch] = "7.x-1.x"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -56,8 +52,8 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][branch] = "7.x-1.x"
 projects[navbar][download][revision] = "184ce30"
+projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/navbar-contrib-icons-1954912-6.patch"
@@ -68,6 +64,10 @@ projects[navbar][patch][1971902] = "http://drupal.org/files/navbar-vertical-scro
 projects[pathauto][version] = "1.2"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
+
+projects[pm_existing_pages][version] = "1.4"
+projects[pm_existing_pages][type] = "module"
+projects[pm_existing_pages][subdir] = "contrib"
 
 projects[responsive_preview][version] = "1.0-beta1"
 projects[responsive_preview][type] = "module"
@@ -81,14 +81,31 @@ projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 
-; DF Assembler
-projects[chosen][version] = "2.x-dev"
-projects[chosen][type] = "module"
-projects[chosen][subdir] = "contrib"
-projects[chosen][download][type] = "git"
-projects[chosen][download][revision] = "78ed696"
-projects[chosen][download][branch] = "7.x-1.x"
+projects[views][version] = "3.7"
+projects[views][type] = "module"
+projects[views][subdir] = "contrib"
 
+projects[views_autocomplete_filters][version] = "1.0-beta2"
+projects[views_autocomplete_filters][type] = "module"
+projects[views_autocomplete_filters][subdir] = "contrib"
+
+projects[views_field_view][version] = "1.x-dev"
+projects[views_field_view][type] = "module"
+projects[views_field_view][subdir] = "contrib"
+projects[views_field_view][download][type] = "git"
+projects[views_field_view][download][url] = "http://git.drupal.org/project/views_field_view.git"
+projects[views_field_view][download][revision] = "db93080"
+projects[views_field_view][download][branch] = "7.x-1.x"
+
+projects[views_bulk_operations][version] = "3.1"
+projects[views_bulk_operations][type] = "module"
+projects[views_bulk_operations][subdir] = "contrib"
+
+projects[views_load_more][version] = "1.1"
+projects[views_load_more][type] = "module"
+projects[views_load_more][subdir] = "contrib"
+
+; DF Assembler
 projects[fape][version] = "1.x-dev"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"
@@ -109,6 +126,13 @@ projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "1bda8c9"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
+
+projects[fitvids][version] = "1.x-dev"
+projects[fitvids][type] = "module"
+projects[fitvids][subdir] = "contrib"
+projects[fitvids][download][type] = "git"
+projects[fitvids][download][revision] = "bf0cbfb"
+projects[fitvids][download][branch] = "7.x-1.x"
 
 projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
@@ -198,18 +222,6 @@ projects[respondjs][version] = "1.1"
 projects[respondjs][type] = "module"
 projects[respondjs][subdir] = "contrib"
 
-projects[views][version] = "3.7"
-projects[views][type] = "module"
-projects[views][subdir] = "contrib"
-
-projects[views_autocomplete_filters][version] = "1.0-beta2"
-projects[views_autocomplete_filters][type] = "module"
-projects[views_autocomplete_filters][subdir] = "contrib"
-
-projects[views_bulk_operations][version] = "3.1"
-projects[views_bulk_operations][type] = "module"
-projects[views_bulk_operations][subdir] = "contrib"
-
 ; DF Curator
 projects[ckeditor][version] = "1.13"
 projects[ckeditor][type] = "module"
@@ -219,29 +231,36 @@ projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
 projects[collections][subdir] = "contrib"
 projects[collections][download][type] = "git"
-projects[collections][download][revision] = "4a28666"
+projects[collections][download][revision] = "b4e8212"
 projects[collections][download][branch] = "7.x-1.x"
-; Collection Field widget hardcodes the Label as 'Collection'
-; http://drupal.org/node/1974982
-projects[collections][patch][1974982] = "http://drupal.org/files/collections-field-instance-widget-label-1974982-1.patch"
 
 projects[date][version] = "2.6"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
-projects[edit][version] = "1.0-alpha11"
+projects[edit][version] = "1.x-dev"
 projects[edit][type] = "module"
 projects[edit][subdir] = "contrib"
+projects[edit][download][type] = "git"
+projects[edit][download][revision] = "cf62974"
+projects[edit][download][branch] = "7.x-1.x"
+; Backport of Edit button for navbar
+; http://drupal.org/node/1994256
+projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-2.patch"
+; Editing a video file is perceived as broken due to conflicts with embedded
+; media players.
+; http://drupal.org/node/1990560
+projects[edit][patch][1990560] = "http://drupal.org/files/edit-file-embed-rollover-padding-0.patch"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
 projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
-projects[iib][download][revision] = "c91e44c"
+projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; UX Improvements
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-8.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-10.patch"
 
 projects[linkit][version] = "2.6"
 projects[linkit][type] = "module"
@@ -292,12 +311,15 @@ projects[bean][version] = "1.x-dev"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
 projects[bean][download][type] = "git"
-projects[bean][download][revision] = "d4038e7"
+projects[bean][download][revision] = "efe15b9"
 projects[bean][download][branch] = "7.x-1.x"
 
-projects[bean_tax][version] = "2.2"
+projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
+projects[bean_tax][download][type] = "git"
+projects[bean_tax][download][revision] = "287b93b"
+projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[commerce][version] = "1.5"
 projects[commerce][type] = "module"
@@ -347,6 +369,14 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
+projects[marketo_ma][type] = "module"
+projects[marketo_ma][subdir] = "contrib"
+projects[marketo_ma][download][type] = "git"
+projects[marketo_ma][download][branch] = "7.x-1.x"
+projects[marketo_ma][download][revision] = "9df5dd3"
+projects[marketo_ma][download][url] = "http://git.drupal.org/sandbox/jyokum/1949342.git"
+projects[marketo_ma][patch][1979856] = "http://drupal.org/files/marketo_ma-rules.patch"
+
 projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
@@ -359,7 +389,7 @@ projects[rpx][version] = "2.x-dev"
 projects[rpx][type] = "module"
 projects[rpx][subdir] = "contrib"
 projects[rpx][download][type] = "git"
-projects[rpx][download][revision] = "ae93a66e8c"
+projects[rpx][download][revision] = "ae93a66"
 projects[rpx][download][branch] = "7.x-2.x"
 ; Social Sharing on a per-View Mode basis?
 ; http://drupal.org/node/1946476
@@ -372,14 +402,6 @@ projects[rules][subdir] = "contrib"
 projects[salesforce][version] = "3.0-beta2"
 projects[salesforce][type] = "module"
 projects[salesforce][subdir] = "contrib"
-
-projects[marketo_ma][type] = "module"
-projects[marketo_ma][subdir] = "contrib"
-projects[marketo_ma][download][type] = "git"
-projects[marketo_ma][download][branch] = "7.x-1.x"
-projects[marketo_ma][download][revision] = "9df5dd3f3cc2c0489bca0414b891602d5a05c01e"
-projects[marketo_ma][download][url] = "http://git.drupal.org/sandbox/jyokum/1949342.git"
-projects[marketo_ma][patch][1979856] = "http://drupal.org/files/marketo_ma-rules.patch"
 
 projects[taxonomy_entity_index][version] = "1.0-beta6"
 projects[taxonomy_entity_index][type] = "module"
@@ -436,12 +458,76 @@ projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
 
+; DF Search
+projects[apachesolr][version] = "1.x-dev"
+projects[apachesolr][type] = "module"
+projects[apachesolr][subdir] = "contrib"
+projects[apachesolr][download][type] = "git"
+projects[apachesolr][download][url] = "http://git.drupal.org/project/apachesolr.git"
+projects[apachesolr][download][revision] = "79a0804"
+projects[apachesolr][download][branch] = "7.x-1.x"
+
+projects[apachesolr_og][version] = "1.x-dev"
+projects[apachesolr_og][type] = "module"
+projects[apachesolr_og][subdir] = "contrib"
+projects[apachesolr_og][download][type] = "git"
+projects[apachesolr_og][download][url] = "http://git.drupal.org/project/apachesolr_og.git"
+projects[apachesolr_og][download][revision] = "49820b4"
+projects[apachesolr_og][download][branch] = "7.x-1.x"
+
+projects[apachesolr_proximity][version] = "1.0-rc1"
+projects[apachesolr_proximity][type] = "module"
+projects[apachesolr_proximity][subdir] = "contrib"
+
+projects[apachesolr_user][version] = "1.x-dev"
+projects[apachesolr_user][type] = "module"
+projects[apachesolr_user][subdir] = "contrib"
+projects[apachesolr_user][download][type] = "git"
+projects[apachesolr_user][download][url] = "http://git.drupal.org/project/apachesolr_user.git"
+projects[apachesolr_user][download][revision] = "a86c5ae"
+projects[apachesolr_user][download][branch] = "7.x-1.x"
+
+projects[custom_search][version] = "1.x-dev"
+projects[custom_search][type] = "module"
+projects[custom_search][subdir] = "contrib"
+projects[custom_search][download][type] = "git"
+projects[custom_search][download][url] = "http://git.drupal.org/project/custom_search.git"
+projects[custom_search][download][revision] = "0d55d1e"
+projects[custom_search][download][branch] = "7.x-1.x"
+
+projects[date_facets][version] = "1.0-beta1"
+projects[date_facets][type] = "module"
+projects[date_facets][subdir] = "contrib"
+
+projects[facetapi][version] = "1.3"
+projects[facetapi][type] = "module"
+projects[facetapi][subdir] = "contrib"
+
+projects[rich_snippets][version] = "1.x-dev"
+projects[rich_snippets][type] = "module"
+projects[rich_snippets][subdir] = "contrib"
+projects[rich_snippets][download][type] = "git"
+projects[rich_snippets][download][url] = "http://git.drupal.org/project/rich_snippets.git"
+projects[rich_snippets][download][revision] = "fad5697"
+projects[rich_snippets][download][branch] = "7.x-1.x"
+
+projects[schemaorg][type] = "module"
+projects[schemaorg][subdir] = "contrib"
+projects[schemaorg][version] = "1.0-beta3"
+
+projects[search_facetapi][version] = "1.0-beta2"
+projects[search_facetapi][type] = "module"
+projects[search_facetapi][subdir] = "contrib"
+
 ; Libraries
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
+
+libraries[fitvids][download][type] = "get"
+libraries[fitvids][download][url] = "https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
@@ -456,9 +542,11 @@ libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
 
 ; Themes
-projects[responsive_bartik][version] = "1.x-dev"
-projects[responsive_bartik][type] = "theme"
-projects[responsive_bartik][subdir] = "contrib"
+projects[demonstratie][version] = "1.x-dev"
+projects[demonstratie][type] = "theme"
+projects[demonstratie][subdir] = "contrib"
+projects[demonstratie][download][type] = "git"
+projects[demonstratie][download][branch] = "7.x-1.x"
 
 projects[ember][version] = "1.x-dev"
 projects[ember][type] = "theme"
@@ -466,3 +554,10 @@ projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-1.x"
 projects[ember][download][revision] = "34027ec"
+; Ember should provide responsive css for Workbench 
+; htt ://drupal.org/node/1993240
+projects[ember][patch][1993240] = "http://drupal.org/files/ember-workbench-1993240-1.patch"
+
+projects[responsive_bartik][version] = "1.x-dev"
+projects[responsive_bartik][type] = "theme"
+projects[responsive_bartik][subdir] = "contrib"

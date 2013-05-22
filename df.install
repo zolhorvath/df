@@ -12,8 +12,9 @@
  * @see system_install()
  */
 function df_install() {
-  theme_enable(array('responsive_bartik'));
-  variable_set('theme_default', 'responsive_bartik');
+  // Enable default theme.
+  theme_enable(array('demonstratie'));
+  variable_set('theme_default', 'demonstratie');
 
   // Add text formats.
   $filtered_html_format = array(
@@ -72,7 +73,7 @@ function df_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'demonstratie');
   $admin_theme = 'ember';
   $blocks = array(
     array(
@@ -91,7 +92,7 @@ function df_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => -1,
-      'region' => 'sidebar_first',
+      'region' => 'search',
       'pages' => '',
       'cache' => -1,
     ),
@@ -101,17 +102,7 @@ function df_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'navigation',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
+      'region' => 'content',
       'pages' => '',
       'cache' => -1,
     ),
@@ -121,7 +112,7 @@ function df_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 10,
-      'region' => 'footer',
+      'region' => 'footer_second',
       'pages' => '',
       'cache' => -1,
     ),
@@ -385,23 +376,19 @@ function df_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
-  // Create a Home link in the main menu.
-  $item = array(
-    'link_title' => st('Home'),
-    'link_path' => '<front>',
-    'menu_name' => 'main-menu',
-  );
-  menu_link_save($item);
+  // Define admin themes.
+  // Seven available as fallback for some admin screens. (eg. Views)
+  $admin_themes = array('ember', 'seven');
 
-  // Update the menu router information.
-  menu_rebuild();
-
-  // Enable the admin theme.
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'ember')
-    ->execute();
+  // Enable the admin themes.
+  foreach ($admin_themes as $theme) {
+    db_update('system')
+      ->fields(array('status' => 1))
+      ->condition('type', 'theme')
+      ->condition('name', $theme)
+      ->execute();
+  }
+  // Use Ember as main admin theme.
   variable_set('admin_theme', 'ember');
   variable_set('node_admin_theme', '1');
 
