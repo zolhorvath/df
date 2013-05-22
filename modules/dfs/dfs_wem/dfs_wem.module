@@ -1,0 +1,58 @@
+<?php
+/**
+ * @file
+ * Code for the DFS_WEM feature.
+ */
+
+include_once 'dfs_wem.features.inc';
+
+/**
+ * Implements hook_migrate_api().
+ */
+function dfs_wem_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DFSWEMContestNodes' => array('class_name' => 'DFSWEMContestNodes'),
+      'DFSWEMCommerceNodes' => array('class_name' => 'DFSWEMCommerceNodes'),
+      'DFSWEMInterestsTerms' => array('class_name' => 'DFSWEMInterestsTerms'),
+      'DFSWEMNewsNodes' => array('class_name' => 'DFSWEMNewsNodes'),
+      'DFSWEMNewsVideo' => array('class_name' => 'DFSWEMNewsVideo'),
+      'DFSWEMProducts' => array('class_name' => 'DFSWEMProducts'),
+      'DFSWEMProductReviewNodes' => array('class_name' => 'DFSWEMProductReviewNodes'),
+      'DFSWEMTweetNodes' => array('class_name' => 'DFSWEMTweetNodes'),
+      'DFSWEMUserPictures' => array('class_name' => 'DFSWEMUserPictures'),
+      'DFSWEMUsers' => array('class_name' => 'DFSWEMUsers'),
+    ),
+  );
+  return $api;
+}
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function dfs_wem_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'dfs_wem enabled ' . $component . ' component');
+  if ($component == 'features_api') {
+    migrate_get_module_apis();
+    drupal_set_message(t('DFS WEM: <a href="/admin/config/system/df/dfs-wem/reset">Enable Content</a>'), 'status');
+    // Revert df_ant solr config
+    features_get_features('dfs_ant', TRUE);
+    features_revert(array('dfs_ant' => array('apachesolr_environment')));
+  }
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function dfs_wem_menu() {
+  $items['admin/config/system/df/dfs-wem/reset'] = array(
+    'page callback' => 'dfs_wem_page_reset',
+    'page arguments' => array(1),
+    'access arguments' => array('administer demo framework'),
+    'type' => MENU_CALLBACK,
+    'file' => 'dfs_wem.reset.inc',
+  );
+  return $items;
+}

@@ -1,0 +1,8 @@
+name,pass,mail,status,roles,picture,interests
+EmilyPhillips,password,EmilyPhilips@example.com,1,"Curator, Reviewer, Marketer",emily.jpg,"Tropical, Spa, France"
+PaulSimon,password,PaulSimon@example.com,1,"Curator, Reviewer",paul.jpg,"Europe, UK, Belgium, Free Wifi"
+EricaWebb,password,EricaWebb@example.com,1,Curator,erica.jpg,"Gym, Vacation, Tropical"
+StephenDay,password,StephenDay@example.com,1,Reviewer,stephen.jpg,"Adventure, Tropical"
+JenniferThomson,password,JenniferThomson@example.com,1,,jennifer.jpg,"Free Wifi, Spa, Tropical"
+TomCasey,password,TomCasey@example.com,1,,tom.jpg,"Germany, Vacation, Europe"
+MelissaBrady,password,MelissaBrady@example.com,1,,melissa.jpg,"Italy, Room Service, Bar"
