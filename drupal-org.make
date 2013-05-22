@@ -538,8 +538,8 @@ libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/b
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
 
-;libraries[underscore][download][type] = "get"
-;libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
