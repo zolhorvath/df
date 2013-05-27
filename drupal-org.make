@@ -127,17 +127,6 @@ projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "1bda8c9"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
-projects[fitvids][version] = "1.x-dev"
-projects[fitvids][type] = "module"
-projects[fitvids][subdir] = "contrib"
-projects[fitvids][download][type] = "git"
-projects[fitvids][download][revision] = "bf0cbfb"
-projects[fitvids][download][branch] = "7.x-1.x"
-
-projects[google_analytics][version] = "1.3"
-projects[google_analytics][type] = "module"
-projects[google_analytics][subdir] = "contrib"
-
 projects[gridbuilder][version] = "1.0-alpha2"
 projects[gridbuilder][type] = "module"
 projects[gridbuilder][subdir] = "contrib"
@@ -369,6 +358,10 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
+projects[google_analytics][version] = "1.3"
+projects[google_analytics][type] = "module"
+projects[google_analytics][subdir] = "contrib"
+
 projects[marketo_ma][type] = "module"
 projects[marketo_ma][subdir] = "contrib"
 projects[marketo_ma][download][type] = "git"
@@ -430,6 +423,13 @@ projects[uuid_features][patch][1849668] = "http://drupal.org/files/uuid_features
 ; Make exporting of uuid terms along with vocabulary optional
 ; http://drupal.org/node/1962782
 projects[uuid_features][patch][1962782] = "http://drupal.org/files/uuid_features-term-export-option-variable-1962782-2.patch"
+
+projects[wem][version] = "1.x-dev"
+projects[wem][type] = "module"
+projects[wem][subdir] = "contrib"
+projects[wem][download][type] = "git"
+projects[wem][download][revision] = "85e5b7e"
+projects[wem][download][branch] = "7.x-1.x"
 
 ; DF Import
 projects[feeds][version] = "2.0-alpha7"
@@ -525,9 +525,6 @@ libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
-
-;libraries[fitvids][download][type] = "get"
-;libraries[fitvids][download][url] = "https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
