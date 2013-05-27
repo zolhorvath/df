@@ -16,7 +16,6 @@ dependencies[] = strongarm
 datestamp = 1366218302
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
-features[variable][] = googleanalytics_account
 features[variable][] = googleanalytics_cache
 features[variable][] = googleanalytics_codesnippet_after
 features[variable][] = googleanalytics_codesnippet_before
