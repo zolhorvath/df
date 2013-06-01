@@ -37,9 +37,6 @@ function dfs_wem_post_features_enable_feature($component) {
   if ($component == 'features_api') {
     migrate_get_module_apis();
     drupal_set_message(t('DFS WEM: ') . l(t('Enable Content'), 'admin/config/system/df/dfs-wem/reset'), 'status');
-    // Revert df_ant solr config
-    features_get_features('dfs_ant', TRUE);
-    features_revert(array('dfs_ant' => array('apachesolr_environment')));
   }
 }
 
