@@ -550,10 +550,7 @@ projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-1.x"
-projects[ember][download][revision] = "34027ec"
-; Ember should provide responsive css for Workbench
-; htt ://drupal.org/node/1993240
-projects[ember][patch][1993240] = "http://drupal.org/files/ember-workbench-1993240-1.patch"
+projects[ember][download][revision] = "f16174d"
 
 projects[responsive_bartik][version] = "1.x-dev"
 projects[responsive_bartik][type] = "theme"
