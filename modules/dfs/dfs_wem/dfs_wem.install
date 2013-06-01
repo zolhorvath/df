@@ -12,10 +12,5 @@ function dfs_wem_install() {
   // Enable custom theme on install.
   theme_enable(array('krull'));
   variable_set('theme_default', 'krull');
-
-  // Revert df_assembler user permissions due to panelizer/features bug
-  // http://drupal.org/node/1549608#comment-7312952
-  features_get_features('df_assembler', TRUE);
-  features_revert(array('df_assembler' => array('user_permission')));
 }
 

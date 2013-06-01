@@ -13,3 +13,13 @@ function df_assembler_post_features_enable_feature($component) {
   // Log components as they are enabled.
   watchdog('component', 'df_assembler enabled ' . $component . ' component');
 }
+
+/**
+ * Implements hook_pre_features_rebuild().
+ */
+function df_assembler_pre_features_rebuild($component) {
+  if ($component == 'user_permission') {
+    drupal_static_reset('panelizer_entity_plugin_get_handler');
+  }
+}
+
