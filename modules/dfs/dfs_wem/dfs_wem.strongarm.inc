@@ -28,7 +28,7 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wem_news';
-  $strongarm->value = 'edit-comment';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -275,6 +275,48 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'comment_wem_tweet';
   $strongarm->value = '0';
   $export['comment_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_news';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_news';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_news';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_comment_filter_wem_news';
+  $strongarm->value = 0;
+  $export['entity_translation_comment_filter_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_hide_translation_links_wem_news';
+  $strongarm->value = 0;
+  $export['entity_translation_hide_translation_links_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_node_metadata_wem_news';
+  $strongarm->value = '0';
+  $export['entity_translation_node_metadata_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -660,6 +702,20 @@ function dfs_wem_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_wem_news';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_wem_news';
+  $strongarm->value = '2';
+  $export['language_content_type_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -14,14 +14,14 @@ function df_curator_user_default_roles() {
   $roles['curator'] = array(
     'name' => 'curator',
     'weight' => 3,
-    'machine_name' => '',
+    'machine_name' => 'curator',
   );
 
   // Exported role: reviewer.
   $roles['reviewer'] = array(
     'name' => 'reviewer',
     'weight' => 4,
-    'machine_name' => '',
+    'machine_name' => 'reviewer',
   );
 
   return $roles;

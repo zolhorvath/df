@@ -32,7 +32,7 @@ class DemoFrameworkBaseNodes extends Migration {
 
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
     $this->addFieldMapping('status', 'status')->defaultValue(1);
-
+    $this->addFieldMapping('language', 'language')->defaultValue('en');
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('body', 'body');
     $this->addFieldMapping('body:format')->defaultValue('full_html');

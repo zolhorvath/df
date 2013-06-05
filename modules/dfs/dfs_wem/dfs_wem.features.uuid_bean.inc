@@ -72,12 +72,12 @@ function dfs_wem_uuid_features_default_beans() {
   $beans[] = array(
     'label' => 'WEM - Related Content',
     'description' => NULL,
-    'title' => 'Related Content',
+    'title' => 'Related',
     'type' => 'bean_tax_related',
     'data' => array(
       'view_mode' => 'default',
       'filters' => array(
-        'records_shown' => 4,
+        'records_shown' => 3,
         'offset_results' => 0,
         'vocabulary' => array(
           'interests' => 'interests',
@@ -88,7 +88,6 @@ function dfs_wem_uuid_features_default_beans() {
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
-          'wem_commerce' => 'wem_commerce',
           'wem_contest' => 'wem_contest',
           'wem_news' => 'wem_news',
         ),
@@ -109,7 +108,7 @@ function dfs_wem_uuid_features_default_beans() {
     'revisions' => array(),
     'uuid' => '1f7f9141-0ef2-431b-8c47-8b37b8bee616',
     'filters' => array(
-      'records_shown' => 4,
+      'records_shown' => 3,
       'offset_results' => 0,
       'vocabulary' => array(
         'interests' => 'interests',
@@ -120,7 +119,6 @@ function dfs_wem_uuid_features_default_beans() {
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
-        'wem_commerce' => 'wem_commerce',
         'wem_contest' => 'wem_contest',
         'wem_news' => 'wem_news',
       ),

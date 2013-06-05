@@ -79,6 +79,26 @@ function dfs_wem_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $translatables['wem_commerce_product_reviews'] = array(
+    t('Master'),
+    t('Reviews'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('+ <a href="/node/add/wem-product-review?field_commerce_reference=%1&destination=node/%1">Write your own review!</a>'),
+    t('All'),
+    t('Block'),
+  );
   $export['wem_commerce_product_reviews'] = $view;
 
   $view = new view();
@@ -139,6 +159,24 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['wem_commerce_trips'] = array(
+    t('Master'),
+    t('Trips'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+  );
   $export['wem_commerce_trips'] = $view;
 
   $view = new view();
@@ -218,6 +256,28 @@ function dfs_wem_views_default_views() {
       'fixed' => '',
       'label' => 'OG membership: Group ID',
     ),
+  );
+  $translatables['wem_contestants'] = array(
+    t('Master'),
+    t('Contestants'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('OG membership from user'),
+    t('All'),
+    t('Page'),
+    t('Content pane'),
+    t('View panes'),
   );
   $export['wem_contestants'] = $view;
 
@@ -301,6 +361,27 @@ function dfs_wem_views_default_views() {
       'label' => 'OG membership: Entity id',
     ),
   );
+  $translatables['wem_contests'] = array(
+    t('Master'),
+    t('My Contests'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Group node from OG membership'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['wem_contests'] = $view;
 
   $view = new view();
@@ -361,6 +442,24 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['wem_news_guides'] = array(
+    t('Master'),
+    t('Guides'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+  );
   $export['wem_news_guides'] = $view;
 
   $view = new view();
@@ -515,6 +614,29 @@ function dfs_wem_views_default_views() {
   );
   $handler->display->display_options['filters']['field_user_interests_tid']['vocabulary'] = 'interests';
   $handler->display->display_options['path'] = 'find-travel-buddies';
+  $translatables['wem_travel_friend'] = array(
+    t('Master'),
+    t('Find Travel Buddies'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('<a class="wem-find-friends" href="/find-travel-buddies">Find friends!</a>'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
+    t('Page'),
+    t('Search by Interests'),
+  );
   $export['wem_travel_friend'] = $view;
 
   $view = new view();
@@ -594,6 +716,20 @@ function dfs_wem_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['wem_tweets'] = array(
+    t('Master'),
+    t('WEM Tweets'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('@[field_wem_tweet_from]'),
+    t('<p><a href="http://twitter.com/[field_wem_tweet_from]/status/[field_wem_tweet_id]" target="_blank"><strong>[field_wem_tweet_from]</strong>: [body]</a></p>
+'),
+    t('Block'),
+  );
   $export['wem_tweets'] = $view;
 
   $view = new view();
@@ -647,6 +783,23 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  $translatables['wem_user_picture'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('All'),
+  );
   $export['wem_user_picture'] = $view;
 
   return $export;

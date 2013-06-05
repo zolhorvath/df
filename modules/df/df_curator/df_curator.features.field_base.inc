@@ -25,7 +25,9 @@ function df_curator_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'collection_field',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'collection',
   );
@@ -54,6 +56,9 @@ function df_curator_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => FALSE,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -89,6 +94,7 @@ function df_curator_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',

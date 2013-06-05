@@ -62,6 +62,27 @@ function df_curator_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_comment_filter_article';
+  $strongarm->value = 0;
+  $export['entity_translation_comment_filter_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_hide_translation_links_article';
+  $strongarm->value = 0;
+  $export['entity_translation_hide_translation_links_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_node_metadata_article';
+  $strongarm->value = '0';
+  $export['entity_translation_node_metadata_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__article';
   $strongarm->value = array(
     'view_modes' => array(
@@ -91,6 +112,20 @@ function df_curator_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_article';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_article';
+  $strongarm->value = '2';
+  $export['language_content_type_article'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -155,6 +190,13 @@ function df_curator_strongarm() {
     'ember_no_fadein_effect' => 1,
   );
   $export['theme_ember_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_article';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_article'] = $strongarm;
 
   return $export;
 }

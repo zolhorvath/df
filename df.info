@@ -41,6 +41,7 @@ dependencies[] = df_curator
 dependencies[] = df_engage
 dependencies[] = df_import
 dependencies[] = df_search
+dependencies[] = df_translator
 
 ; System Requirements
 php = 5.3

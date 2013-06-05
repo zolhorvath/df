@@ -519,6 +519,27 @@ projects[search_facetapi][version] = "1.0-beta2"
 projects[search_facetapi][type] = "module"
 projects[search_facetapi][subdir] = "contrib"
 
+; DF Translator
+projects[entity_translation][version] = "1.0-beta2"
+projects[entity_translation][type] = "module"
+projects[entity_translation][subdir] = "contrib"
+
+projects[i18n][version] = "1.8"
+projects[i18n][type] = "module"
+projects[i18n][subdir] = "contrib"
+
+projects[title][version] = "1.0-alpha7"
+projects[title][type] = "module"
+projects[title][subdir] = "contrib"
+
+projects[translation_helpers][version] = "1.0"
+projects[translation_helpers][type] = "module"
+projects[translation_helpers][subdir] = "contrib"
+
+projects[variable][version] = "2.2"
+projects[variable][type] = "module"
+projects[variable][subdir] = "contrib"
+
 ; Libraries
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"

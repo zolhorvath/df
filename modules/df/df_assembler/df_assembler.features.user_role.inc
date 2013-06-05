@@ -14,7 +14,7 @@ function df_assembler_user_default_roles() {
   $roles['marketer'] = array(
     'name' => 'marketer',
     'weight' => 5,
-    'machine_name' => '',
+    'machine_name' => 'marketer',
   );
 
   return $roles;

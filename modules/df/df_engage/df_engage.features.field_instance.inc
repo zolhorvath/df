@@ -56,6 +56,7 @@ function df_engage_field_default_field_instances() {
     'label' => 'Price',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -104,6 +105,7 @@ function df_engage_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -164,6 +166,7 @@ function df_engage_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -216,6 +219,7 @@ function df_engage_field_default_field_instances() {
     'label' => 'Product',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'field_injection' => 1,
       'referenceable_types' => array(
         'product' => 0,

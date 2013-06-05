@@ -83,6 +83,18 @@ function df_curator_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'Homepage Panes';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $translatables['recent_articles'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Most Recent Article'),
+    t('Homepage Panes'),
+    t('Second and Third Most Recent Articles'),
+  );
   $export['recent_articles'] = $view;
 
   return $export;

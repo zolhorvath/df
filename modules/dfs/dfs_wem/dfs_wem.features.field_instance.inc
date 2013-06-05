@@ -77,6 +77,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Price',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -149,6 +150,7 @@ function dfs_wem_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -212,6 +214,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Related Interests',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -258,6 +261,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -304,6 +308,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Related Interests',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -353,6 +358,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Product',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'field_injection' => 1,
       'referenceable_types' => array(
         'product' => 0,
@@ -406,6 +412,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -465,6 +472,7 @@ function dfs_wem_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -516,6 +524,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Related Interests',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -566,6 +575,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Group',
     'required' => FALSE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'view modes' => array(
@@ -631,6 +641,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -676,6 +687,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Site Preview Collection',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -734,6 +746,7 @@ function dfs_wem_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -802,6 +815,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Related Interests',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -847,6 +861,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'flv ogg',
       'max_filesize' => '',
@@ -920,6 +935,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -977,6 +993,7 @@ function dfs_wem_field_default_field_instances() {
           'status' => 1,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1028,6 +1045,7 @@ function dfs_wem_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1088,6 +1106,7 @@ function dfs_wem_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1168,6 +1187,7 @@ function dfs_wem_field_default_field_instances() {
           ),
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1222,6 +1242,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'ID',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1262,6 +1283,7 @@ function dfs_wem_field_default_field_instances() {
     'label' => 'Interests',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => 1,
     ),
     'widget' => array(
