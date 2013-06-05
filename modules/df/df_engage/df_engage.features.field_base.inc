@@ -28,9 +28,7 @@ function df_engage_field_default_field_bases() {
     ),
     'locked' => 1,
     'module' => 'commerce_price',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'commerce_price',
   );
@@ -59,9 +57,6 @@ function df_engage_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -91,7 +86,6 @@ function df_engage_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_product_reference',
     'settings' => array(
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'commerce_product_reference',

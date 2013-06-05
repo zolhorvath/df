@@ -33,7 +33,6 @@ function dfs_wem_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'entity_translation_sync' => FALSE,
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -78,9 +77,6 @@ function dfs_wem_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -116,7 +112,6 @@ function dfs_wem_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -146,9 +141,6 @@ function dfs_wem_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -184,7 +176,6 @@ function dfs_wem_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -219,7 +210,6 @@ function dfs_wem_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -249,9 +239,6 @@ function dfs_wem_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -287,7 +274,6 @@ function dfs_wem_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -322,7 +308,6 @@ function dfs_wem_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -350,9 +335,7 @@ function dfs_wem_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'commerce_product_reference',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'commerce_product_reference',
   );
@@ -380,7 +363,6 @@ function dfs_wem_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'entity_translation_sync' => FALSE,
       'max_length' => 255,
     ),
     'translatable' => 0,
@@ -410,7 +392,6 @@ function dfs_wem_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'entity_translation_sync' => FALSE,
       'max_length' => 50,
     ),
     'translatable' => 0,
@@ -442,9 +423,6 @@ function dfs_wem_field_default_field_bases() {
     'settings' => array(
       'display_default' => 0,
       'display_field' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -472,7 +450,6 @@ function dfs_wem_field_default_field_bases() {
         1 => 'Group',
       ),
       'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',

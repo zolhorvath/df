@@ -520,10 +520,6 @@ projects[search_facetapi][type] = "module"
 projects[search_facetapi][subdir] = "contrib"
 
 ; DF Translator
-projects[entity_translation][version] = "1.0-beta2"
-projects[entity_translation][type] = "module"
-projects[entity_translation][subdir] = "contrib"
-
 projects[i18n][version] = "1.8"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
