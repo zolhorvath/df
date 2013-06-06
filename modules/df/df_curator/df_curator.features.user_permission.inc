@@ -165,6 +165,15 @@ function df_curator_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer scheduler.
+  $permissions['administer scheduler'] = array(
+    'name' => 'administer scheduler',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'scheduler',
+  );
+
   // Exported permission: administer shortcuts.
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
@@ -475,6 +484,16 @@ function df_curator_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
+  // Exported permission: override default scheduler time.
+  $permissions['override default scheduler time'] = array(
+    'name' => 'override default scheduler time',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'scheduler_workbench',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -483,6 +502,16 @@ function df_curator_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: schedule (un)publishing of nodes.
+  $permissions['schedule (un)publishing of nodes'] = array(
+    'name' => 'schedule (un)publishing of nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: switch shortcut sets.

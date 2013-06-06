@@ -101,6 +101,7 @@ function df_assembler_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Identifiers');
   t('Tags');
 
   return $field_instances;

@@ -40,9 +40,12 @@ projects[libraries][version] = "2.1"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
-projects[link][version] = "1.1"
+projects[link][version] = "1.x-dev"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
+projects[link][download][type] = "git"
+projects[link][download][revision] = "6ae1ff0"
+projects[link][download][branch] = "7.x-1.x"
 
 projects[module_filter][version] = "1.7"
 projects[module_filter][type] = "module"
@@ -259,10 +262,6 @@ projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
 projects[nra][subdir] = "contrib"
 
-projects[state_machine][version] = "2.0"
-projects[state_machine][type] = "module"
-projects[state_machine][subdir] = "contrib"
-
 projects[sps][version] = "1.x-dev"
 projects[sps][type] = "module"
 projects[sps][subdir] = "contrib"
@@ -275,6 +274,14 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; SPS should not prevent other modules that use Entity API from working
 ; http://drupal.org/node/1934130
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-3.patch"
+
+projects[scheduler][version] = "1.1"
+projects[scheduler][type] = "module"
+projects[scheduler][subdir] = "contrib"
+
+projects[scheduler_workbench][version] = "1.2"
+projects[scheduler_workbench][type] = "module"
+projects[scheduler_workbench][subdir] = "contrib"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
