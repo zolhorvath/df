@@ -25,7 +25,6 @@ dependencies[] = shortcut
 dependencies[] = taxonomy
 
 ; Contribs
-dependencies[] = devel
 dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = navbar
