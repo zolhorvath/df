@@ -170,14 +170,14 @@ projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
 projects[panopoly_magic][download][type] = "git"
-projects[panopoly_magic][download][revision] = "3a1f8f9"
+projects[panopoly_magic][download][revision] = "16add88"
 projects[panopoly_magic][download][branch] = "7.x-1.x"
 
 projects[panopoly_theme][version] = "1.x-dev"
 projects[panopoly_theme][type] = "module"
 projects[panopoly_theme][subdir] = "contrib"
 projects[panopoly_theme][download][type] = "git"
-projects[panopoly_theme][download][revision] = "b8d3809"
+projects[panopoly_theme][download][revision] = "7715ded"
 projects[panopoly_theme][download][branch] = "7.x-1.x"
 ; Remove makefile from Panopoly Theme
 ; http://drupal.org/node/1904766
@@ -213,6 +213,10 @@ projects[panopoly_wysiwyg][patch][1986308] = "http://drupal.org/files/panopoly_w
 projects[respondjs][version] = "1.1"
 projects[respondjs][type] = "module"
 projects[respondjs][subdir] = "contrib"
+
+projects[webform][version] = "3.19"
+projects[webform][type] = "module"
+projects[webform][subdir] = "contrib"
 
 ; DF Curator
 projects[ckeditor][version] = "1.13"
@@ -422,20 +426,14 @@ projects[uuid_features][version] = "1.x-dev"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "dba29f8"
+projects[uuid_features][download][revision] = "3eace73"
 projects[uuid_features][download][branch] = "7.x-1.x"
-; Add support for Bean exporting (deployable bean instances).
-; http://drupal.org/node/1849668
-projects[uuid_features][patch][1849668] = "http://drupal.org/files/uuid_features-bean_uuid_export_support-1849668-20.patch"
-; Make exporting of uuid terms along with vocabulary optional
-; http://drupal.org/node/1962782
-projects[uuid_features][patch][1962782] = "http://drupal.org/files/uuid_features-term-export-option-variable-1962782-2.patch"
 
 projects[wem][version] = "1.x-dev"
 projects[wem][type] = "module"
 projects[wem][subdir] = "contrib"
 projects[wem][download][type] = "git"
-projects[wem][download][revision] = "85e5b7e"
+projects[wem][download][revision] = "672b690"
 projects[wem][download][branch] = "7.x-1.x"
 
 ; DF Import
@@ -527,6 +525,25 @@ projects[search_facetapi][type] = "module"
 projects[search_facetapi][subdir] = "contrib"
 
 ; DF Translator
+projects[entity_translation][version] = "1.x-dev"
+projects[entity_translation][type] = "module"
+projects[entity_translation][subdir] = "contrib"
+projects[entity_translation][download][type] = "git"
+projects[entity_translation][download][url] = "http://git.drupal.org/project/entity_translation.git"
+projects[entity_translation][download][revision] = "ba653e1"
+projects[entity_translation][download][branch] = "7.x-1.x"
+
+projects[l10n_update][version] = "1.x-dev"
+projects[l10n_update][type] = "module"
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][download][type] = "git"
+projects[l10n_update][download][url] = "http://git.drupal.org/project/l10n_update.git"
+projects[l10n_update][download][revision] = "fa76206"
+projects[l10n_update][download][branch] = "7.x-1.x"
+; site-install fails when installing via a custom install profile
+; https://drupal.org/node/1490664#comment-7510667
+projects[l10n_update][patch][1490664] = "https://drupal.org/files/l10n_update-1490664-fix_pdo_exception-21.patch"
+
 projects[i18n][version] = "1.8"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
@@ -568,14 +585,12 @@ projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
 projects[demonstratie][download][branch] = "7.x-1.x"
+; Black Demonstratie
+;projects[demonstratie][download][revision] = "2c33440"
 
 projects[ember][version] = "1.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-1.x"
-projects[ember][download][revision] = "f16174d"
-
-projects[responsive_bartik][version] = "1.x-dev"
-projects[responsive_bartik][type] = "theme"
-projects[responsive_bartik][subdir] = "contrib"
+projects[ember][download][revision] = "9291cc2"
