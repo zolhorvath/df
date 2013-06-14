@@ -14,6 +14,7 @@ function df_import_migrate_api() {
     'api' => 2,
     'migrations' => array(
       'DemoFrameworkBaseNodes' => array('class_name' => 'DemoFrameworkBaseNodes'),
+      'DemoFrameworkBaseNodesTranslations' => array('class_name' => 'DemoFrameworkBaseNodesTranslations'),
       'DemoFrameworkBaseProducts' => array('class_name' => 'DemoFrameworkBaseProducts'),
       'DemoFrameworkBaseCommerceNodes' => array('class_name' => 'DemoFrameworkBaseCommerceNodes'),
       'DemoFrameworkBaseTerms' => array('class_name' => 'DemoFrameworkBaseTerms'),

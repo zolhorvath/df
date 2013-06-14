@@ -83,6 +83,7 @@ features[variable][] = user_picture_file_size
 features[variable][] = user_picture_style
 features[variable][] = user_pictures
 files[] = df_import.base.nodes.inc
+files[] = df_import.base.nodes.translations.inc
 files[] = df_import.base.products.inc
 files[] = df_import.base.nodes.commerce.inc
 files[] = df_import.base.terms.inc
