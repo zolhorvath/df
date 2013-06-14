@@ -41,6 +41,7 @@ dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
+dependencies[] = webform
 datestamp = 1368554950
 features[ctools][] = field_group:field_group:1
 features[ctools][] = layout:default_layout_region:1
