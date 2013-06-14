@@ -13,20 +13,6 @@ function df_engage_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'bean_ctools_prefix';
-  $strongarm->value = TRUE;
-  $export['bean_ctools_prefix'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'bean_ctools_separate';
-  $strongarm->value = FALSE;
-  $export['bean_ctools_separate'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_commerce';
   $strongarm->value = 0;
   $export['comment_anonymous_commerce'] = $strongarm;

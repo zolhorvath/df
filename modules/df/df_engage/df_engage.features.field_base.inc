@@ -85,8 +85,7 @@ function df_engage_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'commerce_product_reference',
-    'settings' => array(
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'commerce_product_reference',
   );
