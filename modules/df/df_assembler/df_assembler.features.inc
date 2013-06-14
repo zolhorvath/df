@@ -86,10 +86,18 @@ function df_assembler_image_default_styles() {
  */
 function df_assembler_node_info() {
   $items = array(
-    'landing_page' => array(
+    'landing' => array(
       'name' => t('Landing Page'),
       'base' => 'node_content',
       'description' => t('Build <em>landing pages</em> to display content using custom layouts.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'webform' => array(
+      'name' => t('Webform'),
+      'base' => 'node_content',
+      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

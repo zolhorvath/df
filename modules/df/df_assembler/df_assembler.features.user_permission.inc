@@ -19,6 +19,24 @@ function df_assembler_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: access all webform results.
+  $permissions['access all webform results'] = array(
+    'name' => 'access all webform results',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: access bean overview.
+  $permissions['access bean overview'] = array(
+    'name' => 'access bean overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
   // Exported permission: access comments.
   $permissions['access comments'] = array(
     'name' => 'access comments',
@@ -28,6 +46,24 @@ function df_assembler_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
+  );
+
+  // Exported permission: access own webform results.
+  $permissions['access own webform results'] = array(
+    'name' => 'access own webform results',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: access own webform submissions.
+  $permissions['access own webform submissions'] = array(
+    'name' => 'access own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: add media from remote sources.
@@ -48,6 +84,33 @@ function df_assembler_user_default_permissions() {
       'marketer' => 'marketer',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: administer bean settings.
+  $permissions['administer bean settings'] = array(
+    'name' => 'administer bean settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: administer bean types.
+  $permissions['administer bean types'] = array(
+    'name' => 'administer bean types',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: administer beans.
+  $permissions['administer beans'] = array(
+    'name' => 'administer beans',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
   );
 
   // Exported permission: administer blocks.
@@ -198,21 +261,91 @@ function df_assembler_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: administer panelizer node landing_page content.
-  $permissions['administer panelizer node landing_page content'] = array(
-    'name' => 'administer panelizer node landing_page content',
+  // Exported permission: administer panelizer node landing content.
+  $permissions['administer panelizer node landing content'] = array(
+    'name' => 'administer panelizer node landing content',
     'roles' => array(
       'marketer' => 'marketer',
     ),
     'module' => 'panelizer',
   );
 
-  // Exported permission: administer panelizer node landing_page layout.
-  $permissions['administer panelizer node landing_page layout'] = array(
-    'name' => 'administer panelizer node landing_page layout',
+  // Exported permission: administer panelizer node landing context.
+  $permissions['administer panelizer node landing context'] = array(
+    'name' => 'administer panelizer node landing context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing defaults.
+  $permissions['administer panelizer node landing defaults'] = array(
+    'name' => 'administer panelizer node landing defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing layout.
+  $permissions['administer panelizer node landing layout'] = array(
+    'name' => 'administer panelizer node landing layout',
     'roles' => array(
       'marketer' => 'marketer',
     ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing overview.
+  $permissions['administer panelizer node landing overview'] = array(
+    'name' => 'administer panelizer node landing overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node landing settings.
+  $permissions['administer panelizer node landing settings'] = array(
+    'name' => 'administer panelizer node landing settings',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user content.
+  $permissions['administer panelizer user user content'] = array(
+    'name' => 'administer panelizer user user content',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user context.
+  $permissions['administer panelizer user user context'] = array(
+    'name' => 'administer panelizer user user context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user defaults.
+  $permissions['administer panelizer user user defaults'] = array(
+    'name' => 'administer panelizer user user defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user layout.
+  $permissions['administer panelizer user user layout'] = array(
+    'name' => 'administer panelizer user user layout',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user overview.
+  $permissions['administer panelizer user user overview'] = array(
+    'name' => 'administer panelizer user user overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer user user settings.
+  $permissions['administer panelizer user user settings'] = array(
+    'name' => 'administer panelizer user user settings',
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
@@ -264,6 +397,33 @@ function df_assembler_user_default_permissions() {
     'module' => 'panels',
   );
 
+  // Exported permission: create any bean_tax_listing bean.
+  $permissions['create any bean_tax_listing bean'] = array(
+    'name' => 'create any bean_tax_listing bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: create any bean_tax_related bean.
+  $permissions['create any bean_tax_related bean'] = array(
+    'name' => 'create any bean_tax_related bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: create fieldable basic_file.
+  $permissions['create fieldable basic_file'] = array(
+    'name' => 'create fieldable basic_file',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: create fieldable fieldable_panels_pane.
   $permissions['create fieldable fieldable_panels_pane'] = array(
     'name' => 'create fieldable fieldable_panels_pane',
@@ -274,9 +434,72 @@ function df_assembler_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
-  // Exported permission: create landing_page content.
-  $permissions['create landing_page content'] = array(
-    'name' => 'create landing_page content',
+  // Exported permission: create fieldable image.
+  $permissions['create fieldable image'] = array(
+    'name' => 'create fieldable image',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable map.
+  $permissions['create fieldable map'] = array(
+    'name' => 'create fieldable map',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable quick_links.
+  $permissions['create fieldable quick_links'] = array(
+    'name' => 'create fieldable quick_links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable spotlight.
+  $permissions['create fieldable spotlight'] = array(
+    'name' => 'create fieldable spotlight',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable table.
+  $permissions['create fieldable table'] = array(
+    'name' => 'create fieldable table',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable text.
+  $permissions['create fieldable text'] = array(
+    'name' => 'create fieldable text',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create fieldable video.
+  $permissions['create fieldable video'] = array(
+    'name' => 'create fieldable video',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: create landing content.
+  $permissions['create landing content'] = array(
+    'name' => 'create landing content',
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
@@ -284,9 +507,45 @@ function df_assembler_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create page content.
-  $permissions['create page content'] = array(
-    'name' => 'create page content',
+  // Exported permission: create webform content.
+  $permissions['create webform content'] = array(
+    'name' => 'create webform content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete all webform submissions.
+  $permissions['delete all webform submissions'] = array(
+    'name' => 'delete all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: delete any bean_tax_listing bean.
+  $permissions['delete any bean_tax_listing bean'] = array(
+    'name' => 'delete any bean_tax_listing bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: delete any bean_tax_related bean.
+  $permissions['delete any bean_tax_related bean'] = array(
+    'name' => 'delete any bean_tax_related bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: delete any landing content.
+  $permissions['delete any landing content'] = array(
+    'name' => 'delete any landing content',
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
@@ -294,24 +553,22 @@ function df_assembler_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any landing_page content.
-  $permissions['delete any landing_page content'] = array(
-    'name' => 'delete any landing_page content',
+  // Exported permission: delete any webform content.
+  $permissions['delete any webform content'] = array(
+    'name' => 'delete any webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: delete any page content.
-  $permissions['delete any page content'] = array(
-    'name' => 'delete any page content',
+  // Exported permission: delete fieldable basic_file.
+  $permissions['delete fieldable basic_file'] = array(
+    'name' => 'delete fieldable basic_file',
     'roles' => array(
       'administrator' => 'administrator',
-      'marketer' => 'marketer',
     ),
-    'module' => 'node',
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: delete fieldable fieldable_panels_pane.
@@ -324,9 +581,72 @@ function df_assembler_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
-  // Exported permission: delete own landing_page content.
-  $permissions['delete own landing_page content'] = array(
-    'name' => 'delete own landing_page content',
+  // Exported permission: delete fieldable image.
+  $permissions['delete fieldable image'] = array(
+    'name' => 'delete fieldable image',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable map.
+  $permissions['delete fieldable map'] = array(
+    'name' => 'delete fieldable map',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable quick_links.
+  $permissions['delete fieldable quick_links'] = array(
+    'name' => 'delete fieldable quick_links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable spotlight.
+  $permissions['delete fieldable spotlight'] = array(
+    'name' => 'delete fieldable spotlight',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable table.
+  $permissions['delete fieldable table'] = array(
+    'name' => 'delete fieldable table',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable text.
+  $permissions['delete fieldable text'] = array(
+    'name' => 'delete fieldable text',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete fieldable video.
+  $permissions['delete fieldable video'] = array(
+    'name' => 'delete fieldable video',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: delete own landing content.
+  $permissions['delete own landing content'] = array(
+    'name' => 'delete own landing content',
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
@@ -334,9 +654,56 @@ function df_assembler_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own page content.
-  $permissions['delete own page content'] = array(
-    'name' => 'delete own page content',
+  // Exported permission: delete own webform content.
+  $permissions['delete own webform content'] = array(
+    'name' => 'delete own webform content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete own webform submissions.
+  $permissions['delete own webform submissions'] = array(
+    'name' => 'delete own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: edit all webform submissions.
+  $permissions['edit all webform submissions'] = array(
+    'name' => 'edit all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: edit any bean_tax_listing bean.
+  $permissions['edit any bean_tax_listing bean'] = array(
+    'name' => 'edit any bean_tax_listing bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: edit any bean_tax_related bean.
+  $permissions['edit any bean_tax_related bean'] = array(
+    'name' => 'edit any bean_tax_related bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: edit any landing content.
+  $permissions['edit any landing content'] = array(
+    'name' => 'edit any landing content',
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
@@ -344,24 +711,31 @@ function df_assembler_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any landing_page content.
-  $permissions['edit any landing_page content'] = array(
-    'name' => 'edit any landing_page content',
+  // Exported permission: edit any webform content.
+  $permissions['edit any webform content'] = array(
+    'name' => 'edit any webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'marketer' => 'marketer',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: edit any page content.
-  $permissions['edit any page content'] = array(
-    'name' => 'edit any page content',
+  // Exported permission: edit bean view mode.
+  $permissions['edit bean view mode'] = array(
+    'name' => 'edit bean view mode',
     'roles' => array(
       'administrator' => 'administrator',
-      'marketer' => 'marketer',
     ),
-    'module' => 'node',
+    'module' => 'bean',
+  );
+
+  // Exported permission: edit fieldable basic_file.
+  $permissions['edit fieldable basic_file'] = array(
+    'name' => 'edit fieldable basic_file',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: edit fieldable fieldable_panels_pane.
@@ -370,6 +744,69 @@ function df_assembler_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable image.
+  $permissions['edit fieldable image'] = array(
+    'name' => 'edit fieldable image',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable map.
+  $permissions['edit fieldable map'] = array(
+    'name' => 'edit fieldable map',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable quick_links.
+  $permissions['edit fieldable quick_links'] = array(
+    'name' => 'edit fieldable quick_links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable spotlight.
+  $permissions['edit fieldable spotlight'] = array(
+    'name' => 'edit fieldable spotlight',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable table.
+  $permissions['edit fieldable table'] = array(
+    'name' => 'edit fieldable table',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable text.
+  $permissions['edit fieldable text'] = array(
+    'name' => 'edit fieldable text',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: edit fieldable video.
+  $permissions['edit fieldable video'] = array(
+    'name' => 'edit fieldable video',
+    'roles' => array(
+      'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -393,9 +830,9 @@ function df_assembler_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: edit own landing_page content.
-  $permissions['edit own landing_page content'] = array(
-    'name' => 'edit own landing_page content',
+  // Exported permission: edit own landing content.
+  $permissions['edit own landing content'] = array(
+    'name' => 'edit own landing content',
     'roles' => array(
       'administrator' => 'administrator',
       'marketer' => 'marketer',
@@ -403,14 +840,22 @@ function df_assembler_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own page content.
-  $permissions['edit own page content'] = array(
-    'name' => 'edit own page content',
+  // Exported permission: edit own webform content.
+  $permissions['edit own webform content'] = array(
+    'name' => 'edit own webform content',
     'roles' => array(
       'administrator' => 'administrator',
-      'marketer' => 'marketer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit own webform submissions.
+  $permissions['edit own webform submissions'] = array(
+    'name' => 'edit own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: import media.
@@ -442,51 +887,6 @@ function df_assembler_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for comment.
-  $permissions['show format selection for comment'] = array(
-    'name' => 'show format selection for comment',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for commerce_customer_profile.
-  $permissions['show format selection for commerce_customer_profile'] = array(
-    'name' => 'show format selection for commerce_customer_profile',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for commerce_line_item.
-  $permissions['show format selection for commerce_line_item'] = array(
-    'name' => 'show format selection for commerce_line_item',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for commerce_order.
-  $permissions['show format selection for commerce_order'] = array(
-    'name' => 'show format selection for commerce_order',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for commerce_product.
-  $permissions['show format selection for commerce_product'] = array(
-    'name' => 'show format selection for commerce_product',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
   // Exported permission: show format selection for fieldable_panels_pane.
   $permissions['show format selection for fieldable_panels_pane'] = array(
     'name' => 'show format selection for fieldable_panels_pane',
@@ -496,63 +896,9 @@ function df_assembler_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for file.
-  $permissions['show format selection for file'] = array(
-    'name' => 'show format selection for file',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
   // Exported permission: show format selection for node.
   $permissions['show format selection for node'] = array(
     'name' => 'show format selection for node',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for og_membership.
-  $permissions['show format selection for og_membership'] = array(
-    'name' => 'show format selection for og_membership',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for og_membership_type.
-  $permissions['show format selection for og_membership_type'] = array(
-    'name' => 'show format selection for og_membership_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for rules_config.
-  $permissions['show format selection for rules_config'] = array(
-    'name' => 'show format selection for rules_config',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for taxonomy_term.
-  $permissions['show format selection for taxonomy_term'] = array(
-    'name' => 'show format selection for taxonomy_term',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: show format selection for user.
-  $permissions['show format selection for user'] = array(
-    'name' => 'show format selection for user',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -664,6 +1010,44 @@ function df_assembler_user_default_permissions() {
       'marketer' => 'marketer',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: view any bean_tax_listing bean.
+  $permissions['view any bean_tax_listing bean'] = array(
+    'name' => 'view any bean_tax_listing bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: view any bean_tax_related bean.
+  $permissions['view any bean_tax_related bean'] = array(
+    'name' => 'view any bean_tax_related bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: view bean page.
+  $permissions['view bean page'] = array(
+    'name' => 'view bean page',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: view bean revisions.
+  $permissions['view bean revisions'] = array(
+    'name' => 'view bean revisions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bean',
   );
 
   // Exported permission: view files.

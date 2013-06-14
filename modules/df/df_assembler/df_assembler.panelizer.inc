@@ -13,10 +13,10 @@ function df_assembler_panelizer_defaults() {
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:landing_page:default';
+  $panelizer->name = 'node:landing:default';
   $panelizer->title = '';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'landing_page';
+  $panelizer->panelizer_key = 'landing';
   $panelizer->no_blocks = TRUE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -68,7 +68,7 @@ function df_assembler_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:landing_page:default'] = $panelizer;
+  $export['node:landing:default'] = $panelizer;
 
   return $export;
 }

@@ -13,105 +13,70 @@ function df_assembler_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_landing_page';
+  $strongarm->name = 'bean_ctools_prefix';
+  $strongarm->value = TRUE;
+  $export['bean_ctools_prefix'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bean_ctools_separate';
+  $strongarm->value = FALSE;
+  $export['bean_ctools_separate'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_landing';
   $strongarm->value = 0;
-  $export['comment_anonymous_landing_page'] = $strongarm;
+  $export['comment_anonymous_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_page';
-  $strongarm->value = 0;
-  $export['comment_anonymous_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_landing_page';
+  $strongarm->name = 'comment_default_mode_landing';
   $strongarm->value = 1;
-  $export['comment_default_mode_landing_page'] = $strongarm;
+  $export['comment_default_mode_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_page';
-  $strongarm->value = 1;
-  $export['comment_default_mode_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_landing_page';
+  $strongarm->name = 'comment_default_per_page_landing';
   $strongarm->value = '50';
-  $export['comment_default_per_page_landing_page'] = $strongarm;
+  $export['comment_default_per_page_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_page';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_landing_page';
+  $strongarm->name = 'comment_form_location_landing';
   $strongarm->value = 1;
-  $export['comment_form_location_landing_page'] = $strongarm;
+  $export['comment_form_location_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_page';
-  $strongarm->value = 1;
-  $export['comment_form_location_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_landing_page';
+  $strongarm->name = 'comment_landing';
   $strongarm->value = '1';
-  $export['comment_landing_page'] = $strongarm;
+  $export['comment_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_page';
-  $strongarm->value = '0';
-  $export['comment_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_landing_page';
+  $strongarm->name = 'comment_preview_landing';
   $strongarm->value = '1';
-  $export['comment_preview_landing_page'] = $strongarm;
+  $export['comment_preview_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_page';
-  $strongarm->value = '1';
-  $export['comment_preview_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_landing_page';
+  $strongarm->name = 'comment_subject_field_landing';
   $strongarm->value = 1;
-  $export['comment_subject_field_landing_page'] = $strongarm;
+  $export['comment_subject_field_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_page';
-  $strongarm->value = 1;
-  $export['comment_subject_field_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__landing_page';
+  $strongarm->name = 'field_bundle_settings_node__landing';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -154,170 +119,131 @@ function df_assembler_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__landing_page'] = $strongarm;
+  $export['field_bundle_settings_node__landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_landing_page';
+  $strongarm->name = 'language_content_type_landing';
   $strongarm->value = '0';
-  $export['language_content_type_landing_page'] = $strongarm;
+  $export['language_content_type_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_landing_page';
+  $strongarm->name = 'menu_options_landing';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_landing_page'] = $strongarm;
+  $export['menu_options_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_page';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_landing_page';
+  $strongarm->name = 'menu_parent_landing';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_landing_page'] = $strongarm;
+  $export['menu_parent_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_page';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_landing_page';
+  $strongarm->name = 'node_export_reset_author_landing';
   $strongarm->value = FALSE;
-  $export['node_export_reset_author_landing_page'] = $strongarm;
+  $export['node_export_reset_author_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_landing_page';
+  $strongarm->name = 'node_export_reset_book_mlid_landing';
   $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_landing_page'] = $strongarm;
+  $export['node_export_reset_book_mlid_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_landing_page';
+  $strongarm->name = 'node_export_reset_changed_landing';
   $strongarm->value = 1;
-  $export['node_export_reset_changed_landing_page'] = $strongarm;
+  $export['node_export_reset_changed_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_landing_page';
+  $strongarm->name = 'node_export_reset_created_landing';
   $strongarm->value = 1;
-  $export['node_export_reset_created_landing_page'] = $strongarm;
+  $export['node_export_reset_created_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_landing_page';
+  $strongarm->name = 'node_export_reset_last_comment_timestamp_landing';
   $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_landing_page'] = $strongarm;
+  $export['node_export_reset_last_comment_timestamp_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_landing_page';
+  $strongarm->name = 'node_export_reset_menu_landing';
   $strongarm->value = 1;
-  $export['node_export_reset_menu_landing_page'] = $strongarm;
+  $export['node_export_reset_menu_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_landing_page';
+  $strongarm->name = 'node_export_reset_path_landing';
   $strongarm->value = 0;
-  $export['node_export_reset_path_landing_page'] = $strongarm;
+  $export['node_export_reset_path_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_landing_page';
+  $strongarm->name = 'node_export_reset_promote_landing';
   $strongarm->value = 0;
-  $export['node_export_reset_promote_landing_page'] = $strongarm;
+  $export['node_export_reset_promote_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_landing_page';
+  $strongarm->name = 'node_export_reset_revision_timestamp_landing';
   $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_landing_page'] = $strongarm;
+  $export['node_export_reset_revision_timestamp_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_landing_page';
+  $strongarm->name = 'node_export_reset_status_landing';
   $strongarm->value = 0;
-  $export['node_export_reset_status_landing_page'] = $strongarm;
+  $export['node_export_reset_status_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_landing_page';
+  $strongarm->name = 'node_export_reset_sticky_landing';
   $strongarm->value = 0;
-  $export['node_export_reset_sticky_landing_page'] = $strongarm;
+  $export['node_export_reset_sticky_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_landing_page';
+  $strongarm->name = 'node_options_landing';
   $strongarm->value = array(
     0 => 'moderation',
     1 => 'revision',
   );
-  $export['node_options_landing_page'] = $strongarm;
+  $export['node_options_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_page';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_landing_page';
+  $strongarm->name = 'node_preview_landing';
   $strongarm->value = '1';
-  $export['node_preview_landing_page'] = $strongarm;
+  $export['node_preview_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_page';
-  $strongarm->value = '1';
-  $export['node_preview_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_landing_page';
+  $strongarm->name = 'node_submitted_landing';
   $strongarm->value = 1;
-  $export['node_submitted_landing_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_page';
-  $strongarm->value = 0;
-  $export['node_submitted_page'] = $strongarm;
+  $export['node_submitted_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -329,7 +255,7 @@ function df_assembler_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_landing_page';
+  $strongarm->name = 'panelizer_defaults_node_landing';
   $strongarm->value = array(
     'status' => 1,
     'view modes' => array(
@@ -355,77 +281,77 @@ function df_assembler_strongarm() {
       ),
     ),
   );
-  $export['panelizer_defaults_node_landing_page'] = $strongarm;
+  $export['panelizer_defaults_node_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_enable_landing_page';
+  $strongarm->name = 'scheduler_publish_enable_landing';
   $strongarm->value = 1;
-  $export['scheduler_publish_enable_landing_page'] = $strongarm;
+  $export['scheduler_publish_enable_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_moderation_state_landing_page';
+  $strongarm->name = 'scheduler_publish_moderation_state_landing';
   $strongarm->value = 'published';
-  $export['scheduler_publish_moderation_state_landing_page'] = $strongarm;
+  $export['scheduler_publish_moderation_state_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_required_landing_page';
+  $strongarm->name = 'scheduler_publish_required_landing';
   $strongarm->value = 0;
-  $export['scheduler_publish_required_landing_page'] = $strongarm;
+  $export['scheduler_publish_required_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_revision_landing_page';
+  $strongarm->name = 'scheduler_publish_revision_landing';
   $strongarm->value = 0;
-  $export['scheduler_publish_revision_landing_page'] = $strongarm;
+  $export['scheduler_publish_revision_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_touch_landing_page';
+  $strongarm->name = 'scheduler_publish_touch_landing';
   $strongarm->value = 0;
-  $export['scheduler_publish_touch_landing_page'] = $strongarm;
+  $export['scheduler_publish_touch_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_default_time_landing_page';
+  $strongarm->name = 'scheduler_unpublish_default_time_landing';
   $strongarm->value = '';
-  $export['scheduler_unpublish_default_time_landing_page'] = $strongarm;
+  $export['scheduler_unpublish_default_time_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_enable_landing_page';
+  $strongarm->name = 'scheduler_unpublish_enable_landing';
   $strongarm->value = 1;
-  $export['scheduler_unpublish_enable_landing_page'] = $strongarm;
+  $export['scheduler_unpublish_enable_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_moderation_state_landing_page';
+  $strongarm->name = 'scheduler_unpublish_moderation_state_landing';
   $strongarm->value = 'draft';
-  $export['scheduler_unpublish_moderation_state_landing_page'] = $strongarm;
+  $export['scheduler_unpublish_moderation_state_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_required_landing_page';
+  $strongarm->name = 'scheduler_unpublish_required_landing';
   $strongarm->value = 0;
-  $export['scheduler_unpublish_required_landing_page'] = $strongarm;
+  $export['scheduler_unpublish_required_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_unpublish_revision_landing_page';
+  $strongarm->name = 'scheduler_unpublish_revision_landing';
   $strongarm->value = 0;
-  $export['scheduler_unpublish_revision_landing_page'] = $strongarm;
+  $export['scheduler_unpublish_revision_landing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -521,9 +447,9 @@ function df_assembler_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'workbench_moderation_default_state_landing_page';
+  $strongarm->name = 'workbench_moderation_default_state_landing';
   $strongarm->value = 'draft';
-  $export['workbench_moderation_default_state_landing_page'] = $strongarm;
+  $export['workbench_moderation_default_state_landing'] = $strongarm;
 
   return $export;
 }
