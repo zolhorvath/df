@@ -1,6 +1,6 @@
 # @file dfs_wem.sh
 
-drush en dfs_ant dfs_wem -vy
+drush en dfs_wem -vy
 drush mi DFSWEMInterestsTerms
 drush mi DFSWEMUserPictures
 drush mi DFSWEMUsers

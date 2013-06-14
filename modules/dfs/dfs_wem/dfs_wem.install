@@ -10,7 +10,7 @@
  */
 function dfs_wem_install() {
   // Enable custom theme on install.
-  theme_enable(array('krull'));
-  variable_set('theme_default', 'krull');
+  //theme_enable(array('krull'));
+  //variable_set('theme_default', 'krull');
 }
 
