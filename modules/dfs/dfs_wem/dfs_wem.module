@@ -17,6 +17,7 @@ function dfs_wem_migrate_api() {
       'DFSWEMCommerceNodes' => array('class_name' => 'DFSWEMCommerceNodes'),
       'DFSWEMInterestsTerms' => array('class_name' => 'DFSWEMInterestsTerms'),
       'DFSWEMNewsNodes' => array('class_name' => 'DFSWEMNewsNodes'),
+      'DFSWEMNewsNodesTranslations' => array('class_name' => 'DFSWEMNewsNodesTranslations'),
       'DFSWEMNewsVideo' => array('class_name' => 'DFSWEMNewsVideo'),
       'DFSWEMProducts' => array('class_name' => 'DFSWEMProducts'),
       'DFSWEMProductReviewNodes' => array('class_name' => 'DFSWEMProductReviewNodes'),

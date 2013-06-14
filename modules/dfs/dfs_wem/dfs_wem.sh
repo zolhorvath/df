@@ -10,5 +10,6 @@ drush mi DFSWEMProductReviewNodes
 drush mi DFSWEMContestNodes
 drush mi DFSWEMNewsVideo
 drush mi DFSWEMNewsNodes
+drush mi DFSWEMNewsNodesTranslations
 drush mi DFSWEMTweetNodes
 drush tei-rebuild
