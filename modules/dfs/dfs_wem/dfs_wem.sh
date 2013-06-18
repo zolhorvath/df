@@ -6,8 +6,10 @@ drush mi DFSWEMUserPictures
 drush mi DFSWEMUsers
 drush mi DFSWEMProducts
 drush mi DFSWEMCommerceNodes
+drush mi DFSWEMCommerceNodesTranslations
 drush mi DFSWEMProductReviewNodes
 drush mi DFSWEMContestNodes
+drush mi DFSWEMContestNodesTranslations
 drush mi DFSWEMNewsVideo
 drush mi DFSWEMNewsNodes
 drush mi DFSWEMNewsNodesTranslations

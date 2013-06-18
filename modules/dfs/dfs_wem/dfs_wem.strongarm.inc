@@ -21,7 +21,7 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wem_contest';
-  $strongarm->value = 'edit-comment';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_wem_contest'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -431,20 +431,6 @@ function dfs_wem_strongarm() {
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '6',
-            'visible' => FALSE,
-          ),
-          'teaser' => array(
-            'weight' => '4',
-            'visible' => FALSE,
-          ),
-          'featured' => array(
-            'weight' => '2',
-            'visible' => FALSE,
-          ),
-        ),
-        'product:title' => array(
-          'default' => array(
             'weight' => '7',
             'visible' => FALSE,
           ),
@@ -453,27 +439,41 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '4',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),
-        'product:status' => array(
+        'product:title' => array(
           'default' => array(
             'weight' => '8',
             'visible' => FALSE,
           ),
           'teaser' => array(
-            'weight' => '8',
+            'weight' => '6',
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '8',
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:status' => array(
+          'default' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
+          'featured' => array(
+            'weight' => '9',
             'visible' => FALSE,
           ),
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -487,7 +487,7 @@ function dfs_wem_strongarm() {
         ),
         'product:field_images' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -501,7 +501,21 @@ function dfs_wem_strongarm() {
         ),
         'product:field_wem_product_interests' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'featured' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+        ),
+        'language' => array(
+          'default' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -509,7 +523,7 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '3',
+            'weight' => '2',
             'visible' => FALSE,
           ),
         ),
@@ -545,6 +559,9 @@ function dfs_wem_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -552,7 +569,22 @@ function dfs_wem_strongarm() {
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'language' => array(
+          'default' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'featured' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__wem_contest'] = $strongarm;
@@ -682,6 +714,20 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'i18n_sync_node_type_wem_news';
   $strongarm->value = array();
   $export['i18n_sync_node_type_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_wem_commerce';
+  $strongarm->value = '2';
+  $export['language_content_type_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_wem_contest';
+  $strongarm->value = '2';
+  $export['language_content_type_wem_contest'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1035,20 +1081,6 @@ function dfs_wem_strongarm() {
     ),
   );
   $export['panelizer_defaults_node_wem_tweet'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'purr_messages_admin_path';
-  $strongarm->value = TRUE;
-  $export['purr_messages_admin_path'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'purr_messages_explicit';
-  $strongarm->value = TRUE;
-  $export['purr_messages_explicit'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
