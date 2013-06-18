@@ -283,8 +283,6 @@ function dfs_wem_default_salesforce_mapping() {
     ],
     "push_async" : "0",
     "push_batch" : "0",
-    "created" : "1368819803",
-    "updated" : "1371242016",
     "weight" : "0",
     "locked" : "0",
     "rdf_mapping" : []

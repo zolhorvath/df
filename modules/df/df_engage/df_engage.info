@@ -51,6 +51,7 @@ dependencies[] = og
 dependencies[] = og_ui
 dependencies[] = options
 dependencies[] = page_manager
+dependencies[] = purr_messages
 dependencies[] = rpx_core
 dependencies[] = rpx_ui
 dependencies[] = rpx_widgets

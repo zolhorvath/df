@@ -422,5 +422,16 @@ function dfs_wem_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
+  // Exported permission: view purr messages.
+  $permissions['view purr messages'] = array(
+    'name' => 'view purr messages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'purr_messages',
+  );
+
   return $permissions;
 }

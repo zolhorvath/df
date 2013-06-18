@@ -760,7 +760,7 @@ function dfs_wem_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
           'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
+          'media_internet' => 'media_internet',
           'upload' => 'upload',
           'youtube' => 0,
         ),

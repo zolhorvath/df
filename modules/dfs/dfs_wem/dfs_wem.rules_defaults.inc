@@ -12,7 +12,7 @@ function dfs_wem_default_rules_configuration() {
   $items['rules_add_visit_data_to_marketo'] = entity_import('rules_config', '{ "rules_add_visit_data_to_marketo" : {
       "LABEL" : "Add visit data to Marketo",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "rules", "marketo_ma", "og" ],
+      "REQUIRES" : [ "rules", "marketo_ma", "purr_messages", "og" ],
       "ON" : [ "og_user_insert" ],
       "DO" : [
         { "variable_add" : {
@@ -27,7 +27,8 @@ function dfs_wem_default_rules_configuration() {
             "PROVIDE" : { "variable_added" : { "marketoparams" : "Marketo Parameters" } }
           }
         },
-        { "add_lead" : { "account" : [ "site:current-user" ], "data" : [ "marketoparams" ] } }
+        { "add_lead" : { "account" : [ "site:current-user" ], "data" : [ "marketoparams" ] } },
+        { "purr_message" : { "message" : "Transmitted lead scoring to Marketo." } }
       ]
     }
   }');

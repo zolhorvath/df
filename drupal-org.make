@@ -28,7 +28,7 @@ projects[entity][version] = "1.0"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 
-projects[features][version] = "2.0-beta2"
+projects[features][version] = "2.0-rc1"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 
@@ -392,6 +392,10 @@ projects[mollom][subdir] = "contrib"
 projects[og][version] = "2.1"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
+
+projects[purr_messages][version] = "2.0-beta3"
+projects[purr_messages][type] = "module"
+projects[purr_messages][subdir] = "contrib"
 
 projects[rpx][version] = "2.x-dev"
 projects[rpx][type] = "module"

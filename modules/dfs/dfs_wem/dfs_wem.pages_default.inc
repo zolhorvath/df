@@ -43,6 +43,8 @@ function dfs_wem_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'action',
@@ -101,7 +103,10 @@ function dfs_wem_default_page_manager_pages() {
   $page->admin_title = 'Guides';
   $page->admin_description = '';
   $page->path = 'guides';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Guides',
@@ -254,7 +259,10 @@ function dfs_wem_default_page_manager_pages() {
   $page->admin_title = 'DF WEM Scenario Home';
   $page->admin_description = 'Homepage panel for the Demo Framework WEM Scenario.';
   $page->path = 'df-wem-home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -648,7 +656,10 @@ elseif($user->uid != 1) {
   $page->admin_title = 'Trips';
   $page->admin_description = '';
   $page->path = 'trips';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Trips',

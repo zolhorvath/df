@@ -1039,6 +1039,20 @@ function dfs_wem_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_admin_path';
+  $strongarm->value = TRUE;
+  $export['purr_messages_admin_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_explicit';
+  $strongarm->value = TRUE;
+  $export['purr_messages_explicit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'rpx_attach_share_link_to_comments_wem_commerce';
   $strongarm->value = 0;
   $export['rpx_attach_share_link_to_comments_wem_commerce'] = $strongarm;
