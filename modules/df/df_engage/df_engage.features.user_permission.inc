@@ -183,6 +183,15 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
+  // Exported permission: administer purr messages.
+  $permissions['administer purr messages'] = array(
+    'name' => 'administer purr messages',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'purr_messages',
+  );
+
   // Exported permission: administer rules.
   $permissions['administer rules'] = array(
     'name' => 'administer rules',
@@ -685,6 +694,17 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'commerce_payment',
+  );
+
+  // Exported permission: view purr messages.
+  $permissions['view purr messages'] = array(
+    'name' => 'view purr messages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'purr_messages',
   );
 
   return $permissions;

@@ -253,6 +253,69 @@ function df_engage_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_admin_path';
+  $strongarm->value = TRUE;
+  $export['purr_messages_admin_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_explicit';
+  $strongarm->value = TRUE;
+  $export['purr_messages_explicit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_fade_in';
+  $strongarm->value = 1200;
+  $export['purr_messages_fade_in'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_fade_out';
+  $strongarm->value = 2000;
+  $export['purr_messages_fade_out'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_hover';
+  $strongarm->value = TRUE;
+  $export['purr_messages_hover'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_pages';
+  $strongarm->value = '';
+  $export['purr_messages_pages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_timer';
+  $strongarm->value = 5000;
+  $export['purr_messages_timer'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_transparent';
+  $strongarm->value = TRUE;
+  $export['purr_messages_transparent'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'purr_messages_visibility';
+  $strongarm->value = 0;
+  $export['purr_messages_visibility'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'rpx_accounts_string';
   $strongarm->value = 'Linked accounts';
   $export['rpx_accounts_string'] = $strongarm;
