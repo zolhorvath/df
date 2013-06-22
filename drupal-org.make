@@ -109,6 +109,10 @@ projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
 ; DF Assembler
+projects[adaptive_image][version] = "1.4"
+projects[adaptive_image][type] = "module"
+projects[adaptive_image][subdir] = "contrib"
+
 projects[bean][version] = "1.x-dev"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
@@ -274,7 +278,7 @@ projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; UX Improvements
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-10.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-14.patch"
 
 projects[linkit][version] = "2.6"
 projects[linkit][type] = "module"
@@ -389,7 +393,7 @@ projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
 
-projects[og][version] = "2.1"
+projects[og][version] = "2.2"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
