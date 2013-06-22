@@ -23,9 +23,9 @@ class DemoFrameworkBaseCommerceNodes extends DemoFrameworkBaseNodes {
       MigrateDestinationNode::getKeySchema()
     );
 
-    $import_path = drupal_get_path('module', 'df_import') . '/import/';
+    $this->dependencies = array('DemoFrameworkBaseProducts');
 
-    // Create a MigrateSource object.
+    $import_path = drupal_get_path('module', 'df_import') . '/import/';
     $this->source = new MigrateSourceCSV($import_path . 'df_import.base.nodes.commerce.csv', $this->csvcolumns(), array('header_rows' => 1));
 
     $this->destination = new MigrateDestinationNode('commerce');
