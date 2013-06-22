@@ -44,22 +44,23 @@ function df_assembler_image_default_styles() {
   $styles['letterbox'] = array(
     'name' => 'letterbox',
     'effects' => array(
-      2 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
+      5 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
         'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 960,
-          'height' => 720,
+          'width' => 2400,
+          'height' => '',
+          'upscale' => 1,
         ),
-        'weight' => 1,
+        'weight' => -10,
       ),
-      3 => array(
+      6 => array(
         'label' => 'Crop',
         'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
         'effect callback' => 'image_crop_effect',
@@ -69,11 +70,29 @@ function df_assembler_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => 960,
-          'height' => 720,
+          'width' => 2400,
+          'height' => 1111,
           'anchor' => 'center-center',
         ),
-        'weight' => 2,
+        'weight' => -9,
+      ),
+      3 => array(
+        'label' => 'Adaptive',
+        'help' => 'Adaptive image scale according to client resolution.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'adaptive_image_scale_form',
+        'summary theme' => 'adaptive_image_scale_summary',
+        'module' => 'adaptive_image',
+        'name' => 'adaptive_image',
+        'data' => array(
+          'resolutions' => '1382, 992, 768, 480',
+          'mobile_first' => 1,
+          'height' => '',
+          'width' => 1382,
+          'upscale' => '',
+        ),
+        'weight' => -8,
       ),
     ),
   );
