@@ -47,6 +47,14 @@ function df_engage_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'organic_group' => array(
+      'name' => t('Organic Group'),
+      'base' => 'node_content',
+      'description' => t('An <em>Organic Group</em> that users may join and add content to.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }
