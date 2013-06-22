@@ -23,6 +23,7 @@ function dfs_wem_page_reset() {
     'DFSWEMProductReviewNodes',
     'DFSWEMContestNodes',
     'DFSWEMContestNodesTranslations',
+    'DFSWEMGroupsWEMContestUsers',
     'DFSWEMNewsVideo',
     'DFSWEMNewsNodes',
     'DFSWEMNewsNodesTranslations',

@@ -9,7 +9,9 @@ class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodes {
 
   public function __construct() {
     parent::__construct();
-    $this->description = t('Import product review nodes.');
+    $this->description = t('Import product reviews for WEM Commerce nodes.');
+
+    $this->dependencies = array('DFSWEMCommerceNodes');
 
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
 

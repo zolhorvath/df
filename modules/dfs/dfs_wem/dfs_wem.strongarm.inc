@@ -318,6 +318,15 @@ function dfs_wem_strongarm() {
       'node_featured' => array(
         'custom_settings' => TRUE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'commerce_line_item_token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'node_token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -404,7 +413,7 @@ function dfs_wem_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -419,7 +428,7 @@ function dfs_wem_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -442,6 +451,14 @@ function dfs_wem_strongarm() {
             'weight' => '3',
             'visible' => FALSE,
           ),
+          'full' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
         ),
         'product:title' => array(
           'default' => array(
@@ -454,6 +471,14 @@ function dfs_wem_strongarm() {
           ),
           'featured' => array(
             'weight' => '5',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),
@@ -470,6 +495,14 @@ function dfs_wem_strongarm() {
             'weight' => '9',
             'visible' => FALSE,
           ),
+          'full' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
         ),
         'product:commerce_price' => array(
           'default' => array(
@@ -483,6 +516,14 @@ function dfs_wem_strongarm() {
           'featured' => array(
             'weight' => '1',
             'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
         'product:field_images' => array(
@@ -498,6 +539,14 @@ function dfs_wem_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
         ),
         'product:field_wem_product_interests' => array(
           'default' => array(
@@ -509,6 +558,14 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
+          'token' => array(
             'weight' => '4',
             'visible' => FALSE,
           ),
@@ -524,6 +581,14 @@ function dfs_wem_strongarm() {
           ),
           'featured' => array(
             'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),

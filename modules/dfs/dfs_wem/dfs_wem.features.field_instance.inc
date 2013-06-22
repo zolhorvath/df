@@ -100,7 +100,7 @@ function dfs_wem_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'letterbox',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -116,7 +116,7 @@ function dfs_wem_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_full',
+          'image_style' => 'letterbox',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -126,7 +126,7 @@ function dfs_wem_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'letterbox',
         ),
         'type' => 'image',
         'weight' => 3,
@@ -136,7 +136,7 @@ function dfs_wem_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'letterbox',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -242,6 +242,17 @@ function dfs_wem_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 7,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'direct',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -250,6 +261,12 @@ function dfs_wem_field_default_field_instances() {
         ),
         'type' => 'text_summary_or_trimmed',
         'weight' => 2,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -292,11 +309,23 @@ function dfs_wem_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 7,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -341,11 +370,37 @@ function dfs_wem_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 6,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_cart',
+        'settings' => array(
+          'combine' => TRUE,
+          'default_quantity' => 1,
+          'line_item_type' => 'product',
+          'show_quantity' => FALSE,
+          'show_single_product_attributes' => FALSE,
+        ),
+        'type' => 'commerce_cart_add_to_cart_form',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 8,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_cart',
+        'settings' => array(
+          'combine' => TRUE,
+          'default_quantity' => 1,
+          'line_item_type' => 'product',
+          'show_quantity' => FALSE,
+          'show_single_product_attributes' => FALSE,
+        ),
+        'type' => 'commerce_cart_add_to_cart_form',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
