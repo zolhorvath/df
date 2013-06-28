@@ -55,14 +55,11 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "184ce30"
+projects[navbar][download][revision] = "dd542e1"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/navbar-contrib-icons-1954912-6.patch"
-; In vertical orientation, menu cannot scroll past viewport bounds
-; http://drupal.org/node/1971902
-projects[navbar][patch][1971902] = "http://drupal.org/files/navbar-vertical-scroll-1971902-6.patch"
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][type] = "module"
@@ -72,9 +69,12 @@ projects[pm_existing_pages][version] = "1.4"
 projects[pm_existing_pages][type] = "module"
 projects[pm_existing_pages][subdir] = "contrib"
 
-projects[responsive_preview][version] = "1.0-beta1"
+projects[responsive_preview][version] = "1.x-dev"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
+projects[responsive_preview][download][type] = "git"
+projects[responsive_preview][download][revision] = "94cdec7"
+projects[responsive_preview][download][branch] = "7.x-1.x"
 
 projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
@@ -124,7 +124,7 @@ projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 projects[bean_tax][download][type] = "git"
-projects[bean_tax][download][revision] = "84f57fb"
+projects[bean_tax][download][revision] = "eb186b5"
 projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[fape][version] = "1.x-dev"
@@ -264,7 +264,7 @@ projects[edit][download][revision] = "cf62974"
 projects[edit][download][branch] = "7.x-1.x"
 ; Backport of Edit button for navbar
 ; http://drupal.org/node/1994256
-projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-2.patch"
+projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-13.patch"
 ; Editing a video file is perceived as broken due to conflicts with embedded
 ; media players.
 ; http://drupal.org/node/1990560
@@ -278,7 +278,7 @@ projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; UX Improvements
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-14.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-18.patch"
 
 projects[linkit][version] = "2.6"
 projects[linkit][type] = "module"
@@ -387,7 +387,7 @@ projects[marketo_ma][download][type] = "git"
 projects[marketo_ma][download][branch] = "7.x-1.x"
 projects[marketo_ma][download][revision] = "9df5dd3"
 projects[marketo_ma][download][url] = "http://git.drupal.org/sandbox/jyokum/1949342.git"
-projects[marketo_ma][patch][1979856] = "http://drupal.org/files/marketo_ma-rules.patch"
+projects[marketo_ma][patch][1979856] = "https://drupal.org/files/1949342-added-beginnings-1979856-3.patch"
 
 projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
@@ -434,7 +434,7 @@ projects[uuid_features][version] = "1.x-dev"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "3eace73"
+projects[uuid_features][download][revision] = "d34d00f"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
 projects[wem][version] = "1.x-dev"
