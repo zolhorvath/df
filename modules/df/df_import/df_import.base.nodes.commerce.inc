@@ -7,8 +7,8 @@
 
 class DemoFrameworkBaseCommerceNodes extends DemoFrameworkBaseNodes {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import commerce product nodes.');
 
     // Create a map object for tracking the relationships between source rows
