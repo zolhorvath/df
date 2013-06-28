@@ -7,8 +7,8 @@
 
 class DFSWEMUsers extends DemoFrameworkBaseUsers {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import DFS WEM Users');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
     $this->source = new MigrateSourceCSV($import_path . 'dfs_wem.users.csv', $this->csvcolumns(), array('header_rows' => 1));
@@ -42,8 +42,8 @@ class DFSWEMUsers extends DemoFrameworkBaseUsers {
 }
 
 class DFSWEMUserPictures extends DemoFrameworkBaseUserPictures {
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
     $this->source = new MigrateSourceCSV($import_path . 'dfs_wem.users.csv', $this->csvcolumns(), array('header_rows' => 1));
     $this->addFieldMapping('source_dir')->defaultValue($import_path . 'images');

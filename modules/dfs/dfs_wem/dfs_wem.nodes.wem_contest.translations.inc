@@ -7,8 +7,8 @@
 
 class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodes {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import translated nodes.');
 
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';

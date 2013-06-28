@@ -7,8 +7,8 @@
 
 class DFSWEMTweetNodes extends DemoFrameworkBaseNodes {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import nodes.');
 
     // Create a map object for tracking the relationships between source rows

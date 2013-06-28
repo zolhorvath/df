@@ -434,7 +434,7 @@ function dfs_wem_default_page_manager_pages() {
     $pane->pid = 'new-8';
     $pane->panel = 'header_b';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-2';
+    $pane->subtype = 'bean-wem-home---news-item-1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -562,7 +562,7 @@ elseif($user->uid != 1) {
     $pane->pid = 'new-12';
     $pane->panel = 'subheader_a';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-1';
+    $pane->subtype = 'bean-wem-home---news-item-2';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

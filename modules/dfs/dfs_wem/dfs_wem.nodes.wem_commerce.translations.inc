@@ -7,8 +7,8 @@
 
 class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
 
-  public function __construct() {
-    parent::__construct();
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import translated WEM Commerce product nodes.');
     $this->dependencies = array('DFSWEMProducts');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
