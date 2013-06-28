@@ -21,10 +21,11 @@ function df_engage_install() {
       'weight' => 0,
       'region' => 'header_second',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
   );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'title', 'cache'));
   foreach ($blocks as $block) {
     $query->values($block);
   }
