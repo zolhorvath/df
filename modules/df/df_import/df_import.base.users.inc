@@ -8,8 +8,8 @@
 
 class DemoFrameworkBaseUsers extends Migration {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
 
     $this->map = new MigrateSQLMap($this->machineName,
       array(
@@ -61,8 +61,8 @@ class DemoFrameworkBaseUsers extends Migration {
 }
 
 class DemoFrameworkBaseUserPictures extends Migration {
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'picture' => array(

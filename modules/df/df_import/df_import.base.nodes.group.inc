@@ -7,8 +7,8 @@
 
 class DemoFrameworkBaseNodesGroup extends Migration {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->description = t('Import Group Nodes.');
 
     // Create a map object for tracking the relationships between source rows

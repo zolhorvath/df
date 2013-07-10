@@ -7,8 +7,8 @@
 
 class DemoFrameworkBaseNodesTranslations extends Migration {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->description = t('Import node translations.');
 
     $this->dependencies = array('DemoFrameworkBaseNodes');

@@ -6,8 +6,8 @@
  */
 
 class DemoFrameworkBaseGroups extends Migration {
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
 
     $this->map = new MigrateSQLMap($this->machineName,
       array(
