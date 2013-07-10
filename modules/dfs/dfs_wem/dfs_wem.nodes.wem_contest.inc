@@ -7,8 +7,8 @@
 
 class DFSWEMContestNodes extends DemoFrameworkBaseNodes {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->description = t('Import nodes.');
 
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';

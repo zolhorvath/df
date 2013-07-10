@@ -7,8 +7,8 @@
 
 class DFSDMUsers extends DemoFrameworkBaseUsers {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->description = t('Import DFS DM Users');
     $this->source = new MigrateSourceCSV(drupal_get_path('module', 'dfs_dm') . '/import/dfs_dm.users.csv', $this->csvcolumns(), array('header_rows' => 1));
   }

@@ -7,8 +7,8 @@
 
 class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodes {
 
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->description = t('Import product reviews for WEM Commerce nodes.');
 
     $this->dependencies = array('DFSWEMCommerceNodes');

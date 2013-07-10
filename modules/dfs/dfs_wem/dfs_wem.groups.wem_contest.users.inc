@@ -6,8 +6,8 @@
  */
 
 class DFSWEMGroupsWEMContestUsers extends DemoFrameworkBaseGroups {
-  public function __construct($arguments) {
-    parent::__construct($arguments);
+  public function __construct($arguments = array()) {
+    parent::__construct($arguments = array());
     $this->dependencies = array('DFSWEMContestNodes', 'DFSWEMUsers');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
     $this->source = new MigrateSourceCSV($import_path . 'dfs_wem.groups.wem_contest.users.csv', $this->csvcolumns(), array('header_rows' => 1));
