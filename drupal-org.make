@@ -124,7 +124,7 @@ projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 projects[bean_tax][download][type] = "git"
-projects[bean_tax][download][revision] = "eb186b5"
+projects[bean_tax][download][revision] = "f796c8e"
 projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[fape][version] = "1.x-dev"
@@ -301,13 +301,12 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; http://drupal.org/node/1934130
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-3.patch"
 
-projects[scheduler][version] = "1.1"
-projects[scheduler][type] = "module"
-projects[scheduler][subdir] = "contrib"
-
-projects[scheduler_workbench][version] = "1.2"
-projects[scheduler_workbench][type] = "module"
-projects[scheduler_workbench][subdir] = "contrib"
+projects[revision_scheduler][version] = "1.x-dev"
+projects[revision_scheduler][type] = "module"
+projects[revision_scheduler][subdir] = "contrib"
+projects[revision_scheduler][download][type] = "git"
+projects[revision_scheduler][download][revision] = "ab04410"
+projects[revision_scheduler][download][branch] = "7.x-1.x"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
@@ -381,13 +380,9 @@ projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
+projects[marketo_ma][version] = "1.1"
 projects[marketo_ma][type] = "module"
 projects[marketo_ma][subdir] = "contrib"
-projects[marketo_ma][download][type] = "git"
-projects[marketo_ma][download][branch] = "7.x-1.x"
-projects[marketo_ma][download][revision] = "9df5dd3"
-projects[marketo_ma][download][url] = "http://git.drupal.org/sandbox/jyokum/1949342.git"
-projects[marketo_ma][patch][1979856] = "https://drupal.org/files/1949342-added-beginnings-1979856-3.patch"
 
 projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
@@ -441,8 +436,8 @@ projects[wem][version] = "1.x-dev"
 projects[wem][type] = "module"
 projects[wem][subdir] = "contrib"
 projects[wem][download][type] = "git"
-projects[wem][download][revision] = "672b690"
 projects[wem][download][branch] = "7.x-1.x"
+projects[wem][download][revision] = "0c8e49d"
 
 ; DF Import
 projects[feeds][version] = "2.0-alpha7"
@@ -524,15 +519,19 @@ projects[rich_snippets][download][url] = "http://git.drupal.org/project/rich_sni
 projects[rich_snippets][download][revision] = "fad5697"
 projects[rich_snippets][download][branch] = "7.x-1.x"
 
+projects[schemaorg][version] = "1.0-beta3"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
-projects[schemaorg][version] = "1.0-beta3"
 
 projects[search_facetapi][version] = "1.0-beta2"
 projects[search_facetapi][type] = "module"
 projects[search_facetapi][subdir] = "contrib"
 
 ; DF Translator
+projects[domain][version] = "3.10"
+projects[domain][type] = "module"
+projects[domain][subdir] = "contrib"
+
 projects[entity_translation][version] = "1.x-dev"
 projects[entity_translation][type] = "module"
 projects[entity_translation][subdir] = "contrib"
