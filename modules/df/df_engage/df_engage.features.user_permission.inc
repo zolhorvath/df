@@ -48,6 +48,15 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: admin wem.
+  $permissions['admin wem'] = array(
+    'name' => 'admin wem',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'wem',
+  );
+
   // Exported permission: administer checkout.
   $permissions['administer checkout'] = array(
     'name' => 'administer checkout',
@@ -740,6 +749,24 @@ function df_engage_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'purr_messages',
+  );
+
+  // Exported permission: wem admin segments.
+  $permissions['wem admin segments'] = array(
+    'name' => 'wem admin segments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'wem_segment',
+  );
+
+  // Exported permission: wem node segments.
+  $permissions['wem node segments'] = array(
+    'name' => 'wem node segments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'wem_segment',
   );
 
   return $permissions;

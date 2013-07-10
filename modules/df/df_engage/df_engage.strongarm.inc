@@ -322,22 +322,7 @@ function df_engage_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
-      'full' => array(
-        'status' => 0,
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'diff_standard' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'token' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -611,6 +596,59 @@ After confirming your email address, you will be able to log in to [site:name] u
   $strongarm->name = 'salesforce_pull_limit';
   $strongarm->value = 50;
   $export['salesforce_pull_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_analytics_ga';
+  $strongarm->value = 0;
+  $export['wem_analytics_ga'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_debug_mode';
+  $strongarm->value = 0;
+  $export['wem_debug_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_pages_dont_track';
+  $strongarm->value = array(
+    0 => '/admin/',
+  );
+  $export['wem_pages_dont_track'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_track_content_type_organic_group';
+  $strongarm->value = 'organic_group';
+  $export['wem_track_content_type_organic_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_track_user_role_anonymous_user';
+  $strongarm->value = 'anonymous user';
+  $export['wem_track_user_role_anonymous_user'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_track_user_role_authenticated_user';
+  $strongarm->value = 'authenticated user';
+  $export['wem_track_user_role_authenticated_user'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'wem_users_dont_track';
+  $strongarm->value = array(
+    0 => 'admin',
+  );
+  $export['wem_users_dont_track'] = $strongarm;
 
   return $export;
 }
