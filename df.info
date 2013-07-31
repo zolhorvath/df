@@ -25,6 +25,7 @@ dependencies[] = shortcut
 dependencies[] = taxonomy
 
 ; Contribs
+dependencies[] = demonstratie_panels
 dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = navbar

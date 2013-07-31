@@ -298,7 +298,7 @@ function dfs_wem_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'responsive:dfs_wem_responsive';
+  $display->layout = 'demonstratie_layout_landing';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -334,6 +334,23 @@ function dfs_wem_default_page_manager_pages() {
       'footer_a' => NULL,
       'footer_b' => NULL,
       'footer_c' => NULL,
+      'primary_features' => NULL,
+      'secondary_features' => NULL,
+      'tertiary_features' => NULL,
+      'secondary_supplements' => NULL,
+      'tertiary_supplements' => NULL,
+    ),
+    'quaternary_features' => array(
+      'style' => '0',
+    ),
+    'primary_supplements' => array(
+      'style' => '0',
+    ),
+    'secondary_supplements' => array(
+      'style' => '0',
+    ),
+    'tertiary_supplements' => array(
+      'style' => '0',
     ),
   );
   $display->cache = array();
@@ -342,9 +359,37 @@ function dfs_wem_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'body';
+    $pane->panel = 'primary_features';
+    $pane->type = 'block';
+    $pane->subtype = 'bean-wem---user-related-news-item';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'title' => 'hidden',
+        'hero' => 1,
+        'layouts' => 'default',
+        'styles' => 'feature_large',
+        'color_schemes' => 'default',
+      ),
+      'style' => 'demonstratie_panels_styles',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['primary_features'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'primary_supplements';
     $pane->type = 'views';
-    $pane->subtype = 'wem_tweets';
+    $pane->subtype = 'wem_videos';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -360,81 +405,31 @@ function dfs_wem_default_page_manager_pages() {
       'args' => '',
       'url' => '',
       'display' => 'block',
-      'override_title' => 1,
-      'override_title_text' => 'WorldTravelNexus on Twitter',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['body'][0] = 'new-5';
-    $pane = new stdClass();
-    $pane->pid = 'new-6';
-    $pane->panel = 'body';
-    $pane->type = 'views';
-    $pane->subtype = 'wem_contests';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 1,
-      'nodes_per_page' => '4',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'default',
-      'context' => array(
-        0 => 'context_user_1.uid',
-      ),
       'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['body'][1] = 'new-6';
-    $pane = new stdClass();
-    $pane->pid = 'new-7';
-    $pane->panel = 'header_a';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---featured-product-1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'title' => 'inline',
+        'hero' => 0,
+        'layouts' => 'horizontal',
+        'styles' => 'feature_small',
+        'color_schemes' => 'reverse',
+      ),
+      'style' => 'demonstratie_panels_styles',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['header_a'][0] = 'new-7';
+    $display->content['new-6'] = $pane;
+    $display->panels['primary_supplements'][0] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
-    $pane->panel = 'header_b';
+    $pane->pid = 'new-7';
+    $pane->panel = 'quaternary_features';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-1';
+    $pane->subtype = 'bean-wem---user-related-news';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -443,19 +438,94 @@ function dfs_wem_default_page_manager_pages() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'title' => 'hidden',
+        'hero' => 0,
+        'layouts' => 'horizontal',
+        'styles' => 'feature_small',
+        'color_schemes' => 'alternate',
+      ),
+      'style' => 'demonstratie_panels_styles',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-7'] = $pane;
+    $display->panels['quaternary_features'][0] = 'new-7';
+    $pane = new stdClass();
+    $pane->pid = 'new-8';
+    $pane->panel = 'secondary_features';
+    $pane->type = 'block';
+    $pane->subtype = 'bean-wem---user-related-product-prima';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Trips',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'demonstratie_panels_styles',
+      'settings' => array(
+        'title' => 'banner',
+        'hero' => 0,
+        'layouts' => 'default',
+        'styles' => 'feature_medium',
+        'color_schemes' => 'default',
+      ),
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-8'] = $pane;
-    $display->panels['header_b'][0] = 'new-8';
+    $display->panels['secondary_features'][0] = 'new-8';
     $pane = new stdClass();
     $pane->pid = 'new-9';
-    $pane->panel = 'header_c';
+    $pane->panel = 'secondary_supplements';
+    $pane->type = 'views';
+    $pane->subtype = 'wem_tweets';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '3',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 1,
+      'override_title_text' => 'Nexus on Twitter',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'demonstratie_panels_styles',
+      'settings' => array(
+        'title' => 'inline',
+        'hero' => 0,
+        'layouts' => 'horizontal',
+        'styles' => 'default',
+        'color_schemes' => 'default',
+      ),
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-9'] = $pane;
+    $display->panels['secondary_supplements'][0] = 'new-9';
+    $pane = new stdClass();
+    $pane->pid = 'new-10';
+    $pane->panel = 'tertiary_features';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---featured-contest';
+    $pane->subtype = 'bean-wem---user-related-contest';
     $pane->shown = TRUE;
     $pane->access = array(
       'plugins' => array(
@@ -466,7 +536,7 @@ function dfs_wem_default_page_manager_pages() {
               0 => 1,
             ),
           ),
-          'context' => 'logged-in-user',
+          'context' => 'context_user_1',
           'not' => TRUE,
         ),
         1 => array(
@@ -486,45 +556,31 @@ else {
       ),
     );
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Contests',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['header_c'][0] = 'new-9';
-    $pane = new stdClass();
-    $pane->pid = 'new-10';
-    $pane->panel = 'header_c';
-    $pane->type = 'block';
-    $pane->subtype = 'user-login';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
       'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'title' => 'banner',
+        'hero' => 0,
+        'layouts' => 'default',
+        'styles' => 'feature_medium',
+        'color_schemes' => 'default',
+      ),
+      'style' => 'demonstratie_panels_styles',
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['header_c'][1] = 'new-10';
+    $display->panels['tertiary_features'][0] = 'new-10';
     $pane = new stdClass();
     $pane->pid = 'new-11';
-    $pane->panel = 'header_c';
+    $pane->panel = 'tertiary_features';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---featured-product-2';
+    $pane->subtype = 'bean-wem---user-related-product-secon';
     $pane->shown = TRUE;
     $pane->access = array(
       'plugins' => array(
@@ -545,103 +601,95 @@ elseif($user->uid != 1) {
       ),
     );
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Trips',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'title' => 'hidden',
+        'layouts' => 'default',
+        'styles' => 'feature_medium',
+        'color_schemes' => 'alternate',
+      ),
+      'style' => 'demonstratie_panels_styles',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-11'] = $pane;
+    $display->panels['tertiary_features'][1] = 'new-11';
+    $pane = new stdClass();
+    $pane->pid = 'new-12';
+    $pane->panel = 'tertiary_features';
+    $pane->type = 'block';
+    $pane->subtype = 'user-login';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'title' => 'hidden',
+        'layouts' => 'default',
+        'styles' => 'default',
+        'color_schemes' => 'alternate',
+      ),
+      'style' => 'demonstratie_panels_styles',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['header_c'][2] = 'new-11';
-    $pane = new stdClass();
-    $pane->pid = 'new-12';
-    $pane->panel = 'subheader_a';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
     $display->content['new-12'] = $pane;
-    $display->panels['subheader_a'][0] = 'new-12';
+    $display->panels['tertiary_features'][2] = 'new-12';
     $pane = new stdClass();
     $pane->pid = 'new-13';
-    $pane->panel = 'subheader_b';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-3';
+    $pane->panel = 'tertiary_supplements';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'wem_user_contests-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
+      'context' => array(
+        0 => 'context_user_1',
+      ),
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'title' => 'hidden',
+        'layouts' => 'horizontal',
+        'styles' => 'feature_small',
+        'color_schemes' => 'default',
+      ),
+      'style' => 'demonstratie_panels_styles',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-13'] = $pane;
-    $display->panels['subheader_b'][0] = 'new-13';
-    $pane = new stdClass();
-    $pane->pid = 'new-14';
-    $pane->panel = 'subheader_c';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['subheader_c'][0] = 'new-14';
-    $pane = new stdClass();
-    $pane->pid = 'new-15';
-    $pane->panel = 'subheader_d';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem-home---news-item-5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['subheader_d'][0] = 'new-15';
+    $display->panels['tertiary_supplements'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -709,7 +757,7 @@ elseif($user->uid != 1) {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-14';
     $pane->panel = 'column1';
     $pane->type = 'block';
     $pane->subtype = 'bean-wem-home---featured-product-1';
@@ -727,10 +775,10 @@ elseif($user->uid != 1) {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['column1'][0] = 'new-16';
+    $display->content['new-14'] = $pane;
+    $display->panels['column1'][0] = 'new-14';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-15';
     $pane->panel = 'column2';
     $pane->type = 'block';
     $pane->subtype = 'bean-wem-home---featured-product-2';
@@ -748,10 +796,10 @@ elseif($user->uid != 1) {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['column2'][0] = 'new-17';
+    $display->content['new-15'] = $pane;
+    $display->panels['column2'][0] = 'new-15';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-16';
+  $display->title_pane = 'new-14';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['dfs_wem_trips'] = $page;

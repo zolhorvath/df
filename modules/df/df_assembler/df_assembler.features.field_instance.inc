@@ -17,6 +17,12 @@ function df_assembler_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -61,6 +67,12 @@ function df_assembler_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -106,6 +118,12 @@ function df_assembler_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',

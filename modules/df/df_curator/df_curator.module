@@ -28,3 +28,14 @@ function df_curator_block_list_alter(&$blocks) {
   }
   return $blocks;
 }
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function df_curator_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['alternate'] = array(
+    'label' => t('Alternate'),
+    'custom settings' => TRUE,
+  );
+}
+

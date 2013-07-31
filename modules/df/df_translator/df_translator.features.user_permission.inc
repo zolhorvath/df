@@ -15,6 +15,7 @@ function df_translator_user_default_permissions() {
     'name' => 'administer content translations',
     'roles' => array(
       'administrator' => 'administrator',
+      'translator' => 'translator',
     ),
     'module' => 'i18n_node',
   );

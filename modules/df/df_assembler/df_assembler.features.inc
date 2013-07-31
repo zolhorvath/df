@@ -9,7 +9,19 @@
  */
 function df_assembler_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "breakpoints" && $api == "default_breakpoint_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "breakpoints" && $api == "default_breakpoints") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "file_entity" && $api == "file_default_displays") {
     return array("version" => "1");
   }
   list($module, $api) = func_get_args();
@@ -29,6 +41,10 @@ function df_assembler_ctools_plugin_api() {
     return array("version" => "1");
   }
   list($module, $api) = func_get_args();
+  if ($module == "picture" && $api == "default_picture_mapping") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -40,9 +56,87 @@ function df_assembler_ctools_plugin_api() {
 function df_assembler_image_default_styles() {
   $styles = array();
 
-  // Exported image style: letterbox.
-  $styles['letterbox'] = array(
-    'name' => 'letterbox',
+  // Exported image style: letterbox-mobile.
+  $styles['letterbox-mobile'] = array(
+    'name' => 'letterbox-mobile',
+    'effects' => array(
+      7 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 370,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      8 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 370,
+          'height' => 170,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: letterbox-narrow.
+  $styles['letterbox-narrow'] = array(
+    'name' => 'letterbox-narrow',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 777,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      4 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 777,
+          'height' => 357,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: letterbox-tablet.
+  $styles['letterbox-tablet'] = array(
+    'name' => 'letterbox-tablet',
     'effects' => array(
       5 => array(
         'label' => 'Scale',
@@ -54,11 +148,11 @@ function df_assembler_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 2400,
+          'width' => 545,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => -10,
+        'weight' => 1,
       ),
       6 => array(
         'label' => 'Crop',
@@ -70,29 +164,50 @@ function df_assembler_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => 2400,
-          'height' => 1111,
+          'width' => 545,
+          'height' => 250,
           'anchor' => 'center-center',
         ),
-        'weight' => -9,
+        'weight' => 2,
       ),
-      3 => array(
-        'label' => 'Adaptive',
-        'help' => 'Adaptive image scale according to client resolution.',
+    ),
+  );
+
+  // Exported image style: letterbox-wide.
+  $styles['letterbox-wide'] = array(
+    'name' => 'letterbox-wide',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
         'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'adaptive_image_scale_form',
-        'summary theme' => 'adaptive_image_scale_summary',
-        'module' => 'adaptive_image',
-        'name' => 'adaptive_image',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
         'data' => array(
-          'resolutions' => '1382, 992, 768, 480',
-          'mobile_first' => 1,
+          'width' => 1350,
           'height' => '',
-          'width' => 1382,
-          'upscale' => '',
+          'upscale' => 1,
         ),
-        'weight' => -8,
+        'weight' => 1,
+      ),
+      2 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 1350,
+          'height' => 620,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
       ),
     ),
   );

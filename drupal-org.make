@@ -16,6 +16,12 @@ projects[ctools][download][type] = "git"
 projects[ctools][download][revision] = "280ccd0"
 projects[ctools][download][branch] = "7.x-1.x"
 
+projects[demonstratie_panels][version] = "1.x-dev"
+projects[demonstratie_panels][type] = "module"
+projects[demonstratie_panels][subdir] = "contrib"
+projects[demonstratie_panels][download][type] = "git"
+projects[demonstratie_panels][download][branch] = "7.x-1.x"
+
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
@@ -109,15 +115,11 @@ projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
 ; DF Assembler
-projects[adaptive_image][version] = "1.4"
-projects[adaptive_image][type] = "module"
-projects[adaptive_image][subdir] = "contrib"
-
 projects[bean][version] = "1.x-dev"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
 projects[bean][download][type] = "git"
-projects[bean][download][revision] = "efe15b9"
+projects[bean][download][revision] = "b4460f1"
 projects[bean][download][branch] = "7.x-1.x"
 
 projects[bean_tax][version] = "2.x-dev"
@@ -148,6 +150,10 @@ projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "1bda8c9"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
+projects[file_entity_link][version] = "1.0-alpha3"
+projects[file_entity_link][type] = "module"
+projects[file_entity_link][subdir] = "contrib"
+
 projects[gridbuilder][version] = "1.0-alpha2"
 projects[gridbuilder][type] = "module"
 projects[gridbuilder][subdir] = "contrib"
@@ -177,18 +183,11 @@ projects[panelizer][download][type] = "git"
 projects[panelizer][download][revision] = "1e050d3"
 projects[panelizer][download][branch] = "7.x-3.x"
 
-projects[panopoly_images][version] = "1.x-dev"
-projects[panopoly_images][type] = "module"
-projects[panopoly_images][subdir] = "contrib"
-projects[panopoly_images][download][type] = "git"
-projects[panopoly_images][download][revision] = "b57b48f"
-projects[panopoly_images][download][branch] = "7.x-1.x"
-
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
 projects[panopoly_magic][download][type] = "git"
-projects[panopoly_magic][download][revision] = "16add88"
+projects[panopoly_magic][download][revision] = "4db638a"
 projects[panopoly_magic][download][branch] = "7.x-1.x"
 
 projects[panopoly_theme][version] = "1.x-dev"
@@ -205,28 +204,18 @@ projects[panopoly_widgets][version] = "1.x-dev"
 projects[panopoly_widgets][type] = "module"
 projects[panopoly_widgets][subdir] = "contrib"
 projects[panopoly_widgets][download][type] = "git"
-projects[panopoly_widgets][download][revision] = "0dafe32"
+projects[panopoly_widgets][download][revision] = "15c8dce"
 projects[panopoly_widgets][download][branch] = "7.x-1.x"
-; Separate fields from field instances + Features
-; http://drupal.org/node/1967304#comment-7307862
-projects[panopoly_widgets][patch][1967304] = "http://drupal.org/files/panopoly_widgets-separate-instances-base-1967304-3.patch"
-; Use Panopoly Widgets outside of Panopoly distribution
-; http://drupal.org/node/1949710
-projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-8.patch"
-; Panopoly Widgets contains a makefile under modules/contrib/panopoly_widgets.
-; Defer to panopoly_widgets.make to download and patch module dependencies.
+; Use Panopoly Widgets in Demo Framework
+; https://drupal.org/node/1949710
+projects[panopoly_widgets][patch][1949710] = "https://drupal.org/files/panopoly_widgets-demo-framework-1949710-9_0.patch"
 
-projects[panopoly_wysiwyg][version] = "1.x-dev"
-projects[panopoly_wysiwyg][type] = "module"
-projects[panopoly_wysiwyg][subdir] = "contrib"
-projects[panopoly_wysiwyg][download][type] = "git"
-projects[panopoly_wysiwyg][download][revision] = "227335f"
-projects[panopoly_wysiwyg][download][branch] = "7.x-1.x"
-; Use Panopoly WYSIWYG outside of Panopoly Distribution
-; http://drupal.org/node/1986308
-projects[panopoly_wysiwyg][patch][1986308] = "http://drupal.org/files/panopoly_wysiwyg-demo-framework-1986308-1.patch"
-; Panopoly WYSIWYG contains a makefile under modules/contrib/panopoly_wysiwyg.
-; Defer to panopoly_wysiwyg.make to download and patch module dependencies.
+projects[picture][version] = "1.x-dev"
+projects[picture][type] = "module"
+projects[picture][subdir] = "contrib"
+projects[picture][download][type] = "git"
+projects[picture][download][revision] = "3d9fe6c"
+projects[picture][download][branch] = "7.x-1.x"
 
 projects[respondjs][version] = "1.1"
 projects[respondjs][type] = "module"
@@ -241,9 +230,12 @@ projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
 ; DF Curator
-projects[ckeditor][version] = "1.13"
+projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][download][type] = "git"
+projects[ckeditor][download][revision] = "4086c0c"
+projects[ckeditor][download][branch] = "7.x-1.x"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -264,11 +256,18 @@ projects[edit][download][revision] = "cf62974"
 projects[edit][download][branch] = "7.x-1.x"
 ; Backport of Edit button for navbar
 ; http://drupal.org/node/1994256
-projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-13.patch"
-; Editing a video file is perceived as broken due to conflicts with embedded
-; media players.
-; http://drupal.org/node/1990560
-projects[edit][patch][1990560] = "http://drupal.org/files/edit-file-embed-rollover-padding-0.patch"
+projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-15.patch"
+; Edit Module fails for "psudeo" fields provided via Relationship or Appended
+; Global Text in Views
+; https://drupal.org/node/2015295
+projects[edit][patch][2015295] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
+
+projects[file_entity][version] = "2.x-dev"
+projects[file_entity][type] = "module"
+projects[file_entity][subdir] = "contrib"
+projects[file_entity][download][type] = "git"
+projects[file_entity][download][revision] = "5e12856"
+projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
@@ -283,6 +282,21 @@ projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-
 projects[linkit][version] = "2.6"
 projects[linkit][type] = "module"
 projects[linkit][subdir] = "contrib"
+
+projects[media][version] = "2.x-dev"
+projects[media][type] = "module"
+projects[media][subdir] = "contrib"
+projects[media][download][type] = "git"
+projects[media][download][revision] = "2319170"
+projects[media][download][branch] = "7.x-2.x"
+
+projects[media_youtube][version] = "2.0-rc3"
+projects[media_youtube][type] = "module"
+projects[media_youtube][subdir] = "contrib"
+
+projects[media_vimeo][version] = "2.0-rc1"
+projects[media_vimeo][type] = "module"
+projects[media_vimeo][subdir] = "contrib"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
@@ -396,16 +410,6 @@ projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
 projects[purr_messages][subdir] = "contrib"
 
-projects[rpx][version] = "2.x-dev"
-projects[rpx][type] = "module"
-projects[rpx][subdir] = "contrib"
-projects[rpx][download][type] = "git"
-projects[rpx][download][revision] = "ae93a66"
-projects[rpx][download][branch] = "7.x-2.x"
-; Social Sharing on a per-View Mode basis?
-; http://drupal.org/node/1946476
-projects[rpx][patch][1946476] = "http://drupal.org/files/rpx-2.2-share-button-by-view-modes-1946476-2.patch"
-
 projects[rules][version] = "2.3"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
@@ -413,6 +417,10 @@ projects[rules][subdir] = "contrib"
 projects[salesforce][version] = "3.0-beta2"
 projects[salesforce][type] = "module"
 projects[salesforce][subdir] = "contrib"
+
+projects[sharethis][version] = "2.5"
+projects[sharethis][type] = "module"
+projects[sharethis][subdir] = "contrib"
 
 projects[token][version] = "1.4"
 projects[token][type] = "module"
@@ -601,3 +609,6 @@ projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-1.x"
 projects[ember][download][revision] = "9291cc2"
+; CSS styling issues for Media module
+; https://drupal.org/node/2053095
+;projects[ember][patch][2053095] = "https://drupal.org/files/media_module_ember.patch"

@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for DF Assembler feature
+ */
+
+/**
+ * Implements hook_install().
+ */
+function df_assembler_install() {
+
+  // Add shortcut for Landing page wizard.
+  if (module_exists('shortcut')) {
+    $t = get_t();
+    // Load the default shortcut set
+    $shortcut_set = shortcut_default_set();
+    $shortcut_set->links[] = array(
+        'link_path' => 'admin/structure/pages/wizard/landing_page',
+        'link_title' => $t('Add Landing page'),
+        'weight' => 27,
+    );
+    shortcut_set_save($shortcut_set);
+  }
+
+}
+

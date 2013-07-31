@@ -114,7 +114,7 @@ function df_curator_ckeditor_profile_defaults() {
       'name' => 'CKEditor Global Profile',
       'settings' => array(
         'skin' => 'moono',
-        'ckeditor_path' => '%m/ckeditor',
+        'ckeditor_path' => '%l/ckeditor',
         'ckeditor_local_path' => './profiles/df/libraries/ckeditor',
         'ckeditor_plugins_path' => '%m/plugins',
         'ckeditor_plugins_local_path' => './profiles/df/libraries/ckeditor/plugins',

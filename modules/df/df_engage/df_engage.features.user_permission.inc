@@ -48,15 +48,6 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: admin wem.
-  $permissions['admin wem'] = array(
-    'name' => 'admin wem',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'wem',
-  );
-
   // Exported permission: administer checkout.
   $permissions['administer checkout'] = array(
     'name' => 'administer checkout',
@@ -109,15 +100,6 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'og',
-  );
-
-  // Exported permission: administer janrain engage.
-  $permissions['administer janrain engage'] = array(
-    'name' => 'administer janrain engage',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rpx_ui',
   );
 
   // Exported permission: administer line item types.
@@ -208,6 +190,33 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
+  );
+
+  // Exported permission: administer salesforce.
+  $permissions['administer salesforce'] = array(
+    'name' => 'administer salesforce',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'salesforce',
+  );
+
+  // Exported permission: administer salesforce mapping.
+  $permissions['administer salesforce mapping'] = array(
+    'name' => 'administer salesforce mapping',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'salesforce_mapping',
+  );
+
+  // Exported permission: administer sharethis.
+  $permissions['administer sharethis'] = array(
+    'name' => 'administer sharethis',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'sharethis',
   );
 
   // Exported permission: administer shipping.
@@ -578,15 +587,6 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: manage own identities.
-  $permissions['manage own identities'] = array(
-    'name' => 'manage own identities',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rpx_ui',
-  );
-
   // Exported permission: select account cancellation method.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -751,22 +751,13 @@ function df_engage_user_default_permissions() {
     'module' => 'purr_messages',
   );
 
-  // Exported permission: wem admin segments.
-  $permissions['wem admin segments'] = array(
-    'name' => 'wem admin segments',
+  // Exported permission: view salesforce mapping.
+  $permissions['view salesforce mapping'] = array(
+    'name' => 'view salesforce mapping',
     'roles' => array(
       'administrator' => 'administrator',
     ),
-    'module' => 'wem_segment',
-  );
-
-  // Exported permission: wem node segments.
-  $permissions['wem node segments'] = array(
-    'name' => 'wem node segments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'wem_segment',
+    'module' => 'salesforce_mapping',
   );
 
   return $permissions;

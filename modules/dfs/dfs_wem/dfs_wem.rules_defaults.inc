@@ -20,7 +20,8 @@ function dfs_wem_default_rules_configuration() {
               "type" : "list\\u003Ctext\\u003E",
               "value" : { "value" : [
                   "LastName|[site:current-user:name]",
-                  "site_lead_source|[site:current-page:url]"
+                  "site_lead_source|[site:current-page:url]",
+                  "LeadSource|giveaway"
                 ]
               }
             },

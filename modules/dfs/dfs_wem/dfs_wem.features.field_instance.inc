@@ -97,12 +97,14 @@ function dfs_wem_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => '',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 2,
       ),
       'line_item' => array(
@@ -113,32 +115,38 @@ function dfs_wem_field_default_field_instances() {
       ),
       'node_featured' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 2,
       ),
       'node_full' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => '',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 3,
       ),
       'node_teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 2,
       ),
     ),
@@ -230,6 +238,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -297,6 +311,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -351,6 +371,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'commerce_cart',
@@ -431,6 +457,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -482,34 +514,46 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => '',
-          'image_style' => '',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
       'featured' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_full',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
     ),
@@ -547,6 +591,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -593,6 +643,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Determine if this is an OG group.',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'og_ui',
@@ -653,6 +709,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -707,6 +769,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -751,34 +819,46 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => '',
-          'image_style' => 'panopoly_image_full',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
       'featured' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'letterbox',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_half',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
     ),
@@ -833,6 +913,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -874,6 +960,15 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'preview',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'file_entity',
@@ -942,6 +1037,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -998,6 +1099,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1049,14 +1156,22 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
-          'image_link' => 'file',
-          'image_style' => 'panopoly_image_quarter',
+          'colorbox' => 'df_letterbox',
+          'fallback_image_style' => '',
+          'image_link' => '',
+          'picture_group' => 'df_letterbox',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 1,
       ),
       'featured' => array(
@@ -1110,6 +1225,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -1164,6 +1285,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -1248,6 +1375,12 @@ function dfs_wem_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
