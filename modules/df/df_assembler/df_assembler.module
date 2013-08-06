@@ -23,3 +23,13 @@ function df_assembler_pre_features_rebuild($component) {
   }
 }
 
+/**
+ * Implements hook_entity_info_alter().
+ */
+function df_assembler_entity_info_alter(&$entity_info) {
+  $entity_info['file']['view modes']['alt_preview'] = array(
+    'label' => t('Alternate Preview'),
+    'custom settings' => TRUE,
+  );
+}
+

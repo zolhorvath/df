@@ -129,6 +129,7 @@ function df_assembler_strongarm() {
     'video' => array(
       'preview' => 1,
       'default' => 0,
+      'alt_preview' => 1,
     ),
   );
   $export['file_entity_link_settings'] = $strongarm;
