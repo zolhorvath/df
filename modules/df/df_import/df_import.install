@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for DF Import
+ */
+
+/**
+ * Implements hook_install().
+ */
+function df_import_install() {
+  // Set DF admin as the default homepage on install.
+  variable_set('site_frontpage', 'admin/config/system/df');
+}
+
