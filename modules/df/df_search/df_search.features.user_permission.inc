@@ -10,7 +10,7 @@
 function df_search_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer custom search.
+  // Exported permission: 'administer custom search'.
   $permissions['administer custom search'] = array(
     'name' => 'administer custom search',
     'roles' => array(
@@ -19,7 +19,7 @@ function df_search_user_default_permissions() {
     'module' => 'custom_search',
   );
 
-  // Exported permission: search content.
+  // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
@@ -30,7 +30,7 @@ function df_search_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: use advanced search.
+  // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
@@ -41,7 +41,7 @@ function df_search_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: use custom search.
+  // Exported permission: 'use custom search'.
   $permissions['use custom search'] = array(
     'name' => 'use custom search',
     'roles' => array(

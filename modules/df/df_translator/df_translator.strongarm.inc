@@ -127,6 +127,7 @@ function df_translator_strongarm() {
     'domain' => '',
     'prefix' => '',
     'weight' => 0,
+    'javascript' => '',
   );
   $export['language_default'] = $strongarm;
 
