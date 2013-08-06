@@ -10,7 +10,7 @@
 function df_import_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer feeds.
+  // Exported permission: 'administer feeds'.
   $permissions['administer feeds'] = array(
     'name' => 'administer feeds',
     'roles' => array(
@@ -19,7 +19,7 @@ function df_import_user_default_permissions() {
     'module' => 'feeds',
   );
 
-  // Exported permission: migration information.
+  // Exported permission: 'migration information'.
   $permissions['migration information'] = array(
     'name' => 'migration information',
     'roles' => array(

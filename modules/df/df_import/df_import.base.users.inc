@@ -34,6 +34,8 @@ class DemoFrameworkBaseUsers extends Migration {
     $this->addFieldMapping('roles', 'roles');
 
     $this->addFieldMapping('picture', 'picture')->sourceMigration('DemoFrameworkBaseUserPictures');
+    $this->addFieldMapping('field_user_bio', 'bio');
+    $this->addFieldMapping('field_user_bio:format')->defaultValue('full_html');
 
   }
 
@@ -44,6 +46,7 @@ class DemoFrameworkBaseUsers extends Migration {
     $columns[3] = array('status', 'Status');
     $columns[4] = array('roles', 'Roles');
     $columns[5] = array('picture', 'Picture');
+    $columns[6] = array('bio', 'Bio');
     return $columns;
   }
 
