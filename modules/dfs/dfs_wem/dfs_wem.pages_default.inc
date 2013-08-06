@@ -256,9 +256,9 @@ function dfs_wem_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'dfs_wem_home';
   $page->task = 'page';
-  $page->admin_title = 'DF WEM Scenario Home';
-  $page->admin_description = 'Homepage panel for the Demo Framework WEM Scenario.';
-  $page->path = 'df-wem-home';
+  $page->admin_title = 'DFS WEM Home';
+  $page->admin_description = 'Homepage panel for the WEM Demo Framework Scenario.';
+  $page->path = 'dfs-wem-home';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
@@ -395,7 +395,7 @@ function dfs_wem_default_page_manager_pages() {
     $pane->configuration = array(
       'override_pager_settings' => 0,
       'use_pager' => 0,
-      'nodes_per_page' => '5',
+      'nodes_per_page' => '4',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -491,7 +491,7 @@ function dfs_wem_default_page_manager_pages() {
     $pane->configuration = array(
       'override_pager_settings' => 0,
       'use_pager' => 0,
-      'nodes_per_page' => '3',
+      'nodes_per_page' => '4',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -501,7 +501,7 @@ function dfs_wem_default_page_manager_pages() {
       'args' => '',
       'url' => '',
       'display' => 'block',
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => 'Nexus on Twitter',
     );
     $pane->cache = array();

@@ -12,5 +12,8 @@ function dfs_wem_install() {
   // Enable custom theme on install.
   //theme_enable(array('krull'));
   //variable_set('theme_default', 'krull');
+
+  // Set DFS WEM Home as the default homepage on install.
+  variable_set('site_frontpage', 'dfs-wem-home');
 }
 

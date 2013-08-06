@@ -48,7 +48,7 @@ function dfs_wem_post_features_enable_feature($component) {
  * Implementation of hook_menu().
  */
 function dfs_wem_menu() {
-  $items['admin/config/system/df/dfs-wem/reset'] = array(
+  $items['admin/config/system/df/reset/dfs_wem'] = array(
     'page callback' => 'dfs_wem_page_reset',
     'page arguments' => array(1),
     'access arguments' => array('administer demo framework'),

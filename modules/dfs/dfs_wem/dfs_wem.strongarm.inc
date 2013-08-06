@@ -434,7 +434,16 @@ function dfs_wem_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
+        ),
+        'language' => array(
+          'weight' => '5',
+        ),
+        'metatags' => array(
+          'weight' => '7',
+        ),
+        'path' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -688,10 +697,16 @@ function dfs_wem_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '7',
+        ),
+        'language' => array(
+          'weight' => '6',
+        ),
+        'metatags' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(
@@ -1174,13 +1189,6 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'save_continue_wem_news';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_wem_news'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'df-wem-home';
-  $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

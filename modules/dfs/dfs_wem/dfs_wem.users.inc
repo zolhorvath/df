@@ -14,6 +14,8 @@ class DFSWEMUsers extends DemoFrameworkBaseUsers {
     $this->source = new MigrateSourceCSV($import_path . 'dfs_wem.users.csv', $this->csvcolumns(), array('header_rows' => 1));
     $this->addFieldMapping('picture', 'picture')->sourceMigration('DFSWEMUserPictures');
     $this->addFieldMapping('field_user_interests', 'interests');
+    $this->addFieldMapping('field_user_bio', 'bio');
+    $this->addFieldMapping('field_user_bio:format')->defaultValue('full_html');;
   }
 
   function csvcolumns() {
@@ -24,6 +26,7 @@ class DFSWEMUsers extends DemoFrameworkBaseUsers {
     $columns[4] = array('roles', 'Roles');
     $columns[5] = array('picture', 'Picture');
     $columns[6] = array('interests', 'Interests');
+    $columns[7] = array('bio', 'Bio');
     return $columns;
   }
 

@@ -79,26 +79,6 @@ function dfs_wem_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $translatables['wem_commerce_product_reviews'] = array(
-    t('Master'),
-    t('Reviews'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('+ <a href="/node/add/wem-product-review?field_commerce_reference=%1&destination=node/%1">Write your own review!</a>'),
-    t('All'),
-    t('Block'),
-  );
   $export['wem_commerce_product_reviews'] = $view;
 
   $view = new view();
@@ -159,24 +139,6 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $translatables['wem_commerce_trips'] = array(
-    t('Master'),
-    t('Trips'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Page'),
-  );
   $export['wem_commerce_trips'] = $view;
 
   $view = new view();
@@ -293,31 +255,6 @@ function dfs_wem_views_default_views() {
       'label' => 'OG membership: Group ID',
     ),
   );
-  $translatables['wem_contestants'] = array(
-    t('Master'),
-    t('More from this group\'s members'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('nodes'),
-    t('OG membership from user'),
-    t('"[title]"'),
-    t('-[name] '),
-    t('All'),
-    t('Page'),
-    t('Content pane'),
-    t('View panes'),
-  );
   $export['wem_contestants'] = $view;
 
   $view = new view();
@@ -378,24 +315,6 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $translatables['wem_news_guides'] = array(
-    t('Master'),
-    t('Guides'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Page'),
-  );
   $export['wem_news_guides'] = $view;
 
   $view = new view();
@@ -550,29 +469,6 @@ function dfs_wem_views_default_views() {
   );
   $handler->display->display_options['filters']['field_user_interests_tid']['vocabulary'] = 'interests';
   $handler->display->display_options['path'] = 'find-travel-buddies';
-  $translatables['wem_travel_friend'] = array(
-    t('Master'),
-    t('Find Travel Buddies'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('<a class="wem-find-friends" href="/find-travel-buddies">Find friends!</a>'),
-    t('All'),
-    t('Content pane'),
-    t('View panes'),
-    t('Page'),
-    t('Search by Interests'),
-  );
   $export['wem_travel_friend'] = $view;
 
   $view = new view();
@@ -653,20 +549,8 @@ function dfs_wem_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $translatables['wem_tweets'] = array(
-    t('Master'),
-    t('WEM Tweets'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('@[field_wem_tweet_from]'),
-    t('<p><a href="http://twitter.com/[field_wem_tweet_from]/status/[field_wem_tweet_id]" target="_blank"><strong>[field_wem_tweet_from]</strong>: [body]</a></p>
-'),
-    t('Block'),
-  );
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Nexus on Twitter';
   $export['wem_tweets'] = $view;
 
   $view = new view();
@@ -754,20 +638,6 @@ function dfs_wem_views_default_views() {
       'label' => 'OG membership: Entity id',
     ),
   );
-  $translatables['wem_user_contests'] = array(
-    t('Master'),
-    t('My Contests'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('OG membership from node group'),
-    t('All'),
-    t('Content pane'),
-    t('View panes'),
-  );
   $export['wem_user_contests'] = $view;
 
   $view = new view();
@@ -821,23 +691,6 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  $translatables['wem_user_picture'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('All'),
-  );
   $export['wem_user_picture'] = $view;
 
   $view = new view();
@@ -852,7 +705,7 @@ function dfs_wem_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'WEM Videos';
+  $handler->display->display_options['title'] = 'WEM Video';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -867,12 +720,23 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['relationships']['field_wem_video_fid']['id'] = 'field_wem_video_fid';
   $handler->display->display_options['relationships']['field_wem_video_fid']['table'] = 'field_data_field_wem_video';
   $handler->display->display_options['relationships']['field_wem_video_fid']['field'] = 'field_wem_video_fid';
+  /* Field: File: File ID */
+  $handler->display->display_options['fields']['fid']['id'] = 'fid';
+  $handler->display->display_options['fields']['fid']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['fid']['field'] = 'fid';
+  $handler->display->display_options['fields']['fid']['relationship'] = 'field_wem_video_fid';
+  $handler->display->display_options['fields']['fid']['label'] = '';
+  $handler->display->display_options['fields']['fid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['fid']['alter']['text'] = '#file-[fid]';
+  $handler->display->display_options['fields']['fid']['element_label_colon'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['path']['alter']['text'] = '[path]';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Field: File: Name */
@@ -883,7 +747,7 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['fields']['filename']['label'] = '';
   $handler->display->display_options['fields']['filename']['exclude'] = TRUE;
   $handler->display->display_options['fields']['filename']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['filename']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['filename']['alter']['path'] = '[path]#file-[fid] ';
   $handler->display->display_options['fields']['filename']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['filename']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['filename']['link_to_file'] = FALSE;
@@ -898,7 +762,7 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['fields']['field_wem_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_wem_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_wem_video']['settings'] = array(
-    'file_view_mode' => 'preview',
+    'file_view_mode' => 'alt_preview',
   );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -929,20 +793,6 @@ function dfs_wem_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Video Tours';
-  $translatables['wem_videos'] = array(
-    t('Master'),
-    t('WEM Videos'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('file from field_wem_video'),
-    t('<div class="node"><h2 class="node-title">[filename]</h2>[field_wem_video]</div>'),
-    t('Block'),
-    t('Video Tours'),
-  );
   $export['wem_videos'] = $view;
 
   return $export;
