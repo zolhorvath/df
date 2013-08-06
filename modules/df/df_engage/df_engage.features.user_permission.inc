@@ -10,7 +10,7 @@
 function df_engage_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access checkout.
+  // Exported permission: 'access checkout'.
   $permissions['access checkout'] = array(
     'name' => 'access checkout',
     'roles' => array(
@@ -20,7 +20,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_checkout',
   );
 
-  // Exported permission: access mollom statistics.
+  // Exported permission: 'access mollom statistics'.
   $permissions['access mollom statistics'] = array(
     'name' => 'access mollom statistics',
     'roles' => array(
@@ -29,7 +29,7 @@ function df_engage_user_default_permissions() {
     'module' => 'mollom',
   );
 
-  // Exported permission: access rules debug.
+  // Exported permission: 'access rules debug'.
   $permissions['access rules debug'] = array(
     'name' => 'access rules debug',
     'roles' => array(
@@ -38,7 +38,7 @@ function df_engage_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: access user profiles.
+  // Exported permission: 'access user profiles'.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -48,7 +48,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer checkout.
+  // Exported permission: 'administer checkout'.
   $permissions['administer checkout'] = array(
     'name' => 'administer checkout',
     'roles' => array(
@@ -57,7 +57,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_checkout',
   );
 
-  // Exported permission: administer commerce_customer_profile entities.
+  // Exported permission: 'administer commerce_customer_profile entities'.
   $permissions['administer commerce_customer_profile entities'] = array(
     'name' => 'administer commerce_customer_profile entities',
     'roles' => array(
@@ -66,7 +66,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: administer commerce_order entities.
+  // Exported permission: 'administer commerce_order entities'.
   $permissions['administer commerce_order entities'] = array(
     'name' => 'administer commerce_order entities',
     'roles' => array(
@@ -75,7 +75,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: administer commerce_product entities.
+  // Exported permission: 'administer commerce_product entities'.
   $permissions['administer commerce_product entities'] = array(
     'name' => 'administer commerce_product entities',
     'roles' => array(
@@ -84,7 +84,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: administer customer profile types.
+  // Exported permission: 'administer customer profile types'.
   $permissions['administer customer profile types'] = array(
     'name' => 'administer customer profile types',
     'roles' => array(
@@ -93,7 +93,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: administer group.
+  // Exported permission: 'administer group'.
   $permissions['administer group'] = array(
     'name' => 'administer group',
     'roles' => array(
@@ -102,7 +102,7 @@ function df_engage_user_default_permissions() {
     'module' => 'og',
   );
 
-  // Exported permission: administer line item types.
+  // Exported permission: 'administer line item types'.
   $permissions['administer line item types'] = array(
     'name' => 'administer line item types',
     'roles' => array(
@@ -111,7 +111,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_line_item',
   );
 
-  // Exported permission: administer line items.
+  // Exported permission: 'administer line items'.
   $permissions['administer line items'] = array(
     'name' => 'administer line items',
     'roles' => array(
@@ -120,7 +120,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_line_item',
   );
 
-  // Exported permission: administer mollom.
+  // Exported permission: 'administer mollom'.
   $permissions['administer mollom'] = array(
     'name' => 'administer mollom',
     'roles' => array(
@@ -129,7 +129,7 @@ function df_engage_user_default_permissions() {
     'module' => 'mollom',
   );
 
-  // Exported permission: administer payment methods.
+  // Exported permission: 'administer payment methods'.
   $permissions['administer payment methods'] = array(
     'name' => 'administer payment methods',
     'roles' => array(
@@ -138,7 +138,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: administer payments.
+  // Exported permission: 'administer payments'.
   $permissions['administer payments'] = array(
     'name' => 'administer payments',
     'roles' => array(
@@ -147,7 +147,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: administer permissions.
+  // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
@@ -156,7 +156,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer product pricing.
+  // Exported permission: 'administer product pricing'.
   $permissions['administer product pricing'] = array(
     'name' => 'administer product pricing',
     'roles' => array(
@@ -165,7 +165,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product_pricing_ui',
   );
 
-  // Exported permission: administer product types.
+  // Exported permission: 'administer product types'.
   $permissions['administer product types'] = array(
     'name' => 'administer product types',
     'roles' => array(
@@ -174,7 +174,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: administer purr messages.
+  // Exported permission: 'administer purr messages'.
   $permissions['administer purr messages'] = array(
     'name' => 'administer purr messages',
     'roles' => array(
@@ -183,7 +183,7 @@ function df_engage_user_default_permissions() {
     'module' => 'purr_messages',
   );
 
-  // Exported permission: administer rules.
+  // Exported permission: 'administer rules'.
   $permissions['administer rules'] = array(
     'name' => 'administer rules',
     'roles' => array(
@@ -192,7 +192,7 @@ function df_engage_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: administer salesforce.
+  // Exported permission: 'administer salesforce'.
   $permissions['administer salesforce'] = array(
     'name' => 'administer salesforce',
     'roles' => array(
@@ -201,7 +201,7 @@ function df_engage_user_default_permissions() {
     'module' => 'salesforce',
   );
 
-  // Exported permission: administer salesforce mapping.
+  // Exported permission: 'administer salesforce mapping'.
   $permissions['administer salesforce mapping'] = array(
     'name' => 'administer salesforce mapping',
     'roles' => array(
@@ -210,7 +210,7 @@ function df_engage_user_default_permissions() {
     'module' => 'salesforce_mapping',
   );
 
-  // Exported permission: administer sharethis.
+  // Exported permission: 'administer sharethis'.
   $permissions['administer sharethis'] = array(
     'name' => 'administer sharethis',
     'roles' => array(
@@ -219,7 +219,7 @@ function df_engage_user_default_permissions() {
     'module' => 'sharethis',
   );
 
-  // Exported permission: administer shipping.
+  // Exported permission: 'administer shipping'.
   $permissions['administer shipping'] = array(
     'name' => 'administer shipping',
     'roles' => array(
@@ -228,7 +228,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_shipping',
   );
 
-  // Exported permission: administer taxes.
+  // Exported permission: 'administer taxes'.
   $permissions['administer taxes'] = array(
     'name' => 'administer taxes',
     'roles' => array(
@@ -237,7 +237,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_tax_ui',
   );
 
-  // Exported permission: administer users.
+  // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
@@ -246,7 +246,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: bypass mollom protection.
+  // Exported permission: 'bypass mollom protection'.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',
     'roles' => array(
@@ -255,7 +255,7 @@ function df_engage_user_default_permissions() {
     'module' => 'mollom',
   );
 
-  // Exported permission: bypass rules access.
+  // Exported permission: 'bypass rules access'.
   $permissions['bypass rules access'] = array(
     'name' => 'bypass rules access',
     'roles' => array(
@@ -264,7 +264,7 @@ function df_engage_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: cancel account.
+  // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
@@ -273,7 +273,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: change own username.
+  // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -282,7 +282,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: configure order settings.
+  // Exported permission: 'configure order settings'.
   $permissions['configure order settings'] = array(
     'name' => 'configure order settings',
     'roles' => array(
@@ -291,7 +291,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: configure store.
+  // Exported permission: 'configure store'.
   $permissions['configure store'] = array(
     'name' => 'configure store',
     'roles' => array(
@@ -300,7 +300,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce',
   );
 
-  // Exported permission: create commerce content.
+  // Exported permission: 'create commerce content'.
   $permissions['create commerce content'] = array(
     'name' => 'create commerce content',
     'roles' => array(
@@ -309,7 +309,7 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create commerce_customer_profile entities.
+  // Exported permission: 'create commerce_customer_profile entities'.
   $permissions['create commerce_customer_profile entities'] = array(
     'name' => 'create commerce_customer_profile entities',
     'roles' => array(
@@ -318,7 +318,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: create commerce_customer_profile entities of bundle billing.
+  // Exported permission: 'create commerce_customer_profile entities of bundle billing'.
   $permissions['create commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'create commerce_customer_profile entities of bundle billing',
     'roles' => array(
@@ -327,7 +327,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: create commerce_customer_profile entities of bundle shipping.
+  // Exported permission: 'create commerce_customer_profile entities of bundle shipping'.
   $permissions['create commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'create commerce_customer_profile entities of bundle shipping',
     'roles' => array(
@@ -336,7 +336,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: create commerce_order entities.
+  // Exported permission: 'create commerce_order entities'.
   $permissions['create commerce_order entities'] = array(
     'name' => 'create commerce_order entities',
     'roles' => array(
@@ -345,7 +345,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: create commerce_order entities of bundle commerce_order.
+  // Exported permission: 'create commerce_order entities of bundle commerce_order'.
   $permissions['create commerce_order entities of bundle commerce_order'] = array(
     'name' => 'create commerce_order entities of bundle commerce_order',
     'roles' => array(
@@ -354,7 +354,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: create commerce_product entities.
+  // Exported permission: 'create commerce_product entities'.
   $permissions['create commerce_product entities'] = array(
     'name' => 'create commerce_product entities',
     'roles' => array(
@@ -363,7 +363,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: create commerce_product entities of bundle product.
+  // Exported permission: 'create commerce_product entities of bundle product'.
   $permissions['create commerce_product entities of bundle product'] = array(
     'name' => 'create commerce_product entities of bundle product',
     'roles' => array(
@@ -372,14 +372,14 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: create organic_group content.
+  // Exported permission: 'create organic_group content'.
   $permissions['create organic_group content'] = array(
     'name' => 'create organic_group content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: create payments.
+  // Exported permission: 'create payments'.
   $permissions['create payments'] = array(
     'name' => 'create payments',
     'roles' => array(
@@ -388,7 +388,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: delete any commerce content.
+  // Exported permission: 'delete any commerce content'.
   $permissions['delete any commerce content'] = array(
     'name' => 'delete any commerce content',
     'roles' => array(
@@ -397,14 +397,14 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any organic_group content.
+  // Exported permission: 'delete any organic_group content'.
   $permissions['delete any organic_group content'] = array(
     'name' => 'delete any organic_group content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: delete own commerce content.
+  // Exported permission: 'delete own commerce content'.
   $permissions['delete own commerce content'] = array(
     'name' => 'delete own commerce content',
     'roles' => array(
@@ -413,14 +413,14 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own organic_group content.
+  // Exported permission: 'delete own organic_group content'.
   $permissions['delete own organic_group content'] = array(
     'name' => 'delete own organic_group content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: delete payments.
+  // Exported permission: 'delete payments'.
   $permissions['delete payments'] = array(
     'name' => 'delete payments',
     'roles' => array(
@@ -429,7 +429,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: edit any commerce content.
+  // Exported permission: 'edit any commerce content'.
   $permissions['edit any commerce content'] = array(
     'name' => 'edit any commerce content',
     'roles' => array(
@@ -438,7 +438,7 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any commerce_customer_profile entity.
+  // Exported permission: 'edit any commerce_customer_profile entity'.
   $permissions['edit any commerce_customer_profile entity'] = array(
     'name' => 'edit any commerce_customer_profile entity',
     'roles' => array(
@@ -447,7 +447,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit any commerce_customer_profile entity of bundle billing.
+  // Exported permission: 'edit any commerce_customer_profile entity of bundle billing'.
   $permissions['edit any commerce_customer_profile entity of bundle billing'] = array(
     'name' => 'edit any commerce_customer_profile entity of bundle billing',
     'roles' => array(
@@ -456,7 +456,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit any commerce_customer_profile entity of bundle shipping.
+  // Exported permission: 'edit any commerce_customer_profile entity of bundle shipping'.
   $permissions['edit any commerce_customer_profile entity of bundle shipping'] = array(
     'name' => 'edit any commerce_customer_profile entity of bundle shipping',
     'roles' => array(
@@ -465,7 +465,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit any commerce_order entity.
+  // Exported permission: 'edit any commerce_order entity'.
   $permissions['edit any commerce_order entity'] = array(
     'name' => 'edit any commerce_order entity',
     'roles' => array(
@@ -474,7 +474,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: edit any commerce_order entity of bundle commerce_order.
+  // Exported permission: 'edit any commerce_order entity of bundle commerce_order'.
   $permissions['edit any commerce_order entity of bundle commerce_order'] = array(
     'name' => 'edit any commerce_order entity of bundle commerce_order',
     'roles' => array(
@@ -483,7 +483,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: edit any commerce_product entity.
+  // Exported permission: 'edit any commerce_product entity'.
   $permissions['edit any commerce_product entity'] = array(
     'name' => 'edit any commerce_product entity',
     'roles' => array(
@@ -492,7 +492,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit any commerce_product entity of bundle product.
+  // Exported permission: 'edit any commerce_product entity of bundle product'.
   $permissions['edit any commerce_product entity of bundle product'] = array(
     'name' => 'edit any commerce_product entity of bundle product',
     'roles' => array(
@@ -501,14 +501,14 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit any organic_group content.
+  // Exported permission: 'edit any organic_group content'.
   $permissions['edit any organic_group content'] = array(
     'name' => 'edit any organic_group content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: edit own commerce content.
+  // Exported permission: 'edit own commerce content'.
   $permissions['edit own commerce content'] = array(
     'name' => 'edit own commerce content',
     'roles' => array(
@@ -517,7 +517,7 @@ function df_engage_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own commerce_customer_profile entities.
+  // Exported permission: 'edit own commerce_customer_profile entities'.
   $permissions['edit own commerce_customer_profile entities'] = array(
     'name' => 'edit own commerce_customer_profile entities',
     'roles' => array(
@@ -526,7 +526,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit own commerce_customer_profile entities of bundle billing.
+  // Exported permission: 'edit own commerce_customer_profile entities of bundle billing'.
   $permissions['edit own commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'edit own commerce_customer_profile entities of bundle billing',
     'roles' => array(
@@ -535,7 +535,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit own commerce_customer_profile entities of bundle shipping.
+  // Exported permission: 'edit own commerce_customer_profile entities of bundle shipping'.
   $permissions['edit own commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'edit own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
@@ -544,7 +544,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: edit own commerce_order entities.
+  // Exported permission: 'edit own commerce_order entities'.
   $permissions['edit own commerce_order entities'] = array(
     'name' => 'edit own commerce_order entities',
     'roles' => array(
@@ -553,7 +553,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: edit own commerce_order entities of bundle commerce_order.
+  // Exported permission: 'edit own commerce_order entities of bundle commerce_order'.
   $permissions['edit own commerce_order entities of bundle commerce_order'] = array(
     'name' => 'edit own commerce_order entities of bundle commerce_order',
     'roles' => array(
@@ -562,7 +562,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: edit own commerce_product entities.
+  // Exported permission: 'edit own commerce_product entities'.
   $permissions['edit own commerce_product entities'] = array(
     'name' => 'edit own commerce_product entities',
     'roles' => array(
@@ -571,7 +571,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit own commerce_product entities of bundle product.
+  // Exported permission: 'edit own commerce_product entities of bundle product'.
   $permissions['edit own commerce_product entities of bundle product'] = array(
     'name' => 'edit own commerce_product entities of bundle product',
     'roles' => array(
@@ -580,14 +580,14 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: edit own organic_group content.
+  // Exported permission: 'edit own organic_group content'.
   $permissions['edit own organic_group content'] = array(
     'name' => 'edit own organic_group content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: select account cancellation method.
+  // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
@@ -596,7 +596,7 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: update payments.
+  // Exported permission: 'update payments'.
   $permissions['update payments'] = array(
     'name' => 'update payments',
     'roles' => array(
@@ -605,7 +605,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: view any commerce_customer_profile entity.
+  // Exported permission: 'view any commerce_customer_profile entity'.
   $permissions['view any commerce_customer_profile entity'] = array(
     'name' => 'view any commerce_customer_profile entity',
     'roles' => array(
@@ -614,7 +614,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view any commerce_customer_profile entity of bundle billing.
+  // Exported permission: 'view any commerce_customer_profile entity of bundle billing'.
   $permissions['view any commerce_customer_profile entity of bundle billing'] = array(
     'name' => 'view any commerce_customer_profile entity of bundle billing',
     'roles' => array(
@@ -623,7 +623,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view any commerce_customer_profile entity of bundle shipping.
+  // Exported permission: 'view any commerce_customer_profile entity of bundle shipping'.
   $permissions['view any commerce_customer_profile entity of bundle shipping'] = array(
     'name' => 'view any commerce_customer_profile entity of bundle shipping',
     'roles' => array(
@@ -632,7 +632,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view any commerce_order entity.
+  // Exported permission: 'view any commerce_order entity'.
   $permissions['view any commerce_order entity'] = array(
     'name' => 'view any commerce_order entity',
     'roles' => array(
@@ -641,7 +641,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: view any commerce_order entity of bundle commerce_order.
+  // Exported permission: 'view any commerce_order entity of bundle commerce_order'.
   $permissions['view any commerce_order entity of bundle commerce_order'] = array(
     'name' => 'view any commerce_order entity of bundle commerce_order',
     'roles' => array(
@@ -650,7 +650,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: view any commerce_product entity.
+  // Exported permission: 'view any commerce_product entity'.
   $permissions['view any commerce_product entity'] = array(
     'name' => 'view any commerce_product entity',
     'roles' => array(
@@ -659,7 +659,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: view any commerce_product entity of bundle product.
+  // Exported permission: 'view any commerce_product entity of bundle product'.
   $permissions['view any commerce_product entity of bundle product'] = array(
     'name' => 'view any commerce_product entity of bundle product',
     'roles' => array(
@@ -668,7 +668,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: view own commerce_customer_profile entities.
+  // Exported permission: 'view own commerce_customer_profile entities'.
   $permissions['view own commerce_customer_profile entities'] = array(
     'name' => 'view own commerce_customer_profile entities',
     'roles' => array(
@@ -677,7 +677,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view own commerce_customer_profile entities of bundle billing.
+  // Exported permission: 'view own commerce_customer_profile entities of bundle billing'.
   $permissions['view own commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'view own commerce_customer_profile entities of bundle billing',
     'roles' => array(
@@ -686,7 +686,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view own commerce_customer_profile entities of bundle shipping.
+  // Exported permission: 'view own commerce_customer_profile entities of bundle shipping'.
   $permissions['view own commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'view own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
@@ -695,7 +695,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_customer',
   );
 
-  // Exported permission: view own commerce_order entities.
+  // Exported permission: 'view own commerce_order entities'.
   $permissions['view own commerce_order entities'] = array(
     'name' => 'view own commerce_order entities',
     'roles' => array(
@@ -704,7 +704,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: view own commerce_order entities of bundle commerce_order.
+  // Exported permission: 'view own commerce_order entities of bundle commerce_order'.
   $permissions['view own commerce_order entities of bundle commerce_order'] = array(
     'name' => 'view own commerce_order entities of bundle commerce_order',
     'roles' => array(
@@ -713,7 +713,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_order',
   );
 
-  // Exported permission: view own commerce_product entities.
+  // Exported permission: 'view own commerce_product entities'.
   $permissions['view own commerce_product entities'] = array(
     'name' => 'view own commerce_product entities',
     'roles' => array(
@@ -722,7 +722,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: view own commerce_product entities of bundle product.
+  // Exported permission: 'view own commerce_product entities of bundle product'.
   $permissions['view own commerce_product entities of bundle product'] = array(
     'name' => 'view own commerce_product entities of bundle product',
     'roles' => array(
@@ -731,7 +731,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: view payments.
+  // Exported permission: 'view payments'.
   $permissions['view payments'] = array(
     'name' => 'view payments',
     'roles' => array(
@@ -740,7 +740,7 @@ function df_engage_user_default_permissions() {
     'module' => 'commerce_payment',
   );
 
-  // Exported permission: view purr messages.
+  // Exported permission: 'view purr messages'.
   $permissions['view purr messages'] = array(
     'name' => 'view purr messages',
     'roles' => array(
@@ -751,7 +751,7 @@ function df_engage_user_default_permissions() {
     'module' => 'purr_messages',
   );
 
-  // Exported permission: view salesforce mapping.
+  // Exported permission: 'view salesforce mapping'.
   $permissions['view salesforce mapping'] = array(
     'name' => 'view salesforce mapping',
     'roles' => array(
