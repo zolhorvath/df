@@ -630,7 +630,7 @@ projects[variable][subdir] = "contrib"
 
 ; Libraries
 libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "http://github.com/documentcloud/backbone/archive/1.0.0.zip"
+libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
@@ -642,7 +642,7 @@ libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/b
 ;libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
 
 libraries[respondjs][download][type] = "get"
-libraries[respondjs][download][url] = "http://github.com/scottjehl/Respond/tarball/master"
+libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
 
 libraries[timeago][download][type] = "get"
 libraries[timeago][download][url] = "https://raw.github.com/rmm5t/jquery-timeago/v1.3.0/jquery.timeago.js"
