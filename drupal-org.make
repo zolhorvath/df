@@ -231,8 +231,8 @@ projects[panopoly_widgets][download][type] = "git"
 projects[panopoly_widgets][download][revision] = "15c8dce"
 projects[panopoly_widgets][download][branch] = "7.x-1.x"
 ; Use Panopoly Widgets in Demo Framework
-; https://drupal.org/node/1949710
-projects[panopoly_widgets][patch][1949710] = "https://drupal.org/files/panopoly_widgets-demo-framework-1949710-9_0.patch"
+; http://drupal.org/node/1949710
+projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-9_0.patch"
 
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
@@ -283,7 +283,7 @@ projects[edit][download][branch] = "7.x-1.x"
 projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-15.patch"
 ; Edit Module fails for "psudeo" fields provided via Relationship or Appended
 ; Global Text in Views
-; https://drupal.org/node/2015295
+; http://drupal.org/node/2015295
 projects[edit][patch][2015295] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
 
 projects[file_entity][version] = "2.x-dev"
@@ -503,8 +503,8 @@ projects[uuid_features][download][revision] = "d34d00f"
 projects[uuid_features][download][branch] = "7.x-1.x"
 ; UUID Features items do not revert correctly using features_revert or
 ; features_revert_module
-; https://drupal.org/node/2056851
-projects[uuid_features][patch][2056851] = "https://drupal.org/files/uuid-features-use-features-get-default-0.patch"
+; http://drupal.org/node/2056851
+projects[uuid_features][patch][2056851] = "http://drupal.org/files/uuid-features-use-features-get-default-0.patch"
 
 ; DF Search
 projects[apachesolr][version] = "1.x-dev"
@@ -581,8 +581,8 @@ projects[l10n_update][download][type] = "git"
 projects[l10n_update][download][revision] = "fa76206"
 projects[l10n_update][download][branch] = "7.x-1.x"
 ; site-install fails when installing via a custom install profile
-; https://drupal.org/node/1490664#comment-7510667
-projects[l10n_update][patch][1490664] = "https://drupal.org/files/l10n_update-1490664-fix_pdo_exception-21.patch"
+; http://drupal.org/node/1490664#comment-7510667
+projects[l10n_update][patch][1490664] = "http://drupal.org/files/l10n_update-1490664-fix_pdo_exception-21.patch"
 
 projects[i18n][version] = "1.8"
 projects[i18n][type] = "module"
@@ -602,8 +602,8 @@ projects[lingotek][download][type] = "git"
 projects[lingotek][download][revision] = "abdc289"
 projects[lingotek][download][branch] = "7.x-4.x"
 ; Update Lingotek navbar.css to reflect changes to navbar.base.css
-; https://drupal.org/node/2054903
-projects[lingotek][patch][2054903] = "https://drupal.org/files/navbar-css-changes-2054903.patch"
+; http://drupal.org/node/2054903
+projects[lingotek][patch][2054903] = "http://drupal.org/files/navbar-css-changes-2054903.patch"
 
 projects[title][version] = "1.0-alpha7"
 projects[title][type] = "module"
@@ -619,7 +619,7 @@ projects[variable][subdir] = "contrib"
 
 ; Libraries
 libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
+libraries[backbone][download][url] = "http://github.com/documentcloud/backbone/archive/1.0.0.zip"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
@@ -631,7 +631,7 @@ libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/b
 ;libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
 
 libraries[respondjs][download][type] = "get"
-libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
+libraries[respondjs][download][url] = "http://github.com/scottjehl/Respond/tarball/master"
 
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
@@ -642,7 +642,7 @@ projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
 projects[demonstratie][download][branch] = "7.x-1.x"
-projects[demonstratie][download][revision] = "d5713c0"
+projects[demonstratie][download][revision] = "2e362a0"
 ; Black Demonstratie
 ;projects[demonstratie][download][revision] = "2c33440"
 
