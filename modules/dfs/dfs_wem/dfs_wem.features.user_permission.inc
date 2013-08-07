@@ -150,13 +150,6 @@ function dfs_wem_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'clear wem_twitter_importer feeds'.
-  $permissions['clear wem_twitter_importer feeds'] = array(
-    'name' => 'clear wem_twitter_importer feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
   // Exported permission: 'create commerce_product entities of bundle wem_product'.
   $permissions['create commerce_product entities of bundle wem_product'] = array(
     'name' => 'create commerce_product entities of bundle wem_product',
@@ -392,20 +385,6 @@ function dfs_wem_user_default_permissions() {
     'name' => 'edit own wem_tweet content',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: 'import wem_twitter_importer feeds'.
-  $permissions['import wem_twitter_importer feeds'] = array(
-    'name' => 'import wem_twitter_importer feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'unlock wem_twitter_importer feeds'.
-  $permissions['unlock wem_twitter_importer feeds'] = array(
-    'name' => 'unlock wem_twitter_importer feeds',
-    'roles' => array(),
-    'module' => 'feeds',
   );
 
   // Exported permission: 'view any commerce_product entity of bundle wem_product'.

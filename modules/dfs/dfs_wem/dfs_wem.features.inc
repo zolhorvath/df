@@ -37,9 +37,6 @@ function dfs_wem_commerce_product_default_types() {
  * Implements hook_ctools_plugin_api().
  */
 function dfs_wem_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "feeds" && $api == "feeds_importer_default") {
-    return array("version" => "1");
-  }
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -278,8 +275,8 @@ function dfs_wem_default_salesforce_mapping() {
     ],
     "push_async" : "0",
     "push_batch" : "0",
-    "created" : "1375813697",
-    "updated" : "1375813697",
+    "created" : "1375825189",
+    "updated" : "1375825189",
     "weight" : "0",
     "locked" : "0",
     "rdf_mapping" : []

@@ -523,9 +523,11 @@ function dfs_wem_panelizer_defaults() {
     $pane->style = array(
       'settings' => array(
         'title' => 'default',
+        'hero' => 0,
         'layouts' => 'default',
         'styles' => 'default',
-        'color_schemes' => 'reverse',
+        'color_schemes' => 'alternate',
+        'button_styles' => 'default',
       ),
       'style' => 'demonstratie_panels_styles',
     );
