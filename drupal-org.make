@@ -642,7 +642,7 @@ projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
 projects[demonstratie][download][branch] = "7.x-1.x"
-projects[demonstratie][download][revision] = "2e362a0"
+projects[demonstratie][download][revision] = "f699c0b"
 ; Black Demonstratie
 ;projects[demonstratie][download][revision] = "2c33440"
 
