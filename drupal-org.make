@@ -339,6 +339,17 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; http://drupal.org/node/1934130
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-3.patch"
 
+projects[timeago][version] = "2.x-dev"
+projects[timeago][type] = "module"
+projects[timeago][subdir] = "contrib"
+projects[timeago][download][type] = "git"
+projects[timeago][download][url] = "http://git.drupal.org/project/timeago.git"
+projects[timeago][download][branch] = "7.x-2.x"
+projects[timeago][download][revision] = "768ea66"
+; Provide a dedicated date type
+; http://drupal.org/node/1427226
+projects[timeago][patch][1427226] = "http://drupal.org/files/1427226-timeago-date-type.patch"
+
 projects[revision_scheduler][version] = "1.x-dev"
 projects[revision_scheduler][type] = "module"
 projects[revision_scheduler][subdir] = "contrib"
@@ -632,6 +643,9 @@ libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/b
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "http://github.com/scottjehl/Respond/tarball/master"
+
+libraries[timeago][download][type] = "get"
+libraries[timeago][download][url] = "https://raw.github.com/rmm5t/jquery-timeago/v1.3.0/jquery.timeago.js"
 
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/documentcloud/underscore/archive/1.4.4.zip"
