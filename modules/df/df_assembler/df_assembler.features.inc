@@ -83,6 +83,7 @@ function df_assembler_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'letterbox-mobile',
   );
 
   // Exported image style: letterbox-narrow.
@@ -122,6 +123,7 @@ function df_assembler_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'letterbox-narrow',
   );
 
   // Exported image style: letterbox-tablet.
@@ -161,6 +163,7 @@ function df_assembler_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'letterbox-tablet',
   );
 
   // Exported image style: letterbox-wide.
@@ -200,6 +203,7 @@ function df_assembler_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'letterbox-wide',
   );
 
   return $styles;
