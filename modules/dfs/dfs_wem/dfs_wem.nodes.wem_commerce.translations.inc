@@ -9,6 +9,16 @@ class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
+    $this->map = new MigrateSQLMap($this->machineName,
+      array(
+        'translated_title' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+        ),
+      ),
+      MigrateDestinationNode::getKeySchema()
+    );
     $this->description = t('Import translated WEM Commerce product nodes.');
     $this->dependencies = array('DFSWEMProducts');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';

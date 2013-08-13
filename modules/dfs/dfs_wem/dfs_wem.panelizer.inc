@@ -897,68 +897,14 @@ function dfs_wem_panelizer_defaults() {
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
-      'default' => array(),
-      'center' => NULL,
-      'title' => NULL,
-      'navigation' => NULL,
-      'header_a' => NULL,
-      'header_b' => NULL,
-      'header_c' => NULL,
-      'subheader_a' => NULL,
-      'subheader_b' => NULL,
-      'subheader_c' => NULL,
-      'subheader_d' => NULL,
-      'body' => NULL,
-      'sidebar_a' => NULL,
-      'sidebar_b' => NULL,
-      'sidebar_c' => NULL,
-      'sidebar_d' => NULL,
-      'footer_a' => NULL,
-      'footer_b' => NULL,
-      'header' => array(),
-      'column1' => NULL,
-      'column2' => NULL,
-      'middle' => NULL,
-      'secondcolumn1' => NULL,
-      'secondcolumn2' => NULL,
-      'footer' => array(),
-      'sidebar' => NULL,
-      'contentmain' => NULL,
-      'primary_features' => array(),
-      'secondary_features' => array(),
-      'tertiary_features' => array(),
-      'quaternary_features' => array(),
-      'primary_supplements' => array(),
-      'secondary_supplements' => array(),
-      'tertiary_supplements' => array(),
-    ),
-    'style' => 'wrapper_element',
-    'header' => array(
-      'style' => 'wrapper_element',
-    ),
-    'primary_features' => array(
-      'style' => 'wrapper_element',
-    ),
-    'secondary_features' => array(
-      'style' => 'wrapper_element',
-    ),
-    'tertiary_features' => array(
-      'style' => 'wrapper_element',
-    ),
-    'quaternary_features' => array(
-      'style' => 'wrapper_element',
-    ),
-    'primary_supplements' => array(
-      'style' => 'wrapper_element',
-    ),
-    'secondary_supplements' => array(
-      'style' => 'wrapper_element',
-    ),
-    'tertiary_supplements' => array(
-      'style' => 'wrapper_element',
-    ),
-    'footer' => array(
-      'style' => 'wrapper_element',
+      'default' => NULL,
+      'primary_features' => NULL,
+      'secondary_features' => NULL,
+      'tertiary_features' => NULL,
+      'quaternary_features' => NULL,
+      'primary_supplements' => NULL,
+      'secondary_supplements' => NULL,
+      'tertiary_supplements' => NULL,
     ),
   );
   $display->cache = array();
@@ -969,42 +915,25 @@ function dfs_wem_panelizer_defaults() {
     $pane->pid = 'new-20';
     $pane->panel = 'primary_features';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_wem_image';
+    $pane->subtype = 'node:field_wem_subtitle';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'picture',
+      'label' => 'above',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_link' => '',
-        'picture_group' => 'df_letterbox',
-        'fallback_image_style' => '',
-        'colorbox' => 'df_letterbox',
+        'edit' => array(
+          'editor' => 'direct',
+        ),
       ),
-      'context' => array(),
-      'override_title' => 0,
-      'override_title_text' => '',
-      'view_mode' => NULL,
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
+      'context' => 'panelizer',
     );
     $pane->cache = array();
     $pane->style = array(
-      'style' => 'wrapper_element',
-      'settings' => array(),
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1021,16 +950,17 @@ function dfs_wem_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'More Guides',
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => array(
-        'title' => 'default',
+        'title' => 'hidden',
         'hero' => 0,
         'layouts' => 'horizontal',
         'styles' => 'feature_small',
         'color_schemes' => 'alternate',
+        'button_styles' => 'default',
       ),
       'style' => 'demonstratie_panels_styles',
     );
@@ -1043,19 +973,27 @@ function dfs_wem_panelizer_defaults() {
     $pane = new stdClass();
     $pane->pid = 'new-22';
     $pane->panel = 'secondary_features';
-    $pane->type = 'node_body';
-    $pane->subtype = 'node_body';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_wem_image';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'picture',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'colorbox' => 'df_letterbox',
+        'fallback_image_style' => '',
+        'image_link' => '',
+        'picture_group' => 'df_letterbox',
+      ),
       'context' => 'panelizer',
-      'override_title' => 1,
-      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
-      'style' => 'wrapper_element',
-      'settings' => array(),
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1065,6 +1003,36 @@ function dfs_wem_panelizer_defaults() {
     $display->panels['secondary_features'][0] = 'new-22';
     $pane = new stdClass();
     $pane->pid = 'new-23';
+    $pane->panel = 'secondary_features';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'edit' => array(
+          'editor' => 'direct',
+        ),
+      ),
+      'context' => 'panelizer',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-23'] = $pane;
+    $display->panels['secondary_features'][1] = 'new-23';
+    $pane = new stdClass();
+    $pane->pid = 'new-24';
     $pane->panel = 'tertiary_features';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_wem_video';
@@ -1077,44 +1045,30 @@ function dfs_wem_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'file_view_mode' => 'full',
+        'file_view_mode' => 'default',
       ),
-      'context' => array(),
-      'override_title' => 0,
-      'override_title_text' => '',
-      'view_mode' => NULL,
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
+      'context' => 'panelizer',
     );
     $pane->cache = array();
     $pane->style = array(
-      'style' => 'demonstratie_panels_styles',
       'settings' => array(
-        'title' => 'default',
+        'title' => 'hidden',
         'hero' => 0,
         'layouts' => 'default',
-        'styles' => 'feature_medium',
+        'styles' => 'default',
         'color_schemes' => 'reverse',
+        'button_styles' => 'default',
       ),
+      'style' => 'demonstratie_panels_styles',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['tertiary_features'][0] = 'new-23';
+    $display->content['new-24'] = $pane;
+    $display->panels['tertiary_features'][0] = 'new-24';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-22';
   $panelizer->display = $display;
   $export['node:wem_news:default'] = $panelizer;
 
@@ -1151,7 +1105,7 @@ function dfs_wem_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-24';
+    $pane->pid = 'new-25';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_wem_image';
@@ -1177,10 +1131,10 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['center'][0] = 'new-24';
+    $display->content['new-25'] = $pane;
+    $display->panels['center'][0] = 'new-25';
     $pane = new stdClass();
-    $pane->pid = 'new-25';
+    $pane->pid = 'new-26';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
@@ -1205,8 +1159,8 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['center'][1] = 'new-25';
+    $display->content['new-26'] = $pane;
+    $display->panels['center'][1] = 'new-26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
@@ -1280,7 +1234,7 @@ function dfs_wem_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-26';
+    $pane->pid = 'new-27';
     $pane->panel = 'primary_features';
     $pane->type = 'entity_field';
     $pane->subtype = 'user:field_user_bio';
@@ -1318,10 +1272,10 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-26'] = $pane;
-    $display->panels['primary_features'][0] = 'new-26';
+    $display->content['new-27'] = $pane;
+    $display->panels['primary_features'][0] = 'new-27';
     $pane = new stdClass();
-    $pane->pid = 'new-27';
+    $pane->pid = 'new-28';
     $pane->panel = 'quaternary_features';
     $pane->type = 'entity_field';
     $pane->subtype = 'user:field_user_interests';
@@ -1346,10 +1300,10 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-27'] = $pane;
-    $display->panels['quaternary_features'][0] = 'new-27';
+    $display->content['new-28'] = $pane;
+    $display->panels['quaternary_features'][0] = 'new-28';
     $pane = new stdClass();
-    $pane->pid = 'new-28';
+    $pane->pid = 'new-29';
     $pane->panel = 'secondary_features';
     $pane->type = 'views';
     $pane->subtype = 'wem_user_picture';
@@ -1382,10 +1336,10 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-28'] = $pane;
-    $display->panels['secondary_features'][0] = 'new-28';
+    $display->content['new-29'] = $pane;
+    $display->panels['secondary_features'][0] = 'new-29';
     $pane = new stdClass();
-    $pane->pid = 'new-29';
+    $pane->pid = 'new-30';
     $pane->panel = 'tertiary_features';
     $pane->type = 'views';
     $pane->subtype = 'wem_travel_friend';
@@ -1426,8 +1380,8 @@ function dfs_wem_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-29'] = $pane;
-    $display->panels['tertiary_features'][0] = 'new-29';
+    $display->content['new-30'] = $pane;
+    $display->panels['tertiary_features'][0] = 'new-30';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;

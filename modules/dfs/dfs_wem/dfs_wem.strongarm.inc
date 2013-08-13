@@ -1038,6 +1038,11 @@ function dfs_wem_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'alternate' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 0,
         'default' => 1,
@@ -1074,6 +1079,11 @@ function dfs_wem_strongarm() {
         'default' => 1,
         'choice' => 0,
       ),
+      'alternate' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 0,
         'default' => 1,
@@ -1103,6 +1113,11 @@ function dfs_wem_strongarm() {
       'teaser' => array(
         'status' => 0,
         'default' => 1,
+        'choice' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
@@ -1136,6 +1151,11 @@ function dfs_wem_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'alternate' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 0,
         'default' => 0,
@@ -1163,6 +1183,11 @@ function dfs_wem_strongarm() {
         'choice' => 0,
       ),
       'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alternate' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,

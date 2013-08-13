@@ -5,7 +5,7 @@
  *  Migrations for WEM Contest Nodes Translations.
  */
 
-class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodes {
+class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
