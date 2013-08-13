@@ -5,7 +5,7 @@ projects[acquia_connector][version] = "2.8"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
-projects[breakpoints][version] = "1.0"
+projects[breakpoints][version] = "1.1"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
@@ -21,7 +21,7 @@ projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
 projects[demonstratie_panels][download][type] = "git"
 projects[demonstratie_panels][download][branch] = "7.x-1.x"
-projects[demonstratie_panels][download][revision] = "5d6f9e7"
+projects[demonstratie_panels][download][revision] = "323713e"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -31,7 +31,7 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.0"
+projects[entity][version] = "1.1"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 
@@ -124,6 +124,9 @@ projects[bean][subdir] = "contrib"
 projects[bean][download][type] = "git"
 projects[bean][download][revision] = "b4460f1"
 projects[bean][download][branch] = "7.x-1.x"
+; Why is bean_reset() called during Bean::save() ?
+; https://drupal.org/node/2060831
+projects[bean][patch][2060831] = "http://drupal.org/files/bean-do-not-reset-after-save-0.patch"
 
 projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
@@ -366,7 +369,7 @@ projects[xautoload][type] = "module"
 projects[xautoload][subdir] = "contrib"
 
 ; DF Engage
-projects[addressfield][version] = "1.0-beta3"
+projects[addressfield][version] = "1.0-beta4"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
 
@@ -410,7 +413,7 @@ projects[entityreference][download][type] = "git"
 projects[entityreference][download][revision] = "1c176da"
 projects[entityreference][download][branch] = "7.x-1.x"
 
-projects[entityreference_prepopulate][version] = "1.2"
+projects[entityreference_prepopulate][version] = "1.3"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
@@ -462,7 +465,7 @@ projects[wem][download][branch] = "7.x-1.x"
 projects[wem][download][revision] = "0c8e49d"
 
 ; DF Import
-projects[feeds][version] = "2.0-alpha7"
+projects[feeds][version] = "2.0-alpha8"
 projects[feeds][type] = "module"
 projects[feeds][subdir] = "contrib"
 
@@ -508,7 +511,7 @@ projects[uuid_features][download][branch] = "7.x-1.x"
 ; UUID Features items do not revert correctly using features_revert or
 ; features_revert_module
 ; http://drupal.org/node/2056851
-projects[uuid_features][patch][2056851] = "http://drupal.org/files/uuid-features-use-features-get-default-0.patch"
+projects[uuid_features][patch][2056851] = "http://drupal.org/files/uuid-features-use-features-get-default-1.patch"
 
 ; DF Search
 projects[apachesolr][version] = "1.x-dev"
@@ -661,4 +664,4 @@ projects[ember][download][branch] = "7.x-1.x"
 projects[ember][download][revision] = "9291cc2"
 ; CSS styling issues for Media module
 ; https://drupal.org/node/2053095
-;projects[ember][patch][2053095] = "https://drupal.org/files/media_module_ember.patch"
+;projects[ember][patch][2053095] = "http://drupal.org/files/media_module_ember.patch"
