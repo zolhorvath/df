@@ -10,7 +10,7 @@ projects[drupal][version] = 7.23
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
-projects[drupal][patch][] = "https://drupal.org/files/drupal-7.x-allow_profile_change_sys_req-1772316-21.patch"
+projects[drupal][patch][] = "http://drupal.org/files/drupal-7.x-allow_profile_change_sys_req-1772316-21.patch"
 
 ; Site Preview System
 ; Load multiple revisions at once - http://drupal.org/node/1730874
