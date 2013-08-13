@@ -4,13 +4,13 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.22
+projects[drupal][version] = 7.23
 
 ; CORE PATCHES
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
-;projects[drupal][patch][] = "http://drupal.org/files/allow_change_system-requirements-1772316-4.patch"
+projects[drupal][patch][] = "https://drupal.org/files/drupal-7.x-allow_profile_change_sys_req-1772316-21.patch"
 
 ; Site Preview System
 ; Load multiple revisions at once - http://drupal.org/node/1730874
