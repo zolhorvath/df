@@ -26,6 +26,7 @@ dependencies[] = translation_helpers
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_instance][] = node-page-body
+features[language][] = de
 features[language][] = en
 features[language][] = es
 features[node][] = page
