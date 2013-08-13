@@ -34,7 +34,6 @@ dependencies[] = options
 dependencies[] = page_manager
 dependencies[] = panelizer
 dependencies[] = panels
-dependencies[] = panels_extra_styles
 dependencies[] = panels_ipe
 dependencies[] = panopoly_images
 dependencies[] = panopoly_magic

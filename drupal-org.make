@@ -193,13 +193,6 @@ projects[panels][download][type] = "git"
 projects[panels][download][revision] = "a915408"
 projects[panels][download][branch] = "7.x-3.x"
 
-projects[panels_extra_styles][version] = "1.x-dev"
-projects[panels_extra_styles][type] = "module"
-projects[panels_extra_styles][subdir] = "contrib"
-projects[panels_extra_styles][download][type] = "git"
-projects[panels_extra_styles][download][revision] = "04874d2"
-projects[panels_extra_styles][download][branch] = "7.x-1.x"
-
 projects[panopoly_images][version] = "1.x-dev"
 projects[panopoly_images][type] = "module"
 projects[panopoly_images][subdir] = "contrib"
