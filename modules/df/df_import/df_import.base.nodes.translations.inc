@@ -16,7 +16,7 @@ class DemoFrameworkBaseNodesTranslations extends Migration {
     // Create a map object for tracking the relationships between source rows
     $this->map = new MigrateSQLMap($this->machineName,
       array(
-        'title' => array(
+        'translated_title' => array(
           'type' => 'varchar',
           'length' => 255,
           'not null' => TRUE,
