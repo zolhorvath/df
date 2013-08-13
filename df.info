@@ -35,13 +35,15 @@ dependencies[] = role_export
 dependencies[] = rules
 dependencies[] = token
 
-; Demo Framework
+; Demo Framework (required)
 dependencies[] = df_assembler
 dependencies[] = df_curator
 dependencies[] = df_engage
 dependencies[] = df_import
-dependencies[] = df_search
 dependencies[] = df_translator
+
+; Demo Framework (optional)
+;dependencies[] = df_search
 
 ; System Requirements
 php = 5.3
