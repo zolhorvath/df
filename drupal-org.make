@@ -697,6 +697,9 @@ projects[i18nviews][subdir] = "contrib"
 projects[i18nviews][download][type] = "git"
 projects[i18nviews][download][revision] = "26bd52c"
 projects[i18nviews][download][branch] = "7.x-3.x"
+; Fatal error: Call to a member function unpack_translatables()
+; http://drupal.org/node/1653170
+projects[i18nviews][patch][1653170] = "http://drupal.org/files/i18nviews-1653170.patch"
 
 projects[lingotek][version] = "4.x-dev"
 projects[lingotek][type] = "module"
