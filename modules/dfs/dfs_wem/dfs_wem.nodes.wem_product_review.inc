@@ -5,7 +5,7 @@
  *  Migrations for WEM Commerce Product Nodes.
  */
 
-class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodes {
+class DFSWEMProductReviewNodes extends ImportBaseNodes {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());

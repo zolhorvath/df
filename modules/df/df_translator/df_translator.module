@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the DF Translator feature.
- */
-
-include_once 'df_translator.features.inc';

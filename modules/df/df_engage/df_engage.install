@@ -9,26 +9,24 @@
  * Implements hook_install().
  */
 function df_engage_install() {
-  // Enable the shopping cart block.
-  $default_theme = variable_get('theme_default', 'demonstratie');
-  $admin_theme = 'ember';
-  $blocks = array(
-    array(
-      'module' => 'commerce_cart',
-      'delta' => 'cart',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'header_second',
-      'pages' => '',
-      'title' => '',
-      'cache' => -1,
-    ),
-  );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'title', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
+
+  // Add shortcuts for DF Engage actions.
+  if (module_exists('shortcut')) {
+    $t = get_t();
+    // Load the default shortcut set
+    $shortcut_set = shortcut_default_set();
+    $shortcut_set->links[] = array(
+      'link_path' => 'admin/config/workflow/rules/reaction/add',
+      'link_title' => $t('Add rule'),
+      'weight' => 28,
+    );
+    $shortcut_set->links[] = array(
+      'link_path' => 'admin/config/workflow/rules',
+      'link_title' => $t('Find rules'),
+      'weight' => 28,
+    );
+    shortcut_set_save($shortcut_set);
   }
-  $query->execute();
+
 }
 

@@ -5,7 +5,7 @@
  *  Migrations for WEM News Nodes.
  */
 
-class DFSWEMNewsNodes extends DemoFrameworkBaseNodes {
+class DFSWEMNewsNodes extends ImportBaseNodes {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());

@@ -5,7 +5,7 @@
  *   Contains user migration class for DFS WEM
  */
 
-class DFSWEMUsers extends DemoFrameworkBaseUsers {
+class DFSWEMUsers extends ImportBaseUsers {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
@@ -44,7 +44,7 @@ class DFSWEMUsers extends DemoFrameworkBaseUsers {
 
 }
 
-class DFSWEMUserPictures extends DemoFrameworkBaseUserPictures {
+class DFSWEMUserPictures extends ImportBaseUserPictures {
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';

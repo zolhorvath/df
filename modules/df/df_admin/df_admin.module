@@ -1,0 +1,82 @@
+<?php
+/**
+ * @file
+ * Code for the DF Admin feature.
+ */
+
+include_once 'df_admin.features.inc';
+
+/**
+ * Implementation of hook_menu().
+ */
+function df_admin_menu() {
+  $items['admin/config/system/df/enable/%'] = array(
+    'page callback' => 'df_admin_page_enable',
+    'page arguments' => array(5),
+    'access arguments' => array('administer demo framework'),
+    'type' => MENU_CALLBACK,
+    'file' => 'df_admin.enable.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function df_admin_block_info() {
+  $blocks = array();
+  $blocks['dfs_block'] = array(
+    'info' => t('Demo Framework Scenarios'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function df_admin_block_view($delta='') {
+  $block = array();
+  switch($delta) {
+    case 'dfs_block' :
+      $block['subject'] = t('Scenarios');
+      $block['content'] = df_admin_dfs_block_view();
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Assemble render array for block content.
+ * @return
+ *   returns renderable array of block content.
+ */
+function df_admin_dfs_block_view() {
+  $list = '';
+  $modules = system_rebuild_module_data();
+  foreach ($modules as $name => $module) {
+    if (substr($name, 0, 4) == 'dfs_') {
+      $list .= '<li><details><summary>' . t($module->info['name']) . ' (' . _df_admin_dfs_link($module) .  ')</summary>' . t($module->info['description']) . '</details></li>';
+    }
+  }
+  $block = array(
+    'scenarios' => array(
+      '#type' => 'markup',
+      '#prefix' => '<ul>',
+      '#markup' => $list,
+      '#suffix' => '</ul>',
+    ),
+  );
+  return $block;
+}
+
+/**
+ * Psuedo-private function used by 'view' "method" df_admin_dfs_block_view.
+ * @return
+ *   returns a string of text including a link.
+ */
+function _df_admin_dfs_link($module) {
+  $action = (!module_exists($module->name) ? 'enable' : 'reset');
+  $path = 'admin/config/system/df/' . $action  . '/' . $module->name;
+  return  l(t(ucwords($action)), $path);
+}
+

@@ -1,5 +1,5 @@
 name = Demo Framework
-description = Architects Start Here.
+description = Architects Start Here. (Powered By Lightning)
 core = 7.x
 distribution_name = Demo Framework
 exclusive = 1
@@ -25,8 +25,11 @@ dependencies[] = shortcut
 dependencies[] = taxonomy
 
 ; Contribs
+dependencies[] = assemble
+dependencies[] = curate
 dependencies[] = demonstratie_panels
 dependencies[] = diff
+dependencies[] = import
 dependencies[] = module_filter
 dependencies[] = navbar
 dependencies[] = pathauto
@@ -36,14 +39,14 @@ dependencies[] = rules
 dependencies[] = token
 
 ; Demo Framework (required)
-dependencies[] = df_assembler
-dependencies[] = df_curator
+dependencies[] = df_admin
+dependencies[] = df_converge
 dependencies[] = df_engage
-dependencies[] = df_import
-dependencies[] = df_translator
+dependencies[] = df_translate
 
 ; Demo Framework (optional)
-;dependencies[] = df_search
+; dependencies[] = df_gallery
+; dependencies[] = df_search
 
 ; System Requirements
 php = 5.3

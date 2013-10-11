@@ -5,7 +5,7 @@
  *  Migration for Interests Taxonomy Terms in DFS WEM.
  */
 
-class DFSWEMInterestsTerms extends DemoFrameworkBaseTerms {
+class DFSWEMInterestsTerms extends ImportBaseTerms {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());

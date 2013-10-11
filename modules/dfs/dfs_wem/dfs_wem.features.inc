@@ -9,9 +9,9 @@
  */
 function dfs_wem_default_collection() {
   $items = array();
-  $items['wem_london_calling'] = entity_import('collection', '{
-    "name" : "wem_london_calling",
-    "label" : "London Calling",
+  $items['wem_munich_calling'] = entity_import('collection', '{
+    "name" : "wem_munich_calling",
+    "label" : "Munich Calling",
     "rdf_mapping" : []
   }');
   return $items;
@@ -56,6 +56,38 @@ function dfs_wem_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function dfs_wem_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function dfs_wem_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: wem-user-tiny.
+  $styles['wem-user-tiny'] = array(
+    'name' => 'wem-user-tiny',
+    'label' => 'wem-user-tiny',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 40,
+          'height' => 40,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
 }
 
 /**
@@ -275,8 +307,8 @@ function dfs_wem_default_salesforce_mapping() {
     ],
     "push_async" : "0",
     "push_batch" : "0",
-    "created" : "1375825189",
-    "updated" : "1376431449",
+    "created" : "1381258407",
+    "updated" : "1381258407",
     "weight" : "0",
     "locked" : "0",
     "rdf_mapping" : []

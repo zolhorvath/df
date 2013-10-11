@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Install, update and uninstall functions for the standard installation profile.
+ * Install, update and uninstall functions for the DF installation profile.
  */
 
 /**
@@ -13,8 +13,8 @@
  */
 function df_install() {
   // Enable default theme.
-  theme_enable(array('demonstratie'));
-  variable_set('theme_default', 'demonstratie');
+  theme_enable(array('demonstratie_core'));
+  variable_set('theme_default', 'demonstratie_core');
 
   // Add text formats.
   $filtered_html_format = array(
@@ -73,7 +73,7 @@ function df_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'demonstratie');
+  $default_theme = variable_get('theme_default', 'demonstratie_core');
   $admin_theme = 'ember';
   $blocks = array(
     array(
@@ -289,10 +289,7 @@ function df_install() {
   field_create_instance($instance);
 
 
-  // Create an image field named "Image", enabled for the 'article' content type.
-  // Many of the following values will be defaulted, they're included here as an illustrative examples.
-  // See http://api.drupal.org/api/function/field_create_field/7
-
+  // Create an image field named "Image", enabled for the 'article' node bundle.
   $field = array(
     'field_name' => 'field_image',
     'type' => 'image',
@@ -310,9 +307,7 @@ function df_install() {
   );
   field_create_field($field);
 
-
-  // Many of the following values will be defaulted, they're included here as an illustrative examples.
-  // See http://api.drupal.org/api/function/field_create_instance/7
+  // Set up some default values for the Image field.
   $instance = array(
     'field_name' => 'field_image',
     'entity_type' => 'node',
@@ -362,7 +357,8 @@ function df_install() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $filtered_html_permission));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval', $filtered_html_permission));
 
-  // Create a default role for site administrators, with all available permissions assigned.
+  // Create a default role for site administrators
+  // with all available permissions assigned.
   $admin_role = new stdClass();
   $admin_role->name = 'administrator';
   $admin_role->weight = 2;
@@ -376,23 +372,20 @@ function df_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
-  // Define admin themes.
-  // Seven available as fallback for some admin screens. (eg. Views)
-  $admin_themes = array('ember', 'seven');
+  // Enable Ember theme.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'ember')
+    ->execute();
 
-  // Enable the admin themes.
-  foreach ($admin_themes as $theme) {
-    db_update('system')
-      ->fields(array('status' => 1))
-      ->condition('type', 'theme')
-      ->condition('name', $theme)
-      ->execute();
-  }
-  // Use Ember as main admin theme.
+  // Set admin theme to Ember.
   variable_set('admin_theme', 'ember');
+
+  // Use admin theme when editing nodes.
   variable_set('node_admin_theme', '1');
 
-  // Set the jQuery version to 1.7.
+  // Set jQuery to version 1.7.
   variable_set('jquery_update_compression_type', 'min');
   variable_set('jquery_update_jquery_cdn', 'none');
   variable_set('jquery_update_jquery_version', '1.7');

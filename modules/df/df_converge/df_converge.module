@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Code for the DF Converge feature.
+ */
+
+include_once 'df_converge.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function df_converge_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'df_converge enabled ' . $component . ' component');
+}
+
+/**
+ * Implements hook_migrate_api().
+ */
+function df_converge_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DemoFrameworkBaseProducts' => array('class_name' => 'DemoFrameworkBaseProducts'),
+      'DemoFrameworkBaseCommerceNodes' => array('class_name' => 'DemoFrameworkBaseCommerceNodes'),
+    ),
+  );
+  return $api;
+}
+

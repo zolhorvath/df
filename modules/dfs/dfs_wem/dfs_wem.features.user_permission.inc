@@ -10,13 +10,6 @@
 function dfs_wem_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node wem_commerce overview'.
-  $permissions['administer panelizer node wem_commerce overview'] = array(
-    'name' => 'administer panelizer node wem_commerce overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create commerce_product entities of bundle wem_product'.
   $permissions['create commerce_product entities of bundle wem_product'] = array(
     'name' => 'create commerce_product entities of bundle wem_product',

@@ -13,15 +13,23 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "280ccd0"
+projects[ctools][download][revision] = "e81da7a"
 projects[ctools][download][branch] = "7.x-1.x"
+; Introduce UUIDs onto panes & displays for
+; better exportability & features compatibility
+; (ctools patch from panels queue)
+; http://drupal.org/node/1277908#comment-7216356
+projects[ctools][patch][1277908] = "http://drupal.org/files/ctools-uuids_for_exported_objects-1277908-118.patch"
+; Update the token replacements in ctools to work against a fully rendered page.
+; http://drupal.org/node/955070#comment-7751253
+projects[ctools][patch][955070] = "http://drupal.org/files/ctools-fix_token_processing-955070-5.patch"
 
 projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
 projects[demonstratie_panels][download][type] = "git"
 projects[demonstratie_panels][download][branch] = "7.x-1.x"
-projects[demonstratie_panels][download][revision] = "323713e"
+projects[demonstratie_panels][download][revision] = "9566cbd"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -31,7 +39,7 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.1"
+projects[entity][version] = "1.2"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 
@@ -39,7 +47,7 @@ projects[features][version] = "2.x-dev"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
-projects[features][download][revision] = "fc56938"
+projects[features][download][revision] = "93ff6cd"
 projects[features][download][branch] = "7.x-2.x"
 
 projects[jquery_update][version] = "2.3"
@@ -90,6 +98,14 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
+projects[rules][version] = "2.3"
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
+
+projects[token][version] = "1.4"
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
+
 projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
@@ -117,16 +133,20 @@ projects[views_load_more][version] = "1.1"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-; DF Assembler
+; Assemble
+projects[assemble][version] = "1.0"
+projects[assemble][type] = "module"
+projects[assemble][subdir] = "contrib"
+projects[assemble][download][type] = "git"
+projects[assemble][download][revision] = "a21a494"
+projects[assemble][download][branch] = "7.x-1.x"
+
 projects[bean][version] = "1.x-dev"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
 projects[bean][download][type] = "git"
-projects[bean][download][revision] = "b4460f1"
+projects[bean][download][revision] = "a3d05d2"
 projects[bean][download][branch] = "7.x-1.x"
-; Why is bean_reset() called during Bean::save() ?
-; https://drupal.org/node/2060831
-projects[bean][patch][2060831] = "http://drupal.org/files/bean-do-not-reset-after-save-0.patch"
 
 projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
@@ -134,6 +154,10 @@ projects[bean_tax][subdir] = "contrib"
 projects[bean_tax][download][type] = "git"
 projects[bean_tax][download][revision] = "f796c8e"
 projects[bean_tax][download][branch] = "7.x-2.x"
+
+projects[colorbox][version] = "2.4"
+projects[colorbox][type] = "module"
+projects[colorbox][subdir] = "contrib"
 
 projects[fape][version] = "1.x-dev"
 projects[fape][type] = "module"
@@ -163,13 +187,17 @@ projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "1bda8c9"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
-projects[file_entity_link][version] = "1.0-alpha3"
-projects[file_entity_link][type] = "module"
-projects[file_entity_link][subdir] = "contrib"
-
 projects[gridbuilder][version] = "1.0-alpha2"
 projects[gridbuilder][type] = "module"
 projects[gridbuilder][subdir] = "contrib"
+
+projects[i18n_panels][version] = "1.x-dev"
+projects[i18n_panels][type] = "module"
+projects[i18n_panels][subdir] = "contrib"
+projects[i18n_panels][download][type] = "git"
+projects[i18n_panels][download][url] = "http://git.drupal.org/sandbox/daspeter/1444130.git"
+projects[i18n_panels][download][revision] = "37a796b"
+projects[i18n_panels][download][branch] = "7.x-1.x"
 
 projects[json2][version] = "1.1"
 projects[json2][type] = "module"
@@ -193,8 +221,14 @@ projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
-projects[panels][download][revision] = "a915408"
+projects[panels][download][revision] = "2bb470e"
 projects[panels][download][branch] = "7.x-3.x"
+; Translatable panel titles: Implement i18n_strings
+; http://drupal.org/node/1179034#comment-7216342
+; Introduce UUIDs onto panes & displays for better 
+; exportability & features compatibility
+; http://drupal.org/node/1277908#comment-6771122
+projects[panels][patch][1179034_1277908] = "http://drupal.org/files/panels-1179034-41_____panels-uuids-127790-100__-80.patch"
 
 projects[panopoly_images][version] = "1.x-dev"
 projects[panopoly_images][type] = "module"
@@ -228,7 +262,7 @@ projects[panopoly_widgets][download][revision] = "15c8dce"
 projects[panopoly_widgets][download][branch] = "7.x-1.x"
 ; Use Panopoly Widgets in Demo Framework
 ; http://drupal.org/node/1949710
-projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-9_0.patch"
+projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-10.patch"
 
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
@@ -249,13 +283,78 @@ projects[webform][version] = "3.19"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
-; DF Curator
+;DF Converge
+projects[addressfield][version] = "1.0-beta4"
+projects[addressfield][type] = "module"
+projects[addressfield][subdir] = "contrib"
+
+projects[commerce][version] = "1.5"
+projects[commerce][type] = "module"
+projects[commerce][subdir] = "contrib"
+
+projects[commerce_extra_price_formatters][version] = 1.x-dev
+projects[commerce_extra_price_formatters][type] = "module"
+projects[commerce_extra_price_formatters][subdir] = "contrib"
+projects[commerce_extra_price_formatters][download][type] = "git"
+projects[commerce_extra_price_formatters][download][revision] = "1371336"
+projects[commerce_extra_price_formatters][download][branch] = "7.x-1.x"
+
+projects[commerce_features][version] = "1.0-rc1"
+projects[commerce_features][type] = "module"
+projects[commerce_features][subdir] = "contrib"
+; Commerce shipping exportables with commerce features
+; http://drupal.org/node/1402762
+projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
+
+projects[commerce_migrate][version] = "1.1"
+projects[commerce_migrate][type] = "module"
+projects[commerce_migrate][subdir] = "contrib"
+
+projects[commerce_shipping][version] = "2.0"
+projects[commerce_shipping][type] = "module"
+projects[commerce_shipping][subdir] = "contrib"
+
+projects[google_analytics][version] = "1.3"
+projects[google_analytics][type] = "module"
+projects[google_analytics][subdir] = "contrib"
+
+projects[marketo_ma][version] = "1.1"
+projects[marketo_ma][type] = "module"
+projects[marketo_ma][subdir] = "contrib"
+
+projects[mollom][version] = "2.4"
+projects[mollom][type] = "module"
+projects[mollom][subdir] = "contrib"
+
+projects[purr_messages][version] = "2.0-beta3"
+projects[purr_messages][type] = "module"
+projects[purr_messages][subdir] = "contrib"
+
+projects[salesforce][version] = "3.0-beta2"
+projects[salesforce][type] = "module"
+projects[salesforce][subdir] = "contrib"
+
+projects[sharethis][version] = "2.5"
+projects[sharethis][type] = "module"
+projects[sharethis][subdir] = "contrib"
+
+; Curate
+projects[curate][version] = "1.0"
+projects[curate][type] = "module"
+projects[curate][subdir] = "contrib"
+projects[curate][download][type] = "git"
+projects[curate][download][revision] = "679deb0"
+projects[curate][download][branch] = "7.x-1.x"
+
 projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "4086c0c"
+projects[ckeditor][download][revision] = "5f705e2"
 projects[ckeditor][download][branch] = "7.x-1.x"
+; Integration with Media 2.x
+; http://drupal.org/node/1504696
+projects[ckeditor][patch][1504696] = "http://drupal.org/files/ckeditor_1504696_58.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -286,8 +385,12 @@ projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "5e12856"
+projects[file_entity][download][revision] = "7b9d082"
 projects[file_entity][download][branch] = "7.x-2.x"
+
+projects[file_entity_link][version] = "1.0-alpha3"
+projects[file_entity_link][type] = "module"
+projects[file_entity_link][subdir] = "contrib"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
@@ -307,16 +410,22 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "2319170"
+projects[media][download][revision] = "5839787"
 projects[media][download][branch] = "7.x-2.x"
 
-projects[media_youtube][version] = "2.0-rc3"
+projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
+projects[media_youtube][download][type] = "git"
+projects[media_youtube][download][revision] = "acff0f6"
+projects[media_youtube][download][branch] = "7.x-2.x"
 
-projects[media_vimeo][version] = "2.0-rc1"
+projects[media_vimeo][version] = "2.x-dev"
 projects[media_vimeo][type] = "module"
 projects[media_vimeo][subdir] = "contrib"
+projects[media_vimeo][download][type] = "git"
+projects[media_vimeo][download][revision] = "26b2eee"
+projects[media_vimeo][download][branch] = "7.x-2.x"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
@@ -364,41 +473,18 @@ projects[workbench_moderation][version] = "1.3"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
 
+projects[workbench_moderation_notes][version] = "1.x-dev"
+projects[workbench_moderation_notes][type] = "module"
+projects[workbench_moderation_notes][subdir] = "contrib"
+projects[workbench_moderation_notes][download][type] = "git"
+projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
+projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
+
 projects[xautoload][version] = "2.7"
 projects[xautoload][type] = "module"
 projects[xautoload][subdir] = "contrib"
 
 ; DF Engage
-projects[addressfield][version] = "1.0-beta4"
-projects[addressfield][type] = "module"
-projects[addressfield][subdir] = "contrib"
-
-projects[commerce][version] = "1.5"
-projects[commerce][type] = "module"
-projects[commerce][subdir] = "contrib"
-
-projects[commerce_extra_price_formatters][version] = 1.x-dev
-projects[commerce_extra_price_formatters][type] = "module"
-projects[commerce_extra_price_formatters][subdir] = "contrib"
-projects[commerce_extra_price_formatters][download][type] = "git"
-projects[commerce_extra_price_formatters][download][revision] = "1371336"
-projects[commerce_extra_price_formatters][download][branch] = "7.x-1.x"
-
-projects[commerce_features][version] = "1.0-rc1"
-projects[commerce_features][type] = "module"
-projects[commerce_features][subdir] = "contrib"
-; Commerce shipping exportables with commerce features
-; http://drupal.org/node/1402762
-projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
-
-projects[commerce_migrate][version] = "1.1"
-projects[commerce_migrate][type] = "module"
-projects[commerce_migrate][subdir] = "contrib"
-
-projects[commerce_shipping][version] = "2.0"
-projects[commerce_shipping][type] = "module"
-projects[commerce_shipping][subdir] = "contrib"
-
 projects[context_admin][version] = "1.x-dev"
 projects[context_admin][type] = "module"
 projects[context_admin][subdir] = "contrib"
@@ -421,41 +507,27 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
-projects[google_analytics][version] = "1.3"
-projects[google_analytics][type] = "module"
-projects[google_analytics][subdir] = "contrib"
-
-projects[marketo_ma][version] = "1.1"
-projects[marketo_ma][type] = "module"
-projects[marketo_ma][subdir] = "contrib"
-
-projects[mollom][version] = "2.4"
-projects[mollom][type] = "module"
-projects[mollom][subdir] = "contrib"
+projects[goals][version] = "1.x-dev"
+projects[goals][type] = "module"
+projects[goals][subdir] = "contrib"
+projects[goals][download][type] = "git"
+projects[goals][download][branch] = "7.x-1.x"
+projects[goals][download][revision] = "25afd9f"
+; Make Goals exportable via features
+; http://drupal.org/node/1934434
+projects[goals][patch][1934434] = "http://drupal.org/files/goals-features-exports-1934434-10.patch"
 
 projects[og][version] = "2.2"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
-projects[purr_messages][version] = "2.0-beta3"
-projects[purr_messages][type] = "module"
-projects[purr_messages][subdir] = "contrib"
+projects[radioactivity][version] = "2.8"
+projects[radioactivity][type] = "module"
+projects[radioactivity][subdir] = "contrib"
 
-projects[rules][version] = "2.3"
-projects[rules][type] = "module"
-projects[rules][subdir] = "contrib"
-
-projects[salesforce][version] = "3.0-beta2"
-projects[salesforce][type] = "module"
-projects[salesforce][subdir] = "contrib"
-
-projects[sharethis][version] = "2.5"
-projects[sharethis][type] = "module"
-projects[sharethis][subdir] = "contrib"
-
-projects[token][version] = "1.4"
-projects[token][type] = "module"
-projects[token][subdir] = "contrib"
+projects[relation][version] = "1.0-rc4"
+projects[relation][type] = "module"
+projects[relation][subdir] = "contrib"
 
 projects[wem][version] = "1.x-dev"
 projects[wem][type] = "module"
@@ -464,7 +536,31 @@ projects[wem][download][type] = "git"
 projects[wem][download][branch] = "7.x-1.x"
 projects[wem][download][revision] = "0c8e49d"
 
-; DF Import
+; DF Gallery
+projects[manualcrop][version] = "1.4"
+projects[manualcrop][type] = "module"
+projects[manualcrop][subdir] = "contrib"
+
+projects[media_gallery][version] = "2.x-dev"
+projects[media_gallery][type] = "module"
+projects[media_gallery][subdir] = "contrib"
+
+projects[multiform][version] = "1.0"
+projects[multiform][type] = "module"
+projects[multiform][subdir] = "contrib"
+
+projects[plupload][version] = "1.3"
+projects[plupload][type] = "module"
+projects[plupload][subdir] = "contrib"
+
+; Import
+projects[import][version] = "1.0"
+projects[import][type] = "module"
+projects[import][subdir] = "contrib"
+projects[import][download][type] = "git"
+projects[import][download][revision] = "844f208"
+projects[import][download][branch] = "7.x-1.x"
+
 projects[feeds][version] = "2.0-alpha8"
 projects[feeds][type] = "module"
 projects[feeds][subdir] = "contrib"
@@ -473,8 +569,8 @@ projects[feeds_jsonpath_parser][version] = "1.x-dev"
 projects[feeds_jsonpath_parser][type] = "module"
 projects[feeds_jsonpath_parser][subdir] = "contrib"
 projects[feeds_jsonpath_parser][download][type] = "git"
-projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
 projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
+projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
 ; Support for Libraries API
 ; http://drupal.org/node/1083234
 projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
@@ -629,13 +725,16 @@ libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/documentcloud/backbone/archive/1.0.0.zip"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1/ckeditor_4.1_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2/ckeditor_4.2_standard.zip"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
-;libraries[jsonpath][download][type] = "get"
-;libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+libraries[jsonpath][download][type] = "get"
+libraries[jsonpath][download][url] = "http://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+
+libraries[plupload][download][type] = "get"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v2.0.0.zip"
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
@@ -651,17 +750,12 @@ projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
+projects[demonstratie][download][revision] = "4df568d"
 projects[demonstratie][download][branch] = "7.x-1.x"
-projects[demonstratie][download][revision] = "f699c0b"
-; Black Demonstratie
-;projects[demonstratie][download][revision] = "2c33440"
 
-projects[ember][version] = "1.x-dev"
+projects[ember][version] = "2.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
-projects[ember][download][branch] = "7.x-1.x"
-projects[ember][download][revision] = "9291cc2"
-; CSS styling issues for Media module
-; https://drupal.org/node/2053095
-;projects[ember][patch][2053095] = "http://drupal.org/files/media_module_ember.patch"
+projects[ember][download][revision] = "92a2bed"
+projects[ember][download][branch] = "7.x-2.x"

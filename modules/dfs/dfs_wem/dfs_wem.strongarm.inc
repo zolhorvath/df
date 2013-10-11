@@ -266,7 +266,7 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_wem_product_review';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['comment_wem_product_review'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -760,6 +760,12 @@ function dfs_wem_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'alternate' => array(
+        'custom_settings' => TRUE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -767,7 +773,22 @@ function dfs_wem_strongarm() {
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'language' => array(
+          'default' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'alternate' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__wem_product_review'] = $strongarm;
@@ -819,6 +840,20 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'language_content_type_wem_news';
   $strongarm->value = '2';
   $export['language_content_type_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_wem_product_review';
+  $strongarm->value = '2';
+  $export['language_content_type_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_wem_tweet';
+  $strongarm->value = '2';
+  $export['language_content_type_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -937,7 +972,8 @@ function dfs_wem_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_wem_tweet';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_wem_tweet'] = $strongarm;
 
@@ -1214,6 +1250,13 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'save_continue_wem_news';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_node_option';
+  $strongarm->value = 'wem_product_review,page,article,0,0,0,0,0,0,0,0';
+  $export['sharethis_node_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

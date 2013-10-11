@@ -13,3 +13,17 @@ function df_engage_post_features_enable_feature($component) {
   // Log components as they are enabled.
   watchdog('component', 'df_engage enabled ' . $component . ' component');
 }
+
+/**
+ * Implements hook_migrate_api().
+ */
+function df_engage_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DemoFrameworkBaseGroups' => array('class_name' => 'DemoFrameworkBaseGroups'),
+      'DemoFrameworkBaseNodesGroup' => array('class_name' => 'DemoFrameworkBaseNodesGroup'),
+    ),
+  );
+  return $api;
+}

@@ -5,7 +5,7 @@
  *  Migrations for WEM Tweet Nodes.
  */
 
-class DFSWEMTweetNodes extends DemoFrameworkBaseNodes {
+class DFSWEMTweetNodes extends ImportBaseNodes {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
