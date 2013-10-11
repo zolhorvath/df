@@ -138,7 +138,7 @@ projects[assemble][version] = "1.0"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
 projects[assemble][download][type] = "git"
-projects[assemble][download][revision] = "a21a494"
+projects[assemble][download][revision] = "b89e60c"
 projects[assemble][download][branch] = "7.x-1.x"
 
 projects[bean][version] = "1.x-dev"
