@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DF Import enable scenario handling functions.
+ * DF Admin scenario handling functions.
  */
 
 /**
@@ -22,10 +22,11 @@ function df_admin_page_enable($module) {
 
   // Not all DFS require a batch content import, but some need this.
   // Resolves to the DF admin page if no reset callback present.
-  $path = 'admin/config/system/df/reset/' . $module;
+  if (!drupal_is_cli()) {
+    $path = 'admin/config/system/df/reset/' . $module;
+    drupal_goto($path);
+  }
 
-  // Drupal Redirect
-  drupal_goto($path);
   return '';
 }
 

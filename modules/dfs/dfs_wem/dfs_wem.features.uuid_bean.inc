@@ -46,6 +46,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => '2012f872-c6f3-47a2-8cfa-9b1b00ed4ee5',
     'uuid' => '35f72018-6785-49d8-9321-bae896390db9',
     'filters' => array(
       'records_shown' => 1,
@@ -105,6 +106,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => '98097dbd-81ee-442b-8d0b-5fdf81205f12',
     'uuid' => '4ca3c820-7dae-44a0-a27d-4f46d0f0dcd2',
     'filters' => array(
       'records_shown' => 4,
@@ -164,6 +166,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => 'c7fbb0e6-1aae-4c94-ab33-19d335d81a83',
     'uuid' => '4ed8dc32-c8c7-46b9-a484-2f03bef1e78b',
     'filters' => array(
       'records_shown' => 1,
@@ -223,6 +226,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => 'd116c450-9f25-4867-8893-a8d3c0397000',
     'uuid' => '5eabc66b-122b-413d-a402-068617bdd415',
     'filters' => array(
       'records_shown' => 1,
@@ -282,6 +286,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => 'ca7316bc-eeab-410d-a464-e252c5983c18',
     'uuid' => 'b94a5b9d-d1e8-469c-a520-fb4b4047956a',
     'filters' => array(
       'records_shown' => 1,
@@ -341,6 +346,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => '7935d9c4-da6c-4c28-baab-90f8e4b4a057',
     'uuid' => 'd8ae7672-37d6-457a-8943-e88c05e619ec',
     'filters' => array(
       'records_shown' => 4,
@@ -400,6 +406,7 @@ function dfs_wem_uuid_features_default_beans() {
     'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
+    'vuuid' => '21a6188d-9680-4984-88a7-ca19383a81b5',
     'uuid' => 'ea56341c-11a6-443a-b174-eda8650c85f1',
     'filters' => array(
       'records_shown' => 1,

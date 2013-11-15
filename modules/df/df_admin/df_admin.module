@@ -17,6 +17,13 @@ function df_admin_menu() {
     'type' => MENU_CALLBACK,
     'file' => 'df_admin.enable.inc',
   );
+  $items['admin/config/system/df/reset/%'] = array(
+    'page callback' => 'df_admin_page_reset',
+    'page arguments' => array(5),
+    'access arguments' => array('administer demo framework'),
+    'type' => MENU_CALLBACK,
+    'file' => 'df_admin.reset.inc',
+  );
   return $items;
 }
 
@@ -51,10 +58,14 @@ function df_admin_block_view($delta='') {
  *   returns renderable array of block content.
  */
 function df_admin_dfs_block_view() {
+  // Clear & rebuild Features key caches
+  features_get_info(NULL, NULL, TRUE);
+  features_rebuild();
+  // Render DFS menu
   $list = '';
   $modules = system_rebuild_module_data();
   foreach ($modules as $name => $module) {
-    if (substr($name, 0, 4) == 'dfs_') {
+    if (substr($name, 0, 4) == 'dfs_' && $module->info['package'] == 'Demo Framework Scenarios') {
       $list .= '<li><details><summary>' . t($module->info['name']) . ' (' . _df_admin_dfs_link($module) .  ')</summary>' . t($module->info['description']) . '</details></li>';
     }
   }

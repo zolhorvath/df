@@ -2,10 +2,10 @@
 
 /**
  * @file
- *  Migration for Interests Taxonomy Terms in DFS WEM.
+ *  Migration for Interests Taxonomy Terms in DFS DM.
  */
 
-class DFSDMTermsIds extends DemoFrameworkBaseTerms {
+class DFSDMTermsIds extends ImportBaseTerms {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());

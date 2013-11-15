@@ -23,6 +23,7 @@ function df_engage_migrate_api() {
     'migrations' => array(
       'DemoFrameworkBaseGroups' => array('class_name' => 'DemoFrameworkBaseGroups'),
       'DemoFrameworkBaseNodesGroup' => array('class_name' => 'DemoFrameworkBaseNodesGroup'),
+      'DemoFrameworkBaseNodesUUID' => array('class_name' => 'DemoFrameworkBaseNodesUUID'),
     ),
   );
   return $api;

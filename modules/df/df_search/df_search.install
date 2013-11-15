@@ -10,7 +10,7 @@
  */
 function df_search_install() {
   // Enable apachesolr search blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'demonstratie_core');
   $blocks = array(
     array(
       'module' => 'apachesolr_search',

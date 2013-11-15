@@ -33,6 +33,28 @@ function dfs_wem_migrate_api() {
 }
 
 /**
+ * Implements hook_df_import_alter().
+ */
+function dfs_wem_df_import_alter(&$migrations) {
+  return $migrations['dfs_wem'] = array(
+    'DFSWEMInterestsTerms',
+    'DFSWEMUserPictures',
+    'DFSWEMUsers',
+    'DFSWEMProducts',
+    'DFSWEMCommerceNodes',
+    'DFSWEMCommerceNodesTranslations',
+    'DFSWEMProductReviewNodes',
+    'DFSWEMContestNodes',
+    'DFSWEMContestNodesTranslations',
+    'DFSWEMGroupsWEMContestUsers',
+    'DFSWEMNewsVideo',
+    'DFSWEMNewsNodes',
+    'DFSWEMNewsNodesTranslations',
+    'DFSWEMTweetNodes',
+  );
+}
+
+/**
  *  Implements hook_post_features_enable_feature().
  */
 function dfs_wem_post_features_enable_feature($component) {
@@ -43,16 +65,3 @@ function dfs_wem_post_features_enable_feature($component) {
   }
 }
 
-/**
- * Implementation of hook_menu().
- */
-function dfs_wem_menu() {
-  $items['admin/config/system/df/reset/dfs_wem'] = array(
-    'page callback' => 'dfs_wem_page_reset',
-    'page arguments' => array(1),
-    'access arguments' => array('administer demo framework'),
-    'type' => MENU_CALLBACK,
-    'file' => 'dfs_wem.reset.inc',
-  );
-  return $items;
-}

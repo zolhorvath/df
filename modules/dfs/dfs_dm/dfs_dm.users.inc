@@ -5,7 +5,7 @@
  *   Contains user migration class for DFS DM
  */
 
-class DFSDMUsers extends DemoFrameworkBaseUsers {
+class DFSDMUsers extends ImportBaseUsers {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
