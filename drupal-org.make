@@ -841,9 +841,6 @@ projects[views_slideshow][download][branch] = "7.x-1.x"
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "http://documentcloud.github.io/backbone/backbone-min.js"
 
-libraries[bgrins-spectrum][download][type] = "get"
-libraries[bgrins-spectrum][download][url] = "http://github.com/bgrins/spectrum/zipball/1.1.1"
-
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
