@@ -1,0 +1,7 @@
+db.url=mysql://root:pass@host/db
+site.name=DF
+site.mail=test@example.com
+account.name=admin
+account.pass=admin
+account.mail=test@example.com
+sites.subdir=df.localhost
