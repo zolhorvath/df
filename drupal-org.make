@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[acquia_connector][version] = "2.8"
+projects[acquia_connector][version] = "2.12"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
@@ -65,12 +65,9 @@ projects[libraries][version] = "2.1"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
-projects[link][version] = "1.x-dev"
+projects[link][version] = "1.2"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
-projects[link][download][type] = "git"
-projects[link][download][revision] = "6ae1ff0"
-projects[link][download][branch] = "7.x-1.x"
 
 projects[migrate][version] = "2.5"
 projects[migrate][type] = "module"
@@ -82,7 +79,7 @@ projects[migrate_extras][subdir] = "contrib"
 projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
 projects[migrate_extras][patch][2026003] = "http://drupal.org/files/color_field_migrate_support.patch"
 
-projects[module_filter][version] = "1.7"
+projects[module_filter][version] = "2.0-alpha1"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
@@ -115,11 +112,11 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
-projects[rules][version] = "2.3"
+projects[rules][version] = "2.6"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
-projects[token][version] = "1.4"
+projects[token][version] = "1.5"
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
 
@@ -132,7 +129,7 @@ projects[assemble][version] = "1.0"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
 projects[assemble][download][type] = "git"
-projects[assemble][download][revision] = "8537879"
+projects[assemble][download][revision] = "bda7029"
 projects[assemble][download][branch] = "7.x-1.x"
 
 projects[bean][version] = "1.x-dev"
@@ -146,7 +143,7 @@ projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 projects[bean_tax][download][type] = "git"
-projects[bean_tax][download][revision] = "3780ee7"
+projects[bean_tax][download][revision] = "ae7b1a7"
 projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[colorbox][version] = "2.4"
@@ -178,6 +175,7 @@ projects[fape][subdir] = "contrib"
 projects[fape][download][type] = "git"
 projects[fape][download][revision] = "1143ee2"
 projects[fape][download][branch] = "7.x-1.x"
+projects[fape][patch][1846156] = "http://drupal.org/files/fape-1846156-5.patch"
 
 projects[fences][version] = "1.x-dev"
 projects[fences][type] = "module"
@@ -309,9 +307,16 @@ projects[ux_elements][download][branch] = "master"
 ; http://drupal.org/node/1224568
 projects[ux_elements][patch][1224568] = "http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch"
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
+projects[views][download][type] = "git"
+projects[views][download][revision] = "80d9683"
+projects[views][download][branch] = "7.x-3.x"
+; Call to a member function init_display() on a non-object in
+; modules/all/views/plugins/views_plugin_localization.inc
+; http://drupal.org/node/1685144
+projects[views][patch][1685144] = "https://drupal.org/files/views-1685144-localization-bug_1.patch"
 
 projects[views_autocomplete_filters][version] = "1.0-beta2"
 projects[views_autocomplete_filters][type] = "module"
@@ -404,7 +409,7 @@ projects[curate][version] = "1.0"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 projects[curate][download][type] = "git"
-projects[curate][download][revision] = "679deb0"
+;projects[curate][download][revision] = "679deb0"
 projects[curate][download][branch] = "7.x-1.x"
 
 projects[ckeditor][version] = "1.x-dev"
@@ -594,7 +599,7 @@ projects[goals][download][revision] = "25afd9f"
 ; http://drupal.org/node/1934434
 projects[goals][patch][1934434] = "http://drupal.org/files/goals-features-exports-1934434-10.patch"
 
-projects[og][version] = "2.2"
+projects[og][version] = "2.4"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
@@ -729,7 +734,7 @@ projects[lingotek][version] = "4.x-dev"
 projects[lingotek][type] = "module"
 projects[lingotek][subdir] = "contrib"
 projects[lingotek][download][type] = "git"
-projects[lingotek][download][revision] = "8bde104"
+projects[lingotek][download][revision] = "6a58f89"
 projects[lingotek][download][branch] = "7.x-4.x"
 
 projects[potx][version] = "1.x-dev"
