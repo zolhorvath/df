@@ -5,7 +5,7 @@
  *  Migrations for WEM Tweet Nodes.
  */
 
-class DFSWEMTweetNodes extends ImportBaseNodes {
+class DFSWEMTweetNodes extends DemoFrameworkBaseNodesUUID {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
@@ -41,6 +41,7 @@ class DFSWEMTweetNodes extends ImportBaseNodes {
     $columns[0] = array('tweet', 'Tweet');
     $columns[1] = array('tweet_id', 'ID');
     $columns[2] = array('tweet_from', 'From');
+    $columns[3] = array('uuid', 'UUID');
     return $columns;
   }
 

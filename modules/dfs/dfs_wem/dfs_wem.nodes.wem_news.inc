@@ -5,7 +5,7 @@
  *  Migrations for WEM News Nodes.
  */
 
-class DFSWEMNewsNodes extends ImportBaseNodes {
+class DFSWEMNewsNodes extends DemoFrameworkBaseNodesUUID {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
@@ -38,6 +38,7 @@ class DFSWEMNewsNodes extends ImportBaseNodes {
     $columns[2] = array('image', 'Image');
     $columns[3] = array('video', 'Video');
     $columns[4] = array('interests', 'Interests');
+    $columns[5] = array('uuid', 'UUID');
     return $columns;
   }
 

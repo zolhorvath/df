@@ -5,7 +5,7 @@
  *  Migrations for WEM Contest Nodes.
  */
 
-class DFSWEMContestNodes extends ImportBaseNodes {
+class DFSWEMContestNodes extends DemoFrameworkBaseNodesUUID {
 
   public function __construct($arguments = array()) {
     parent::__construct($arguments = array());
@@ -34,6 +34,7 @@ class DFSWEMContestNodes extends ImportBaseNodes {
     $columns[1] = array('body', 'Body');
     $columns[2] = array('image', 'Image');
     $columns[3] = array('interests', 'Interests');
+    $columns[4] = array('uuid', 'UUID');
     return $columns;
   }
 

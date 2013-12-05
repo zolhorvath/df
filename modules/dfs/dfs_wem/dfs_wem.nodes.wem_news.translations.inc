@@ -36,6 +36,9 @@ class DFSWEMNewsNodesTranslations extends DemoFrameworkBaseNodesTranslations {
     // Translations
     $this->addFieldMapping('title', 'translated_title');
     $this->addFieldMapping('tnid', 'title')->sourceMigration('DFSWEMNewsNodes');
+
+    // UUID
+    $this->addFieldMapping('uuid', 'uuid');
   }
 
   function csvcolumns() {
@@ -46,6 +49,7 @@ class DFSWEMNewsNodesTranslations extends DemoFrameworkBaseNodesTranslations {
     $columns[4] = array('image', 'Image');
     $columns[5] = array('video', 'Video');
     $columns[6] = array('interests', 'Interests');
+    $columns[7] = array('uuid', 'UUID');
     return $columns;
   }
 
