@@ -14,22 +14,36 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wem_commerce';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-comment';
   $export['additional_settings__active_tab_wem_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wem_contest';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-comment';
   $export['additional_settings__active_tab_wem_contest'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wem_news';
-  $strongarm->value = 'edit-scheduler';
+  $strongarm->value = 'edit-comment';
   $export['additional_settings__active_tab_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_wem_product_review';
+  $strongarm->value = 'edit-comment';
+  $export['additional_settings__active_tab_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_wem_tweet';
+  $strongarm->value = 'edit-comment';
+  $export['additional_settings__active_tab_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -189,7 +203,7 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_wem_news';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['comment_preview_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -245,7 +259,7 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_wem_commerce';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['comment_wem_commerce'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -259,14 +273,14 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_wem_news';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['comment_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_wem_product_review';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['comment_wem_product_review'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -275,6 +289,111 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'comment_wem_tweet';
   $strongarm->value = '0';
   $export['comment_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_commerce';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_contest';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_news';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_product_review';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_wem_tweet';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_commerce';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_contest';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_news';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_product_review';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_wem_tweet';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_commerce';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_contest';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_news';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_product_review';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_wem_tweet';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -457,7 +576,7 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '3',
+            'weight' => '-10',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -479,7 +598,7 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '5',
+            'weight' => '-5',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -501,7 +620,7 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '9',
+            'weight' => '5',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -523,8 +642,8 @@ function dfs_wem_strongarm() {
             'visible' => TRUE,
           ),
           'featured' => array(
-            'weight' => '1',
-            'visible' => TRUE,
+            'weight' => '0',
+            'visible' => FALSE,
           ),
           'full' => array(
             'weight' => '6',
@@ -545,7 +664,7 @@ function dfs_wem_strongarm() {
             'visible' => TRUE,
           ),
           'featured' => array(
-            'weight' => '0',
+            'weight' => '37',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -567,7 +686,7 @@ function dfs_wem_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '4',
+            'weight' => '38',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -816,9 +935,107 @@ function dfs_wem_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_wem_commerce';
+  $strongarm->value = '1';
+  $export['i18n_node_extended_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_wem_contest';
+  $strongarm->value = '1';
+  $export['i18n_node_extended_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_wem_news';
+  $strongarm->value = '1';
+  $export['i18n_node_extended_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_wem_product_review';
+  $strongarm->value = 1;
+  $export['i18n_node_extended_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_wem_tweet';
+  $strongarm->value = 1;
+  $export['i18n_node_extended_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_wem_commerce';
+  $strongarm->value = array();
+  $export['i18n_node_options_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_wem_contest';
+  $strongarm->value = array();
+  $export['i18n_node_options_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_wem_news';
+  $strongarm->value = array();
+  $export['i18n_node_options_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_wem_product_review';
+  $strongarm->value = array();
+  $export['i18n_node_options_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_wem_tweet';
+  $strongarm->value = array();
+  $export['i18n_node_options_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_wem_commerce';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_wem_contest';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'i18n_sync_node_type_wem_news';
   $strongarm->value = array();
   $export['i18n_sync_node_type_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_wem_product_review';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_sync_node_type_wem_tweet';
+  $strongarm->value = array();
+  $export['i18n_sync_node_type_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -845,14 +1062,14 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_wem_product_review';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['language_content_type_wem_product_review'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_wem_tweet';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['language_content_type_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -868,14 +1085,18 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_wem_contest';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_wem_contest'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_wem_news';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_wem_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -891,7 +1112,9 @@ function dfs_wem_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_wem_tweet';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_wem_tweet'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -943,8 +1166,7 @@ function dfs_wem_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_wem_contest';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'status',
   );
   $export['node_options_wem_contest'] = $strongarm;
 
@@ -964,6 +1186,7 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'node_options_wem_product_review';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_wem_product_review'] = $strongarm;
 
@@ -972,8 +1195,8 @@ function dfs_wem_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_wem_tweet';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_wem_tweet'] = $strongarm;
 
@@ -1081,7 +1304,7 @@ function dfs_wem_strongarm() {
       ),
       'featured' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
       'token' => array(
@@ -1112,7 +1335,7 @@ function dfs_wem_strongarm() {
       ),
       'teaser' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
       'alternate' => array(
@@ -1122,7 +1345,7 @@ function dfs_wem_strongarm() {
       ),
       'featured' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
     ),
@@ -1143,12 +1366,12 @@ function dfs_wem_strongarm() {
       ),
       'default' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
       'alternate' => array(
@@ -1158,7 +1381,7 @@ function dfs_wem_strongarm() {
       ),
       'featured' => array(
         'status' => 0,
-        'default' => 1,
+        'default' => 0,
         'choice' => 0,
       ),
     ),
@@ -1261,6 +1484,41 @@ function dfs_wem_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_wem_commerce';
+  $strongarm->value = 0;
+  $export['webform_node_wem_commerce'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_wem_contest';
+  $strongarm->value = 0;
+  $export['webform_node_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_wem_news';
+  $strongarm->value = 0;
+  $export['webform_node_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_wem_product_review';
+  $strongarm->value = 0;
+  $export['webform_node_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_wem_tweet';
+  $strongarm->value = 0;
+  $export['webform_node_wem_tweet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'workbench_moderation_default_state_wem_commerce';
   $strongarm->value = 'draft';
   $export['workbench_moderation_default_state_wem_commerce'] = $strongarm;
@@ -1278,6 +1536,20 @@ function dfs_wem_strongarm() {
   $strongarm->name = 'workbench_moderation_default_state_wem_news';
   $strongarm->value = 'draft';
   $export['workbench_moderation_default_state_wem_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_wem_product_review';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_wem_product_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_wem_tweet';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_wem_tweet'] = $strongarm;
 
   return $export;
 }
