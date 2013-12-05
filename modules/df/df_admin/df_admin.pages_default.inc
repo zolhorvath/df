@@ -14,7 +14,7 @@ function df_admin_default_page_manager_pages() {
   $page->name = 'df_admin_link';
   $page->task = 'page';
   $page->admin_title = 'Demo Framework';
-  $page->admin_description = '';
+  $page->admin_description = 'Demo Framework administration page.';
   $page->path = 'admin/config/system/df';
   $page->access = array(
     'plugins' => array(

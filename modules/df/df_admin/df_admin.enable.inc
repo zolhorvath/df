@@ -34,7 +34,7 @@ function df_admin_page_enable($module) {
  * Helper function to enable a Feature properly.
  */
 function _df_admin_enable_feature($module) {
-  // Enable the and revert a Features module.
+  // Enable and revert a Features module.
   if (!module_exists($module) && module_enable(array($module))) {
     features_revert_module($module);
   }

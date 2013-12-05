@@ -10,7 +10,7 @@
  */
 function df_gallery_install() {
 
-  // Add shortcuts for DF Engage actions.
+  // Add shortcuts for DF Gallery links.
   if (module_exists('shortcut')) {
     $t = get_t();
     // Load the default shortcut set
