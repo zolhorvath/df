@@ -36,7 +36,6 @@ function df_admin_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'user',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_user_bio',
     'label' => 'Bio',
     'required' => 0,

@@ -1,65 +1,52 @@
 <?php
 /**
  * @file
- * dfs_wem.features.field_base.inc
+ * dfs_wem_contest.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function dfs_wem_field_default_field_bases() {
+function dfs_wem_contest_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_commerce_reference'
-  $field_bases['field_commerce_reference'] = array(
+  // Exported field_base: 'field_contest_image'
+  $field_bases['field_contest_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_commerce_reference',
+    'field_name' => 'field_contest_image',
     'foreign keys' => array(
-      'node' => array(
+      'fid' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'fid' => 'fid',
         ),
-        'table' => 'node',
+        'table' => 'file_managed',
       ),
     ),
     'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
+      'fid' => array(
+        0 => 'fid',
       ),
     ),
     'locked' => 0,
-    'module' => 'entityreference',
+    'module' => 'image',
     'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'wem_commerce' => 'wem_commerce',
-        ),
-      ),
-      'target_type' => 'node',
+      'default_image' => 0,
+      'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'entityreference',
+    'type' => 'image',
   );
 
-  // Exported field_base: 'field_user_interests'
-  $field_bases['field_user_interests'] = array(
+  // Exported field_base: 'field_contest_interests'
+  $field_bases['field_contest_interests'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_user_interests',
+    'field_name' => 'field_contest_interests',
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(

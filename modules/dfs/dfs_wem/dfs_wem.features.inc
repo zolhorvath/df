@@ -18,28 +18,9 @@ function dfs_wem_default_collection() {
 }
 
 /**
- * Implements hook_commerce_product_default_types().
- */
-function dfs_wem_commerce_product_default_types() {
-  $items = array(
-    'wem_product' => array(
-      'type' => 'wem_product',
-      'name' => 'WEM Product',
-      'description' => '',
-      'help' => '',
-      'revision' => 0,
-    ),
-  );
-  return $items;
-}
-
-/**
  * Implements hook_ctools_plugin_api().
  */
 function dfs_wem_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "file_entity" && $api == "file_default_displays") {
-    return array("version" => "1");
-  }
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -91,55 +72,6 @@ function dfs_wem_image_default_styles() {
   );
 
   return $styles;
-}
-
-/**
- * Implements hook_node_info().
- */
-function dfs_wem_node_info() {
-  $items = array(
-    'wem_commerce' => array(
-      'name' => t('WEM Commerce'),
-      'base' => 'node_content',
-      'description' => t('The <em>Commerce</em> nodes that should have products attached to them.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'wem_contest' => array(
-      'name' => t('WEM Contest'),
-      'base' => 'node_content',
-      'description' => t('A <em>Contest</em> that authenticated users can enter by joining the Organic Group.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'wem_news' => array(
-      'name' => t('WEM News'),
-      'base' => 'node_content',
-      'description' => t('A <em>News</em> content type to be used by the WEM Scenario.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'wem_product_review' => array(
-      'name' => t('WEM Product Review'),
-      'base' => 'node_content',
-      'description' => t('A <em>Product Review</em> is created by authenticated customers.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'wem_tweet' => array(
-      'name' => t('WEM Tweet'),
-      'base' => 'node_content',
-      'description' => t('A <em>WEM Tweet</em> is imported via feeds.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  return $items;
 }
 
 /**
@@ -310,8 +242,8 @@ function dfs_wem_default_salesforce_mapping() {
     ],
     "push_async" : "0",
     "push_batch" : "0",
-    "created" : "1384964692",
-    "updated" : "1384964692",
+    "created" : "1388442862",
+    "updated" : "1388442862",
     "weight" : "0",
     "locked" : "0",
     "rdf_mapping" : []

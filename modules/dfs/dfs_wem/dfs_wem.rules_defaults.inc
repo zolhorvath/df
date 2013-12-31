@@ -12,8 +12,9 @@ function dfs_wem_default_rules_configuration() {
   $items['rules_add_visit_data_to_marketo'] = entity_import('rules_config', '{ "rules_add_visit_data_to_marketo" : {
       "LABEL" : "Add visit data to Marketo",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "REQUIRES" : [ "rules", "marketo_ma", "purr_messages", "og" ],
-      "ON" : [ "og_user_insert" ],
+      "ON" : { "og_user_insert" : [] },
       "DO" : [
         { "variable_add" : {
             "USING" : {
@@ -36,8 +37,9 @@ function dfs_wem_default_rules_configuration() {
   $items['rules_dfs_wem_enter_contest_group_join'] = entity_import('rules_config', '{ "rules_dfs_wem_enter_contest_group_join" : {
       "LABEL" : "DFS WEM Enter Contest Group Join",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "REQUIRES" : [ "rules", "og" ],
-      "ON" : [ "node_view" ],
+      "ON" : { "node_view" : [] },
       "IF" : [
         { "data_is" : { "data" : [ "view-mode" ], "value" : "full" } },
         { "node_is_of_type" : {

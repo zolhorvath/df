@@ -54,7 +54,7 @@ projects[import][version] = "1.0"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
-projects[import][download][revision] = "844f208"
+projects[import][download][revision] = "84057c6"
 projects[import][download][branch] = "7.x-1.x"
 
 projects[jquery_update][version] = "2.3"
@@ -79,7 +79,7 @@ projects[migrate_extras][subdir] = "contrib"
 projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
 projects[migrate_extras][patch][2026003] = "http://drupal.org/files/color_field_migrate_support.patch"
 
-projects[module_filter][version] = "2.0-alpha1"
+projects[module_filter][version] = "2.0-alpha2"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
@@ -87,11 +87,11 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "dd542e1"
+projects[navbar][download][revision] = "b9ba113"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
-projects[navbar][patch][1954912] = "http://drupal.org/files/navbar-contrib-icons-1954912-6.patch"
+projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][type] = "module"
@@ -105,7 +105,7 @@ projects[responsive_preview][version] = "1.x-dev"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
 projects[responsive_preview][download][type] = "git"
-projects[responsive_preview][download][revision] = "94cdec7"
+projects[responsive_preview][download][revision] = "0829c01"
 projects[responsive_preview][download][branch] = "7.x-1.x"
 
 projects[role_export][version] = "1.0"
@@ -129,21 +129,21 @@ projects[assemble][version] = "1.0"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
 projects[assemble][download][type] = "git"
-projects[assemble][download][revision] = "bda7029"
+projects[assemble][download][revision] = "b522cd1"
 projects[assemble][download][branch] = "7.x-1.x"
 
 projects[bean][version] = "1.x-dev"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
 projects[bean][download][type] = "git"
-projects[bean][download][revision] = "3926c82"
+projects[bean][download][revision] = "6393603"
 projects[bean][download][branch] = "7.x-1.x"
 
 projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 projects[bean_tax][download][type] = "git"
-projects[bean_tax][download][revision] = "ae7b1a7"
+projects[bean_tax][download][revision] = "3cbc63a"
 projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[colorbox][version] = "2.4"
@@ -176,13 +176,6 @@ projects[fape][download][type] = "git"
 projects[fape][download][revision] = "1143ee2"
 projects[fape][download][branch] = "7.x-1.x"
 projects[fape][patch][1846156] = "http://drupal.org/files/fape-1846156-5.patch"
-
-projects[fences][version] = "1.x-dev"
-projects[fences][type] = "module"
-projects[fences][subdir] = "contrib"
-projects[fences][download][type] = "git"
-projects[fences][download][revision] = "67206b5"
-projects[fences][download][branch] = "7.x-1.x"
 
 projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
@@ -217,6 +210,13 @@ projects[json2][subdir] = "contrib"
 projects[layout][version] = "1.0-alpha6"
 projects[layout][type] = "module"
 projects[layout][subdir] = "contrib"
+
+projects[magic_beans][version] = "1.x-dev"
+projects[magic_beans][type] = "module"
+projects[magic_beans][subdir] = "contrib"
+projects[magic_beans][download][type] = "git"
+projects[magic_beans][download][revision] = "d93330a"
+projects[magic_beans][download][branch] = "7.x-1.x"
 
 projects[metatag][version] = "1.0-beta5"
 projects[metatag][type] = "module"
@@ -276,11 +276,11 @@ projects[panopoly_widgets][version] = "1.x-dev"
 projects[panopoly_widgets][type] = "module"
 projects[panopoly_widgets][subdir] = "contrib"
 projects[panopoly_widgets][download][type] = "git"
-projects[panopoly_widgets][download][revision] = "15c8dce"
+projects[panopoly_widgets][download][revision] = "8d921b8"
 projects[panopoly_widgets][download][branch] = "7.x-1.x"
 ; Use Panopoly Widgets in Demo Framework
 ; http://drupal.org/node/1949710
-projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/panopoly_widgets-demo-framework-1949710-10.patch"
+projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/issues/panopoly_widgets-demo-framework-1949710-11.patch"
 
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
@@ -409,7 +409,7 @@ projects[curate][version] = "1.0"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 projects[curate][download][type] = "git"
-;projects[curate][download][revision] = "679deb0"
+projects[curate][download][revision] = "88a9a59"
 projects[curate][download][branch] = "7.x-1.x"
 
 projects[ckeditor][version] = "1.x-dev"
@@ -420,7 +420,10 @@ projects[ckeditor][download][revision] = "57245a9"
 projects[ckeditor][download][branch] = "7.x-1.x"
 ; Integration with Media 2.x
 ; http://drupal.org/node/1504696
-projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor_1504696_77.patch"
+projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-1504696-120.patch"
+; External plugin declarations are redundant.
+; http://drupal.org/comment/8284591#comment-8284591
+projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -441,7 +444,7 @@ projects[edit][download][revision] = "cf62974"
 projects[edit][download][branch] = "7.x-1.x"
 ; Backport of Edit button for navbar
 ; http://drupal.org/node/1994256
-projects[edit][patch][1994256] = "http://drupal.org/files/edit-navbar-button-1994256-15.patch"
+projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-button-1994256-21.patch"
 ; Edit Module fails for "psudeo" fields provided via Relationship or Appended
 ; Global Text in Views
 ; http://drupal.org/node/2015295
@@ -451,7 +454,7 @@ projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "7b9d082"
+projects[file_entity][download][revision] = "e80b223"
 projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
@@ -466,9 +469,9 @@ projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; UX Improvements
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/iib-entity-css-1737036-18.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/issues/ux-improv-1737036-40.patch"
 
-projects[linkit][version] = "2.6"
+projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
 projects[linkit][subdir] = "contrib"
 
@@ -476,26 +479,32 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "814c34e"
+projects[media][download][revision] = "c3cda2b"
 projects[media][download][branch] = "7.x-2.x"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 projects[media_youtube][download][type] = "git"
-projects[media_youtube][download][revision] = "acff0f6"
+projects[media_youtube][download][revision] = "ca46aba"
 projects[media_youtube][download][branch] = "7.x-2.x"
-
-projects[media_vimeo][version] = "2.x-dev"
-projects[media_vimeo][type] = "module"
-projects[media_vimeo][subdir] = "contrib"
-projects[media_vimeo][download][type] = "git"
-projects[media_vimeo][download][revision] = "26b2eee"
-projects[media_vimeo][download][branch] = "7.x-2.x"
+; media_access() is deceprated and will be removed
+; http://drupal.org/node/1823376
+projects[media_youtube][patch][1823376] = "http://drupal.org/files/issues/provide-access-wrapper-1823376-6.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
 projects[nra][subdir] = "contrib"
+
+projects[nra_workbench_moderation][version] = "1.x-dev"
+projects[nra_workbench_moderation][type] = "module"
+projects[nra_workbench_moderation][subdir] = "contrib"
+projects[nra_workbench_moderation][download][type] = "git"
+projects[nra_workbench_moderation][download][revision] = "9f17009"
+projects[nra_workbench_moderation][download][branch] = "7.x-1.x"
+; Errors when 'Status' column is built for new/unpublished items in NRA
+; http://drupal.org/node/2163175
+projects[nra_workbench_moderation][patch][2163175] = "http://drupal.org/files/issues/nra_workbench_moderation-no-published-state-2163175-1.patch"
 
 projects[sps][version] = "1.x-dev"
 projects[sps][type] = "module"
@@ -618,7 +627,7 @@ projects[uuid_features][version] = "1.x-dev"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "ebf5fd1"
+projects[uuid_features][download][revision] = "40f1a49"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
 ; DF Gallery
@@ -646,6 +655,10 @@ projects[apachesolr][download][type] = "git"
 projects[apachesolr][download][revision] = "79a0804"
 projects[apachesolr][download][branch] = "7.x-1.x"
 
+projects[apachesolr_location][version] = "1.1"
+projects[apachesolr_location][type] = "module"
+projects[apachesolr_location][subdir] = "contrib"
+
 projects[apachesolr_og][version] = "1.x-dev"
 projects[apachesolr_og][type] = "module"
 projects[apachesolr_og][subdir] = "contrib"
@@ -671,13 +684,24 @@ projects[custom_search][download][type] = "git"
 projects[custom_search][download][revision] = "0d55d1e"
 projects[custom_search][download][branch] = "7.x-1.x"
 
-projects[date_facets][version] = "1.0-beta1"
+projects[date_facets][version] = "1.x-dev"
 projects[date_facets][type] = "module"
 projects[date_facets][subdir] = "contrib"
+projects[date_facets][download][type] = "git"
+projects[date_facets][download][revision] = "a04658a"
+projects[date_facets][download][branch] = "7.x-1.x"
+
+projects[location][version] = "3.1"
+projects[location][type] = "module"
+projects[location][subdir] = "contrib"
 
 projects[facetapi][version] = "1.3"
 projects[facetapi][type] = "module"
 projects[facetapi][subdir] = "contrib"
+
+projects[facetapi_slider][version] = "1.0"
+projects[facetapi_slider][type] = "module"
+projects[facetapi_slider][subdir] = "contrib"
 
 projects[rich_snippets][version] = "1.x-dev"
 projects[rich_snippets][type] = "module"
@@ -756,113 +780,24 @@ projects[variable][version] = "2.2"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
-; DFS ME
-projects[color_field][version] = "1.x-dev"
-projects[color_field][type] = "module"
-projects[color_field][subdir] = "contrib"
-projects[color_field][download][type] = "git"
-projects[color_field][download][revision] = "473f039"
-projects[color_field][download][branch] = "7.x-1.x"
-
-projects[ddf][version] = "1.x-dev"
-projects[ddf][type] = "module"
-projects[ddf][subdir] = "contrib"
-projects[ddf][download][type] = "git"
-projects[ddf][download][revision] = "91b0388"
-projects[ddf][download][branch] = "7.x-1.x"
-
-projects[eva][version] = "1.x-dev"
-projects[eva][type] = "module"
-projects[eva][subdir] = "contrib"
-projects[eva][download][type] = "git"
-projects[eva][download][revision] = "43eaba4"
-projects[eva][download][branch] = "7.x-1.x"
-
-projects[field_collection][version] = "1.x-dev"
-projects[field_collection][type] = "module"
-projects[field_collection][subdir] = "contrib"
-projects[field_collection][download][type] = "git"
-projects[field_collection][download][revision] = "0fd332e"
-projects[field_collection][download][branch] = "7.x-1.x"
-
-projects[field_slideshow][version] = "1.x-dev"
-projects[field_slideshow][type] = "module"
-projects[field_slideshow][subdir] = "contrib"
-projects[field_slideshow][download][type] = "git"
-projects[field_slideshow][download][revision] = "fe1b2e2"
-projects[field_slideshow][download][branch] = "7.x-1.x"
-; Support media 2.x and latest file_entity - 'Media' field is deprecated,
-; replace with 'File' field.
-; http://drupal.org/node/2076369
-projects[field_slideshow][patch][2076369] = "http://drupal.org/files/field_slideshow-media-2x-file-entity-1.patch"
-; If using field_collection for slideshow and field_collection contains link
-; fields, give additional option to append a slide link
-; http://drupal.org/node/2078027
-projects[field_slideshow][patch][2078027] = "http://drupal.org/files/field_slideshow-append-link.patch"
-
-projects[image_url_formatter][version] = "1.x-dev"
-projects[image_url_formatter][type] = "module"
-projects[image_url_formatter][subdir] = "contrib"
-projects[image_url_formatter][download][type] = "git"
-projects[image_url_formatter][download][revision] = "ddfa3e0"
-projects[image_url_formatter][download][branch] = "7.x-1.x"
-
-projects[inline_entity_form][version] = "1.x-dev"
-projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][subdir] = "contrib"
-projects[inline_entity_form][download][type] = "git"
-projects[inline_entity_form][download][revision] = "c8257ca"
-projects[inline_entity_form][download][branch] = "7.x-1.x"
-
-projects[jcarousel][version] = "1.x-dev"
-projects[jcarousel][type] = "module"
-projects[jcarousel][subdir] = "contrib"
-projects[jcarousel][download][type] = "git"
-projects[jcarousel][download][revision] = "28bd823"
-projects[jcarousel][download][branch] = "7.x-1.x"
-
-projects[views_conditional][version] = "1.x-dev"
-projects[views_conditional][type] = "module"
-projects[views_conditional][subdir] = "contrib"
-projects[views_conditional][download][type] = "git"
-projects[views_conditional][download][revision] = "39e021d"
-projects[views_conditional][download][branch] = "7.x-1.x"
-
-projects[views_datasource][version] = "1.x-dev"
-projects[views_datasource][type] = "module"
-projects[views_datasource][subdir] = "contrib"
-projects[views_datasource][download][type] = "git"
-projects[views_datasource][download][revision] = "6e9b6b9"
-projects[views_datasource][download][branch] = "7.x-1.x"
-
-projects[views_slideshow][version] = "1.x-dev"
-projects[views_slideshow][type] = "module"
-projects[views_slideshow][subdir] = "contrib"
-projects[views_slideshow][download][type] = "git"
-projects[views_slideshow][download][revision] = "d1d7371"
-projects[views_slideshow][download][branch] = "7.x-1.x"
-
 ; Libraries
 libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "http://documentcloud.github.io/backbone/backbone-min.js"
+libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.0.zip"
 
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3%20Beta/ckeditor_4.3_beta_standard_all.zip"
-
-libraries[jquery.cycle][download][type] = "get"
-libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
-
-libraries[jquery.jcarousel][download][type] = "get"
-libraries[jquery.jcarousel][download][url] = "https://github.com/jsor/jcarousel/archive/master.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_standard.zip"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
 libraries[jsonpath][download][type] = "get"
 libraries[jsonpath][download][url] = "https://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
+
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.7.1.zip"
 
 libraries[plupload][download][type] = "get"
 libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v2.0.0.zip"
@@ -874,19 +809,19 @@ libraries[timeago][download][type] = "get"
 libraries[timeago][download][url] = "https://raw.github.com/rmm5t/jquery-timeago/v1.3.0/jquery.timeago.js"
 
 libraries[underscore][download][type] = "get"
-libraries[underscore][download][url] = "http://documentcloud.github.io/underscore/underscore-min.js"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
-projects[demonstratie][download][revision] = "4df568d"
+projects[demonstratie][download][revision] = "ca07626"
 projects[demonstratie][download][branch] = "7.x-1.x"
 
 projects[ember][version] = "2.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
-projects[ember][download][revision] = "9d92f9a"
+projects[ember][download][revision] = "584ccd5"
 projects[ember][download][branch] = "7.x-2.x"

@@ -1,0 +1,14 @@
+name = DFS WEM Files
+description = File Configurations for DFS WEM
+core = 7.x
+package = DFS Submodules
+version = 7.x-1.0-rc1
+project = dfs_wem_files
+dependencies[] = curate
+dependencies[] = features
+dependencies[] = file
+dependencies[] = file_entity
+dependencies[] = media
+dependencies[] = media_youtube
+features[ctools][] = file_entity:file_default_displays:1
+features[file_display][] = video__alt_preview__media_youtube_image
