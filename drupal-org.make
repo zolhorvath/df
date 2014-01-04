@@ -87,7 +87,7 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "b9ba113"
+projects[navbar][download][revision] = "bd3389b"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
@@ -101,12 +101,9 @@ projects[pm_existing_pages][version] = "1.4"
 projects[pm_existing_pages][type] = "module"
 projects[pm_existing_pages][subdir] = "contrib"
 
-projects[responsive_preview][version] = "1.x-dev"
+projects[responsive_preview][version] = "1.0"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
-projects[responsive_preview][download][type] = "git"
-projects[responsive_preview][download][revision] = "0829c01"
-projects[responsive_preview][download][branch] = "7.x-1.x"
 
 projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
@@ -316,7 +313,7 @@ projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object in
 ; modules/all/views/plugins/views_plugin_localization.inc
 ; http://drupal.org/node/1685144
-projects[views][patch][1685144] = "https://drupal.org/files/views-1685144-localization-bug_1.patch"
+projects[views][patch][1685144] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
 
 projects[views_autocomplete_filters][version] = "1.0-beta2"
 projects[views_autocomplete_filters][type] = "module"
@@ -409,7 +406,7 @@ projects[curate][version] = "1.0"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 projects[curate][download][type] = "git"
-projects[curate][download][revision] = "88a9a59"
+projects[curate][download][revision] = "40ed474"
 projects[curate][download][branch] = "7.x-1.x"
 
 projects[ckeditor][version] = "1.x-dev"
@@ -444,7 +441,7 @@ projects[edit][download][revision] = "cf62974"
 projects[edit][download][branch] = "7.x-1.x"
 ; Backport of Edit button for navbar
 ; http://drupal.org/node/1994256
-projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-button-1994256-21.patch"
+projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-button-1994256-22.patch"
 ; Edit Module fails for "psudeo" fields provided via Relationship or Appended
 ; Global Text in Views
 ; http://drupal.org/node/2015295
@@ -467,9 +464,9 @@ projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
 projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
-; UX Improvements
+; Integrate IIB with the Navbar module
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/issues/ux-improv-1737036-40.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-1737036-43.patch"
 
 projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
@@ -479,8 +476,11 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "c3cda2b"
+projects[media][download][revision] = "103fc3a"
 projects[media][download][branch] = "7.x-2.x"
+; Improve UX for Media Bulk Upload submodule's multiform page
+; http://drupal.org/node/2166623
+projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-0.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
@@ -491,6 +491,10 @@ projects[media_youtube][download][branch] = "7.x-2.x"
 ; media_access() is deceprated and will be removed
 ; http://drupal.org/node/1823376
 projects[media_youtube][patch][1823376] = "http://drupal.org/files/issues/provide-access-wrapper-1823376-6.patch"
+
+projects[multiform][version] = "1.0"
+projects[multiform][type] = "module"
+projects[multiform][subdir] = "contrib"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
@@ -505,6 +509,10 @@ projects[nra_workbench_moderation][download][branch] = "7.x-1.x"
 ; Errors when 'Status' column is built for new/unpublished items in NRA
 ; http://drupal.org/node/2163175
 projects[nra_workbench_moderation][patch][2163175] = "http://drupal.org/files/issues/nra_workbench_moderation-no-published-state-2163175-1.patch"
+
+projects[plupload][version] = "1.3"
+projects[plupload][type] = "module"
+projects[plupload][subdir] = "contrib"
 
 projects[sps][version] = "1.x-dev"
 projects[sps][type] = "module"
@@ -638,14 +646,12 @@ projects[manualcrop][subdir] = "contrib"
 projects[media_gallery][version] = "2.x-dev"
 projects[media_gallery][type] = "module"
 projects[media_gallery][subdir] = "contrib"
-
-projects[multiform][version] = "1.0"
-projects[multiform][type] = "module"
-projects[multiform][subdir] = "contrib"
-
-projects[plupload][version] = "1.3"
-projects[plupload][type] = "module"
-projects[plupload][subdir] = "contrib"
+projects[media_gallery][download][type] = "git"
+projects[media_gallery][download][revision] = "f28ffd1"
+projects[media_gallery][download][branch] = "7.x-2.x"
+; Edit media/multiedit is broken since 2143469 was commited in media module
+; http://drupal.org/node/2149013
+projects[media_gallery][patch][2149013] = "http://drupal.org/files/issues/Media_function_name_changes-2143469-1.patch"
 
 ; DF Search
 projects[apachesolr][version] = "1.x-dev"
@@ -823,5 +829,5 @@ projects[ember][version] = "2.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
-projects[ember][download][revision] = "584ccd5"
+projects[ember][download][type] = "5b8b0f6"
 projects[ember][download][branch] = "7.x-2.x"
