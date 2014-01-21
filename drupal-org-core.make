@@ -25,7 +25,7 @@ projects[drupal][patch][] = "http://drupal.org/files/drupal-865536-204.patch"
 
 ; Allow URI callbacks to return FALSE
 ; http://drupal.org/node/1275902
-projects[drupal][patch][] = "https://drupal.org/files/1275902-15-entity_uri_callback-D7.patch"
+projects[drupal][patch][] = "http://drupal.org/files/1275902-15-entity_uri_callback-D7.patch"
 
 ; user_role_grant_permissions() throws PDOException when used for a disabled
 ; module's permission or with non-existent permissions
