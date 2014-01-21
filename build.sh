@@ -10,4 +10,4 @@ echo '   _/\/\____/\/\__/\/\/\/\/\___'
 echo '  _/\/\____/\/\__/\/\_________'
 echo ' _/\/\/\/\/\____/\/\_________'
 echo '____________________________'
-drush make --working-copy $CALLPATH/$MAKEFILE $TARGET
+drush make --working-copy --concurrency=5 $CALLPATH/$MAKEFILE $TARGET
