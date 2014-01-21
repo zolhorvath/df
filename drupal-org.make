@@ -39,7 +39,7 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.2"
+projects[entity][version] = "1.3"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 
@@ -126,7 +126,6 @@ projects[assemble][version] = "1.0"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
 projects[assemble][download][type] = "git"
-projects[assemble][download][revision] = "b522cd1"
 projects[assemble][download][branch] = "7.x-1.x"
 
 projects[bean][version] = "1.x-dev"
@@ -172,6 +171,8 @@ projects[fape][subdir] = "contrib"
 projects[fape][download][type] = "git"
 projects[fape][download][revision] = "1143ee2"
 projects[fape][download][branch] = "7.x-1.x"
+; Call to field_access passing field name rather than full field structure
+; http://drupal.org/node/1846156
 projects[fape][patch][1846156] = "http://drupal.org/files/fape-1846156-5.patch"
 
 projects[field_group][version] = "1.x-dev"
@@ -406,7 +407,6 @@ projects[curate][version] = "1.0"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 projects[curate][download][type] = "git"
-projects[curate][download][revision] = "40ed474"
 projects[curate][download][branch] = "7.x-1.x"
 
 projects[ckeditor][version] = "1.x-dev"
@@ -478,9 +478,9 @@ projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
 projects[media][download][revision] = "103fc3a"
 projects[media][download][branch] = "7.x-2.x"
-; Improve UX for Media Bulk Upload submodule's multiform page
+; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
-projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-0.patch"
+projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
@@ -544,10 +544,10 @@ projects[revision_scheduler][subdir] = "contrib"
 projects[revision_scheduler][download][type] = "git"
 projects[revision_scheduler][download][revision] = "ab04410"
 projects[revision_scheduler][download][branch] = "7.x-1.x"
-; Notice: Undefined index: path i
+; Notice: Undefined index: path in
 ; revision_scheduler_preprocess_menu_local_action()
 ; http://drupal.org/node/1564348
-projects[revision_scheduler][download][branch] = "http://drupal.org/files/fixes-notice-issue-1564348.patch"
+projects[revision_scheduler][patch][1564348] = "http://drupal.org/files/fixes-notice-issue-1564348.patch"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
@@ -647,11 +647,11 @@ projects[media_gallery][version] = "2.x-dev"
 projects[media_gallery][type] = "module"
 projects[media_gallery][subdir] = "contrib"
 projects[media_gallery][download][type] = "git"
-projects[media_gallery][download][revision] = "f28ffd1"
+projects[media_gallery][download][revision] = "7cfb730"
 projects[media_gallery][download][branch] = "7.x-2.x"
-; Edit media/multiedit is broken since 2143469 was commited in media module
-; http://drupal.org/node/2149013
-projects[media_gallery][patch][2149013] = "http://drupal.org/files/issues/Media_function_name_changes-2143469-1.patch"
+; Do not create a Main menu link for 'Galleries'
+; http://drupal.org/node/2169649
+projects[media_gallery][patch][2169649] = "http://drupal.org/files/issues/media_gallery-no-menu-item-on-install-0.patch"
 
 ; DF Search
 projects[apachesolr][version] = "1.x-dev"
@@ -806,7 +806,10 @@ libraries[modernizr][download][type] = "get"
 libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.7.1.zip"
 
 libraries[plupload][download][type] = "get"
-libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v2.0.0.zip"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
+; Remove plupload library examples folder for Drupal distribution
+; http://drupal.org/node/1903850
+libraries[plupload][patch][1903850] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
@@ -822,12 +825,13 @@ projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
-projects[demonstratie][download][revision] = "ca07626"
 projects[demonstratie][download][branch] = "7.x-1.x"
 
 projects[ember][version] = "2.x-dev"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
-projects[ember][download][revision] = "5b8b0f6"
 projects[ember][download][branch] = "7.x-2.x"
+
+; Scenarios
+includes[dfs_me] = modules/dfs/private/dfs_me/dfs_me.make

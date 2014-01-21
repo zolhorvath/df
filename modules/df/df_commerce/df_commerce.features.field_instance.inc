@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * df_converge.features.field_instance.inc
+ * df_commerce.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function df_converge_field_default_field_instances() {
+function df_commerce_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'commerce_product-product-commerce_price'

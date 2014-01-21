@@ -2,13 +2,13 @@
 
 /**
  * @file
- * Installation routines for DF Converge feature
+ * Installation routines for DF Commerce feature
  */
 
 /**
  * Implements hook_install().
  */
-function df_converge_install() {
+function df_commerce_install() {
   // Enable the shopping cart block.
   $default_theme = variable_get('theme_default', 'demonstratie_core');
   $admin_theme = 'ember';

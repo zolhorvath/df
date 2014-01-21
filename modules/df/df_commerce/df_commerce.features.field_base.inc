@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * df_converge.features.field_base.inc
+ * df_commerce.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function df_converge_field_default_field_bases() {
+function df_commerce_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'commerce_price'

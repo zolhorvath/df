@@ -25,11 +25,8 @@ dependencies[] = shortcut
 dependencies[] = taxonomy
 
 ; Contribs
-dependencies[] = assemble
-dependencies[] = curate
 dependencies[] = demonstratie_panels
 dependencies[] = diff
-dependencies[] = import
 dependencies[] = module_filter
 dependencies[] = navbar
 dependencies[] = pathauto
@@ -38,9 +35,15 @@ dependencies[] = role_export
 dependencies[] = rules
 dependencies[] = token
 
+; Demo Framework (core)
+dependencies[] = assemble
+dependencies[] = curate
+dependencies[] = import
+
 ; Demo Framework (required)
 dependencies[] = df_admin
-dependencies[] = df_converge
+dependencies[] = df_connect
+dependencies[] = df_commerce
 dependencies[] = df_engage
 dependencies[] = df_translate
 

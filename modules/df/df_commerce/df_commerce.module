@@ -1,23 +1,23 @@
 <?php
 /**
  * @file
- * Code for the DF Converge feature.
+ * Code for the DF Commerce feature.
  */
 
-include_once 'df_converge.features.inc';
+include_once 'df_commerce.features.inc';
 
 /**
  *  Implements hook_post_features_enable_feature().
  */
-function df_converge_post_features_enable_feature($component) {
+function df_commerce_post_features_enable_feature($component) {
   // Log components as they are enabled.
-  watchdog('component', 'df_converge enabled ' . $component . ' component');
+  watchdog('component', 'df_commerce enabled ' . $component . ' component');
 }
 
 /**
  * Implements hook_migrate_api().
  */
-function df_converge_migrate_api() {
+function df_commerce_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(

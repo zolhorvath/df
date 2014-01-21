@@ -25,8 +25,8 @@ class DemoFrameworkBaseCommerceNodes extends ImportBaseNodes {
 
     $this->dependencies = array('DemoFrameworkBaseProducts');
 
-    $import_path = drupal_get_path('module', 'df_converge') . '/import/';
-    $this->source = new MigrateSourceCSV($import_path . 'df_converge.base.nodes.commerce.csv', $this->csvcolumns(), array('header_rows' => 1));
+    $import_path = drupal_get_path('module', 'df_commerce') . '/import/';
+    $this->source = new MigrateSourceCSV($import_path . 'df_commerce.base.nodes.commerce.csv', $this->csvcolumns(), array('header_rows' => 1));
 
     $this->destination = new MigrateDestinationNode('commerce');
 

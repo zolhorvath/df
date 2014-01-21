@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * df_converge.features.inc
+ * df_commerce.features.inc
  */
 
 /**
  * Implements hook_commerce_product_default_types().
  */
-function df_converge_commerce_product_default_types() {
+function df_commerce_commerce_product_default_types() {
   $items = array(
     'product' => array(
       'type' => 'product',
@@ -23,7 +23,7 @@ function df_converge_commerce_product_default_types() {
 /**
  * Implements hook_ctools_plugin_api().
  */
-function df_converge_ctools_plugin_api($module = NULL, $api = NULL) {
+function df_commerce_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -32,7 +32,7 @@ function df_converge_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function df_converge_node_info() {
+function df_commerce_node_info() {
   $items = array(
     'commerce' => array(
       'name' => t('Commerce Product'),

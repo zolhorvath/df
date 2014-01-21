@@ -26,10 +26,10 @@ class DemoFrameworkBaseProducts extends Migration {
     $this->destination = new MigrateDestinationEntityAPI('commerce_product', 'product');
 
     // Define a default import path.
-    $import_path = drupal_get_path('module', 'df_converge') . '/import/';
+    $import_path = drupal_get_path('module', 'df_commerce') . '/import/';
     
     // Create a MigrateSource object.
-    $this->source = new MigrateSourceCSV($import_path . 'df_converge.base.products.csv', $this->csvcolumns(), array('header_rows' => 1));
+    $this->source = new MigrateSourceCSV($import_path . 'df_commerce.base.products.csv', $this->csvcolumns(), array('header_rows' => 1));
 
     $this->addFieldMapping('title', 'title');
     $this->addFieldMapping('sku', 'sku');
