@@ -832,6 +832,3 @@ projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-2.x"
-
-; Scenarios
-includes[dfs_me] = modules/dfs/private/dfs_me/dfs_me.make
