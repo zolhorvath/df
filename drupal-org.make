@@ -13,13 +13,8 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "e81da7a"
+projects[ctools][download][revision] = "0362518"
 projects[ctools][download][branch] = "7.x-1.x"
-; Introduce UUIDs onto panes & displays for
-; better exportability & features compatibility
-; (ctools patch from panels queue)
-; http://drupal.org/node/1277908#comment-7216356
-projects[ctools][patch][1277908] = "http://drupal.org/files/ctools-uuids_for_exported_objects-1277908-118.patch"
 ; Update the token replacements in ctools to work against a fully rendered page.
 ; http://drupal.org/node/955070#comment-7751253
 projects[ctools][patch][955070] = "http://drupal.org/files/ctools-fix_token_processing-955070-5.patch"
@@ -28,8 +23,8 @@ projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
 projects[demonstratie_panels][download][type] = "git"
-projects[demonstratie_panels][download][branch] = "7.x-1.x"
 projects[demonstratie_panels][download][revision] = "9566cbd"
+projects[demonstratie_panels][download][branch] = "7.x-1.x"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -126,6 +121,7 @@ projects[assemble][version] = "1.0"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
 projects[assemble][download][type] = "git"
+projects[assemble][download][revision] = "b522cd1"
 projects[assemble][download][branch] = "7.x-1.x"
 
 projects[bean][version] = "1.x-dev"
@@ -193,14 +189,6 @@ projects[gridbuilder][version] = "1.0-alpha2"
 projects[gridbuilder][type] = "module"
 projects[gridbuilder][subdir] = "contrib"
 
-projects[i18n_panels][version] = "1.x-dev"
-projects[i18n_panels][type] = "module"
-projects[i18n_panels][subdir] = "contrib"
-projects[i18n_panels][download][type] = "git"
-projects[i18n_panels][download][url] = "http://git.drupal.org/sandbox/daspeter/1444130.git"
-projects[i18n_panels][download][revision] = "37a796b"
-projects[i18n_panels][download][branch] = "7.x-1.x"
-
 projects[json2][version] = "1.1"
 projects[json2][type] = "module"
 projects[json2][subdir] = "contrib"
@@ -237,14 +225,8 @@ projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
-projects[panels][download][revision] = "2bb470e"
+projects[panels][download][revision] = "f253afb"
 projects[panels][download][branch] = "7.x-3.x"
-; Translatable panel titles: Implement i18n_strings
-; http://drupal.org/node/1179034#comment-7216342
-; Introduce UUIDs onto panes & displays for better 
-; exportability & features compatibility
-; http://drupal.org/node/1277908#comment-6771122
-projects[panels][patch][1179034_1277908] = "http://drupal.org/files/panels-1179034-41_____panels-uuids-127790-100__-80.patch"
 
 projects[panopoly_images][version] = "1.x-dev"
 projects[panopoly_images][type] = "module"
@@ -291,7 +273,7 @@ projects[respondjs][version] = "1.1"
 projects[respondjs][type] = "module"
 projects[respondjs][subdir] = "contrib"
 
-projects[taxonomy_entity_index][version] = "1.0-beta6"
+projects[taxonomy_entity_index][version] = "1.0-beta7"
 projects[taxonomy_entity_index][type] = "module"
 projects[taxonomy_entity_index][subdir] = "contrib"
 
@@ -407,6 +389,7 @@ projects[curate][version] = "1.0"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 projects[curate][download][type] = "git"
+projects[curate][download][revision] = "5765fe9"
 projects[curate][download][branch] = "7.x-1.x"
 
 projects[ckeditor][version] = "1.x-dev"
@@ -825,10 +808,9 @@ projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
 projects[demonstratie][subdir] = "contrib"
 projects[demonstratie][download][type] = "git"
+projects[demonstratie][download][revision] = "c508946"
 projects[demonstratie][download][branch] = "7.x-1.x"
 
-projects[ember][version] = "2.x-dev"
+projects[ember][version] = "2.0-alpha2"
 projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
-projects[ember][download][type] = "git"
-projects[ember][download][branch] = "7.x-2.x"
