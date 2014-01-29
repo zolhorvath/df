@@ -1,5 +1,5 @@
 name = Digital Marketer Demo
-description = Digital Marketer Scenario.
+description = Adds analytics configurations, provides marketer users and campaign identifier tagging.
 core = 7.x
 package = Demo Framework Scenarios
 php = 5.3

@@ -1,5 +1,5 @@
 name = WEM Demo
-description = Web Engagement Management Scenario.
+description = Web Experience Management scenario with users, content, pages, products, blocks and taxonomy terms.
 core = 7.x
 package = Demo Framework Scenarios
 version = 7.x-1.0-beta1

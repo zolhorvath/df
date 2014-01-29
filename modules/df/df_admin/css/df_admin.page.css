@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Styles for the Demo Framework admin page.
+ *
+ * The display and layout of DF Admin pages assume Ember 2.x is the currently
+ * enabled admin theme.
+ */
+
+/* Basic grid for scenarios */
+.dfs-item {
+  max-width: 320px;
+  float: left;
+  margin-left: 2em;
+}
+

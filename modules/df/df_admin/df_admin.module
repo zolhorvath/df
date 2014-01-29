@@ -10,6 +10,15 @@ include_once 'df_admin.features.inc';
  * Implements hook_menu().
  */
 function df_admin_menu() {
+  $items['admin/config/system/df'] = array(
+    'title' => 'Demo Framework',
+    'description' => 'Manage Demo Framework Scenarios and configurations.',
+    'page callback' => 'df_admin_page',
+    'page arguments' => array(),
+    'access arguments' => array('administer demo framework'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'df_admin.page.inc',
+  );
   $items['admin/config/system/df/enable/%'] = array(
     'page callback' => 'df_admin_page_enable',
     'page arguments' => array(5),
@@ -28,73 +37,14 @@ function df_admin_menu() {
 }
 
 /**
- * Implements hook_menu_alter().
+ * Implements hook_theme().
  */
-function df_admin_menu_alter(&$items) {
-  $items['admin/config/system/df']['description'] = 'Enable or reset Demo Framework Scenarios, switch user personas and perform other DF related tasks.';
-}
-
-/**
- * Implements hook_block_info().
- */
-function df_admin_block_info() {
-  $blocks = array();
-  $blocks['dfs_block'] = array(
-    'info' => t('Demo Framework Scenarios'),
-  );
-  return $blocks;
-}
-
-/**
- * Implements hook_block_view().
- */
-function df_admin_block_view($delta='') {
-  $block = array();
-  switch($delta) {
-    case 'dfs_block' :
-      $block['subject'] = t('Scenarios');
-      $block['content'] = df_admin_dfs_block_view();
-      break;
-  }
-  return $block;
-}
-
-/**
- * Assemble render array for block content.
- * @return
- *   returns renderable array of block content.
- */
-function df_admin_dfs_block_view() {
-  // Clear & rebuild Features key caches
-  features_get_info(NULL, NULL, TRUE);
-  features_rebuild();
-  // Render DFS menu
-  $list = '';
-  $modules = system_rebuild_module_data();
-  foreach ($modules as $name => $module) {
-    if (substr($name, 0, 4) == 'dfs_' && $module->info['package'] == 'Demo Framework Scenarios') {
-      $list .= '<li><details><summary>' . t($module->info['name']) . ' (' . _df_admin_dfs_link($module) .  ')</summary>' . t($module->info['description']) . '</details></li>';
-    }
-  }
-  $block = array(
-    'scenarios' => array(
-      '#type' => 'markup',
-      '#prefix' => '<ul>',
-      '#markup' => $list,
-      '#suffix' => '</ul>',
+function df_admin_theme(){
+  return array(
+    'df_admin_page_template' => array(
+      'template' => 'df-admin-page',
+      'variables' => array('scenarios' => NULL),
     ),
   );
-  return $block;
-}
-
-/**
- * Psuedo-private function used by 'view' "method" df_admin_dfs_block_view.
- * @return
- *   returns a string of text including a link.
- */
-function _df_admin_dfs_link($module) {
-  $action = (!module_exists($module->name) ? 'enable' : 'reset');
-  $path = 'admin/config/system/df/' . $action  . '/' . $module->name;
-  return  l(t(ucwords($action)), $path);
 }
 
