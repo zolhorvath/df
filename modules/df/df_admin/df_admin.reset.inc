@@ -6,10 +6,20 @@
  */
 
 /**
- * Page callback; process migrations in correct order to safely inject DFS
+ * Page callback; reset a scenario.
+ */
+function df_admin_page_reset($module) {
+  if (!isset($_GET['token']) || !drupal_valid_token($_GET['token'], DRUPAL_ROOT . '/df/reset/' . $module)) {
+    return drupal_access_denied();
+  }
+  return df_admin_reset_scenario($module);
+}
+
+/**
+ * Function to process migrations in correct order to safely inject DFS
  * content into the system.
  */
-function df_admin_page_reset($scenario) {
+function df_admin_reset_scenario($scenario) {
 
   // Clear & rebuild Features key caches
   features_get_info(NULL, NULL, TRUE);
@@ -57,7 +67,10 @@ function df_admin_page_reset($scenario) {
       }
     }
   }
-  return '';
+  elseif (!drupal_is_cli()) {
+    // No migrations present, non-drush users get redirected.
+    drupal_goto('');
+  }
 }
 
 /**

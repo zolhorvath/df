@@ -35,7 +35,11 @@ function df_admin_page() {
       }
     }
   }
-  return theme('df_admin_page_template', array('scenarios' => $list));
+  $page = array(
+    '#theme' => 'df_admin_page_template',
+    '#scenarios' => $list,
+  );
+  return render($page);
 }
 
 /**
@@ -46,6 +50,7 @@ function df_admin_page() {
 function _df_admin_dfs_link($module) {
   $action = (!module_exists($module->name) ? 'enable' : 'reset');
   $path = 'admin/config/system/df/' . $action  . '/' . $module->name;
-  return  l(t(ucwords($action)), $path, array('attributes' => array('class' => array('dfs-link'))));
+  $token = drupal_get_token(DRUPAL_ROOT . '/df/' . $action  . '/' . $module->name);
+  return  l(t(ucwords($action)), $path, array('attributes' => array('class' => array('dfs-link')), 'query' => array('token' => $token)));
 }
 

@@ -44,12 +44,12 @@ function df_admin_drush_command() {
  */
 function drush_df_admin_enable_scenario($scenario, $reset = TRUE) {
   module_load_include('inc', 'df_admin', 'df_admin.enable');
-  df_admin_page_enable($scenario);
+  df_admin_enable_scenario($scenario);
 
   // Optional reset function.
   if ($reset != FALSE) {
     module_load_include('inc', 'df_admin', 'df_admin.reset');
-    df_admin_page_reset($scenario);
+    df_admin_reset_scenario($scenario);
   }
 }
 
@@ -61,6 +61,6 @@ function drush_df_admin_enable_scenario($scenario, $reset = TRUE) {
  */
 function drush_df_admin_reset_scenario($scenario) {
   module_load_include('inc', 'df_admin', 'df_admin.reset');
-  df_admin_page_reset($scenario);
+  df_admin_reset_scenario($scenario);
 }
 

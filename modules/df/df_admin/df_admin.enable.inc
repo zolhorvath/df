@@ -9,6 +9,16 @@
  * Page callback; enable a scenario.
  */
 function df_admin_page_enable($module) {
+  if (!isset($_GET['token']) || !drupal_valid_token($_GET['token'], DRUPAL_ROOT . '/df/enable/' . $module)) {
+    return drupal_access_denied();
+  }
+  return df_admin_enable_scenario($module);
+}
+
+/**
+ * Function to enable a scenario.
+ */
+function df_admin_enable_scenario($module) {
   // Enable and revert the scenario feature's DF dependencies.
   $module_list = system_rebuild_module_data();
   foreach ($module_list[$module]->info['dependencies'] as $dependency) {
@@ -24,10 +34,9 @@ function df_admin_page_enable($module) {
   // Resolves to the DF admin page if no reset callback present.
   if (!drupal_is_cli()) {
     $path = 'admin/config/system/df/reset/' . $module;
-    drupal_goto($path);
+    $token = drupal_get_token(DRUPAL_ROOT . '/df/reset/' . $module);
+    drupal_goto($path, array('query' => array('token' => $token)));
   }
-
-  return '';
 }
 
 /**
