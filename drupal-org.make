@@ -13,7 +13,7 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "0362518"
+projects[ctools][download][revision] = "5438b40"
 projects[ctools][download][branch] = "7.x-1.x"
 ; Update the token replacements in ctools to work against a fully rendered page.
 ; http://drupal.org/node/955070#comment-7751253
@@ -42,21 +42,20 @@ projects[features][version] = "2.x-dev"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
-projects[features][download][revision] = "93ff6cd"
+projects[features][download][revision] = "78772d5"
 projects[features][download][branch] = "7.x-2.x"
 
 projects[import][version] = "1.x-dev"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
-projects[import][download][revision] = "84057c6"
 projects[import][download][branch] = "7.x-1.x"
 
 projects[jquery_update][version] = "2.3"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
-projects[libraries][version] = "2.1"
+projects[libraries][version] = "2.2"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
@@ -134,6 +133,10 @@ projects[bean_tax][version] = "2.3"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
+projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][type] = "module"
+projects[better_formats][subdir] = "contrib"
+
 projects[colorbox][version] = "2.x-dev"
 projects[colorbox][type] = "module"
 projects[colorbox][subdir] = "contrib"
@@ -141,11 +144,18 @@ projects[colorbox][download][type] = "git"
 projects[colorbox][download][revision] = "ce90f5d"
 projects[colorbox][download][branch] = "7.x-1.x"
 
+projects[context_admin][version] = "1.x-dev"
+projects[context_admin][type] = "module"
+projects[context_admin][subdir] = "contrib"
+projects[context_admin][download][type] = "git"
+projects[context_admin][download][revision] = "15a8390"
+projects[context_admin][download][branch] = "7.x-1.x"
+
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "1c176da"
+projects[entityreference][download][revision] = "dc4196b"
 projects[entityreference][download][branch] = "7.x-1.x"
 
 projects[entityreference_prepopulate][version] = "1.4"
@@ -217,22 +227,15 @@ projects[options_element][download][branch] = "git"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "1e050d3"
+projects[panelizer][download][revision] = "ca7e1cb"
 projects[panelizer][download][branch] = "7.x-3.x"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
-projects[panels][download][revision] = "f253afb"
+projects[panels][download][revision] = "18319cd"
 projects[panels][download][branch] = "7.x-3.x"
-
-projects[panopoly_images][version] = "1.x-dev"
-projects[panopoly_images][type] = "module"
-projects[panopoly_images][subdir] = "contrib"
-projects[panopoly_images][download][type] = "git"
-projects[panopoly_images][download][revision] = "4d92f71"
-projects[panopoly_images][download][branch] = "7.x-1.x"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
@@ -245,21 +248,11 @@ projects[panopoly_theme][version] = "1.x-dev"
 projects[panopoly_theme][type] = "module"
 projects[panopoly_theme][subdir] = "contrib"
 projects[panopoly_theme][download][type] = "git"
-projects[panopoly_theme][download][revision] = "7715ded"
+projects[panopoly_theme][download][revision] = "d409deb"
 projects[panopoly_theme][download][branch] = "7.x-1.x"
 ; Remove makefile from Panopoly Theme
 ; http://drupal.org/node/1904766
-projects[panopoly_theme][patch][1904766] = "http://drupal.org/files/panopoly_theme-makefile-free-1904766-5.patch"
-
-projects[panopoly_widgets][version] = "1.x-dev"
-projects[panopoly_widgets][type] = "module"
-projects[panopoly_widgets][subdir] = "contrib"
-projects[panopoly_widgets][download][type] = "git"
-projects[panopoly_widgets][download][revision] = "5555e30"
-projects[panopoly_widgets][download][branch] = "7.x-1.x"
-; Use Panopoly Widgets in Demo Framework
-; http://drupal.org/node/1949710
-projects[panopoly_widgets][patch][1949710] = "http://drupal.org/files/issues/panopoly_widgets-demo-framework-1949710-12.patch"
+projects[panopoly_theme][patch][1904766] = "http://drupal.org/files/issues/panopoly_theme-makefile-free-1904766-13.patch"
 
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
@@ -271,6 +264,10 @@ projects[picture][download][branch] = "7.x-1.x"
 projects[respondjs][version] = "1.1"
 projects[respondjs][type] = "module"
 projects[respondjs][subdir] = "contrib"
+
+projects[simple_gmap][version] = "1.2"
+projects[simple_gmap][type] = "module"
+projects[simple_gmap][subdir] = "contrib"
 
 projects[taxonomy_entity_index][version] = "1.0-beta7"
 projects[taxonomy_entity_index][type] = "module"
@@ -290,7 +287,7 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "41112ab"
+projects[views][download][revision] = "2dc7eef"
 projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object in
 ; modules/all/views/plugins/views_plugin_localization.inc
@@ -432,12 +429,19 @@ projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "e80b223"
+projects[file_entity][download][revision] = "3661d8b"
 projects[file_entity][download][branch] = "7.x-2.x"
+; Default file entities are not exportable by features (Sibling Issue)
+; http://drupal.org/node/2192391
+projects[file_entity][patch][2192391] = "http://drupal.org/files/issues/file_entity_remove_file_display-2192391-01.patch"
 
 projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
 projects[file_entity_link][subdir] = "contrib"
+
+projects[focal_point][version] = "1.0-alpha1"
+projects[focal_point][type] = "module"
+projects[focal_point][subdir] = "contrib"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
@@ -457,21 +461,21 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "0d39e26"
+projects[media][download][revision] = "6e9c99b"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
+; Default file entities are not exportable by features
+; http://drupal.org/node/2104193
+projects[media][patch][2104193] = "http://drupal.org/files/issues/media_remove_file_display_alter-2104193-23.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 projects[media_youtube][download][type] = "git"
-projects[media_youtube][download][revision] = "ca46aba"
+projects[media_youtube][download][revision] = "fb6f652"
 projects[media_youtube][download][branch] = "7.x-2.x"
-; media_access() is deceprated and will be removed
-; http://drupal.org/node/1823376
-projects[media_youtube][patch][1823376] = "http://drupal.org/files/issues/provide-access-wrapper-1823376-6.patch"
 
 projects[multiform][version] = "1.0"
 projects[multiform][type] = "module"
@@ -507,17 +511,6 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; SPS should not prevent other modules that use Entity API from working
 ; http://drupal.org/node/1934130
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-11.patch"
-
-projects[timeago][version] = "2.x-dev"
-projects[timeago][type] = "module"
-projects[timeago][subdir] = "contrib"
-projects[timeago][download][type] = "git"
-projects[timeago][download][url] = "http://git.drupal.org/project/timeago.git"
-projects[timeago][download][branch] = "7.x-2.x"
-projects[timeago][download][revision] = "768ea66"
-; Provide a dedicated date type
-; http://drupal.org/node/1427226
-projects[timeago][patch][1427226] = "http://drupal.org/files/1427226-timeago-date-type.patch"
 
 projects[revision_scheduler][version] = "1.x-dev"
 projects[revision_scheduler][type] = "module"
@@ -576,13 +569,6 @@ projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
 ; DF Engage
-projects[context_admin][version] = "1.x-dev"
-projects[context_admin][type] = "module"
-projects[context_admin][subdir] = "contrib"
-projects[context_admin][download][type] = "git"
-projects[context_admin][download][revision] = "15a8390"
-projects[context_admin][download][branch] = "7.x-1.x"
-
 projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
@@ -772,7 +758,7 @@ libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.3.2_edit.zip"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
@@ -791,9 +777,6 @@ libraries[plupload][patch][1903850] = "http://drupal.org/files/issues/plupload-1
 
 libraries[respondjs][download][type] = "get"
 libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
-
-libraries[timeago][download][type] = "get"
-libraries[timeago][download][url] = "https://raw.github.com/rmm5t/jquery-timeago/v1.3.1/jquery.timeago.js"
 
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
