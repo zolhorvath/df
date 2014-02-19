@@ -22,6 +22,12 @@ function df_admin_default_rules_configuration() {
             "account" : [ "account" ],
             "roles" : { "value" : { "30037204" : "30037204" } }
           }
+        },
+        { "NOT text_matches" : {
+            "text" : [ "site:current-page:path" ],
+            "match" : "^user\/reset\/",
+            "operation" : "regex"
+          }
         }
       ],
       "DO" : [ { "redirect" : { "url" : "[site:url]" } } ]

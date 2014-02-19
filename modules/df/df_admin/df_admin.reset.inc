@@ -21,10 +21,7 @@ function df_admin_page_reset($module) {
  */
 function df_admin_reset_scenario($scenario) {
 
-  // Clear & rebuild Features key caches
-  features_get_info(NULL, NULL, TRUE);
-  features_rebuild();
-
+  // Get list of modules implementing Migrate API.
   migrate_get_module_apis();
 
   // Set up migrations array and hook_df_import().
