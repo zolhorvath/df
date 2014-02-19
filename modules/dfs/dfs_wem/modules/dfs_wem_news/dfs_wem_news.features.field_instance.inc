@@ -329,34 +329,29 @@ function dfs_wem_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'alternate' => array(
-        'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'preview',
-        ),
-        'type' => 'file_rendered',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'default',
-        ),
-        'type' => 'file_rendered',
-        'weight' => 1,
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 6,
       ),
       'featured' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -366,7 +361,7 @@ function dfs_wem_news_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'flv ogg',
+      'file_extensions' => 'ogg avi mp4',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
@@ -375,8 +370,7 @@ function dfs_wem_news_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          'public' => 0,
-          'vimeo' => 'vimeo',
+          'public' => 'public',
           'youtube' => 'youtube',
         ),
         'allowed_types' => array(
@@ -388,11 +382,10 @@ function dfs_wem_news_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
-          'media_internet' => 'media_internet',
+          'media_internet' => 0,
           'upload' => 0,
-          'youtube' => 0,
+          'youtube' => 'youtube',
         ),
-        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 4,

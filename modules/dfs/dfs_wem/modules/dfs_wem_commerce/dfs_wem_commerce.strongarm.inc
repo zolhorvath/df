@@ -491,6 +491,12 @@ function dfs_wem_commerce_strongarm() {
         'title' => array(
           'weight' => '-5',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'language' => array(
