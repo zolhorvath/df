@@ -7,7 +7,6 @@ project = df_engage
 dependencies[] = assemble
 dependencies[] = bean
 dependencies[] = bean_uuid
-dependencies[] = context_admin
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = entity_token
