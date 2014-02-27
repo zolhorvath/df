@@ -34,9 +34,12 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.3"
+projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
+projects[entity][download][type] = "git"
+projects[entity][download][revision] = "d9baed7"
+projects[entity][download][branch] = "7.x-1.x"
 
 projects[features][version] = "2.x-dev"
 projects[features][type] = "module"
@@ -330,9 +333,12 @@ projects[addressfield][version] = "1.0-beta4"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
 
-projects[commerce][version] = "1.5"
+projects[commerce][version] = "1.x-dev"
 projects[commerce][type] = "module"
 projects[commerce][subdir] = "contrib"
+projects[commerce][download][type] = "git"
+projects[commerce][download][revision] = "7acc2c8"
+projects[commerce][download][branch] = "7-x.1-x"
 
 projects[commerce_extra_price_formatters][version] = 1.x-dev
 projects[commerce_extra_price_formatters][type] = "module"
@@ -423,7 +429,8 @@ projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-but
 ; Edit Module fails for "psudeo" fields provided via Relationship or Appended
 ; Global Text in Views
 ; http://drupal.org/node/2015295
-projects[edit][patch][2015295] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
+projects[edit][patch][2015295-6] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
+projects[edit][patch][2015295-22] = "http://drupal.org/files/issues/edit-views-pseudo-fields-title-2015295-22.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
@@ -707,11 +714,8 @@ projects[l10n_update][version] = "1.x-dev"
 projects[l10n_update][type] = "module"
 projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][download][type] = "git"
-projects[l10n_update][download][revision] = "fa76206"
+projects[l10n_update][download][revision] = "209faa5"
 projects[l10n_update][download][branch] = "7.x-1.x"
-; site-install fails when installing via a custom install profile
-; http://drupal.org/node/1490664#comment-7510667
-projects[l10n_update][patch][1490664] = "http://drupal.org/files/l10n_update-1490664-fix_pdo_exception-21.patch"
 
 projects[i18n][version] = "1.8"
 projects[i18n][type] = "module"
