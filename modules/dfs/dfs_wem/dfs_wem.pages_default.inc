@@ -16,7 +16,10 @@ function dfs_wem_default_page_manager_pages() {
   $page->admin_title = 'Nexus Contests';
   $page->admin_description = '';
   $page->path = 'contests';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Free Vacations',
@@ -303,7 +306,7 @@ function dfs_wem_default_page_manager_pages() {
         'title' => 'default',
         'hero' => 'default',
         'layouts' => 'horizontal',
-        'styles' => 'feature_medium',
+        'styles' => 'feature_small',
         'color_schemes' => 'reverse',
         'button_styles' => 'default',
       ),
@@ -932,7 +935,7 @@ elseif($user->uid != 1) {
         'title' => 'hidden',
         'hero' => 'default',
         'layouts' => 'horizontal',
-        'styles' => 'feature_medium',
+        'styles' => 'feature_small',
         'color_schemes' => 'reverse',
         'button_styles' => 'default',
       ),
