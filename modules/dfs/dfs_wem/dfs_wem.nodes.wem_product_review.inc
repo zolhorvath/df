@@ -32,6 +32,8 @@ class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodesUUID {
     $this->addFieldMapping('field_product_review_image:source_dir')->defaultValue($import_path . 'images');
     $this->addFieldMapping('field_product_review_image:destination_file', 'filename');
 
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -41,6 +43,7 @@ class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodesUUID {
     $columns[3] = array('image', 'Image');
     $columns[4] = array('author', 'Author');
     $columns[5] = array('uuid', 'UUID');
+    $columns[6] = array('created', 'Created');
     return $columns;
   }
 

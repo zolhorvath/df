@@ -27,9 +27,14 @@ class DFSWEMNewsNodes extends DemoFrameworkBaseNodesUUID {
     $this->addFieldMapping('field_wem_video', 'video')->sourceMigration('DFSWEMNewsVideo');
     $this->addFieldMapping('field_wem_video:file_class')->defaultValue('MigrateFileFid');
 
+    // Taxonomy
     $this->addFieldMapping('field_wem_interests', 'interests');
 
+    // Workbench
     $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
+
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -39,6 +44,7 @@ class DFSWEMNewsNodes extends DemoFrameworkBaseNodesUUID {
     $columns[3] = array('video', 'Video');
     $columns[4] = array('interests', 'Interests');
     $columns[5] = array('uuid', 'UUID');
+    $columns[6] = array('created', 'Created');
     return $columns;
   }
 

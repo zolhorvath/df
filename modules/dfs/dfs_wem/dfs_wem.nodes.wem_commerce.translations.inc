@@ -34,6 +34,8 @@ class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
     $this->addFieldMapping('tnid', 'title')->sourceMigration('DFSWEMCommerceNodes');
     // UUID
     $this->addFieldMapping('uuid', 'uuid');
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -44,6 +46,7 @@ class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
     $columns[4] = array('sku', 'SKU');
     $columns[5] = array('interests', 'Interests');
     $columns[6] = array('uuid', 'UUID');
+    $columns[7] = array('created', 'Created');
     return $columns;
   }
 

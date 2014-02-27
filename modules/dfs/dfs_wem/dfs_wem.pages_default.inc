@@ -11,6 +11,108 @@ function dfs_wem_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
+  $page->name = 'dfs_wem_contests';
+  $page->task = 'page';
+  $page->admin_title = 'Nexus Contests';
+  $page->admin_description = '';
+  $page->path = 'contests';
+  $page->access = array();
+  $page->menu = array(
+    'type' => 'normal',
+    'title' => 'Free Vacations',
+    'name' => 'main-menu',
+    'weight' => '3',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_dfs_wem_contests_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'dfs_wem_contests';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Nexus Contests',
+    'no_blocks' => 1,
+    'pipeline' => 'ipe',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'demonstratie_layout_landing';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'primary_features' => NULL,
+      'secondary_features' => NULL,
+      'tertiary_features' => NULL,
+      'quaternary_features' => NULL,
+      'primary_supplements' => NULL,
+      'secondary_supplements' => NULL,
+      'tertiary_supplements' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'e1b83de6-584c-4d86-899a-9d2ae945b9a7';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-d0feccae-946f-44c3-9984-98e16828497b';
+    $pane->panel = 'primary_features';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'wem_user_contests-contests_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+      'view_mode' => 'teaser',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'title' => 'hidden',
+        'hero' => 'hero',
+        'layouts' => 'default',
+        'styles' => 'feature_large',
+        'color_schemes' => 'default',
+        'button_styles' => 'default',
+      ),
+      'style' => 'demonstratie_panels_styles',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'd0feccae-946f-44c3-9984-98e16828497b';
+    $display->content['new-d0feccae-946f-44c3-9984-98e16828497b'] = $pane;
+    $display->panels['primary_features'][0] = 'new-d0feccae-946f-44c3-9984-98e16828497b';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = 'new-d0feccae-946f-44c3-9984-98e16828497b';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['dfs_wem_contests'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
   $page->name = 'dfs_wem_enter_contest_link_og_subscribe';
   $page->task = 'page';
   $page->admin_title = 'DFS WEM Enter Contest Action';
@@ -100,7 +202,7 @@ function dfs_wem_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'dfs_wem_guides';
   $page->task = 'page';
-  $page->admin_title = 'Guides';
+  $page->admin_title = 'Travel Guides';
   $page->admin_description = '';
   $page->path = 'guides';
   $page->access = array(
@@ -109,18 +211,20 @@ function dfs_wem_default_page_manager_pages() {
   );
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'Guides',
-    'weight' => '0',
+    'title' => 'Travel Guides',
     'name' => 'main-menu',
+    'weight' => '0',
     'parent' => array(
       'type' => 'none',
       'title' => '',
-      'weight' => 0,
       'name' => 'navigation',
+      'weight' => '0',
     ),
   );
   $page->arguments = array();
-  $page->conf = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
   $page->default_handlers = array();
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
@@ -165,7 +269,7 @@ function dfs_wem_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Guides';
+  $display->title = 'Travel Guides';
   $display->uuid = '45166c66-99d9-1264-bd56-be9359584c59';
   $display->content = array();
   $display->panels = array();
@@ -197,9 +301,9 @@ function dfs_wem_default_page_manager_pages() {
     $pane->style = array(
       'settings' => array(
         'title' => 'default',
-        'hero' => 0,
-        'layouts' => 'default',
-        'styles' => 'default',
+        'hero' => 'default',
+        'layouts' => 'horizontal',
+        'styles' => 'feature_medium',
         'color_schemes' => 'reverse',
         'button_styles' => 'default',
       ),
@@ -436,7 +540,7 @@ function dfs_wem_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'Trips',
+      'override_title_text' => 'Featured Package',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -505,16 +609,6 @@ function dfs_wem_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array(
       'plugins' => array(
-        0 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 1,
-            ),
-          ),
-          'context' => 'context_user_1',
-          'not' => TRUE,
-        ),
         1 => array(
           'name' => 'php',
           'settings' => array(
@@ -599,67 +693,25 @@ elseif($user->uid != 1) {
     $display->content['new-1eefd5b4-9b92-47c4-6562-2fd8a4c141c0'] = $pane;
     $display->panels['tertiary_features'][1] = 'new-1eefd5b4-9b92-47c4-6562-2fd8a4c141c0';
     $pane = new stdClass();
-    $pane->pid = 'new-fba36c88-7dbd-21f4-cdda-10cfad9c6f4c';
-    $pane->panel = 'tertiary_features';
+    $pane->pid = 'new-3da35775-9d33-4aea-afb1-5d9cc15f4fb0';
+    $pane->panel = 'tertiary_supplements';
     $pane->type = 'block';
-    $pane->subtype = 'user-login';
+    $pane->subtype = 'bean-wem---user-more-contests';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => array(
-        'title' => 'hidden',
-        'layouts' => 'default',
-        'styles' => 'default',
-        'color_schemes' => 'alternate',
-      ),
-      'style' => 'demonstratie_panels_styles',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = 'fba36c88-7dbd-21f4-cdda-10cfad9c6f4c';
-    $display->content['new-fba36c88-7dbd-21f4-cdda-10cfad9c6f4c'] = $pane;
-    $display->panels['tertiary_features'][2] = 'new-fba36c88-7dbd-21f4-cdda-10cfad9c6f4c';
-    $pane = new stdClass();
-    $pane->pid = 'new-35800720-d702-2944-e961-065e7ae8817b';
-    $pane->panel = 'tertiary_supplements';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'wem_user_contests-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'context_user_1',
-      ),
-      'view_mode' => 'teaser',
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => array(
-        'title' => 'hidden',
+        'title' => 'default',
+        'hero' => 'default',
         'layouts' => 'horizontal',
         'styles' => 'feature_small',
         'color_schemes' => 'default',
+        'button_styles' => 'default',
       ),
       'style' => 'demonstratie_panels_styles',
     );
@@ -667,9 +719,9 @@ elseif($user->uid != 1) {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '35800720-d702-2944-e961-065e7ae8817b';
-    $display->content['new-35800720-d702-2944-e961-065e7ae8817b'] = $pane;
-    $display->panels['tertiary_supplements'][0] = 'new-35800720-d702-2944-e961-065e7ae8817b';
+    $pane->uuid = '3da35775-9d33-4aea-afb1-5d9cc15f4fb0';
+    $display->content['new-3da35775-9d33-4aea-afb1-5d9cc15f4fb0'] = $pane;
+    $display->panels['tertiary_supplements'][0] = 'new-3da35775-9d33-4aea-afb1-5d9cc15f4fb0';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -681,7 +733,7 @@ elseif($user->uid != 1) {
   $page->api_version = 1;
   $page->name = 'dfs_wem_trips';
   $page->task = 'page';
-  $page->admin_title = 'Trips';
+  $page->admin_title = 'Trip Packages';
   $page->admin_description = '';
   $page->path = 'trips';
   $page->access = array(
@@ -690,18 +742,20 @@ elseif($user->uid != 1) {
   );
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'Trips',
-    'weight' => '0',
+    'title' => 'Trip Packages',
     'name' => 'main-menu',
+    'weight' => '0',
     'parent' => array(
       'type' => 'none',
       'title' => '',
-      'weight' => 0,
       'name' => 'navigation',
+      'weight' => '0',
     ),
   );
   $page->arguments = array();
-  $page->conf = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
   $page->default_handlers = array();
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
@@ -742,7 +796,7 @@ elseif($user->uid != 1) {
     ),
   );
   $display->cache = array();
-  $display->title = 'Trips';
+  $display->title = 'Nexus Trip Packages';
   $display->uuid = 'e75b73b4-8ca6-7aa4-2d2a-6768522e4c09';
   $display->content = array();
   $display->panels = array();
@@ -794,6 +848,108 @@ elseif($user->uid != 1) {
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['dfs_wem_trips'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'dfs_wem_videos';
+  $page->task = 'page';
+  $page->admin_title = 'Video Tours';
+  $page->admin_description = '';
+  $page->path = 'tours';
+  $page->access = array();
+  $page->menu = array(
+    'type' => 'normal',
+    'title' => 'Video Tours',
+    'name' => 'main-menu',
+    'weight' => '2',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_dfs_wem_videos_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'dfs_wem_videos';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Video Tours',
+    'no_blocks' => 1,
+    'pipeline' => 'ipe',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'demonstratie_layout_single';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'primary_features' => NULL,
+      'secondary_features' => NULL,
+      'tertiary_features' => NULL,
+      'quaternary_features' => NULL,
+      'primary_supplements' => NULL,
+      'secondary_supplements' => NULL,
+      'tertiary_supplements' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '7a2fd760-84e8-4527-90c2-fef497a15eb8';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-2bbe68b2-8e7e-44ae-a9d3-a64803e96946';
+    $pane->panel = 'primary_features';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'wem_videos-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+      'view_mode' => 'teaser',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'title' => 'hidden',
+        'hero' => 'default',
+        'layouts' => 'horizontal',
+        'styles' => 'feature_medium',
+        'color_schemes' => 'reverse',
+        'button_styles' => 'default',
+      ),
+      'style' => 'demonstratie_panels_styles',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2bbe68b2-8e7e-44ae-a9d3-a64803e96946';
+    $display->content['new-2bbe68b2-8e7e-44ae-a9d3-a64803e96946'] = $pane;
+    $display->panels['primary_features'][0] = 'new-2bbe68b2-8e7e-44ae-a9d3-a64803e96946';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-2bbe68b2-8e7e-44ae-a9d3-a64803e96946';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['dfs_wem_videos'] = $page;
 
   return $pages;
 

@@ -26,7 +26,11 @@ class DFSWEMContestNodes extends DemoFrameworkBaseNodesUUID {
     // Taxonomy
     $this->addFieldMapping('field_contest_interests', 'interests');
 
+    // Workbench
     $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
+
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -35,6 +39,7 @@ class DFSWEMContestNodes extends DemoFrameworkBaseNodesUUID {
     $columns[2] = array('image', 'Image');
     $columns[3] = array('interests', 'Interests');
     $columns[4] = array('uuid', 'UUID');
+    $columns[5] = array('created', 'Created');
     return $columns;
   }
 

@@ -21,6 +21,8 @@ class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
     $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
     // UUID
     $this->addFieldMapping('uuid', 'uuid');
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -29,6 +31,7 @@ class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
     $columns[2] = array('sku', 'SKU');
     $columns[3] = array('interests', 'Interests');
     $columns[4] = array('uuid', 'UUID');
+    $columns[5] = array('created', 'Created');
     return $columns;
   }
 

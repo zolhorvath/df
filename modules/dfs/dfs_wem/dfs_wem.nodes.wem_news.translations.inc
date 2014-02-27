@@ -39,6 +39,9 @@ class DFSWEMNewsNodesTranslations extends DemoFrameworkBaseNodesTranslations {
 
     // UUID
     $this->addFieldMapping('uuid', 'uuid');
+
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -50,6 +53,7 @@ class DFSWEMNewsNodesTranslations extends DemoFrameworkBaseNodesTranslations {
     $columns[5] = array('video', 'Video');
     $columns[6] = array('interests', 'Interests');
     $columns[7] = array('uuid', 'UUID');
+    $columns[8] = array('created', 'Created');
     return $columns;
   }
 

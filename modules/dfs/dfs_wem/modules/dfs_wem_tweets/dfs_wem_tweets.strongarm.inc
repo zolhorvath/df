@@ -80,6 +80,9 @@ function dfs_wem_tweets_strongarm() {
         'path' => array(
           'weight' => '4',
         ),
+        'metatags' => array(
+          'weight' => '5',
+        ),
       ),
       'display' => array(),
     ),

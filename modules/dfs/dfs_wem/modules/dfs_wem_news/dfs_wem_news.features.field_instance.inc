@@ -21,7 +21,7 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -81,7 +81,7 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'above',
@@ -131,7 +131,7 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -225,7 +225,7 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -273,7 +273,7 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'above',
@@ -329,9 +329,12 @@ function dfs_wem_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'teaser',
+        ),
+        'type' => 'file_rendered',
         'weight' => 0,
       ),
       'default' => array(
@@ -361,7 +364,7 @@ function dfs_wem_news_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'ogg avi mp4',
+      'file_extensions' => 'flv ogg',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
@@ -371,7 +374,7 @@ function dfs_wem_news_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
-          'youtube' => 'youtube',
+          'youtube' => 0,
         ),
         'allowed_types' => array(
           'audio' => 0,

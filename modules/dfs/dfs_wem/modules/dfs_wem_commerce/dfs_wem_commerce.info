@@ -12,6 +12,7 @@ dependencies[] = ctools
 dependencies[] = df_commerce
 dependencies[] = dfs_wem_news
 dependencies[] = entity
+dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = image
 dependencies[] = node

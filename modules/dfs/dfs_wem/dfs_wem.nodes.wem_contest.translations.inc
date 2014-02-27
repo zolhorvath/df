@@ -28,6 +28,8 @@ class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations 
     $this->addFieldMapping('tnid', 'title')->sourceMigration('DFSWEMContestNodes');
     // UUID
     $this->addFieldMapping('uuid', 'uuid');
+    // Created
+    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
   }
 
   function csvcolumns() {
@@ -38,6 +40,7 @@ class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations 
     $columns[4] = array('image', 'Image');
     $columns[5] = array('interests', 'Interests');
     $columns[6] = array('uuid', 'UUID');
+    $columns[7] = array('created', 'Created');
     return $columns;
   }
 

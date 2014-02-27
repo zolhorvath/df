@@ -127,7 +127,7 @@ function dfs_wem_news_strongarm() {
             'visible' => FALSE,
           ),
           'alternate' => array(
-            'weight' => '1',
+            'weight' => '2',
             'visible' => FALSE,
           ),
         ),

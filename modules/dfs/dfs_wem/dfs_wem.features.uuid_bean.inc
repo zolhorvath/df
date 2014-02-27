@@ -13,7 +13,7 @@ function dfs_wem_uuid_features_default_beans() {
   $beans[] = array(
     'label' => 'WEM - Page Related Product',
     'description' => NULL,
-    'title' => 'Related Product',
+    'title' => 'Related Trip',
     'type' => 'bean_tax_related',
     'data' => array(
       'view_mode' => 'default',
@@ -61,66 +61,6 @@ function dfs_wem_uuid_features_default_beans() {
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
         'wem_commerce' => 'wem_commerce',
-      ),
-      'hide_empty' => 1,
-      'unmatch_add' => 1,
-    ),
-    'more_link' => array(
-      'text' => '',
-      'path' => '',
-    ),
-  );
-  $beans[] = array(
-    'label' => 'WEM - Page Related News',
-    'description' => NULL,
-    'title' => 'Related News',
-    'type' => 'bean_tax_related',
-    'data' => array(
-      'view_mode' => 'default',
-      'filters' => array(
-        'records_shown' => 4,
-        'offset_results' => 0,
-        'vocabulary' => array(
-          'interests' => 'interests',
-        ),
-      ),
-      'settings' => array(
-        'related' => 'page',
-        'entity_type' => 'node',
-        'entity_view_mode' => 'featured',
-        'bundle_types' => array(
-          'wem_news' => 'wem_news',
-        ),
-        'hide_empty' => 1,
-        'unmatch_add' => 1,
-      ),
-      'more_link' => array(
-        'text' => '',
-        'path' => '',
-      ),
-    ),
-    'delta' => 'wem---page-related-news',
-    'view_mode' => 'default',
-    'created' => 1372872827,
-    'log' => '',
-    'uid' => 0,
-    'default_revision' => 1,
-    'revisions' => array(),
-    'vuuid' => '98097dbd-81ee-442b-8d0b-5fdf81205f12',
-    'uuid' => '4ca3c820-7dae-44a0-a27d-4f46d0f0dcd2',
-    'filters' => array(
-      'records_shown' => 4,
-      'offset_results' => 0,
-      'vocabulary' => array(
-        'interests' => 'interests',
-      ),
-    ),
-    'settings' => array(
-      'related' => 'page',
-      'entity_type' => 'node',
-      'entity_view_mode' => 'featured',
-      'bundle_types' => array(
-        'wem_news' => 'wem_news',
       ),
       'hide_empty' => 1,
       'unmatch_add' => 1,
@@ -193,7 +133,7 @@ function dfs_wem_uuid_features_default_beans() {
   $beans[] = array(
     'label' => 'WEM - User Related Contest',
     'description' => NULL,
-    'title' => 'Contests',
+    'title' => 'Nexus Contest',
     'type' => 'bean_tax_related',
     'data' => array(
       'view_mode' => 'default',
@@ -201,7 +141,7 @@ function dfs_wem_uuid_features_default_beans() {
         'records_shown' => 1,
         'offset_results' => 0,
         'vocabulary' => array(
-          'interests' => 'interests',
+          0 => 'interests',
         ),
       ),
       'settings' => array(
@@ -209,7 +149,7 @@ function dfs_wem_uuid_features_default_beans() {
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
-          'wem_contest' => 'wem_contest',
+          0 => 'wem_contest',
         ),
         'hide_empty' => 1,
         'unmatch_add' => 1,
@@ -232,7 +172,7 @@ function dfs_wem_uuid_features_default_beans() {
       'records_shown' => 1,
       'offset_results' => 0,
       'vocabulary' => array(
-        'interests' => 'interests',
+        0 => 'interests',
       ),
     ),
     'settings' => array(
@@ -240,7 +180,125 @@ function dfs_wem_uuid_features_default_beans() {
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
-        'wem_contest' => 'wem_contest',
+        0 => 'wem_contest',
+      ),
+      'hide_empty' => 1,
+      'unmatch_add' => 1,
+    ),
+    'more_link' => array(
+      'text' => '',
+      'path' => '',
+    ),
+  );
+  $beans[] = array(
+    'label' => 'WEM - User More Contests',
+    'description' => NULL,
+    'title' => 'More Contests',
+    'type' => 'bean_tax_related',
+    'data' => array(
+      'view_mode' => 'default',
+      'filters' => array(
+        'records_shown' => 4,
+        'offset_results' => 1,
+        'vocabulary' => array(
+          0 => 'interests',
+        ),
+      ),
+      'settings' => array(
+        'related' => 'user',
+        'entity_type' => 'node',
+        'entity_view_mode' => 'featured',
+        'bundle_types' => array(
+          0 => 'wem_contest',
+        ),
+        'unmatch_add' => 1,
+      ),
+      'more_link' => array(
+        'text' => '',
+        'path' => '',
+      ),
+    ),
+    'delta' => 'wem---user-more-contests',
+    'view_mode' => 'default',
+    'created' => 1393398124,
+    'log' => '',
+    'uid' => 0,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '72b0eb43-055e-4ef4-b801-0a6b04d1d1af',
+    'uuid' => '8ea31756-4a2f-44b0-ae6f-11b53dcfb4ba',
+    'filters' => array(
+      'records_shown' => 4,
+      'offset_results' => 1,
+      'vocabulary' => array(
+        0 => 'interests',
+      ),
+    ),
+    'settings' => array(
+      'related' => 'user',
+      'entity_type' => 'node',
+      'entity_view_mode' => 'featured',
+      'bundle_types' => array(
+        0 => 'wem_contest',
+      ),
+      'unmatch_add' => 1,
+    ),
+    'more_link' => array(
+      'text' => '',
+      'path' => '',
+    ),
+  );
+  $beans[] = array(
+    'label' => 'WEM - Page Secondary Products',
+    'description' => NULL,
+    'title' => 'More Trips',
+    'type' => 'bean_tax_related',
+    'data' => array(
+      'view_mode' => 'default',
+      'filters' => array(
+        'records_shown' => 4,
+        'offset_results' => 1,
+        'vocabulary' => array(
+          'interests' => 'interests',
+        ),
+      ),
+      'settings' => array(
+        'related' => 'page',
+        'entity_type' => 'node',
+        'entity_view_mode' => 'featured',
+        'bundle_types' => array(
+          'wem_commerce' => 'wem_commerce',
+        ),
+        'hide_empty' => 1,
+        'unmatch_add' => 1,
+      ),
+      'more_link' => array(
+        'text' => '',
+        'path' => '',
+      ),
+    ),
+    'delta' => 'wem---page-secondary-products',
+    'view_mode' => 'default',
+    'created' => 1393289673,
+    'log' => '',
+    'uid' => 0,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '322333bd-7690-46c7-a7e6-e9fb6c8e99cc',
+    'uuid' => 'a0b74278-75b9-490c-b702-782e50710793',
+    'filters' => array(
+      'records_shown' => 4,
+      'offset_results' => 1,
+      'vocabulary' => array(
+        'interests' => 'interests',
+      ),
+    ),
+    'settings' => array(
+      'related' => 'page',
+      'entity_type' => 'node',
+      'entity_view_mode' => 'featured',
+      'bundle_types' => array(
+        'wem_commerce' => 'wem_commerce',
       ),
       'hide_empty' => 1,
       'unmatch_add' => 1,
@@ -261,7 +319,7 @@ function dfs_wem_uuid_features_default_beans() {
         'records_shown' => 1,
         'offset_results' => 0,
         'vocabulary' => array(
-          'interests' => 'interests',
+          0 => 'interests',
         ),
       ),
       'settings' => array(
@@ -269,7 +327,7 @@ function dfs_wem_uuid_features_default_beans() {
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
-          'wem_commerce' => 'wem_commerce',
+          0 => 'wem_commerce',
         ),
         'hide_empty' => 1,
         'unmatch_add' => 1,
@@ -292,7 +350,7 @@ function dfs_wem_uuid_features_default_beans() {
       'records_shown' => 1,
       'offset_results' => 0,
       'vocabulary' => array(
-        'interests' => 'interests',
+        0 => 'interests',
       ),
     ),
     'settings' => array(
@@ -300,7 +358,7 @@ function dfs_wem_uuid_features_default_beans() {
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
-        'wem_commerce' => 'wem_commerce',
+        0 => 'wem_commerce',
       ),
       'hide_empty' => 1,
       'unmatch_add' => 1,
