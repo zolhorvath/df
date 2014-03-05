@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[acquia_connector][version] = "2.12"
+projects[acquia_connector][version] = "2.13"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
@@ -33,6 +33,10 @@ projects[devel][subdir] = "contrib"
 projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
+
+projects[ember_support][version] = "1.0-alpha0"
+projects[ember_support][type] = "module"
+projects[ember_support][subdir] = "contrib"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
@@ -237,8 +241,11 @@ projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
-projects[panels][download][revision] = "18319cd"
+projects[panels][download][revision] = "8059bda"
 projects[panels][download][branch] = "7.x-3.x"
+; Add classes to Add Content links in Panels modal
+; http://drupal.org/node/2209799
+projects[panels][patch][2209799] = "http://drupal.org/files/issues/panels-add-content-link-subtype-class-2209799-2.patch"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
@@ -263,10 +270,6 @@ projects[picture][subdir] = "contrib"
 projects[picture][download][type] = "git"
 projects[picture][download][revision] = "3d9fe6c"
 projects[picture][download][branch] = "7.x-1.x"
-
-projects[respondjs][version] = "1.1"
-projects[respondjs][type] = "module"
-projects[respondjs][subdir] = "contrib"
 
 projects[simple_gmap][version] = "1.2"
 projects[simple_gmap][type] = "module"
@@ -397,14 +400,14 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "57245a9"
+projects[ckeditor][download][revision] = "bfa0909"
 projects[ckeditor][download][branch] = "7.x-1.x"
-; Integration with Media 2.x
-; http://drupal.org/node/1504696
-projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-1504696-120.patch"
+; CKEditor accomodate latest Media changes
+; http://drupal.org/node/2159403
+projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-2159403-20_0.patch"
 ; External plugin declarations are redundant.
-; http://drupal.org/comment/8284591#comment-8284591
-projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
+; http://drupal.org/comment/8284591
+projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-8-alt.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -778,9 +781,6 @@ libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/arch
 ; Remove plupload library examples folder for Drupal distribution
 ; http://drupal.org/node/1903850
 libraries[plupload][patch][1903850] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
-
-libraries[respondjs][download][type] = "get"
-libraries[respondjs][download][url] = "https://github.com/scottjehl/Respond/tarball/master"
 
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
