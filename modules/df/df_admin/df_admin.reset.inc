@@ -32,6 +32,9 @@ function df_admin_reset_scenario($scenario) {
   // Check for available migrations based on the scenario argument.
   if (isset($migrations[$scenario]) && !empty($migrations[$scenario])) {
 
+    // Set up operations array.
+    $operations = array();
+
     // Queue migrations to rollback in the opposite order provided.
     foreach (array_reverse($migrations[$scenario]) as $machine_name) {
       $migration = Migration::getInstance($machine_name);
@@ -42,6 +45,24 @@ function df_admin_reset_scenario($scenario) {
     foreach ($migrations[$scenario]  as $machine_name) {
       $migration = Migration::getInstance($machine_name);
       $operations[] = array('migrate_ui_batch', array('import', $machine_name, 0, FALSE));
+    }
+
+    // Confirm if there was an attempt to run scenario migrations.
+    $migrations_count = count($migrations[$scenario]);
+    if ($migrations_count > 0) {
+      $operations[] = array('drupal_set_message', array(t('@number demo migrations attempted.', array('@number' => $migrations_count)), 'status'));
+    }
+
+    // Clear caches post-import.
+    $operations[] = array('drupal_flush_all_caches', array(''));
+    $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
+
+    // Clear messages for non-Drush users providing a cleaner scenario reset.
+    if (!drupal_is_cli()) {
+      $messages = array('completed', 'status', 'warning');
+      foreach ($messages as $message) {
+        $operations[] = array('drupal_get_messages', array($message, TRUE));
+      }
     }
 
     // Rollback and Import migration operations via Batch API.
