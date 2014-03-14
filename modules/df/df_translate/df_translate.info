@@ -18,6 +18,7 @@ dependencies[] = i18n_taxonomy
 dependencies[] = i18n_translation
 dependencies[] = i18nviews
 dependencies[] = locale
+dependencies[] = language_switch
 dependencies[] = migrate
 dependencies[] = migrate_extras
 dependencies[] = migrate_ui

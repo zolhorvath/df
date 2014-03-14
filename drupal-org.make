@@ -34,9 +34,16 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[ember_support][version] = "1.0-alpha0"
+projects[ember_support][version] = "1.0-alpha1"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
+
+projects[escape_admin][version] = "1.x-dev"
+projects[escape_admin][type] = "module"
+projects[escape_admin][subdir] = "contrib"
+projects[escape_admin][download][type] = "git"
+projects[escape_admin][download][revision] = "ecd3f58"
+projects[escape_admin][download][branch] = "7.x-1.x"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
@@ -459,9 +466,9 @@ projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
 projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
-; Integrate IIB with the Navbar module
+; Integrate IIB with the Navbar module and improve Toolbar integration
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-1737036-43.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-46.patch"
 
 projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
@@ -471,14 +478,14 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "6e9c99b"
+projects[media][download][revision] = "4c10acc"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
 ; Default file entities are not exportable by features
 ; http://drupal.org/node/2104193
-projects[media][patch][2104193] = "http://drupal.org/files/issues/media_remove_file_display_alter-2104193-23.patch"
+projects[media][patch][2104193] = "http://drupal.org/files/issues/media_remove_file_display_alter-2104193-65.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
@@ -733,6 +740,10 @@ projects[i18nviews][download][branch] = "7.x-3.x"
 ; Fatal error: Call to a member function unpack_translatables()
 ; http://drupal.org/node/1653170
 projects[i18nviews][patch][1653170] = "http://drupal.org/files/i18nviews-1653170.patch"
+
+projects[language_switch][version] = "1.0-alpha2"
+projects[language_switch][type] = "module"
+projects[language_switch][subdir] = "contrib"
 
 projects[lingotek][version] = "5.02"
 projects[lingotek][type] = "module"
