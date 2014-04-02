@@ -37,7 +37,7 @@ function df_admin_enable_scenario($module) {
   // Not all DFS require a batch content import, but some need this.
   // Resolves to the DF admin page if no reset callback present.
   if (!drupal_is_cli()) {
-    $path = 'admin/config/system/df/reset/' . $module;
+    $path = 'admin/df/reset/' . $module;
     $token = drupal_get_token(DRUPAL_ROOT . '/df/reset/' . $module);
     drupal_goto($path, array('query' => array('token' => $token)));
   }

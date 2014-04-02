@@ -469,7 +469,7 @@ function df_install_finished(&$install_state) {
     $scenario = variable_get('df_install_enable_dfs', 'none');
     if ($scenario != 'none' && !module_exists($scenario)) {
       // A scenario is queued for enablement.
-      $path = '/admin/config/system/df/enable/' . $scenario;
+      $path = '/admin/df/enable/' . $scenario;
       $token = drupal_get_token(DRUPAL_ROOT . '/df/enable/' . $scenario);
       drupal_goto($path, array('query' => array('token' => $token)));
     }
