@@ -234,6 +234,35 @@ function dfs_wem_panelizer_defaults() {
     $pane->uuid = 'c0e08693-b1a0-b014-29f7-f512519313a8';
     $display->content['new-c0e08693-b1a0-b014-29f7-f512519313a8'] = $pane;
     $display->panels['tertiary_features'][2] = 'new-c0e08693-b1a0-b014-29f7-f512519313a8';
+    $pane = new stdClass();
+    $pane->pid = 'new-714db743-b5d1-482a-b698-127d5f8b08c0';
+    $pane->panel = 'tertiary_features';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_wem_com_rel_interests';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'taxonomy_term_reference_link',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(),
+      'context' => array(),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '714db743-b5d1-482a-b698-127d5f8b08c0';
+    $display->content['new-714db743-b5d1-482a-b698-127d5f8b08c0'] = $pane;
+    $display->panels['tertiary_features'][3] = 'new-714db743-b5d1-482a-b698-127d5f8b08c0';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
