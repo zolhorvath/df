@@ -143,9 +143,12 @@ projects[bean][download][type] = "git"
 projects[bean][download][revision] = "2d0f262"
 projects[bean][download][branch] = "7.x-1.x"
 
-projects[bean_tax][version] = "2.3"
+projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
+projects[bean_tax][download][type] = "git"
+projects[bean_tax][download][revision] = "59e57e6"
+projects[bean_tax][download][branch] = "7.x-1.x"
 
 projects[better_formats][version] = "1.0-beta1"
 projects[better_formats][type] = "module"
@@ -433,14 +436,9 @@ projects[edit][subdir] = "contrib"
 projects[edit][download][type] = "git"
 projects[edit][download][revision] = "cf62974"
 projects[edit][download][branch] = "7.x-1.x"
-; Backport of Edit button for navbar
-; http://drupal.org/node/1994256
-projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-button-1994256-22.patch"
-; Edit Module fails for "psudeo" fields provided via Relationship or Appended
-; Global Text in Views
-; http://drupal.org/node/2015295
-projects[edit][patch][2015295-6] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
-projects[edit][patch][2015295-22] = "http://drupal.org/files/issues/edit-views-pseudo-fields-title-2015295-22.patch"
+; Special version of Edit module used for demos
+; http://drupal.org/node/2224885
+projects[edit][patch][2224885] = "http://drupal.org/files/issues/edit_demo-framework-2224885-1.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
@@ -478,7 +476,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "4c10acc"
+projects[media][download][revision] = "9583d89"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
@@ -573,6 +571,11 @@ projects[feeds_jsonpath_parser][subdir] = "contrib"
 projects[feeds_jsonpath_parser][download][type] = "git"
 projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
 projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
+
+projects[advanced_help][version] = "1.1"
+projects[advanced_help][type] = "module"
+projects[advanced_help][subdir] = "contrib"
+
 ; Support for Libraries API
 ; http://drupal.org/node/1083234
 projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
