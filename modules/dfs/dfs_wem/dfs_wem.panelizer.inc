@@ -864,7 +864,7 @@ function dfs_wem_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_full',
+        'image_style' => 'large',
       ),
       'context' => 'panelizer',
     );

@@ -680,7 +680,7 @@ function dfs_wem_commerce_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_thumbnail',
+          'image_style' => 'thumbnail',
         ),
         'type' => 'image',
         'weight' => 1,
