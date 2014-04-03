@@ -485,6 +485,13 @@ projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upl
 ; http://drupal.org/node/2104193
 projects[media][patch][2104193] = "http://drupal.org/files/issues/media_remove_file_display_alter-2104193-65.patch"
 
+projects[media_preview_slider][version] = "1.x-dev"
+projects[media_preview_slider][type] = "module"
+projects[media_preview_slider][subdir] = "contrib"
+projects[media_preview_slider][download][type] = "git"
+projects[media_preview_slider][download][branch] = "7.x-1.x"
+projects[media_preview_slider][download][url] = "http://git.drupal.org/sandbox/Brian14/2222597.git"
+
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
