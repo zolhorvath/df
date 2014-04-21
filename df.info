@@ -36,15 +36,15 @@ dependencies[] = import
 
 ; Demo Framework (required)
 dependencies[] = df_admin
-dependencies[] = df_connect
 dependencies[] = df_commerce
 dependencies[] = df_engage
 dependencies[] = df_translate
 
 ; Demo Framework (optional)
+; dependencies[] = df_connect
 ; dependencies[] = df_gallery
 ; dependencies[] = df_search
 
 ; System Requirements
-php = 5.3
-php_memory_limit = 128M
+php = 5.4
+php_memory_limit = 256M
