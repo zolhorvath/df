@@ -12,7 +12,9 @@
       <?php endif; ?>
       <h4 class="dfs-name"><?php echo $scenario['name']; ?></h4>
       <div class="dfs-description"><?php echo $scenario['description']; ?></div>
-      <div class="dfs-link"><?php echo $scenario['link']; ?><?php if (isset($scenario['help'])): ?>&nbsp;|&nbsp;<?php echo $scenario['help']; ?><?php endif; ?></div>
+      <div class="dfs-link-wrapper">
+        <div class="dfs-link button"><?php echo $scenario['link']; ?><?php if (isset($scenario['help'])): ?>&nbsp;|&nbsp;<?php echo $scenario['help']; ?><?php endif; ?></div>
+      </div>
     </div>
   <?php endforeach; ?>
 </div>
