@@ -2,44 +2,12 @@
 
 /**
  * @file
- * Installation routines for DFS_WEM feature
+ * Installation routines for DF_Search feature
  */
 
 /**
  * Implements hook_install().
  */
 function df_search_install() {
-  // Enable apachesolr search blocks.
-  $default_theme = variable_get('theme_default', 'demonstratie_core');
-  $blocks = array(
-    array(
-      'module' => 'apachesolr_search',
-      'delta' => 'sort',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-  );
-  $mlt_blocks = apachesolr_search_load_all_mlt_blocks();
-  foreach ($mlt_blocks as $delta => $settings) {
-    $blocks[] = array(
-      'module' => 'apachesolr_search',
-      'delta' => $delta,
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    );
-  }
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
-  }
-  $query->execute();
 }
 

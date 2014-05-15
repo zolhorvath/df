@@ -13,7 +13,7 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "5438b40"
+projects[ctools][download][revision] = "e720f61"
 projects[ctools][download][branch] = "7.x-1.x"
 ; Update the token replacements in ctools to work against a fully rendered page.
 ; http://drupal.org/node/955070#comment-7751253
@@ -49,7 +49,7 @@ projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 projects[entity][download][type] = "git"
-projects[entity][download][revision] = "d9baed7"
+projects[entity][download][revision] = "4d2cc6f"
 projects[entity][download][branch] = "7.x-1.x"
 
 projects[features][version] = "2.x-dev"
@@ -84,7 +84,11 @@ projects[migrate][subdir] = "contrib"
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
+; Add support for UUID module for 7.x
+; http://drupal.org/node/1870886
 projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
+; Add support for color_field module
+; http://drupal.org/node/2026003
 projects[migrate_extras][patch][2026003] = "http://drupal.org/files/color_field_migrate_support.patch"
 
 projects[module_filter][version] = "2.0-alpha2"
@@ -100,6 +104,9 @@ projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
+; JSON Error caused in Views when navbar.tableheader is not loaded
+; http://drupal.org/node/2263205
+projects[navbar][patch][2263205] = "http://drupal.org/files/issues/navbar-tableheader-views.patch"
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][type] = "module"
@@ -112,12 +119,15 @@ projects[pm_existing_pages][subdir] = "contrib"
 projects[responsive_preview][version] = "1.0"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
+; item-list class missing from responsive_preview menu
+; http://drupal.org/node/2263209
+projects[responsive_preview][patch][2263209] = "https://drupal.org/files/issues/responsive_preview-item_list-new.patch"
 
 projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
-projects[rules][version] = "2.6"
+projects[rules][version] = "2.7"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
@@ -185,17 +195,13 @@ projects[form_builder][subdir] = "contrib"
 projects[form_builder][download][type] = "git"
 projects[form_builder][download][revision] = "3d904df"
 projects[form_builder][download][branch] = "7.x-1.x"
+; The form editing part rolls to hide, can not be edited
+; http://drupal.org/node/1987332
 projects[form_builder][patch][1987332] = "http://drupal.org/files/rolls-past-editing-form-1987332-4.patch"
 
-projects[fape][version] = "1.x-dev"
+projects[fape][version] = "1.2"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"
-projects[fape][download][type] = "git"
-projects[fape][download][revision] = "1143ee2"
-projects[fape][download][branch] = "7.x-1.x"
-; Call to field_access passing field name rather than full field structure
-; http://drupal.org/node/1846156
-projects[fape][patch][1846156] = "http://drupal.org/files/fape-1846156-5.patch"
 
 projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
@@ -244,7 +250,7 @@ projects[options_element][download][branch] = "git"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "ca7e1cb"
+projects[panelizer][download][revision] = "72b5e00"
 projects[panelizer][download][branch] = "7.x-3.x"
 
 projects[panels][version] = "3.x-dev"
@@ -329,7 +335,7 @@ projects[views_load_more][version] = "1.1"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.0-beta1"
+projects[webform][version] = "4.0-rc3"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
@@ -410,14 +416,11 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "bfa0909"
+projects[ckeditor][download][revision] = "7fedb6f"
 projects[ckeditor][download][branch] = "7.x-1.x"
 ; CKEditor accomodate latest Media changes
 ; http://drupal.org/node/2159403
-projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-2159403-20_0.patch"
-; External plugin declarations are redundant.
-; http://drupal.org/comment/8284591
-projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-8-alt.patch"
+projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-53.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -434,21 +437,18 @@ projects[edit][version] = "1.x-dev"
 projects[edit][type] = "module"
 projects[edit][subdir] = "contrib"
 projects[edit][download][type] = "git"
-projects[edit][download][revision] = "cf62974"
+projects[edit][download][revision] = "2648a9e"
 projects[edit][download][branch] = "7.x-1.x"
-; Special version of Edit module used for demos
-; http://drupal.org/node/2224885
-projects[edit][patch][2224885] = "http://drupal.org/files/issues/edit_demo-framework-2224885-1.patch"
+; Panelizer support (use Panels' render pipeline...)
+; http://drupal.org/node/1889798
+projects[edit][patch][1889798] = "http://drupal.org/files/issues/edit_panelizer-1889798-30.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "3661d8b"
+projects[file_entity][download][revision] = "13fa2b0"
 projects[file_entity][download][branch] = "7.x-2.x"
-; Default file entities are not exportable by features (Sibling Issue)
-; http://drupal.org/node/2192391
-projects[file_entity][patch][2192391] = "http://drupal.org/files/issues/file_entity_remove_file_display-2192391-01.patch"
 
 projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
@@ -476,14 +476,11 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "9583d89"
+projects[media][download][revision] = "e8f9228"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
-; Default file entities are not exportable by features
-; http://drupal.org/node/2104193
-projects[media][patch][2104193] = "http://drupal.org/files/issues/media_remove_file_display_alter-2104193-65.patch"
 
 projects[media_preview_slider][version] = "1.x-dev"
 projects[media_preview_slider][type] = "module"
@@ -496,7 +493,7 @@ projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 projects[media_youtube][download][type] = "git"
-projects[media_youtube][download][revision] = "fb6f652"
+projects[media_youtube][download][revision] = "187283f"
 projects[media_youtube][download][branch] = "7.x-2.x"
 
 projects[multiform][version] = "1.0"
@@ -521,6 +518,21 @@ projects[plupload][version] = "1.3"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
+projects[quickedit_tab][version] = "1.x-dev"
+projects[quickedit_tab][type] = "module"
+projects[quickedit_tab][subdir] = "contrib"
+
+projects[revision_scheduler][version] = "1.x-dev"
+projects[revision_scheduler][type] = "module"
+projects[revision_scheduler][subdir] = "contrib"
+projects[revision_scheduler][download][type] = "git"
+projects[revision_scheduler][download][revision] = "ab04410"
+projects[revision_scheduler][download][branch] = "7.x-1.x"
+; Notice: Undefined index: path in
+; revision_scheduler_preprocess_menu_local_action()
+; http://drupal.org/node/1564348
+projects[revision_scheduler][patch][1564348] = "http://drupal.org/files/fixes-notice-issue-1564348.patch"
+
 projects[sps][version] = "1.x-dev"
 projects[sps][type] = "module"
 projects[sps][subdir] = "contrib"
@@ -533,17 +545,6 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; SPS should not prevent other modules that use Entity API from working
 ; http://drupal.org/node/1934130
 projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-11.patch"
-
-projects[revision_scheduler][version] = "1.x-dev"
-projects[revision_scheduler][type] = "module"
-projects[revision_scheduler][subdir] = "contrib"
-projects[revision_scheduler][download][type] = "git"
-projects[revision_scheduler][download][revision] = "ab04410"
-projects[revision_scheduler][download][branch] = "7.x-1.x"
-; Notice: Undefined index: path in
-; revision_scheduler_preprocess_menu_local_action()
-; http://drupal.org/node/1564348
-projects[revision_scheduler][patch][1564348] = "http://drupal.org/files/fixes-notice-issue-1564348.patch"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
@@ -563,7 +564,7 @@ projects[workbench_moderation_notes][download][type] = "git"
 projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
 
-projects[xautoload][version] = "2.7"
+projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"
 projects[xautoload][subdir] = "contrib"
 
@@ -596,23 +597,21 @@ projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
 ; DF Engage
+projects[acquia_lift][version] = "1.x-dev"
+projects[acquia_lift][type] = "module"
+projects[acquia_lift][subdir] = "contrib"
+
 projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
-projects[goals][version] = "1.x-dev"
-projects[goals][type] = "module"
-projects[goals][subdir] = "contrib"
-projects[goals][download][type] = "git"
-projects[goals][download][branch] = "7.x-1.x"
-projects[goals][download][revision] = "25afd9f"
-; Make Goals exportable via features
-; http://drupal.org/node/1934434
-projects[goals][patch][1934434] = "http://drupal.org/files/goals-features-exports-1934434-10.patch"
-
-projects[og][version] = "2.4"
+projects[og][version] = "2.6"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
+
+projects[personalize][version] = "1.x-dev"
+projects[personalize][type] = "module"
+projects[personalize][subdir] = "contrib"
 
 projects[radioactivity][version] = "2.8"
 projects[radioactivity][type] = "module"
@@ -632,6 +631,10 @@ projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][revision] = "aa514d6"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
+projects[visitor_actions][version] = "1.x-dev"
+projects[visitor_actions][type] = "module"
+projects[visitor_actions][subdir] = "contrib"
+
 ; DF Gallery
 projects[manualcrop][version] = "1.4"
 projects[manualcrop][type] = "module"
@@ -648,48 +651,12 @@ projects[media_gallery][download][branch] = "7.x-2.x"
 projects[media_gallery][patch][2169649] = "http://drupal.org/files/issues/media_gallery-no-menu-item-on-install-0.patch"
 
 ; DF Search
-projects[apachesolr][version] = "1.x-dev"
-projects[apachesolr][type] = "module"
-projects[apachesolr][subdir] = "contrib"
-projects[apachesolr][download][type] = "git"
-projects[apachesolr][download][revision] = "79a0804"
-projects[apachesolr][download][branch] = "7.x-1.x"
-
-projects[apachesolr_location][version] = "1.1"
-projects[apachesolr_location][type] = "module"
-projects[apachesolr_location][subdir] = "contrib"
-
-projects[apachesolr_og][version] = "1.x-dev"
-projects[apachesolr_og][type] = "module"
-projects[apachesolr_og][subdir] = "contrib"
-projects[apachesolr_og][download][type] = "git"
-projects[apachesolr_og][download][revision] = "49820b4"
-projects[apachesolr_og][download][branch] = "7.x-1.x"
-
-projects[apachesolr_proximity][version] = "1.0-rc1"
-projects[apachesolr_proximity][type] = "module"
-projects[apachesolr_proximity][subdir] = "contrib"
-
-projects[apachesolr_user][version] = "1.x-dev"
-projects[apachesolr_user][type] = "module"
-projects[apachesolr_user][subdir] = "contrib"
-projects[apachesolr_user][download][type] = "git"
-projects[apachesolr_user][download][revision] = "a86c5ae"
-projects[apachesolr_user][download][branch] = "7.x-1.x"
-
 projects[custom_search][version] = "1.x-dev"
 projects[custom_search][type] = "module"
 projects[custom_search][subdir] = "contrib"
 projects[custom_search][download][type] = "git"
 projects[custom_search][download][revision] = "0d55d1e"
 projects[custom_search][download][branch] = "7.x-1.x"
-
-projects[date_facets][version] = "1.x-dev"
-projects[date_facets][type] = "module"
-projects[date_facets][subdir] = "contrib"
-projects[date_facets][download][type] = "git"
-projects[date_facets][download][revision] = "a04658a"
-projects[date_facets][download][branch] = "7.x-1.x"
 
 projects[location][version] = "3.1"
 projects[location][type] = "module"
@@ -713,6 +680,39 @@ projects[rich_snippets][download][branch] = "7.x-1.x"
 projects[schemaorg][version] = "1.0-beta4"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
+
+projects[search_api][version] = "1.7"
+projects[search_api][type] = "module"
+projects[search_api][subdir] = "contrib"
+; Server Enabled is not set on installation profile
+; http://drupal.org/node/2236265
+projects[search_api][patch][2236265] = "http://drupal.org/files/issues/search_api-server_enabled_notobject.patch"
+
+projects[search_api_db][version] = 1.0
+projects[search_api_db][type] = "module"
+projects[search_api_db][subdir] = "contrib"
+
+projects[search_api_page][version] = 1.0
+projects[search_api_page][type] = "module"
+projects[search_api_page][subdir] = "contrib"
+
+projects[search_api_ranges][version] = 1.4
+projects[search_api_ranges][type] = "module"
+projects[search_api_ranges][subdir] = "contrib"
+; Rewrite the data alteration callback
+; http://drupal.org/node/2001846
+projects[search_api_ranges][patch][2001846] = "http://drupal.org/files/search_api_ranges-rewrite-data-alteration-callback-2001846-3.patch"
+
+projects[search_api_solr][version] = "1.x-dev"
+projects[search_api_solr][type] = "module"
+projects[search_api_solr][subdir] = "contrib"
+projects[search_api_solr][download][type] = "git"
+projects[search_api_solr][download][revision] = "cf862ac"
+projects[search_api_solr][download][branch] = "7.x-1.x"
+
+projects[search_api_sorts][version] = 1.4
+projects[search_api_sorts][type] = "module"
+projects[search_api_sorts][subdir] = "contrib"
 
 projects[search_facetapi][version] = "1.0-beta2"
 projects[search_facetapi][type] = "module"
@@ -782,11 +782,11 @@ projects[variable][subdir] = "contrib"
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.0.zip"
 
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
+
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.3.2_edit.zip"
 
 libraries[json2][download][type] = "get"
 libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
