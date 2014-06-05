@@ -13,7 +13,7 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "e720f61"
+projects[ctools][download][revision] = "6e034cb"
 projects[ctools][download][branch] = "7.x-1.x"
 ; Update the token replacements in ctools to work against a fully rendered page.
 ; http://drupal.org/node/955070#comment-7751253
@@ -22,9 +22,6 @@ projects[ctools][patch][955070] = "http://drupal.org/files/ctools-fix_token_proc
 projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
-projects[demonstratie_panels][download][type] = "git"
-projects[demonstratie_panels][download][revision] = "9566cbd"
-projects[demonstratie_panels][download][branch] = "7.x-1.x"
 
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
@@ -309,7 +306,7 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "2dc7eef"
+projects[views][download][revision] = "d7bc9f9"
 projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object in
 ; modules/all/views/plugins/views_plugin_localization.inc
@@ -433,21 +430,11 @@ projects[date][version] = "2.7"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
-projects[edit][version] = "1.x-dev"
-projects[edit][type] = "module"
-projects[edit][subdir] = "contrib"
-projects[edit][download][type] = "git"
-projects[edit][download][revision] = "2648a9e"
-projects[edit][download][branch] = "7.x-1.x"
-; Panelizer support (use Panels' render pipeline...)
-; http://drupal.org/node/1889798
-projects[edit][patch][1889798] = "http://drupal.org/files/issues/edit_panelizer-1889798-30.patch"
-
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "13fa2b0"
+projects[file_entity][download][revision] = "85ae95f"
 projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
@@ -476,7 +463,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "e8f9228"
+projects[media][download][revision] = "92f43ba"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
@@ -518,7 +505,14 @@ projects[plupload][version] = "1.3"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit_tab][version] = "1.x-dev"
+projects[quickedit][version] = "1.x-dev"
+projects[quickedit][type] = "module"
+projects[quickedit][subdir] = "contrib"
+projects[quickedit][download][type] = "git"
+projects[quickedit][download][revision] = "2e64ede"
+projects[quickedit][download][branch] = "7.x-1.x"
+
+projects[quickedit_tab][version] = "1.1"
 projects[quickedit_tab][type] = "module"
 projects[quickedit_tab][subdir] = "contrib"
 
