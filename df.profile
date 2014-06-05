@@ -20,19 +20,25 @@ function df_permission() {
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
  */
 function df_form_install_configure_form_alter(&$form, $form_state) {
-  // Remove any non-error messages set by enabled modules
+  // Remove any non-error messages set by enabled modules.
   $messages = array('completed', 'status', 'warning');
   foreach ($messages as $message) {
     drupal_get_messages($message, TRUE);
   }
 
-  // List available scenarios
+  // List available scenarios.
   $list = array('none' => 'None');
   $modules = system_rebuild_module_data();
   foreach ($modules as $name => $module) {
     if ($module->info['package'] == 'Demo Framework Scenarios') {
       $list[$module->name] = $module->info['name'];
     }
+  }
+
+  // When available, WEM Demo is default scenario.
+  $default_scenario = 'none';
+  if (isset($list['dfs_wem'])) {
+    $default_scenario = 'dfs_wem';
   }
 
   // Add 'Demo Framework' fieldset and options.
@@ -43,13 +49,14 @@ function df_form_install_configure_form_alter(&$form, $form_state) {
     '#collapsible' => FALSE,
     '#tree' => FALSE,
   );
+
   // Optional Scenario enablement.
   $form['demo_framework']['df_scenario'] = array(
     '#type' => 'radios',
     '#title' => 'Enable a Scenario',
     '#description' => 'Optionally choose a demo scenario for immediate enablement.',
     '#options' => $list,
-    '#default_value' => 'none',
+    '#default_value' => $default_scenario,
     '#weight' => 0,
   );
 
