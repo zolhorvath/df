@@ -30,6 +30,9 @@ function dfs_wem_contest_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 1,
@@ -88,6 +91,9 @@ function dfs_wem_contest_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => '',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -100,6 +106,9 @@ function dfs_wem_contest_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => 'content',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -112,6 +121,9 @@ function dfs_wem_contest_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => 'content',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -214,6 +226,9 @@ function dfs_wem_contest_field_default_field_instances() {
         'module' => 'og_ui',
         'settings' => array(
           'field_name' => FALSE,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'og_group_subscribe',
         'weight' => 2,

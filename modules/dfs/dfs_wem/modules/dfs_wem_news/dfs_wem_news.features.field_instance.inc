@@ -30,6 +30,9 @@ function dfs_wem_news_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -44,6 +47,9 @@ function dfs_wem_news_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 300,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -141,6 +147,9 @@ function dfs_wem_news_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => '',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -153,6 +162,9 @@ function dfs_wem_news_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => 'content',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -165,6 +177,9 @@ function dfs_wem_news_field_default_field_instances() {
           'fallback_image_style' => '',
           'image_link' => 'content',
           'picture_group' => 'letterbox',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -282,6 +297,9 @@ function dfs_wem_news_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 5,
@@ -333,6 +351,9 @@ function dfs_wem_news_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'teaser',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -340,7 +361,11 @@ function dfs_wem_news_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'file',
-        'settings' => array(),
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'file_default',
         'weight' => 6,
       ),

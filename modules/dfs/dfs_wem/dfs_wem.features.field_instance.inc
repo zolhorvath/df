@@ -20,7 +20,11 @@ function dfs_wem_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 0,
       ),

@@ -30,6 +30,9 @@ function dfs_wem_tweets_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 0,
@@ -44,6 +47,9 @@ function dfs_wem_tweets_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -89,6 +95,9 @@ function dfs_wem_tweets_field_default_field_instances() {
         'settings' => array(
           'edit' => array(
             'editor' => 'direct',
+          ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
           ),
         ),
         'type' => 'text_default',
@@ -180,6 +189,9 @@ function dfs_wem_tweets_field_default_field_instances() {
         'settings' => array(
           'edit' => array(
             'editor' => 'direct',
+          ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
           ),
         ),
         'type' => 'text_default',

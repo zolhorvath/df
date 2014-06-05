@@ -860,7 +860,10 @@ elseif($user->uid != 1) {
   $page->admin_title = 'Video Tours';
   $page->admin_description = '';
   $page->path = 'tours';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Video Tours',
