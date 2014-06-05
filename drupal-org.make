@@ -511,6 +511,9 @@ projects[quickedit][subdir] = "contrib"
 projects[quickedit][download][type] = "git"
 projects[quickedit][download][revision] = "2e64ede"
 projects[quickedit][download][branch] = "7.x-1.x"
+; Missing View mode argument when Quick Editing for fields in Panelizer
+; http://drupal.org/node/2280233
+projects[quickedit][patch][2280233] = "http://drupal.org/files/issues/quickedit-panelizer-2280233-3.patch"
 
 projects[quickedit_tab][version] = "1.1"
 projects[quickedit_tab][type] = "module"
