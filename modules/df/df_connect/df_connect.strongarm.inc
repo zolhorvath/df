@@ -125,13 +125,6 @@ function df_connect_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'salesforce_pull_limit';
-  $strongarm->value = 50;
-  $export['salesforce_pull_limit'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_button_option';
   $strongarm->value = 'stbc_button';
   $export['sharethis_button_option'] = $strongarm;

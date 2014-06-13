@@ -37,24 +37,6 @@ function df_connect_user_default_permissions() {
     'module' => 'purr_messages',
   );
 
-  // Exported permission: 'administer salesforce'.
-  $permissions['administer salesforce'] = array(
-    'name' => 'administer salesforce',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'salesforce',
-  );
-
-  // Exported permission: 'administer salesforce mapping'.
-  $permissions['administer salesforce mapping'] = array(
-    'name' => 'administer salesforce mapping',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'salesforce_mapping',
-  );
-
   // Exported permission: 'administer sharethis'.
   $permissions['administer sharethis'] = array(
     'name' => 'administer sharethis',
@@ -82,15 +64,6 @@ function df_connect_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'purr_messages',
-  );
-
-  // Exported permission: 'view salesforce mapping'.
-  $permissions['view salesforce mapping'] = array(
-    'name' => 'view salesforce mapping',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'salesforce_mapping',
   );
 
   return $permissions;
