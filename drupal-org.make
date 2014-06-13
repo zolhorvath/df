@@ -394,10 +394,6 @@ projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
 projects[purr_messages][subdir] = "contrib"
 
-projects[salesforce][version] = "3.0-beta2"
-projects[salesforce][type] = "module"
-projects[salesforce][subdir] = "contrib"
-
 projects[sharethis][version] = "2.5"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
@@ -434,7 +430,7 @@ projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "85ae95f"
+projects[file_entity][download][revision] = "609fa9f"
 projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
@@ -463,7 +459,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "92f43ba"
+projects[media][download][revision] = "75c98e4"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
@@ -513,7 +509,7 @@ projects[quickedit][download][revision] = "2e64ede"
 projects[quickedit][download][branch] = "7.x-1.x"
 ; Missing View mode argument when Quick Editing for fields in Panelizer
 ; http://drupal.org/node/2280233
-projects[quickedit][patch][2280233] = "http://drupal.org/files/issues/quickedit-panelizer-2280233-3.patch"
+projects[quickedit][patch][2280233] = "http://drupal.org/files/issues/quickedit-panelizer-2280233-3_0.patch"
 
 projects[quickedit_tab][version] = "1.1"
 projects[quickedit_tab][type] = "module"
