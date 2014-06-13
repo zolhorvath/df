@@ -3,14 +3,14 @@ body.in-maintenance #branding h1.page-title {
 }
 
 body.in-maintenance #branding {
-  background-color: #222; 
+  background-color: #222;
 }
 
 body.in-maintenance .form-radios div.form-type-radio.form-item-df-scenario {
   border: 1px solid #ddd;
   padding: 1em;
   margin-bottom: 1em;
-  background-color: #fff; 
+  background-color: #fff;
   float:left;
   width:95%;
 }
@@ -64,13 +64,13 @@ body.in-maintenance .form-item-df-scenario label.option {
 body.in-maintenance .form-item-df-scenario label.option:hover {
 }
 
-body.in-maintenance input[type="radio"]:checked+label{ 
+body.in-maintenance input[type="radio"]:checked+label {
   font-weight: bold;
-} 
+}
 
 body.in-maintenance .scenario-description {
   font-weight:normal;
-  max-width:240px;  
+  max-width:240px;
 }
 
 
