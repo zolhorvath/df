@@ -20,6 +20,9 @@ function df_permission() {
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
  */
 function df_form_install_configure_form_alter(&$form, $form_state) {
+   // Add Demo Framework styles for installer.
+  drupal_add_css('profiles/df/df.css');
+
   // Remove any non-error messages set by enabled modules.
   $messages = array('completed', 'status', 'warning');
   foreach ($messages as $message) {
@@ -27,13 +30,15 @@ function df_form_install_configure_form_alter(&$form, $form_state) {
   }
 
   // List available scenarios.
-  $list = array('none' => 'None');
+  $list = array();
   $modules = system_rebuild_module_data();
   foreach ($modules as $name => $module) {
     if ($module->info['package'] == 'Demo Framework Scenarios') {
-      $list[$module->name] = $module->info['name'];
+      $list[$module->name] = df_scenario_select($module);
     }
   }
+  $list = array_reverse($list);
+  $list['none'] = 'Do not install a demo scenario.';
 
   // When available, WEM Demo is default scenario.
   $default_scenario = 'none';
@@ -68,6 +73,15 @@ function df_form_install_configure_form_alter(&$form, $form_state) {
 
   // Additional submit handlers for DF settings.
   $form['#submit'][] = 'df_scenario_check_enable';
+}
+
+/**
+ * Return a screenshot and title of scenario for the select element.
+ */
+function df_scenario_select(&$module) {
+  $screenshot = drupal_get_path('module', $module->name) . '/screenshot.png';
+  $describe = $module->info['description'];
+  return $module->info['name'] . '<img src="' . $screenshot . '" class="dfs-select" />' . '<p class="scenario-description">' . $describe . '</p>';
 }
 
 /**
