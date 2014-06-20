@@ -92,6 +92,26 @@ function df_engage_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'create any df_engage_block bean'.
+  $permissions['create any df_engage_block bean'] = array(
+    'name' => 'create any df_engage_block bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: 'delete any df_engage_block bean'.
+  $permissions['delete any df_engage_block bean'] = array(
+    'name' => 'delete any df_engage_block bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'bean',
+  );
+
   // Exported permission: 'delete any organic_group content'.
   $permissions['delete any organic_group content'] = array(
     'name' => 'delete any organic_group content',
@@ -104,6 +124,16 @@ function df_engage_user_default_permissions() {
     'name' => 'delete own organic_group content',
     'roles' => array(),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit any df_engage_block bean'.
+  $permissions['edit any df_engage_block bean'] = array(
+    'name' => 'edit any df_engage_block bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'bean',
   );
 
   // Exported permission: 'edit any organic_group content'.
@@ -127,6 +157,17 @@ function df_engage_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'view any df_engage_block bean'.
+  $permissions['view any df_engage_block bean'] = array(
+    'name' => 'view any df_engage_block bean',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'bean',
   );
 
   return $permissions;

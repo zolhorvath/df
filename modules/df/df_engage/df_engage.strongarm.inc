@@ -122,11 +122,13 @@ function df_engage_strongarm() {
         'status' => 0,
         'default' => 0,
         'choice' => 0,
+        'selection' => 0,
       ),
       'featured' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
+        'selection' => 0,
       ),
     ),
   );
@@ -138,6 +140,7 @@ function df_engage_strongarm() {
   $strongarm->name = 'uuid_features_entity_bean';
   $strongarm->value = array(
     'bean_tax_related' => 'bean_tax_related',
+    'df_engage_block' => 'df_engage_block',
     'bean_tax_listing' => 0,
   );
   $export['uuid_features_entity_bean'] = $strongarm;
@@ -166,8 +169,8 @@ function df_engage_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_entity_taxonomy_term';
   $strongarm->value = array(
-    'tags' => 0,
     'identifiers' => 0,
+    'tags' => 0,
     'interests' => 0,
   );
   $export['uuid_features_entity_taxonomy_term'] = $strongarm;
@@ -186,6 +189,7 @@ function df_engage_strongarm() {
   $strongarm->value = array(
     'bean_tax_listing' => 0,
     'bean_tax_related' => 0,
+    'df_engage_block' => 0,
   );
   $export['uuid_features_file_bean'] = $strongarm;
 
@@ -227,8 +231,8 @@ function df_engage_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_file_taxonomy_term';
   $strongarm->value = array(
-    'tags' => 0,
     'identifiers' => 0,
+    'tags' => 0,
     'interests' => 0,
   );
   $export['uuid_features_file_taxonomy_term'] = $strongarm;

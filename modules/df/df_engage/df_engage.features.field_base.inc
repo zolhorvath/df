@@ -10,6 +10,51 @@
 function df_engage_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_content_reference'
+  $field_bases['field_content_reference'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_content_reference',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
+      ),
+      'personalizable' => 1,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'group_group'
   $field_bases['group_group'] = array(
     'active' => 1,
@@ -31,6 +76,7 @@ function df_engage_field_default_field_bases() {
         1 => 'Group',
       ),
       'allowed_values_function' => '',
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',

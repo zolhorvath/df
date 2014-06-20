@@ -10,6 +10,53 @@
 function df_engage_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'bean-df_engage_block-field_content_reference'
+  $field_instances['bean-df_engage_block-field_content_reference'] = array(
+    'bundle' => 'df_engage_block',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'featured',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_content_reference',
+    'label' => 'Content',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-organic_group-body'
   $field_instances['node-organic_group-body'] = array(
     'bundle' => 'organic_group',
@@ -30,6 +77,9 @@ function df_engage_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 1,
@@ -44,10 +94,19 @@ function df_engage_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
         'weight' => 1,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -92,6 +151,9 @@ function df_engage_field_default_field_instances() {
         'module' => 'og_ui',
         'settings' => array(
           'field_name' => FALSE,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'og_group_subscribe',
         'weight' => 0,
@@ -103,6 +165,12 @@ function df_engage_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -143,6 +211,7 @@ function df_engage_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Content');
   t('Determine if this is an OG group.');
   t('Group');
 
