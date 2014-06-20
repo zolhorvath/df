@@ -1,0 +1,15 @@
+name = DFS WEM Personalize
+description = Personalization settings for the WEM Demo
+core = 7.x
+package = DFS Submodules
+version = 7.x-1.0-rc1
+project = dfs_wem_personalize
+dependencies[] = ctools
+dependencies[] = df_connect
+dependencies[] = df_engage
+dependencies[] = personalize
+dependencies[] = personalize_blocks
+dependencies[] = personalize_target
+features[ctools][] = personalize:personalize:1
+features[features_api][] = api:2
+features[personalize_agent][] = wem-campaign
