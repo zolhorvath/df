@@ -24,6 +24,9 @@ function df_admin_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 1,

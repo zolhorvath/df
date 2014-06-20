@@ -130,6 +130,10 @@ function dfs_wem_news_strongarm() {
             'weight' => '2',
             'visible' => FALSE,
           ),
+          'thumbnail' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),

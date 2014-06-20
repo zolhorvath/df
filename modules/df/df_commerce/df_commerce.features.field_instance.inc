@@ -22,6 +22,9 @@ function df_commerce_field_default_field_instances() {
         'module' => 'commerce_price',
         'settings' => array(
           'calculation' => 'calculated_sell_price',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'commerce_price_formatted_amount',
         'weight' => 0,
@@ -31,6 +34,9 @@ function df_commerce_field_default_field_instances() {
         'module' => 'commerce_price',
         'settings' => array(
           'calculation' => 'calculated_sell_price',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'commerce_price_formatted_amount',
         'weight' => 0,
@@ -46,6 +52,9 @@ function df_commerce_field_default_field_instances() {
         'module' => 'commerce_price',
         'settings' => array(
           'calculation' => 'calculated_sell_price',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'commerce_price_formatted_amount',
         'weight' => 0,
@@ -80,6 +89,9 @@ function df_commerce_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'image',
         'weight' => 1,
@@ -144,6 +156,9 @@ function df_commerce_field_default_field_instances() {
           'edit' => array(
             'editor' => 'direct',
           ),
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 0,
@@ -158,9 +173,18 @@ function df_commerce_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -204,6 +228,9 @@ function df_commerce_field_default_field_instances() {
           'combine' => TRUE,
           'default_quantity' => 1,
           'line_item_type' => 'product',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'show_quantity' => FALSE,
           'show_single_product_attributes' => FALSE,
         ),
@@ -217,6 +244,12 @@ function df_commerce_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

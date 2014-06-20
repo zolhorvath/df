@@ -37,6 +37,7 @@ function dfs_wem_news_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'personalizable' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -73,6 +74,7 @@ function dfs_wem_news_field_default_field_bases() {
         ),
       ),
       'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -105,6 +107,7 @@ function dfs_wem_news_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -138,6 +141,7 @@ function dfs_wem_news_field_default_field_bases() {
     'settings' => array(
       'display_default' => 0,
       'display_field' => 0,
+      'personalizable' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,

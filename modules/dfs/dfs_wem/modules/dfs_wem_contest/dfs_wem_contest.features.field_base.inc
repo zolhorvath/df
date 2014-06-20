@@ -34,6 +34,7 @@ function dfs_wem_contest_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'personalizable' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -70,6 +71,7 @@ function dfs_wem_contest_field_default_field_bases() {
         ),
       ),
       'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',

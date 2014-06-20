@@ -73,4 +73,3 @@ function dfs_wem_image_default_styles() {
 
   return $styles;
 }
-

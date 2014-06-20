@@ -35,7 +35,9 @@ function df_admin_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
+    'settings' => array(
+      'personalizable' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'text_long',
   );

@@ -37,6 +37,7 @@ function dfs_wem_tweets_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -66,6 +67,7 @@ function dfs_wem_tweets_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 50,
+      'personalizable' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',

@@ -96,3 +96,4 @@ features[variable][] = webform_node_wem_commerce
 features[variable][] = webform_node_wem_product_review
 features[variable][] = workbench_moderation_default_state_wem_commerce
 features[variable][] = workbench_moderation_default_state_wem_product_review
+features_exclude[field_base][body] = body
