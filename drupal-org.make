@@ -13,11 +13,8 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "6e034cb"
+projects[ctools][download][revision] = "9097155"
 projects[ctools][download][branch] = "7.x-1.x"
-; Update the token replacements in ctools to work against a fully rendered page.
-; http://drupal.org/node/955070#comment-7751253
-projects[ctools][patch][955070] = "http://drupal.org/files/ctools-fix_token_processing-955070-5.patch"
 
 projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
@@ -211,7 +208,7 @@ projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "1bda8c9"
+projects[fieldable_panels_panes][download][revision] = "b9628af"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
 projects[gridbuilder][version] = "1.0-alpha2"
@@ -247,18 +244,15 @@ projects[options_element][download][branch] = "git"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "72b5e00"
+projects[panelizer][download][revision] = "ed877b9"
 projects[panelizer][download][branch] = "7.x-3.x"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
-projects[panels][download][revision] = "8059bda"
+projects[panels][download][revision] = "bcda4a6"
 projects[panels][download][branch] = "7.x-3.x"
-; Add classes to Add Content links in Panels modal
-; http://drupal.org/node/2209799
-projects[panels][patch][2209799] = "http://drupal.org/files/issues/panels-add-content-link-subtype-class-2209799-2.patch"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
@@ -344,60 +338,6 @@ projects[webform_alt_ui][download][revision] = "0cfa6d0"
 projects[webform_alt_ui][download][branch] = "master"
 projects[webform_alt_ui][patch][2022773] = "http://drupal.org/files/webform_alt_ui-form_builder_compat-2022773-3.patch"
 
-; DF Converge
-projects[addressfield][version] = "1.0-beta4"
-projects[addressfield][type] = "module"
-projects[addressfield][subdir] = "contrib"
-
-projects[commerce][version] = "1.x-dev"
-projects[commerce][type] = "module"
-projects[commerce][subdir] = "contrib"
-projects[commerce][download][type] = "git"
-projects[commerce][download][revision] = "7acc2c8"
-projects[commerce][download][branch] = "7-x.1-x"
-
-projects[commerce_extra_price_formatters][version] = 1.x-dev
-projects[commerce_extra_price_formatters][type] = "module"
-projects[commerce_extra_price_formatters][subdir] = "contrib"
-projects[commerce_extra_price_formatters][download][type] = "git"
-projects[commerce_extra_price_formatters][download][revision] = "1371336"
-projects[commerce_extra_price_formatters][download][branch] = "7.x-1.x"
-
-projects[commerce_features][version] = "1.0-rc1"
-projects[commerce_features][type] = "module"
-projects[commerce_features][subdir] = "contrib"
-; Commerce shipping exportables with commerce features
-; http://drupal.org/node/1402762
-projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
-
-projects[commerce_migrate][version] = "1.1"
-projects[commerce_migrate][type] = "module"
-projects[commerce_migrate][subdir] = "contrib"
-
-projects[commerce_shipping][version] = "2.0"
-projects[commerce_shipping][type] = "module"
-projects[commerce_shipping][subdir] = "contrib"
-
-projects[google_analytics][version] = "1.3"
-projects[google_analytics][type] = "module"
-projects[google_analytics][subdir] = "contrib"
-
-projects[marketo_ma][version] = "1.1"
-projects[marketo_ma][type] = "module"
-projects[marketo_ma][subdir] = "contrib"
-
-projects[mollom][version] = "2.4"
-projects[mollom][type] = "module"
-projects[mollom][subdir] = "contrib"
-
-projects[purr_messages][version] = "2.0-beta3"
-projects[purr_messages][type] = "module"
-projects[purr_messages][subdir] = "contrib"
-
-projects[sharethis][version] = "2.5"
-projects[sharethis][type] = "module"
-projects[sharethis][subdir] = "contrib"
-
 ; Curate
 projects[curate][version] = "1.x-dev"
 projects[curate][type] = "module"
@@ -459,7 +399,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "75c98e4"
+projects[media][download][revision] = "bfb6c9c"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
@@ -589,11 +529,66 @@ projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
-; DF Engage
+; DF Commerce
+projects[addressfield][version] = "1.0-beta4"
+projects[addressfield][type] = "module"
+projects[addressfield][subdir] = "contrib"
+
+projects[commerce][version] = "1.x-dev"
+projects[commerce][type] = "module"
+projects[commerce][subdir] = "contrib"
+projects[commerce][download][type] = "git"
+projects[commerce][download][revision] = "7acc2c8"
+projects[commerce][download][branch] = "7-x.1-x"
+
+projects[commerce_extra_price_formatters][version] = 1.x-dev
+projects[commerce_extra_price_formatters][type] = "module"
+projects[commerce_extra_price_formatters][subdir] = "contrib"
+projects[commerce_extra_price_formatters][download][type] = "git"
+projects[commerce_extra_price_formatters][download][revision] = "1371336"
+projects[commerce_extra_price_formatters][download][branch] = "7.x-1.x"
+
+projects[commerce_features][version] = "1.0-rc1"
+projects[commerce_features][type] = "module"
+projects[commerce_features][subdir] = "contrib"
+; Commerce shipping exportables with commerce features
+; http://drupal.org/node/1402762
+projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
+
+projects[commerce_migrate][version] = "1.1"
+projects[commerce_migrate][type] = "module"
+projects[commerce_migrate][subdir] = "contrib"
+
+projects[commerce_shipping][version] = "2.0"
+projects[commerce_shipping][type] = "module"
+projects[commerce_shipping][subdir] = "contrib"
+
+; DF Connect
 projects[acquia_lift][version] = "1.x-dev"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
+projects[google_analytics][version] = "1.3"
+projects[google_analytics][type] = "module"
+projects[google_analytics][subdir] = "contrib"
+
+projects[marketo_ma][version] = "1.1"
+projects[marketo_ma][type] = "module"
+projects[marketo_ma][subdir] = "contrib"
+
+projects[mollom][version] = "2.4"
+projects[mollom][type] = "module"
+projects[mollom][subdir] = "contrib"
+
+projects[purr_messages][version] = "2.0-beta3"
+projects[purr_messages][type] = "module"
+projects[purr_messages][subdir] = "contrib"
+
+projects[sharethis][version] = "2.5"
+projects[sharethis][type] = "module"
+projects[sharethis][subdir] = "contrib"
+
+; DF Engage
 projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
