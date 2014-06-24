@@ -248,6 +248,9 @@ projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
 projects[panelizer][download][revision] = "ed877b9"
 projects[panelizer][download][branch] = "7.x-3.x"
+; Update the plugin attached to an existing handler
+; http://drupal.org/node/2206961
+projects[panelizer][patch][2206961] = "http://drupal.org/files/issues/2206961-update-the-plugin.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
@@ -569,6 +572,8 @@ projects[commerce_shipping][subdir] = "contrib"
 projects[acquia_lift][version] = "1.x-dev"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
+projects[acquia_lift][download][type] = "git"
+projects[acquia_lift][download][branch] = "7.x-1.x"
 
 projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
