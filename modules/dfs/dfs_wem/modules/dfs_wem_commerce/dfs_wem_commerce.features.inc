@@ -37,7 +37,7 @@ function dfs_wem_commerce_node_info() {
     'wem_commerce' => array(
       'name' => t('WEM Commerce'),
       'base' => 'node_content',
-      'description' => t('The <em>Commerce</em> nodes that should have products attached to them.'),
+      'description' => t('The <em>Commerce</em> content is used to display products.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
