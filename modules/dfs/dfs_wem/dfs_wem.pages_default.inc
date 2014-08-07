@@ -605,25 +605,19 @@ function dfs_wem_default_page_manager_pages() {
     $display->content['new-8776e0e8-58ba-0d34-f1a2-f8acb4ac7a36'] = $pane;
     $display->panels['secondary_supplements'][0] = 'new-8776e0e8-58ba-0d34-f1a2-f8acb4ac7a36';
     $pane = new stdClass();
-    $pane->pid = 'new-98eff9de-7494-7e34-b188-eade3c25233d';
+    $pane->pid = 'new-933ff76d-107a-4c2d-937f-433a5f60ddcc';
     $pane->panel = 'tertiary_features';
     $pane->type = 'block';
     $pane->subtype = 'bean-wem---user-related-contest';
     $pane->shown = TRUE;
     $pane->access = array(
       'plugins' => array(
-        1 => array(
-          'name' => 'php',
+        0 => array(
+          'name' => 'perm',
           'settings' => array(
-            'description' => 'Logged-in-user is in a group and is not admin.',
-            'php' => '$user = user_load($contexts[\'logged-in-user\']->data->uid);
-if (!empty($user->og_user_node) && $user->uid != 1) {
-  return TRUE;
-}
-else {
-  return FALSE;
-}',
+            'perm' => 'manage personalized content',
           ),
+          'context' => 'context_user_1',
           'not' => TRUE,
         ),
       ),
@@ -636,10 +630,11 @@ else {
     $pane->style = array(
       'settings' => array(
         'title' => 'banner',
-        'hero' => 0,
+        'hero' => 'default',
         'layouts' => 'default',
         'styles' => 'feature_medium',
         'color_schemes' => 'default',
+        'button_styles' => 'default',
       ),
       'style' => 'demonstratie_panels_styles',
     );
@@ -647,29 +642,23 @@ else {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '98eff9de-7494-7e34-b188-eade3c25233d';
-    $display->content['new-98eff9de-7494-7e34-b188-eade3c25233d'] = $pane;
-    $display->panels['tertiary_features'][0] = 'new-98eff9de-7494-7e34-b188-eade3c25233d';
+    $pane->uuid = '933ff76d-107a-4c2d-937f-433a5f60ddcc';
+    $display->content['new-933ff76d-107a-4c2d-937f-433a5f60ddcc'] = $pane;
+    $display->panels['tertiary_features'][0] = 'new-933ff76d-107a-4c2d-937f-433a5f60ddcc';
     $pane = new stdClass();
-    $pane->pid = 'new-1eefd5b4-9b92-47c4-6562-2fd8a4c141c0';
+    $pane->pid = 'new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
     $pane->panel = 'tertiary_features';
     $pane->type = 'block';
-    $pane->subtype = 'bean-wem---user-related-product-secon';
+    $pane->subtype = 'bean-wem---personalized-content';
     $pane->shown = TRUE;
     $pane->access = array(
       'plugins' => array(
-        0 => array(
-          'name' => 'php',
+        1 => array(
+          'name' => 'perm',
           'settings' => array(
-            'description' => 'User is not admin and is part of a group',
-            'php' => '$user = user_load($contexts[\'logged-in-user\']->data->uid);
-if (!empty($user->og_user_node) && $user->uid != 1) {
-  return TRUE;
-}
-elseif($user->uid != 1) {
-  return FALSE;
-}',
+            'perm' => 'manage personalized content',
           ),
+          'context' => 'context_user_1',
           'not' => FALSE,
         ),
       ),
@@ -681,10 +670,12 @@ elseif($user->uid != 1) {
     $pane->cache = array();
     $pane->style = array(
       'settings' => array(
-        'title' => 'hidden',
+        'title' => 'banner',
+        'hero' => 'default',
         'layouts' => 'default',
         'styles' => 'feature_medium',
-        'color_schemes' => 'alternate',
+        'color_schemes' => 'default',
+        'button_styles' => 'default',
       ),
       'style' => 'demonstratie_panels_styles',
     );
@@ -692,9 +683,9 @@ elseif($user->uid != 1) {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '1eefd5b4-9b92-47c4-6562-2fd8a4c141c0';
-    $display->content['new-1eefd5b4-9b92-47c4-6562-2fd8a4c141c0'] = $pane;
-    $display->panels['tertiary_features'][1] = 'new-1eefd5b4-9b92-47c4-6562-2fd8a4c141c0';
+    $pane->uuid = '60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
+    $display->content['new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c'] = $pane;
+    $display->panels['tertiary_features'][1] = 'new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
     $pane = new stdClass();
     $pane->pid = 'new-3da35775-9d33-4aea-afb1-5d9cc15f4fb0';
     $pane->panel = 'tertiary_supplements';

@@ -163,7 +163,7 @@ function dfs_wem_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1372869843,
     'log' => '',
-    'uid' => 0,
+    'uid' => 1,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'd116c450-9f25-4867-8893-a8d3c0397000',

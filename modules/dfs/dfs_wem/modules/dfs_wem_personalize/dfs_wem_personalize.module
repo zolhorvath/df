@@ -64,7 +64,7 @@ function dfs_wem_personalize_entity_insert($entity, $type) {
       // Save the bean.
       if ($bean->save()) {
         // Tell us all about it.
-        drupal_set_message(t('@title bean saved.', array('@title' => $data['label'])), 'status');
+        drupal_set_message(t('@label bean saved.', array('@label' => $bean->label)), 'status');
       }
       // Clear the queue for potential reuse.
       unset($_SESSION['wem-reference-queue']);
@@ -72,5 +72,35 @@ function dfs_wem_personalize_entity_insert($entity, $type) {
     }
   }
 
+  // After our Bean is saved we can follow up with a Personalize option set.
+  if ($type == 'bean' && $entity->type == 'df_engage_block' && $entity->uuid == '5c35e68a-c593-4f50-937c-880910d83c78') {
+    $bid = $entity->bid;
+    // Mock option set data.
+    $option_set = array(
+      'plugin' => 'fields',
+      'agent' => 'wem-campaign',
+      'is_new' => TRUE,
+      'mvt' => NULL,
+      'options' => array(
+        0 => array('option_label' => 'Option A', 'option_id' => 'option-a'),
+        1 => array('option_label' => 'Option B', 'option_id' => 'option-b'),
+        2 => array('option_label' => 'Option C', 'option_id' => 'option-c'),
+      ),
+      'winner' => NULL,
+      'stateful' => 0,
+      'data' => array(),
+      'preview_link' => NULL,
+      'rdf_mapping' => array(),
+      'field_info' => array(
+        'entity_type' => 'bean',
+        'entity_id' => $bid,
+        'field_name' => 'field_content_reference',
+      ),
+    );
+    // Create the option set object.
+    $option_set = (object) $option_set;
+    // Save the option set.
+    personalize_fields_option_set_save($option_set, $type, $entity, 'field_content_reference');
+  }
 }
 

@@ -16,7 +16,7 @@ function dfs_wem_personalize_personalize_default_agents() {
   $personalize_agent->machine_name = 'wem-campaign';
   $personalize_agent->plugin = 'personalize_target';
   $personalize_agent->started = 0;
-  $personalize_agent->label = 'WEM Campaign';
+  $personalize_agent->label = 'Nexus Contests';
   $personalize_agent->data = array(
     'visitor_context' => array(),
     'cache_decisions' => 1,

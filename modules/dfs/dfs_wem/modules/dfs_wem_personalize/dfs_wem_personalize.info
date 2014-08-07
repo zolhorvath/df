@@ -4,6 +4,7 @@ core = 7.x
 package = DFS Submodules
 version = 7.x-1.0-rc1
 project = dfs_wem_personalize
+dependencies[] = acquia_lift
 dependencies[] = ctools
 dependencies[] = df_connect
 dependencies[] = df_engage
