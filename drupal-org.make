@@ -30,7 +30,7 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[ember_support][version] = "1.0-alpha2"
+projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 
@@ -112,12 +112,15 @@ projects[pm_existing_pages][version] = "1.4"
 projects[pm_existing_pages][type] = "module"
 projects[pm_existing_pages][subdir] = "contrib"
 
-projects[responsive_preview][version] = "1.0"
+projects[responsive_preview][version] = "1.x-dev"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
-; item-list class missing from responsive_preview menu
-; http://drupal.org/node/2263209
-projects[responsive_preview][patch][2263209] = "https://drupal.org/files/issues/responsive_preview-item_list-new.patch"
+projects[responsive_preview][download][type] = "git"
+projects[responsive_preview][download][revision] = "d741779"
+projects[responsive_preview][download][branch] = "7.x-1.x"
+; Before js processing, the phone image incorrectly positioned.
+; https://drupal.org/node/2276789
+projects[responsive_preview][patch][2276789] = "http://drupal.org/files/issues/responsive_preview-phone_image_incorrectly_positioned-2276789-2.patch"
 
 projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
@@ -217,14 +220,6 @@ projects[gridbuilder][version] = "1.0-alpha2"
 projects[gridbuilder][type] = "module"
 projects[gridbuilder][subdir] = "contrib"
 
-projects[json2][version] = "1.1"
-projects[json2][type] = "module"
-projects[json2][subdir] = "contrib"
-
-projects[layout][version] = "1.0-alpha6"
-projects[layout][type] = "module"
-projects[layout][subdir] = "contrib"
-
 projects[magic_beans][version] = "1.x-dev"
 projects[magic_beans][type] = "module"
 projects[magic_beans][subdir] = "contrib"
@@ -246,7 +241,7 @@ projects[options_element][download][branch] = "git"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "ed877b9"
+projects[panelizer][download][revision] = "ff3b834"
 projects[panelizer][download][branch] = "7.x-3.x"
 ; Update the plugin attached to an existing handler
 ; http://drupal.org/node/2206961
@@ -382,6 +377,10 @@ projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
 projects[file_entity_link][subdir] = "contrib"
 
+projects[file_image_formatters][version] = "1.1"
+projects[file_image_formatters][type] = "module"
+projects[file_image_formatters][subdir] = "contrib"
+
 projects[focal_point][version] = "1.0-alpha1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
@@ -394,7 +393,7 @@ projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; Integrate IIB with the Navbar module and improve Toolbar integration
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-46.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-47.patch"
 
 projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
@@ -455,6 +454,9 @@ projects[quickedit][download][branch] = "7.x-1.x"
 ; Missing View mode argument when Quick Editing for fields in Panelizer
 ; http://drupal.org/node/2280233
 projects[quickedit][patch][2280233] = "http://drupal.org/files/issues/quickedit-panelizer-2280233-3_0.patch"
+; Delete field models fails due to incorrect defintion
+; https://drupal.org/node/2309841
+projects[quickedit][patch][2309841] = "http://drupal.org/files/issues/quickedit-collections-field-models-0.patch"
 
 projects[quickedit_tab][version] = "1.1"
 projects[quickedit_tab][type] = "module"
@@ -464,25 +466,21 @@ projects[revision_scheduler][version] = "1.x-dev"
 projects[revision_scheduler][type] = "module"
 projects[revision_scheduler][subdir] = "contrib"
 projects[revision_scheduler][download][type] = "git"
-projects[revision_scheduler][download][revision] = "ab04410"
+projects[revision_scheduler][download][revision] = "bb9fd39"
 projects[revision_scheduler][download][branch] = "7.x-1.x"
-; Notice: Undefined index: path in
-; revision_scheduler_preprocess_menu_local_action()
-; http://drupal.org/node/1564348
-projects[revision_scheduler][patch][1564348] = "http://drupal.org/files/fixes-notice-issue-1564348.patch"
 
 projects[sps][version] = "1.x-dev"
 projects[sps][type] = "module"
 projects[sps][subdir] = "contrib"
 projects[sps][download][type] = "git"
-projects[sps][download][revision] = "76e89f4"
+projects[sps][download][revision] = "be9bd83"
 projects[sps][download][branch] = "7.x-1.x"
 ; UX improvements on page level IIB
 ; http://drupal.org/node/1733490
 projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490-3.patch"
-; SPS should not prevent other modules that use Entity API from working
-; http://drupal.org/node/1934130
-projects[sps][patch][1934130] = "http://drupal.org/files/sps-1934130-11.patch"
+; sps_entity_create() throws errors
+; http://drupal.org/node/2288873
+projects[sps][patch][2288873] = "http://drupal.org/files/issues/sps-undefiend-method-create-3.patch"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
@@ -491,9 +489,15 @@ projects[workbench][download][type] = "git"
 projects[workbench][download][revision] = "6856e4a"
 projects[workbench][download][branch] = "7.x-1.x"
 
-projects[workbench_moderation][version] = "1.3"
+projects[workbench_moderation][version] = "1.x-dev"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
+projects[workbench_moderation][download][type] = "git"
+projects[workbench_moderation][download][revision] = "b38ac3e"
+projects[workbench_moderation][download][branch] = "7.x-1.x"
+; Panelizer is incompatible with moderation
+; http://www.drupal.org/node/1402860
+projects[workbench_moderation][patch][1402860] = "http://drupal.org/files/issues/workbench_moderation-panelizer_revisions-1402860-44_0.patch"
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
@@ -786,9 +790,6 @@ libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases
 
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-
-libraries[json2][download][type] = "get"
-libraries[json2][download][url] = "https://github.com/douglascrockford/JSON-js/blob/master/json2.js"
 
 libraries[jsonpath][download][type] = "get"
 libraries[jsonpath][download][url] = "https://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
