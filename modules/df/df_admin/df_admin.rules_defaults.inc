@@ -25,7 +25,7 @@ function df_admin_default_rules_configuration() {
         },
         { "NOT text_matches" : {
             "text" : [ "site:current-page:path" ],
-            "match" : "^user\/reset\/",
+            "match" : "^user\\/reset\\/",
             "operation" : "regex"
           }
         }

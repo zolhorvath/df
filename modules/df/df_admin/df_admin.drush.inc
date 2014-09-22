@@ -16,7 +16,10 @@ function df_admin_drush_command() {
     'description' => 'Enables a demo scenario',
     'arguments' => array(
       'scenario' => 'The name of the module that defines the scenario',
-      'reset' => 'Boolean, allows content to be reset post-enablement',
+    ),
+    'options' => array(
+      'import' => 'Boolean, allows content to be imported post-enablement',
+      'rollback' => 'Boolean, rollback existing content post-enablement',
     ),
     'aliases' => array('df-es'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
@@ -26,6 +29,9 @@ function df_admin_drush_command() {
     'description' => 'Resets a demo scenario',
     'arguments' => array(
       'scenario' => 'The name of the module that defines the scenario',
+    ),
+    'options' => array(
+      'rollback' => 'Boolean, rollback existing content post-enablement',
     ),
     'aliases' => array('df-rs'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
@@ -39,17 +45,17 @@ function df_admin_drush_command() {
  *
  * @param string $scenario
  *   The machine name of the scenario feature.
- * @param string $reset
- *   Boolean: reset demo content for the scenario.
  */
-function drush_df_admin_enable_scenario($scenario, $reset = TRUE) {
+function drush_df_admin_enable_scenario($scenario) {
+  $import = drush_get_option('import', TRUE);
   module_load_include('inc', 'df_admin', 'df_admin.enable');
   df_admin_enable_scenario($scenario);
 
-  // Optional reset function.
-  if ($reset != FALSE) {
+  // Optionally run the batch import of content.
+  if ($import != FALSE) {
+    $rollback = drush_get_option('rollback', FALSE);
     module_load_include('inc', 'df_admin', 'df_admin.reset');
-    df_admin_reset_scenario($scenario);
+    df_admin_reset_scenario($scenario, $rollback);
   }
 }
 
@@ -58,9 +64,12 @@ function drush_df_admin_enable_scenario($scenario, $reset = TRUE) {
  *
  * @param string $scenario
  *   The machine name of the scenario feature.
- */
+ * @param string $rollback
+ *   Boolean: rollback existing demo content.
+  */
 function drush_df_admin_reset_scenario($scenario) {
+  $rollback = drush_get_option('rollback', TRUE);
   module_load_include('inc', 'df_admin', 'df_admin.reset');
-  df_admin_reset_scenario($scenario);
+  df_admin_reset_scenario($scenario, $rollback);
 }
 

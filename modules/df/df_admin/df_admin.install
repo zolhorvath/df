@@ -11,4 +11,10 @@
 function df_admin_install() {
   // Set DF Admin as the default homepage on install.
   variable_set('site_frontpage', 'admin/df');
+
+  // Turn on Javascript aggregation by default.
+  variable_set('preprocess_js', TRUE);
+
+  // Turn on CSS aggregation by default.
+  variable_set('preprocess_css', TRUE);
 }
