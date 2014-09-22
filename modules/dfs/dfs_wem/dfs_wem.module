@@ -39,10 +39,10 @@ function dfs_wem_df_import_alter(&$migrations) {
   return $migrations['dfs_wem'] = array(
     'DFSWEMInterestsTerms',
     'DFSWEMUserPictures',
-    'DFSWEMUsers',
     'DFSWEMProducts',
     'DFSWEMCommerceNodes',
     'DFSWEMCommerceNodesTranslations',
+    'DFSWEMUsers',
     'DFSWEMProductReviewNodes',
     'DFSWEMContestNodes',
     'DFSWEMContestNodesTranslations',

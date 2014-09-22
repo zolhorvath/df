@@ -69,6 +69,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User Related Product (Secondary)',
@@ -129,6 +130,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User Related Contest',
@@ -163,7 +165,7 @@ function dfs_wem_uuid_features_default_beans() {
     'view_mode' => 'default',
     'created' => 1372869843,
     'log' => '',
-    'uid' => 1,
+    'uid' => 0,
     'default_revision' => 1,
     'revisions' => array(),
     'vuuid' => 'd116c450-9f25-4867-8893-a8d3c0397000',
@@ -189,6 +191,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User More Contests',
@@ -247,6 +250,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - Page Secondary Products',
@@ -307,6 +311,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User Related Product (Primary)',
@@ -367,6 +372,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User Related News',
@@ -427,6 +433,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   $beans[] = array(
     'label' => 'WEM - User Related News Item',
@@ -487,6 +494,7 @@ function dfs_wem_uuid_features_default_beans() {
       'text' => '',
       'path' => '',
     ),
+    'entity_type' => 'bean',
   );
   return $beans;
 }

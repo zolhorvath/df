@@ -9,7 +9,7 @@
  */
 function dfs_wem_default_rules_configuration() {
   $items = array();
-  $items['rules_add_visit_data_to_marketo'] = entity_import('rules_config', '{ "rules_add_visit_data_to_marketo" : {
+  $items['rules_wem_visit_data_to_marketo'] = entity_import('rules_config', '{ "rules_wem_visit_data_to_marketo" : {
       "LABEL" : "Add visit data to Marketo",
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",

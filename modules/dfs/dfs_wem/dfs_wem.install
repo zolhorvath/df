@@ -15,5 +15,7 @@ function dfs_wem_install() {
 
   // Set DFS WEM Home as the default homepage on install.
   variable_set('site_frontpage', 'dfs-wem-home');
-}
 
+  // Do not attach any sample orders for users.
+  variable_set('df_commerce_add_sample_orders', FALSE);
+}

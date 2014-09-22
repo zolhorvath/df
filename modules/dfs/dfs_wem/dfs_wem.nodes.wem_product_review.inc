@@ -24,7 +24,7 @@ class DFSWEMProductReviewNodes extends DemoFrameworkBaseNodesUUID {
     $this->addFieldMapping('uid', 'author')->sourceMigration('DFSWEMUsers');
 
     // Entity Reference
-    $this->addFieldMapping('field_commerce_reference', 'commerce')->sourceMigration('DFSWEMCommerceNodes');
+    $this->addFieldMapping('field_wem_commerce_ref', 'commerce')->sourceMigration('DFSWEMCommerceNodes');
      
     // Image
     $this->addFieldMapping('field_product_review_image', 'image');

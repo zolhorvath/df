@@ -47,7 +47,7 @@ function dfs_wem_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 4,
     ),
   );
 

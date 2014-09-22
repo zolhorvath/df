@@ -41,7 +41,7 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '+ <a href="/node/add/wem-product-review?field_commerce_reference=%1&destination=node/%1">Write your own review!</a>';
+  $handler->display->display_options['footer']['area']['content'] = '+ <a href="/node/add/wem-product-review?field_wem_commerce_ref=%1&destination=node/%1">Write your own review!</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   /* Relationship: Content: Author */
@@ -97,15 +97,15 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Commerce Reference (field_commerce_reference) */
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['id'] = 'field_commerce_reference_target_id';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['table'] = 'field_data_field_commerce_reference';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['field'] = 'field_commerce_reference_target_id';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_commerce_reference_target_id']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: : field_wem_commerce_ref (field_wem_commerce_ref) */
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['id'] = 'field_wem_commerce_ref_target_id';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['table'] = 'field_data_field_wem_commerce_ref';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['field'] = 'field_wem_commerce_ref_target_id';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -544,7 +544,7 @@ function dfs_wem_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'WEM Tweets';
+  $handler->display->display_options['title'] = 'Nexus on Twitter';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -608,10 +608,8 @@ function dfs_wem_views_default_views() {
     'wem_tweet' => 'wem_tweet',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Nexus on Twitter';
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'wem_tweets_pane');
   $export['wem_tweets'] = $view;
 
   $view = new view();
@@ -826,16 +824,14 @@ function dfs_wem_views_default_views() {
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Video Tours';
-
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Video Tours pane */
+  $handler = $view->new_display('panel_pane', 'Video Tours pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+
+  /* Display: Home Videos pane */
+  $handler = $view->new_display('panel_pane', 'Home Videos pane', 'homepage_videos_pane');
   $export['wem_videos'] = $view;
 
   return $export;

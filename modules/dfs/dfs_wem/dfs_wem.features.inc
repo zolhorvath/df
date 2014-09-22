@@ -12,7 +12,8 @@ function dfs_wem_default_collection() {
   $items['wem_munich_calling'] = entity_import('collection', '{
     "name" : "wem_munich_calling",
     "label" : "Munich Calling",
-    "rdf_mapping" : []
+    "rdf_mapping" : [],
+    "entity_type" : "collection"
   }');
   return $items;
 }
@@ -21,6 +22,9 @@ function dfs_wem_default_collection() {
  * Implements hook_ctools_plugin_api().
  */
 function dfs_wem_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }

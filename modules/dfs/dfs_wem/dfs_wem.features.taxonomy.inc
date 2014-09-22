@@ -33,6 +33,7 @@ function dfs_wem_taxonomy_default_vocabularies() {
           ),
         ),
       ),
+      'entity_type' => 'taxonomy_vocabulary',
     ),
   );
 }

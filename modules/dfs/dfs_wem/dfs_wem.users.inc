@@ -15,7 +15,9 @@ class DFSWEMUsers extends ImportBaseUsers {
     $this->addFieldMapping('picture', 'picture')->sourceMigration('DFSWEMUserPictures');
     $this->addFieldMapping('field_user_interests', 'interests');
     $this->addFieldMapping('field_user_bio', 'bio');
-    $this->addFieldMapping('field_user_bio:format')->defaultValue('full_html');;
+    $this->addFieldMapping('field_user_bio:format')->defaultValue('userbase');
+    $this->addFieldMapping('field_user_first', 'first');
+    $this->addFieldMapping('field_user_last', 'last');
   }
 
   function csvcolumns() {
@@ -27,6 +29,8 @@ class DFSWEMUsers extends ImportBaseUsers {
     $columns[5] = array('picture', 'Picture');
     $columns[6] = array('interests', 'Interests');
     $columns[7] = array('bio', 'Bio');
+    $columns[8] = array('first', 'First');
+    $columns[9] = array('last', 'Last');
     return $columns;
   }
 

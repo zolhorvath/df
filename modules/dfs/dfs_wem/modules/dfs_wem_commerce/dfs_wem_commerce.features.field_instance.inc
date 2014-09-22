@@ -661,8 +661,8 @@ function dfs_wem_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wem_product_review-field_commerce_reference'
-  $field_instances['node-wem_product_review-field_commerce_reference'] = array(
+  // Exported field_instance: 'node-wem_product_review-field_wem_commerce_ref'
+  $field_instances['node-wem_product_review-field_wem_commerce_ref'] = array(
     'bundle' => 'wem_product_review',
     'default_value' => NULL,
     'default_value_function' => 'entityreference_prepopulate_field_default_value',
@@ -707,7 +707,7 @@ function dfs_wem_commerce_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_commerce_reference',
+    'field_name' => 'field_wem_commerce_ref',
     'label' => 'Commerce Reference',
     'required' => 0,
     'settings' => array(

@@ -88,14 +88,13 @@ function dfs_wem_personalize_entity_insert($entity, $type) {
       ),
       'winner' => NULL,
       'stateful' => 0,
-      'data' => array(),
+      'data' => array(
+        'personalize_fields_entity_type' => 'bean',
+        'personalize_fields_entity_id' => $bid,
+        'personalize_fields_field_name' => 'field_content_reference'
+      ),
       'preview_link' => NULL,
       'rdf_mapping' => array(),
-      'field_info' => array(
-        'entity_type' => 'bean',
-        'entity_id' => $bid,
-        'field_name' => 'field_content_reference',
-      ),
     );
     // Create the option set object.
     $option_set = (object) $option_set;
