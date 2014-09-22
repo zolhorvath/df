@@ -31,3 +31,7 @@ projects[drupal][patch][] = "http://drupal.org/files/1275902-15-entity_uri_callb
 ; module's permission or with non-existent permissions
 ; http://drupal.org/node/737816
 projects[drupal][patch][] = "http://drupal.org/files/drupal-fix_pdoexception_grant_permissions-737816-36-do-not-test.patch"
+
+; Unicode requirements check not working with PHP 5.6
+; http://drupal.org/node/2332295
+projects[drupal][patch][] = "http://drupal.org/files/issues/drupal7-mbstring-http-input-2332295-13.patch"
