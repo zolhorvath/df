@@ -17,6 +17,12 @@ function df_commerce_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'commerce_added_to_cart_block_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'commerce_price',
@@ -59,6 +65,12 @@ function df_commerce_field_default_field_instances() {
         'type' => 'commerce_price_formatted_amount',
         'weight' => 0,
       ),
+      'product_in_cart' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'commerce_product',
     'field_name' => 'commerce_price',
@@ -83,6 +95,12 @@ function df_commerce_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'commerce_added_to_cart_block_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -103,6 +121,12 @@ function df_commerce_field_default_field_instances() {
         'weight' => 0,
       ),
       'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'product_in_cart' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -149,6 +173,12 @@ function df_commerce_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'block_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -164,6 +194,18 @@ function df_commerce_field_default_field_instances() {
         'weight' => 0,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'product_list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'splash' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -221,6 +263,12 @@ function df_commerce_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'block_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'commerce_cart',
@@ -238,6 +286,18 @@ function df_commerce_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'product_list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'splash' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

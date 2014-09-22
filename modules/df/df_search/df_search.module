@@ -1,7 +1,5 @@
 <?php
 /**
  * @file
- * Code for the DF Search feature.
+ * Drupal needs this blank file.
  */
-
-include_once 'df_search.features.inc';

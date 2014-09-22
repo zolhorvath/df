@@ -5,7 +5,7 @@ projects[acquia_connector][version] = "2.13"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
-projects[breakpoints][version] = "1.1"
+projects[breakpoints][version] = "1.3"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
@@ -13,8 +13,11 @@ projects[ctools][version] = "1.x-dev"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "9097155"
+projects[ctools][download][revision] = "ae66d65"
 projects[ctools][download][branch] = "7.x-1.x"
+; Provide a contextual link for view panes
+; http://drupal.org/node/1669756
+projects[ctools][patch][1669756] = "http://drupal.org/files/ctools-1669756-1.patch"
 
 projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
@@ -33,6 +36,8 @@ projects[diff][subdir] = "contrib"
 projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
+projects[ember_support][download][type] = "git"
+projects[ember_support][download][branch] = "7.x-1.x"
 
 projects[escape_admin][version] = "1.x-dev"
 projects[escape_admin][type] = "module"
@@ -52,7 +57,7 @@ projects[features][version] = "2.x-dev"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
-projects[features][download][revision] = "78772d5"
+projects[features][download][revision] = "9f4ecc7"
 projects[features][download][branch] = "7.x-2.x"
 
 projects[import][version] = "1.x-dev"
@@ -61,7 +66,7 @@ projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
 projects[import][download][branch] = "7.x-1.x"
 
-projects[jquery_update][version] = "2.3"
+projects[jquery_update][version] = "2.4"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -184,7 +189,7 @@ projects[entityreference][download][type] = "git"
 projects[entityreference][download][revision] = "dc4196b"
 projects[entityreference][download][branch] = "7.x-1.x"
 
-projects[entityreference_prepopulate][version] = "1.4"
+projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
@@ -227,7 +232,7 @@ projects[magic_beans][download][type] = "git"
 projects[magic_beans][download][revision] = "6c5d19e"
 projects[magic_beans][download][branch] = "7.x-1.x"
 
-projects[metatag][version] = "1.0-beta5"
+projects[metatag][version] = "1.0-rc2"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
@@ -241,11 +246,14 @@ projects[options_element][download][branch] = "git"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "ff3b834"
+projects[panelizer][download][revision] = "cea2a1a"
 projects[panelizer][download][branch] = "7.x-3.x"
 ; Update the plugin attached to an existing handler
 ; http://drupal.org/node/2206961
 projects[panelizer][patch][2206961] = "http://drupal.org/files/issues/2206961-update-the-plugin.patch"
+; Option to update entity displays when default choice changed
+; http://drupal.org/node/2332997
+projects[panelizer][patch][2332997] = "http://drupal.org/files/issues/panelizer-n2332997-7.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
@@ -300,7 +308,7 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "d7bc9f9"
+projects[views][download][revision] = "6595b1a"
 projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object in
 ; modules/all/views/plugins/views_plugin_localization.inc
@@ -318,7 +326,7 @@ projects[views_field_view][download][type] = "git"
 projects[views_field_view][download][revision] = "db93080"
 projects[views_field_view][download][branch] = "7.x-1.x"
 
-projects[views_bulk_operations][version] = "3.1"
+projects[views_bulk_operations][version] = "3.2"
 projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
 
@@ -326,7 +334,7 @@ projects[views_load_more][version] = "1.1"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.0-rc3"
+projects[webform][version] = "4.0-rc5"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
@@ -349,11 +357,11 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "7fedb6f"
+projects[ckeditor][download][revision] = "b0de255"
 projects[ckeditor][download][branch] = "7.x-1.x"
 ; CKEditor accomodate latest Media changes
 ; http://drupal.org/node/2159403
-projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-53.patch"
+projects[ckeditor][patch][2159403] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-81.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -362,7 +370,7 @@ projects[collections][download][type] = "git"
 projects[collections][download][revision] = "b4e8212"
 projects[collections][download][branch] = "7.x-1.x"
 
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
@@ -393,7 +401,7 @@ projects[iib][download][revision] = "17a55eb"
 projects[iib][download][branch] = "7.x-1.x"
 ; Integrate IIB with the Navbar module and improve Toolbar integration
 ; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-47.patch"
+projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-51.patch"
 
 projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
@@ -403,11 +411,14 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "bfb6c9c"
+projects[media][download][revision] = "b2ba2da"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
+; Media dialog appears underneath the Ctools modal dialog with latest jQuery UI
+; http://drupal.org/node/2272567
+projects[media][patch][2272567] = "http://www.drupal.org/files/issues/media-dialog-zindex-2272567-1.patch"
 
 projects[media_preview_slider][version] = "1.x-dev"
 projects[media_preview_slider][type] = "module"
@@ -423,7 +434,7 @@ projects[media_youtube][download][type] = "git"
 projects[media_youtube][download][revision] = "187283f"
 projects[media_youtube][download][branch] = "7.x-2.x"
 
-projects[multiform][version] = "1.0"
+projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
 
@@ -441,7 +452,7 @@ projects[nra_workbench_moderation][download][branch] = "7.x-1.x"
 ; http://drupal.org/node/2163175
 projects[nra_workbench_moderation][patch][2163175] = "http://drupal.org/files/issues/nra_workbench_moderation-no-published-state-2163175-1.patch"
 
-projects[plupload][version] = "1.3"
+projects[plupload][version] = "1.6"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
@@ -449,14 +460,8 @@ projects[quickedit][version] = "1.x-dev"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
 projects[quickedit][download][type] = "git"
-projects[quickedit][download][revision] = "2e64ede"
+projects[quickedit][download][revision] = "28a314d"
 projects[quickedit][download][branch] = "7.x-1.x"
-; Missing View mode argument when Quick Editing for fields in Panelizer
-; http://drupal.org/node/2280233
-projects[quickedit][patch][2280233] = "http://drupal.org/files/issues/quickedit-panelizer-2280233-3_0.patch"
-; Delete field models fails due to incorrect defintion
-; https://drupal.org/node/2309841
-projects[quickedit][patch][2309841] = "http://drupal.org/files/issues/quickedit-collections-field-models-0.patch"
 
 projects[quickedit_tab][version] = "1.1"
 projects[quickedit_tab][type] = "module"
@@ -498,6 +503,16 @@ projects[workbench_moderation][download][branch] = "7.x-1.x"
 ; Panelizer is incompatible with moderation
 ; http://www.drupal.org/node/1402860
 projects[workbench_moderation][patch][1402860] = "http://drupal.org/files/issues/workbench_moderation-panelizer_revisions-1402860-44_0.patch"
+
+projects[workbench_moderation_buttons][version] = "1.x-dev"
+projects[workbench_moderation_buttons][type] = "module"
+projects[workbench_moderation_buttons][subdir] = "contrib"
+projects[workbench_moderation_buttons][download][type] = "git"
+projects[workbench_moderation_buttons][download][revision] = "5ee2a30"
+projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
+; Remove Current State button, change Save button to show current state value
+; http://drupal.org/node/2338863
+projects[workbench_moderation_buttons][patch][2338863] = "http://drupal.org/files/issues/workbench-moderation-buttons-2338863-4.patch"
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
@@ -547,8 +562,20 @@ projects[commerce][version] = "1.x-dev"
 projects[commerce][type] = "module"
 projects[commerce][subdir] = "contrib"
 projects[commerce][download][type] = "git"
-projects[commerce][download][revision] = "7acc2c8"
+projects[commerce][download][revision] = "40751b9"
 projects[commerce][download][branch] = "7-x.1-x"
+
+projects[commerce_addressbook][version] = "2.0-rc7"
+projects[commerce_addressbook][type] = "module"
+projects[commerce_addressbook][subdir] = "contrib"
+
+projects[commerce_checkout_redirect][version] = "2.0-rc1"
+projects[commerce_checkout_redirect][type] = "module"
+projects[commerce_checkout_redirect][subdir] = "contrib"
+
+projects[commerce_checkout_progress][version] = "1.3"
+projects[commerce_checkout_progress][type] = "module"
+projects[commerce_checkout_progress][subdir] = "contrib"
 
 projects[commerce_extra_price_formatters][version] = 1.x-dev
 projects[commerce_extra_price_formatters][type] = "module"
@@ -564,6 +591,13 @@ projects[commerce_features][subdir] = "contrib"
 ; http://drupal.org/node/1402762
 projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
 
+projects[commerce_message][version] = "1.0-rc3"
+projects[commerce_message][type] = "module"
+projects[commerce_message][subdir] = "contrib"
+; Undefined property: MessageType::$module commerce message.message.inc:217
+; http://drupal.org/node/2171201
+projects[commerce_message][patch][2171201] = "http://drupal.org/files/issues/2171201-undefined-property-module-MessageType-6.patch"
+
 projects[commerce_migrate][version] = "1.1"
 projects[commerce_migrate][type] = "module"
 projects[commerce_migrate][subdir] = "contrib"
@@ -571,6 +605,14 @@ projects[commerce_migrate][subdir] = "contrib"
 projects[commerce_shipping][version] = "2.0"
 projects[commerce_shipping][type] = "module"
 projects[commerce_shipping][subdir] = "contrib"
+
+projects[message][version] = "1.9"
+projects[message][type] = "module"
+projects[message][subdir] = "contrib"
+
+projects[message_notify][version] = "2.5"
+projects[message_notify][type] = "module"
+projects[message_notify][subdir] = "contrib"
 
 ; DF Connect
 projects[acquia_lift][version] = "1.x-dev"
@@ -604,6 +646,14 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
+projects[mailsystem][version] = "2.34"
+projects[mailsystem][type] = "module"
+projects[mailsystem][subdir] = "contrib"
+
+projects[mimemail][version] = "1.0-beta3"
+projects[mimemail][type] = "module"
+projects[mimemail][subdir] = "contrib"
+
 projects[og][version] = "2.6"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
@@ -613,6 +663,9 @@ projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 projects[personalize][download][type] = "git"
 projects[personalize][download][branch] = "7.x-1.x"
+; Personalized Fields break preview inside Panels
+; http://drupal.org/node/2303111
+projects[personalize][patch][2303111] = "http://drupal.org/files/issues/panels_fix_1.patch"
 
 projects[radioactivity][version] = "2.8"
 projects[radioactivity][type] = "module"
@@ -754,9 +807,12 @@ projects[i18nviews][download][branch] = "7.x-3.x"
 ; http://drupal.org/node/1653170
 projects[i18nviews][patch][1653170] = "http://drupal.org/files/i18nviews-1653170.patch"
 
-projects[language_switch][version] = "1.0-alpha2"
+projects[language_switch][version] = "1.x-dev"
 projects[language_switch][type] = "module"
 projects[language_switch][subdir] = "contrib"
+projects[language_switch][download][type] = "git"
+projects[language_switch][download][revision] = "b79dd56"
+projects[language_switch][download][branch] = "7.x-1.x"
 
 projects[lingotek][version] = "5.02"
 projects[lingotek][type] = "module"
@@ -786,7 +842,10 @@ libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.0.zip"
 
 libraries[chosen][download][type] = "get"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
+libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.4.3_edit.zip"
 
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"

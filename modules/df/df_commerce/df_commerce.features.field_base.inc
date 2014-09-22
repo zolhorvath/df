@@ -91,7 +91,9 @@ function df_commerce_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'commerce_product_reference',
-    'settings' => array(),
+    'settings' => array(
+      'options_list_limit' => NULL,
+    ),
     'translatable' => 0,
     'type' => 'commerce_product_reference',
   );

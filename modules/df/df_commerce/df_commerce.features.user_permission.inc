@@ -15,6 +15,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'access checkout',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'commerce_checkout',
@@ -25,6 +26,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer checkout',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_checkout',
   );
@@ -34,6 +36,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer commerce_customer_profile entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -43,6 +46,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer commerce_order entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -52,6 +56,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer commerce_product entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -61,6 +66,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer customer profile types',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_customer',
   );
@@ -70,6 +76,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer line item types',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_line_item',
   );
@@ -79,6 +86,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer line items',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_line_item',
   );
@@ -88,6 +96,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer payment methods',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_payment',
   );
@@ -97,6 +106,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer payments',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_payment',
   );
@@ -106,6 +116,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer product pricing',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product_pricing_ui',
   );
@@ -115,8 +126,19 @@ function df_commerce_user_default_permissions() {
     'name' => 'administer product types',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
+  );
+
+  // Exported permission: 'administer taxes'.
+  $permissions['administer taxes'] = array(
+    'name' => 'administer taxes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'merchant' => 'merchant',
+    ),
+    'module' => 'commerce_tax_ui',
   );
 
   // Exported permission: 'configure order settings'.
@@ -124,6 +146,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'configure order settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -133,6 +156,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'configure store',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce',
   );
@@ -151,6 +175,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_customer_profile entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -160,6 +186,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_customer_profile entities of bundle billing',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -169,6 +197,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_customer_profile entities of bundle shipping',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -178,6 +208,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_order entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -187,6 +219,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_order entities of bundle commerce_order',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -196,6 +230,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_product entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -205,6 +240,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'create commerce_product entities of bundle product',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -214,6 +250,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'create payments',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_payment',
   );
@@ -241,6 +278,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'delete payments',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_payment',
   );
@@ -259,6 +297,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_customer_profile entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -268,6 +307,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_customer_profile entity of bundle billing',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -277,6 +317,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_customer_profile entity of bundle shipping',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -286,6 +327,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_order entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -295,6 +337,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_order entity of bundle commerce_order',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -304,6 +347,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_product entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -313,6 +357,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit any commerce_product entity of bundle product',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -331,6 +376,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_customer_profile entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -340,6 +387,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_customer_profile entities of bundle billing',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -349,6 +398,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -358,6 +409,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_order entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -367,6 +420,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_order entities of bundle commerce_order',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -376,6 +431,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_product entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -385,6 +441,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'edit own commerce_product entities of bundle product',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -394,6 +451,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'update payments',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_payment',
   );
@@ -403,6 +461,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_customer_profile entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -412,6 +471,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_customer_profile entity of bundle billing',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -421,6 +481,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_customer_profile entity of bundle shipping',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -430,6 +491,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_order entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -439,6 +501,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_order entity of bundle commerce_order',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -448,6 +511,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_product entity',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'commerce_product',
   );
@@ -457,6 +522,9 @@ function df_commerce_user_default_permissions() {
     'name' => 'view any commerce_product entity of bundle product',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_product',
   );
@@ -466,6 +534,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_customer_profile entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -475,6 +545,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_customer_profile entities of bundle billing',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -484,6 +556,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_customer',
   );
@@ -493,6 +567,8 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_order entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_order',
   );
@@ -502,6 +578,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_order entities of bundle commerce_order',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'commerce_order',
   );
@@ -511,6 +588,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_product entities',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -520,6 +598,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view own commerce_product entities of bundle product',
     'roles' => array(
       'administrator' => 'administrator',
+      'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
@@ -529,6 +608,7 @@ function df_commerce_user_default_permissions() {
     'name' => 'view payments',
     'roles' => array(
       'administrator' => 'administrator',
+      'service agent' => 'service agent',
     ),
     'module' => 'commerce_payment',
   );
