@@ -10,6 +10,66 @@
 function dfs_wem_contest_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node wem_contest content'.
+  $permissions['administer panelizer node wem_contest content'] = array(
+    'name' => 'administer panelizer node wem_contest content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_contest context'.
+  $permissions['administer panelizer node wem_contest context'] = array(
+    'name' => 'administer panelizer node wem_contest context',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_contest defaults'.
+  $permissions['administer panelizer node wem_contest defaults'] = array(
+    'name' => 'administer panelizer node wem_contest defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_contest layout'.
+  $permissions['administer panelizer node wem_contest layout'] = array(
+    'name' => 'administer panelizer node wem_contest layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_contest overview'.
+  $permissions['administer panelizer node wem_contest overview'] = array(
+    'name' => 'administer panelizer node wem_contest overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_contest settings'.
+  $permissions['administer panelizer node wem_contest settings'] = array(
+    'name' => 'administer panelizer node wem_contest settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create wem_contest content'.
   $permissions['create wem_contest content'] = array(
     'name' => 'create wem_contest content',

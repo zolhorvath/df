@@ -6,8 +6,20 @@
 
 include_once 'dfs_wem_personalize.features.inc';
 
-// Global to be used for gathering target ids.
-$_SESSION['wem-reference-queue'] = array();
+/**
+ * Implements hook_df_pre_import().
+ */
+function dfs_wem_personalize_df_pre_import() {
+  return array(
+    array('_dfs_wem_personalize_set_reference_queue', array()),
+  );
+}
+/**
+ * Helper function to set the global variable for tracking imports.
+ */
+function _dfs_wem_personalize_set_reference_queue() {
+  $_SESSION['wem-reference-queue'] = array();
+}
 
 /**
  * Implements hook_entity_insert().

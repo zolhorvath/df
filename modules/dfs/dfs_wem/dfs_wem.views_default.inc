@@ -97,7 +97,7 @@ function dfs_wem_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: : field_wem_commerce_ref (field_wem_commerce_ref) */
+  /* Contextual filter: Content: Commerce Reference (field_wem_commerce_ref) */
   $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['id'] = 'field_wem_commerce_ref_target_id';
   $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['table'] = 'field_data_field_wem_commerce_ref';
   $handler->display->display_options['arguments']['field_wem_commerce_ref_target_id']['field'] = 'field_wem_commerce_ref_target_id';

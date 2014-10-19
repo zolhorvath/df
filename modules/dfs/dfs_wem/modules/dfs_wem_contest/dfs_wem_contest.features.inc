@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function dfs_wem_contest_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "panelizer" && $api == "panelizer") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -27,5 +30,6 @@ function dfs_wem_contest_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

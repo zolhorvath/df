@@ -44,5 +44,6 @@ function dfs_wem_field_default_field_bases() {
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
   );
+
   return $field_bases;
 }

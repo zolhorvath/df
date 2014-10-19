@@ -10,6 +10,76 @@
 function dfs_wem_commerce_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node wem_commerce content'.
+  $permissions['administer panelizer node wem_commerce content'] = array(
+    'name' => 'administer panelizer node wem_commerce content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_commerce context'.
+  $permissions['administer panelizer node wem_commerce context'] = array(
+    'name' => 'administer panelizer node wem_commerce context',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_commerce defaults'.
+  $permissions['administer panelizer node wem_commerce defaults'] = array(
+    'name' => 'administer panelizer node wem_commerce defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_commerce layout'.
+  $permissions['administer panelizer node wem_commerce layout'] = array(
+    'name' => 'administer panelizer node wem_commerce layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_commerce overview'.
+  $permissions['administer panelizer node wem_commerce overview'] = array(
+    'name' => 'administer panelizer node wem_commerce overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_commerce settings'.
+  $permissions['administer panelizer node wem_commerce settings'] = array(
+    'name' => 'administer panelizer node wem_commerce settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_product_review defaults'.
+  $permissions['administer panelizer node wem_product_review defaults'] = array(
+    'name' => 'administer panelizer node wem_product_review defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create commerce_product entities of bundle wem_product'.
   $permissions['create commerce_product entities of bundle wem_product'] = array(
     'name' => 'create commerce_product entities of bundle wem_product',

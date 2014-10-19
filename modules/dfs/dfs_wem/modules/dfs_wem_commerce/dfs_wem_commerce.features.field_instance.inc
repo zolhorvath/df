@@ -661,77 +661,6 @@ function dfs_wem_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wem_product_review-field_wem_commerce_ref'
-  $field_instances['node-wem_product_review-field_wem_commerce_ref'] = array(
-    'bundle' => 'wem_product_review',
-    'default_value' => NULL,
-    'default_value_function' => 'entityreference_prepopulate_field_default_value',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 2,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_wem_commerce_ref',
-    'label' => 'Commerce Reference',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'action' => 'hide',
-          'action_on_edit' => 0,
-          'fallback' => 'redirect',
-          'og_context' => 0,
-          'skip_perm' => 0,
-          'status' => 1,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 41,
-    ),
-  );
-
   // Exported field_instance: 'node-wem_product_review-field_product_review_image'
   $field_instances['node-wem_product_review-field_product_review_image'] = array(
     'bundle' => 'wem_product_review',
@@ -809,6 +738,77 @@ function dfs_wem_commerce_field_default_field_instances() {
       ),
       'type' => 'image_image',
       'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-wem_product_review-field_wem_commerce_ref'
+  $field_instances['node-wem_product_review-field_wem_commerce_ref'] = array(
+    'bundle' => 'wem_product_review',
+    'default_value' => NULL,
+    'default_value_function' => 'entityreference_prepopulate_field_default_value',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_wem_commerce_ref',
+    'label' => 'Commerce Reference',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'action' => 'hide',
+          'action_on_edit' => 0,
+          'fallback' => 'redirect',
+          'og_context' => 0,
+          'skip_perm' => 0,
+          'status' => 1,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 41,
     ),
   );
 

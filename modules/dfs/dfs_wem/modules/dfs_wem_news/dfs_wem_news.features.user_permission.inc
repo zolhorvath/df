@@ -10,6 +10,66 @@
 function dfs_wem_news_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node wem_news content'.
+  $permissions['administer panelizer node wem_news content'] = array(
+    'name' => 'administer panelizer node wem_news content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_news context'.
+  $permissions['administer panelizer node wem_news context'] = array(
+    'name' => 'administer panelizer node wem_news context',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_news defaults'.
+  $permissions['administer panelizer node wem_news defaults'] = array(
+    'name' => 'administer panelizer node wem_news defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_news layout'.
+  $permissions['administer panelizer node wem_news layout'] = array(
+    'name' => 'administer panelizer node wem_news layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_news overview'.
+  $permissions['administer panelizer node wem_news overview'] = array(
+    'name' => 'administer panelizer node wem_news overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node wem_news settings'.
+  $permissions['administer panelizer node wem_news settings'] = array(
+    'name' => 'administer panelizer node wem_news settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create wem_news content'.
   $permissions['create wem_news content'] = array(
     'name' => 'create wem_news content',

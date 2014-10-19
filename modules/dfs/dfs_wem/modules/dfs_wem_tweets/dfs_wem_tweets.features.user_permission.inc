@@ -10,6 +10,16 @@
 function dfs_wem_tweets_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node wem_tweet defaults'.
+  $permissions['administer panelizer node wem_tweet defaults'] = array(
+    'name' => 'administer panelizer node wem_tweet defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create wem_tweet content'.
   $permissions['create wem_tweet content'] = array(
     'name' => 'create wem_tweet content',

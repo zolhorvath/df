@@ -193,6 +193,53 @@ function dfs_wem_contest_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_wem_contest';
+  $strongarm->value = array(
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+        'selection' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+        'selection' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+        'selection' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+        'selection' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_node_wem_contest'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:wem_contest:page_manager_selection';
+  $strongarm->value = 'node:wem_contest:default';
+  $export['panelizer_node:wem_contest:page_manager_selection'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'webform_node_wem_contest';
   $strongarm->value = 0;
   $export['webform_node_wem_contest'] = $strongarm;

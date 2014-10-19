@@ -27,5 +27,6 @@ function dfs_wem_tweets_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
