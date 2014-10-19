@@ -19,20 +19,21 @@ function df_admin_page_enable($module) {
  * Function to enable a scenario.
  */
 function df_admin_enable_scenario($module) {
-  // Enable and revert the scenario feature's DF dependencies.
+  // Enable the scenario feature's DF dependencies.
   $module_list = system_rebuild_module_data();
-  foreach ($module_list[$module]->info['dependencies'] as $dependency) {
-    if (substr($dependency, 0, 2) == 'df') {
-      _df_admin_enable_feature($dependency);
+  if (isset($module_list[$module])) {
+    foreach ($module_list[$module]->info['dependencies'] as $dependency) {
+      if (substr($dependency, 0, 2) == 'df_') {
+        _df_admin_enable_feature($dependency);
+      }
     }
   }
 
   // Enable and revert the scenario feature.
-  _df_admin_enable_feature($module);
-
-  // Clear & rebuild Features key caches.
-  features_get_info(NULL, NULL, TRUE);
-  features_rebuild();
+  if (!_df_admin_enable_feature($module)) {
+    drupal_set_message(t('Enablement of @module failed.', array('@module' => $module)), 'error');
+    return FALSE;
+  }
 
   // Not all DFS require a batch content import, but some need this.
   // Resolves to the DF admin page if no reset callback present.
@@ -41,6 +42,7 @@ function df_admin_enable_scenario($module) {
     $token = drupal_get_token(DRUPAL_ROOT . '/df/reset/' . $module);
     drupal_goto($path, array('query' => array('token' => $token)));
   }
+  return TRUE;
 }
 
 /**
@@ -49,13 +51,17 @@ function df_admin_enable_scenario($module) {
 function _df_admin_enable_feature($module) {
   // Enable a disabled Features module.
   if (!module_exists($module)) {
-    module_enable(array($module));
-    watchdog('demo framework', 'Enabled module: ' . $module);
+    if (module_enable(array($module))) {
+      watchdog('demo framework', 'Enabled module: ' . $module);
+      drupal_set_message(t('@module enabled.', array('@module' => $module)), 'status');
+      return TRUE;
+    }
+    else {
+      drupal_set_message(t('@module does not exist or dependencies are missing.', array('@module' => $module)), 'error');
+      return FALSE;
+    }
   }
-  // Revert an enabled Features module.
-  if (module_exists($module)) {
-    features_revert_module($module);
-    watchdog('demo framework', 'Reverted module: ' . $module);
-  }
+  drupal_set_message(t('@module is already enabled.', array('@module' => $module)), 'warning');
+  return FALSE;
 }
 

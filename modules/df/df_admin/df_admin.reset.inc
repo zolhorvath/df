@@ -20,6 +20,14 @@ function df_admin_page_reset($module) {
  * content into the system.
  */
 function df_admin_reset_scenario($scenario, $rollback = TRUE) {
+  // Check to see if scenario is not enabled.
+  if (!module_exists($scenario)) {
+    drupal_set_message(t('@scenario must be enabled before a reset can occur.', array('@scenario' => $scenario)), 'error');
+    return;
+  }
+
+  // Revert all Features for proper reset.
+  df_admin_revert_all();
 
   // Get list of modules implementing Migrate API.
   migrate_get_module_apis();

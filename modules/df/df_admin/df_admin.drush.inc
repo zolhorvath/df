@@ -49,13 +49,14 @@ function df_admin_drush_command() {
 function drush_df_admin_enable_scenario($scenario) {
   $import = drush_get_option('import', TRUE);
   module_load_include('inc', 'df_admin', 'df_admin.enable');
-  df_admin_enable_scenario($scenario);
-
-  // Optionally run the batch import of content.
-  if ($import != FALSE) {
-    $rollback = drush_get_option('rollback', FALSE);
-    module_load_include('inc', 'df_admin', 'df_admin.reset');
-    df_admin_reset_scenario($scenario, $rollback);
+  
+  if (df_admin_enable_scenario($scenario)) {
+    // Optionally run the batch import of content.
+    if ($import != FALSE) {
+      $rollback = drush_get_option('rollback', FALSE);
+      module_load_include('inc', 'df_admin', 'df_admin.reset');
+      df_admin_reset_scenario($scenario, $rollback);
+    }
   }
 }
 

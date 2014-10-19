@@ -130,3 +130,15 @@ function df_admin_advanced_help_topic_info_alter(&$ini) {
     }
   }
 }
+
+/**
+ * Helper function to reset and revert all Features.
+ */
+function df_admin_revert_all() {
+  // Clear & rebuild Features key caches.
+  features_get_info(NULL, NULL, TRUE);
+  features_rebuild();
+
+  // Revert all Features (cleanup everything).
+  features_revert();
+}

@@ -10,10 +10,6 @@
  *   returns theme callback with scenario information array.
  */
 function df_admin_page() {
-  // Clear & rebuild Features key caches
-  features_get_info(NULL, NULL, TRUE);
-  features_rebuild();
-
   // Add DF Admin CSS
   drupal_add_css(drupal_get_path('module', 'df_admin') . '/css/df_admin.page.css');
 
