@@ -24,11 +24,6 @@ dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = taxonomy
 
-; Contribs
-dependencies[] = demonstratie_panels
-dependencies[] = ember_support
-dependencies[] = role_export
-
 ; Demo Framework (core)
 dependencies[] = assemble
 dependencies[] = curate
