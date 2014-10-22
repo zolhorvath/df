@@ -18,10 +18,6 @@ projects[module_filter][version] = "2.0-alpha2"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
-projects[pathauto][version] = "1.2"
-projects[pathauto][type] = "module"
-projects[pathauto][subdir] = "contrib"
-
 projects[rules][version] = "2.7"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
@@ -358,7 +354,7 @@ projects[language_switch][download][type] = "git"
 projects[language_switch][download][revision] = "b79dd56"
 projects[language_switch][download][branch] = "7.x-1.x"
 
-projects[lingotek][version] = "5.02"
+projects[lingotek][version] = "6.00"
 projects[lingotek][type] = "module"
 projects[lingotek][subdir] = "contrib"
 
