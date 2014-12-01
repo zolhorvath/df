@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function dfs_wem_tweets_user_default_permissions() {
+function dfs_wem_tweets_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer panelizer node wem_tweet defaults'.

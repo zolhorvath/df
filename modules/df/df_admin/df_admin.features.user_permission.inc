@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function df_admin_user_default_permissions() {
+function df_admin_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer feeds'.

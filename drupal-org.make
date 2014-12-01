@@ -1,30 +1,10 @@
 api = 2
 core = 7.x
 
-; Demo Framework Profile
-projects[acquia_connector][version] = "2.13"
+; Acquia Connector
+projects[acquia_connector][version] = "2.14"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
-
-projects[devel][version] = "1.3"
-projects[devel][type] = "module"
-projects[devel][subdir] = "contrib"
-
-projects[diff][version] = "3.2"
-projects[diff][type] = "module"
-projects[diff][subdir] = "contrib"
-
-projects[module_filter][version] = "2.0-alpha2"
-projects[module_filter][type] = "module"
-projects[module_filter][subdir] = "contrib"
-
-projects[rules][version] = "2.7"
-projects[rules][type] = "module"
-projects[rules][subdir] = "contrib"
-
-projects[token][version] = "1.5"
-projects[token][type] = "module"
-projects[token][subdir] = "contrib"
 
 ; Lightning Features
 projects[lightning_features][version] = "1.x-dev"
@@ -376,6 +356,10 @@ projects[translation_helpers][subdir] = "contrib"
 projects[variable][version] = "2.2"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
+
+projects[views_megarow][version] = "1.4"
+projects[views_megarow][type] = "module"
+projects[views_megarow][subdir] = "contrib"
 
 ; Libraries
 libraries[chosen][download][type] = "get"

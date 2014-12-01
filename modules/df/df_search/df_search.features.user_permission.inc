@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function df_search_user_default_permissions() {
+function df_search_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access search_api_page'.

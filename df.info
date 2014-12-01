@@ -24,7 +24,7 @@ dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = taxonomy
 
-; Demo Framework (core)
+; Lightning (core)
 dependencies[] = assemble
 dependencies[] = curate
 dependencies[] = import

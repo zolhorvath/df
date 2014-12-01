@@ -7,6 +7,7 @@ project = dfs_wem_users
 dependencies[] = ctools
 dependencies[] = df_engage
 dependencies[] = features
+dependencies[] = lightning_roles
 dependencies[] = page_manager
 dependencies[] = panelizer
 dependencies[] = strongarm

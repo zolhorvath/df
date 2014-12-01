@@ -8,6 +8,7 @@ dependencies[] = assemble
 dependencies[] = dfs_wem
 dependencies[] = features
 dependencies[] = lightning_base
+dependencies[] = lightning_roles
 dependencies[] = node
 dependencies[] = panelizer
 dependencies[] = strongarm

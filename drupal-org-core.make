@@ -1,12 +1,7 @@
-; A separate drupal-org-core.make file makes it so we can apply core patches
-; if we need to.
-
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.32
-
-; CORE PATCHES
+projects[drupal][version] = 7.34
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
@@ -31,7 +26,3 @@ projects[drupal][patch][] = "http://drupal.org/files/1275902-15-entity_uri_callb
 ; module's permission or with non-existent permissions
 ; http://drupal.org/node/737816
 projects[drupal][patch][] = "http://drupal.org/files/drupal-fix_pdoexception_grant_permissions-737816-36-do-not-test.patch"
-
-; Unicode requirements check not working with PHP 5.6
-; http://drupal.org/node/2332295
-projects[drupal][patch][] = "http://drupal.org/files/issues/drupal7-mbstring-http-input-2332295-13.patch"
