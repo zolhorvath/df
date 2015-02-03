@@ -125,7 +125,9 @@ function df_scenario_check_enable($form_id, &$form_state) {
 function df_acquia_extensions_enable($form_id, &$form_state) {
   $values = $form_state['values'];
   if (isset($values['acquia_modules'])) {
-    module_enable($values['acquia_modules']);
+    foreach ($values['acquia_modules'] as $module) {
+      module_enable(array($module), TRUE);
+    }
   }
 }
 
