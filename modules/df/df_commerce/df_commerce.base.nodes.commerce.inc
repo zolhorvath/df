@@ -7,8 +7,8 @@
 
 class DemoFrameworkBaseCommerceNodes extends ImportBaseNodes {
 
-  public function __construct($arguments = array()) {
-    parent::__construct($arguments = array());
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import commerce product nodes.');
 
     // Create a map object for tracking the relationships between source rows
@@ -22,8 +22,6 @@ class DemoFrameworkBaseCommerceNodes extends ImportBaseNodes {
       ),
       MigrateDestinationNode::getKeySchema()
     );
-
-    $this->dependencies = array('DemoFrameworkBaseProducts');
 
     $import_path = drupal_get_path('module', 'df_commerce') . '/import/';
     $this->source = new MigrateSourceCSV($import_path . 'df_commerce.base.nodes.commerce.csv', $this->csvcolumns(), array('header_rows' => 1));
