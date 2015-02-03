@@ -7,8 +7,8 @@
 
 class DemoFrameworkBaseNodesUUID extends ImportBaseNodes {
 
-  public function __construct($arguments = array()) {
-    parent::__construct($arguments = array());
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import UUID nodes.');
 
     $import_path = drupal_get_path('module', 'df_engage') . '/import/';
