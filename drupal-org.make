@@ -59,7 +59,7 @@ projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
-projects[migrate][version] = "2.5"
+projects[migrate][version] = "2.6"
 projects[migrate][type] = "module"
 projects[migrate][subdir] = "contrib"
 
@@ -69,9 +69,6 @@ projects[migrate_extras][subdir] = "contrib"
 ; Add support for UUID module for 7.x
 ; http://drupal.org/node/1870886
 projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
-; Add support for color_field module
-; http://drupal.org/node/2026003
-projects[migrate_extras][patch][2026003] = "http://drupal.org/files/color_field_migrate_support.patch"
 
 ; DF Commerce
 projects[addressfield][version] = "1.0-beta4"
@@ -82,7 +79,7 @@ projects[commerce][version] = "1.x-dev"
 projects[commerce][type] = "module"
 projects[commerce][subdir] = "contrib"
 projects[commerce][download][type] = "git"
-projects[commerce][download][revision] = "40751b9"
+projects[commerce][download][revision] = "ca5c7cc"
 projects[commerce][download][branch] = "7-x.1-x"
 
 projects[commerce_addressbook][version] = "2.0-rc7"
@@ -111,6 +108,10 @@ projects[commerce_features][subdir] = "contrib"
 ; http://drupal.org/node/1402762
 projects[commerce_features][patch][1402762] = "http://drupal.org/files/1402762_export_flat_rate_commerce_features-6.patch"
 
+projects[commerce_license][version] = "1.3"
+projects[commerce_license][type] = "module"
+projects[commerce_license][subdir] = "contrib"
+
 projects[commerce_message][version] = "1.0-rc3"
 projects[commerce_message][type] = "module"
 projects[commerce_message][subdir] = "contrib"
@@ -126,6 +127,28 @@ projects[commerce_shipping][version] = "2.0"
 projects[commerce_shipping][type] = "module"
 projects[commerce_shipping][subdir] = "contrib"
 
+projects[eva][version] = "1.x-dev"
+projects[eva][type] = "module"
+projects[eva][subdir] = "contrib"
+projects[eva][download][type] = "git"
+projects[eva][download][revision] = "5798231"
+projects[eva][download][branch] = "7.x-1.x"
+
+projects[inline_conditions][version] = "1.0-alpha4"
+projects[inline_conditions][type] = "module"
+projects[inline_conditions][subdir] = "contrib"
+
+projects[inline_entity_form][version] = "1.x-dev"
+projects[inline_entity_form][type] = "module"
+projects[inline_entity_form][subdir] = "contrib"
+projects[inline_entity_form][download][type] = "git"
+projects[inline_entity_form][download][revision] = "47ffa63"
+projects[inline_entity_form][download][branch] = "7.x-1.x"
+
+projects[menu_attributes][version] = "1.0-rc3"
+projects[menu_attributes][type] = "module"
+projects[menu_attributes][subdir] = "contrib"
+
 projects[message][version] = "1.9"
 projects[message][type] = "module"
 projects[message][subdir] = "contrib"
@@ -134,12 +157,19 @@ projects[message_notify][version] = "2.5"
 projects[message_notify][type] = "module"
 projects[message_notify][subdir] = "contrib"
 
+projects[views_megarow][version] = "1.4"
+projects[views_megarow][type] = "module"
+projects[views_megarow][subdir] = "contrib"
+
 ; DF Connect
 projects[acquia_lift][version] = "1.x-dev"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 projects[acquia_lift][download][type] = "git"
 projects[acquia_lift][download][branch] = "7.x-1.x"
+; Lift forces max width on .ctools-modal-content but not .modal-content
+; http://drupal.org/node/2406855
+projects[acquia_lift][patch][2406855] = "http://drupal.org/files/issues/acquia-lift-ctools-modal-content-css-0.patch"
 
 projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
@@ -157,7 +187,7 @@ projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
 projects[purr_messages][subdir] = "contrib"
 
-projects[sharethis][version] = "2.5"
+projects[sharethis][version] = "2.6"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
 
@@ -231,10 +261,10 @@ projects[custom_search][version] = "1.x-dev"
 projects[custom_search][type] = "module"
 projects[custom_search][subdir] = "contrib"
 projects[custom_search][download][type] = "git"
-projects[custom_search][download][revision] = "0d55d1e"
+projects[custom_search][download][revision] = "e825455"
 projects[custom_search][download][branch] = "7.x-1.x"
 
-projects[location][version] = "3.1"
+projects[location][version] = "3.5"
 projects[location][type] = "module"
 projects[location][subdir] = "contrib"
 
@@ -257,27 +287,24 @@ projects[schemaorg][version] = "1.0-beta4"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
 
-projects[search_api][version] = "1.7"
+projects[search_api][version] = "1.14"
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
-; Server Enabled is not set on installation profile
-; http://drupal.org/node/2236265
-projects[search_api][patch][2236265] = "http://drupal.org/files/issues/search_api-server_enabled_notobject.patch"
 
-projects[search_api_db][version] = 1.0
+projects[search_api_db][version] = "1.x-dev"
 projects[search_api_db][type] = "module"
 projects[search_api_db][subdir] = "contrib"
+projects[search_api_db][download][type] = "git"
+projects[search_api_db][download][revision] = "643d96c"
+projects[search_api_db][download][branch] = "7.x-1.x"
 
-projects[search_api_page][version] = 1.0
+projects[search_api_page][version] = "1.1"
 projects[search_api_page][type] = "module"
 projects[search_api_page][subdir] = "contrib"
 
-projects[search_api_ranges][version] = 1.4
+projects[search_api_ranges][version] = "1.5"
 projects[search_api_ranges][type] = "module"
 projects[search_api_ranges][subdir] = "contrib"
-; Rewrite the data alteration callback
-; http://drupal.org/node/2001846
-projects[search_api_ranges][patch][2001846] = "http://drupal.org/files/search_api_ranges-rewrite-data-alteration-callback-2001846-3.patch"
 
 projects[search_api_solr][version] = "1.x-dev"
 projects[search_api_solr][type] = "module"
@@ -286,7 +313,7 @@ projects[search_api_solr][download][type] = "git"
 projects[search_api_solr][download][revision] = "cf862ac"
 projects[search_api_solr][download][branch] = "7.x-1.x"
 
-projects[search_api_sorts][version] = 1.4
+projects[search_api_sorts][version] = "1.5"
 projects[search_api_sorts][type] = "module"
 projects[search_api_sorts][subdir] = "contrib"
 
@@ -313,15 +340,21 @@ projects[l10n_update][download][type] = "git"
 projects[l10n_update][download][revision] = "209faa5"
 projects[l10n_update][download][branch] = "7.x-1.x"
 
-projects[i18n][version] = "1.8"
+projects[i18n][version] = "1.x-dev"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
+projects[i18n][download][type] = "git"
+projects[i18n][download][revision] = "3777b86"
+projects[i18n][download][branch] = "7.x-1.x"
+; PHP Fatal Error Call to undefined method i18n_object_wrapper::strings_update()
+; http://drupal.org/node/2082573
+projects[i18n][patch][] = "http://drupal.org/files/issues/i18n_string-undefined-method-2082573-11.patch"
 
 projects[i18nviews][version] = "3.x-dev"
 projects[i18nviews][type] = "module"
 projects[i18nviews][subdir] = "contrib"
 projects[i18nviews][download][type] = "git"
-projects[i18nviews][download][revision] = "26bd52c"
+projects[i18nviews][download][revision] = "27e9809"
 projects[i18nviews][download][branch] = "7.x-3.x"
 ; Fatal error: Call to a member function unpack_translatables()
 ; http://drupal.org/node/1653170
@@ -342,7 +375,7 @@ projects[potx][version] = "1.x-dev"
 projects[potx][type] = "module"
 projects[potx][subdir] = "contrib"
 projects[potx][download][type] = "git"
-projects[potx][download][revision] = "8ac54a1"
+projects[potx][download][revision] = "f9ccfbe"
 projects[potx][download][branch] = "7.x-1.x"
 
 projects[title][version] = "1.0-alpha7"
@@ -353,17 +386,30 @@ projects[translation_helpers][version] = "1.0"
 projects[translation_helpers][type] = "module"
 projects[translation_helpers][subdir] = "contrib"
 
-projects[variable][version] = "2.2"
+projects[variable][version] = "2.5"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
-projects[views_megarow][version] = "1.4"
-projects[views_megarow][type] = "module"
-projects[views_megarow][subdir] = "contrib"
-
 ; Libraries
+libraries[chosen][destination] = "libraries"
 libraries[chosen][download][type] = "get"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
+libraries[chosen][directory] = "chosen"
+
+libraries[qtip][destination] = "libraries"
+libraries[qtip][download][type] = "get"
+libraries[qtip][download][url] = "https://raw.githubusercontent.com/Craga89/qTip1/master/1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"
+libraries[qtip][directory] = "qtip"
+
+libraries[d3][destination] = "libraries"
+libraries[d3][download][type] = "get"
+libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
+libraries[d3][directory] = "d3"
+
+libraries[rickshaw][destination] = "libraries"
+libraries[rickshaw][download][type] = "get"
+libraries[rickshaw][download][url] = https://github.com/shutterstock/rickshaw/archive/v1.5.0.zip
+libraries[rickshaw][directory] = "rickshaw"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
