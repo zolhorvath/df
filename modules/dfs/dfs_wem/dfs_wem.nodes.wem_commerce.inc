@@ -7,8 +7,8 @@
 
 class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
 
-  public function __construct($arguments = array()) {
-    parent::__construct($arguments = array());
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import WEM Commerce product nodes.');
     $this->dependencies = array('DFSWEMProducts');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
@@ -23,6 +23,10 @@ class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
     $this->addFieldMapping('uuid', 'uuid');
     // Created
     $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
+    // Persona
+    $this->addFieldMapping('field_persona', 'persona');
+    // Site Section
+    $this->addFieldMapping('field_site_section', 'site_section')->defaultValue("Commerce");
   }
 
   function csvcolumns() {
@@ -32,6 +36,7 @@ class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
     $columns[3] = array('interests', 'Interests');
     $columns[4] = array('uuid', 'UUID');
     $columns[5] = array('created', 'Created');
+    $columns[6] = array('persona', 'Persona');
     return $columns;
   }
 

@@ -18,4 +18,21 @@ function dfs_wem_install() {
 
   // Do not attach any sample orders for users.
   variable_set('df_commerce_add_sample_orders', FALSE);
+
+  // Set default ShareThis node types.
+  $sharethis_node_types = array(
+    'article' => 'article',
+    'page' => 'page',
+    'wem_news' => 'wem_news',
+    'wem_product_review' => 'wem_product_review',
+    'commerce' => 0,
+    'landing' => 0,
+    'organic_group' => 0,
+    'wem_commerce' => 0,
+    'wem_contest' => 0,
+    'wem_tweet' => 0,
+    'webform' => 0,
+  );
+  variable_set('sharethis_node_types', $sharethis_node_types);
+
 }

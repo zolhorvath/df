@@ -585,34 +585,12 @@ function dfs_wem_default_page_manager_pages() {
     $display->content['new-00f8392f-b6c3-4a6a-af76-c459e2cc3c53'] = $pane;
     $display->panels['secondary_supplements'][0] = 'new-00f8392f-b6c3-4a6a-af76-c459e2cc3c53';
     $pane = new stdClass();
-    $pane->pid = 'new-933ff76d-107a-4c2d-937f-433a5f60ddcc';
+    $pane->pid = 'new-f2eb873d-e89a-4191-9530-99f208cf8b57';
     $pane->panel = 'tertiary_features';
     $pane->type = 'block';
     $pane->subtype = 'bean-wem---user-related-contest';
     $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'perm',
-          'settings' => array(
-            'perm' => 'manage personalized content',
-          ),
-          'context' => 'context_user_1',
-          'not' => TRUE,
-        ),
-        1 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 1,
-            ),
-          ),
-          'context' => 'context_user_1',
-          'not' => TRUE,
-        ),
-      ),
-      'logic' => 'and',
-    );
+    $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,
       'override_title_text' => '',
@@ -633,61 +611,9 @@ function dfs_wem_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '933ff76d-107a-4c2d-937f-433a5f60ddcc';
-    $display->content['new-933ff76d-107a-4c2d-937f-433a5f60ddcc'] = $pane;
-    $display->panels['tertiary_features'][0] = 'new-933ff76d-107a-4c2d-937f-433a5f60ddcc';
-    $pane = new stdClass();
-    $pane->pid = 'new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
-    $pane->panel = 'tertiary_features';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-wem---personalized-content';
-    $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        1 => array(
-          'name' => 'perm',
-          'settings' => array(
-            'perm' => 'manage personalized content',
-          ),
-          'context' => 'context_user_1',
-          'not' => FALSE,
-        ),
-        2 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 1,
-            ),
-          ),
-          'context' => 'context_user_1',
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'or',
-    );
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => array(
-        'title' => 'banner',
-        'hero' => 'default',
-        'layouts' => 'default',
-        'styles' => 'feature_medium',
-        'color_schemes' => 'default',
-        'button_styles' => 'default',
-      ),
-      'style' => 'demonstratie_panels_styles',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
-    $display->content['new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c'] = $pane;
-    $display->panels['tertiary_features'][1] = 'new-60c9c3c9-9cd7-4211-b0f0-a25a6a242f6c';
+    $pane->uuid = 'f2eb873d-e89a-4191-9530-99f208cf8b57';
+    $display->content['new-f2eb873d-e89a-4191-9530-99f208cf8b57'] = $pane;
+    $display->panels['tertiary_features'][0] = 'new-f2eb873d-e89a-4191-9530-99f208cf8b57';
     $pane = new stdClass();
     $pane->pid = 'new-3da35775-9d33-4aea-afb1-5d9cc15f4fb0';
     $pane->panel = 'tertiary_supplements';

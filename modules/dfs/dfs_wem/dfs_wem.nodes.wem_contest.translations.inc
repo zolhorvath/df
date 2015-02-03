@@ -7,8 +7,8 @@
 
 class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations {
 
-  public function __construct($arguments = array()) {
-    parent::__construct($arguments = array());
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->description = t('Import translated nodes.');
     $import_path = drupal_get_path('module', 'dfs_wem') . '/import/';
     // Create a MigrateSource object.
@@ -30,6 +30,10 @@ class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations 
     $this->addFieldMapping('uuid', 'uuid');
     // Created
     $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
+    // Persona
+    $this->addFieldMapping('field_persona', 'persona');
+    // Site Section
+    $this->addFieldMapping('field_site_section', 'site_section')->defaultValue("Community");
   }
 
   function csvcolumns() {
@@ -41,6 +45,7 @@ class DFSWEMContestNodesTranslations extends DemoFrameworkBaseNodesTranslations 
     $columns[5] = array('interests', 'Interests');
     $columns[6] = array('uuid', 'UUID');
     $columns[7] = array('created', 'Created');
+    $columns[8] = array('persona', 'Persona');
     return $columns;
   }
 

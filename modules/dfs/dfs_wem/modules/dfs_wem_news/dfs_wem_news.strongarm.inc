@@ -103,13 +103,13 @@ function dfs_wem_news_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '5',
         ),
         'language' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -132,6 +132,24 @@ function dfs_wem_news_strongarm() {
           ),
           'thumbnail' => array(
             'weight' => '2',
+            'visible' => FALSE,
+          ),
+        ),
+        'sharethis' => array(
+          'featured' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'thumbnail' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'alternate' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),
@@ -303,6 +321,24 @@ function dfs_wem_news_strongarm() {
     'other' => 'other',
   );
   $export['panelizer_node:wem_news_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_wem_news_options';
+  $strongarm->value = array(
+    'full' => 0,
+    'teaser' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'diff_standard' => 0,
+    'alternate' => 0,
+    'thumbnail' => 0,
+    'featured' => 0,
+    'token' => 0,
+  );
+  $export['sharethis_wem_news_options'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

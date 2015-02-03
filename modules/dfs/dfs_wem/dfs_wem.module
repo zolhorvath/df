@@ -34,8 +34,10 @@ function dfs_wem_migrate_api() {
       'DFSWEMNewsNodes' => array('class_name' => 'DFSWEMNewsNodes'),
       'DFSWEMNewsNodesTranslations' => array('class_name' => 'DFSWEMNewsNodesTranslations'),
       'DFSWEMNewsVideo' => array('class_name' => 'DFSWEMNewsVideo'),
+      'DFSWEMPersonaTerms' => array('class_name' => 'DFSWEMPersonaTerms'),
       'DFSWEMProducts' => array('class_name' => 'DFSWEMProducts'),
       'DFSWEMProductReviewNodes' => array('class_name' => 'DFSWEMProductReviewNodes'),
+      'DFSWEMSiteSectionTerms' => array('class_name' => 'DFSWEMSiteSectionTerms'),
       'DFSWEMTweetNodes' => array('class_name' => 'DFSWEMTweetNodes'),
       'DFSWEMUserPictures' => array('class_name' => 'DFSWEMUserPictures'),
       'DFSWEMUsers' => array('class_name' => 'DFSWEMUsers'),
@@ -50,6 +52,8 @@ function dfs_wem_migrate_api() {
 function dfs_wem_df_import_alter(&$migrations) {
   return $migrations['dfs_wem'] = array(
     'DFSWEMInterestsTerms',
+    'DFSWEMPersonaTerms',
+    'DFSWEMSiteSectionTerms',
     'DFSWEMUserPictures',
     'DFSWEMProducts',
     'DFSWEMCommerceNodes',

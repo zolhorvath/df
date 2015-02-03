@@ -28,6 +28,9 @@ function dfs_wem_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
+  if ($module == "panelizer" && $api == "panelizer") {
+    return array("version" => "1");
+  }
   if ($module == "panels" && $api == "layouts") {
     return array("version" => "1");
   }
@@ -57,7 +60,7 @@ function dfs_wem_image_default_styles() {
       1 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
+        'effect callback' => 'imageinfo_cache_effect_router',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_resize_form',
         'summary theme' => 'image_resize_summary',
@@ -66,6 +69,7 @@ function dfs_wem_image_default_styles() {
         'data' => array(
           'width' => 40,
           'height' => 40,
+          '#imageinfo_cache_effect_callback' => 'imageinfo_cache_effect_router',
         ),
         'weight' => 1,
       ),

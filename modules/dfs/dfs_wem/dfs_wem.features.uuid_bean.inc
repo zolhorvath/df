@@ -26,6 +26,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'page',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -57,6 +60,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'page',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
@@ -87,6 +93,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'user',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -118,6 +127,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'user',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
@@ -147,7 +159,10 @@ function dfs_wem_uuid_features_default_beans() {
         ),
       ),
       'settings' => array(
+        'cache_duration' => 5,
         'related' => 'user',
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -178,7 +193,10 @@ function dfs_wem_uuid_features_default_beans() {
       ),
     ),
     'settings' => array(
+      'cache_duration' => 5,
       'related' => 'user',
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
@@ -209,6 +227,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'user',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -239,6 +260,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'user',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
@@ -253,25 +277,28 @@ function dfs_wem_uuid_features_default_beans() {
     'entity_type' => 'bean',
   );
   $beans[] = array(
-    'label' => 'WEM - Page Secondary Products',
+    'label' => 'WEM - Page Secondary',
     'description' => NULL,
-    'title' => 'More Trips',
+    'title' => 'More Like This',
     'type' => 'bean_tax_related',
     'data' => array(
       'view_mode' => 'default',
       'filters' => array(
         'records_shown' => 4,
-        'offset_results' => 1,
+        'offset_results' => 0,
         'vocabulary' => array(
           'interests' => 'interests',
         ),
       ),
       'settings' => array(
         'related' => 'page',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
-          'wem_commerce' => 'wem_commerce',
+          'wem_news' => 'wem_news',
         ),
         'hide_empty' => 1,
         'unmatch_add' => 1,
@@ -281,7 +308,7 @@ function dfs_wem_uuid_features_default_beans() {
         'path' => '',
       ),
     ),
-    'delta' => 'wem---page-secondary-products',
+    'delta' => 'wem---page-secondary',
     'view_mode' => 'default',
     'created' => 1393289673,
     'log' => '',
@@ -292,17 +319,20 @@ function dfs_wem_uuid_features_default_beans() {
     'uuid' => 'a0b74278-75b9-490c-b702-782e50710793',
     'filters' => array(
       'records_shown' => 4,
-      'offset_results' => 1,
+      'offset_results' => 0,
       'vocabulary' => array(
         'interests' => 'interests',
       ),
     ),
     'settings' => array(
       'related' => 'page',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
-        'wem_commerce' => 'wem_commerce',
+        'wem_news' => 'wem_news',
       ),
       'hide_empty' => 1,
       'unmatch_add' => 1,
@@ -329,6 +359,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'user',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -360,6 +393,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'user',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(
@@ -390,6 +426,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'user',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'thumbnail',
         'bundle_types' => array(
@@ -421,6 +460,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'user',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'thumbnail',
       'bundle_types' => array(
@@ -451,6 +493,9 @@ function dfs_wem_uuid_features_default_beans() {
       ),
       'settings' => array(
         'related' => 'user',
+        'cache_duration' => 5,
+        'cache_auth_user' => 1,
+        'cache_anon_user' => 1,
         'entity_type' => 'node',
         'entity_view_mode' => 'featured',
         'bundle_types' => array(
@@ -482,6 +527,9 @@ function dfs_wem_uuid_features_default_beans() {
     ),
     'settings' => array(
       'related' => 'user',
+      'cache_duration' => 5,
+      'cache_auth_user' => 1,
+      'cache_anon_user' => 1,
       'entity_type' => 'node',
       'entity_view_mode' => 'featured',
       'bundle_types' => array(

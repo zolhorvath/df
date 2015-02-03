@@ -7,8 +7,8 @@
 
 class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
 
-  public function __construct($arguments = array()) {
-    parent::__construct($arguments = array());
+  public function __construct($arguments) {
+    parent::__construct($arguments);
     $this->map = new MigrateSQLMap($this->machineName,
       array(
         'translated_title' => array(
@@ -36,6 +36,10 @@ class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
     $this->addFieldMapping('uuid', 'uuid');
     // Created
     $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
+    // Persona
+    $this->addFieldMapping('field_persona', 'persona');
+    // Site Section
+    $this->addFieldMapping('field_site_section', 'site_section')->defaultValue("Commerce");
   }
 
   function csvcolumns() {
@@ -47,6 +51,7 @@ class DFSWEMCommerceNodesTranslations extends DemoFrameworkBaseCommerceNodes {
     $columns[5] = array('interests', 'Interests');
     $columns[6] = array('uuid', 'UUID');
     $columns[7] = array('created', 'Created');
+    $columns[8] = array('persona', 'Persona');
     return $columns;
   }
 
