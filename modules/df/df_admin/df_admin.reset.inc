@@ -56,15 +56,17 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
     if ($rollback == TRUE) {
       // Queue migrations to rollback in the opposite order provided.
       foreach (array_reverse($migrations[$scenario]) as $machine_name) {
+        migrate_static_registration(array($machine_name));
         $migration = Migration::getInstance($machine_name);
-        $operations[] = array('migrate_ui_batch', array('rollback', $machine_name, 0, FALSE));
+        $operations[] = array('migrate_ui_batch', array('rollback', $machine_name, array('unit' => 'items', 'value' => ''), FALSE));
       }
     }
 
     // Queue migrations to import in the provided order.
     foreach ($migrations[$scenario]  as $machine_name) {
+      migrate_static_registration(array($machine_name));
       $migration = Migration::getInstance($machine_name);
-      $operations[] = array('migrate_ui_batch', array('import', $machine_name, 0, FALSE));
+      $operations[] = array('migrate_ui_batch', array('import', $machine_name, array('unit' => 'items', 'value' => ''), FALSE));
     }
 
     // Confirm if there was an attempt to run scenario migrations.
@@ -73,20 +75,21 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
       $operations[] = array('drupal_set_message', array(t('@number demo migrations attempted.', array('@number' => $migrations_count)), 'status'));
     }
 
-    // Clear caches post-import.
-    $operations[] = array('drupal_flush_all_caches', array(''));
-    $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
   }
 
   // Set up post-import routines via hook_df_post_import().
   $routines = array();
   $routines = module_invoke_all('df_post_import');
   drupal_alter('df_post_import', $routines);
-
+ 
   // Add post-import functions to the batch process.
   foreach ($routines as $routine) {
     $operations[] = $routine;
   }
+
+  // Clear caches post-operations.
+  $operations[] = array('drupal_flush_all_caches', array(''));
+  $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
 
   // Clear messages for non-Drush users providing a cleaner scenario reset.
   if (!drupal_is_cli()) {
