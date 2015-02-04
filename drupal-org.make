@@ -396,21 +396,6 @@ libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
 libraries[chosen][directory] = "chosen"
 
-;libraries[qtip][destination] = "libraries"
-;libraries[qtip][download][type] = "get"
-;libraries[qtip][download][url] = "https://raw.githubusercontent.com/Craga89/qTip1/master/1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"
-;libraries[qtip][directory] = "qtip"
-
-;libraries[d3][destination] = "libraries"
-;libraries[d3][download][type] = "get"
-;libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
-;libraries[d3][directory] = "d3"
-
-;libraries[rickshaw][destination] = "libraries"
-;libraries[rickshaw][download][type] = "get"
-;libraries[rickshaw][download][url] = https://github.com/shutterstock/rickshaw/archive/v1.5.0.zip
-;libraries[rickshaw][directory] = "rickshaw"
-
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
