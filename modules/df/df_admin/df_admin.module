@@ -52,13 +52,13 @@ function df_admin_theme(){
 
 /**
  * Alter navbar menu.
- * Add help icon to advanced_help menu.
  */
 function df_admin_navbar_alter(&$items) {
-  // Menu tree is already rendered. Iterate over menu parents to find item.
-  foreach ($items['administration']['tray']['navbar_administration']['administration_menu'] as $mid => &$item) {
-    if (isset($item['#href']) && $item['#href'] == 'admin/advanced_help') {
-      $item['#localized_options']['attributes']['class'][] = 'navbar-icon-help';
+   // Remove Help and Advanced Help from the Navbar.
+  $remove = array('admin/help', 'admin/advanced_help');
+  foreach ($items['administration']['tray']['navbar_administration']['administration_menu'] as $mid => $item) {
+    if (isset($item['#href']) && in_array($item['#href'], $remove)) {
+      unset($items['administration']['tray']['navbar_administration']['administration_menu'][$mid]);
     }
   }
 }
