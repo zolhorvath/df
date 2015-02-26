@@ -190,7 +190,13 @@ function df_install_finished(&$install_state) {
   // registered by the installation profile are registered correctly.
   drupal_flush_all_caches();
 
-  // Remember the profile which was used.
+  // Turn off error reporting.
+  variable_set('error_level', 0);
+
+  // Turn off "Poor Man's Cron."
+  variable_set('cron_safe_threshold', 0);
+
+  // Remember the install profile in use.
   variable_set('install_profile', drupal_get_profile());
 
   // Installation profiles are always loaded last
