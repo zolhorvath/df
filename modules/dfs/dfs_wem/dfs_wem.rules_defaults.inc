@@ -16,7 +16,7 @@ function dfs_wem_default_rules_configuration() {
       "REQUIRES" : [ "rules", "og" ],
       "ON" : { "node_view" : [] },
       "IF" : [
-        { "data_is" : { "data" : [ "view-mode" ], "value" : "full" } },
+        { "data_is" : { "data" : [ "view-mode" ], "value" : "redirect" } },
         { "node_is_of_type" : {
             "node" : [ "node" ],
             "type" : { "value" : { "wem_contest" : "wem_contest" } }
