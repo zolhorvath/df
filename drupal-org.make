@@ -59,7 +59,7 @@ projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
-projects[migrate][version] = "2.6"
+projects[migrate][version] = "2.7"
 projects[migrate][type] = "module"
 projects[migrate][subdir] = "contrib"
 
@@ -215,7 +215,7 @@ projects[personalize][download][type] = "git"
 projects[personalize][download][branch] = "7.x-1.x"
 ; Personalized Fields break preview inside Panels
 ; http://drupal.org/node/2303111
-projects[personalize][patch][2303111] = "http://drupal.org/files/issues/panels_fix_1.patch"
+projects[personalize][patch][2303111] = "http://drupal.org/files/issues/personalize-panels-fix-2303111-4.patch"
 
 projects[radioactivity][version] = "2.8"
 projects[radioactivity][type] = "module"
@@ -240,21 +240,6 @@ projects[visitor_actions][type] = "module"
 projects[visitor_actions][subdir] = "contrib"
 projects[visitor_actions][download][type] = "git"
 projects[visitor_actions][download][branch] = "7.x-1.x"
-
-; DF Gallery
-projects[manualcrop][version] = "1.4"
-projects[manualcrop][type] = "module"
-projects[manualcrop][subdir] = "contrib"
-
-projects[media_gallery][version] = "2.x-dev"
-projects[media_gallery][type] = "module"
-projects[media_gallery][subdir] = "contrib"
-projects[media_gallery][download][type] = "git"
-projects[media_gallery][download][revision] = "86e73b0"
-projects[media_gallery][download][branch] = "7.x-2.x"
-; Do not create a Main menu link for 'Galleries'
-; http://drupal.org/node/2169649
-projects[media_gallery][patch][2169649] = "http://drupal.org/files/issues/media_gallery-no-menu-item-on-install-0.patch"
 
 ; DF Search
 projects[custom_search][version] = "1.x-dev"
@@ -396,15 +381,15 @@ libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
 libraries[chosen][directory] = "chosen"
 
-libraries[qtip][destination] = "libraries"
-libraries[qtip][download][type] = "get"
-libraries[qtip][download][url] = "https://raw.githubusercontent.com/Craga89/qTip1/master/1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"
-libraries[qtip][directory] = "qtip"
-
 libraries[d3][destination] = "libraries"
 libraries[d3][download][type] = "get"
 libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
 libraries[d3][directory] = "d3"
+
+libraries[qtip][destination] = "libraries"
+libraries[qtip][download][type] = "get"
+libraries[qtip][download][url] = "https://raw.githubusercontent.com/Craga89/qTip1/master/1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"
+libraries[qtip][directory] = "qtip"
 
 libraries[rickshaw][destination] = "libraries"
 libraries[rickshaw][download][type] = "get"
