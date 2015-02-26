@@ -303,7 +303,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '-10',
+            'weight' => '2',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -325,7 +325,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '-5',
+            'weight' => '3',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -347,7 +347,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '5',
+            'weight' => '9',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -369,7 +369,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => TRUE,
           ),
           'featured' => array(
-            'weight' => '0',
+            'weight' => '4',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -391,7 +391,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => TRUE,
           ),
           'featured' => array(
-            'weight' => '37',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -413,7 +413,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '38',
+            'weight' => '13',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -435,7 +435,7 @@ function dfs_wem_commerce_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '2',
+            'weight' => '8',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -444,6 +444,12 @@ function dfs_wem_commerce_strongarm() {
           ),
           'token' => array(
             'weight' => '7',
+            'visible' => FALSE,
+          ),
+        ),
+        'sharethis' => array(
+          'featured' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),

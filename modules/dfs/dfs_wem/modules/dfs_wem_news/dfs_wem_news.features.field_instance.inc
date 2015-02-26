@@ -43,6 +43,12 @@ function dfs_wem_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 1,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -107,6 +113,12 @@ function dfs_wem_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 2,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -169,6 +181,12 @@ function dfs_wem_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -223,6 +241,12 @@ function dfs_wem_news_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -296,6 +320,12 @@ function dfs_wem_news_field_default_field_instances() {
           ),
         ),
         'type' => 'picture',
+        'weight' => 0,
+      ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -396,6 +426,12 @@ function dfs_wem_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -456,6 +492,12 @@ function dfs_wem_news_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -527,6 +569,12 @@ function dfs_wem_news_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

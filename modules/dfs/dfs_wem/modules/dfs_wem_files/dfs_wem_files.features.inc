@@ -12,4 +12,3 @@ function dfs_wem_files_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
-

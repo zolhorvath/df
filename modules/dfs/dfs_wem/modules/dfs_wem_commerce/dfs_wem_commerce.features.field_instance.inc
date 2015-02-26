@@ -278,7 +278,7 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -293,6 +293,12 @@ function dfs_wem_commerce_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -368,9 +374,15 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -439,9 +451,15 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -505,13 +523,19 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
+      ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -584,7 +608,7 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -601,6 +625,12 @@ function dfs_wem_commerce_field_default_field_instances() {
         ),
         'type' => 'commerce_cart_add_to_cart_form',
         'weight' => 1,
+      ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -683,9 +713,15 @@ function dfs_wem_commerce_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -766,6 +802,12 @@ function dfs_wem_commerce_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -834,6 +876,12 @@ function dfs_wem_commerce_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -913,6 +961,12 @@ function dfs_wem_commerce_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

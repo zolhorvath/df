@@ -43,6 +43,12 @@ function dfs_wem_tweets_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'redirect' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -110,6 +116,12 @@ function dfs_wem_tweets_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -210,6 +222,12 @@ function dfs_wem_tweets_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'redirect' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

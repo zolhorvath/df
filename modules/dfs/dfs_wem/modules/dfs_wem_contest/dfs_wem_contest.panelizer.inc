@@ -61,50 +61,6 @@ function dfs_wem_contest_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-3aa78dfb-4aef-ca24-8905-73f396a34c4c';
-    $pane->panel = 'footer';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:group_group';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'og_group_subscribe',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'field_name' => '0',
-      ),
-      'context' => array(),
-      'override_title' => 0,
-      'override_title_text' => '',
-      'view_mode' => NULL,
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '3aa78dfb-4aef-ca24-8905-73f396a34c4c';
-    $display->content['new-3aa78dfb-4aef-ca24-8905-73f396a34c4c'] = $pane;
-    $display->panels['footer'][0] = 'new-3aa78dfb-4aef-ca24-8905-73f396a34c4c';
-    $pane = new stdClass();
     $pane->pid = 'new-78e21651-9af4-9ac4-6567-8fe10c0dff1f';
     $pane->panel = 'quaternary_features';
     $pane->type = 'entity_field';
@@ -147,32 +103,57 @@ function dfs_wem_contest_panelizer_defaults() {
     $display->content['new-78e21651-9af4-9ac4-6567-8fe10c0dff1f'] = $pane;
     $display->panels['quaternary_features'][0] = 'new-78e21651-9af4-9ac4-6567-8fe10c0dff1f';
     $pane = new stdClass();
-    $pane->pid = 'new-fb71495e-992a-29a4-e130-87103bb90fa8';
+    $pane->pid = 'new-a9452bec-e520-442e-94f0-88b5aeb51576';
     $pane->panel = 'quaternary_features';
-    $pane->type = 'page_actions';
-    $pane->subtype = 'page_actions';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'wem_contest_redirect-enter_contest_pane';
     $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'role',
+          'settings' => array(
+            'rids' => array(
+              0 => 2,
+            ),
+          ),
+          'context' => 'logged-in-user',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'og_member',
+          'settings' => array(
+            'state' => array(
+              1 => '1',
+            ),
+          ),
+          'context' => array(
+            0 => 'logged-in-user',
+            1 => 'panelizer',
+          ),
+          'not' => TRUE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'panelizer',
+      ),
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+      'view_mode' => 'teaser',
+    );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => array(
-        'title' => 'default',
-        'hero' => 0,
-        'layouts' => 'default',
-        'styles' => 'default',
-        'color_schemes' => 'alternate',
-        'button_styles' => 'default',
-      ),
-      'style' => 'demonstratie_panels_styles',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = 'fb71495e-992a-29a4-e130-87103bb90fa8';
-    $display->content['new-fb71495e-992a-29a4-e130-87103bb90fa8'] = $pane;
-    $display->panels['quaternary_features'][1] = 'new-fb71495e-992a-29a4-e130-87103bb90fa8';
+    $pane->uuid = 'a9452bec-e520-442e-94f0-88b5aeb51576';
+    $display->content['new-a9452bec-e520-442e-94f0-88b5aeb51576'] = $pane;
+    $display->panels['quaternary_features'][1] = 'new-a9452bec-e520-442e-94f0-88b5aeb51576';
     $pane = new stdClass();
     $pane->pid = 'new-1a670b3c-6339-2464-9144-ee5bdf920089';
     $pane->panel = 'quaternary_features';
