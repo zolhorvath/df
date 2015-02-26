@@ -81,3 +81,13 @@ function dfs_wem_post_features_enable_feature($component) {
   }
 }
 
+/**
+ * Implements hook_entity_info_alter().
+ */
+function dfs_wem_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['redirect'] = array(
+    'label' => t('Redirect'),
+    'custom settings' => TRUE,
+  );
+}
+
