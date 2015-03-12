@@ -49,14 +49,160 @@ function df_engage_field_default_field_bases() {
         'target_bundles' => array(),
       ),
       'personalize' => array(
+        'agent_type' => 'acquia_lift',
+        'auto_start' => 1,
+        'create_goal' => 1,
         'enabled' => 1,
-        'agent_type' => 'personalize_target',
-        'options' => array()
+        'options' => array(
+          'acquia_lift' => array(
+            'control_rate' => 10,
+            'decision_style' => 'adaptive',
+            'explore_rate' => 20,
+            'stop_on_winner' => 0,
+          ),
+          'acquia_lift_simple_ab' => array(
+            'control_rate' => 10,
+            'decision_style' => 'adaptive',
+            'explore_rate' => 20,
+            'stop_on_winner' => 0,
+          ),
+        ),
+        'stop_on_winner' => 0,
       ),
       'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_headline'
+  $field_bases['field_headline'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_headline',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'personalize' => array(
+        'agent_type' => 'acquia_lift',
+        'auto_start' => 1,
+        'auto_stop' => 0,
+        'create_goal' => 1,
+        'enabled' => 1,
+        'goal_pages' => '',
+        'options' => array(
+          'acquia_lift' => array(
+            'auto_stop' => 0,
+            'control_rate' => 10,
+            'decision_style' => 'adaptive',
+            'explore_rate' => 20,
+          ),
+          'acquia_lift_simple_ab' => array(
+            'auto_stop' => 0,
+            'control_rate' => 10,
+            'decision_style' => 'adaptive',
+            'explore_rate' => 20,
+          ),
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_persona'
+  $field_bases['field_persona'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_persona',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'persona',
+          'parent' => 0,
+        ),
+      ),
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_site_section'
+  $field_bases['field_site_section'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_site_section',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'site_section',
+          'parent' => 0,
+        ),
+      ),
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_user_bio'
