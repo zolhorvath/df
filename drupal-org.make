@@ -2,7 +2,7 @@ api = 2
 core = 7.x
 
 ; Acquia Connector
-projects[acquia_connector][version] = "2.14"
+projects[acquia_connector][version] = "2.15"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
@@ -162,15 +162,6 @@ projects[views_megarow][type] = "module"
 projects[views_megarow][subdir] = "contrib"
 
 ; DF Connect
-projects[acquia_lift][version] = "1.x-dev"
-projects[acquia_lift][type] = "module"
-projects[acquia_lift][subdir] = "contrib"
-projects[acquia_lift][download][type] = "git"
-projects[acquia_lift][download][branch] = "7.x-1.x"
-; Lift forces max width on .ctools-modal-content but not .modal-content
-; http://drupal.org/node/2406855
-projects[acquia_lift][patch][2406855] = "http://drupal.org/files/issues/acquia-lift-ctools-modal-content-css-0.patch"
-
 projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
@@ -208,15 +199,6 @@ projects[og][version] = "2.6"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
-projects[personalize][version] = "1.x-dev"
-projects[personalize][type] = "module"
-projects[personalize][subdir] = "contrib"
-projects[personalize][download][type] = "git"
-projects[personalize][download][branch] = "7.x-1.x"
-; Personalized Fields break preview inside Panels
-; http://drupal.org/node/2303111
-projects[personalize][patch][2303111] = "http://drupal.org/files/issues/personalize-panels-fix-2303111-4.patch"
-
 projects[radioactivity][version] = "2.8"
 projects[radioactivity][type] = "module"
 projects[radioactivity][subdir] = "contrib"
@@ -234,12 +216,6 @@ projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][revision] = "aa514d6"
 projects[uuid_features][download][branch] = "7.x-1.x"
-
-projects[visitor_actions][version] = "1.x-dev"
-projects[visitor_actions][type] = "module"
-projects[visitor_actions][subdir] = "contrib"
-projects[visitor_actions][download][type] = "git"
-projects[visitor_actions][download][branch] = "7.x-1.x"
 
 ; DF Search
 projects[custom_search][version] = "1.x-dev"
@@ -381,21 +357,6 @@ libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
 libraries[chosen][directory] = "chosen"
 
-libraries[d3][destination] = "libraries"
-libraries[d3][download][type] = "get"
-libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
-libraries[d3][directory] = "d3"
-
-libraries[qtip][destination] = "libraries"
-libraries[qtip][download][type] = "get"
-libraries[qtip][download][url] = "https://raw.githubusercontent.com/Craga89/qTip1/master/1.0.0-rc3/jquery.qtip-1.0.0-rc3.min.js"
-libraries[qtip][directory] = "qtip"
-
-libraries[rickshaw][destination] = "libraries"
-libraries[rickshaw][download][type] = "get"
-libraries[rickshaw][download][url] = https://github.com/shutterstock/rickshaw/archive/v1.5.0.zip
-libraries[rickshaw][directory] = "rickshaw"
-
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
@@ -408,3 +369,10 @@ projects[ember][type] = "theme"
 projects[ember][subdir] = "contrib"
 projects[ember][download][type] = "git"
 projects[ember][download][branch] = "7.x-2.x"
+
+projects[zurb-foundation][version] = "5.x-dev"
+projects[zurb-foundation][type] = "theme"
+projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][download][type] = "git"
+projects[zurb-foundation][download][revision] = "d4c28f1"
+projects[zurb-foundation][download][branch] = "7.x-5.x"
