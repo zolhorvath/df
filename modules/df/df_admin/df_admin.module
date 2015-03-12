@@ -142,3 +142,33 @@ function df_admin_revert_all() {
   // Revert all Features (cleanup everything).
   features_revert();
 }
+
+/**
+ * Helper function to return all DFS modules.
+ */
+function df_get_scenario_modules() {
+  $scenarios = array();
+  $modules = system_rebuild_module_data();
+  foreach ($modules as $name => $module) {
+    if ($module->info['package'] == 'Demo Framework Scenarios') {
+      $scenarios[$name] = $module;
+    }
+  }
+  return $scenarios;
+}
+
+/**
+ * Defines a library for the jquery-browser plugin
+ */
+function df_admin_library() {
+  $libraries['jquery-browser'] = array(
+    'title' => 'jQuery Browser Plugin',
+    'website' => 'https://github.com/gabceb/jquery-browser-plugin',
+    'version' => 'dev',
+    'js' => array(
+      drupal_get_path('module', 'df_admin') . '/js/jquery.browser.min.js' => array(),
+    ),
+  );
+  return $libraries;
+}
+

@@ -91,6 +91,10 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
   $operations[] = array('drupal_flush_all_caches', array(''));
   $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
 
+  // Rebuild defaultconfig (cleanup permissions).
+  $operations[] = array('defaultconfig_rebuild_all', array(''));
+  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $module));
+
   // Clear messages for non-Drush users providing a cleaner scenario reset.
   if (!drupal_is_cli()) {
     $messages = array('completed', 'status', 'warning');

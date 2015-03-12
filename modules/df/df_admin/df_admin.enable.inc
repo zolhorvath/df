@@ -29,7 +29,7 @@ function df_admin_enable_scenario($module) {
     }
   }
 
-  // Enable and revert the scenario feature.
+  // Enable the scenario feature.
   if (!_df_admin_enable_feature($module)) {
     drupal_set_message(t('Enablement of @module failed.', array('@module' => $module)), 'error');
     return FALSE;
@@ -42,6 +42,7 @@ function df_admin_enable_scenario($module) {
     $token = drupal_get_token(DRUPAL_ROOT . '/df/reset/' . $module);
     drupal_goto($path, array('query' => array('token' => $token)));
   }
+
   return TRUE;
 }
 

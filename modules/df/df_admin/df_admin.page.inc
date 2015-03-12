@@ -18,25 +18,23 @@ function df_admin_page() {
 
   // Render Scenarios
   $list = array();
-  $modules = system_rebuild_module_data();
+  $modules = df_get_scenario_modules();
   foreach ($modules as $name => $module) {
-    if ($module->info['package'] == 'Demo Framework Scenarios') {
-      // Compile individual scenario info array.
-      $list[$module->name] = array(
-        'name' => $module->info['name'],
-        'link' => _df_admin_dfs_link($module),
-        'description' => $module->info['description'],
-      );
-      // Append optional screenshot to scenario's info array.
-      $screenshot = drupal_get_path('module', $module->name) . '/screenshot.png';
-      if (file_exists($screenshot)) {
-        $list[$module->name]['screenshot'] = '/' . $screenshot;
-      }
-      // Add optional advanced_help topic to scenario info array.
-      if (isset($advanced_help[$module->name])) {
-        $first_topic = array_shift($advanced_help[$module->name]);
-        $list[$module->name]['help'] = theme('advanced_help_topic', array('module' => $module->name, 'topic' => $first_topic['name'], 'type' => t('Scenario script')));
-      }
+    // Compile individual scenario info array.
+    $list[$module->name] = array(
+      'name' => $module->info['name'],
+      'link' => _df_admin_dfs_link($module),
+      'description' => $module->info['description'],
+    );
+    // Append optional screenshot to scenario's info array.
+    $screenshot = drupal_get_path('module', $module->name) . '/screenshot.png';
+    if (file_exists($screenshot)) {
+      $list[$module->name]['screenshot'] = '/' . $screenshot;
+    }
+    // Add optional advanced_help topic to scenario info array.
+    if (isset($advanced_help[$module->name])) {
+      $first_topic = array_shift($advanced_help[$module->name]);
+      $list[$module->name]['help'] = theme('advanced_help_topic', array('module' => $module->name, 'topic' => $first_topic['name'], 'type' => t('Scenario script')));
     }
   }
   $page = array(
