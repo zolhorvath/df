@@ -15,6 +15,7 @@ dependencies[] = feeds_jsonpath_parser
 dependencies[] = feeds_ui
 dependencies[] = field_group
 dependencies[] = import
+dependencies[] = lightning_admin
 dependencies[] = migrate
 dependencies[] = migrate_extras
 dependencies[] = migrate_ui
