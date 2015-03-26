@@ -10,53 +10,6 @@
 function df_engage_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-df_engage_block-field_content_reference'
-  $field_instances['bean-df_engage_block-field_content_reference'] = array(
-    'bundle' => 'df_engage_block',
-    'default_value' => NULL,
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 1,
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-          'view_mode' => 'featured',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_content_reference',
-    'label' => 'Content',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'status' => 0,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 11,
-    ),
-  );
-
   // Exported field_instance: 'node-organic_group-body'
   $field_instances['node-organic_group-body'] = array(
     'bundle' => 'organic_group',

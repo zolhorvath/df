@@ -140,7 +140,6 @@ function df_engage_strongarm() {
   $strongarm->name = 'uuid_features_entity_bean';
   $strongarm->value = array(
     'bean_tax_related' => 'bean_tax_related',
-    'df_engage_block' => 'df_engage_block',
     'bean_tax_listing' => 0,
   );
   $export['uuid_features_entity_bean'] = $strongarm;
@@ -189,7 +188,6 @@ function df_engage_strongarm() {
   $strongarm->value = array(
     'bean_tax_listing' => 0,
     'bean_tax_related' => 0,
-    'df_engage_block' => 0,
   );
   $export['uuid_features_file_bean'] = $strongarm;
 

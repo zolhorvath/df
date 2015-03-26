@@ -21,37 +21,11 @@ function df_engage_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(
-      'DemoFrameworkBaseGroups' => array('class_name' => 'DemoFrameworkBaseGroups'),
-      'DemoFrameworkBaseNodesGroup' => array('class_name' => 'DemoFrameworkBaseNodesGroup'),
-      'DemoFrameworkBaseNodesUUID' => array('class_name' => 'DemoFrameworkBaseNodesUUID'),
+      'DemoFrameworkBaseGroups' => array('class_name' => 'DemoFrameworkBaseGroups', 'group_name' => 'df'),
+      'DemoFrameworkBaseNodesGroup' => array('class_name' => 'DemoFrameworkBaseNodesGroup', 'group_name' => 'df'),
+      'DemoFrameworkBaseNodesUUID' => array('class_name' => 'DemoFrameworkBaseNodesUUID', 'group_name' => 'df'),
     ),
   );
   return $api;
-}
-
-/**
- * Implements hook_bean_types_api_info().
- */
-function df_engage_bean_types_api_info() {
-  return array('api' => 4);
-}
-
-/**
- * Implements hook_bean_types().
- */
-function df_engage_bean_types() {
-  $plugins = array();
-  $plugin_path = drupal_get_path('module', 'df_engage') . '/plugins';
-  $plugins['df_engage_block'] = array(
-    'label' => t('Engage'),
-    'description' => t('A block used for personalization and testing.'),
-    'handler' => array(
-      'class' => 'EngageBlock',
-      'parent' => 'bean',
-    ),
-    'path' => $plugin_path,
-    'file' => 'EngageBlock.class.php',
-  );
-  return $plugins;
 }
 

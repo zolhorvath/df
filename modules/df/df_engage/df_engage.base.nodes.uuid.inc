@@ -5,7 +5,7 @@
  *  Migrations for Nodes with UUIDs.
  */
 
-class DemoFrameworkBaseNodesUUID extends ImportBaseNodes {
+class DemoFrameworkBaseNodesUUID extends LightningModerationNodes {
 
   public function __construct($arguments) {
     parent::__construct($arguments);
