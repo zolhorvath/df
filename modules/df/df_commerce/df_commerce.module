@@ -59,7 +59,7 @@ function df_commerce_migrate_api() {
  * Implements hook_entity_insert().
  */
 function df_commerce_entity_insert($entity, $type) {
-  if ($type == 'user' && isset($entity->migrate) && variable_get('df_commerce_add_sample_addresses', TRUE) == TRUE) {
+  if ($type == 'user' && isset($entity->migrate) && variable_get('df_commerce_add_sample_addresses', FALSE)) {
     // Create a billing customer profile.
     $billing_profile = commerce_customer_profile_new('billing', $entity->uid);
     $billing_profile->commerce_customer_address[LANGUAGE_NONE][0]['name_line'] = 'Sample Customer';
@@ -83,7 +83,7 @@ function df_commerce_entity_insert($entity, $type) {
     commerce_addressbook_set_default_profile($shipping_profile);
 
     // Create sample orders for the user.
-    if (variable_get('df_commerce_add_sample_orders', TRUE) == TRUE) {
+    if (variable_get('df_commerce_add_sample_orders', FALSE)) {
       _df_commerce_create_order($entity->uid, 1, TRUE);
       _df_commerce_create_order($entity->uid, 2, FALSE);
     }

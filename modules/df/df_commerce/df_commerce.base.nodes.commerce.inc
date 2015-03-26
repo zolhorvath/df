@@ -5,7 +5,7 @@
  *  Migrations for Commerce Nodes with Product References.
  */
 
-class DemoFrameworkBaseCommerceNodes extends ImportBaseNodes {
+class DemoFrameworkBaseCommerceNodes extends LightningModerationNodes {
 
   public function __construct($arguments) {
     parent::__construct($arguments);

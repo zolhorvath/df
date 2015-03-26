@@ -13,7 +13,7 @@ function df_translate_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(
-      'DemoFrameworkBaseNodesTranslations' => array('class_name' => 'DemoFrameworkBaseNodesTranslations'),
+      'DemoFrameworkBaseNodesTranslations' => array('class_name' => 'DemoFrameworkBaseNodesTranslations', 'group_name' => 'df'),
     ),
   );
   return $api;
