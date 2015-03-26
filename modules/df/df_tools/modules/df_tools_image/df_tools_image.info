@@ -1,0 +1,8 @@
+name = DF Tools Image
+description = Helpful image tools for scenarios.
+core = 7.x
+package = Demo Framework Tools
+version = 7.x-1.0
+project = df_tools_image
+dependencies[] = image
+datestamp = 1368820312
