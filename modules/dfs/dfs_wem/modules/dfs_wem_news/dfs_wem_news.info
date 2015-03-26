@@ -8,6 +8,7 @@ dependencies[] = assemble
 dependencies[] = collection
 dependencies[] = ctools
 dependencies[] = curate
+dependencies[] = df_tools_fpp
 dependencies[] = dfs_wem
 dependencies[] = features
 dependencies[] = field_group

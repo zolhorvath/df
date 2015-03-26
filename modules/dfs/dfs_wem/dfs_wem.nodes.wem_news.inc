@@ -24,10 +24,6 @@ class DFSWEMNewsNodes extends DemoFrameworkBaseNodesUUID {
     $this->addFieldMapping('field_wem_video:file_class')->defaultValue('MigrateFileFid');
     // Taxonomy
     $this->addFieldMapping('field_wem_interests', 'interests');
-    // Workbench
-    $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
-    // Created
-    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
     // Persona
     $this->addFieldMapping('field_persona', 'persona');
     // Site Section

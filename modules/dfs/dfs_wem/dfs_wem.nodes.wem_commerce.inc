@@ -17,12 +17,8 @@ class DFSWEMCommerceNodes extends DemoFrameworkBaseCommerceNodes {
     // Commerce
     $this->addFieldMapping('field_wem_product_ref', 'skus');
     $this->addFieldMapping('field_wem_com_rel_interests', 'interests');
-    // Workbench
-    $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
     // UUID
     $this->addFieldMapping('uuid', 'uuid');
-    // Created
-    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
     // Persona
     $this->addFieldMapping('field_persona', 'persona');
     // Site Section

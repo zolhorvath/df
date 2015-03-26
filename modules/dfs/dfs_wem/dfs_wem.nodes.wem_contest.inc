@@ -21,10 +21,6 @@ class DFSWEMContestNodes extends DemoFrameworkBaseNodesUUID {
     $this->addFieldMapping('field_contest_image:destination_file', 'filename');
     // Taxonomy
     $this->addFieldMapping('field_contest_interests', 'interests');
-    // Workbench
-    $this->addFieldMapping('workbench_moderation_state_new', 'workbench_moderation_state_new')->defaultValue('published');
-    // Created
-    $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
     // Persona
     $this->addFieldMapping('field_persona', 'persona');
     // Site Section

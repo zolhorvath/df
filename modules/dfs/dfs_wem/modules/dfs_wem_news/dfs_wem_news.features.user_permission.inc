@@ -15,7 +15,9 @@ function dfs_wem_news_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node wem_news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
       'marketer' => 'marketer',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'panelizer',
   );

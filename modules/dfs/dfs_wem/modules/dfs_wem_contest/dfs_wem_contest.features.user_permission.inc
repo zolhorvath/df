@@ -15,7 +15,9 @@ function dfs_wem_contest_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node wem_contest content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
       'marketer' => 'marketer',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'panelizer',
   );
