@@ -1,0 +1,9 @@
+name = DF Tools User
+description = Contains base migrations that allow Users to be imported from a CSV
+core = 7.x
+package = Demo Framework Tools
+version = 7.x-1.0
+project = df_tools_user
+
+; Include Migration class
+files[] = df_tools_user.users.inc
