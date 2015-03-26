@@ -13,15 +13,23 @@
  */
 function df_install() {
   // Enable default theme.
-  theme_enable(array('demonstratie_core'));
-  variable_set('theme_default', 'demonstratie_core');
+  $theme = 'zurb_foundation';
+  theme_enable(array($theme));
+  variable_set('theme_default', $theme);
 
-  // Disable bartik.
-  theme_disable(array('bartik'));
+  // Enable admin theme.
+  $admin_theme = 'ember';
+  theme_enable(array($admin_theme));
+  variable_set('admin_theme', $admin_theme);
+
+  // Disable bartik and seven.
+  theme_disable(array('bartik', 'seven'));
+
+  // Use admin theme when editing nodes.
+  variable_set('node_admin_theme', '1');
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'demonstratie_core');
-  $admin_theme = 'ember';
+  $default_theme = variable_get('theme_default', $theme);
   $blocks = array(
     array(
       'module' => 'system',
@@ -30,16 +38,6 @@ function df_install() {
       'status' => 1,
       'weight' => 0,
       'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'search',
-      'delta' => 'form',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -1,
-      'region' => 'search',
       'pages' => '',
       'cache' => -1,
     ),
@@ -137,30 +135,6 @@ function df_install() {
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
-
-  // Enable Ember theme.
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'ember')
-    ->execute();
-
-  // Set admin theme to Ember.
-  variable_set('admin_theme', 'ember');
-
-  // Use admin theme when editing nodes.
-  variable_set('node_admin_theme', '1');
-
-  // Set jQuery to version 1.7.
-  variable_set('jquery_update_compression_type', 'min');
-  variable_set('jquery_update_jquery_cdn', 'none');
-  variable_set('jquery_update_jquery_version', '1.7');
-
-  // Use the source version of Modernizr since the build process can't produce
-  // a minified version from the library.
-  $variants = variable_get('navbar_libraries_variants', array());
-  $variants['modernizr'] = 'source';
-  variable_set('navbar_libraries_variants', $variants);
 }
 
 /**
@@ -190,12 +164,6 @@ function df_install_finished(&$install_state) {
   // registered by the installation profile are registered correctly.
   drupal_flush_all_caches();
 
-  // Turn off error reporting.
-  variable_set('error_level', 0);
-
-  // Turn off "Poor Man's Cron."
-  variable_set('cron_safe_threshold', 0);
-
   // Remember the install profile in use.
   variable_set('install_profile', drupal_get_profile());
 
@@ -224,11 +192,20 @@ function df_install_finished(&$install_state) {
   // Rebuild all Default Config (permissions cleanup).
   defaultconfig_rebuild_all();
 
+  // Register static migrations via Migrate API.
+  migrate_get_module_apis();
+
   // Remove all non-error messages.
   $messages = array('completed', 'status', 'warning');
   foreach ($messages as $message) {
     drupal_get_messages($message, TRUE);
   }
+
+  // Turn off error reporting.
+  variable_set('error_level', 0);
+
+  // Turn off "Poor Man's Cron."
+  variable_set('cron_safe_threshold', 0);
 
   // Disable Update manager as `drush site-install` enables it by default.
   if (drupal_is_cli() && module_exists('update')) {
