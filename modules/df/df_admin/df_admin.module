@@ -7,6 +7,21 @@
 include_once 'df_admin.features.inc';
 
 /**
+ * Implements hook_migrate_api().
+ */
+function df_admin_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'groups' => array(
+      'df' => array(
+        'title' => t('Demo Framework'),
+      ),
+    ),
+  );
+  return $api;
+}
+
+/**
  * Implements hook_menu().
  */
 function df_admin_menu() {
@@ -158,17 +173,23 @@ function df_get_scenario_modules() {
 }
 
 /**
- * Defines a library for the jquery-browser plugin
+ * Defines a library for the jquery-migrate plugin
  */
 function df_admin_library() {
-  $libraries['jquery-browser'] = array(
-    'title' => 'jQuery Browser Plugin',
-    'website' => 'https://github.com/gabceb/jquery-browser-plugin',
-    'version' => 'dev',
+  $libraries['jquery-migrate'] = array(
+    'title' => 'jQuery Migrate Plugin',
+    'website' => 'https://github.com/jquery/jquery-migrate',
+    'version' => '1.2.1',
     'js' => array(
-      drupal_get_path('module', 'df_admin') . '/js/jquery.browser.min.js' => array(),
+      drupal_get_path('module', 'df_admin') . '/js/jquery-migrate-1.2.1.min.js' => array(),
     ),
   );
   return $libraries;
 }
 
+/**
+ * Adds jQuery 1.9+ compatibility by adding $.browser and other components back
+ */
+function df_admin_page_alter(&$page) {
+  drupal_add_library('df_admin', 'jquery-migrate', TRUE);
+}
