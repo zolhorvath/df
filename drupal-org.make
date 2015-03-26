@@ -49,26 +49,9 @@ projects[job_scheduler][version] = "2.0-alpha3"
 projects[job_scheduler][type] = "module"
 projects[job_scheduler][subdir] = "contrib"
 
-projects[import][version] = "1.x-dev"
-projects[import][type] = "module"
-projects[import][subdir] = "contrib"
-projects[import][download][type] = "git"
-projects[import][download][branch] = "7.x-1.x"
-
 projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
-
-projects[migrate][version] = "2.7"
-projects[migrate][type] = "module"
-projects[migrate][subdir] = "contrib"
-
-projects[migrate_extras][version] = "2.5"
-projects[migrate_extras][type] = "module"
-projects[migrate_extras][subdir] = "contrib"
-; Add support for UUID module for 7.x
-; http://drupal.org/node/1870886
-projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
 
 ; DF Commerce
 projects[addressfield][version] = "1.0-beta4"
@@ -160,6 +143,13 @@ projects[message_notify][subdir] = "contrib"
 projects[views_megarow][version] = "1.4"
 projects[views_megarow][type] = "module"
 projects[views_megarow][subdir] = "contrib"
+
+projects[views_slideshow][version] = "1.x-dev"
+projects[views_slideshow][type] = "module"
+projects[views_slideshow][subdir] = "contrib"
+projects[views_slideshow][download][type] = "git"
+projects[views_slideshow][download][revision] = "3588fde"
+projects[views_slideshow][download][branch] = "7.x-1.x"
 
 ; DF Connect
 projects[google_analytics][version] = "1.3"
@@ -355,7 +345,10 @@ projects[variable][subdir] = "contrib"
 libraries[chosen][destination] = "libraries"
 libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
-libraries[chosen][directory] = "chosen"
+
+libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
@@ -373,6 +366,7 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
-projects[zurb-foundation][download][revision] = "d4c28f1"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
+
