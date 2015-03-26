@@ -1,0 +1,8 @@
+name = DF Tools Menu
+description = Reusable Menu plugins used by scenarios.
+core = 7.x
+package = Demo Framework Tools
+version = 7.x-1.0
+project = df_tools_bean
+dependencies[] = menu
+datestamp = 1368820311
