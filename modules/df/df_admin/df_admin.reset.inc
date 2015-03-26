@@ -71,8 +71,9 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
 
     // Confirm if there was an attempt to run scenario migrations.
     $migrations_count = count($migrations[$scenario]);
-    if ($migrations_count > 0) {
-      $operations[] = array('drupal_set_message', array(t('@number demo migrations attempted.', array('@number' => $migrations_count)), 'status'));
+    if ($migrations_count > 0 && drupal_is_cli()) {
+      $message = $migrations_count . ' demo migrations attempted.';
+      $operations[] = array('drush_print', array($message, 0, NULL, TRUE));
     }
 
   }
@@ -101,6 +102,11 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
     foreach ($messages as $message) {
       $operations[] = array('drupal_get_messages', array($message, TRUE));
     }
+  }
+
+  // Seed image derivatives when function is called via Drush.
+  if (drupal_is_cli() && module_enable(array('df_tools_image'))) {
+    $operations[] = array('drush_invoke_process', array('@self', 'df-sd', array(), array(), TRUE));
   }
 
   // Rollback and Import migration operations via Batch API.
