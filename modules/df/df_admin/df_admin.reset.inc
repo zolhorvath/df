@@ -39,7 +39,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
   $routines = array();
   $routines = module_invoke_all('df_pre_import');
   drupal_alter('df_pre_import', $routines);
-  
+
   // Add pre-import functions to the batch process.
   foreach ($routines as $routine) {
     $operations[] = $routine;
@@ -82,7 +82,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
   $routines = array();
   $routines = module_invoke_all('df_post_import');
   drupal_alter('df_post_import', $routines);
- 
+
   // Add post-import functions to the batch process.
   foreach ($routines as $routine) {
     $operations[] = $routine;
@@ -94,7 +94,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
 
   // Rebuild defaultconfig (cleanup permissions).
   $operations[] = array('defaultconfig_rebuild_all', array(''));
-  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $module));
+  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $scenario));
 
   // Clear messages for non-Drush users providing a cleaner scenario reset.
   if (!drupal_is_cli()) {
@@ -105,24 +105,26 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
   }
 
   // Seed image derivatives when function is called via Drush.
-  if (drupal_is_cli() && module_enable(array('df_tools_image'))) {
+  if (drupal_is_cli()) {
     $operations[] = array('drush_invoke_process', array('@self', 'df-sd', array(), array(), TRUE));
   }
 
   // Rollback and Import migration operations via Batch API.
   if (count($operations) > 0) {
     $batch = array(
-        'operations' => $operations,
-        'title' => t('Import processing'),
-        'init_message' => t('Starting import process'),
-        'file' => drupal_get_path('module', 'migrate_ui') . '/migrate_ui.pages.inc',
-        'progress_message' => t('Importing Demo Framework Scenario...'),
-        'error_message' => t('An error occurred. Some or all of the import processing has failed.'),
-        'finished' => 'df_admin_import_batch_finish',
-        );
+      'operations' => $operations,
+      'title' => t('Import processing'),
+      'init_message' => t('Starting import process'),
+      'file' => drupal_get_path('module', 'migrate_ui') . '/migrate_ui.pages.inc',
+      'progress_message' => t('Importing Demo Framework Scenario...'),
+      'error_message' => t('An error occurred. Some or all of the import processing has failed.'),
+      'finished' => 'df_admin_batch_finish',
+    );
     batch_set($batch);
     if (!drupal_is_cli()) {
-      batch_process('');
+      $options = array('query' => array('token' => drupal_get_token(DRUPAL_ROOT . '/df/imagestyles')));
+      // The ability to send an array for $redirect is undocumented on Drupal.org, yay!
+      batch_process(array('admin/df/imagestyles', $options));
     }
     else {
       drush_backend_batch_process();
@@ -133,23 +135,3 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
     drupal_goto('');
   }
 }
-
-/**
- * Batch API finished callback - report results
- *
- * @param $success
- *  Ignored
- * @param $results
- *  List of results from batch processing
- * @param $operations
- *  Ignored
- */
-function df_admin_import_batch_finish($success, $results, $operations) {
-  unset($results['stopped']);
-  if (user_access(MIGRATE_ACCESS_ADVANCED)) {
-    foreach ($results as $result) {
-      drupal_set_message($result);
-    }
-  }
-}
-
