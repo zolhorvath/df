@@ -24,6 +24,7 @@ function df_engage_migrate_api() {
       'DemoFrameworkBaseGroups' => array('class_name' => 'DemoFrameworkBaseGroups', 'group_name' => 'df'),
       'DemoFrameworkBaseNodesGroup' => array('class_name' => 'DemoFrameworkBaseNodesGroup', 'group_name' => 'df'),
       'DemoFrameworkBaseNodesUUID' => array('class_name' => 'DemoFrameworkBaseNodesUUID', 'group_name' => 'df'),
+      'DemoFrameworkSiteSectionTerms' => array('class_name' => 'DemoFrameworkSiteSectionTerms', 'group_name' => 'df'),
     ),
   );
   return $api;
