@@ -27,6 +27,7 @@ dependencies[] = responsive_preview
 dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = token
+dependencies[] = df_tools_image
 stylesheets[all][] = css/df_admin.navbar.icons.css
 datestamp = 1390335289
 features[ctools][] = field_group:field_group:1

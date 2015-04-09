@@ -193,3 +193,22 @@ function df_admin_library() {
 function df_admin_page_alter(&$page) {
   drupal_add_library('df_admin', 'jquery-migrate', TRUE);
 }
+
+/**
+ * Batch API finished callback - report results
+ *
+ * @param $success
+ *  Ignored
+ * @param $results
+ *  List of results from batch processing
+ * @param $operations
+ *  Ignored
+ */
+function df_admin_batch_finish($success, $results, $operations) {
+  unset($results['stopped']);
+  if (user_access(MIGRATE_ACCESS_ADVANCED)) {
+    foreach ($results as $result) {
+      drupal_set_message($result['message']);
+    }
+  }
+}
