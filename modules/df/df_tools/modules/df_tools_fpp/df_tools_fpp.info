@@ -7,3 +7,4 @@ project = df_tools_fpp
 
 ; Include Migration class
 files[] = df_tools_fpp.raw_html.inc
+files[] = df_tools_fpp.text.inc
