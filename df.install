@@ -196,7 +196,7 @@ function df_install_finished(&$install_state) {
   migrate_get_module_apis();
 
   // Remove all non-error messages.
-  $messages = array('completed', 'status', 'warning');
+  $messages = array('completed', 'status', 'warning', 'error');
   foreach ($messages as $message) {
     drupal_get_messages($message, TRUE);
   }
