@@ -20,6 +20,7 @@ function df_admin_drush_command() {
     'options' => array(
       'import' => 'Boolean, allows content to be imported post-enablement',
       'rollback' => 'Boolean, rollback existing content post-enablement',
+      'pre' => 'Comma separated list of modules to enable before enabling the scenario'
     ),
     'aliases' => array('df-es'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
@@ -37,6 +38,12 @@ function df_admin_drush_command() {
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
   );
 
+  $items['uninstall-scenario'] = array(
+    'description' => 'Uninstalls the current demo scenario',
+    'aliases' => array('df-us'),
+    'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
+  );
+
   return $items;
 }
 
@@ -47,15 +54,23 @@ function df_admin_drush_command() {
  *   The machine name of the scenario feature.
  */
 function drush_df_admin_enable_scenario($scenario) {
+  // Determine the current alias
+  $alias_context = drush_get_context('alias');
+  $alias = !empty($alias_context) ? $alias_context : '@self';
+
+  // If the --pre option is passed, attempt to enable modules before enabling the scenario
+  if ($pre = drush_get_option('pre', FALSE)) {
+    drush_invoke_process($alias, 'en', array($pre));
+  }
+
   $import = drush_get_option('import', TRUE);
   module_load_include('inc', 'df_admin', 'df_admin.enable');
-  
+
   if (df_admin_enable_scenario($scenario)) {
     // Optionally run the batch import of content.
     if ($import != FALSE) {
       $rollback = drush_get_option('rollback', FALSE);
-      module_load_include('inc', 'df_admin', 'df_admin.reset');
-      df_admin_reset_scenario($scenario, $rollback);
+      drush_invoke_process($alias, 'df-rs', array($scenario), array('rollback' => $rollback));
     }
   }
 }
@@ -74,3 +89,10 @@ function drush_df_admin_reset_scenario($scenario) {
   df_admin_reset_scenario($scenario, $rollback);
 }
 
+/**
+ * Uninstalls the current scenario.
+ */
+function drush_df_admin_uninstall_scenario() {
+  module_load_include('inc', 'df_admin', 'df_admin.uninstall');
+  df_admin_uninstall_scenario();
+}

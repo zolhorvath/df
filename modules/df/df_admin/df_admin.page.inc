@@ -19,11 +19,16 @@ function df_admin_page() {
   // Render Scenarios
   $list = array();
   $modules = df_get_scenario_modules();
+  // Check if developer mode is on
+  if (!variable_get('df_developer_mode', FALSE)) {
+    // Remove the Dev scenario if we're not in developer mode
+    unset($modules['dfs_dev']);
+  }
   foreach ($modules as $name => $module) {
     // Compile individual scenario info array.
     $list[$module->name] = array(
       'name' => $module->info['name'],
-      'link' => _df_admin_dfs_link($module),
+      'links' => _df_admin_dfs_links($module),
       'description' => $module->info['description'],
     );
     // Append optional screenshot to scenario's info array.
@@ -47,11 +52,19 @@ function df_admin_page() {
 /**
  * Psuedo-private function used by df_admin_page callback.
  * @return
- *   returns a string of text including a link.
+ *   returns an array of links.
  */
-function _df_admin_dfs_link($module) {
-  $action = (!module_exists($module->name) ? 'enable' : 'reset');
-  $path = 'admin/df/' . $action  . '/' . $module->name;
-  $token = drupal_get_token(DRUPAL_ROOT . '/df/' . $action  . '/' . $module->name);
-  return  l(t(ucwords($action)), $path, array('attributes' => array('class' => array('dfs-link')), 'query' => array('token' => $token)));
+function _df_admin_dfs_links($module) {
+  $links = array();
+  $action = !module_exists($module->name) ? 'enable' : 'reset';
+  $path = 'admin/df/' . $action . '/' . $module->name;
+  $token = drupal_get_token(DRUPAL_ROOT . '/df/' . $action . '/' . $module->name);
+  $links[] = l(t(ucwords($action)), $path, array('attributes' => array('class' => array('dfs-link')), 'query' => array('token' => $token)));
+  // Add an uninstall button if needed
+  if ($action == 'reset') {
+    $path = 'admin/df/uninstall';
+    $token = drupal_get_token(DRUPAL_ROOT . '/df/uninstall');
+    $links[] = l(t('Uninstall'), $path, array('attributes' => array('class' => array('dfs-link')), 'query' => array('token' => $token)));
+  }
+  return $links;
 }

@@ -13,7 +13,9 @@
       <h4 class="dfs-name"><?php echo $scenario['name']; ?></h4>
       <div class="dfs-description"><?php echo $scenario['description']; ?></div>
       <div class="dfs-link-wrapper">
-        <div class="dfs-link button"><?php echo $scenario['link']; ?></div>
+        <?php foreach ($scenario['links'] as $link): ?>
+          <div class="dfs-link button"><?php echo $link; ?></div>
+        <?php endforeach ?>
         <?php if (isset($scenario['help'])): ?><div class="dfs-link button"><?php echo $scenario['help']; ?></div><?php endif; ?>
       </div>
     </div>

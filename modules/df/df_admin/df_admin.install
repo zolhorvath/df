@@ -27,4 +27,7 @@ function df_admin_install() {
 
   // Turn on CSS aggregation by default.
   variable_set('preprocess_css', TRUE);
+
+  // Set a base value for the currently installed scenario
+  variable_set('df_admin_installed_scenario', FALSE);
 }

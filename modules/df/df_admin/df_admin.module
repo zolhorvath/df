@@ -49,6 +49,13 @@ function df_admin_menu() {
     'type' => MENU_CALLBACK,
     'file' => 'df_admin.reset.inc',
   );
+  $items['admin/df/uninstall'] = array(
+    'page callback' => 'df_admin_page_uninstall',
+    'page arguments' => array(),
+    'access arguments' => array('administer demo framework'),
+    'type' => MENU_CALLBACK,
+    'file' => 'df_admin.uninstall.inc',
+  );
 
   return $items;
 }

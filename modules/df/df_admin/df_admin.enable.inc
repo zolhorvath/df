@@ -19,13 +19,30 @@ function df_admin_page_enable($module) {
  * Function to enable a scenario.
  */
 function df_admin_enable_scenario($module) {
+  // If the scenario is already enabled, exit.
+  if (module_exists($module)) {
+    drupal_set_message(t('Scenario @module is already installed.', array('@module' => $module)), 'status');
+    return FALSE;
+  }
+
+  // Check if it appears another scenario is installed.
+  if (variable_get('df_admin_installed_scenario', FALSE)) {
+    // Uninstall currently installed scenario, if any is installed.
+    module_load_include('inc', 'df_admin', 'df_admin.uninstall');
+    // Passing "$module" tells the uninstall batch to redirect back here when it's finished.
+    df_admin_uninstall_scenario($module);
+  }
+
+  // Load info file to grab dependencies.
+  if (!$info = drupal_parse_info_file(drupal_get_path('module', $module) . '/' . $module . '.info')) {
+    drupal_set_message(t('Unable to load Scenario .info file'), 'error');
+    return FALSE;
+  }
+
   // Enable the scenario feature's DF dependencies.
-  $module_list = system_rebuild_module_data();
-  if (isset($module_list[$module])) {
-    foreach ($module_list[$module]->info['dependencies'] as $dependency) {
-      if (substr($dependency, 0, 2) == 'df_') {
-        _df_admin_enable_feature($dependency);
-      }
+  foreach ($info['dependencies'] as $dependency) {
+    if (substr($dependency, 0, 2) == 'df_') {
+      _df_admin_enable_feature($dependency);
     }
   }
 
@@ -34,6 +51,9 @@ function df_admin_enable_scenario($module) {
     drupal_set_message(t('Enablement of @module failed.', array('@module' => $module)), 'error');
     return FALSE;
   }
+
+  // Change the system variable that tracks what scenario is installed.
+  variable_set('df_admin_installed_scenario', $module);
 
   // Not all DFS require a batch content import, but some need this.
   // Resolves to the DF admin page if no reset callback present.
@@ -65,4 +85,3 @@ function _df_admin_enable_feature($module) {
   drupal_set_message(t('@module is already enabled.', array('@module' => $module)), 'warning');
   return FALSE;
 }
-
