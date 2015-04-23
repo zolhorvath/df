@@ -29,15 +29,6 @@ function df_engage_defaultconfig_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer group'.
-  $permissions['administer group'] = array(
-    'name' => 'administer group',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'og',
-  );
-
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
@@ -90,34 +81,6 @@ function df_engage_defaultconfig_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'delete any organic_group content'.
-  $permissions['delete any organic_group content'] = array(
-    'name' => 'delete any organic_group content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own organic_group content'.
-  $permissions['delete own organic_group content'] = array(
-    'name' => 'delete own organic_group content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any organic_group content'.
-  $permissions['edit any organic_group content'] = array(
-    'name' => 'edit any organic_group content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own organic_group content'.
-  $permissions['edit own organic_group content'] = array(
-    'name' => 'edit own organic_group content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'select account cancellation method'.
