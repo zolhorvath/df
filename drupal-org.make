@@ -341,6 +341,12 @@ projects[variable][version] = "2.5"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
+; DF Tools requirements
+
+projects[slick][version] = "2.0-beta1"
+projects[slick][type] = "module"
+projects[slick][subdir] = "contrib"
+
 ; Libraries
 libraries[chosen][destination] = "libraries"
 libraries[chosen][download][type] = "get"
@@ -349,6 +355,10 @@ libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases
 libraries[jquery.cycle][destination] = "libraries"
 libraries[jquery.cycle][download][type] = "get"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+
+libraries[slick][destination] = "libraries"
+libraries[slick][download][type] = "get"
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
@@ -366,6 +376,6 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
-
