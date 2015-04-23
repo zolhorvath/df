@@ -37,7 +37,7 @@ class DFLandingNodes extends ImportBaseNodes {
     $this->addFieldMapping('title', 'Title');
   }
 
-  public function prepareRow(&$row) {
+  public function prepareRow($row) {
     // Check for columns that define region content
     foreach ($row as $key => $value) {
       // Set the value of this key to the exploded list of UUIDs
@@ -45,6 +45,7 @@ class DFLandingNodes extends ImportBaseNodes {
         $row->$key = explode(",", $value);
       }
     }
+    return TRUE;
   }
 
   public function complete($entity, stdClass $row) {
