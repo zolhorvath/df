@@ -1,0 +1,46 @@
+<?php
+/**
+ * @file
+ * Code for the DF Tools Hero feature.
+ */
+
+include_once 'df_tools_hero.features.inc';
+
+
+/**
+ * Implements hook_migrate_api
+ */
+function df_tools_hero_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DFHeroFPP' => array('class_name' => 'DFHeroFPP', 'group_name' => 'df'),
+    ),
+  );
+  return $api;
+}
+
+/**
+ * Implements hook_lightning_fpp_types().
+ */
+function df_tools_hero_lightning_fpp_types_alter(&$types) {
+  $icon_path = drupal_get_path('module', 'lightning_fpp') . '/images/';
+  $types['hero'] = array(
+    'title' => 'hero',
+    'icon' => $icon_path . 'icon_media.png',
+    'path' => 'hero',
+  );
+}
+
+/**
+ * Implements hook_preprocess_HOOK.
+ */
+function df_tools_hero_preprocess_fieldable_panels_pane(&$vars) {
+  if ($vars['elements']['#bundle'] == 'hero') {
+    if (!$align = $vars['elements']['#fieldable_panels_pane']->field_hero_text_align[LANGUAGE_NONE][0]['value']) {
+      $align = 'left';
+    }
+    $vars['classes_array'][] = 'hero';
+    $vars['classes_array'][] = 'hero-align-' . str_replace('_', '-', $align);
+  }
+}
