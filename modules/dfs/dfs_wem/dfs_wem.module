@@ -79,8 +79,6 @@ function dfs_wem_df_import_alter(&$migrations) {
  *  Implements hook_post_features_enable_feature().
  */
 function dfs_wem_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'dfs_wem enabled ' . $component . ' component');
   if ($component == 'features_api') {
     migrate_get_module_apis();
   }

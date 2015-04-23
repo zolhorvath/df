@@ -18,6 +18,7 @@ dependencies[] = features
 dependencies[] = i18n_taxonomy
 dependencies[] = image
 dependencies[] = lightning_base
+dependencies[] = lightning_letterbox
 dependencies[] = lightning_roles
 dependencies[] = options
 dependencies[] = panelizer

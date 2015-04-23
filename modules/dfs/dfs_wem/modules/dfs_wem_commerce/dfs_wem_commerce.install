@@ -23,10 +23,11 @@ function dfs_wem_commerce_install() {
       'cache' => -1,
     ),
   );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'title', 'cache'));
+  $query = db_merge('block')
+    ->key(array('module' => 'commerce_cart', 'delta' => 'cart', 'theme' => 'demonstratie_lce'));
+
   foreach ($blocks as $block) {
-    $query->values($block);
+    $query->fields($block);
   }
   $query->execute();
 }
-

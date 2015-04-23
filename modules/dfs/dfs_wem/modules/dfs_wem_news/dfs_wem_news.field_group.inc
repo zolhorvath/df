@@ -77,7 +77,7 @@ function dfs_wem_news_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Media',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_wem_image',
       1 => 'field_wem_video',
@@ -133,11 +133,11 @@ function dfs_wem_news_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
-      0 => 'field_wem_interests',
-      1 => 'field_persona',
-      2 => 'field_site_section',
+      0 => 'field_persona',
+      1 => 'field_site_section',
+      2 => 'field_wem_interests',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -129,5 +129,24 @@ function dfs_wem_strongarm() {
   $strongarm->value = 'Save and add fields';
   $export['save_continue_wem_news'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_node';
+  $strongarm->value = array(
+    'article' => 0,
+    'page' => 0,
+    'commerce' => 0,
+    'landing' => 0,
+    'organic_group' => 0,
+    'wem_commerce' => 0,
+    'wem_contest' => 0,
+    'wem_news' => 0,
+    'wem_product_review' => 0,
+    'wem_tweet' => 0,
+    'webform' => 0,
+  );
+  $export['uuid_features_file_node'] = $strongarm;
+
   return $export;
 }

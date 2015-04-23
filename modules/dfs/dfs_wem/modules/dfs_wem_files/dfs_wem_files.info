@@ -8,6 +8,7 @@ dependencies[] = curate
 dependencies[] = features
 dependencies[] = file
 dependencies[] = file_entity
+dependencies[] = lightning_letterbox
 dependencies[] = media
 dependencies[] = media_youtube
 features[ctools][] = file_entity:file_default_displays:1
