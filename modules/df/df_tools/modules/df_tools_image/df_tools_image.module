@@ -35,11 +35,10 @@ function df_tools_image_page() {
  */
 function df_tools_image_seed_derivatives($dir = '/', $excludes = array(), $includes = array()) {
   if (!module_exists("image")) {
-    return df_tools_image_set_message("This script requires the image module to be enabled.", 'error');
+    drupal_set_message("This script requires the image module to be enabled.", 'error');
+    return;
   }
 
-  // Abstracting the operations out like this reduces the function size, but it also allows
-  //  other modules to get the operations required to process images without running the batch
   $operations = df_tools_image_seed_derivatives_operations($dir, $excludes, $includes);
 
   $batch = array(
@@ -92,7 +91,7 @@ function df_tools_image_seed_derivatives_operations($dir = '/', $excludes = arra
   $message = format_plural($total_count,
     '1 entry is to have its image derivatives created.',
     '@count entries are to have their image derivatives created.');
-  $operations[] = array('df_tools_image_set_message', array($message));
+  $operations[] = array('drush_log', array($message, 'success'));
 
   // Select the files to have derivatives created..
   $files = $query->fields('f', array('fid', 'filename', 'uri', 'timestamp'))
@@ -101,11 +100,11 @@ function df_tools_image_seed_derivatives_operations($dir = '/', $excludes = arra
 
   foreach (image_styles() as $name => $style) {
     if (!empty($excludes) && in_array($style['name'], $excludes)) {
-      $operations[] = array('df_tools_image_set_message', array('Excluding ' . $name));
+      $operations[] = array('drush_log', array('Excluding ' . $name, 'success'));
       continue;
     }
     if (empty($includes[0]) || in_array($style['name'], $includes)) {
-      $operations[] = array('df_tools_image_set_message', array('Processing ' . $name));
+      $operations[] = array('drush_log', array('Processing ' . $name, 'success'));
       $count = 1;
       $last_progress = 0;
       foreach ($files as $file) {
@@ -128,18 +127,4 @@ function df_tools_image_seed_derivatives_operations($dir = '/', $excludes = arra
     }
   }
   return $operations;
-}
-
-/**
- * Sets a message based on the environment.
- */
-function df_tools_image_set_message($message, $type = 'status') {
-  if (drupal_is_cli()) {
-    // drush_log doesn't have the "status" type, set the default to success
-    $type = $type == 'status' ? $type : 'success';
-    drush_log($message, $type);
-  }
-  else {
-    drupal_set_message($message, $type);
-  }
 }
