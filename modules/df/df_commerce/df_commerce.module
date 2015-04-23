@@ -7,14 +7,6 @@
 include_once 'df_commerce.features.inc';
 
 /**
- *  Implements hook_post_features_enable_feature().
- */
-function df_commerce_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'df_commerce enabled ' . $component . ' component');
-}
-
-/**
  * Implements hook_df_pre_import().
  */
 function df_commerce_df_pre_import() {
