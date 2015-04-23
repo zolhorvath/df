@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Provides very basic theme for the Slick slideshow
+ */
+
+.slick .slide__content,.unslick .slide__content {
+    position: relative;
+}
+
+.slick .field-name-field-title,.unslick .field-name-field-title {
+    position: absolute;
+    font-size: 40px;
+    top: 10%;
+    left: 5%;
+}
+
+.slick .field-name-field-body,.unslick .field-name-field-body {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.slick .field-name-field-media img,.unslick .field-name-field-media img {
+    width: 100%;
+}
+
+.slick-dots {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.slick-dots button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.slick__arrow .slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.slick__arrow .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
