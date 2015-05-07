@@ -1,0 +1,8 @@
+name = DF Tools Chaos tools
+description = Modify Chaos tools plugins for scenarios.
+core = 7.x
+package = Demo Framework Tools
+version = 7.x-1.0
+project = df_tools_ctools
+dependencies[] = image
+datestamp = 1368820312
