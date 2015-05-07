@@ -1,0 +1,11 @@
+name = DF Tools Analytics
+description = Reusable Analytics plugins used by scenarios and the Marketers that love them.
+core = 7.x
+package = Demo Framework Tools
+version = 7.x-1.0
+project = df_connect
+project = df_tools_analytics
+dependencies[] = df_tools_analytics_dashboard
+dependencies[] = google_analytics_reports
+dependencies[] = google_analytics_reports_views
+datestamp = 1368820311
