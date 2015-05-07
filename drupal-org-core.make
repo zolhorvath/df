@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.36
+projects[drupal][version] = 7.37
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
@@ -40,7 +40,3 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translation_optional
 ; when JS files are aggregated
 ; http://drupal.org/node/2400287
 projects[drupal][patch][] = "http://drupal.org/files/issues/Issue-2400287-by-hass-Remove-JS-source-and-source-map-D7_0.patch"
-
-; _filter_xss_split() fails on custom HTML elements with dashes in the name
-; http://drupal.org/node/2315255
-projects[drupal][patch][] = "https://drupal.org/files/issues/xss-split-custom-element-dash-tag-name-2315255-11.patch"
