@@ -6,33 +6,29 @@
     width: 100%;
 }
 
+.hero .field-name-field-hero-button-link {
+    margin-top: 10px;
+}
+
 .hero .fieldable-panels-pane {
     position: relative;
 }
 
-.hero .field-name-field-hero-body {
+.hero .hero-elements {
     position: absolute;
     top: 10%;
-}
-
-.hero.hero-align-left .field-name-field-hero-body {
-    left: 5%;
-    text-align: left;
-}
-
-.hero.hero-align-right .field-name-field-hero-body {
     right: 5%;
     text-align: right;
 }
 
-.hero.hero-align-center .field-name-field-hero-body {
-    width: 100%;
-    text-align: center;
+.classy-panel-styles-pane.text-align-left .hero .hero-elements {
+    left: 5%;
+    right: inherit;
+    text-align: left;
 }
 
-.hero.hero-align-center-bottom .field-name-field-hero-body {
+.classy-panel-styles-pane.text-align-center .hero .hero-elements {
     width: 100%;
+    right: inherit;
     text-align: center;
-    bottom: 10%;
-    top: initial;
 }

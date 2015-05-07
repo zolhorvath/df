@@ -46,12 +46,14 @@ class DFHeroFPP extends Migration {
     $this->addFieldMapping('field_hero_image:source_dir')->defaultValue(dirname($import_path) . '/images');
     $this->addFieldMapping('field_hero_image:destination_file', 'filename');
 
-    $this->addFieldMapping('field_hero_body', 'Body');
-    $this->addFieldMapping('field_hero_text_align', 'Align');
+    $this->addFieldMapping('field_hero_headline_1', 'Headline 1');
+    $this->addFieldMapping('field_hero_headline_2', 'Headline 2');
+    $this->addFieldMapping('field_hero_button_link', 'Button Link');
+    $this->addFieldMapping('field_hero_button_link:title', 'Button Title');
 
     $this->addFieldMapping('title', 'Title');
     $this->addFieldMapping('uuid', 'UUID');
-    $this->addFieldMapping('category', 'Category')->defaultValue('Hero Image');
+    $this->addFieldMapping('category', 'Category')->defaultValue('Reusable panes');
 
     $this->addFieldMapping('reusable', 'Reusable')->defaultValue(TRUE);
   }

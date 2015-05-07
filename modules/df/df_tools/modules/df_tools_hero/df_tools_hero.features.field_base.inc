@@ -10,13 +10,49 @@
 function df_tools_hero_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_hero_body'
-  $field_bases['field_hero_body'] = array(
+  // Exported field_base: 'field_hero_button_link'
+  $field_bases['field_hero_button_link'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_hero_body',
+    'field_name' => 'field_hero_button_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'personalize' => array(
+        'agent_type' => 'personalize_target',
+        'enabled' => 0,
+      ),
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_hero_headline_1'
+  $field_bases['field_hero_headline_1'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_hero_headline_1',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -28,13 +64,42 @@ function df_tools_hero_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'max_length' => 255,
       'personalize' => array(
         'agent_type' => 'personalize_target',
         'enabled' => 0,
       ),
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_hero_headline_2'
+  $field_bases['field_hero_headline_2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_hero_headline_2',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'personalize' => array(
+        'agent_type' => 'personalize_target',
+        'enabled' => 0,
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_hero_image'
@@ -64,36 +129,6 @@ function df_tools_hero_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
-  );
-
-  // Exported field_base: 'field_hero_text_align'
-  $field_bases['field_hero_text_align'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_hero_text_align',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'left' => 'Left',
-        'center' => 'Center',
-        'center_bottom' => 'Center Bottom',
-        'right' => 'Right',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   return $field_bases;
