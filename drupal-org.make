@@ -121,13 +121,6 @@ projects[inline_conditions][version] = "1.0-alpha4"
 projects[inline_conditions][type] = "module"
 projects[inline_conditions][subdir] = "contrib"
 
-projects[inline_entity_form][version] = "1.x-dev"
-projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][subdir] = "contrib"
-projects[inline_entity_form][download][type] = "git"
-projects[inline_entity_form][download][revision] = "47ffa63"
-projects[inline_entity_form][download][branch] = "7.x-1.x"
-
 projects[menu_attributes][version] = "1.0-rc3"
 projects[menu_attributes][type] = "module"
 projects[menu_attributes][subdir] = "contrib"
@@ -152,9 +145,26 @@ projects[views_slideshow][download][revision] = "3588fde"
 projects[views_slideshow][download][branch] = "7.x-1.x"
 
 ; DF Connect
+projects[charts][version] = "2.x-dev"
+projects[charts][type] = "module"
+projects[charts][subdir] = "contrib"
+projects[charts][download][type] = "git"
+projects[charts][download][revision] = "050670f"
+projects[charts][download][branch] = "7.x-2.x"
+
 projects[google_analytics][version] = "1.3"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
+
+projects[google_analytics_reports][version] = "3.x-dev"
+projects[google_analytics_reports][type] = "module"
+projects[google_analytics_reports][subdir] = "contrib"
+projects[google_analytics_reports][download][type] = "git"
+projects[google_analytics_reports][download][revision] = "e50321e"
+projects[google_analytics_reports][download][branch] = "7.x-3.x"
+; Migrate from Chart module to Charts
+; http://drupal.org/node/2169159
+projects[google_analytics_reports][patch][2169159] = "http://drupal.org/files/issues/ga_reports-chart-to-charts-2169159-28.patch"
 
 projects[marketo_ma][version] = "1.1"
 projects[marketo_ma][type] = "module"
@@ -163,6 +173,10 @@ projects[marketo_ma][subdir] = "contrib"
 projects[mollom][version] = "2.4"
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
+
+projects[oauth][version] = "3.2"
+projects[oauth][type] = "module"
+projects[oauth][subdir] = "contrib"
 
 projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
@@ -341,7 +355,7 @@ projects[variable][version] = "2.5"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
-; DF Tools requirements
+; DF Tools
 
 projects[slick][version] = "2.0-beta1"
 projects[slick][type] = "module"
