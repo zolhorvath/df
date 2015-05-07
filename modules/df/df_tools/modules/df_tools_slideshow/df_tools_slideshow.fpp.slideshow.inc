@@ -51,7 +51,7 @@ class DFSlideshowFPP extends Migration {
 
     $this->addFieldMapping('title', 'Title');
     $this->addFieldMapping('uuid', 'UUID');
-    $this->addFieldMapping('category', 'Category')->defaultValue('Slideshow');
+    $this->addFieldMapping('category', 'Category')->defaultValue('Reusable panes');
 
     $this->addFieldMapping('reusable', 'Reusable')->defaultValue(TRUE);
   }

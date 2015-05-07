@@ -110,7 +110,7 @@ function df_tools_slideshow_field_default_field_instances() {
     'entity_type' => 'fieldable_panels_pane',
     'field_name' => 'field_media',
     'label' => 'Media',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -129,7 +129,6 @@ function df_tools_slideshow_field_default_field_instances() {
         'allowed_schemes' => array(
           'oembed' => 0,
           'public' => 'public',
-          'youtube' => 0,
         ),
         'allowed_types' => array(
           'audio' => 0,
@@ -142,7 +141,6 @@ function df_tools_slideshow_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
-          'youtube' => 0,
         ),
       ),
       'type' => 'media_generic',

@@ -50,13 +50,15 @@ function df_tools_slideshow_preprocess_fieldable_panels_pane(&$vars) {
     );
 
     // Grab optional settings from the FPP
-    $field_settings = $vars['elements']['#fieldable_panels_pane']->field_settings[LANGUAGE_NONE];
-    if (count($field_settings) > 0) {
-      foreach ($field_settings as $setting) {
-        // Grab the key/value pair from the text field
-        list($key, $value) = explode(': ', $setting['value']);
-        if (!empty($key) && !empty($value)) {
-          $settings[$key] = $value;
+    if (isset($vars['elements']['#fieldable_panels_pane']->field_settings[LANGUAGE_NONE])) {
+      $field_settings = $vars['elements']['#fieldable_panels_pane']->field_settings[LANGUAGE_NONE];
+      if (count($field_settings) > 0) {
+        foreach ($field_settings as $setting) {
+          // Grab the key/value pair from the text field
+          list($key, $value) = explode(': ', $setting['value']);
+          if (!empty($key) && !empty($value)) {
+            $settings[$key] = $value;
+          }
         }
       }
     }
@@ -121,10 +123,10 @@ function df_tools_slideshow_form_fieldable_panels_panes_fieldable_panels_pane_co
  * Implements hook_lightning_fpp_types().
  */
 function df_tools_slideshow_lightning_fpp_types_alter(&$types) {
-  $icon_path = drupal_get_path('module', 'lightning_fpp') . '/images/';
+  $icon_path = drupal_get_path('module', 'df_tools_slideshow') . '/images/';
   $types['slideshow'] = array(
     'title' => 'slideshow',
-    'icon' => $icon_path . 'icon_media.png',
+    'icon' => $icon_path . 'icon_slideshow.png',
     'path' => 'slideshow',
   );
 }
