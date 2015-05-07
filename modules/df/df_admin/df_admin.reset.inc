@@ -26,14 +26,21 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
     return FALSE;
   }
 
-  // Revert all Features for proper reset.
-  df_admin_revert_all();
-
   // Get list of modules implementing Migrate API.
   migrate_get_module_apis();
 
   // Set up operations array.
   $operations = array();
+
+  // Rebuild defaultconfig from modules.
+  $operations[] = array('defaultconfig_rebuild_all', array(''));
+  $operations[] = array('drupal_set_message', array(t('Defaultconfig rebuilt after scenario enablement.'), 'status'));
+  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $scenario));
+
+  // Revert Features (again) to ensure correct overrides of defaultconfig.
+  $operations[] = array('df_admin_revert_all', array(''));
+  $operations[] = array('drupal_set_message', array(t('Reverted Features after scenario enablement.'), 'status'));
+  $operations[] = array('watchdog', array('demo framework', 'Features reverted after enabling scenario: ' . $scenario));
 
   // Set up pre-import routines via hook_df_pre_import().
   $routines = array();
@@ -91,10 +98,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
   // Clear caches post-operations.
   $operations[] = array('drupal_flush_all_caches', array(''));
   $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
-
-  // Rebuild defaultconfig (cleanup permissions).
-  $operations[] = array('defaultconfig_rebuild_all', array(''));
-  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $scenario));
+  $operations[] = array('watchdog', array('demo framework', 'Cleared caches after enabling scenario: ' . $scenario));
 
   // Clear messages for non-Drush users providing a cleaner scenario reset.
   if (!drupal_is_cli()) {
