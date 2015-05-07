@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Defines routines for the DF Tools Moderation module.
+ */
+
+/**
+ * Implements hook_mail_alter().
+ *
+ * Adds a simple hotfix for Sendgrid + Mimemail to make sure emails are sent as HTML
+ */
+function df_tools_moderation_mail_alter(&$message) {
+  if ($message['id'] == 'mimemail_df_review_needed') {
+    $message['headers']['Content-Type'] = str_replace('text/plain', 'text/html', $message['headers']['Content-Type']);
+  }
+}
