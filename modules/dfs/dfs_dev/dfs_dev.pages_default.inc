@@ -81,6 +81,7 @@ function dfs_dev_default_page_manager_pages() {
         'df_tools_styles_df_tools_styles_centered' => '',
         'df_tools_styles_df_tools_styles_width' => '',
         'df_tools_styles_df_tools_styles_background' => '',
+        'df_tools_styles_df_tools_styles_image_gradient' => 'pane-image-gradient-white-ltr',
         'df_tools_styles_df_tools_styles_mobile' => 'pane-hide-tablet',
         'cps_custom_classes' => '',
         'classy_panel_styles_flag' => 'classy-panel-styles pane',

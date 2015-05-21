@@ -68,6 +68,18 @@ function df_tools_styles_classy_panel_styles() {
   $export[$name] = $style;
 
   $options = array(
+    'pane-image-gradient-white-ltr' => 'White, Left to Right',
+    'pane-image-gradient-white-rtl' => 'White, Right to Left',
+    'pane-image-gradient-black-rtl' => 'Black, Right to Left',
+    'pane-image-gradient-black-ltr' => 'Black, Left to Right',
+  );
+  $name = 'df_tools_styles_image_gradient';
+  $title = 'Image gradient';
+  $description = 'Adds a gradient background color to images within a pane. Only supported by panes that have explicit CSS support.';
+  $style = df_tools_styles_create_style($name, $title, $description, $options);
+  $export[$name] = $style;
+
+  $options = array(
     'pane-hide-phone' => 'Phone',
     'pane-hide-phone-xl' => 'Large phone',
     'pane-hide-tablet' => 'Tablet',
