@@ -355,8 +355,11 @@ projects[variable][version] = "2.5"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
-; DF Tools
+projects[features_override][version] = "2.0-rc2"
+projects[features_override][type] = "module"
+projects[features_override][subdir] = "contrib"
 
+; DF Tools
 projects[slick][version] = "2.0-beta1"
 projects[slick][type] = "module"
 projects[slick][subdir] = "contrib"
