@@ -97,6 +97,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
 
   // Clear caches post-operations.
   $operations[] = array('drupal_flush_all_caches', array(''));
+  $operations[] = array('variable_set', array('menu_rebuild_needed', TRUE));
   $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
   $operations[] = array('watchdog', array('demo framework', 'Cleared caches after enabling scenario: ' . $scenario));
 
