@@ -95,7 +95,7 @@ class DFLandingNodes extends ImportBaseNodes {
     }
 
     // If we've made changes, save the node
-    if ($node->panelizer['page_manager']->display_is_modified = TRUE) {
+    if ($node->panelizer['page_manager']->display_is_modified == TRUE) {
       node_save($node);
     }
 
