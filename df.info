@@ -33,13 +33,13 @@ dependencies[] = import
 dependencies[] = df_admin
 dependencies[] = df_commerce
 dependencies[] = df_engage
-dependencies[] = df_translate
 dependencies[] = df_tools_moderation
 
 ; Demo Framework (optional)
 ; dependencies[] = df_connect
 ; dependencies[] = df_gallery
 ; dependencies[] = df_search
+; dependencies[] = df_translate
 
 ; System Requirements
 php = 5.4
