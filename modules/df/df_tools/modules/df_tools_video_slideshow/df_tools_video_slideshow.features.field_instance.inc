@@ -186,7 +186,6 @@ function df_tools_video_slideshow_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 0,
-          'youtube' => 'youtube',
         ),
       ),
       'type' => 'media_generic',
