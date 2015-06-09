@@ -36,21 +36,11 @@ function dfs_dev_theme() {
 function dfs_dev_df_import() {
   $migrations = [];
   $migrations['dfs_dev'] = array(
-    'import_node_page',
+    'import_block_basic',
     'import_term_tags',
+    'import_node_page',
     'import_node_article'
   );
   return (array) $migrations;
 }
 
-/**
- * Implements hook_df_import_alter().
- */
-function dfs_dev_df_import_alter(&$migrations) {
-  $migrations['dfs_dev'] = array(
-    'import_term_tags',
-    'import_node_article',
-    'import_node_page'
-  );
-  return (array) $migrations;
-}

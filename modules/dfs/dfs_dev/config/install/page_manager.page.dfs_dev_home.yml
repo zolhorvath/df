@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - views.view.content_recent
+  content:
+    - 'block_content:basic:305d69a2-080f-4903-a700-0f31236a5c35'
+    - 'block_content:basic:febc918c-41bb-43b4-b907-7a4d5e675f74'
   module:
+    - block_content
     - df_tools_display
     - system
     - user
@@ -32,7 +36,7 @@ display_variants:
         id: 'views_block:content_recent-block_1'
         label: ''
         provider: views
-        label_display: visible
+        label_display: 0
         cache:
           max_age: '-1'
         views_label: ''
@@ -51,6 +55,45 @@ display_variants:
         region: sidebar
         weight: '0'
         uuid: a50f8e99-0d21-4856-8800-a67e85ae893e
+        context_mapping: {  }
+      625ab720-c7ab-4df9-be43-672377924ec0:
+        id: 'block_content:305d69a2-080f-4903-a700-0f31236a5c35'
+        label: 'Block vero eos et'
+        provider: block_content
+        label_display: visible
+        cache:
+          max_age: '-1'
+        status: true
+        info: ''
+        view_mode: full
+        region: primary
+        weight: '0'
+        uuid: 625ab720-c7ab-4df9-be43-672377924ec0
+        context_mapping: {  }
+      f568f185-b1e4-42d3-be5d-933e1a505223:
+        id: 'block_content:febc918c-41bb-43b4-b907-7a4d5e675f74'
+        label: 'Quis aute Block iure reprehenderit'
+        provider: block_content
+        label_display: visible
+        cache:
+          max_age: '-1'
+        status: true
+        info: ''
+        view_mode: full
+        region: secondary
+        weight: '0'
+        uuid: f568f185-b1e4-42d3-be5d-933e1a505223
+        context_mapping: {  }
+      282d76ea-d401-4894-a006-6c0da92734c3:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        provider: system
+        label_display: 0
+        cache:
+          max_age: -1
+        region: bottom
+        weight: '0'
+        uuid: 282d76ea-d401-4894-a006-6c0da92734c3
         context_mapping: {  }
     id: landing_display
     label: Dashboard
