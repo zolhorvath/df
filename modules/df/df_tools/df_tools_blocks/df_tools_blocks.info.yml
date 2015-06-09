@@ -1,0 +1,8 @@
+name: DF Tools Blocks
+type: module
+description: Provide a base set of Custom Block types for Demo Framework.
+core: 8.x
+package: Demo Framework Tools
+dependencies:
+  - inline_entity_form
+  - geolocation

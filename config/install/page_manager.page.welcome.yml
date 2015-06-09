@@ -1,0 +1,51 @@
+uuid: 86ce9439-667a-47fc-8700-0f795a7e0c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - df_tools_display
+    - user
+    - views
+id: welcome
+label: Welcome
+use_admin_theme: false
+path: /welcome
+display_variants:
+  1d0ac94c-4319-4ef2-8400-f800939c7104:
+    selection_conditions: {  }
+    blocks:
+      f2bb9a1d-c6de-4698-8c43-677466c4f0c2:
+        id: 'views_block:content_recent-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        cache:
+          max_age: '-1'
+        views_label: ''
+        items_per_page: none
+        region: middle
+        weight: '0'
+        uuid: f2bb9a1d-c6de-4698-8c43-677466c4f0c2
+        context_mapping: {  }
+      8f3b3295-90f2-4644-9300-c6ccb318be08:
+        id: user_login_block
+        label: 'User login'
+        provider: user
+        label_display: visible
+        cache:
+          max_age: '-1'
+        region: sidebar
+        weight: '0'
+        uuid: 8f3b3295-90f2-4644-9300-c6ccb318be08
+        context_mapping: {  }
+    id: landing_display
+    label: Homepage
+    uuid: 1d0ac94c-4319-4ef2-8400-f800939c7104
+    weight: 0
+    selection_logic: and
+    page_title: Welcome
+access_logic: and
+access_conditions: {  }
+
