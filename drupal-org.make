@@ -78,7 +78,6 @@ projects[geolocation][patch][2474345] = "https://www.drupal.org/files/issues/247
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
-projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][revision] = "7ffad41"
 projects[zurb-foundation][download][branch] = "8.x-5.x"
