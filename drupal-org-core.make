@@ -6,4 +6,4 @@ projects[drupal][version] = 8.0.0-beta11
 
 ; Add a rollback functionality to migrate
 ; http://drupal.org/node/2361093
-projects[drupal][patch][] = "http://drupal.org/files/issues/add_a_rollback-2361093-5.patch"
+projects[drupal][patch][2361093] = "http://drupal.org/files/issues/add_a_rollback-2361093-5.patch"
