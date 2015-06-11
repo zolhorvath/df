@@ -207,11 +207,6 @@ function df_install_finished(&$install_state) {
   // Turn off "Poor Man's Cron."
   variable_set('cron_safe_threshold', 0);
 
-  // Disable Update manager as `drush site-install` enables it by default.
-  if (drupal_is_cli() && module_exists('update')) {
-    module_disable(array('update'), TRUE);
-  }
-
   // If user is not installing via Drush, check for additional settings.
   if (!drupal_is_cli()) {
     // Check for install profile scenario enablement.
