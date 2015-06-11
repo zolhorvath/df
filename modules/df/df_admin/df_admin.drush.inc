@@ -20,6 +20,7 @@ function df_admin_drush_command() {
     'options' => array(
       'import' => 'Boolean, allows content to be imported post-enablement',
       'rollback' => 'Boolean, rollback existing content post-enablement',
+      'seed' => 'Boolean, seed derivatives of images post-enablement',
       'pre' => 'Comma separated list of modules to enable before enabling the scenario'
     ),
     'aliases' => array('df-es'),
@@ -33,6 +34,7 @@ function df_admin_drush_command() {
     ),
     'options' => array(
       'rollback' => 'Boolean, rollback existing content post-enablement',
+      'seed' => 'Boolean, seed derivatives of images post-enablement',
     ),
     'aliases' => array('df-rs'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
@@ -70,7 +72,8 @@ function drush_df_admin_enable_scenario($scenario) {
     // Optionally run the batch import of content.
     if ($import != FALSE) {
       $rollback = drush_get_option('rollback', FALSE);
-      drush_invoke_process($alias, 'df-rs', array($scenario), array('rollback' => $rollback));
+      $seed = drush_get_option('seed', TRUE);
+      drush_invoke_process($alias, 'df-rs', array($scenario), array('rollback' => $rollback, 'seed' => $seed));
     }
   }
 }
@@ -85,8 +88,9 @@ function drush_df_admin_enable_scenario($scenario) {
   */
 function drush_df_admin_reset_scenario($scenario) {
   $rollback = drush_get_option('rollback', TRUE);
+  $seed = drush_get_option('seed', TRUE);
   module_load_include('inc', 'df_admin', 'df_admin.reset');
-  df_admin_reset_scenario($scenario, $rollback);
+  df_admin_reset_scenario($scenario, $rollback, $seed);
 }
 
 /**

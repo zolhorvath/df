@@ -12,14 +12,14 @@ function df_admin_page_reset($module) {
   if (!isset($_GET['token']) || !drupal_valid_token($_GET['token'], DRUPAL_ROOT . '/df/reset/' . $module)) {
     return drupal_access_denied();
   }
-  return df_admin_reset_scenario($module, TRUE);
+  return df_admin_reset_scenario($module, TRUE, TRUE);
 }
 
 /**
  * Function to process migrations in correct order to safely inject DFS
  * content into the system.
  */
-function df_admin_reset_scenario($scenario, $rollback = TRUE) {
+function df_admin_reset_scenario($scenario, $rollback = TRUE, $seed = TRUE) {
   // Check to see if scenario is not enabled.
   if (!module_exists($scenario)) {
     drupal_set_message(t('@scenario must be enabled before a reset can occur.', array('@scenario' => $scenario)), 'error');
@@ -114,8 +114,9 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE) {
     $alias = !empty($alias_context) ? $alias_context : '@self';
 
     // Seed derivatives
-    $operations[] = array('drush_invoke_process', array($alias, 'df-sd', array(), array(), TRUE));
-
+    if ($seed == TRUE) {
+      $operations[] = array('drush_invoke_process', array($alias, 'df-sd', array(), array(), TRUE));
+    }
     // Clear caches before we start the batch, to prevent conflicts with new module additions
     // This fixes a specific bug with the --pre option, but there's no harm in calling it every time df-rs is called
     drush_invoke_process($alias, 'cc', array('all'));
