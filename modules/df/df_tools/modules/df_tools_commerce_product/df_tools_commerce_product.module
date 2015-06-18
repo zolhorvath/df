@@ -17,3 +17,16 @@ function df_tools_commerce_product_lightning_fpp_types_alter(&$types) {
     'path' => 'commerce-product',
   );
 }
+
+/**
+ * Implements hook_migrate_api().
+ */
+function df_tools_commerce_product_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'DFToolsCommerceProductFPP' => array('class_name' => 'DFToolsCommerceProductFPP'),
+    ),
+  );
+  return $api;
+}
