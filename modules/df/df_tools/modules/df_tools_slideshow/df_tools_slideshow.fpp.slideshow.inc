@@ -39,7 +39,7 @@ class DFSlideshowFPP extends Migration {
       $import_path = drupal_get_path('module', 'df_tools_slideshow') . '/import/df_tools_slideshow.fpp.slideshow.csv';
     }
     $this->source = new MigrateSourceCSV($import_path, array(), array('header_rows' => 1));
-    $this->destination = new MigrateDestinationFieldablePanelsPanes('slideshow', array('text_format' => 'full_html'));
+    $this->destination = new MigrateDestinationFieldablePanelsPanes('slideshow', array('text_format' => 'raw_html'));
 
     $this->addFieldMapping('field_media', 'media_formatted');
     $this->addFieldMapping('field_media:file_replace')->defaultValue(FILE_EXISTS_REPLACE);
