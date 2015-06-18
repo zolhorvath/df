@@ -19,7 +19,6 @@ function df_commerce_field_default_field_bases() {
       0 => 'commerce_product',
     ),
     'field_name' => 'commerce_price',
-    'foreign keys' => array(),
     'indexes' => array(
       'currency_price' => array(
         0 => 'amount',
@@ -43,14 +42,6 @@ function df_commerce_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -69,20 +60,12 @@ function df_commerce_field_default_field_bases() {
   // Exported field_base: 'field_product'
   $field_bases['field_product'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_product',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'product_id' => array(
-        'columns' => array(
-          'product_id' => 'product_id',
-        ),
-        'table' => 'commerce_product',
-      ),
     ),
     'indexes' => array(
       'product_id' => array(
@@ -92,7 +75,7 @@ function df_commerce_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_product_reference',
     'settings' => array(
-      'options_list_limit' => NULL,
+      'options_list_limit' => '',
     ),
     'translatable' => 0,
     'type' => 'commerce_product_reference',
