@@ -14,3 +14,46 @@ function df_tools_moderation_mail_alter(&$message) {
     $message['headers']['Content-Type'] = str_replace('text/plain', 'text/html', $message['headers']['Content-Type']);
   }
 }
+
+/**
+ * Implements hook_menu_alter().
+ */
+function df_tools_moderation_menu_alter(&$items) {
+  // Use a custom node edit page callback for automatically publishing new drafts
+  $items['node/%node/edit']['page callback'] = 'df_tools_moderation_node_edit_page_override';
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function df_tools_moderation_module_implements_alter(&$implementations, $hook) {
+  // Ensure that we're implementing our menu_alter hook after workbench_moderation
+  if ($hook == 'menu_alter') {
+    $group = $implementations['df_tools_moderation'];
+    unset($implementations ['df_tools_moderation']);
+    $implementations['df_tools_moderation'] = $group;
+  }
+}
+
+/**
+ * Overrides the node/%/edit page to automatically publish new drafts.
+ *
+ * @param Object $node The node being acted upon.
+ * @return array The return of workbench_moderation_node_edit_page_override, or exits/redirects to node/%/draft
+ */
+function df_tools_moderation_node_edit_page_override($node) {
+  // If this node is moderated and has no draft, automatically create a new draft and redirect
+  $state = $node->workbench_moderation;
+  // This is the same logic used to determine is "New Draft" should be displayed (see workbench_moderation_edit_tab_title())
+  if (!empty($state['published']) && $state['published']->vid == $state['current']->vid) {
+    // Mark the node as needing a new revision from Drupal, and change the workbench moderation state to draft
+    $node->revision = 1;
+    $node->workbench_moderation_state_new = 'draft';
+    node_save($node);
+    drupal_goto('/node/' . $node->nid . '/draft');
+  }
+  // Return the standard workbench node edit form
+  else {
+    return workbench_moderation_node_edit_page_override($node);
+  }
+}
