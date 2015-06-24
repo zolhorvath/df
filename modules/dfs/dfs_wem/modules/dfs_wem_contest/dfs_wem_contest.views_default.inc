@@ -100,7 +100,7 @@ function dfs_wem_contest_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/enter-contest/[nid]" class="button">Enter this Contest</a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/enter-contest/[nid]" class="button">Enter this contest</a>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(

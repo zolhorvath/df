@@ -22,7 +22,7 @@ dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
 dependencies[] = shortcut
-dependencies[] = taxonomy
+dependencies[] = update
 
 ; Lightning (core)
 dependencies[] = assemble

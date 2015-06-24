@@ -14,20 +14,14 @@ projects[lightning_features][download][type] = "git"
 projects[lightning_features][download][branch] = "7.x-1.x"
 
 ; Lightning Manifests
-projects[assemble][version] = "1.x-dev"
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
-projects[assemble][download][type] = "git"
-projects[assemble][download][branch] = "7.x-1.x"
 
-projects[curate][version] = "1.x-dev"
 projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
-projects[curate][download][type] = "git"
-projects[curate][download][branch] = "7.x-1.x"
 
 ; DF Admin
-projects[advanced_help][version] = "1.1"
+projects[advanced_help][version] = "1.3"
 projects[advanced_help][type] = "module"
 projects[advanced_help][subdir] = "contrib"
 
@@ -54,7 +48,7 @@ projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
 ; DF Commerce
-projects[addressfield][version] = "1.0-beta4"
+projects[addressfield][version] = "1.1"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
 
@@ -83,6 +77,10 @@ projects[commerce_extra_price_formatters][subdir] = "contrib"
 projects[commerce_extra_price_formatters][download][type] = "git"
 projects[commerce_extra_price_formatters][download][revision] = "1371336"
 projects[commerce_extra_price_formatters][download][branch] = "7.x-1.x"
+
+projects[commerce_fancy_attributes][version] = "1.0"
+projects[commerce_fancy_attributes][type] = "module"
+projects[commerce_fancy_attributes][subdir] = "contrib"
 
 projects[commerce_features][version] = "1.0-rc1"
 projects[commerce_features][type] = "module"
@@ -125,7 +123,7 @@ projects[menu_attributes][version] = "1.0-rc3"
 projects[menu_attributes][type] = "module"
 projects[menu_attributes][subdir] = "contrib"
 
-projects[message][version] = "1.9"
+projects[message][version] = "1.10"
 projects[message][type] = "module"
 projects[message][subdir] = "contrib"
 
@@ -152,7 +150,7 @@ projects[charts][download][type] = "git"
 projects[charts][download][revision] = "050670f"
 projects[charts][download][branch] = "7.x-2.x"
 
-projects[google_analytics][version] = "1.3"
+projects[google_analytics][version] = "1.4"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
@@ -182,7 +180,7 @@ projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
 projects[purr_messages][subdir] = "contrib"
 
-projects[sharethis][version] = "2.6"
+projects[sharethis][version] = "2.10"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
 
@@ -203,7 +201,7 @@ projects[og][version] = "2.6"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
-projects[radioactivity][version] = "2.8"
+projects[radioactivity][version] = "2.10"
 projects[radioactivity][type] = "module"
 projects[radioactivity][subdir] = "contrib"
 
@@ -211,14 +209,14 @@ projects[uuid][version] = "1.x-dev"
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
 projects[uuid][download][type] = "git"
-projects[uuid][download][revision] = "4bbf92d"
+projects[uuid][download][revision] = "a7bf2db"
 projects[uuid][download][branch] = "7.x-1.x"
 
 projects[uuid_features][version] = "1.x-dev"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "aa514d6"
+projects[uuid_features][download][revision] = "3fee14f"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
 ; DF Search
@@ -226,14 +224,14 @@ projects[custom_search][version] = "1.x-dev"
 projects[custom_search][type] = "module"
 projects[custom_search][subdir] = "contrib"
 projects[custom_search][download][type] = "git"
-projects[custom_search][download][revision] = "e825455"
+projects[custom_search][download][revision] = "fead2f1"
 projects[custom_search][download][branch] = "7.x-1.x"
 
-projects[location][version] = "3.5"
+projects[location][version] = "3.6"
 projects[location][type] = "module"
 projects[location][subdir] = "contrib"
 
-projects[facetapi][version] = "1.3"
+projects[facetapi][version] = "1.5"
 projects[facetapi][type] = "module"
 projects[facetapi][subdir] = "contrib"
 
@@ -248,11 +246,11 @@ projects[rich_snippets][download][type] = "git"
 projects[rich_snippets][download][revision] = "fad5697"
 projects[rich_snippets][download][branch] = "7.x-1.x"
 
-projects[schemaorg][version] = "1.0-beta4"
+projects[schemaorg][version] = "1.0-rc1"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
 
-projects[search_api][version] = "1.14"
+projects[search_api][version] = "1.15"
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
 
@@ -366,10 +364,6 @@ projects[slick][type] = "module"
 projects[slick][subdir] = "contrib"
 
 ; Libraries
-libraries[chosen][destination] = "libraries"
-libraries[chosen][download][type] = "get"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip"
-
 libraries[jquery.cycle][destination] = "libraries"
 libraries[jquery.cycle][download][type] = "get"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
@@ -377,6 +371,14 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
+
+libraries[css.js][destination] = "libraries"
+libraries[css.js][download][type] = "get"
+libraries[css.js][download][url] = "https://github.com/jotform/css.js/archive/v0.1.zip"
+
+libraries[spectrum][destination] = "libraries"
+libraries[spectrum][download][type] = "get"
+libraries[spectrum][download][url] = "https://github.com/bgrins/spectrum/archive/1.7.0.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
@@ -394,5 +396,6 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"

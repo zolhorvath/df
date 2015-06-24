@@ -66,6 +66,15 @@ class DFLandingNodes extends ImportBaseNodes {
         // Loop through each UUID in this region and add a new pane for this node
         foreach ($value as $uuid) {
           $pane = panels_new_pane('fieldable_panels_pane', 'uuid:' . $uuid, TRUE);
+          // Check to see if any classy panel styles are included for this pane
+          if (array_key_exists($uuid . '-style', $row) && $settings = json_decode($row->{$uuid . '-style'}, TRUE)) {
+            // Add our default settings
+            $settings['classy_panel_styles_flag'] = 'classy-panel-styles pane';
+            $pane->style = array(
+              'style' => 'classy_panel_styles:cps_default',
+              'settings' => $settings
+            );
+          }
           // Add the pane to the display
           $display->add_pane($pane, $location);
           // Save the display

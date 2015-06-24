@@ -1,0 +1,42 @@
+/**
+* @file
+*  Contains CSS rules for overriding spectrum and improving our custom elements' theme.
+*/
+
+/* Hide the choose button, as clicking out of the color picker also selects the color */
+.sp-choose {
+  display: none;
+}
+/* Make our palette a grid of squares */
+.sp-preview {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: none;
+}
+/* Improve the popup style by making a better use of space */
+.sp-replacer {
+  padding: 0;
+  border: none;
+}
+/* Hide the dropdown arrow that would normally appear next to .sp-preview */
+.sp-dd {
+  display: none;
+}
+/* Show the selector dropdown below the cancel/reset buttons */
+.colors-selectors-wrapper {
+  clear: both;
+}
+/* Space out the selector list a tad */
+ul.color-selectors {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+/* Each selector should have some padding as well */
+.color-selectors li {
+  margin-top: 5px;
+}
+/* Hide our hidden JSON field */
+.form-item-colors-json {
+  display: none;
+}

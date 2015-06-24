@@ -7,18 +7,6 @@
 include_once 'dfs_wem.features.inc';
 
 /**
- * Implements hook_behat_info().
- */
-function dfs_wem_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-  return $info;
-}
-
-/**
  * Implements hook_migrate_api().
  */
 function dfs_wem_migrate_api() {

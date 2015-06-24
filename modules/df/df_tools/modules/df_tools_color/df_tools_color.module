@@ -1,0 +1,123 @@
+<?php
+
+/**
+ * @file
+ *   Contains all backend code for df_tools_color.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function df_tools_color_menu() {
+  $items['admin/appearance/colors'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('df_tools_color_form'),
+    'access arguments' => array('administer themes'),
+    'weight' => 100,
+    'title' => 'Color Palette',
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+ * Form callback for admin/appearance/colors.
+ */
+function df_tools_color_form($form, &$form_state) {
+  // Check to see if the df_tools_color_css variable is set before building the form
+  if (!$css = variable_get('df_tools_color_css', FALSE)) {
+    drupal_set_message('The df_tools_color_css variable has not been set.', 'error');
+    return array();
+  }
+
+  $form['help'] = array(
+    '#markup' => '<i>This palette has been automatically generated from your theme. You can change colors and view selectors by clicking on the palette.</i>'
+  );
+
+  // This empty form element will be targeted by our JS to dynamically add the palette
+  $form['colors'] = array(
+    '#type' => 'container',
+    '#attributes' => array('class' => array('colors-form')),
+  );
+
+  // This is how the JS will communicate the new palette selection to us in the submit handler.
+  $form['colors_json'] = array(
+    '#type' => 'textarea',
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Update palette'),
+    '#submit' => array('df_tools_color_form_submit')
+  );
+
+  // If we've already created an override CSS file, use that as the basis for the palette.
+  if (file_exists('public://df_tools_color_overrides.css')) {
+    $form['reset'] = array(
+      '#type' => 'submit',
+      '#value' => t('Reset palette'),
+      '#submit' => array('df_tools_color_form_reset')
+    );
+    $css = variable_get('file_public_path', 'sites/default/files') . '/df_tools_color_overrides.css';
+  }
+
+  // Add a setting so the JS is aware of our target CSS file
+  drupal_add_js(array('df_tools_color' => array('css' => '/' . $css)), 'setting');
+
+  // Attach our required libraries
+  $form['#attached']['css'] = array(
+    libraries_get_path('spectrum') . '/spectrum.css',
+    drupal_get_path('module', 'df_tools_color') . '/css/df_tools_color.css',
+  );
+  $form['#attached']['js'] = array(
+    libraries_get_path('css.js') . '/css.js',
+    libraries_get_path('spectrum') . '/spectrum.js',
+    drupal_get_path('module', 'df_tools_color') . '/js/df_tools_color.js'
+  );
+  return $form;
+}
+
+/**
+ * Form submit callback for admin/appearance/colors.
+ */
+function df_tools_color_form_submit($form, &$form_state) {
+  if (isset($form_state['values']['colors_json']) && $json = json_decode($form_state['values']['colors_json'])) {
+    // Generate our dynamic CSS file
+    $css = '';
+    foreach ($json as $color) {
+      foreach ($color[1] as $rule) {
+        $new_css = $rule[0] . '{' . $rule[1] . ':' . $color[0] . '}';
+        // Add an extra wrapper for media queries
+        if (isset($rule[2])) {
+          $new_css = $rule[2] . '{' . $new_css . '}';
+        }
+        $css .= $new_css;
+      }
+    }
+    // Output as a CSS file
+    file_unmanaged_save_data($css, 'public://df_tools_color_overrides.css', FILE_EXISTS_REPLACE);
+    drupal_set_message('The palette has successfully saved.');
+  }
+}
+
+/**
+ * Form callback to remove the current overrides and revert to original CSS file.
+ */
+function df_tools_color_form_reset($form, &$form_state) {
+  if (file_exists('public://df_tools_color_overrides.css')) {
+    file_unmanaged_delete('public://df_tools_color_overrides.css');
+    drupal_set_message('The palette has successfully reset.');
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function df_tools_color_preprocess_page(&$variables) {
+  global $theme;
+  // Add our custom css file, if it exists and we're viewing the frontend theme.
+  if ($theme == variable_get('theme_default') && file_exists('public://df_tools_color_overrides.css')) {
+    // By using the CSS_THEME group, we place our CSS file after the scenario's
+    drupal_add_css('public://df_tools_color_overrides.css', array('group' => CSS_THEME));
+  }
+}

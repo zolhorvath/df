@@ -10,24 +10,6 @@
 function df_connect_defaultconfig_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'access mollom statistics'.
-  $permissions['access mollom statistics'] = array(
-    'name' => 'access mollom statistics',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
-  );
-
-  // Exported permission: 'administer mollom'.
-  $permissions['administer mollom'] = array(
-    'name' => 'administer mollom',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
-  );
-
   // Exported permission: 'administer purr messages'.
   $permissions['administer purr messages'] = array(
     'name' => 'administer purr messages',
@@ -44,15 +26,6 @@ function df_connect_defaultconfig_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'sharethis',
-  );
-
-  // Exported permission: 'bypass mollom protection'.
-  $permissions['bypass mollom protection'] = array(
-    'name' => 'bypass mollom protection',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
   );
 
   // Exported permission: 'view purr messages'.
