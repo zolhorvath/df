@@ -17,3 +17,6 @@ themes/contrib/*
 
 # Libraries
 libraries/*
+
+# Other
+private
