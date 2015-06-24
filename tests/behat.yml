@@ -1,0 +1,25 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost:8080
+      goutte: ~
+      selenium2: ~
+    Drupal\DrupalExtension:
+      api_driver: "drupal"
+      blackbox: ~
+      drush:
+        alias: self
+      drupal:
+        drupal_root: '../../../'
+      region_map:
+        content: ".region-content"
+imports:
+  - behat.local.yml
