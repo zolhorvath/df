@@ -7,6 +7,7 @@
 
 namespace Drupal\df_tools_display\Plugin\DisplayVariant;
 
+use Drupal\Component\Utility\Html;
 use Drupal\page_manager\Plugin\DisplayVariant\BlockDisplayVariant;
 
 /**
@@ -33,5 +34,18 @@ class LandingDisplayVariant extends BlockDisplayVariant {
     ];
   }
 
-}
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    $build = parent::build();
 
+    // Add a class that represents the current page to our display variant
+    $id = Html::getClass($this->executable->getPage()->id());
+    $build['regions']['#prefix'] = '<div class="landing-display-' . $id . '">';
+    $build['regions']['#suffix'] = '</div>';
+
+    return $build;
+  }
+
+}
