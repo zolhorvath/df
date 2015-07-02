@@ -46,13 +46,6 @@
                   var color = window.getComputedStyle(d).color;
                   document.body.removeChild(d);
 
-                  // Check if color is greyscale
-                  var rgb = color.match(/\d+/g);
-                  if ((rgb[0] == rgb[1]) && (rgb[1] == rgb[2])) {
-                    // We ignore patently greyscale values
-                    continue;
-                  }
-
                   // Add this selector to the list of colors
                   if (colors[color] === undefined) {
                     colors[color] = [];
