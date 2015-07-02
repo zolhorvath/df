@@ -7,7 +7,7 @@
 
 use Drupal\migrate\Entity\MigrationInterface;
 use Drupal\migrate\MigrateExecutable;
-use Drush\Migrate\DrushLogMigrateMessage;
+use Drupal\migrate_tools\DrushLogMigrateMessage;
 
 /**
  * Implements hook_drush_command().
@@ -23,7 +23,7 @@ function df_admin_drush_command() {
     'examples' => array(
       'df-es dfs_wem' => 'Install and import migrations for a Demo Framework Scenario',
     ),
-    'drupal dependencies' => array('migrate_plus'),
+    'drupal dependencies' => array('migrate_tools'),
     'aliases' => array('df-es'),
   );
 
@@ -35,7 +35,7 @@ function df_admin_drush_command() {
     'examples' => array(
       'df-us dfs_wem' => 'Uninstall and roll back migrations for a Demo Framework Scenario',
     ),
-    'drupal dependencies' => array('migrate_plus'),
+    'drupal dependencies' => array('migrate_tools'),
     'aliases' => array('df-us'),
   );
 
@@ -47,7 +47,7 @@ function df_admin_drush_command() {
     'examples' => array(
       'df-rs dfs_wem' => 'Reset a Demo Framework Scenario rolling back content and re-importing.',
     ),
-    'drupal dependencies' => array('migrate_plus'),
+    'drupal dependencies' => array('migrate_tools'),
     'aliases' => array('df-rs'),
   );
 
