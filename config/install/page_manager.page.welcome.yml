@@ -27,6 +27,7 @@ display_variants:
         items_per_page: none
         region: middle
         weight: '0'
+        classes: recent-content
         uuid: f2bb9a1d-c6de-4698-8c43-677466c4f0c2
         context_mapping: {  }
       8f3b3295-90f2-4644-9300-c6ccb318be08:

@@ -1,0 +1,22 @@
+uuid: 6c6676ed-2a0e-45a4-af49-73880dc58dd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zurb_foundation
+id: help
+theme: zurb_foundation
+region: help
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+  cache:
+    max_age: -1
+visibility: {  }
