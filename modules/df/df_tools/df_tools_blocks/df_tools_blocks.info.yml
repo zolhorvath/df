@@ -6,3 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - inline_entity_form
   - geolocation
+  - df_tools_migration

@@ -1,0 +1,29 @@
+uuid: ad1554cd-c42c-4ea9-9748-72aed3b5d2fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media
+    - field.field.block_content.media.field_add_media
+  module:
+    - image
+id: block_content.media.default
+targetEntityType: block_content
+bundle: media
+mode: default
+content:
+  field_add_media:
+    type: image_image
+    weight: 3
+    settings:
+      progress_indicator: bar
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
