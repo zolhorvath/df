@@ -2,7 +2,7 @@ api = 2
 core = 8.x
 
 ; Modules
-projects[admin_toolbar][version] ="1.6"
+projects[admin_toolbar][version] ="1.7"
 projects[admin_toolbar][type] ="module"
 projects[admin_toolbar][subdir] ="contrib"
 
@@ -14,7 +14,7 @@ projects[block_class][download][branch] = "8.0.x-1.x"
 projects[block_class][download][url] = "http://git.drupal.org/sandbox/YaronTal/2345855.git"
 ; Add support for page manager.
 ; http://drupal.org/node/2509142
-projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page-manager-support-2509142-1.patch"
+projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
 
 ;projects[default_content][version] = "1.x-dev"
 ;projects[default_content][type] = "module"
@@ -40,9 +40,12 @@ projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
 projects[import][download][branch] = "8.x-1.x"
-; Allow Articles to be migrated with HTML content
-; https://www.drupal.org/node/2514194
-projects[import][patch][2514194] = "https://www.drupal.org/files/issues/import-article-allow-html.patch"
+
+projects[layout_plugin][version] = "1.x-dev"
+projects[layout_plugin][type] = "module"
+projects[layout_plugin][subdir] = "contrib"
+projects[layout_plugin][download][type] = "git"
+projects[layout_plugin][download][branch] ="8.x-1.x"
 
 projects[migrate_plus][version] = "1.x-dev"
 projects[migrate_plus][type] = "module"
@@ -50,9 +53,6 @@ projects[migrate_plus][subdir] = "contrib"
 projects[migrate_plus][download][type] = "git"
 projects[migrate_plus][download][branch] = "8.x-1.x"
 projects[migrate_plus][download][url] = "http://git.drupal.org/sandbox/mikeryan/migrate_plus.git"
-; Port MigrateSourceCSV to Drupal 8 migrate source plugin
-; http://drupal.org/node/2458003
-projects[migrate_plus][patch][2458003] = "http://drupal.org/files/issues/migrate_plus-csv_migrate-2458003-29.patch"
 ; Implement migrate-rollback command for D8
 ; http://drupal.org/node/2403411
 ;projects[migrate_plus][patch][2403411] = "http://drupal.org/files/issues/implement-2403411-5.patch"
@@ -65,7 +65,9 @@ projects[page_manager][download][branch] = "8.x-1.x"
 ; Rename the core "Page with blocks" admin_label and sort display variants
 ; https://www.drupal.org/node/2503947
 projects[page_manager][patch][2503947] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
-
+; EntityViewController::buildTitle() expects '#<entity type>' to be set in BlockDisplayVariant::build()
+; https://www.drupal.org/node/2527748
+projects[page_manager][patch][2527748] = "https://www.drupal.org/files/issues/page_manager-build-title-fix.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
@@ -78,7 +80,7 @@ projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][directory_name] = "pathauto"
 projects[pathauto][download][type] = "git"
-projects[pathauto][download][url]= "git@github.com:md-systems/pathauto.git"
+projects[pathauto][download][url]= "git@github.com:mortenson/pathauto.git"
 projects[pathauto][download][branch] = "8.x-1.x"
 
 projects[token][version] = "1.x-dev"
@@ -113,5 +115,4 @@ projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
 projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
-projects[zurb-foundation][download][url]="git@github.com:mortenson/Zurb-Foundation-Drupal-8.git"
-projects[zurb-foundation][download][branch] = "master"
+projects[zurb-foundation][download][branch] = "8.x-5.x"

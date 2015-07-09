@@ -2,7 +2,7 @@ api = 2
 core = 8.x
 
 projects[drupal][type] = core
-projects[drupal][version] = 8.0.0-beta11
+projects[drupal][version] = 8.0.0-beta12
 
 ; Add a rollback functionality to migrate
 ; http://drupal.org/node/2361093
