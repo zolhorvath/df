@@ -1,12 +1,11 @@
 # Demo Framework
-[![Build Status](https://magnum.travis-ci.com/acquia/demo_framework.svg?token=fkKCDWeX7fUCfybPUjJb&branch=7.x)](https://magnum.travis-ci.com/acquia/demo_framework)
 
 The Demo Framework (DF) is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
 
 ### Basics
 
 *Powered by Lightning!*
-- DF is built upon the Lightning base distribution.  
+- DF is built upon the Lightning base distribution.
 - We employ the Lightning Features modules to enable DF core componenets
 - A set of features including a make file that Drush picks up recursively
 - See http://github.com/acquia/lightning and http://github.com/acquia/lightning-features
