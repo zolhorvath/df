@@ -7,6 +7,7 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\DrupalExtension\Context\MarkupContext
   extensions:
     Behat\MinkExtension:
       base_url: http://localhost:8080
@@ -20,6 +21,14 @@ default:
       drupal:
         drupal_root: '../../../'
       region_map:
+        main_content: ".main"
         content: ".region-content"
+        top: ".top-region"
+        main: ".main-region"
+        secondary: ".secondary-region"
+        left: ".left-region"
+        right: ".right-region"
+        center: ".center-region"
+        bottom: ".bottom-region"
 imports:
   - behat.local.yml

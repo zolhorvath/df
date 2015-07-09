@@ -48,22 +48,22 @@ function df_tools_slideshow_field_default_field_instances() {
         'default_order_wrapper' => array(
           'formats' => array(
             'commerce_order_message' => array(
-              'weight' => 3,
+              'weight' => -47,
             ),
             'filtered_html' => array(
-              'weight' => 5,
+              'weight' => -45,
             ),
             'full_html' => array(
-              'weight' => 0,
+              'weight' => -49,
             ),
             'plain_text' => array(
-              'weight' => 2,
+              'weight' => -50,
             ),
             'raw_html' => array(
-              'weight' => 1,
+              'weight' => -48,
             ),
             'userbase' => array(
-              'weight' => 4,
+              'weight' => -46,
             ),
           ),
         ),
@@ -258,22 +258,22 @@ function df_tools_slideshow_field_default_field_instances() {
         'default_order_wrapper' => array(
           'formats' => array(
             'commerce_order_message' => array(
-              'weight' => 3,
+              'weight' => -47,
             ),
             'filtered_html' => array(
-              'weight' => 5,
+              'weight' => -45,
             ),
             'full_html' => array(
-              'weight' => 0,
+              'weight' => -49,
             ),
             'plain_text' => array(
-              'weight' => 2,
+              'weight' => -50,
             ),
             'raw_html' => array(
-              'weight' => 1,
+              'weight' => -48,
             ),
             'userbase' => array(
-              'weight' => 4,
+              'weight' => -46,
             ),
           ),
         ),

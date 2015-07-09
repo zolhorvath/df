@@ -96,6 +96,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE, $seed = TRUE) {
   }
 
   // Clear caches post-operations.
+  $operations[] = array('node_access_rebuild', array(''));
   $operations[] = array('drupal_flush_all_caches', array(''));
   $operations[] = array('variable_set', array('menu_rebuild_needed', TRUE));
   $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));

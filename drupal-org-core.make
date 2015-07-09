@@ -40,3 +40,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translation_optional
 ; when JS files are aggregated
 ; http://drupal.org/node/2400287
 projects[drupal][patch][] = "http://drupal.org/files/issues/Issue-2400287-by-hass-Remove-JS-source-and-source-map-D7_0.patch"
+
+; Pass $page_callback_result through hook_page_delivery_callback_alter().
+; http://drupal.org/node/897504
+projects[drupal][patch][] = "http://drupal.org/files/issues/pass-page-callback-result-897504-2.patch"

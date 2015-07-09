@@ -25,6 +25,13 @@ projects[advanced_help][version] = "1.3"
 projects[advanced_help][type] = "module"
 projects[advanced_help][subdir] = "contrib"
 
+projects[distro_update][version] = "1.x-dev"
+projects[distro_update][type] = "module"
+projects[distro_update][subdir] = "contrib"
+projects[distro_update][download][type] = "git"
+projects[distro_update][download][revision] = "f5ab9fe"
+projects[distro_update][download][branch] = "7.x-1.x"
+
 projects[feeds][version] = "2.0-alpha8"
 projects[feeds][type] = "module"
 projects[feeds][subdir] = "contrib"
@@ -317,11 +324,8 @@ projects[i18nviews][version] = "3.x-dev"
 projects[i18nviews][type] = "module"
 projects[i18nviews][subdir] = "contrib"
 projects[i18nviews][download][type] = "git"
-projects[i18nviews][download][revision] = "27e9809"
+projects[i18nviews][download][revision] = "fdc8c33"
 projects[i18nviews][download][branch] = "7.x-3.x"
-; Fatal error: Call to a member function unpack_translatables()
-; http://drupal.org/node/1653170
-projects[i18nviews][patch][1653170] = "http://drupal.org/files/i18nviews-1653170.patch"
 
 projects[language_switch][version] = "1.x-dev"
 projects[language_switch][type] = "module"

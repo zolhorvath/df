@@ -96,6 +96,10 @@ function df_tools_color_form_submit($form, &$form_state) {
     }
     // Output as a CSS file
     file_unmanaged_save_data($css, 'public://df_tools_color_overrides.css', FILE_EXISTS_REPLACE);
+
+    // Clear CSS cache
+    drupal_clear_css_cache();
+
     drupal_set_message('The palette has successfully saved.');
   }
 }
@@ -106,6 +110,7 @@ function df_tools_color_form_submit($form, &$form_state) {
 function df_tools_color_form_reset($form, &$form_state) {
   if (file_exists('public://df_tools_color_overrides.css')) {
     file_unmanaged_delete('public://df_tools_color_overrides.css');
+    drupal_clear_css_cache();
     drupal_set_message('The palette has successfully reset.');
   }
 }
