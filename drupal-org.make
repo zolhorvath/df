@@ -1,11 +1,6 @@
 api = 2
 core = 7.x
 
-; Acquia Connector
-projects[acquia_connector][version] = "2.15"
-projects[acquia_connector][type] = "module"
-projects[acquia_connector][subdir] = "contrib"
-
 ; Lightning Features
 projects[lightning_features][version] = "1.x-dev"
 projects[lightning_features][type] = "module"
