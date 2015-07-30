@@ -31,15 +31,9 @@ projects[feeds][version] = "2.0-alpha8"
 projects[feeds][type] = "module"
 projects[feeds][subdir] = "contrib"
 
-projects[feeds_jsonpath_parser][version] = "1.x-dev"
+projects[feeds_jsonpath_parser][version] = "1.0"
 projects[feeds_jsonpath_parser][type] = "module"
 projects[feeds_jsonpath_parser][subdir] = "contrib"
-projects[feeds_jsonpath_parser][download][type] = "git"
-projects[feeds_jsonpath_parser][download][revision] = "8b161c6"
-projects[feeds_jsonpath_parser][download][branch] = "7.x-1.x"
-; Support for Libraries API
-; http://drupal.org/node/1083234
-projects[feeds_jsonpath_parser][patch][1083234] = "http://drupal.org/files/feeds_jsonpath_parser-libraries-1083234-12.patch"
 
 projects[job_scheduler][version] = "2.0-alpha3"
 projects[job_scheduler][type] = "module"
@@ -182,7 +176,7 @@ projects[purr_messages][version] = "2.0-beta3"
 projects[purr_messages][type] = "module"
 projects[purr_messages][subdir] = "contrib"
 
-projects[sharethis][version] = "2.10"
+projects[sharethis][version] = "2.12"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
 
@@ -263,7 +257,7 @@ projects[search_api_db][download][type] = "git"
 projects[search_api_db][download][revision] = "643d96c"
 projects[search_api_db][download][branch] = "7.x-1.x"
 
-projects[search_api_page][version] = "1.1"
+projects[search_api_page][version] = "1.2"
 projects[search_api_page][type] = "module"
 projects[search_api_page][subdir] = "contrib"
 
@@ -271,12 +265,9 @@ projects[search_api_ranges][version] = "1.5"
 projects[search_api_ranges][type] = "module"
 projects[search_api_ranges][subdir] = "contrib"
 
-projects[search_api_solr][version] = "1.x-dev"
+projects[search_api_solr][version] = "1.8"
 projects[search_api_solr][type] = "module"
 projects[search_api_solr][subdir] = "contrib"
-projects[search_api_solr][download][type] = "git"
-projects[search_api_solr][download][revision] = "cf862ac"
-projects[search_api_solr][download][branch] = "7.x-1.x"
 
 projects[search_api_sorts][version] = "1.5"
 projects[search_api_sorts][type] = "module"
@@ -373,7 +364,7 @@ libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1
 
 libraries[css.js][destination] = "libraries"
 libraries[css.js][download][type] = "get"
-libraries[css.js][download][url] = "https://github.com/jotform/css.js/archive/v0.1.zip"
+libraries[css.js][download][url] = "https://github.com/mortenson/css.js/archive/master.zip"
 
 libraries[spectrum][destination] = "libraries"
 libraries[spectrum][download][type] = "get"
