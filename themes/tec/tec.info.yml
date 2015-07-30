@@ -1,0 +1,27 @@
+name: Tech Theme
+description: "Theme for our DFS TEC scenario."
+core: 8.x
+type: theme
+engine: twig
+base theme: zurb_foundation
+
+# Image appears on admin/appearance
+screenshot: images/screenshot.png
+
+libraries:
+ - tec/main
+
+regions:
+  meta: Meta Header
+  header: Header
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer: 'Footer'
+regions_hidden:
+  page_top: 'Page Top'
+  page_bottom: 'Page bottom'

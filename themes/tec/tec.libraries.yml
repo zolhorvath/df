@@ -1,0 +1,10 @@
+main:
+  version: VERSION
+  css:
+    theme:
+      css/tec.css: {}
+  js:
+    js/tec.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
