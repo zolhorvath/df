@@ -4,20 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.media
-    - field.field.block_content.media.field_add_media
+    - field.field.block_content.media.field_file_reference
   module:
-    - image
+    - df_tools_browser
 id: block_content.media.default
 targetEntityType: block_content
 bundle: media
 mode: default
 content:
-  field_add_media:
-    type: image
+  field_file_reference:
     weight: 0
+    label: hidden
     settings:
       image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    label: hidden
+    type: entity_reference_image
 hidden: {  }

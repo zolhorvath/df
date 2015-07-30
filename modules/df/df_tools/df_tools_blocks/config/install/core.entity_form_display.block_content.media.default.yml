@@ -4,21 +4,22 @@ status: true
 dependencies:
   config:
     - block_content.type.media
-    - field.field.block_content.media.field_add_media
+    - field.field.block_content.media.field_file_reference
   module:
-    - image
+    - entity_browser
 id: block_content.media.default
 targetEntityType: block_content
 bundle: media
 mode: default
 content:
-  field_add_media:
-    type: image_image
+  field_file_reference:
     weight: 3
     settings:
-      progress_indicator: bar
-      preview_image_style: thumbnail
+      entity_browser: browse_files
+      field_widget_display: label
+      field_widget_display_settings: {  }
     third_party_settings: {  }
+    type: entity_browser_entity_reference
   info:
     type: string_textfield
     weight: 0

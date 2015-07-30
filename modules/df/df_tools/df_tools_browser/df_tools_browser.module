@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file Contains logic for df_tools_browser.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function df_tools_browser_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the df_tools_browser module.
+    case 'help.page.df_tools_browser':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides an entity browser.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function df_tools_browser_form_alter(&$form, FormStateInterface &$form_state) {
+  if ($form['#form_id'] == 'entity_browser_browse_files_form') {
+    $form['#attached']['library'][] = 'df_tools_browser/view';
+  }
+}

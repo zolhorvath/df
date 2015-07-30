@@ -51,7 +51,7 @@ function df_tools_blocks_install() {
         2 => 'Media'
       ],
       'fields' => [
-        'field_add_media' => 'Media'
+        'field_file_reference' => 'Media'
       ]
     ],
   ];
