@@ -94,7 +94,6 @@ projects[migrate_plus][type] = "module"
 projects[migrate_plus][subdir] = "contrib"
 projects[migrate_plus][download][type] = "git"
 projects[migrate_plus][download][branch] = "8.x-1.x"
-projects[migrate_plus][download][url] = "http://git.drupal.org/sandbox/mikeryan/migrate_plus.git"
 ; Implement migrate-rollback command for D8
 ; http://drupal.org/node/2403411
 ;projects[migrate_plus][patch][2403411] = "http://drupal.org/files/issues/implement-2403411-5.patch"
