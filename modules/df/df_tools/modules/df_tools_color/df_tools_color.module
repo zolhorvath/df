@@ -9,110 +9,125 @@
  * Implements hook_menu().
  */
 function df_tools_color_menu() {
-  $items['admin/appearance/colors'] = array(
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('df_tools_color_form'),
+  $items['df_tools_color/css'] = array(
+    'page callback' => 'df_tools_color_get_css',
     'access arguments' => array('administer themes'),
-    'weight' => 100,
-    'title' => 'Color Palette',
-    'type' => MENU_LOCAL_TASK,
+  );
+  $items['df_tools_color/css/save'] = array(
+    'page callback' => 'df_tools_color_save_css',
+    'access arguments' => array('administer themes'),
+  );
+  $items['df_tools_color/css/preview'] = array(
+    'page callback' => 'df_tools_color_preview_css',
+    'access arguments' => array('administer themes'),
+  );
+  $items['df_tools_color/css/reset'] = array(
+    'page callback' => 'df_tools_color_reset_css',
+    'access arguments' => array('administer themes'),
+  );
+  $items['df_tools_color/proxy'] = array(
+    'page callback' => 'df_tools_color_proxy',
+    'access arguments' => array('administer themes'),
   );
   return $items;
 }
 
 /**
- * Form callback for admin/appearance/colors.
+ * Menu callback to proxy a given URL to circumvent CORS.
  */
-function df_tools_color_form($form, &$form_state) {
-  // Check to see if the df_tools_color_css variable is set before building the form
-  if (!$css = variable_get('df_tools_color_css', FALSE)) {
-    drupal_set_message('The df_tools_color_css variable has not been set.', 'error');
-    return array();
+function df_tools_color_proxy() {
+  if (isset($_GET['url'])) {
+    $response = drupal_http_request($_GET['url']);
+    if (!empty($response->data)) {
+      drupal_json_output(array('contents' => $response->data));
+    }
   }
-
-  $form['help'] = array(
-    '#markup' => '<i>This palette has been automatically generated from your theme. You can change colors and view selectors by clicking on the palette.</i>'
-  );
-
-  // This empty form element will be targeted by our JS to dynamically add the palette
-  $form['colors'] = array(
-    '#type' => 'container',
-    '#attributes' => array('class' => array('colors-form')),
-  );
-
-  // This is how the JS will communicate the new palette selection to us in the submit handler.
-  $form['colors_json'] = array(
-    '#type' => 'textarea',
-  );
-
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => t('Update palette'),
-    '#submit' => array('df_tools_color_form_submit')
-  );
-
-  // If we've already created an override CSS file, use that as the basis for the palette.
-  if (file_exists('public://df_tools_color_overrides.css')) {
-    $form['reset'] = array(
-      '#type' => 'submit',
-      '#value' => t('Reset palette'),
-      '#submit' => array('df_tools_color_form_reset')
-    );
-    $css = variable_get('file_public_path', 'sites/default/files') . '/df_tools_color_overrides.css';
-  }
-
-  // Add a setting so the JS is aware of our target CSS file
-  drupal_add_js(array('df_tools_color' => array('css' => '/' . $css)), 'setting');
-
-  // Attach our required libraries
-  $form['#attached']['css'] = array(
-    libraries_get_path('spectrum') . '/spectrum.css',
-    drupal_get_path('module', 'df_tools_color') . '/css/df_tools_color.css',
-  );
-  $form['#attached']['js'] = array(
-    libraries_get_path('css.js') . '/css.js',
-    libraries_get_path('spectrum') . '/spectrum.js',
-    drupal_get_path('module', 'df_tools_color') . '/js/df_tools_color.js'
-  );
-  return $form;
 }
 
 /**
- * Form submit callback for admin/appearance/colors.
+ * Utility function to parse a structured colors array as CSS.
  */
-function df_tools_color_form_submit($form, &$form_state) {
-  if (isset($form_state['values']['colors_json']) && $json = json_decode($form_state['values']['colors_json'])) {
-    // Generate our dynamic CSS file
-    $css = '';
-    foreach ($json as $color) {
-      foreach ($color[1] as $rule) {
-        $new_css = $rule[0] . '{' . $rule[1] . ':' . $color[0] . '}';
-        // Add an extra wrapper for media queries
-        if (isset($rule[2])) {
-          $new_css = $rule[2] . '{' . $new_css . '}';
-        }
-        $css .= $new_css;
+function df_tools_color_process_colors($colors) {
+  // Generate our dynamic CSS file
+  $css = '';
+  foreach ($colors as $color) {
+    foreach ($color[1] as $rule) {
+      $new_css = $rule[0] . '{' . $rule[1] . ':' . $color[0] . '}';
+      // Add an extra wrapper for media queries
+      if (isset($rule[2])) {
+        $new_css = $rule[2] . '{' . $new_css . '}';
       }
+      $css .= $new_css;
     }
+  }
+  return $css;
+}
+
+/**
+ * Menu callback to temporarily compile colors into CSS and present it to the app.
+ */
+function df_tools_color_preview_css() {
+  if (isset($_POST['colors']) && $colors = json_decode($_POST['colors'])) {
+    $css = df_tools_color_process_colors($colors);
+
+    drupal_json_output($css);
+  }
+}
+
+/**
+ * Menu callback to compile colors and save them into a CSS file.
+ */
+function df_tools_color_save_css() {
+  if (isset($_POST['colors']) && $colors = json_decode($_POST['colors'])) {
+    $css = df_tools_color_process_colors($colors);
     // Output as a CSS file
     file_unmanaged_save_data($css, 'public://df_tools_color_overrides.css', FILE_EXISTS_REPLACE);
 
     // Clear CSS cache
     drupal_clear_css_cache();
-
-    drupal_set_message('The palette has successfully saved.');
   }
 }
 
 /**
- * Form callback to remove the current overrides and revert to original CSS file.
+ * Menu callback to delete the current CSS file.
  */
-function df_tools_color_form_reset($form, &$form_state) {
+function df_tools_color_reset_css() {
+  file_unmanaged_delete('public://df_tools_color_overrides.css');
+}
+
+/**
+ * Menu callback to compile all stylesheets in current theme into a string.
+ */
+function df_tools_color_get_css() {
+  $files = array();
+  // Use our override if it exists
   if (file_exists('public://df_tools_color_overrides.css')) {
-    file_unmanaged_delete('public://df_tools_color_overrides.css');
-    drupal_clear_css_cache();
-    drupal_set_message('The palette has successfully reset.');
+    $files[] = 'public://df_tools_color_overrides.css';
   }
+  // Otherwise grab all the stylesheets from the frontend theme
+  else {
+    $theme = variable_get('theme_default');
+    $path = drupal_get_path('theme', $theme);
+    $info = drupal_parse_info_file("$path/$theme.info");
+    if (!empty($info['stylesheets'])) {
+      foreach ($info['stylesheets'] as $group) {
+        foreach ($group as $file) {
+          if (strpos($file, 'normalize') === FALSE) {
+            $files[] = "$path/$file";
+          }
+        }
+      }
+    }
+  }
+  // Compile CSS based on those stylesheets
+  $css = '';
+  foreach ($files as $file) {
+    if (file_exists($file)) {
+      $css .= file_get_contents($file);
+    }
+  }
+
+  drupal_json_output($css);
 }
 
 /**
@@ -125,4 +140,49 @@ function df_tools_color_preprocess_page(&$variables) {
     // By using the CSS_THEME group, we place our CSS file after the scenario's
     drupal_add_css('public://df_tools_color_overrides.css', array('group' => CSS_THEME));
   }
+}
+
+/**
+ * Implements hook_navbar().
+ */
+function df_tools_color_navbar() {
+  global $theme;
+  $items = array();
+  if ($theme == variable_get('theme_default')) {
+    $path = drupal_get_path('module', 'df_tools_color');
+    $items['df_tools_color'] = array(
+      '#type' => 'navbar_item',
+      'tab' => array(
+        'trigger' => array(
+          '#theme' => 'html_tag',
+          '#tag' => 'button',
+          '#value' => t('Colours'),
+          '#value_prefix' => '<span class="element-invisible">',
+          '#value_suffix' => '</span>',
+          '#attributes' => array(
+            'title' => t('Change Colours'),
+            'class' => array('df-tools-color-icon'),
+          ),
+        ),
+      ),
+      '#wrapper_attributes' => array(
+        'class' => array('df-tools-color-icon-wrapper'),
+      ),
+      '#attached' => array(
+        'js' => array(
+          libraries_get_path('css.js') . '/css.js',
+          libraries_get_path('spectrum') . '/spectrum.js',
+          libraries_get_path('html2canvas') . '/dist/html2canvas.min.js',
+          libraries_get_path('color-thief') . '/src/color-thief.js',
+          $path . '/js/df_tools_color.js'
+        ),
+        'css' => array(
+          libraries_get_path('spectrum') . '/spectrum.css',
+          $path . '/css/df_tools_color.css'
+        ),
+      ),
+      '#weight' => 200,
+    );
+  }
+  return $items;
 }

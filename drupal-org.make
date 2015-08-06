@@ -395,7 +395,6 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
-projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
 
