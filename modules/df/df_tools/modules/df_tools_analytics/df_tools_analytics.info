@@ -7,5 +7,5 @@ project = df_connect
 project = df_tools_analytics
 dependencies[] = df_tools_analytics_dashboard
 dependencies[] = google_analytics_reports
-dependencies[] = google_analytics_reports_views
+dependencies[] = google_analytics_reports_api
 datestamp = 1368820311

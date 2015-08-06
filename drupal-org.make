@@ -154,11 +154,8 @@ projects[google_analytics_reports][version] = "3.x-dev"
 projects[google_analytics_reports][type] = "module"
 projects[google_analytics_reports][subdir] = "contrib"
 projects[google_analytics_reports][download][type] = "git"
-projects[google_analytics_reports][download][revision] = "e50321e"
+projects[google_analytics_reports][download][revision] = "454af59"
 projects[google_analytics_reports][download][branch] = "7.x-3.x"
-; Migrate from Chart module to Charts
-; http://drupal.org/node/2169159
-projects[google_analytics_reports][patch][2169159] = "http://drupal.org/files/issues/ga_reports-chart-to-charts-2169159-28.patch"
 
 projects[marketo_ma][version] = "1.1"
 projects[marketo_ma][type] = "module"
@@ -320,10 +317,6 @@ projects[language_switch][download][type] = "git"
 projects[language_switch][download][revision] = "b79dd56"
 projects[language_switch][download][branch] = "7.x-1.x"
 
-projects[lingotek][version] = "6.00"
-projects[lingotek][type] = "module"
-projects[lingotek][subdir] = "contrib"
-
 projects[potx][version] = "1.x-dev"
 projects[potx][type] = "module"
 projects[potx][subdir] = "contrib"
@@ -349,9 +342,17 @@ projects[features_override][subdir] = "contrib"
 
 ; DF Tools
 
+projects[restws][version] = "2.4"
+projects[restws][type] = "module"
+projects[restws][subdir] = "contrib"
+
 projects[slick][version] = "2.0-beta1"
 projects[slick][type] = "module"
 projects[slick][subdir] = "contrib"
+
+projects[views_datasource][version] = "1.0-alpha2"
+projects[views_datasource][type] = "module"
+projects[views_datasource][subdir] = "contrib"
 
 ; Libraries
 libraries[jquery.cycle][destination] = "libraries"
@@ -370,6 +371,14 @@ libraries[spectrum][destination] = "libraries"
 libraries[spectrum][download][type] = "get"
 libraries[spectrum][download][url] = "https://github.com/bgrins/spectrum/archive/1.7.0.zip"
 
+libraries[html2canvas][destination] = "libraries"
+libraries[html2canvas][download][type] = "get"
+libraries[html2canvas][download][url] = "https://github.com/niklasvh/html2canvas/archive/master.zip"
+
+libraries[color-thief][destination] = "libraries"
+libraries[color-thief][download][type] = "get"
+libraries[color-thief][download][url] = "https://github.com/lokesh/color-thief/archive/master.zip"
+
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
 projects[demonstratie][type] = "theme"
@@ -386,5 +395,9 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
+
+; Scenario
+includes[media_entertainment] = modules/dfs/dfs_med/dfs_med.make
