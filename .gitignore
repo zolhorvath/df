@@ -1,7 +1,10 @@
-#Sass
+# Theme
 .sass-cache
+.bin
+node_modules
+bower_components
 
-#OSX
+# OSX
 .DS_Store
 
 # Ant
@@ -10,6 +13,11 @@ build.properties
 
 # Composer
 vendor
+composer.lock
+
+# Behat
+bin
+behat.local.yml
 
 # Contrib
 modules/contrib/*
@@ -18,5 +26,5 @@ themes/contrib/*
 # Libraries
 libraries/*
 
-# Other
-private
+# PHPStorm
+.idea
