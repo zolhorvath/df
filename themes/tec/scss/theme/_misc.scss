@@ -1,0 +1,4 @@
+// Fix the toolbar's font size being overridden by Foundation
+ul.toolbar-menu {
+  font-size: rem-calc(13px);
+}
