@@ -31,9 +31,10 @@ function df_tools_blocks_install() {
         6 => 'Image'
       ],
       'fields' => [
-        'field_first_line' => 'First Line',
-        'field_second_line' => 'Second Line',
-        'field_hero_link' => 'Link',
+        'field_first_line/value' => 'First Line',
+        'field_second_line/value' => 'Second Line',
+        'field_hero_link/uri' => 'Link',
+        'field_hero_link/title' => 'Link Title',
         'field_hero_image' => 'Image',
       ]
     ],

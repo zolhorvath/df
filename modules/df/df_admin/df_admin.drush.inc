@@ -78,6 +78,16 @@ function drush_df_admin_enable_scenario($scenario) {
     return;
   }
 
+  // If we have pending batches, process them now.
+  if (batch_get()) {
+    if (php_sapi_name() === 'cli' && function_exists('drush_backend_batch_process')) {
+      drush_backend_batch_process();
+    }
+    else {
+      batch_process();
+    }
+  }
+
   // Retreive the migrations for the given scenario.
   $migrations = df_admin_scenario_migrations($scenario);
   $log = new DrushLogMigrateMessage();
@@ -88,7 +98,8 @@ function drush_df_admin_enable_scenario($scenario) {
     $executable = new MigrateExecutable($migration, $log);
     if (drush_op(array($executable, 'import'))) {
       drush_log(dt('Imported "@name" migration.', array('@name' => $migration->label())), 'ok');
-    } 
+    }
+    \Drupal::moduleHandler()->invokeAll('df_admin_migration_finished', [$migration]);
   }
 
   // Rebuild cache after enabling scenario.

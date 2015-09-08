@@ -8,4 +8,4 @@ dependencies:
   - hal
   - basic_auth
   - serialization
-
+  - df_tools_scheduler

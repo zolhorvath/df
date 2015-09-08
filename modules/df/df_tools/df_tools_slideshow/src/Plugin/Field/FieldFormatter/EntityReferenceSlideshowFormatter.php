@@ -88,6 +88,20 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
   public function viewElements(FieldItemListInterface $items) {
     $elements = parent::viewElements($items);
 
+    $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    foreach ($elements as $delta => $element) {
+      // We need to re-render this in the right language.
+      if (isset($element['#block_content'])) {
+        $entity = $element['#block_content'];
+        // @todo Investigate core bug and pull patch.
+        $new_view = entity_view($entity, $this->getSetting('view_mode'), $langcode);
+        if (isset($elements[$delta]['field_hero_image'])) {
+          $new_view['field_hero_image'] = $elements[$delta]['field_hero_image'];
+        }
+        $elements[$delta] = $new_view;
+      }
+    }
+
     // For some reason preprocess_block doesn't get called for entity references to blocks
     foreach (Element::getVisibleChildren($elements) as $i) {
       if (isset ($elements[$i]['#block_content']) && $elements[$i]['#block_content']->bundle() == 'hero') {

@@ -29,14 +29,6 @@ class HeroBlock extends CSV {
 
       $row->setSourceProperty('Image', $file);
     }
-    if (($uri = $row->getSourceProperty('Link')) && ($title = $row->getSourceProperty('Link Title'))) {
-      $link = array(
-        'uri' => $uri,
-        'title' => $title,
-        'options' => array()
-      );
-      $row->setSourceProperty('Link', $link);
-    }
   }
 
 }
