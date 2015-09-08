@@ -6,8 +6,7 @@ Feature: DFS TEC: Employee node
 
   @api
   Scenario: Create an employee node
-    Given I am logged in as a user with the "administrator" role
-    When I am viewing an "employee" content with the title "Dries"
+    Given I am viewing an "employee" content with the title "Dries"
     Then I should see the heading "Dries"
     And I should not see the heading "Tom"
 

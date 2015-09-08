@@ -4,17 +4,17 @@ Feature: DFS TEC: Homepage
   As a developer
   I need to check for elements on the front page
 
+  @api
   Scenario: Block: Slideshow
     Given I am on the homepage
-    Then I should see the "div" element with the "class" attribute set to "df-tools-slideshow" in the "top" region
-    And I should see "Insight that makes sense of it all" in the "top" region
+    Then I should see "Insight that makes sense of it all" in the "top" region
     And I should see "Strong providers in innovation." in the "top" region
     And I should see "The perspective that effects your bottom line." in the "top" region
 
+  @api
   Scenario: Block: Services Promo
     Given I am on the homepage
-    Then I should see the "div" element with the "class" attribute set to "homepage-service-promo" in the "primary" region
-    And I should see "Bayside Consulting is your global business consulting partner." in the "primary" region
+    Then I should see "Bayside Consulting is your global business consulting partner." in the "primary" region
     And I should see "Digital Consulting" in the "primary" region
     And I should see "Business Transformation" in the "primary" region
     And I should see "Research Analysis" in the "primary" region

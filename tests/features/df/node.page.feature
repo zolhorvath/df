@@ -6,8 +6,7 @@ Feature: Demo Framework: Basic page node
 
   @api
   Scenario: Create a basic page node
-    Given I am logged in as a user with the "administrator" role
-    When I am viewing a "page" content with the title "About us"
+    Given I am viewing a "page" content with the title "About us"
     Then I should see the heading "About us"
 
   @api

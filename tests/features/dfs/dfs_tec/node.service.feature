@@ -6,8 +6,7 @@ Feature: DFS TEC: Service node
 
   @api
   Scenario: Create a service node
-    Given I am logged in as a user with the "administrator" role
-    When I am viewing a "service" content with the title "Investments"
+    Given I am viewing a "service" content with the title "Investments"
     Then I should see the heading "Investments"
 
   @api

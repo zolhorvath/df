@@ -6,8 +6,7 @@ Feature: Demo Framework: Article nodes
 
   @api
   Scenario: Create an article node
-    Given I am logged in as a user with the "administrator" role
-    When I am viewing an "article" content with the title "My article"
+    Given I am viewing an "article" content with the title "My article"
     Then I should see the heading "My article"
 
   @api

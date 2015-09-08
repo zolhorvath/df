@@ -9,10 +9,10 @@ Feature: Demo Framework: Homepage
     Then the response status code should be 200
     And I should see the heading "Welcome"
 
+  @api
   Scenario: Block: Recent content view
     Given I am on the homepage  
     Then I should see "Recent content" in the "middle" region
-    And I should see the "div" element with the "class" attribute set to "recent-content" in the "middle" region
 
   Scenario: Block: User login (anon)
     Given I am on the homepage
