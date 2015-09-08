@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.38
+projects[drupal][version] = 7.39
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
@@ -44,3 +44,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/Issue-2400287-by-has
 ; Pass $page_callback_result through hook_page_delivery_callback_alter().
 ; http://drupal.org/node/897504
 projects[drupal][patch][] = "http://drupal.org/files/issues/pass-page-callback-result-897504-2.patch"
+
+; Xss filter() ignores malicious content in data-attributes and mangles image captions.
+; http://drupal.org/node/2105841
+projects[drupal][patch][] = "http://drupal.org/files/issues/do-2105841_no_protocol_filter-90.patch"
