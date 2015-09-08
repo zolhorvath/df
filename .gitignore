@@ -28,3 +28,6 @@ libraries/*
 
 # PHPStorm
 .idea
+
+# Other
+private
