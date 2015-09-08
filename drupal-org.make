@@ -73,9 +73,6 @@ projects[geolocation][type] = "module"
 projects[geolocation][subdir] = "contrib"
 projects[geolocation][download][type] = "git"
 projects[geolocation][download][branch] = "8.x-1.x"
-; Adds a configurable Google Maps formatter to geolocation, along with other bugfixes
-; https://www.drupal.org/node/2474345
-projects[geolocation][patch][2474345] = "https://www.drupal.org/files/issues/2474345-14.patch"
 
 projects[import][version] = "1.x-dev"
 projects[import][type] = "module"
