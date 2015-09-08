@@ -47,6 +47,17 @@ function tec_preprocess_block(&$variables) {
     $bundle = $variables['content']['#block_content']->bundle();
     $variables['attributes']['class'][] = 'block-bundle-' . Html::getClass($bundle);
   }
+
+  // Force translation for block titles.
+  if (isset($variables['label'])) {
+    if (!is_array($variables['label'])) {
+      $variables['label'] = t($variables['label']);
+    }
+    elseif (isset($variables['label']['#markup'])) {
+      $variables['label']['#markup'] = t($variables['label']['#markup']);
+    }
+  }
+
 }
 
 /**
@@ -89,4 +100,11 @@ function tec_preprocess_page(&$variables) {
     // We already display the title in node--full.html.twig
     unset($variables['title']);
   }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function tec_preprocess_html(&$variables) {
+  $variables['head_title']['title'] = t($variables['head_title']['title']);
 }

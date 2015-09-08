@@ -21,8 +21,16 @@ function dfs_tec_install() {
   // Base extended node types on Article migration.
   $content_types = [
     'article' => [
-      'columns' => [],
-      'fields' => [],
+      'columns' => [
+        'Title',
+        'Body',
+        'Image',
+        'Tags',
+        'Path',
+      ],
+      'fields' => [
+        'path' => 'Path'
+      ],
       'plugin' => FALSE
     ],
     'employee' => [
@@ -36,9 +44,11 @@ function dfs_tec_install() {
         'Email',
         'Location',
         'Phone',
-        'Links'
+        'Links',
+        'Path'
       ],
       'fields' => [
+        'path' => 'Path',
         'field_employee_name' =>  'Name',
         'field_title' =>  'Job Title',
         'field_biography/value' =>  'Biography',
@@ -62,9 +72,11 @@ function dfs_tec_install() {
         'Subheadline',
         'Body',
         'Hero Image',
-        'Tags'
+        'Tags',
+        'Path'
       ],
       'fields' => [
+        'path' => 'Path',
         'field_headline' => 'Headline',
         'field_subheadline' => 'Subheadline',
         'field_hero_image' => 'Hero Image'
@@ -92,6 +104,9 @@ function dfs_tec_install() {
       'source' => 'Tags',
     );
     $migration->set('process', $process);
+
+    // Remove any dependencies that may have been set in the base migration.
+    $migration->set('migration_dependencies', ['required' => ['import_dfs_tec_tags']]);
 
     $migration->save();
   }
@@ -122,6 +137,14 @@ function dfs_tec_install() {
   // Set the default contact form
   \Drupal::configFactory()->getEditable('contact.settings')->set('default_form', 'contact_form')->save();
 
+  // Enable translation for all of our entities/bundles.
+  $entities = [
+    'node' => ['employee', 'service']
+  ];
+  df_tools_translation_enable_translation($entities);
+
+  // Import our custom .po files
+  df_tools_translation_import_translations('module', 'dfs_tec');
 }
 
 /**

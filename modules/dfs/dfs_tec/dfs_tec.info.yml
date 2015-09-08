@@ -8,4 +8,5 @@ dependencies:
   - df_tools_migration
   - df_tools_slideshow
   - df_tools_services
+  - df_tools_translation
   - import

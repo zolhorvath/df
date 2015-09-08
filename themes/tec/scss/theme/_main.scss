@@ -82,8 +82,10 @@
             margin: 0;
             padding: 0 rem-calc(30px) 0 rem-calc(30px);
             border-right: rem-calc(1px) solid $light-gray;
+            max-width: 33.3333%;
             @media #{$medium-only},#{$small-only} {
                 border-right: none;
+                max-width: none;
             }
             &:last-child {
                 padding-right: 0;
@@ -347,7 +349,7 @@ section[rel~="schema:comment"] {
             }
         }
         /* Learn more button */
-        .views-field-view-node {
+        .views-field-path {
             position: absolute;
             bottom: rem-calc(10px);
             width: 100%;

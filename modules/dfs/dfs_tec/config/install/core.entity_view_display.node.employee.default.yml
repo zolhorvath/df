@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.employee.body
     - field.field.node.employee.field_biography
     - field.field.node.employee.field_department
     - field.field.node.employee.field_email
@@ -80,6 +81,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_department: true
   field_employee_name: true
   field_job: true
+  langcode: true
+

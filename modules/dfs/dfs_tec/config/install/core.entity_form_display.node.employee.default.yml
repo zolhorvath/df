@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.employee.body
     - field.field.node.employee.field_biography
     - field.field.node.employee.field_department
     - field.field.node.employee.field_email
@@ -22,6 +23,14 @@ targetEntityType: node
 bundle: employee
 mode: default
 content:
+  body:
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
   field_biography:
     type: text_textarea_with_summary
     weight: 4
@@ -81,6 +90,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -88,9 +102,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
 hidden:
   created: true
   path: true
   promote: true
   sticky: true
   uid: true
+

@@ -387,18 +387,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        view_node:
-          id: view_node
+        path:
+          id: path
           table: node
-          field: view_node
+          field: path
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a class="button small radius" href="{{ path }}">{{ ''discover more''|t }} ></a>'
             make_link: false
             path: ''
             absolute: false
@@ -424,7 +424,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: 'button small radius'
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -435,9 +435,9 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'discover more >'
+          absolute: false
           entity_type: node
-          plugin_id: entity_link
+          plugin_id: node_path
       filters:
         status:
           value: true
@@ -542,6 +542,46 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
@@ -572,6 +612,7 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
+        - user.permissions
       cacheable: false
   block_1:
     display_plugin: block
@@ -586,4 +627,5 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
+        - user.permissions
       cacheable: false

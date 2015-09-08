@@ -80,6 +80,9 @@ footer {
     font-weight: 500;
     color: $primary-color;
     text-transform: uppercase;
+    .columns {
+        padding: 0;
+    }
     .row {
         margin: rem-calc(25px) auto rem-calc(25px) auto;
     }

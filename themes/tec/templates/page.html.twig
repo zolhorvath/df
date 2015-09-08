@@ -69,8 +69,8 @@
         {{ page.meta }}
       {% endif %}
       <div class="meta-login large-3 right columns">
-        <a data-dropdown="account-menu" aria-controls="account-menu" aria-expanded="false" class="account-link" data-options="">Account</a>
-          <ul id="account-menu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <a data-dropdown="account-menu" aria-controls="account-menu" aria-expanded="false" class="account-link" data-options="">{{ 'Account'|t }}</a>
+        <ul id="account-menu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
           {% if logged_in %}
            <li> <a href="{{ path('user.page') }}">{{ 'My Account'|t }}</a></li>
             <li><a href="{{ path('user.logout') }}">{{ 'Logout'|t }}</a></li>
@@ -78,6 +78,12 @@
             <li><a href="{{ path('user.login') }}">{{ 'Login'|t }}</a></li>
             <li><a href="{{ path('user.register') }}">{{ 'Sign Up'|t }}</a></li>
           {% endif %}
+        </ul>
+        <a class="language-link" data-dropdown="language-menu" aria-controls="language-menu" aria-expanded="false" data-options="">{{ language_current_link }}</a>
+        <ul id="language-menu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+          {% for link in language_links %}
+            <li>{{ link }}</li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -122,7 +128,7 @@
       {% if breadcrumb %} {{ breadcrumb }} {% endif %}
       {% if title and not is_front %}
         {{ title_prefix }}
-        <h1 id="page-title" class="title">{{ title }}</h1>
+        <h1 id="page-title" class="title">{{ title|t }}</h1>
         {{ title_suffix }}
       {% endif %}
 
@@ -165,7 +171,7 @@
         <p class="bottom-copyright">&copy; {{ "now"|date('Y') }} {{ site_name }} - {{ 'All rights reserved.'|t }}</p>
       </div>
       <div class="large-6 columns">
-        <div class="bottom-contact"><p>Need to speak with someone?</p><a href="/contact" class="button">Contact Us</a></div>
+        <div class="bottom-contact"><p>{{ 'Need to speak with someone?'|t }}</p><a href="/contact" class="button">{{ 'Contact Us'|t }}</a></div>
       </div>
   </div>
 </div>
