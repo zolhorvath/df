@@ -2,7 +2,7 @@ api = 2
 core = 8.x
 
 ; Modules
-projects[admin_toolbar][version] ="1.7"
+projects[admin_toolbar][version] ="1.9"
 projects[admin_toolbar][type] ="module"
 projects[admin_toolbar][subdir] ="contrib"
 
@@ -34,6 +34,12 @@ projects[crop][type] = "module"
 projects[crop][subdir] = "contrib"
 projects[crop][download][type] = "git"
 projects[crop][download][branch] = "8.x-1.x"
+
+projects[ctools][version] ="3.x-dev"
+projects[ctools][type] ="module"
+projects[ctools][subdir] ="contrib"
+projects[ctools][download][type] = "git"
+projects[ctools][download][branch] = "8.x-3.x"
 
 projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
@@ -128,7 +134,7 @@ projects[pathauto][subdir] = "contrib"
 projects[pathauto][directory_name] = "pathauto"
 projects[pathauto][download][type] = "git"
 projects[pathauto][download][url]= "git@github.com:md-systems/pathauto.git"
-projects[pathauto][download][branch] = "token-metadata-changes"
+projects[pathauto][download][branch] = "8.x-1.x"
 
 projects[restui][version] = "1.x-dev"
 projects[restui][type] = "module"
