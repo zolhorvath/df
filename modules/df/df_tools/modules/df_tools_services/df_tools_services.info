@@ -3,6 +3,7 @@ description = RESTful views providing nodes as a service.
 core = 7.x
 package = Demo Framework Tools
 version = 7.x-1.0
+dependencies[] = scheduler
 dependencies[] = views
 dependencies[] = views_json
 dependencies[] = views_ui
