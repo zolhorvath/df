@@ -5,3 +5,5 @@ package = Demo Framework Tools
 version = 7.x-1.0
 project = df_tools_rest
 dependencies[] = restws
+dependencies[] = restws_basic_auth
+dependencies[] = scheduler
