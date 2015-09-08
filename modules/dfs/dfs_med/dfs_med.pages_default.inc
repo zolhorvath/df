@@ -112,7 +112,7 @@ function dfs_med_default_page_manager_pages() {
     $pane->pid = 'new-66f8e593-0b71-468c-a17a-3468656ce2a1';
     $pane->panel = 'primary_features';
     $pane->type = 'views_panes';
-    $pane->subtype = 'editorial_callout-editorial_pane';
+    $pane->subtype = 'article_callout-article_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

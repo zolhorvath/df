@@ -434,7 +434,7 @@ function dfs_med_brand_views_default_views() {
   $handler->display->display_options['filters']['type_1']['value'] = array(
     'brand' => 'brand',
     'commerce' => 'commerce',
-    'editorial' => 'editorial',
+    'article' => 'article',
     'episode' => 'episode',
     'landing' => 'landing',
     'slideshow_slide' => 'slideshow_slide',

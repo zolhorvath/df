@@ -117,6 +117,9 @@ function dfs_med_install() {
     ))
     ->execute();
 
+  // Enable the Bynder integration where available.
+  module_enable(array('as_bynder'));
+
 }
 
 /**

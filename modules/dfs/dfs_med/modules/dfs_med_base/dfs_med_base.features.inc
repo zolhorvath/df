@@ -56,10 +56,10 @@ function dfs_med_base_image_default_styles() {
     ),
   );
 
-  // Exported image style: editorial-callout.
-  $styles['editorial-callout'] = array(
-    'name' => 'editorial-callout',
-    'label' => 'editorial-callout',
+  // Exported image style: article-callout.
+  $styles['article-callout'] = array(
+    'name' => 'article-callout',
+    'label' => 'article-callout',
     'effects' => array(
       5 => array(
         'label' => 'Scale and crop',

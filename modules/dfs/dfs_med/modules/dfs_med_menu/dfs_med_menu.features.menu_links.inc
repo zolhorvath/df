@@ -35,14 +35,14 @@ function dfs_med_menu_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_editorials:editorials
-  $menu_links['main-menu_editorials:editorials'] = array(
+  // Exported menu link: main-menu_articles:articles
+  $menu_links['main-menu_articles:articles'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'editorials',
-    'router_path' => 'editorials',
+    'link_path' => 'articles',
+    'router_path' => 'articles',
     'link_title' => 'Editorials',
     'options' => array(
-      'identifier' => 'main-menu_editorials:editorials',
+      'identifier' => 'main-menu_articles:articles',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',

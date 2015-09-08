@@ -35,14 +35,20 @@
 // The theme will have compilation errors if Foundation is not imported.
 
 // Global Zurb Foundation variables.
-@import "vendor/foundation/variables";
+@import "../bower_components/foundation/scss/foundation/settings";
 // Comment out this import if you don't want to use normalize.
-@import "vendor/foundation/normalize";
+@import "../bower_components/foundation/scss/normalize";
 // Comment out this import below if you are customizing you imports below.
-@import "vendor/foundation/foundation";
+@import "../bower_components/foundation/scss/foundation";
 // Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
 @import "bourbon";
 
+// Custom variables;
+$terciary-color: #666;
+$small-text: 0.8em;
+$light-text: #fff;
+$border-color: #ccc;
+$light-hover-text: #999;
 
 // Import our mixins early so they can be used by other partials.
 // Optional.
