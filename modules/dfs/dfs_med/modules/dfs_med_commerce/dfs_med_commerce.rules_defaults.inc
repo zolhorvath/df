@@ -78,7 +78,7 @@ function dfs_med_commerce_default_rules_configuration() {
         { "commerce_cart_product_add_by_sku" : {
             "USING" : {
               "user" : [ "site:current-user" ],
-              "sku" : [ "node:field-product:sku" ],
+              "sku" : [ "node:field-product:0:sku" ],
               "quantity" : "1",
               "combine" : 1
             },
