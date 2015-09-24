@@ -43,13 +43,12 @@ function df_form_install_configure_form_alter(&$form, $form_state) {
       $list['acquia'][$module->name] = $module->info['name'];
     }
   }
-  $list['dfs'] = array_reverse($list['dfs']);
   $list['dfs']['none'] = 'Do not install a demo scenario.';
 
-  // When available, WEM Demo is default scenario.
+  // Set default scenario.
   $default_scenario = 'none';
-  if (isset($list['dfs']['dfs_wem'])) {
-    $default_scenario = 'dfs_wem';
+  if (isset($list['dfs']['dfs_med'])) {
+    $default_scenario = 'dfs_med';
   }
 
   // Add 'Demo Framework' fieldset and options.
