@@ -109,9 +109,6 @@ projects[page_manager][download][branch] = "8.x-1.x"
 ; Rename the core "Page with blocks" admin_label and sort display variants
 ; https://www.drupal.org/node/2503947
 projects[page_manager][patch][2503947] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
-; EntityViewController::buildTitle() expects '#<entity type>' to be set in BlockDisplayVariant::build()
-; https://www.drupal.org/node/2527748
-projects[page_manager][patch][2527748] = "https://www.drupal.org/files/issues/page_manager-build-title-fix.patch"
 
 projects[oauth][version] = "1.x-dev"
 projects[oauth][type] = "module"
