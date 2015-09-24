@@ -13,7 +13,7 @@ function dfs_med_menu_menu_default_menu_links() {
   // Exported menu link: main-menu_collections:search/node/collections
   $menu_links['main-menu_collections:search/node/collections'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'search/node/collections',
+    'link_path' => 'search/node/top type:episodic_collection',
     'router_path' => 'search/node/%',
     'link_title' => 'Collections',
     'options' => array(
