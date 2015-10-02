@@ -401,13 +401,13 @@ projects[views_datasource][type] = "module"
 projects[views_datasource][subdir] = "contrib"
 
 ; Libraries
-libraries[color-thief][destination] = "libraries"
-libraries[color-thief][download][type] = "get"
-libraries[color-thief][download][url] = "https://github.com/lokesh/color-thief/archive/master.zip"
+;libraries[color-thief][destination] = "libraries"
+;libraries[color-thief][download][type] = "get"
+;libraries[color-thief][download][url] = "https://github.com/lokesh/color-thief/archive/master.zip"
 
-libraries[css.js][destination] = "libraries"
-libraries[css.js][download][type] = "get"
-libraries[css.js][download][url] = "https://github.com/mortenson/css.js/archive/master.zip"
+;libraries[css.js][destination] = "libraries"
+;libraries[css.js][download][type] = "get"
+;libraries[css.js][download][url] = "https://github.com/mortenson/css.js/archive/master.zip"
 
 libraries[html2canvas][destination] = "libraries"
 libraries[html2canvas][download][type] = "get"
