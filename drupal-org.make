@@ -455,10 +455,3 @@ projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
-
-; Private
-includes[acquia_secret_sauce] = modules/private/acquia_secret/acquia_secret.make
-includes[financial_insurance] = modules/private/dfs_fin/dfs_fin.make
-includes[valen_remix] = modules/private/dfs_vac/dfs_vac.make
-includes[acquia_lift_demo] = modules/private/acquia_lift_demo/acquia_lift_demo.make
-includes[df_tools_cklite] = modules/df/df_tools/modules/df_tools_cklite/df_tools_cklite.make
