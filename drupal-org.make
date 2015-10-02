@@ -223,6 +223,10 @@ projects[mailsystem][version] = "2.34"
 projects[mailsystem][type] = "module"
 projects[mailsystem][subdir] = "contrib"
 
+projects[manualcrop][version] = "1.5"
+projects[manualcrop][type] = "module"
+projects[manualcrop][subdir] = "contrib"
+
 projects[marketo_ma][version] = "1.1"
 projects[marketo_ma][type] = "module"
 projects[marketo_ma][subdir] = "contrib"
@@ -424,6 +428,14 @@ libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1
 libraries[spectrum][destination] = "libraries"
 libraries[spectrum][download][type] = "get"
 libraries[spectrum][download][url] = "https://github.com/bgrins/spectrum/archive/1.7.0.zip"
+
+libraries[jquery.imgareaselect][destination] = "libraries"
+libraries[jquery.imgareaselect][download][type] = "get"
+libraries[jquery.imgareaselect][download][url] = "https://github.com/bgrins/spectrum/archive/1.7.0.zip"
+
+libraries[jquery.imagesloaded][destination] = "libraries"
+libraries[jquery.imagesloaded][download][type] = "get"
+libraries[jquery.imagesloaded][download][url] = "http://odyniec.net/projects/imgareaselect/jquery.imgareaselect-0.9.10.zip"
 
 ; Themes
 projects[demonstratie][version] = "1.x-dev"
