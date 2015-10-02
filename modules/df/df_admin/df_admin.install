@@ -30,4 +30,7 @@ function df_admin_install() {
 
   // Set a base value for the currently installed scenario
   variable_set('df_admin_installed_scenario', FALSE);
+
+  // Re-enable standard checkboxes on Modules page.
+  variable_set('module_filter_use_switch', FALSE);
 }
