@@ -23,9 +23,9 @@ function df_tools_hero_block_field_group_info() {
     'label' => 'Hero elements',
     'weight' => '1',
     'children' => array(
-      0 => 'field_hero_headline_1',
-      1 => 'field_hero_headline_2',
-      2 => 'field_hero_button',
+      0 => 'field_hero_button',
+      1 => 'field_hero_headline_1',
+      2 => 'field_hero_headline_2',
       3 => 'title',
     ),
     'format_type' => 'div',
