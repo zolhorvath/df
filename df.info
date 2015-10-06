@@ -2,7 +2,7 @@ name = Demo Framework
 description = Architects Start Here. (Powered By Lightning)
 core = 7.x
 distribution_name = Demo Framework
-version = 7.x-1.9
+version = 7.x-1.x-dev
 exclusive = 1
 
 ; Drupal Core
