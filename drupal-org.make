@@ -16,7 +16,7 @@ projects[curate][type] = "module"
 projects[curate][subdir] = "contrib"
 
 ; Contrib Modules
-projects[addressfield][version] = "1.1"
+projects[addressfield][version] = "1.2"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
 
@@ -106,13 +106,6 @@ projects[domain][version] = "3.10"
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 
-projects[distro_update][version] = "1.x-dev"
-projects[distro_update][type] = "module"
-projects[distro_update][subdir] = "contrib"
-projects[distro_update][download][type] = "git"
-projects[distro_update][download][revision] = "f5ab9fe"
-projects[distro_update][download][branch] = "7.x-1.x"
-
 projects[entity_translation][version] = "1.x-dev"
 projects[entity_translation][type] = "module"
 projects[entity_translation][subdir] = "contrib"
@@ -143,7 +136,7 @@ projects[feeds_jsonpath_parser][version] = "1.0"
 projects[feeds_jsonpath_parser][type] = "module"
 projects[feeds_jsonpath_parser][subdir] = "contrib"
 
-projects[features_override][version] = "2.0-rc2"
+projects[features_override][version] = "2.0-rc3"
 projects[features_override][type] = "module"
 projects[features_override][subdir] = "contrib"
 
@@ -169,7 +162,7 @@ projects[i18n][version] = "1.x-dev"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
 projects[i18n][download][type] = "git"
-projects[i18n][download][revision] = "3777b86"
+projects[i18n][download][revision] = "a3cbe24"
 projects[i18n][download][branch] = "7.x-1.x"
 ; PHP Fatal Error Call to undefined method i18n_object_wrapper::strings_update()
 ; http://drupal.org/node/2082573
@@ -215,7 +208,7 @@ projects[language_switch][download][type] = "git"
 projects[language_switch][download][revision] = "b79dd56"
 projects[language_switch][download][branch] = "7.x-1.x"
 
-projects[location][version] = "3.6"
+projects[location][version] = "3.7"
 projects[location][type] = "module"
 projects[location][subdir] = "contrib"
 
@@ -223,9 +216,12 @@ projects[mailsystem][version] = "2.34"
 projects[mailsystem][type] = "module"
 projects[mailsystem][subdir] = "contrib"
 
-projects[manualcrop][version] = "1.5"
+projects[manualcrop][version] = "1.x-dev"
 projects[manualcrop][type] = "module"
 projects[manualcrop][subdir] = "contrib"
+projects[manualcrop][download][type] = "git"
+projects[manualcrop][download][revision] = "37ac8e3"
+projects[manualcrop][download][branch] = "7.x-1.x"
 
 projects[marketo_ma][version] = "1.1"
 projects[marketo_ma][type] = "module"
@@ -367,18 +363,15 @@ projects[translation_helpers][version] = "1.0"
 projects[translation_helpers][type] = "module"
 projects[translation_helpers][subdir] = "contrib"
 
-projects[uuid][version] = "1.x-dev"
+projects[uuid][version] = "1.0-beta1"
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
-projects[uuid][download][type] = "git"
-projects[uuid][download][revision] = "a7bf2db"
-projects[uuid][download][branch] = "7.x-1.x"
 
 projects[uuid_features][version] = "1.x-dev"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "3fee14f"
+projects[uuid_features][download][revision] = "2e5217a"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
 projects[variable][version] = "2.5"
@@ -403,7 +396,7 @@ projects[views_datasource][subdir] = "contrib"
 ; Libraries
 libraries[color-thief][destination] = "libraries"
 libraries[color-thief][download][type] = "get"
-libraries[color-thief][download][url] = "https://github.com/lokesh/color-thief/archive/master.zip"
+libraries[color-thief][download][url] = "https://github.com/lokesh/color-thief/archive/v2.0.1.zip"
 
 libraries[css.js][destination] = "libraries"
 libraries[css.js][download][type] = "get"
@@ -411,7 +404,7 @@ libraries[css.js][download][url] = "https://github.com/jotform/css.js/archive/ma
 
 libraries[html2canvas][destination] = "libraries"
 libraries[html2canvas][download][type] = "get"
-libraries[html2canvas][download][url] = "https://github.com/niklasvh/html2canvas/archive/master.zip"
+libraries[html2canvas][download][url] = "https://github.com/niklasvh/html2canvas/archive/v0.5.0-beta1.zip"
 
 libraries[jquery.cycle][destination] = "libraries"
 libraries[jquery.cycle][download][type] = "get"
@@ -419,7 +412,7 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.
 
 libraries[jquery.imgareaselect][destination] = "libraries"
 libraries[jquery.imgareaselect][download][type] = "get"
-libraries[jquery.imgareaselect][download][url] = "http://odyniec.net/projects/imgareaselect/jquery.imgareaselect-0.9.10.zip"
+libraries[jquery.imgareaselect][download][url] = "https://github.com/odyniec/imgareaselect/archive/v0.9.11-rc.1.tar.gz"
 
 libraries[jquery.imagesloaded][destination] = "libraries"
 libraries[jquery.imagesloaded][download][type] = "get"
@@ -453,5 +446,6 @@ projects[ember][download][branch] = "7.x-2.x"
 projects[zurb-foundation][version] = "5.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
+projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "7.x-5.x"
