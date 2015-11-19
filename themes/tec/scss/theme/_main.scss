@@ -11,6 +11,12 @@
     @media #{$medium-up} {margin-top:rem-calc(-130px);
     }
 
+    .block-bundle-slideshow {
+        .block-title {
+            display: none;
+        }
+    }
+
     .df-tools-slideshow {
         .hero-block-fields {
             position: absolute;
