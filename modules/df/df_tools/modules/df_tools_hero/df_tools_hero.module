@@ -7,18 +7,6 @@
 include_once 'df_tools_hero.features.inc';
 
 /**
- * Implements hook_behat_info().
- */
-function dfs_tools_hero_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-  return $info;
-}
-
-/**
  * Implements hook_migrate_api
  */
 function df_tools_hero_migrate_api() {
