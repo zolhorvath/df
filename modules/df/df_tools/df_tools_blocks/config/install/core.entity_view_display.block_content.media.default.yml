@@ -6,7 +6,7 @@ dependencies:
     - block_content.type.media
     - field.field.block_content.media.field_file_reference
   module:
-    - df_tools_browser
+    - file_browser
 id: block_content.media.default
 targetEntityType: block_content
 bundle: media
