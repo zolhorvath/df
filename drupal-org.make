@@ -23,6 +23,12 @@ projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page
 ;projects[default_content][download][url] = "http://github.com/larowlan/default_content.git"
 ;projects[default_content][download][branch] = "8.x"
 
+projects[dropzonejs][version] = "1.x-dev"
+projects[dropzonejs][type] = "module"
+projects[dropzonejs][subdir] = "contrib"
+projects[dropzonejs][download][type] = "git"
+projects[dropzonejs][download][branch] = "8.x-1.x"
+
 projects[config_update][version] = "1.x-dev"
 projects[config_update][type] = "module"
 projects[config_update][subdir] = "contrib"
@@ -45,7 +51,6 @@ projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
 projects[entity_browser][subdir] = "contrib"
 projects[entity_browser][download][type] = "git"
-projects[entity_browser][download][url]= "https://github.com/drupal-media/entity_browser.git"
 projects[entity_browser][download][branch] = "8.x-1.x"
 
 projects[entity_embed][version] = "1.x-dev"
@@ -59,6 +64,12 @@ projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
 projects[features][download][branch] = "8.x-3.x"
+
+projects[file_browser][version] = "1.x-dev"
+projects[file_browser][type] = "module"
+projects[file_browser][subdir] = "contrib"
+projects[file_browser][download][type] = "git"
+projects[file_browser][download][branch] = "8.x-1.x"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
@@ -92,14 +103,30 @@ projects[layout_plugin][subdir] = "contrib"
 projects[layout_plugin][download][type] = "git"
 projects[layout_plugin][download][branch] ="8.x-1.x"
 
+projects[manualcrop][version] = "x-1.x-dev"
+projects[manualcrop][type] = "module"
+projects[manualcrop][subdir] = "contrib"
+projects[manualcrop][download][type] = "git"
+projects[manualcrop][download][branch] = "8.x-1.x"
+projects[manualcrop][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/2572651.git"
+
 projects[migrate_plus][version] = "1.x-dev"
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][subdir] = "contrib"
 projects[migrate_plus][download][type] = "git"
 projects[migrate_plus][download][branch] = "8.x-1.x"
-; Implement migrate-rollback command for D8
-; http://drupal.org/node/2403411
-;projects[migrate_plus][patch][2403411] = "http://drupal.org/files/issues/implement-2403411-5.patch"
+
+projects[migrate_source_csv][version] = "1.x-dev"
+projects[migrate_source_csv][type] = "module"
+projects[migrate_source_csv][subdir] = "contrib"
+projects[migrate_source_csv][download][type] = "git"
+projects[migrate_source_csv][download][branch] = "8.x-1.x"
+
+projects[migrate_tools][version] = "1.x-dev"
+projects[migrate_tools][type] = "module"
+projects[migrate_tools][subdir] = "contrib"
+projects[migrate_tools][download][type] = "git"
+projects[migrate_tools][download][branch] = "8.x-1.x"
 
 projects[page_manager][version] = "1.x-dev"
 projects[page_manager][type] = "module"
@@ -143,11 +170,15 @@ projects[token][download][type] = "git"
 projects[token][download][branch] = "8.x-1.x"
 
 ; Libraries
-libraries[masonry][destination] = "libraries"
+libraries[dropzone][destination] = "../../libraries"
+libraries[dropzone][download][type] = "get"
+libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.2.0.zip"
+
+libraries[masonry][destination] = "modules/contrib/file_browser/bower_components"
 libraries[masonry][download][type] = "get"
 libraries[masonry][download][url] = "https://github.com/desandro/masonry/archive/v3.3.1.zip"
 
-libraries[imagesloaded][destination] = "libraries"
+libraries[imagesloaded][destination] = "modules/contrib/file_browser/bower_components"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
 
@@ -156,7 +187,7 @@ libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
 
 ; Themes
-projects[zurb-foundation][version] = "5.x-dev"
+projects[zurb-foundation][version] = "5.0-beta1"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
 projects[zurb-foundation][directory_name] = "zurb_foundation"
