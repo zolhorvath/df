@@ -43,7 +43,6 @@ function dfs_wem_users_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_user:user_default';
   $strongarm->value = array(
-    'context_admin' => 'context_admin',
     'token' => 'token',
     'entity_form_field' => 'entity_form_field',
     'entity_field' => 'entity_field',

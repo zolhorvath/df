@@ -306,7 +306,6 @@ function dfs_wem_news_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_node:wem_news_default';
   $strongarm->value = array(
-    'context_admin' => 'context_admin',
     'token' => 'token',
     'entity_form_field' => 'entity_form_field',
     'entity_field' => 'entity_field',

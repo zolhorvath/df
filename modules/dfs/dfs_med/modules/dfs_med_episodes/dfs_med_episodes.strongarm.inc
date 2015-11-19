@@ -441,7 +441,6 @@ function dfs_med_episodes_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_node:episodic_collection_default';
   $strongarm->value = array(
-    'context_admin' => 'context_admin',
     'custom' => 'custom',
     'entity_field' => 'entity_field',
     'entity_field_extra' => 'entity_field_extra',
