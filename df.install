@@ -182,16 +182,6 @@ function df_install_finished(&$install_state) {
   // Will also trigger indexing of profile-supplied content or feeds.
   drupal_cron_run();
 
-  // Clear & rebuild Features key caches.
-  features_get_info(NULL, NULL, TRUE);
-  features_rebuild();
-
-  // Rebuild all Default Config (permissions cleanup).
-  defaultconfig_rebuild_all();
-
-  // Revert all Features (cleanup install).
-  features_revert();
-
   // Register static migrations via Migrate API.
   migrate_get_module_apis();
 
