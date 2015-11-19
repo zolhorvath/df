@@ -85,8 +85,8 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
   /**
    * {@inheritdoc}
    */
-  public function viewElements(FieldItemListInterface $items) {
-    $elements = parent::viewElements($items);
+  public function viewElements(FieldItemListInterface $items, $langcode) {
+    $elements = parent::viewElements($items, $langcode);
 
     $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
     foreach ($elements as $delta => $element) {

@@ -13,7 +13,7 @@ bundle: slideshow
 mode: default
 content:
   field_block:
-    type: inline_entity_form_multiple
+    type: inline_entity_form_complex
     weight: 3
     settings:
       allow_existing: 1
