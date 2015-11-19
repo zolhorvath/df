@@ -1,9 +1,0 @@
-name = DF Tools
-description = Library of helpful demo asset building components.
-core = 7.x
-package = Demo Framework Tools
-version = 7.x-1.0
-project = df_tools
-dependencies[] = df_tools_moderation
-dependencies[] = df_tools_rest
-dependencies[] = df_tools_services
