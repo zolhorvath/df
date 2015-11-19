@@ -32,15 +32,15 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE, $seed = TRUE) {
   // Set up operations array.
   $operations = array();
 
+  // Revert Features to ensure proper DFS reset.
+  $operations[] = array('df_admin_revert_all', array(''));
+  $operations[] = array('drupal_set_message', array(t('Reverted Features after scenario enablement.'), 'status'));
+  $operations[] = array('watchdog', array('demo framework', 'Features reverted after enabling scenario: ' . $scenario));
+
   // Rebuild defaultconfig from modules.
   $operations[] = array('defaultconfig_rebuild_all', array(''));
   $operations[] = array('drupal_set_message', array(t('Defaultconfig rebuilt after scenario enablement.'), 'status'));
   $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $scenario));
-
-  // Revert Features (again) to ensure correct overrides of defaultconfig.
-  $operations[] = array('df_admin_revert_all', array(''));
-  $operations[] = array('drupal_set_message', array(t('Reverted Features after scenario enablement.'), 'status'));
-  $operations[] = array('watchdog', array('demo framework', 'Features reverted after enabling scenario: ' . $scenario));
 
   // Set up pre-import routines via hook_df_pre_import().
   $routines = array();

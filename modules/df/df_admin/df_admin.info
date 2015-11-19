@@ -7,7 +7,6 @@ project = df_admin
 dependencies[] = advanced_help
 dependencies[] = ctools
 dependencies[] = diff
-dependencies[] = distro_update
 dependencies[] = entity
 dependencies[] = escape_admin
 dependencies[] = features
