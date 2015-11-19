@@ -28,52 +28,25 @@ function df_tools_cklite_libraries_info() {
 }
 
 /**
- * Implements hook_ckeditor_profile_defaults_alter().
+ * Implements hook_filter_default_formats_alter().
  */
-function df_tools_cklite_ckeditor_profile_defaults_alter(&$profiles) {
-  // Only enable the CKEditor plugin if the LITE library is available.
-  if (!empty($profiles['Advanced']) && $library = libraries_detect('lite')) {
-    // Load the lite plugin.
-    $profiles['Advanced']['settings']['loadPlugins'] += array(
-      'lite' => array(
-        'name' => 'lite',
-        'desc' => t('Plugin for tracking changes within CKEditor'),
-        'path' => '%base_path%' . $library['library path'] . '/' . $library['path'] . '/',
-        'default' => 'f',
+function df_tools_cklite_filter_default_formats_alter(&$formats) {
+  if (!empty($formats['filtered_html'])) {
+    $editor_settings = unserialize($formats['filtered_html']['editor_settings']);
+
+    // Add a new group containing the Lite buttons to the first toolbar row.
+    $editor_settings['toolbar'][0][] = array(
+      'name' => 'Lite',
+      'items' => array(
+        0 => 'lite-toggletracking',
+        1 => 'lite-toggleshow',
+        2 => 'lite-acceptall',
+        3 => 'lite-rejectall',
+        4 => 'lite-acceptone',
+        5 => 'lite-rejectone',
       ),
     );
 
-    // Find the toolbar buttons.
-    $toolbar = $profiles['Advanced']['settings']['toolbar'];
-
-    // Split the toolbar string into an array where the first and last elements
-    // of the array designate the beginning and end of the button configuration
-    // and the elements in-between represent button segments (groups of
-    // buttons).
-    $pieces = explode("\n", $toolbar);
-
-    // Remove and store the last and second last elements of the array. The last
-    // element contains a string which designates the end of the button
-    // configuration as mentioned above and the second last element will contain
-    // the last button segment.
-    $last = array_pop($pieces);
-    $second_last = array_pop($pieces);
-
-    // All button segments (groups), except for the last one, end with a ',' to
-    // designate that there is another segment to follow. Since we are adding
-    // another group of buttons we must add a ',' to the (now second-last)
-    // button segment.
-    $second_last = $second_last . ',';
-
-    // Create a button segment that includes the lite toolbar buttons.
-    $new_buttons = '    [\'lite-toggletracking\',\'lite-toggleshow\',\'lite-acceptall\',\'lite-rejectall\',\'lite-acceptone\',\'lite-rejectone\']';
-
-    // Add the new buttons in addition to the segments which were previously
-    // removed.
-    array_push($pieces, $second_last);
-    array_push($pieces, $new_buttons);
-    array_push($pieces, $last);
-
-    $profiles['Advanced']['settings']['toolbar'] = implode("\n", $pieces);
+    $formats['filtered_html']['editor_settings'] = serialize($editor_settings);
   }
 }

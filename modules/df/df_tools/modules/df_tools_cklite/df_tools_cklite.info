@@ -3,5 +3,5 @@ description = Integrates the lite track changes plugin for CKEditor with Drupal.
 package = User interface
 core = 7.x
 
-dependencies[] = ckeditor
+dependencies[] = editor_ckeditor
 dependencies[] = libraries
