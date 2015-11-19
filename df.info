@@ -34,7 +34,9 @@ dependencies[] = import
 dependencies[] = df_admin
 dependencies[] = df_commerce
 dependencies[] = df_engage
-dependencies[] = df_tools
+dependencies[] = df_tools_moderation
+dependencies[] = df_tools_rest
+dependencies[] = df_tools_services
 
 ; Demo Framework (optional)
 ; dependencies[] = df_connect
