@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.39
+projects[drupal][version] = 7.41
 
 ; Allow install profiles to change the system requirements
 ; http://drupal.org/node/1772316
