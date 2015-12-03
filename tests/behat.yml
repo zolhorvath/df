@@ -29,6 +29,10 @@ default:
         bottom: ".block-region-bottom"
         footer: "footer"
         header: ".region-header"
+        body: ".body"
+        main: "#main"
         content: ".region-content"
+        right: ".block-region-right"
+        left: ".block-region-left"
 imports:
   - behat.local.yml

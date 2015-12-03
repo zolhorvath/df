@@ -12,14 +12,16 @@ Feature: Demo Framework: Homepage
   @api
   Scenario: Block: Recent content view
     Given I am on the homepage  
-    Then I should see "Recent content" in the "middle" region
+    Then I should see "Recent content" in the "left" region
 
   Scenario: Block: User login (anon)
     Given I am on the homepage
-    Then I should see "User login" in the "sidebar" region
+    Then I should see "Username" in the "right" region
+    And I should see "Password" in the "right" region
 
   @api
   Scenario: Block: User login (admin)
     Given I am logged in as a user with the "administrator" role
     And I am on the homepage
-    Then I should not see "User login" in the sidebar region
+    Then I should not see "Username" in the "right" region
+    And I should not see "Password" in the "right" region

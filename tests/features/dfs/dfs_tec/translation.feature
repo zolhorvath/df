@@ -28,4 +28,4 @@ Feature: DFS TEC: Translations
   Scenario: Visit an Article in French
     When I visit "/fr/contenu/planification-de-la-reussite"
     Then I should see the text "PLANIFICATION DE LA RÉUSSITE"
-    And I should see "La planification de la réussite" in the "content" region
+    And I should see "La planification de la réussite" in the "main" region
