@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   module:
-    - help
+    - system
   theme:
     - seven
-id: seven_help
+id: seven_messages
 theme: seven
-region: help
+region: highlighted
 weight: 0
 provider: null
-plugin: help_block
+plugin: system_messages_block
 settings:
-  id: help_block
-  label: Help
-  provider: help
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
   label_display: '0'
 visibility: {  }

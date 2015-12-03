@@ -1,0 +1,52 @@
+uuid: 0a7a9e41-5dd4-4c70-9d00-df8792ac61db
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.welcome
+    - views.view.content_recent
+  module:
+    - panels
+    - user
+    - views
+id: welcome
+label: Welcome
+variant: panels_variant
+variant_settings:
+  selection_conditions: {  }
+  blocks:
+    750aa98e-16db-40ed-ba00-d5cada2feb81:
+      id: 'views_block:content_recent-block_1'
+      label: 'Recent content'
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: 1
+      uuid: 750aa98e-16db-40ed-ba00-d5cada2feb81
+      context_mapping: {  }
+    b4a4fbe7-f8a0-4653-ad07-7b5a4233c630:
+      id: user_login_block
+      label: 'User login'
+      provider: user
+      label_display: 0
+      region: right
+      weight: 1
+      uuid: b4a4fbe7-f8a0-4653-ad07-7b5a4233c630
+      context_mapping: {  }
+  id: panels_variant
+  label: ''
+  uuid: ''
+  weight: 0
+  selection_logic: and
+  layout: twocol
+  layout_settings: {  }
+  page_title: Welcome
+  builder: in_place_editor
+page: welcome
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+contexts: {  }
+
