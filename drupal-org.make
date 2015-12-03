@@ -2,11 +2,11 @@ api = 2
 core = 8.x
 
 ; Modules
-projects[admin_toolbar][version] ="1.9"
+projects[admin_toolbar][version] ="1.10"
 projects[admin_toolbar][type] ="module"
 projects[admin_toolbar][subdir] ="contrib"
 
-projects[block_class][version] = "x-1.x-dev"
+projects[block_class][version] = "1.x-dev"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
 projects[block_class][download][type] = "git"
@@ -15,13 +15,6 @@ projects[block_class][download][url] = "http://git.drupal.org/sandbox/YaronTal/2
 ; Add support for page manager.
 ; http://drupal.org/node/2509142
 projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
-
-;projects[default_content][version] = "1.x-dev"
-;projects[default_content][type] = "module"
-;projects[default_content][subdir] = "contrib"
-;projects[default_content][download][type] = "git"
-;projects[default_content][download][url] = "http://github.com/larowlan/default_content.git"
-;projects[default_content][download][branch] = "8.x"
 
 projects[dropzonejs][version] = "1.x-dev"
 projects[dropzonejs][type] = "module"
@@ -148,6 +141,13 @@ projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
 projects[panels][download][branch] = "8.x-3.x"
+
+projects[panels_ipe][version] = "3.x-dev"
+projects[panels_ipe][type] = "module"
+projects[panels_ipe][subdir] = "contrib"
+projects[panels_ipe][download][type] = "git"
+projects[panels_ipe][download][url] = "git@github.com:mortenson/panels_ipe.git"
+projects[panels_ipe][download][branch] = "master"
 
 projects[pathauto][version] = "1.x-dev"
 projects[pathauto][type] = "module"

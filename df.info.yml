@@ -5,8 +5,6 @@ version: VERSION
 core: 8.x
 exclusive: 1
 dependencies:
-  - admin_toolbar
-  - admin_toolbar_tools
   - basic_auth
   - block
   - block_class
@@ -26,7 +24,7 @@ dependencies:
   - entity_reference
   - field_ui
   - file
-  - hal
+#  - hal
   - help
   - history
   - image
@@ -39,10 +37,10 @@ dependencies:
   - node
   - options
   - page_manager
+  - panels_ipe
   - path
   - pathauto
   - quickedit
-  - rest
   - rdf
   - search
   - shortcut
