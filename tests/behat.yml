@@ -21,6 +21,7 @@ default:
       drupal:
         drupal_root: '../../../'
       region_map:
+        top_bar: ".top-bar"
         main_content: ".main"
         content: ".region-content"
         top: ".top-region"
