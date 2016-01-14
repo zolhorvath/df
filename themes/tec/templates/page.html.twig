@@ -31,15 +31,6 @@
  *   added to make the site slogan visually hidden, but still accessible.
  *
  * Page content (in order of occurrence in the default page.html.twig):
- * - title_prefix: Additional output populated by modules, intended to be
- *   displayed in front of the main title tag that appears in the template.
- * - title: The page title, for use in the actual content.
- * - title_suffix: Additional output populated by modules, intended to be
- *   displayed after the main title tag that appears in the template.
- * - tabs: Tabs linking to any sub-pages beneath the current page (e.g., the
- *   view and edit tabs when displaying a node).
- * - action_links: Actions local to the page, such as "Add menu" on the menu
- *   administration interface.
  * - node: Fully loaded node, if there is an automatically-loaded node
  *   associated with the page and the node ID is the second argument in the
  *   page's path (e.g. node/12345 and node/12345/revisions, but not
@@ -126,18 +117,7 @@
       {% endif %}
       <a id="main-content"></a>
       {% if breadcrumb %} {{ breadcrumb }} {% endif %}
-      {% if title and not is_front %}
-        {{ title_prefix }}
-        <h1 id="page-title" class="title">{{ title|t }}</h1>
-        {{ title_suffix }}
-      {% endif %}
 
-      {% if tabs %}
-      <div class="tab-wrap">
-        {{ tabs }}
-        {% if tabs2 %} {{ tabs2 }} {% endif %}
-      </div>
-      {% endif %}
       {% if action_links %}
         <ul class="action-links">
           {{ action_links }}
