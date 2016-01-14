@@ -10,21 +10,23 @@
  *   returns theme callback with scenario information array.
  */
 function df_admin_page() {
-  // Add DF Admin CSS
+  // Add DF Admin CSS.
   drupal_add_css(drupal_get_path('module', 'df_admin') . '/css/df_admin.page.css');
 
   // Get advanced help topics.
   $advanced_help = module_exists('advanced_help') ? advanced_help_get_topics() : array();
 
+  // Check for developer mode.
+  $developer_mode = variable_get('df_developer_mode', FALSE);
+
   // Render Scenarios
   $list = array();
   $modules = df_get_scenario_modules();
-  // Check if developer mode is on
-  if (!variable_get('df_developer_mode', FALSE)) {
-    // Remove the Dev scenario if we're not in developer mode
-    unset($modules['dfs_dev']);
-  }
   foreach ($modules as $name => $module) {
+    // Skip dev scenarios if we're not in developer mode.
+    if (!$developer_mode && isset($module->info['dev_scenario']) && $module->info['dev_scenario'] == TRUE) {
+      continue;
+    }
     // Compile individual scenario info array.
     $list[$module->name] = array(
       'name' => $module->info['name'],

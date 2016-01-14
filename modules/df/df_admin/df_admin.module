@@ -73,14 +73,28 @@ function df_admin_theme(){
 }
 
 /**
- * Alter navbar menu.
+ * Alter navbar menu to clean things up a bit.
+ *
+ * Implements hook_navbar_alter().
  */
 function df_admin_navbar_alter(&$items) {
-   // Remove Help and Advanced Help from the Navbar.
-  $remove = array('admin/help', 'admin/advanced_help');
-  foreach ($items['administration']['tray']['navbar_administration']['administration_menu'] as $mid => $item) {
+   foreach ($items['administration']['tray']['navbar_administration']['administration_menu'] as $mid => $item) {
+    // Change "My Workbench" to "Workbench" in the Navbar.
+    if (isset($item['#href']) && $item['#href'] == 'admin/workbench') {
+      $items['administration']['tray']['navbar_administration']['administration_menu'][$mid]['#title'] = 'Workbench';
+    }
+    // Change "Modules" to "Extend" to reflect D8 Toolbar.
+    if (isset($item['#href']) && $item['#href'] == 'admin/modules') {
+      $items['administration']['tray']['navbar_administration']['administration_menu'][$mid]['#title'] = 'Extend';
+    }
+    // Remove Help and Advanced Help from the Navbar.
+    $remove = array('admin/help', 'admin/advanced_help');
     if (isset($item['#href']) && in_array($item['#href'], $remove)) {
       unset($items['administration']['tray']['navbar_administration']['administration_menu'][$mid]);
+    }
+    // Shorten "Demo Framework" to "Demo" on the Navbar.
+    if(isset($item['#href']) && $item['#href'] == 'admin/df') {
+      $items['administration']['tray']['navbar_administration']['administration_menu'][$mid]['#title'] = 'Demo';
     }
   }
 }
