@@ -43,7 +43,7 @@ variant_settings:
   layout: twocol
   layout_settings: {  }
   page_title: Welcome
-  builder: in_place_editor
+  builder: ipe
 page: welcome
 weight: 0
 selection_criteria: {  }
