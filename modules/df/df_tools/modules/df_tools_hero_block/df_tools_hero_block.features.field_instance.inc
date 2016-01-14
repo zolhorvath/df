@@ -252,7 +252,7 @@ function df_tools_hero_block_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => 'hero',
-      'file_extensions' => 'png gif jpg jpeg',
+      'file_extensions' => 'png gif jpg jpeg webm ogg mp4',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -271,7 +271,7 @@ function df_tools_hero_block_field_default_field_instances() {
           'audio' => 0,
           'document' => 0,
           'image' => 'image',
-          'video' => 0,
+          'video' => 'video',
         ),
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
