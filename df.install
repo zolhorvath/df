@@ -65,6 +65,10 @@ function df_install() {
   ));
   $shortcut->save();
 
-  // Enable the admin theme.
+  // Set the default admin theme to use Adminimal.
+  \Drupal::service('theme_installer')->install(array('adminimal_theme'), TRUE);
+  \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme')->save();
+
+  // Enable the admin theme for editing content.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', '1')->save();
 }

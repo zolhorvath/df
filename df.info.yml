@@ -13,6 +13,7 @@ dependencies:
   - ckeditor
   - color
   - comment
+  - composer_manager
   - config
   - contact
   - contextual
@@ -21,6 +22,8 @@ dependencies:
   - df_admin
   - df_tools
   - editor
+  - embed
+  - entity_embed
   - entity_reference
   - field_ui
   - file
@@ -48,9 +51,11 @@ dependencies:
   - token
   - toolbar
   - tour
+  - url_embed
   - views
   - views_ui
 themes:
+  - adminimal_theme
   - bartik
   - seven
   - zurb_foundation
