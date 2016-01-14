@@ -30,17 +30,3 @@ function df_admin_theme() {
   return $theme;
 }
 
-/**
- * Function to return DFS migrations.
- */
-function df_admin_scenario_migrations($scenario) {
-  // Set up migrations array.
-  $migrations = [];
-  // Invoke hook_df_import.
-  $migrations = Drupal::moduleHandler()->invokeAll('df_import');
-  // Invoke hook_df_import_alter.
-  Drupal::moduleHandler()->alter('df_import', $migrations);
-  $migrations = $migrations[$scenario];
-  return $migrations;
-}
-
