@@ -162,6 +162,9 @@ function df_commerce_strongarm() {
         'path' => array(
           'weight' => '3',
         ),
+        'locations' => array(
+          'weight' => '5',
+        ),
       ),
       'display' => array(),
     ),

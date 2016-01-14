@@ -10,7 +10,7 @@
 function df_commerce_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'commerce_product-product-commerce_price'
+  // Exported field_instance: 'commerce_product-product-commerce_price'.
   $field_instances['commerce_product-product-commerce_price'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -89,7 +89,7 @@ function df_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_product-product-field_images'
+  // Exported field_instance: 'commerce_product-product-field_images'.
   $field_instances['commerce_product-product-field_images'] = array(
     'bundle' => 'product',
     'deleted' => 0,
@@ -103,15 +103,16 @@ function df_commerce_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'imagezoom',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'imagezoom_display_style' => 'product-large',
+          'imagezoom_zoom_style' => '',
+          'imagezoom_zoom_type' => 'window',
           'quickedit' => array(
             'editor' => 'form',
           ),
         ),
-        'type' => 'image',
+        'type' => 'imagezoom',
         'weight' => 1,
       ),
       'line_item' => array(
@@ -152,6 +153,18 @@ function df_commerce_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -160,7 +173,7 @@ function df_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-commerce-body'
+  // Exported field_instance: 'node-commerce-body'.
   $field_instances['node-commerce-body'] = array(
     'bundle' => 'commerce',
     'default_value' => NULL,
@@ -232,25 +245,26 @@ function df_commerce_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Description',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-commerce-field_product'
+  // Exported field_instance: 'node-commerce-field_product'.
   $field_instances['node-commerce-field_product'] = array(
     'bundle' => 'commerce',
     'default_value' => NULL,
@@ -318,7 +332,7 @@ function df_commerce_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_product',
-    'label' => 'Product',
+    'label' => 'Product reference',
     'required' => 0,
     'settings' => array(
       'field_injection' => 1,
@@ -336,16 +350,16 @@ function df_commerce_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'commerce_product_reference_autocomplete',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('Description');
   t('Images');
   t('Price');
-  t('Product');
+  t('Product reference');
 
   return $field_instances;
 }
