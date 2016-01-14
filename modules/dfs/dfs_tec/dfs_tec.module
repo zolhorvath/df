@@ -31,9 +31,9 @@ function dfs_tec_theme() {
 }
 
 /**
- * Implements hook_df_import().
+ * Implements hook_scenario_import().
  */
-function dfs_tec_df_import() {
+function dfs_tec_scenario_import() {
   $migrations = [];
   $migrations['dfs_tec'] = array(
     'import_dfs_tec_tags',
