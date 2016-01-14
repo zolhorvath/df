@@ -41,6 +41,7 @@ dependencies[] = df_tools_hero
 dependencies[] = df_tools_moderation
 dependencies[] = df_tools_rest
 dependencies[] = df_tools_services
+dependencies[] = df_tools_vertical_tabs
 
 ; System Requirements
 php = 5.4
