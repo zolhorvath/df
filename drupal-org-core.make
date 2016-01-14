@@ -3,7 +3,7 @@ core = 8.x
 
 ; Drupal Core
 projects[drupal][type] = "core"
-projects[drupal][version] = "8.0.0"
+projects[drupal][version] = "8.0.1"
 
 ; Add authentication support for Views
 ; https://www.drupal.org/node/2228141
