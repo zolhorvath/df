@@ -12,6 +12,7 @@ dependencies[] = df_tools_slideshow
 dependencies[] = df_tools_user
 dependencies[] = lightning_devel
 dependencies[] = page_manager
+dev_scenario = 1
 features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:2
 features[page_manager_pages][] = dfs_dev_home
