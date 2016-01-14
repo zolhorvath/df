@@ -20,10 +20,15 @@
     z-index: 1;
 }
 
-#page-title {
+#block-pagetitle {
     text-align: center;
-    text-transform: capitalize;
-    font-family: merriweather;
+    h1 {
+        text-transform: capitalize;
+        font-family: merriweather;
+    }
+    .block-title {
+        margin: 0;
+    }
 }
 
 .field-name-field-hero-image {

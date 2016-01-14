@@ -26,7 +26,6 @@
                         }
                     }
                     &.main-menu-logo {
-                        vertical-align: top;
                         @media #{$medium-only},#{$small-only} {
                             float: left;
                             padding-bottom: rem-calc(20px);
