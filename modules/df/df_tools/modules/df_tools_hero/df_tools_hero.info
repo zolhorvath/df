@@ -16,6 +16,7 @@ dependencies[] = media
 dependencies[] = options
 dependencies[] = text
 stylesheets[all][] = css/df_tools_hero.css
+scripts[] = js/df_tools_hero.js
 features[ctools][] = fieldable_panels_panes:fieldable_panels_pane_type:1
 features[features_api][] = api:2
 features[field_base][] = field_hero_button_link

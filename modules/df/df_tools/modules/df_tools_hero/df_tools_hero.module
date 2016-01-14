@@ -44,7 +44,15 @@ function df_tools_hero_preprocess_fieldable_panels_pane(&$vars) {
       )
     );
     foreach ($vars['content'] as $field_name => $field_value) {
-      if ($field_name != 'field_hero_image' && $field_name != 'title') {
+      if ($field_name == 'field_hero_image') {
+        if ($field_value[0]['#bundle'] == 'video') {
+          $vars['content'][$field_name][0]['file']['#controls'] = FALSE;
+          $vars['content'][$field_name][0]['file']['#loop'] = TRUE;
+          $vars['content'][$field_name][0]['file']['#muted'] = TRUE;
+          $vars['content'][$field_name][0]['file']['#autoplay'] = 'auto';
+        }
+      }
+      else if ($field_name != 'title') {
         $container[$field_name] = $field_value;
         unset($vars['content'][$field_name]);
       }
