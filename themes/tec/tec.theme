@@ -98,14 +98,22 @@ function tec_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $variables['content_wrap_classes'] = 'node-' . $variables['node']->getType();
     // We already display the title in node--full.html.twig
-    unset($variables['title']);
+    unset($variables['page']['content']['pagetitle']);
   }
+  // Wrap tabs so we can float them above our hero images.
+  $variables['page']['content']['tabs'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => ['tab-wrap']],
+    0 => $variables['page']['content']['tabs']
+  ];
 }
 
 /**
  * Implements hook_preprocess_html().
  */
 function tec_preprocess_html(&$variables) {
-  $title = $variables['head_title']['title'];
-  $variables['head_title']['title'] = t($title->__toString());
+  if (isset($variables['head_title']['title'])) {
+    $title = $variables['head_title']['title'];
+    $variables['head_title']['title'] = t($title->__toString());
+  }
 }
