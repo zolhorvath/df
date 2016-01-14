@@ -10,7 +10,7 @@
 function df_engage_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_headline'
+  // Exported field_base: 'field_headline'.
   $field_bases['field_headline'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -56,7 +56,7 @@ function df_engage_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_persona'
+  // Exported field_base: 'field_persona'.
   $field_bases['field_persona'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -86,7 +86,7 @@ function df_engage_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_site_section'
+  // Exported field_base: 'field_site_section'.
   $field_bases['field_site_section'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -116,7 +116,7 @@ function df_engage_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_user_bio'
+  // Exported field_base: 'field_user_bio'.
   $field_bases['field_user_bio'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -138,7 +138,7 @@ function df_engage_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_user_first'
+  // Exported field_base: 'field_user_first'.
   $field_bases['field_user_first'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -162,7 +162,7 @@ function df_engage_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_user_last'
+  // Exported field_base: 'field_user_last'.
   $field_bases['field_user_last'] = array(
     'active' => 1,
     'cardinality' => 1,

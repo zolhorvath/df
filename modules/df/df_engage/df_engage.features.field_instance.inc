@@ -10,7 +10,7 @@
 function df_engage_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-field_persona'
+  // Exported field_instance: 'node-article-field_persona'.
   $field_instances['node-article-field_persona'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -75,7 +75,7 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_site_section'
+  // Exported field_instance: 'node-article-field_site_section'.
   $field_instances['node-article-field_site_section'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -139,7 +139,7 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_bio'
+  // Exported field_instance: 'user-user-field_user_bio'.
   $field_instances['user-user-field_user_bio'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -198,7 +198,7 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_first'
+  // Exported field_instance: 'user-user-field_user_first'.
   $field_instances['user-user-field_user_first'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -277,7 +277,7 @@ function df_engage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_last'
+  // Exported field_instance: 'user-user-field_user_last'.
   $field_instances['user-user-field_user_last'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
