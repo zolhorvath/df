@@ -6,7 +6,9 @@ package: Demo Framework Scenarios
 dependencies:
   - df_tools_blocks
   - df_tools_migration
+  - df_tools_moderation
   - df_tools_slideshow
   - df_tools_services
   - df_tools_translation
+  - df_tools_user
   - import
