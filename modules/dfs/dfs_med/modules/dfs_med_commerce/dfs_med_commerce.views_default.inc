@@ -515,6 +515,26 @@ function dfs_med_commerce_views_default_views() {
     1 => '1',
   );
   $handler->display->display_options['path'] = 'admin/sort/bestselling_products';
+  $translatables['bestselling_products'] = array(
+    t('Master'),
+    t('Bestsellers'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('Content entity referenced from field_brand'),
+    t('Featured pane'),
+    t('View panes'),
+    t('Secondary Pane'),
+    t('Secondary Sort Page'),
+    t('Sort: Bestsellers (Secondary Block)'),
+    t('Sticky'),
+    t('Edit'),
+  );
   $export['bestselling_products'] = $view;
 
   $view = new view();
@@ -718,15 +738,6 @@ function dfs_med_commerce_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_commerce_product_node';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title_1] - [title]';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Splash Image */
   $handler->display->display_options['fields']['field_splash_image']['id'] = 'field_splash_image';
   $handler->display->display_options['fields']['field_splash_image']['table'] = 'field_data_field_splash_image';
@@ -737,9 +748,20 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['fields']['field_splash_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_splash_image']['type'] = 'file_image_image';
   $handler->display->display_options['fields']['field_splash_image']['settings'] = array(
-    'image_style' => 'product-thumb',
+    'image_style' => 'episode-image',
     'image_link' => '',
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_commerce_product_node';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title_1] - [title]';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h5';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Commerce Product: SKU */
   $handler->display->display_options['fields']['sku']['id'] = 'sku';
   $handler->display->display_options['fields']['sku']['table'] = 'commerce_product';
@@ -821,6 +843,11 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['relationships']['field_series_episodes_target_id']['table'] = 'field_data_field_series_episodes';
   $handler->display->display_options['relationships']['field_series_episodes_target_id']['field'] = 'field_series_episodes_target_id';
   $handler->display->display_options['relationships']['field_series_episodes_target_id']['relationship'] = 'reverse_field_commerce_product_node';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_collected_target_id']['id'] = 'field_collected_target_id';
+  $handler->display->display_options['relationships']['field_collected_target_id']['table'] = 'field_data_field_collected';
+  $handler->display->display_options['relationships']['field_collected_target_id']['field'] = 'field_collected_target_id';
+  $handler->display->display_options['relationships']['field_collected_target_id']['relationship'] = 'reverse_field_commerce_product_node';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_2']['id'] = 'title_2';
@@ -861,20 +888,56 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['fields']['field_splash_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_splash_image']['type'] = 'file_image_image';
   $handler->display->display_options['fields']['field_splash_image']['settings'] = array(
-    'image_style' => 'product-thumb',
+    'image_style' => 'episode-image',
     'image_link' => '',
   );
-  /* Field: Content: Video */
+  /* Field: Content: Video reference */
   $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
   $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['relationship'] = 'field_series_episodes_target_id';
   $handler->display->display_options['fields']['field_video']['label'] = '';
   $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_video']['empty'] = 'No video';
+  $handler->display->display_options['fields']['field_video']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
+    'file_view_mode' => 'default',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_3']['id'] = 'title_3';
+  $handler->display->display_options['fields']['title_3']['table'] = 'node';
+  $handler->display->display_options['fields']['title_3']['field'] = 'title';
+  $handler->display->display_options['fields']['title_3']['relationship'] = 'field_collected_target_id';
+  $handler->display->display_options['fields']['title_3']['label'] = '';
+  $handler->display->display_options['fields']['title_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_3']['link_to_node'] = FALSE;
+  /* Field: Content: Splash Image */
+  $handler->display->display_options['fields']['field_splash_image_1']['id'] = 'field_splash_image_1';
+  $handler->display->display_options['fields']['field_splash_image_1']['table'] = 'field_data_field_splash_image';
+  $handler->display->display_options['fields']['field_splash_image_1']['field'] = 'field_splash_image';
+  $handler->display->display_options['fields']['field_splash_image_1']['relationship'] = 'field_collected_target_id';
+  $handler->display->display_options['fields']['field_splash_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_splash_image_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_splash_image_1']['alter']['text'] = '[field_splash_image_1]<br />[title_3]';
+  $handler->display->display_options['fields']['field_splash_image_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_splash_image_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_splash_image_1']['type'] = 'file_image_image';
+  $handler->display->display_options['fields']['field_splash_image_1']['settings'] = array(
+    'image_style' => 'episode-image',
+    'image_link' => '',
+  );
+  /* Field: Content: Video reference */
+  $handler->display->display_options['fields']['field_video_1']['id'] = 'field_video_1';
+  $handler->display->display_options['fields']['field_video_1']['table'] = 'field_data_field_video';
+  $handler->display->display_options['fields']['field_video_1']['field'] = 'field_video';
+  $handler->display->display_options['fields']['field_video_1']['relationship'] = 'field_collected_target_id';
+  $handler->display->display_options['fields']['field_video_1']['label'] = '';
+  $handler->display->display_options['fields']['field_video_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_video_1']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_video_1']['settings'] = array(
     'file_view_mode' => 'default',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
@@ -910,6 +973,44 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['tab_options']['description'] = 'User orders in the store.';
   $handler->display->display_options['tab_options']['weight'] = '';
   $handler->display->display_options['tab_options']['name'] = 'user-menu';
+  $translatables['my_shows'] = array(
+    t('Defaults'),
+    t('My Programmmes'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('You do not have any shows yet.'),
+    t('Order number'),
+    t('Created'),
+    t('Updated date'),
+    t('Total'),
+    t('Order status'),
+    t('All'),
+    t('My Shows'),
+    t('Line items referenced by commerce_line_items'),
+    t('Products referenced by commerce_product'),
+    t('Node referencing products from field_product'),
+    t('Content referencing Content from field_commerce_product'),
+    t('Content entity referenced from field_brand'),
+    t('[title_1] - [title]'),
+    t('Watch Now'),
+    t('Watch'),
+    t('<h3>[title_2] - [title_1]</h3>'),
+    t('Content entity referenced from field_series_episodes'),
+    t('Content entity referenced from field_collected'),
+    t('[field_splash_image]<br />[title]'),
+    t('[field_splash_image_1]<br />[title_3]'),
+  );
   $export['my_shows'] = $view;
 
   $view = new view();
@@ -963,7 +1064,7 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Product */
+  /* Field: Content: Product reference */
   $handler->display->display_options['fields']['field_product']['id'] = 'field_product';
   $handler->display->display_options['fields']['field_product']['table'] = 'field_data_field_product';
   $handler->display->display_options['fields']['field_product']['field'] = 'field_product';
@@ -1019,7 +1120,7 @@ function dfs_med_commerce_views_default_views() {
     1 => '1',
   );
   $handler->display->display_options['filters']['field_greylist_value']['group'] = 1;
-  /* Filter criterion: Content: Product (field_product) */
+  /* Filter criterion: Content: Product reference (field_product) */
   $handler->display->display_options['filters']['field_product_product_id']['id'] = 'field_product_product_id';
   $handler->display->display_options['filters']['field_product_product_id']['table'] = 'field_data_field_product';
   $handler->display->display_options['filters']['field_product_product_id']['field'] = 'field_product_product_id';
@@ -1254,6 +1355,27 @@ function dfs_med_commerce_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['click_sort_column'] = 'amount';
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',
+  );
+  $translatables['new_products'] = array(
+    t('Master'),
+    t('Recently Added Classics'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('Content entity referenced from field_brand'),
+    t('Sort Page'),
+    t('Sort: New Items'),
+    t('Brand'),
+    t('Series Name'),
+    t('Sticky'),
+    t('Edit'),
+    t('Content pane'),
+    t('View panes'),
   );
   $export['new_products'] = $view;
 

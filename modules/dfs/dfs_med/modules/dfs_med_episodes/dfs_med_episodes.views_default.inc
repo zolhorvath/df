@@ -94,7 +94,7 @@ function dfs_med_episodes_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',
   );
-  /* Field: Content: Collection Count */
+  /* Field: Content: Episode Count */
   $handler->display->display_options['fields']['field_collected_count']['id'] = 'field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['table'] = 'field_data_field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['field'] = 'field_collected_count';
@@ -225,7 +225,7 @@ function dfs_med_episodes_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',
   );
-  /* Field: Content: Collection Count */
+  /* Field: Content: Episode Count */
   $handler->display->display_options['fields']['field_collected_count']['id'] = 'field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['table'] = 'field_data_field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['field'] = 'field_collected_count';
@@ -458,7 +458,7 @@ function dfs_med_episodes_views_default_views() {
   $handler->display->display_options['fields']['field_year']['label'] = '';
   $handler->display->display_options['fields']['field_year']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_year']['hide_empty'] = TRUE;
-  /* Field: Content: Duration */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_length']['id'] = 'field_length';
   $handler->display->display_options['fields']['field_length']['table'] = 'field_data_field_length';
   $handler->display->display_options['fields']['field_length']['field'] = 'field_length';
@@ -569,6 +569,35 @@ function dfs_med_episodes_views_default_views() {
       'label' => 'Content: Nid',
     ),
   );
+  $translatables['collection'] = array(
+    t('Master'),
+    t('COLLECTION'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('Buy [commerce_price]'),
+    t('[field_collected_count] Episodes'),
+    t('All'),
+    t('Hero pane'),
+    t('Content entity referenced from field_brand'),
+    t('Group meta data'),
+    t('View panes'),
+    t('Collection Control'),
+    t('Content referencing Content from field_collected'),
+    t('Content referencing Content from field_series_episodes'),
+    t('Episode [counter]'),
+    t('<a href="#[path]"><span class="control-text"><span class="episode">[counter]</span><span class="sub">[title]</span></a>'),
+    t('Collection List'),
+    t('<a name="[path]"></a>'),
+    t('field-group-connection'),
+    t('<blockquote>[field_quote]</blockquote>'),
+    t('from'),
+  );
   $export['collection'] = $view;
 
   $view = new view();
@@ -653,7 +682,7 @@ function dfs_med_episodes_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',
   );
-  /* Field: Content: Collection Count */
+  /* Field: Content: Episode Count */
   $handler->display->display_options['fields']['field_collected_count']['id'] = 'field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['table'] = 'field_data_field_collected_count';
   $handler->display->display_options['fields']['field_collected_count']['field'] = 'field_collected_count';
@@ -706,6 +735,22 @@ function dfs_med_episodes_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'featured_collection_pane');
+  $translatables['collection_showcase'] = array(
+    t('Master'),
+    t('COLLECTION'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('group meta data'),
+    t('<a class="button" href="[path]"><span class="collection-count number">[field_collected_count]</span><span class="collection-count shows">Programs</span><span class="collection-count view full">View full collection</span></a>'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['collection_showcase'] = $view;
 
   return $export;

@@ -475,6 +475,24 @@ function dfs_med_slideshow_views_default_views() {
       'label' => 'Content: Nid',
     ),
   );
+  $translatables['homepage_slideshow'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Block'),
+    t('Fieldset'),
+    t('<a class="button tiny" href="[field_link]">[field_link_1]</a>'),
+    t('Page'),
+    t('.'),
+    t(','),
+    t('Single Slide'),
+    t('All'),
+    t('View panes'),
+  );
   $export['homepage_slideshow'] = $view;
 
   return $export;

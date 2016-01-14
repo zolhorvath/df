@@ -10,7 +10,7 @@
 function dfs_med_episodes_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_author'
+  // Exported field_base: 'field_author'.
   $field_bases['field_author'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -19,14 +19,6 @@ function dfs_med_episodes_field_default_field_bases() {
     'field_name' => 'field_author',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -46,23 +38,30 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_collected_count'
+  // Exported field_base: 'field_collected_count'.
   $field_bases['field_collected_count'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_collected_count',
-    'foreign keys' => array(),
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
-    'settings' => array(),
+    'settings' => array(
+      'personalize' => array(
+        'agent_type' => 'personalize_target',
+        'enabled' => 0,
+      ),
+    ),
     'translatable' => 0,
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_commerce_product'
+  // Exported field_base: 'field_commerce_product'.
   $field_bases['field_commerce_product'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -71,14 +70,6 @@ function dfs_med_episodes_field_default_field_bases() {
     'field_name' => 'field_commerce_product',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
     ),
     'indexes' => array(
       'target_id' => array(
@@ -108,21 +99,13 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_featured_image'
+  // Exported field_base: 'field_featured_image'.
   $field_bases['field_featured_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_featured_image',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -138,14 +121,13 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_guidance'
+  // Exported field_base: 'field_guidance'.
   $field_bases['field_guidance'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_guidance',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -166,21 +148,13 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_quote'
+  // Exported field_base: 'field_quote'.
   $field_bases['field_quote'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_quote',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -193,7 +167,7 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_quote_by'
+  // Exported field_base: 'field_quote_by'.
   $field_bases['field_quote_by'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -202,14 +176,6 @@ function dfs_med_episodes_field_default_field_bases() {
     'field_name' => 'field_quote_by',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -229,21 +195,13 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_splash_image'
+  // Exported field_base: 'field_splash_image'.
   $field_bases['field_splash_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_splash_image',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -260,21 +218,13 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_supplemental'
+  // Exported field_base: 'field_supplemental'.
   $field_bases['field_supplemental'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_supplemental',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -287,20 +237,15 @@ function dfs_med_episodes_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_video'
+  // Exported field_base: 'field_video'.
   $field_bases['field_video'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_video',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
+    'field_permissions' => array(
+      'type' => 0,
     ),
     'indexes' => array(
       'fid' => array(

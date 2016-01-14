@@ -173,13 +173,16 @@ function dfs_med_episodes_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
+        ),
+        'locations' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(
@@ -227,16 +230,16 @@ function dfs_med_episodes_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '4',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '5',
         ),
         'locations' => array(
-          'weight' => '30',
+          'weight' => '6',
         ),
       ),
       'display' => array(

@@ -149,6 +149,29 @@ function dfs_med_brand_views_default_views() {
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'brand_carousel:page_1';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['path'] = 'admin/sort/brand_carousel';
+  $translatables['brand_carousel'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('<div class="major-brand-container">
+<div class="brand-main">[field_link_image]</div>
+<div class="brand-hover"><a href="[path]">[field_link_image_hover]</a></div>
+</div>'),
+    t('Content pane'),
+    t('View panes'),
+    t('Page'),
+  );
   $export['brand_carousel'] = $view;
 
   $view = new view();
@@ -693,6 +716,32 @@ function dfs_med_brand_views_default_views() {
       'label' => 'Content: Nid',
     ),
   );
+  $translatables['brand_hero'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Brand hero'),
+    t('View panes'),
+    t('Brand series list'),
+    t('All Available'),
+    t('Select any filter and click on Apply to see results'),
+    t('Content entity referenced from field_brand'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('[field_collected_count] Episodes'),
+    t('Buy [commerce_price]'),
+    t('<a class="wishlist" href="#">+ Add to wishlist</a>'),
+    t('More info'),
+    t('Brand top picks'),
+    t('[title]'),
+    t(' - [field_collected_count] Episodes'),
+    t('Brand picks external'),
+  );
   $export['brand_hero'] = $view;
 
   $view = new view();
@@ -778,6 +827,17 @@ function dfs_med_brand_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'our-shows';
+  $translatables['our_shows'] = array(
+    t('Master'),
+    t('Our Shows'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Page'),
+  );
   $export['our_shows'] = $view;
 
   return $export;

@@ -320,7 +320,7 @@ function dfs_med_series_views_default_views() {
   $handler->display->display_options['fields']['field_year']['relationship'] = 'reverse_field_series_episodes_node';
   $handler->display->display_options['fields']['field_year']['label'] = '';
   $handler->display->display_options['fields']['field_year']['element_label_colon'] = FALSE;
-  /* Field: Content: Duration */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_length']['id'] = 'field_length';
   $handler->display->display_options['fields']['field_length']['table'] = 'field_data_field_length';
   $handler->display->display_options['fields']['field_length']['field'] = 'field_length';
@@ -541,6 +541,34 @@ function dfs_med_series_views_default_views() {
       'fixed' => '',
       'label' => 'Content: Nid',
     ),
+  );
+  $translatables['series'] = array(
+    t('Master'),
+    t('SERIES'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_commerce_product'),
+    t('Products referenced by field_product'),
+    t('Content entity referenced from field_brand'),
+    t('Buy [commerce_price]'),
+    t('[field_collected_count] Episodes'),
+    t('All'),
+    t('Series Control'),
+    t('Content referencing Content from field_series_episodes'),
+    t('Episode [counter]'),
+    t('<a href="#[path]"><span class="control-text"><span class="episode">[counter]</span></a>'),
+    t('View panes'),
+    t('Series List'),
+    t('<a name="[path]"></a>'),
+    t('field-group-connection'),
+    t('<blockquote>[field_quote]</blockquote>'),
+    t('from'),
+    t('Series Header'),
+    t('Group meta data'),
   );
   $export['series'] = $view;
 

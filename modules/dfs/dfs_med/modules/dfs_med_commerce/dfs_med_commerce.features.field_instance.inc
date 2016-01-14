@@ -10,7 +10,8 @@
 function dfs_med_commerce_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'commerce_customer_profile-billing-commerce_customer_address'
+  // Exported field_instance:
+  // 'commerce_customer_profile-billing-commerce_customer_address'.
   $field_instances['commerce_customer_profile-billing-commerce_customer_address'] = array(
     'bundle' => 'billing',
     'default_value' => NULL,
@@ -74,6 +75,7 @@ function dfs_med_commerce_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
+        'default_country' => 'site_default',
         'format_handlers' => array(
           0 => 'address',
           1 => 'name-oneline',
@@ -84,7 +86,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-commerce_discount-commerce_total'
+  // Exported field_instance:
+  // 'commerce_line_item-commerce_discount-commerce_total'.
   $field_instances['commerce_line_item-commerce_discount-commerce_total'] = array(
     'bundle' => 'commerce_discount',
     'default_value' => NULL,
@@ -169,7 +172,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-commerce_discount-commerce_unit_price'
+  // Exported field_instance:
+  // 'commerce_line_item-commerce_discount-commerce_unit_price'.
   $field_instances['commerce_line_item-commerce_discount-commerce_unit_price'] = array(
     'bundle' => 'commerce_discount',
     'default_value' => NULL,
@@ -254,7 +258,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product-commerce_display_path'
+  // Exported field_instance:
+  // 'commerce_line_item-product-commerce_display_path'.
   $field_instances['commerce_line_item-product-commerce_display_path'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -302,7 +307,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product-commerce_product'
+  // Exported field_instance: 'commerce_line_item-product-commerce_product'.
   $field_instances['commerce_line_item-product-commerce_product'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -363,7 +368,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product-commerce_total'
+  // Exported field_instance: 'commerce_line_item-product-commerce_total'.
   $field_instances['commerce_line_item-product-commerce_total'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -448,7 +453,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product-commerce_unit_price'
+  // Exported field_instance: 'commerce_line_item-product-commerce_unit_price'.
   $field_instances['commerce_line_item-product-commerce_unit_price'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -533,7 +538,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product_discount-commerce_display_path'
+  // Exported field_instance:
+  // 'commerce_line_item-product_discount-commerce_display_path'.
   $field_instances['commerce_line_item-product_discount-commerce_display_path'] = array(
     'bundle' => 'product_discount',
     'default_value' => NULL,
@@ -581,7 +587,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product_discount-commerce_product'
+  // Exported field_instance:
+  // 'commerce_line_item-product_discount-commerce_product'.
   $field_instances['commerce_line_item-product_discount-commerce_product'] = array(
     'bundle' => 'product_discount',
     'default_value' => NULL,
@@ -642,7 +649,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product_discount-commerce_total'
+  // Exported field_instance:
+  // 'commerce_line_item-product_discount-commerce_total'.
   $field_instances['commerce_line_item-product_discount-commerce_total'] = array(
     'bundle' => 'product_discount',
     'default_value' => NULL,
@@ -727,7 +735,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_line_item-product_discount-commerce_unit_price'
+  // Exported field_instance:
+  // 'commerce_line_item-product_discount-commerce_unit_price'.
   $field_instances['commerce_line_item-product_discount-commerce_unit_price'] = array(
     'bundle' => 'product_discount',
     'default_value' => NULL,
@@ -812,7 +821,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_order-commerce_order-commerce_customer_billing'
+  // Exported field_instance:
+  // 'commerce_order-commerce_order-commerce_customer_billing'.
   $field_instances['commerce_order-commerce_order-commerce_customer_billing'] = array(
     'bundle' => 'commerce_order',
     'deleted' => 0,
@@ -867,7 +877,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_order-commerce_order-commerce_discounts'
+  // Exported field_instance:
+  // 'commerce_order-commerce_order-commerce_discounts'.
   $field_instances['commerce_order-commerce_order-commerce_discounts'] = array(
     'bundle' => 'commerce_order',
     'default_value' => NULL,
@@ -906,7 +917,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_order-commerce_order-commerce_line_items'
+  // Exported field_instance:
+  // 'commerce_order-commerce_order-commerce_line_items'.
   $field_instances['commerce_order-commerce_order-commerce_line_items'] = array(
     'bundle' => 'commerce_order',
     'deleted' => 0,
@@ -964,7 +976,8 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_order-commerce_order-commerce_order_total'
+  // Exported field_instance:
+  // 'commerce_order-commerce_order-commerce_order_total'.
   $field_instances['commerce_order-commerce_order-commerce_order_total'] = array(
     'bundle' => 'commerce_order',
     'default_value' => NULL,
@@ -1061,7 +1074,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-commerce-field_bestseller'
+  // Exported field_instance: 'node-commerce-field_bestseller'.
   $field_instances['node-commerce-field_bestseller'] = array(
     'bundle' => 'commerce',
     'default_value' => array(
@@ -1126,7 +1139,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-commerce-field_brand'
+  // Exported field_instance: 'node-commerce-field_brand'.
   $field_instances['node-commerce-field_brand'] = array(
     'bundle' => 'commerce',
     'default_value' => NULL,
@@ -1196,7 +1209,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-commerce-field_featured'
+  // Exported field_instance: 'node-commerce-field_featured'.
   $field_instances['node-commerce-field_featured'] = array(
     'bundle' => 'commerce',
     'default_value' => array(
@@ -1261,7 +1274,7 @@ function dfs_med_commerce_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-commerce-field_product_image'
+  // Exported field_instance: 'node-commerce-field_product_image'.
   $field_instances['node-commerce-field_product_image'] = array(
     'bundle' => 'commerce',
     'deleted' => 0,
@@ -1340,9 +1353,21 @@ function dfs_med_commerce_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 

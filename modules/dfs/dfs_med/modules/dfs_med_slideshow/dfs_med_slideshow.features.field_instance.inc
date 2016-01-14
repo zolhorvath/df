@@ -10,7 +10,7 @@
 function dfs_med_slideshow_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-slideshow_slide-body'
+  // Exported field_instance: 'node-slideshow_slide-body'.
   $field_instances['node-slideshow_slide-body'] = array(
     'bundle' => 'slideshow_slide',
     'default_value' => NULL,
@@ -84,7 +84,7 @@ function dfs_med_slideshow_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slideshow_slide-field_link'
+  // Exported field_instance: 'node-slideshow_slide-field_link'.
   $field_instances['node-slideshow_slide-field_link'] = array(
     'bundle' => 'slideshow_slide',
     'default_value' => array(
@@ -177,7 +177,7 @@ function dfs_med_slideshow_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slideshow_slide-field_main_image'
+  // Exported field_instance: 'node-slideshow_slide-field_main_image'.
   $field_instances['node-slideshow_slide-field_main_image'] = array(
     'bundle' => 'slideshow_slide',
     'deleted' => 0,
@@ -263,13 +263,25 @@ function dfs_med_slideshow_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 0,
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
       'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-slideshow_slide-field_persona'
+  // Exported field_instance: 'node-slideshow_slide-field_persona'.
   $field_instances['node-slideshow_slide-field_persona'] = array(
     'bundle' => 'slideshow_slide',
     'default_value' => NULL,
@@ -328,7 +340,7 @@ function dfs_med_slideshow_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slideshow_slide-field_site_section'
+  // Exported field_instance: 'node-slideshow_slide-field_site_section'.
   $field_instances['node-slideshow_slide-field_site_section'] = array(
     'bundle' => 'slideshow_slide',
     'default_value' => NULL,

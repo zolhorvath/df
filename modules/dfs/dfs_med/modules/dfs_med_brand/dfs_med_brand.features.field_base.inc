@@ -10,14 +10,13 @@
 function dfs_med_brand_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_greylist'
+  // Exported field_base: 'field_greylist'.
   $field_bases['field_greylist'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_greylist',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -36,21 +35,13 @@ function dfs_med_brand_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_link_image'
+  // Exported field_base: 'field_link_image'.
   $field_bases['field_link_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_link_image',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -66,21 +57,13 @@ function dfs_med_brand_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_link_image_hover'
+  // Exported field_base: 'field_link_image_hover'.
   $field_bases['field_link_image_hover'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_link_image_hover',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -96,21 +79,13 @@ function dfs_med_brand_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_logo'
+  // Exported field_base: 'field_logo'.
   $field_bases['field_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_logo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -127,14 +102,13 @@ function dfs_med_brand_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_superbrand'
+  // Exported field_base: 'field_superbrand'.
   $field_bases['field_superbrand'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_superbrand',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',

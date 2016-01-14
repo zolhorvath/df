@@ -10,7 +10,7 @@
 function dfs_med_series_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-series-body'
+  // Exported field_instance: 'node-series-body'.
   $field_instances['node-series-body'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -75,11 +75,11 @@ function dfs_med_series_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_brand'
+  // Exported field_instance: 'node-series-field_brand'.
   $field_instances['node-series-field_brand'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -145,11 +145,11 @@ function dfs_med_series_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete_tags',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_collected_count'
+  // Exported field_instance: 'node-series-field_collected_count'.
   $field_instances['node-series-field_collected_count'] = array(
     'bundle' => 'series',
     'default_value' => array(
@@ -220,7 +220,7 @@ function dfs_med_series_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-series-field_commerce_product'
+  // Exported field_instance: 'node-series-field_commerce_product'.
   $field_instances['node-series-field_commerce_product'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -286,11 +286,11 @@ function dfs_med_series_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete_tags',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_landing_tags'
+  // Exported field_instance: 'node-series-field_landing_tags'.
   $field_instances['node-series-field_landing_tags'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -348,11 +348,11 @@ function dfs_med_series_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 7,
+      'weight' => 15,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_persona'
+  // Exported field_instance: 'node-series-field_persona'.
   $field_instances['node-series-field_persona'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -407,11 +407,11 @@ function dfs_med_series_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 14,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_series_episodes'
+  // Exported field_instance: 'node-series-field_series_episodes'.
   $field_instances['node-series-field_series_episodes'] = array(
     'bundle' => 'series',
     'default_value_function' => '',
@@ -486,7 +486,7 @@ function dfs_med_series_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-series-field_site_section'
+  // Exported field_instance: 'node-series-field_site_section'.
   $field_instances['node-series-field_site_section'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -541,11 +541,11 @@ function dfs_med_series_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 13,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_splash_image'
+  // Exported field_instance: 'node-series-field_splash_image'.
   $field_instances['node-series-field_splash_image'] = array(
     'bundle' => 'series',
     'deleted' => 0,
@@ -618,13 +618,25 @@ function dfs_med_series_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-series-field_year'
+  // Exported field_instance: 'node-series-field_year'.
   $field_instances['node-series-field_year'] = array(
     'bundle' => 'series',
     'default_value' => NULL,
@@ -717,7 +729,7 @@ function dfs_med_series_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 

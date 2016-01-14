@@ -96,16 +96,16 @@ function dfs_med_series_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'locations' => array(
-          'weight' => '30',
+          'weight' => '11',
         ),
       ),
       'display' => array(),

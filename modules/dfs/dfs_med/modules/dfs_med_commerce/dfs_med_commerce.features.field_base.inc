@@ -10,7 +10,7 @@
 function dfs_med_commerce_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'commerce_customer_address'
+  // Exported field_base: 'commerce_customer_address'.
   $field_bases['commerce_customer_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -19,7 +19,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_customer_profile',
     ),
     'field_name' => 'commerce_customer_address',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'addressfield',
@@ -28,7 +27,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'commerce_customer_billing'
+  // Exported field_base: 'commerce_customer_billing'.
   $field_bases['commerce_customer_billing'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -37,14 +36,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_order',
     ),
     'field_name' => 'commerce_customer_billing',
-    'foreign keys' => array(
-      'profile_id' => array(
-        'columns' => array(
-          'profile_id' => 'profile_id',
-        ),
-        'table' => 'commerce_customer_profile',
-      ),
-    ),
     'indexes' => array(
       'profile_id' => array(
         0 => 'profile_id',
@@ -60,7 +51,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_customer_profile_reference',
   );
 
-  // Exported field_base: 'commerce_discount_date'
+  // Exported field_base: 'commerce_discount_date'.
   $field_bases['commerce_discount_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -69,7 +60,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount',
     ),
     'field_name' => 'commerce_discount_date',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 1,
     'module' => 'date',
@@ -92,7 +82,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'datestamp',
   );
 
-  // Exported field_base: 'commerce_discount_max_uses'
+  // Exported field_base: 'commerce_discount_max_uses'.
   $field_bases['commerce_discount_max_uses'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -101,7 +91,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount',
     ),
     'field_name' => 'commerce_discount_max_uses',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
@@ -110,7 +99,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'commerce_discount_offer'
+  // Exported field_base: 'commerce_discount_offer'.
   $field_bases['commerce_discount_offer'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -119,7 +108,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount',
     ),
     'field_name' => 'commerce_discount_offer',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -140,7 +128,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'commerce_discount_uses'
+  // Exported field_base: 'commerce_discount_uses'.
   $field_bases['commerce_discount_uses'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -149,7 +137,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount',
     ),
     'field_name' => 'commerce_discount_uses',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
@@ -158,7 +145,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'commerce_discounts'
+  // Exported field_base: 'commerce_discounts'.
   $field_bases['commerce_discounts'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -167,7 +154,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_order',
     ),
     'field_name' => 'commerce_discounts',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -186,7 +172,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'commerce_display_path'
+  // Exported field_base: 'commerce_display_path'.
   $field_bases['commerce_display_path'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -195,14 +181,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_line_item',
     ),
     'field_name' => 'commerce_display_path',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -217,7 +195,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'commerce_free_products'
+  // Exported field_base: 'commerce_free_products'.
   $field_bases['commerce_free_products'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -226,14 +204,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount_offer',
     ),
     'field_name' => 'commerce_free_products',
-    'foreign keys' => array(
-      'product_id' => array(
-        'columns' => array(
-          'product_id' => 'product_id',
-        ),
-        'table' => 'commerce_product',
-      ),
-    ),
     'indexes' => array(
       'product_id' => array(
         0 => 'product_id',
@@ -248,14 +218,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_product_reference',
   );
 
-  // Exported field_base: 'commerce_license'
+  // Exported field_base: 'commerce_license'.
   $field_bases['commerce_license'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'commerce_license',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -272,14 +241,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'commerce_license_duration'
+  // Exported field_base: 'commerce_license_duration'.
   $field_bases['commerce_license_duration'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'commerce_license_duration',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 1,
     'module' => 'number',
@@ -288,14 +256,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'commerce_license_type'
+  // Exported field_base: 'commerce_license_type'.
   $field_bases['commerce_license_type'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'commerce_license_type',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -311,7 +278,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'commerce_line_items'
+  // Exported field_base: 'commerce_line_items'.
   $field_bases['commerce_line_items'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -320,14 +287,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_order',
     ),
     'field_name' => 'commerce_line_items',
-    'foreign keys' => array(
-      'line_item_id' => array(
-        'columns' => array(
-          'line_item_id' => 'line_item_id',
-        ),
-        'table' => 'commerce_line_item',
-      ),
-    ),
     'indexes' => array(
       'line_item_id' => array(
         0 => 'line_item_id',
@@ -340,7 +299,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_line_item_reference',
   );
 
-  // Exported field_base: 'commerce_order_total'
+  // Exported field_base: 'commerce_order_total'.
   $field_bases['commerce_order_total'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -349,7 +308,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_order',
     ),
     'field_name' => 'commerce_order_total',
-    'foreign keys' => array(),
     'indexes' => array(
       'currency_price' => array(
         0 => 'amount',
@@ -363,7 +321,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_price',
   );
 
-  // Exported field_base: 'commerce_percentage'
+  // Exported field_base: 'commerce_percentage'.
   $field_bases['commerce_percentage'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -372,7 +330,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount_offer',
     ),
     'field_name' => 'commerce_percentage',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 1,
     'module' => 'number',
@@ -385,7 +342,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'number_decimal',
   );
 
-  // Exported field_base: 'commerce_product'
+  // Exported field_base: 'commerce_product'.
   $field_bases['commerce_product'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -394,14 +351,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_line_item',
     ),
     'field_name' => 'commerce_product',
-    'foreign keys' => array(
-      'product_id' => array(
-        'columns' => array(
-          'product_id' => 'product_id',
-        ),
-        'table' => 'commerce_product',
-      ),
-    ),
     'indexes' => array(
       'product_id' => array(
         0 => 'product_id',
@@ -416,7 +365,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_product_reference',
   );
 
-  // Exported field_base: 'commerce_total'
+  // Exported field_base: 'commerce_total'.
   $field_bases['commerce_total'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -425,7 +374,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_line_item',
     ),
     'field_name' => 'commerce_total',
-    'foreign keys' => array(),
     'indexes' => array(
       'currency_price' => array(
         0 => 'amount',
@@ -439,7 +387,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_price',
   );
 
-  // Exported field_base: 'commerce_unit_price'
+  // Exported field_base: 'commerce_unit_price'.
   $field_bases['commerce_unit_price'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -448,7 +396,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_line_item',
     ),
     'field_name' => 'commerce_unit_price',
-    'foreign keys' => array(),
     'indexes' => array(
       'currency_price' => array(
         0 => 'amount',
@@ -462,14 +409,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'commerce_price',
   );
 
-  // Exported field_base: 'field_bestseller'
+  // Exported field_base: 'field_bestseller'.
   $field_bases['field_bestseller'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_bestseller',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -488,14 +434,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_featured'
+  // Exported field_base: 'field_featured'.
   $field_bases['field_featured'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_featured',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -514,7 +459,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_product_image'
+  // Exported field_base: 'field_product_image'.
   $field_bases['field_product_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -523,14 +468,6 @@ function dfs_med_commerce_field_default_field_bases() {
     'field_name' => 'field_product_image',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
     ),
     'indexes' => array(
       'fid' => array(
@@ -551,7 +488,7 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'inline_conditions'
+  // Exported field_base: 'inline_conditions'.
   $field_bases['inline_conditions'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -560,7 +497,6 @@ function dfs_med_commerce_field_default_field_bases() {
       0 => 'commerce_discount',
     ),
     'field_name' => 'inline_conditions',
-    'foreign keys' => array(),
     'indexes' => array(),
     'instance_settings' => array(
       'entity_type' => 'commerce_order',
@@ -572,14 +508,13 @@ function dfs_med_commerce_field_default_field_bases() {
     'type' => 'inline_conditions',
   );
 
-  // Exported field_base: 'num_renewals'
+  // Exported field_base: 'num_renewals'.
   $field_bases['num_renewals'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'num_renewals',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 1,
     'module' => 'number',

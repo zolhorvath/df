@@ -10,21 +10,13 @@
 function dfs_med_series_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_series_episodes'
+  // Exported field_base: 'field_series_episodes'.
   $field_bases['field_series_episodes'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_series_episodes',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',

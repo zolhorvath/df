@@ -10,7 +10,7 @@
 function dfs_med_brand_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-brand-body'
+  // Exported field_instance: 'node-brand-body'.
   $field_instances['node-brand-body'] = array(
     'bundle' => 'brand',
     'default_value' => NULL,
@@ -100,11 +100,11 @@ function dfs_med_brand_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_greylist'
+  // Exported field_instance: 'node-brand-field_greylist'.
   $field_instances['node-brand-field_greylist'] = array(
     'bundle' => 'brand',
     'default_value' => array(
@@ -169,7 +169,7 @@ function dfs_med_brand_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_link_image'
+  // Exported field_instance: 'node-brand-field_link_image'.
   $field_instances['node-brand-field_link_image'] = array(
     'bundle' => 'brand',
     'deleted' => 0,
@@ -248,13 +248,25 @@ function dfs_med_brand_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
       'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_link_image_hover'
+  // Exported field_instance: 'node-brand-field_link_image_hover'.
   $field_instances['node-brand-field_link_image_hover'] = array(
     'bundle' => 'brand',
     'deleted' => 0,
@@ -333,13 +345,25 @@ function dfs_med_brand_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
       'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_logo'
+  // Exported field_instance: 'node-brand-field_logo'.
   $field_instances['node-brand-field_logo'] = array(
     'bundle' => 'brand',
     'deleted' => 0,
@@ -412,13 +436,25 @@ function dfs_med_brand_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_persona'
+  // Exported field_instance: 'node-brand-field_persona'.
   $field_instances['node-brand-field_persona'] = array(
     'bundle' => 'brand',
     'default_value' => NULL,
@@ -473,11 +509,11 @@ function dfs_med_brand_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 31,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_site_section'
+  // Exported field_instance: 'node-brand-field_site_section'.
   $field_instances['node-brand-field_site_section'] = array(
     'bundle' => 'brand',
     'default_value' => NULL,
@@ -532,11 +568,11 @@ function dfs_med_brand_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_splash_image'
+  // Exported field_instance: 'node-brand-field_splash_image'.
   $field_instances['node-brand-field_splash_image'] = array(
     'bundle' => 'brand',
     'deleted' => 0,
@@ -616,13 +652,25 @@ function dfs_med_brand_field_default_field_instances() {
           'media_internet' => 0,
           'upload' => 'upload',
         ),
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-brand-field_superbrand'
+  // Exported field_instance: 'node-brand-field_superbrand'.
   $field_instances['node-brand-field_superbrand'] = array(
     'bundle' => 'brand',
     'default_value' => array(
