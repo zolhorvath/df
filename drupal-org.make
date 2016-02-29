@@ -222,6 +222,7 @@ projects[mimemail][subdir] = "contrib"
 projects[moderate_mmenu][type] = "module"
 projects[moderate_mmenu][subdir] = "contrib"
 projects[moderate_mmenu][download][type] = "git"
+projects[moderate_mmenu][download][revision] = "819666d"
 projects[moderate_mmenu][download][branch] = "7.x-1.x"
 
 projects[mollom][version] = "2.15"
@@ -382,10 +383,6 @@ libraries[jquery.imagesloaded][download][url] = "https://github.com/desandro/ima
 libraries[jquery.jcarousel][destination] = "libraries"
 libraries[jquery.jcarousel][download][type] = "get"
 libraries[jquery.jcarousel][download][url] = "https://github.com/jsor/jcarousel/archive/master.zip"
-
-libraries[jQuery.mmenu][destination] = "libraries"
-libraries[jQuery.mmenu][download][type] = "get"
-libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/v5.2.0.zip"
 
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"
