@@ -2,8 +2,7 @@ name = DFS MED Slideshow
 description = Slideshow Slide node bundle and associated components.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_slideshow
+
 dependencies[] = df_engage
 dependencies[] = dfs_med_base
 dependencies[] = draggableviews
@@ -13,6 +12,7 @@ dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_fieldsets
 dependencies[] = views_slideshow_cycle
+
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
@@ -53,4 +53,5 @@ features[variable][] = save_continue_slideshow_slide
 features[variable][] = webform_node_slideshow_slide
 features[variable][] = workbench_moderation_default_state_slideshow_slide
 features[views_view][] = homepage_slideshow
+
 features_exclude[dependencies][views_slideshow] = views_slideshow

@@ -1,0 +1,6 @@
+name = DF Tools Image
+description = Helpful image tools for scenarios.
+core = 7.x
+package = Demo Framework Tools
+
+dependencies[] = image

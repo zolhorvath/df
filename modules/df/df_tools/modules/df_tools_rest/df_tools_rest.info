@@ -1,9 +1,0 @@
-name = DF Tools REST
-description = RESTful web services examples for demos.
-core = 7.x
-package = Demo Framework Tools
-version = 7.x-1.0
-project = df_tools_rest
-dependencies[] = restws
-dependencies[] = restws_basic_auth
-dependencies[] = scheduler

@@ -2,8 +2,7 @@ name = DF Search
 description = Use advanced search tools driven by Search API.
 core = 7.x
 package = Demo Framework
-version = 7.x-1.0-beta1
-project = df_search
+
 dependencies[] = ctools
 dependencies[] = current_search
 dependencies[] = custom_search
@@ -24,5 +23,5 @@ dependencies[] = search_api_solr
 dependencies[] = search_api_sorts
 dependencies[] = search_api_views
 dependencies[] = search_facetapi
-datestamp = 1368145318
+
 features[features_api][] = api:2

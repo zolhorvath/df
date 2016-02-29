@@ -2,14 +2,14 @@ name = DFS MED Search
 description = Search Configurations.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_search
+
 dependencies[] = ctools
 dependencies[] = df_search
 dependencies[] = features
 dependencies[] = search_autocomplete
 dependencies[] = strongarm
 dependencies[] = views
+
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
@@ -17,4 +17,3 @@ features[search_autocomplete_config][] = 3
 features[user_permission][] = use Search Autocomplete
 features[variable][] = sa_admin_helper
 features[views_view][] = med_nodes_autocomplete
-mtime = 1423015522

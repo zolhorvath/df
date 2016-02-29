@@ -2,13 +2,12 @@ name = DFS MED Theme
 description = Theme settings
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_theme
+
 dependencies[] = block_class
 dependencies[] = ctools
 dependencies[] = nice_menus
 dependencies[] = strongarm
+
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = theme_med_settings
-mtime = 1423015522

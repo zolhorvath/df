@@ -2,8 +2,7 @@ name = DF Translate
 description = Internationalization, Content Translation, Multilingual, Locale
 core = 7.x
 package = Demo Framework
-version = 7.x-1.0-beta1
-project = df_translate
+
 dependencies[] = ctools
 dependencies[] = import
 dependencies[] = features
@@ -28,6 +27,7 @@ dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = translation
 dependencies[] = translation_helpers
+
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[language][] = de
@@ -47,4 +47,5 @@ features[variable][] = language_types
 features[variable][] = locale_language_providers_weight_language
 features[variable][] = site_default_country
 features[variable][] = translation_language_type
+
 files[] = df_translate.base.nodes.translations.inc

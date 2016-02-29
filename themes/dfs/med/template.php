@@ -43,3 +43,21 @@ function med_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
 }
+
+/**
+ * Implements hook_preprocess_page().
+ *
+ * Adds jQuery.mmenu to every page load.
+ */
+function med_preprocess_page(&$variables) {
+  if (module_exists('libraries')) {
+    // Get the jQuery.mmenu library path.
+    $library_exists = libraries_detect('jQuery.mmenu');
+
+    // Check that all of our requirements are met before proceeding.
+    if ($library_exists) {
+      // Load the jQuery.mmenu library.
+      libraries_load('jQuery.mmenu');
+    }
+  }
+}

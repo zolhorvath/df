@@ -716,19 +716,6 @@ form {
   z-index: 10000;
 }
 
-.panels-ipe .button-group {
-  position: fixed;
-  z-index: 15;
-  bottom: 0;
-  li {
-    float: none;
-    a.button.small {
-      padding: 10px;
-      margin-bottom: 2px;
-      min-width: 110px;
-    }
-  }
-}
 
 //add in line height so that it response with equal horizontal height.
 .logo-area {
@@ -1624,4 +1611,45 @@ table.checkout-review {
 // Make sure body has correct positioning for navbar
 body {
   position: inherit;
+}
+
+.stButton {
+  height:60px!important;
+}
+
+.mm-listview {
+  width:400px;
+  margin:0 auto;
+  padding:40px;
+  li {
+    width:100%;
+  }
+
+  li:first-child .button {
+    margin-left:-2px;
+    margin-right:2px;
+  }
+
+}
+
+.mm-title {
+  color:#fff!important;
+}
+
+div.workbench-info-block {
+    background: #e7e7e7;
+    list-style: none outside;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin: 0;
+    border-color: #333;
+    border-style: solid none;
+    border-width: 1px;
+    color: #666;
+    font-size: 0.95em;
+    width:325px;
+    margin-left:15px;
+}
+
+#moderate-mmenu-link{
+  z-index:100!important;
 }

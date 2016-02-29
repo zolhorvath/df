@@ -2,8 +2,7 @@ name = DFS MED Series
 description = Series node bundle and associated components.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_series
+
 dependencies[] = assemble
 dependencies[] = ctools
 dependencies[] = df_engage
@@ -29,6 +28,7 @@ dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_fieldsets
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
@@ -80,5 +80,6 @@ features[variable][] = pathauto_node_series_pattern
 features[variable][] = save_continue_series
 features[variable][] = workbench_moderation_default_state_series
 features[views_view][] = series
+
 features_exclude[dependencies][entity] = entity
 features_exclude[dependencies][rules] = rules

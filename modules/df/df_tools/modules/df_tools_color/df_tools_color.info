@@ -1,8 +1,0 @@
-name = DF Tools Color
-description = "Auto-magically lets you override colors in any theme."
-core = 7.x
-package = Demo Framework Tools
-version = 7.x-1.0
-project = df_tools_color
-
-dependencies[] = libraries

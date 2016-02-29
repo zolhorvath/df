@@ -1,4 +1,5 @@
 # Demo Framework
+[![Build Status](https://magnum.travis-ci.com/acquia/demo_framework.svg?token=fkKCDWeX7fUCfybPUjJb&branch=7.x)](https://magnum.travis-ci.com/acquia/demo_framework)
 
 The Demo Framework (DF) is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
 

@@ -2,8 +2,7 @@ name = DF Commerce
 description = Blends content and community with commerce.
 core = 7.x
 package = Demo Framework
-version = 7.x-1.0
-project = df_commerce
+
 dependencies[] = addressfield
 dependencies[] = assemble
 dependencies[] = commerce
@@ -50,7 +49,7 @@ dependencies[] = role_export
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views_megarow
-datestamp = 1368820311
+
 features[commerce_product_type][] = product
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
@@ -90,5 +89,6 @@ features[variable][] = menu_parent_commerce
 features[variable][] = node_options_commerce
 features[variable][] = node_preview_commerce
 features[variable][] = node_submitted_commerce
+
 files[] = df_commerce.base.nodes.commerce.inc
 files[] = df_commerce.base.products.inc

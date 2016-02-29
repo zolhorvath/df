@@ -2,8 +2,7 @@ name = DFS MED Brand
 description = Brand node bundle and associated components.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_brand
+
 dependencies[] = better_exposed_filters
 dependencies[] = ctools
 dependencies[] = df_engage
@@ -27,6 +26,7 @@ dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1

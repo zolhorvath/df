@@ -2,8 +2,7 @@ name = DFS WEM Commerce
 description = Commerce Products and Content types for DFS WEM
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0-rc1
-project = dfs_wem_commerce
+
 dependencies[] = commerce_cart
 dependencies[] = commerce_price
 dependencies[] = commerce_product
@@ -26,6 +25,7 @@ dependencies[] = picture
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
+
 features[commerce_product_type][] = wem_product
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
@@ -100,6 +100,7 @@ features[variable][] = webform_node_wem_commerce
 features[variable][] = webform_node_wem_product_review
 features[variable][] = workbench_moderation_default_state_wem_commerce
 features[variable][] = workbench_moderation_default_state_wem_product_review
+
 features_exclude[dependencies][commerce_features] = commerce_features
 features_exclude[dependencies][commerce_product_ui] = commerce_product_ui
 features_exclude[dependencies][dfs_wem] = dfs_wem
@@ -108,4 +109,3 @@ features_exclude[field_base][commerce_price] = commerce_price
 features_exclude[field_base][field_images] = field_images
 features_exclude[field_base][field_wem_subtitle] = field_wem_subtitle
 features_exclude[taxonomy][interests] = interests
-mtime = 1424804319
