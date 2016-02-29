@@ -2,8 +2,7 @@ name = WEM Demo
 description = Web Experience Management scenario with users, content, pages, products, blocks and taxonomy terms.
 core = 7.x
 package = Demo Framework Scenarios
-version = 7.x-1.0-rc2
-project = dfs_wem
+
 dependencies[] = bean_tax
 dependencies[] = bean_uuid
 dependencies[] = collection
@@ -41,8 +40,9 @@ dependencies[] = taxonomy
 dependencies[] = uuid_features
 dependencies[] = views
 dependencies[] = views_content
+
 __drupal_alter_by_ref[][bean][bean_tax_related] = bean_tax_related
-datestamp = 1403538060
+
 features[collection][] = wem_munich_calling
 features[ctools][] = field_group:field_group:1
 features[ctools][] = page_manager:pages_default:1
@@ -98,6 +98,7 @@ features[views_view][] = wem_tweets
 features[views_view][] = wem_user_contests
 features[views_view][] = wem_user_picture
 features[views_view][] = wem_videos
+
 features_exclude[field][commerce_product-wem_product-commerce_price] = commerce_product-wem_product-commerce_price
 features_exclude[field][node-wem_news-body] = node-wem_news-body
 features_exclude[field][node-wem_news-field_wem_image] = node-wem_news-field_wem_image
@@ -126,6 +127,7 @@ features_exclude[field][node-wem_tweet-field_wem_tweet_id] = node-wem_tweet-fiel
 features_exclude[field_base][body] = body
 features_exclude[field_base][commerce_price] = commerce_price
 features_exclude[field_base][field_images] = field_images
+
 files[] = dfs_wem.groups.wem_contest.users.inc
 files[] = dfs_wem.nodes.wem_contest.inc
 files[] = dfs_wem.nodes.wem_contest.translations.inc
@@ -138,4 +140,3 @@ files[] = dfs_wem.nodes.wem_tweets.inc
 files[] = dfs_wem.products.inc
 files[] = dfs_wem.terms.interests.inc
 files[] = dfs_wem.terms.persona.inc
-mtime = 1424192968

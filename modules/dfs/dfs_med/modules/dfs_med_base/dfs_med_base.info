@@ -2,8 +2,7 @@ name = DFS MED Base
 description = Base components shared by associated Features.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_base
+
 dependencies[] = ctools
 dependencies[] = entityreference
 dependencies[] = features
@@ -13,6 +12,7 @@ dependencies[] = lightning_letterbox
 dependencies[] = link
 dependencies[] = text
 dependencies[] = views
+
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_base][] = field_brand

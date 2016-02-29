@@ -24,19 +24,13 @@ projects[advanced_help][version] = "1.3"
 projects[advanced_help][type] = "module"
 projects[advanced_help][subdir] = "contrib"
 
-projects[advancedqueue][version] = "1.x-dev"
+projects[advancedqueue][version] = "1.0-beta3"
 projects[advancedqueue][type] = "module"
 projects[advancedqueue][subdir] = "contrib"
-projects[advancedqueue][download][type] = "git"
-projects[advancedqueue][download][revision] = "33d7cb8"
-projects[advancedqueue][download][branch] = "7.x-1.x"
 
-projects[better_exposed_filters][version] = "3.x-dev"
+projects[better_exposed_filters][version] = "3.2"
 projects[better_exposed_filters][type] = "module"
 projects[better_exposed_filters][subdir] = "contrib"
-projects[better_exposed_filters][download][type] = "git"
-projects[better_exposed_filters][download][revision] = "8cb2a1a"
-projects[better_exposed_filters][download][branch] = "7.x-3.x"
 
 projects[charts][version] = "2.x-dev"
 projects[charts][type] = "module"
@@ -57,7 +51,7 @@ projects[commerce_checkout_redirect][version] = "2.0-rc1"
 projects[commerce_checkout_redirect][type] = "module"
 projects[commerce_checkout_redirect][subdir] = "contrib"
 
-projects[commerce_checkout_progress][version] = "1.3"
+projects[commerce_checkout_progress][version] = "1.4"
 projects[commerce_checkout_progress][type] = "module"
 projects[commerce_checkout_progress][subdir] = "contrib"
 
@@ -80,14 +74,11 @@ projects[commerce_license][version] = "1.3"
 projects[commerce_license][type] = "module"
 projects[commerce_license][subdir] = "contrib"
 
-projects[commerce_message][version] = "1.0-rc3"
+projects[commerce_message][version] = "1.0-rc4"
 projects[commerce_message][type] = "module"
 projects[commerce_message][subdir] = "contrib"
-; Undefined property: MessageType::$module commerce message.message.inc:217
-; http://drupal.org/node/2171201
-projects[commerce_message][patch][2171201] = "http://drupal.org/files/issues/2171201-undefined-property-module-MessageType-6.patch"
 
-projects[commerce_migrate][version] = "1.1"
+projects[commerce_migrate][version] = "1.2"
 projects[commerce_migrate][type] = "module"
 projects[commerce_migrate][subdir] = "contrib"
 
@@ -95,14 +86,11 @@ projects[commerce_shipping][version] = "2.2"
 projects[commerce_shipping][type] = "module"
 projects[commerce_shipping][subdir] = "contrib"
 
-projects[custom_search][version] = "1.x-dev"
+projects[custom_search][version] = "1.20"
 projects[custom_search][type] = "module"
 projects[custom_search][subdir] = "contrib"
-projects[custom_search][download][type] = "git"
-projects[custom_search][download][revision] = "fead2f1"
-projects[custom_search][download][branch] = "7.x-1.x"
 
-projects[domain][version] = "3.10"
+projects[domain][version] = "3.12"
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 
@@ -144,7 +132,7 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
-projects[google_analytics][version] = "1.4"
+projects[google_analytics][version] = "2.1"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
@@ -158,24 +146,18 @@ projects[google_analytics_reports][download][branch] = "7.x-3.x"
 ; http://drupal.org/node/2558847
 projects[google_analytics_reports][patch][2558847] = "http://drupal.org/files/issues/google_analytics_reports-warning-0.patch"
 
-projects[i18n][version] = "1.x-dev"
+projects[i18n][version] = "1.13"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
-projects[i18n][download][type] = "git"
-projects[i18n][download][revision] = "a3cbe24"
-projects[i18n][download][branch] = "7.x-1.x"
 ; PHP Fatal Error Call to undefined method i18n_object_wrapper::strings_update()
 ; http://drupal.org/node/2082573
 projects[i18n][patch][2082573] = "http://drupal.org/files/issues/i18n_string-undefined-method-2082573-11.patch"
 
-projects[i18nviews][version] = "3.x-dev"
+projects[i18nviews][version] = "3.0-alpha1"
 projects[i18nviews][type] = "module"
 projects[i18nviews][subdir] = "contrib"
-projects[i18nviews][download][type] = "git"
-projects[i18nviews][download][revision] = "fdc8c33"
-projects[i18nviews][download][branch] = "7.x-3.x"
 
-projects[inline_conditions][version] = "1.0-alpha5"
+projects[inline_conditions][version] = "1.0-alpha7"
 projects[inline_conditions][type] = "module"
 projects[inline_conditions][subdir] = "contrib"
 
@@ -183,23 +165,17 @@ projects[job_scheduler][version] = "2.0-alpha3"
 projects[job_scheduler][type] = "module"
 projects[job_scheduler][subdir] = "contrib"
 
-projects[l10n_update][version] = "1.x-dev"
+projects[l10n_update][version] = "1.1"
 projects[l10n_update][type] = "module"
 projects[l10n_update][subdir] = "contrib"
-projects[l10n_update][download][type] = "git"
-projects[l10n_update][download][revision] = "209faa5"
-projects[l10n_update][download][branch] = "7.x-1.x"
 
 projects[image_url_formatter][version] = "1.4"
 projects[image_url_formatter][type] = "module"
 projects[image_url_formatter][subdir] = "contrib"
 
-projects[jcarousel][version] = "2.x-dev"
+projects[jcarousel][version] = "2.7"
 projects[jcarousel][type] = "module"
 projects[jcarousel][subdir] = "contrib"
-projects[jcarousel][download][type] = "git"
-projects[jcarousel][download][revision] = "c17cbf8"
-projects[jcarousel][download][branch] = "7.x-2.x"
 
 projects[language_switch][version] = "1.x-dev"
 projects[language_switch][type] = "module"
@@ -223,15 +199,15 @@ projects[manualcrop][download][type] = "git"
 projects[manualcrop][download][revision] = "37ac8e3"
 projects[manualcrop][download][branch] = "7.x-1.x"
 
-projects[masquerade][version] = "1.0-rc5"
+projects[masquerade][version] = "1.0-rc7"
 projects[masquerade][type] = "module"
 projects[masquerade][subdir] = "contrib"
 
-projects[menu_attributes][version] = "1.0-rc3"
+projects[menu_attributes][version] = "1.0"
 projects[menu_attributes][type] = "module"
 projects[menu_attributes][subdir] = "contrib"
 
-projects[message][version] = "1.10"
+projects[message][version] = "1.11"
 projects[message][type] = "module"
 projects[message][subdir] = "contrib"
 
@@ -243,7 +219,12 @@ projects[mimemail][version] = "1.0-beta4"
 projects[mimemail][type] = "module"
 projects[mimemail][subdir] = "contrib"
 
-projects[mollom][version] = "2.4"
+projects[moderate_mmenu][type] = "module"
+projects[moderate_mmenu][subdir] = "contrib"
+projects[moderate_mmenu][download][type] = "git"
+projects[moderate_mmenu][download][branch] = "7.x-1.x"
+
+projects[mollom][version] = "2.15"
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
 
@@ -255,7 +236,7 @@ projects[oauth][version] = "3.2"
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
 
-projects[og][version] = "2.6"
+projects[og][version] = "2.8"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
@@ -283,12 +264,9 @@ projects[restws][version] = "2.4"
 projects[restws][type] = "module"
 projects[restws][subdir] = "contrib"
 
-projects[rich_snippets][version] = "1.x-dev"
+projects[rich_snippets][version] = "1.0-beta4"
 projects[rich_snippets][type] = "module"
 projects[rich_snippets][subdir] = "contrib"
-projects[rich_snippets][download][type] = "git"
-projects[rich_snippets][download][revision] = "fad5697"
-projects[rich_snippets][download][branch] = "7.x-1.x"
 
 projects[scheduler][version] = "1.3"
 projects[scheduler][type] = "module"
@@ -298,16 +276,13 @@ projects[schemaorg][version] = "1.0-rc1"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
 
-projects[search_api][version] = "1.15"
+projects[search_api][version] = "1.16"
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
 
-projects[search_api_db][version] = "1.x-dev"
+projects[search_api_db][version] = "1.5"
 projects[search_api_db][type] = "module"
 projects[search_api_db][subdir] = "contrib"
-projects[search_api_db][download][type] = "git"
-projects[search_api_db][download][revision] = "643d96c"
-projects[search_api_db][download][branch] = "7.x-1.x"
 
 projects[search_api_page][version] = "1.2"
 projects[search_api_page][type] = "module"
@@ -317,23 +292,17 @@ projects[search_api_ranges][version] = "1.5"
 projects[search_api_ranges][type] = "module"
 projects[search_api_ranges][subdir] = "contrib"
 
-projects[search_api_solr][version] = "1.8"
+projects[search_api_solr][version] = "1.9"
 projects[search_api_solr][type] = "module"
 projects[search_api_solr][subdir] = "contrib"
 
-projects[search_api_sorts][version] = "1.5"
+projects[search_api_sorts][version] = "1.6"
 projects[search_api_sorts][type] = "module"
 projects[search_api_sorts][subdir] = "contrib"
 
-projects[search_autocomplete][version] = "4.x-dev"
+projects[search_autocomplete][version] = "4.7"
 projects[search_autocomplete][type] = "module"
 projects[search_autocomplete][subdir] = "contrib"
-projects[search_autocomplete][download][type] = "git"
-projects[search_autocomplete][download][revision] = "d2de428"
-projects[search_autocomplete][download][branch] = "7.x-4.x"
-; Add a cancel button that closes search autocomplete
-; http://drupal.org/node/2388787
-projects[search_autocomplete][patch][2388787] = "http://drupal.org/files/issues/search-autocomplete-close-button.patch"
 
 projects[search_facetapi][version] = "1.0-beta2"
 projects[search_facetapi][type] = "module"
@@ -343,7 +312,7 @@ projects[sharethis][version] = "2.12"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
 
-projects[slick][version] = "2.0-beta1"
+projects[slick][version] = "2.0"
 projects[slick][type] = "module"
 projects[slick][subdir] = "contrib"
 
@@ -408,11 +377,15 @@ libraries[jquery.imgareaselect][download][url] = "https://github.com/odyniec/img
 
 libraries[jquery.imagesloaded][destination] = "libraries"
 libraries[jquery.imagesloaded][download][type] = "get"
-libraries[jquery.imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
+libraries[jquery.imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v2.1.2.tar.gz"
 
 libraries[jquery.jcarousel][destination] = "libraries"
 libraries[jquery.jcarousel][download][type] = "get"
 libraries[jquery.jcarousel][download][url] = "https://github.com/jsor/jcarousel/archive/master.zip"
+
+libraries[jQuery.mmenu][destination] = "libraries"
+libraries[jQuery.mmenu][download][type] = "get"
+libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/v5.2.0.zip"
 
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"

@@ -35,12 +35,12 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE, $seed = TRUE) {
   // Revert Features to ensure proper DFS reset.
   $operations[] = array('df_admin_revert_all', array(''));
   $operations[] = array('drupal_set_message', array(t('Reverted Features after scenario enablement.'), 'status'));
-  $operations[] = array('watchdog', array('demo framework', 'Features reverted after enabling scenario: ' . $scenario));
+  $operations[] = array('_df_admin_watchdog_revert_features', array($scenario));
 
   // Rebuild defaultconfig from modules.
   $operations[] = array('defaultconfig_rebuild_all', array(''));
   $operations[] = array('drupal_set_message', array(t('Defaultconfig rebuilt after scenario enablement.'), 'status'));
-  $operations[] = array('watchdog', array('demo framework', 'Rebuilt defaultconfig after enabling scenario: ' . $scenario));
+  $operations[] = array('_df_admin_watchdog_defaultconfig_rebuild', array($scenario));
 
   // Set up pre-import routines via hook_df_pre_import().
   $routines = array();
@@ -100,7 +100,7 @@ function df_admin_reset_scenario($scenario, $rollback = TRUE, $seed = TRUE) {
   $operations[] = array('drupal_flush_all_caches', array(''));
   $operations[] = array('variable_set', array('menu_rebuild_needed', TRUE));
   $operations[] = array('drupal_set_message', array(t('All caches have been cleared.'), 'status'));
-  $operations[] = array('watchdog', array('demo framework', 'Cleared caches after enabling scenario: ' . $scenario));
+  $operations[] = array('_df_admin_watchdog_cache_clear', array($scenario));
 
   // Clear messages for non-Drush users providing a cleaner scenario reset.
   if (!drupal_is_cli()) {

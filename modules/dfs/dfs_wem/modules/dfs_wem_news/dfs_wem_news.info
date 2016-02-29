@@ -2,8 +2,7 @@ name = DFS WEM News
 description = News Content type used by DFS WEM
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0-rc2
-project = dfs_wem_news
+
 dependencies[] = assemble
 dependencies[] = collection
 dependencies[] = ctools
@@ -28,6 +27,7 @@ dependencies[] = picture
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
@@ -80,6 +80,7 @@ features[variable][] = panelizer_node:wem_news_default
 features[variable][] = sharethis_wem_news_options
 features[variable][] = webform_node_wem_news
 features[variable][] = workbench_moderation_default_state_wem_news
+
 features_exclude[dependencies][collection_field] = collection_field
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_collection] = field_collection

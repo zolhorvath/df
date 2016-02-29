@@ -2,8 +2,7 @@ name = DFS MED Episodes
 description = Episode and Episodic Collection node bundles with associated components.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_episodes
+
 dependencies[] = commerce_cart
 dependencies[] = commerce_product_reference
 dependencies[] = ctools
@@ -34,6 +33,7 @@ dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_fieldsets
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1

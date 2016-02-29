@@ -2,8 +2,7 @@ name = DFS WEM Contest
 description = OG Configurations and Contest bundle for DFS WEM
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0-beta1
-project = dfs_wem_contest
+
 dependencies[] = df_engage
 dependencies[] = features
 dependencies[] = i18n_taxonomy
@@ -15,6 +14,7 @@ dependencies[] = panelizer
 dependencies[] = picture
 dependencies[] = strongarm
 dependencies[] = views_content
+
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
@@ -64,9 +64,9 @@ features[variable][] = panelizer_node:wem_contest:page_manager_selection
 features[variable][] = webform_node_wem_contest
 features[variable][] = workbench_moderation_default_state_wem_contest
 features[views_view][] = wem_contest_redirect
+
 features_exclude[dependencies][list] = list
 features_exclude[dependencies][views] = views
 features_exclude[field_base][body] = body
 features_exclude[field_base][group_group] = group_group
 features_exclude[taxonomy][interests] = interests
-mtime = 1424804319

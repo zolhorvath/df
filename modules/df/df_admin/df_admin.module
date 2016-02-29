@@ -233,3 +233,39 @@ function df_admin_batch_finish($success, $results, $operations) {
     }
   }
 }
+
+/**
+ * BatchAPI callback.
+ *
+ * Logs a message with the watchdog once features have been reverted after
+ * enabling a scenario.
+ *
+ * @see df_admin_reset_scenario()
+ */
+function _df_admin_watchdog_revert_features($scenario, &$context) {
+  watchdog('df_admin', 'Features reverted after enabling the %scenario scenario.', array('%scenario' => $scenario), WATCHDOG_INFO);
+}
+
+/**
+ * BatchAPI callback.
+ *
+ * Logs a message with the watchdog once defaultconfig has been rebuilt after
+ * enabling a scenario.
+ *
+ * @see df_admin_reset_scenario()
+ */
+function _df_admin_watchdog_defaultconfig_rebuild($scenario, &$context) {
+  watchdog('df_admin', 'Rebuilt defaultconfig after enabling the %scenario scenario.', array('%scenario' => $scenario), WATCHDOG_INFO);
+}
+
+/**
+ * BatchAPI callback.
+ *
+ * Logs a message with the watchdog once caches have been cleared after enabling
+ * a scenario.
+ *
+ * @see df_admin_reset_scenario()
+ */
+function _df_admin_watchdog_cache_clear($scenario, &$context) {
+  watchdog('df_admin', 'Cleared caches after enabling the %scenario scenario.', array('%scenario' => $scenario), WATCHDOG_INFO);
+}

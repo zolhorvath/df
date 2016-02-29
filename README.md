@@ -1,4 +1,5 @@
 # Demo Framework
+[![Build Status](https://magnum.travis-ci.com/acquia/demo_framework.svg?token=fkKCDWeX7fUCfybPUjJb&branch=7.x)](https://magnum.travis-ci.com/acquia/demo_framework)
 
 The Demo Framework (DF) is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
 
@@ -24,14 +25,6 @@ All other DF  modules are in this repo, they are:
 - DF Translate -- Translation Tools, i18n, l10n, Multilingual
 
 ### Installation
-
-Installation currently only supported via Drush commands. First, build the profile using Drush make.
-
-  ``drush make build-df.make ~/Destination/docroot``
-
-Use the ``site-install`` command to install Drupal with the Demo Framework installation profile.
-
-  ``drush si df``
 
 Enable a Demo Framework Scenario using the ``df-es`` command provided by DF Admin.
 

@@ -2,8 +2,7 @@ name = DFS MED Commerce
 description = Commerce product config and related components.
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0
-project = dfs_med_commerce
+
 dependencies[] = addressfield
 dependencies[] = commerce
 dependencies[] = commerce_addressbook
@@ -53,6 +52,7 @@ dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0

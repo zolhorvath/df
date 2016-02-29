@@ -10,6 +10,11 @@ build.properties
 
 # Composer
 vendor
+composer.lock
+
+# Behat
+tests/bin
+behat.local.yml
 
 # Contrib
 modules/contrib/*
@@ -18,5 +23,8 @@ themes/contrib/*
 # Libraries
 libraries/*
 
-# Other
-private
+# Vim
+*.swp
+
+# PHPStorm
+.idea

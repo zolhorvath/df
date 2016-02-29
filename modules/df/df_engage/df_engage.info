@@ -2,8 +2,7 @@ name = DF Engage
 description = User mangagement, tracking and relationship augmentation.
 core = 7.x
 package = Demo Framework
-version = 7.x-1.0
-project = df_engage
+
 dependencies[] = assemble
 dependencies[] = ctools
 dependencies[] = df_tools_bean
@@ -40,7 +39,7 @@ dependencies[] = text
 dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = visitor_actions
-datestamp = 1368820311
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
@@ -75,6 +74,8 @@ features[variable][] = uuid_features_file_node
 features[variable][] = uuid_features_file_supported_fields
 features[variable][] = uuid_features_file_taxonomy_term
 features[variable][] = uuid_features_vocabulary_terms
+
 features_exclude[field_base][body] = body
+
 files[] = df_engage.base.nodes.uuid.inc
 files[] = df_engage.terms.site_section.inc

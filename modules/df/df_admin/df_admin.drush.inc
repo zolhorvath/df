@@ -23,7 +23,7 @@ function df_admin_drush_command() {
       'seed' => 'Boolean, seed derivatives of images post-enablement',
       'pre' => 'Comma separated list of modules to enable before enabling the scenario'
     ),
-    'aliases' => array('df-es'),
+    'aliases' => array('df-es', 'es'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
   );
 
@@ -74,6 +74,13 @@ function drush_df_admin_enable_scenario($scenario) {
   // Determine the current alias
   $alias_context = drush_get_context('alias');
   $alias = !empty($alias_context) ? $alias_context : '@self';
+
+  // Uninstall Update module before enabling scenario.
+  if (module_exists('update')) {
+    module_disable(array('update'));
+    drupal_uninstall_modules(array('update'));
+    drupal_set_message('Update module uninstalled before enabling demo scenario.', 'warning');
+  }
 
   // If the --pre option is passed, attempt to enable modules before enabling the scenario
   if ($pre = drush_get_option('pre', FALSE)) {

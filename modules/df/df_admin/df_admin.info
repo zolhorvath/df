@@ -2,8 +2,7 @@ name = DF Admin
 description = Demo Framework Administation Screens.
 core = 7.x
 package = Demo Framework
-version = 7.x-1.0-rc1
-project = df_admin
+
 dependencies[] = advanced_help
 dependencies[] = ctools
 dependencies[] = diff
@@ -28,8 +27,9 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = df_tools_image
+
 stylesheets[all][] = css/df_admin.navbar.icons.css
-datestamp = 1390335289
+
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

@@ -2,8 +2,7 @@ name = DFS WEM Tweets
 description = Tweet content type and config for DFS WEM
 core = 7.x
 package = DFS Submodules
-version = 7.x-1.0-beta1
-project = dfs_wem_tweets
+
 dependencies[] = assemble
 dependencies[] = dfs_wem
 dependencies[] = features
@@ -13,6 +12,7 @@ dependencies[] = node
 dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = text
+
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = field_wem_tweet_from
@@ -41,5 +41,6 @@ features[variable][] = node_preview_wem_tweet
 features[variable][] = node_submitted_wem_tweet
 features[variable][] = webform_node_wem_tweet
 features[variable][] = workbench_moderation_default_state_wem_tweet
+
 features_exclude[dependencies][ctools] = ctools
 features_exclude[field_base][body] = body
