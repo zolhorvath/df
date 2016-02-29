@@ -26,14 +26,6 @@ All other DF  modules are in this repo, they are:
 
 ### Installation
 
-Installation currently only supported via Drush commands. First, build the profile using Drush make.
-
-  ``drush make build-df.make ~/Destination/docroot``
-
-Use the ``site-install`` command to install Drupal with the Demo Framework installation profile.
-
-  ``drush si df``
-
 Enable a Demo Framework Scenario using the ``df-es`` command provided by DF Admin.
 
   ``drush df-es dfs_dev``
