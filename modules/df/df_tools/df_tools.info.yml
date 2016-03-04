@@ -5,4 +5,5 @@ core: 8.x
 package: Demo Framework Tools
 dependencies:
   - df_tools_display
-  - file_browser
+  - df_tools_translation
+  - df_tools_user

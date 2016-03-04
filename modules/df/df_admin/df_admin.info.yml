@@ -1,13 +1,61 @@
 name: DF Admin
 type: module
-description: Administrate Demo Framework.
+description: Set up and administrate Demo Framework.
 core: 8.x
 package: Demo Framework
 dependencies:
+  - admin_toolbar
+  - basic_auth
+  - block
+  - block_class
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - content_translation
+  - composer_manager
+  - config
   - config_update
-  - df_tools_display
+  - contact
+  - content_browser
+  - contextual
+  - datetime
+  - dblog
+  - editor
+  - embed
+  - entity_embed
+  - entity_reference
+  - field_group
+  - field_ui
+  - file
+  - file_browser
+  - help
+  - history
+  - image
+  - import
+  - manualcrop
+  - menu_link_content
+  - menu_ui
+  - migrate_plus
+  - migrate_tools
   - node
+  - options
   - page_manager
   - panels_ipe
+  - path
+  - pathauto
+  - quickedit
+  - rdf
   - scenarios
-  - user
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - token
+  - toolbar
+  - tour
+  - url_embed
+themes:
+  - adminimal_theme 
+  - bartik

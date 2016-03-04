@@ -9,12 +9,17 @@
  * Implements hook_install().
  */
 function df_admin_install() {
-  // Set the default admin theme to use Adminimal.
+  // Enable Zurb Foundation and Adminimal for use as initial themes.
+  \Drupal::service('theme_installer')->install(array('zurb_foundation'), TRUE);
   \Drupal::service('theme_installer')->install(array('adminimal_theme'), TRUE);
+  
+  // Set the admin theme and the base theme.
+  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'zurb_foundation')->save();
   \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme')->save();
 
   // Enable the admin theme for editing content.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', '1')->save();
+  
   // Set front page to "welcome".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
 }
