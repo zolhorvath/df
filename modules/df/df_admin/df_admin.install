@@ -5,11 +5,16 @@
  * Set up the Demo Framework.
  */
 
-
 /**
  * Implements hook_install().
  */
 function df_admin_install() {
+  // Set the default admin theme to use Adminimal.
+  \Drupal::service('theme_installer')->install(array('adminimal_theme'), TRUE);
+  \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme')->save();
+
+  // Enable the admin theme for editing content.
+  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', '1')->save();
   // Set front page to "welcome".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
 }

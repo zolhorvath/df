@@ -4,9 +4,6 @@
  * Install, update and uninstall functions for the DF installation profile.
  */
 
-use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
-use Drupal\user\Entity\User;
-
 /**
  * Implements hook_install().
  *
@@ -20,52 +17,4 @@ function df_install() {
   // example, Path module adds a base field to nodes and taxonomy terms after
   // those modules are already installed.
   \Drupal::service('entity.definition_update_manager')->applyUpdates();
-
-  // Allow visitor account creation with administrative approval.
-  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save();
-
-  // Enable default permissions for system roles.
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access comments', 'use search', 'search content'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access comments', 'post comments', 'skip comment approval', 'search content'));
-
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
-
-  // Enable the Contact link in the footer menu.
-  /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
-  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
-  $menu_link_manager->updateDefinition('contact.site_page', array('enabled' => 1));
-
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access site-wide contact form'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access site-wide contact form'));
-
-  // Allow authenticated users to use shortcuts.
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access shortcuts'));
-
-  // Populate the default shortcut set.
-  $shortcut = entity_create('shortcut', array(
-    'shortcut_set' => 'default',
-    'title' => t('Add content'),
-    'weight' => -20,
-    'link' => array('uri' => 'internal:/node/add'),
-  ));
-  $shortcut->save();
-
-  $shortcut = entity_create('shortcut', array(
-    'shortcut_set' => 'default',
-    'title' => t('All content'),
-    'weight' => -19,
-    'link' => array('uri' => 'internal:/admin/content'),
-  ));
-  $shortcut->save();
-
-  // Set the default admin theme to use Adminimal.
-  \Drupal::service('theme_installer')->install(array('adminimal_theme'), TRUE);
-  \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme')->save();
-
-  // Enable the admin theme for editing content.
-  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', '1')->save();
 }

@@ -6,6 +6,7 @@ package: Demo Framework
 dependencies:
   - config_update
   - df_tools_display
+  - node
   - page_manager
   - panels_ipe
   - scenarios
