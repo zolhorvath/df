@@ -4,21 +4,23 @@ status: true
 dependencies:
   config:
     - block_content.type.media
-    - field.field.block_content.media.field_file_reference
+    - field.field.block_content.media.field_media
   module:
-    - file_browser
+    - image
+_core:
+  default_config_hash: g-tN0bdcyy2TTjupoYh_i6VIjCGtoWiDCstV8qf5c2U
 id: block_content.media.default
 targetEntityType: block_content
 bundle: media
 mode: default
 content:
-  field_file_reference:
+  field_media:
     weight: 0
-    label: hidden
+    label: above
     settings:
       image_style: ''
-      view_mode: default
-      link: false
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_image
-hidden: {  }
+    type: image
+hidden:
+  langcode: true

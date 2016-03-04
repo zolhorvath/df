@@ -422,7 +422,7 @@ display:
             strip_tags: false
             trim: false
             preserve_tags: ''
-            html: false
+            html: true
           element_type: ''
           element_class: ''
           element_label_type: ''

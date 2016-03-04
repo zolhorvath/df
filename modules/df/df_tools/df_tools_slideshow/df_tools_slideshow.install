@@ -21,4 +21,9 @@ function df_tools_slideshow_install() {
   $migration->set('source', $source);
   // Save the new migration.
   $migration->save();
+
+  // Enable translation for our block bundle.
+  $entities = ['block_content' => ['slideshow']];
+  df_tools_translation_enable_translation($entities);
+
 }

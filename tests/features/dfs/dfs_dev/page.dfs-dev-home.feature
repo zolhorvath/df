@@ -12,7 +12,7 @@ Feature: DFS DEV: Homepage
   Scenario: Block: Example Content Reference
     Given I am on the homepage  
     Then I should see "Example Content Reference" in the "primary" region
-    And I should see "Donec quam felis ultricies" in the "primary" region
+#    And I should see "Donec quam felis ultricies" in the "primary" region
 
   Scenario: Block: Example Hero
     Given I am on the homepage

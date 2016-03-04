@@ -2,6 +2,8 @@ uuid: 77a65b76-c298-419b-9302-2ed72f5e4960
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 3BesD_9w4_dzI61uqQhcVBjxA6YvaFlbWSvGnXlmItE
 name: hero_image
 label: 'Hero Image'
 effects:
@@ -10,5 +12,5 @@ effects:
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 1650
-      height: 750
+      width: 1450
+      height: 600

@@ -164,7 +164,9 @@ function df_tools_translation_enable_translation($entity_info) {
       $fields = \Drupal::entityManager()->getFieldDefinitions($entity_type, $bundle);
       foreach ($fields as $field) {
         $field_config = $field->getConfig($bundle);
-        $field_config->setTranslatable(TRUE)->save();
+        if ($field_config->isTranslatable() && strpos($field->getName(), 'content_translation_') !== 0) {
+          $field_config->setTranslatable(TRUE)->save();
+        }
       }
     }
   }

@@ -5,6 +5,8 @@ dependencies:
     - editor
     - entity_embed
     - url_embed
+_core:
+  default_config_hash: IPVYxuKj0NL4iLuEs2FJ2HXNbwgKyH0YxaZqzolljIM
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -32,12 +34,6 @@ filters:
     provider: filter
     status: true
     weight: 8
-    settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: true
-    weight: 9
     settings: {  }
   editor_file_reference:
     id: editor_file_reference

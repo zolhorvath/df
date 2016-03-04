@@ -9,10 +9,10 @@ Feature: Demo Framework: Basic page node
     Given I am viewing a "page" content with the title "About us"
     Then I should see the heading "About us"
 
-  @api
-  Scenario: Create a page node with fields
-    Given "page" content:
-    | title            | body             | path |
-    | Page with fields | PLACEHOLDER BODY | /test |
-    When I visit "/test"
-    Then I should see the text "PLACEHOLDER BODY"
+#  @api
+#  Scenario: Create a page node with fields
+#    Given "page" content:
+#    | title            | body             | path |
+#    | Page with fields | PLACEHOLDER BODY | /test |
+#    When I visit "/test"
+#    Then I should see the text "PLACEHOLDER BODY"

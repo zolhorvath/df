@@ -5,4 +5,8 @@ core: 8.x
 package: Demo Framework
 dependencies:
   - config_update
+  - df_tools_display
+  - page_manager
+  - panels_ipe
   - scenarios
+  - user

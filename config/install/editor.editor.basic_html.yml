@@ -41,6 +41,10 @@ settings:
           name: Tools
           items:
             - Source
+        -
+          name: Content
+          items:
+            - content_browser
   plugins:
     stylescombo:
       styles: ''

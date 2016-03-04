@@ -31,9 +31,12 @@ function df_tools_blocks_preprocess_block(&$variables) {
   if (isset($variables['content']) && isset($variables['content']['#block_content'])) {
     if ($variables['content']['#block_content']->bundle() == 'hero') {
       $wrapper = array(
+        '#prefix' =>'<div class="full-width-inner">',
+        '#suffix' =>'</div>',
         '#type' => 'container',
+        '#weight' => -1,
         '#attributes' => array(
-          'class' => array('hero-block-fields')
+        'class' => array('hero-block-fields row align-center')
         ),
         '#children' => array()
       );
@@ -45,5 +48,17 @@ function df_tools_blocks_preprocess_block(&$variables) {
       }
       $variables['content']['wrapper'] = $wrapper;
     }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function df_tools_blocks_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // Add block--block-content--bundle.html.twig suggestions
+  if (isset($variables['elements']['content']) && isset($variables['elements']['content']['#block_content'])) {
+    /** @var \Drupal\block_content\Entity\BlockContent $entity */
+    $entity = $variables['elements']['content']['#block_content'];
+    $suggestions[] = 'block__block_content__' . $entity->bundle();
   }
 }

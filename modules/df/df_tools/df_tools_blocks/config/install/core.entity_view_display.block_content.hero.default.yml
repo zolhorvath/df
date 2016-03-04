@@ -7,10 +7,14 @@ dependencies:
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_hero_image
     - field.field.block_content.hero.field_hero_link
+    - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
+    - image.style.hero_image
   module:
     - image
     - link
+_core:
+  default_config_hash: le2B1f2ojdoLU-OglvTAQZFaSVHqD3o8f0bykMPJK38
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -42,6 +46,14 @@ content:
       url_plain: false
     third_party_settings: {  }
     label: hidden
+  field_nested_block:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
   field_second_line:
     type: string
     weight: 2
@@ -49,4 +61,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  langcode: true

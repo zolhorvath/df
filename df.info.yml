@@ -5,6 +5,7 @@ version: VERSION
 core: 8.x
 exclusive: 1
 dependencies:
+  - admin_toolbar
   - basic_auth
   - block
   - block_class
@@ -16,17 +17,19 @@ dependencies:
   - composer_manager
   - config
   - contact
+  - content_browser
   - contextual
   - datetime
   - dblog
   - df_admin
-  - df_tools
   - editor
   - embed
   - entity_embed
   - entity_reference
+  - field_group
   - field_ui
   - file
+  - file_browser
 #  - hal
   - help
   - history
@@ -59,3 +62,4 @@ themes:
   - bartik
   - seven
   - zurb_foundation
+  - fin

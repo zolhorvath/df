@@ -1,4 +1,4 @@
-uuid: 6b9aadca-afba-4d98-9502-2cd09ea3a220
+uuid: 06e4adbb-9028-4daa-8200-ad6afb17080d
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,13 @@ dependencies:
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_hero_image
     - field.field.block_content.hero.field_hero_link
+    - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
   module:
-    - image
+    - file_browser
     - link
+_core:
+  default_config_hash: P_KETYyefc-0UsimorS3A46ujY6ueSkKYRY80T0LNFY
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -24,11 +27,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_hero_image:
-    type: image_image
+    type: file_browser
     weight: 4
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_edit: '1'
+      field_widget_remove: '1'
+      view_mode: default
+      field_widget_display: ''
+      open: 0
+      field_widget_display_settings: {  }
     third_party_settings: {  }
   field_hero_link:
     type: link_default
@@ -37,6 +45,14 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_nested_block:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_second_line:
     type: string_textfield
     weight: 6
@@ -50,5 +66,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

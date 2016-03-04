@@ -9,9 +9,9 @@
  * Implements hook_install().
  */
 function df_tools_translation_install() {
-  // Enable translation for all of our entities/bundles.
+  // Enable translation for our core entities/bundles.
   $entities = [
-    'block_content' => ['basic', 'content', 'hero', 'slideshow'],
+    'block_content' => ['basic'],
     'node' => ['article', 'page'],
     'menu_link_content' => ['menu_link_content']
   ];

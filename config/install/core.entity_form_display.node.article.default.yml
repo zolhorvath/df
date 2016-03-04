@@ -9,7 +9,8 @@ dependencies:
     - node.type.article
   module:
     - comment
-    - image
+    - datetime
+    - file_browser
     - path
     - text
 id: node.article.default
@@ -36,15 +37,28 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: file_browser
     weight: 4
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_edit: '1'
+      field_widget_remove: '1'
+      view_mode: default
+      field_widget_display: ''
+      open: 0
+      field_widget_display_settings: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   path:
@@ -70,6 +84,10 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

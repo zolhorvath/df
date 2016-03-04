@@ -145,6 +145,12 @@ function dfs_tec_install() {
 
   // Import our custom .po files
   df_tools_translation_import_translations('module', 'dfs_tec');
+
+  // Change the article display mode.
+  $article_config = \Drupal::configFactory()->getEditable('core.entity_view_display.node.article.default');
+  $data = $article_config->getRawData();
+  $data['content']['field_image']['settings']['image_style'] = '';
+  $article_config->setData($data)->save();
 }
 
 /**

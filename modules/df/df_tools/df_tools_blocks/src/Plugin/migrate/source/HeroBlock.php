@@ -29,6 +29,23 @@ class HeroBlock extends CSV {
 
       $row->setSourceProperty('Image', $file);
     }
+
+    if ($blocks = $row->getSourceProperty('Nested Blocks')) {
+      $uuids = explode(',', $blocks);
+      if (!empty($uuids)) {
+        $references = [];
+        foreach ($uuids as $uuid) {
+          if (!empty($uuid)) {
+            if ($entity = \Drupal::entityManager()->loadEntityByUuid('block_content', $uuid)) {
+              $references[] = [
+                'target_id' => $entity->id()
+              ];
+            }
+          }
+        }
+        $row->setSourceProperty('Nested Blocks', $references);
+      }
+    }
   }
 
 }
