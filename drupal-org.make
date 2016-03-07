@@ -251,6 +251,15 @@ libraries[dropzone][destination] = "../../libraries"
 libraries[dropzone][download][type] = "get"
 libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.2.0.zip"
 
+
+libraries[fontawesome][destination] = "../../libraries"
+libraries[fontawesome][download][type] = "get"
+libraries[fontawesome][download][url] = "https://github.com/FortAwesome/Font-Awesome/archive/v4.5.0.zip"
+
+libraries[fontawesome-iconpicker][destination] = "../../libraries"
+libraries[fontawesome-iconpicker][download][type] = "get"
+libraries[fontawesome-iconpicker][download][url] = "https://github.com/mjolnic/fontawesome-iconpicker/archive/1.2.0.zip"
+
 libraries[masonry][destination] = "../../libraries"
 libraries[masonry][download][type] = "get"
 libraries[masonry][download][url] = "https://github.com/desandro/masonry/archive/v3.3.1.zip"
