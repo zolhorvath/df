@@ -21,5 +21,5 @@ function df_admin_install() {
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', '1')->save();
   
   // Set front page to "welcome".
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/welcome')->save(TRUE);
 }
