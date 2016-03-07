@@ -3,35 +3,51 @@ status: true
 dependencies:
   config:
     - page_manager.page.welcome
+    - views.view.content_recent
   module:
     - panels
     - user
+    - views
 id: welcome
 label: Welcome
 variant: panels_variant
 variant_settings:
-  selection_conditions: {  }
   blocks:
     b4a4fbe7-f8a0-4653-ad07-7b5a4233c630:
       id: user_login_block
       label: 'User login'
       provider: user
-      label_display: 0
+      label_display: '0'
       region: right
       weight: 1
       uuid: b4a4fbe7-f8a0-4653-ad07-7b5a4233c630
       context_mapping: {  }
+    36b8cda2-fa22-4196-8d00-ecef22f7bd16:
+      id: 'views_block:content_recent-block_1'
+      label: Welcome
+      provider: views
+      label_display: '0'
+      views_label: Welcome
+      items_per_page: none
+      region: left
+      weight: 0
+      uuid: 36b8cda2-fa22-4196-8d00-ecef22f7bd16
+      context_mapping: {  }
   id: panels_variant
-  label: ''
-  uuid: ''
+  selection_conditions: {  }
+  label: null
+  uuid: e14a0ab7-f8c9-4dd9-b700-ae341f93635e
   weight: 0
   selection_logic: and
   layout: twocol
   layout_settings: {  }
   page_title: Welcome
   builder: ipe
+  storage_type: page_manager
+  storage_id: welcome
 page: welcome
 weight: 0
 selection_criteria: {  }
 selection_logic: and
-contexts: {  }
+static_context: {  }
+

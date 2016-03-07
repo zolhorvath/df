@@ -7,4 +7,5 @@ use_admin_theme: false
 path: /welcome
 access_logic: and
 access_conditions: {  }
-static_context: {  }
+parameters: {  }
+
