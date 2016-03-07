@@ -68,7 +68,7 @@ projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
 projects[entity_browser][subdir] = "contrib"
 projects[entity_browser][download][type] = "git"
-projects[entity_browser][download][url]= "git@github.com:drupal-media/entity_browser.git"
+projects[entity_browser][download][url]= "http://github.com:drupal-media/entity_browser.git"
 projects[entity_browser][download][branch] = "8.x-1.x"
 
 projects[entity_embed][version] = "1.x-dev"
@@ -103,7 +103,7 @@ projects[geocoder][version] = "2.x-dev"
 projects[geocoder][type] = "module"
 projects[geocoder][subdir] = "contrib"
 projects[geocoder][download][type] = "git"
-projects[geocoder][download][url]= "git@github.com:mortenson/geocoder.git"
+projects[geocoder][download][url]= "http://github.com:mortenson/geocoder.git"
 projects[geocoder][download][branch] = "8.x-2.x"
 
 projects[geofield][version] = "1.x-dev"
@@ -250,7 +250,6 @@ projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/i
 libraries[dropzone][destination] = "../../libraries"
 libraries[dropzone][download][type] = "get"
 libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.2.0.zip"
-
 
 libraries[fontawesome][destination] = "../../libraries"
 libraries[fontawesome][download][type] = "get"
