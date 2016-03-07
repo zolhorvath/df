@@ -12,3 +12,7 @@ projects[drupal][patch][2228141] = "http://drupal.org/files/issues/add_authentic
 ; Fix batch callbacks with Drush
 ; https://www.drupal.org/node/2664290
 projects[drupal][patch][2664290] = "http://drupal.org/files/issues/2664290-2--batch-array-typehint.patch"
+
+; Combination of --prefer-dist and .gitattributes confuses our vendor test cleanup
+; https://www.drupal.org/node/2664274
+projects[drupal][patch][2664274] = "http://drupal.org/files/issues/2664274-19-fix-composer.patch"
