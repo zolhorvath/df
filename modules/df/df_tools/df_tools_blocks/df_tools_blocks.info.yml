@@ -5,6 +5,7 @@ core: 8.x
 package: Demo Framework Tools
 dependencies:
   - file_browser
+  - addtoany
   - df_tools_migration
   - df_tools_translation
   - node

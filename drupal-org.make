@@ -8,6 +8,10 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
+projects[addtoany][version] = "1.1"
+projects[addtoany][type] = "module"
+projects[addtoany][subdir] = "contrib"
+
 projects[admin_toolbar][version] ="1.14"
 projects[admin_toolbar][type] ="module"
 projects[admin_toolbar][subdir] ="contrib"
