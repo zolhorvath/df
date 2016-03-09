@@ -22,10 +22,9 @@ drupal_ti_replace_behat_vars
 ARGS=( $DRUPAL_TI_BEHAT_ARGS )
 
 # First, run all the tests in Firefox.
-if [[ "$SCENARIO" == none ]]; then ./bin/behat --tags=df; fi
-if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=$SCENARIO; fi
+if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=df; fi
 ./bin/behat --tags=$SCENARIO
 
 # Then run some Chrome-only tests.
-if [[ "$SCENARIO" == none ]]; then ./bin/behat --tags=df -p chrome; fi
-if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=$SCENARIO -p chrome; fi
+if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=df -p chrome; fi
+./bin/behat --tags=$SCENARIO -p chrome
