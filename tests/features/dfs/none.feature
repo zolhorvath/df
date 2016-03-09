@@ -16,7 +16,7 @@ Feature: No scenario enabled
 
   Scenario: Confirm anonymous user
     Given I am on "/user"
-    Then I should see the heading "User account"
+#    Then I should see the heading "User account"
     And I should see "Username"
     And I should see "Password"
 
