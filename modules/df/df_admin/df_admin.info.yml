@@ -22,6 +22,7 @@ dependencies:
   - contextual
   - datetime
   - dblog
+  - df_tools_moderation
   - editor
   - embed
   - entity_embed
