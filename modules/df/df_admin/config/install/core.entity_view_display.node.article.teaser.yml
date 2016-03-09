@@ -1,3 +1,4 @@
+uuid: 2c859b8a-7e08-40c9-8207-07a549303b24
 langcode: en
 status: true
 dependencies:
@@ -6,12 +7,17 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
+    - field.field.node.article.field_unpublish_on
+    - image.style.medium
     - node.type.article
   module:
     - image
     - text
     - user
+_core:
+  default_config_hash: VZcN6unjFqalOgsWNN9piNeKsvb9rrQrNnlXEGNA9EQ
 id: node.article.teaser
 targetEntityType: node
 bundle: article
@@ -41,7 +47,12 @@ content:
     label: above
   links:
     weight: 100
+  workbench_moderation_control:
+    weight: -20
 hidden:
   comment: true
   field_image: true
+  field_publish_on: true
   field_tags: true
+  field_unpublish_on: true
+  langcode: true

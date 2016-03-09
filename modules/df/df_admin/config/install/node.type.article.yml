@@ -1,10 +1,36 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+    - moderation_state
+    - workbench_moderation
+third_party_settings:
+  moderation_state:
+    enabled: true
+    allowed_moderation_states:
+      - draft
+      - needs_review
+      - published
+    default_moderation_state: draft
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - archived
+      - draft
+      - needs_review
+      - published
+    default_moderation_state: draft
+_core:
+  default_config_hash: i4OVV5qrD7abstl4SKS8v5Ee7PuxrL548iZVSty1HRg
 name: Article
 type: article
 description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: true
