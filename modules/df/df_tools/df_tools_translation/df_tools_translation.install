@@ -12,7 +12,7 @@ function df_tools_translation_install() {
   // Enable translation for our core entities/bundles.
   $entities = [
     'block_content' => ['basic'],
-    'node' => ['article', 'page'],
+    'node' => ['page'],
     'menu_link_content' => ['menu_link_content']
   ];
   df_tools_translation_enable_translation($entities);

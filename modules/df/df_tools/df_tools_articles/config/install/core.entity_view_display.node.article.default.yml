@@ -1,4 +1,3 @@
-uuid: b9742927-329b-4859-8000-0eb5313878ae
 langcode: en
 status: true
 dependencies:
@@ -6,9 +5,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
-    - field.field.node.article.field_unpublish_on
     - image.style.hero_image
     - node.type.article
   module:
@@ -22,8 +19,6 @@ third_party_settings:
   panelizer:
     enable: false
     custom: false
-_core:
-  default_config_hash: U2wz8DHwt7udkLH2tR8sYEuAzDtG6Eb_jXdx2AIYDBg
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -65,6 +60,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_publish_on: true
-  field_unpublish_on: true
   langcode: true

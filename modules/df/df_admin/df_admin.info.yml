@@ -22,7 +22,6 @@ dependencies:
   - contextual
   - datetime
   - dblog
-  - df_tools_moderation
   - editor
   - embed
   - entity_embed
@@ -43,6 +42,7 @@ dependencies:
   - node
   - options
   - page_manager
+  - panelizer
   - panels_ipe
   - path
   - pathauto
@@ -58,6 +58,7 @@ dependencies:
   - tour
   - url_embed
   - views_ui
+  - workbench_moderation
 themes:
   - adminimal_theme 
   - bartik

@@ -77,13 +77,4 @@ function df_tools_blocks_install() {
   // Enable translation for our block bundles.
   $entities = ['block_content' => ['content', 'hero', 'map', 'media']];
   df_tools_translation_enable_translation($entities);
-
-  $nodetypes = [
-   'article' => 0,
-   'page' =>  0,
-  ];
-
-  \Drupal::configFactory()->getEditable('addtoany.settings')
-      ->set('nodetypes', $nodetypes)->save();
-
 }

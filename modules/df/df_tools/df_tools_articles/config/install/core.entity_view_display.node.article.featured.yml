@@ -6,17 +6,13 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
-    - field.field.node.article.field_unpublish_on
     - image.style.large
     - node.type.article
   module:
     - image
     - text
     - user
-_core:
-  default_config_hash: _SakA4p6QA_hC21tJb_bmAQPjYe73ikbYPE1EDOsXlE
 id: node.article.featured
 targetEntityType: node
 bundle: article
@@ -51,6 +47,4 @@ content:
     weight: -20
 hidden:
   comment: true
-  field_publish_on: true
-  field_unpublish_on: true
   langcode: true
