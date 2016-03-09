@@ -1,7 +1,7 @@
-# Demo Framework
-[![Build Status](https://magnum.travis-ci.com/acquia/demo_framework.svg?token=fkKCDWeX7fUCfybPUjJb&branch=8.x)](https://magnum.travis-ci.com/acquia/demo_framework)
+# DF
+[![Travis build status](https://img.shields.io/travis/acquia/df/8.x-1.x.svg)](https://travis-ci.org/acquia/df) [![Scrutinizer code quality](https://img.shields.io/scrutinizer/g/acquia/df/8.x-1.x.svg)](https://scrutinizer-ci.com/g/acquia/df)
 
-The Demo Framework (DF) is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
+DF is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
 
 ### Installation
 
@@ -15,11 +15,11 @@ Use Composer Manager to install additional dependencies in the Drupal 8 docroot.
   
   Note: depending on how you have gitignore set up, you may need to run ``composer drupal-update --no-dev`` if you get a runtime error on drupal-update.
 
-Use the ``site-install`` command to install Drupal with the Demo Framework installation profile.
+Use the ``site-install`` command to install Drupal with the DF installation profile.
 
   ``drush si df``
 
-Enable a Demo Framework Scenario using the ``enable-scenario`` command.
+Enable a DF Scenario using the ``enable-scenario`` command.
 
   ``drush es dfs_dev``
 
@@ -29,7 +29,7 @@ You may now login to your site.
 
   ``drush uli -l http://mysite.dd``
 
-You may also reset the content of a Demo Framework Scenario if it is enabled.
+You may also reset the content of a DF Scenario if it is enabled.
 
   ``drush rs dfs_dev``
   
@@ -67,10 +67,10 @@ Check that behat is installed and running.
 
   ``bin/behat --help``
 
-Execute a batch of tagged features that apply to all Demo Framework Scenarios.
+Execute a batch of tagged features that apply to all DF Scenarios.
 
   ``bin/behat --tags=df``
 
-Execute a batch of tagged features for a specific Demo Framework Scenario.
+Execute a batch of tagged features for a specific DF Scenario.
 
   ``bin/behat --tags=dfs_dev``
