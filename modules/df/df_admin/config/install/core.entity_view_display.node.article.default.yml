@@ -1,3 +1,4 @@
+uuid: b9742927-329b-4859-8000-0eb5313878ae
 langcode: en
 status: true
 dependencies:
@@ -5,13 +6,24 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
+    - field.field.node.article.field_unpublish_on
+    - image.style.hero_image
     - node.type.article
   module:
     - comment
     - image
+    - panelizer
+    - taxonomy
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+_core:
+  default_config_hash: U2wz8DHwt7udkLH2tR8sYEuAzDtG6Eb_jXdx2AIYDBg
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -24,7 +36,7 @@ content:
     third_party_settings: {  }
     label: hidden
   comment:
-    label: above
+    label: hidden
     type: comment_default
     weight: 20
     settings:
@@ -34,26 +46,25 @@ content:
     type: image
     weight: -1
     settings:
-      image_style: large
+      image_style: hero_image
       image_link: ''
     third_party_settings: {  }
     label: hidden
   field_tags:
-    type: entity_reference_label
+    type: entity_reference_rss_category
     weight: 10
     label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  comment:
-    label: above
-    type: comment_default
-    weight: 110
-    settings:
-      pager_id: 0
+    settings: {  }
     third_party_settings: {  }
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_image: true
-  field_tags: true
+  field_publish_on: true
+  field_unpublish_on: true
+  langcode: true
