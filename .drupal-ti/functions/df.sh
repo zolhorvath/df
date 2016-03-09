@@ -65,10 +65,6 @@ function df_build_distribution() {
 	mkdir -p sites/default/private/files
 	mkdir -p sites/default/private/temp
 
-	# Remove the gastonjs library before running drupal-rebuild until
-  # https://www.drupal.org/node/2652142 is fixed.
-  rm -rf vendor/jcalderonzumba/gastonjs
-
 	# Install third-party libraries.
 	df_header Installing third-party libraries
 	php "profiles/df/modules/contrib/composer_manager/scripts/init.php"

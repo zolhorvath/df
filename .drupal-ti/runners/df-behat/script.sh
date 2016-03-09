@@ -11,7 +11,7 @@ cd "$DRUPAL_TI_DRUPAL_DIR"
 # needed for example for the drush runner.
 cd "$DRUPAL_TI_BEHAT_DIR"
 
-df_header Running tests
+df_header Running tets
 
 # Copy into place.
 mv -f "$TRAVIS_BUILD_DIR"/behat.travis.yml.dist .
