@@ -7,18 +7,26 @@
 TARGET=$1
 SCENARIO=$2
 
+# Move into the target directory.
+if [ ! -r $TARGET ]; then
+  mkdir -p $TARGET
+fi
 cd $TARGET
 
+# Setup Composer Manager and attempt to install dependencies.
 php profiles/df/modules/contrib/composer_manager/scripts/init.php
 composer drupal-update
 composer dumpautoload
 
-drush si df --account-name=admin --account-pass=presales -y
-
-if [ ! -z "$SCENARIO" ]; then
-  drush es $SCENARIO
+# Install the profile.
+if [ ! -r sites/default/settings.php ]; then
+  echo "No DB connection for docroot: $TARGET. Ensure settings.php is configured before installation."
+else
+  drush si df --account-name=admin --account-pass=presales -y
+  # Enable optional scenario.
+  if [ ! -z "$SCENARIO" ]; then
+    drush es $SCENARIO
+  fi
 fi
-
-drush uli
 
 cd -
