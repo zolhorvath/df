@@ -19,11 +19,7 @@ function df_tools_blocks_install() {
         2 => 'Content'
       ],
       'fields' => [
-        'field_content/value' => 'Content',
-        'field_content/format' => [
-          'plugin' => 'static_map',
-          'default_value' => 'full_html'
-        ],
+        'field_content' => 'Content',
       ]
     ],
     'hero' => [
