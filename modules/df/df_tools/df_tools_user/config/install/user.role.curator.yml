@@ -30,4 +30,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
+  - 'access shortcuts'
+  - 'access administration pages'
+  - 'view the administration theme'
 
