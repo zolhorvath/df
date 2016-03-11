@@ -26,4 +26,8 @@ permissions:
   - 'dropzone upload files'
   - 'view any unpublished content'
   - 'view latest version'
+  - 'access files overview'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
 
