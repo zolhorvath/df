@@ -24,3 +24,6 @@ permissions:
   - 'use draft_needs_review transition'
   - 'use needs_review_needs_review transition'
   - 'dropzone upload files'
+  - 'view any unpublished content'
+  - 'view latest version'
+

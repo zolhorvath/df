@@ -39,3 +39,8 @@ permissions:
   - 'use published_draft transition'
   - 'use published_published transition'
   - 'dropzone upload files'
+  - 'use published_archived transition'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use archived_published transition'
+
