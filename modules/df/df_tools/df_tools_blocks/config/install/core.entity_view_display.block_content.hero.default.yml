@@ -1,4 +1,3 @@
-uuid: 46cb0382-a6fb-4f99-9000-a345c4653e32
 langcode: en
 status: true
 dependencies:
@@ -9,12 +8,11 @@ dependencies:
     - field.field.block_content.hero.field_hero_link
     - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
-    - image.style.hero_image
   module:
-    - image
     - link
+    - responsive_image
 _core:
-  default_config_hash: le2B1f2ojdoLU-OglvTAQZFaSVHqD3o8f0bykMPJK38
+  default_config_hash: 6UONBsqe9oAGnhUGNTn4S3PRZjgz6ohXmkTkw-asEgk
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -28,10 +26,10 @@ content:
     third_party_settings: {  }
     label: hidden
   field_hero_image:
-    type: image
+    type: responsive_image
     weight: 0
     settings:
-      image_style: hero_image
+      responsive_image_style: responsive_hero
       image_link: ''
     third_party_settings: {  }
     label: hidden
