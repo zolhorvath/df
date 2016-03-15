@@ -15,3 +15,4 @@ dependencies:
   - geolocation
   - text
   - user
+  - responsive_image
