@@ -106,13 +106,16 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
     // For some reason preprocess_block doesn't get called for entity references to blocks
     foreach (Element::getVisibleChildren($elements) as $i) {
       if (isset ($elements[$i]['#block_content']) && $elements[$i]['#block_content']->bundle() == 'hero') {
-        $wrapper = array(
-          '#type' => 'container',
-          '#attributes' => array(
-            'class' => array('hero-block-fields')
-          ),
-          '#children' => array()
-        );
+      $wrapper = array(
+        '#prefix' =>'<div class="full-width-inner">',
+        '#suffix' =>'</div>',
+        '#type' => 'container',
+        '#weight' => -1,
+        '#attributes' => array(
+        'class' => array('hero-block-fields row align-center')
+        ),
+        '#children' => array()
+      );
         foreach (Element::getVisibleChildren($elements[$i]) as $field_name) {
           if ($field_name != 'field_hero_image') {
             $wrapper['#children'][] = $elements[$i][$field_name];

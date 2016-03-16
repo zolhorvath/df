@@ -22,5 +22,6 @@ slick:
   css:
     component:
       /profiles/demo_framework/libraries/slick/slick/slick.css: {}
+      /profiles/demo_framework/libraries/slick/slick/slick-theme.css: {}
   dependencies:
     - core/jquery

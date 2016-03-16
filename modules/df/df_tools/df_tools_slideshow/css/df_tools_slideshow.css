@@ -1,3 +1,30 @@
-.slick-slide {
+.df-tools-slideeshow .slick-slide {
 	position: relative;
 }
+
+.df-tools-slideshow .slick-slider {
+	margin-bottom:0px;
+}
+
+.df-tools-slideshow .slick-dots {
+	bottom:3%;
+}
+
+/* because our slideshow is full width, overlay the image. */
+.df-tools-slideshow .slick-prev {
+	left:3%;
+}
+
+.df-tools-slideshow .slick-next {
+	right:3%;
+}
+
+/* Set some reasonable default sizes */
+.df-tools-slideshow .slick-prev:before, .df-tools-slideshow .slick-next:before { 
+	font-size:40px;
+}
+
+.df-tools-slideshow .slick-dots li button:before {
+	font-size:20px;
+}
+
