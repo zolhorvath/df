@@ -1,4 +1,3 @@
-uuid: dd52adb9-1380-411e-bb00-b1668028e5c8
 langcode: en
 status: true
 dependencies:
@@ -44,4 +43,4 @@ image_style_mappings:
     image_mapping_type: image_style
     image_mapping: hero_mobile
 breakpoint_group: df_tools_blocks
-fallback_image_style: '_empty image_'
+fallback_image_style: hero_image
