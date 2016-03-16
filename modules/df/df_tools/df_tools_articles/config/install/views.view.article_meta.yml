@@ -323,7 +323,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"author-text-area\">\n<p>{{ uid }} |  {{ created }}</p>\n<p><a href=\"#comment-form\"><i class=\"fa fa-comment fa-2x\"></i> {{ comment_count }}</a></p>\n</div>"
+            text: "<div class=\"author-text-area\">\n<p>{{ uid }} |  {{ created }}</p>\n<p><a href=\"#comment-area\"><i class=\"fa fa-comment fa-2x\"></i> {{ comment_count }}</a></p>\n</div>"
             make_link: false
             path: ''
             absolute: false
