@@ -18,8 +18,8 @@ function df_tools_user_install() {
   $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save();
 
   // Enable default permissions for system roles.
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access comments', 'use search', 'search content'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access comments', 'post comments', 'skip comment approval', 'search content'));
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access comments', 'use search', 'search content', 'access user profiles'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access comments', 'post comments', 'skip comment approval', 'search content', 'access user profiles'));
 
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
