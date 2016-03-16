@@ -6,6 +6,9 @@ main:
     - core/jquery
     - core/drupal
     - df_tools_slideshow/slick
+  css:
+    base:
+      css/df_tools_slideshow.css: {}
 
 slick:
   remote: http://kenwheeler.github.io/slick/

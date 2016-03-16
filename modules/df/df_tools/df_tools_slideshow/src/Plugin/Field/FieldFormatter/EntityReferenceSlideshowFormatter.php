@@ -34,7 +34,7 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
       'view_mode' => 'default',
       'link' => FALSE,
       'slick' => array(
-        'arrows' => FALSE,
+        'arrows' => TRUE,
         'draggable' => TRUE,
         'dots' => TRUE,
         'accessibility' => TRUE,
@@ -42,6 +42,7 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
         'variableWidth' => FALSE,
         'autoplay' => TRUE,
         'centerMode' => FALSE,
+        'infinite' => FALSE,
         'useCSS' => TRUE,
         'mobileFirst' => FALSE,
         'rtl' => FALSE,
