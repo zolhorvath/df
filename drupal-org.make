@@ -19,6 +19,12 @@ projects[admin_toolbar][version] ="1.14"
 projects[admin_toolbar][type] ="module"
 projects[admin_toolbar][subdir] ="contrib"
 
+projects[better_formats][version] = "1.x-dev"
+projects[better_formats][type] = "module"
+projects[better_formats][subdir] = "contrib"
+projects[better_formats][download][type] = "git"
+projects[better_formats][download][branch] = "8.x-1.x"
+
 projects[block_class][version] = "1.x-dev"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
