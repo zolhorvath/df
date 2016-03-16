@@ -1,4 +1,5 @@
-.df-tools-slideeshow .slick-slide {
+/* Cant namespace this because df-tools-slideshow comes after this class. This class is critical for containing absolute items to a single slide*/
+.slick-slide {
 	position: relative;
 }
 
