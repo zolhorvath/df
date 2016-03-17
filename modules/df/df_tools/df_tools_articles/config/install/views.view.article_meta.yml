@@ -9,6 +9,8 @@ dependencies:
     - image
     - node
     - user
+_core:
+  default_config_hash: rRt8r_7QIEVwnn_K_Yez9A94kjyabwwaDzTS8SiD1as
 id: article_meta
 label: 'Article meta'
 module: views
@@ -323,7 +325,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"author-text-area\">\n<p>{{ uid }} |  {{ created }}</p>\n<p><a href=\"#comment-area\"><i class=\"fa fa-comment fa-2x\"></i> {{ comment_count }}</a></p>\n</div>"
+            text: "<div class=\"author-text-area\">\n<p><span>{{ uid }}<span> |  <span>{{ created }}</span> | <span><a href=\"#comment-area\"><i class=\"fa fa-comment fa-2x\"></i> {{ comment_count }}</a></span>\n</p>\n</div>"
             make_link: false
             path: ''
             absolute: false
