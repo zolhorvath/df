@@ -9,15 +9,19 @@
 
 .df-tools-slideshow .slick-dots {
 	bottom:3%;
+	margin:0;
 }
 
 /* because our slideshow is full width, overlay the image. */
 .df-tools-slideshow .slick-prev {
 	left:3%;
+	width:inherit;
+
 }
 
 .df-tools-slideshow .slick-next {
 	right:3%;
+	width:inherit;
 }
 
 /* Set some reasonable default sizes */
