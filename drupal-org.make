@@ -47,11 +47,23 @@ projects[composer_manager][subdir] = "contrib"
 projects[composer_manager][download][type] = "git"
 projects[composer_manager][download][branch] = "8.x-1.x"
 
+projects[config_devel][version] = "1.x-dev"
+projects[config_devel][type] = "module"
+projects[config_devel][subdir] = "contrib"
+projects[config_devel][download][type] = "git"
+projects[config_devel][download][branch] = "8.x-1.x"
+
 projects[config_update][version] = "1.x-dev"
 projects[config_update][type] = "module"
 projects[config_update][subdir] = "contrib"
 projects[config_update][download][type] = "git"
 projects[config_update][download][branch] = "8.x-1.x"
+
+projects[config_sync][version] = "1.x-dev"
+projects[config_sync][type] = "module"
+projects[config_sync][subdir] = "contrib"
+projects[config_sync][download][type] = "git"
+projects[config_sync][download][branch] = "8.x-1.x"
 
 projects[content_browser][version] = "1.x-dev"
 projects[content_browser][type] = "module"
