@@ -29,6 +29,7 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Entity
   foreach ($processes as $field => $process) {
     if (isset($process[0]['source']) && $process[0]['source'] == $ids[0]) {
       $id_map = [$field, $ids[0]];
+      break;
     }
   }
 
