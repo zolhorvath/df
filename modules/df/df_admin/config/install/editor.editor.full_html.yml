@@ -1,3 +1,4 @@
+uuid: 1e933096-748c-45eb-8607-0715b505b76f
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
 editor: ckeditor
 settings:
@@ -16,11 +19,8 @@ settings:
           items:
             - Bold
             - Italic
-            - Strike
-            - Superscript
-            - Subscript
             - '-'
-            - RemoveFormat
+            - Blockquote
         -
           name: Linking
           items:
@@ -32,12 +32,14 @@ settings:
             - BulletedList
             - NumberedList
         -
+          name: Content
+          items:
+            - content_browser
+        -
           name: Media
           items:
-            - Blockquote
-            - DrupalImage
-            - Table
-            - HorizontalRule
+            - file_browser
+            - url
         -
           name: 'Block Formatting'
           items:
@@ -56,5 +58,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
