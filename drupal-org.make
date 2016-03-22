@@ -258,6 +258,12 @@ projects[token][subdir] = "contrib"
 projects[token][download][type] = "git"
 projects[token][download][branch] = "8.x-1.x"
 
+projects[turbolinks][version] = "1.x-dev"
+projects[turbolinks][type] = "module"
+projects[turbolinks][subdir] = "contrib"
+projects[turbolinks][download][type] = "git"
+projects[turbolinks][download][branch] = "8.x-1.x"
+
 projects[url_embed][version] = "1.x-dev"
 projects[url_embed][type] = "module"
 projects[url_embed][subdir] = "contrib"
