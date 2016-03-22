@@ -95,7 +95,7 @@ env:
   matrix:
     - SCENARIO=none
     - SCENARIO=dfs_dev
-#    - SCENARIO=dfs_tec
+    - SCENARIO=dfs_tec
 
 # Cache Composer & Drush directories.
 cache:
