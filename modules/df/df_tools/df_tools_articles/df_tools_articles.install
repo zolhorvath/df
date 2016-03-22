@@ -5,6 +5,8 @@
  * Set up the Article content type for Demo Framework.
  */
 
+use mo
+
 /**
  * Implements hook_install().
  */
@@ -18,15 +20,28 @@ function df_tools_articles_install() {
   df_tools_translation_enable_translation($entities);
 
   // Limit the text filters for Default comments (used by articles).
-  $allowed = ['restricted_html' => 'restricted_html', 'basic_html' => 0, 'full_html' => 0];
-  $formats = ['basic_html' => ['weight' => 0], 'restricted_html' => ['weight' => 0], 'full_html' => ['weight' => 1]];
-  $settings = [
-    'better_formats' => [
-      'allowed_formats_toggle' => 1,
-      'allowed_formats' => $allowed,
-      'default_order_toggle' => 0,
-      'defaut_order_wrapper' => ['formats' => $formats],
-    ]
-  ];
-  Drupal::configFactory()->getEditable('field.field.comment.comment.comment_body')->set('third_party_settings', $settings)->save();
+  if (\Drupal::moduleHandler()->moduleExists('better_formats')) {
+    $allowed = [
+      'restricted_html' => 'restricted_html',
+      'basic_html' => 0,
+      'full_html' => 0
+    ];
+    $formats = [
+      'basic_html' => ['weight' => 0],
+      'restricted_html' => ['weight' => 0],
+      'full_html' => ['weight' => 1]
+    ];
+    $settings = [
+      'better_formats' => [
+        'allowed_formats_toggle' => 1,
+        'allowed_formats' => $allowed,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => ['formats' => $formats],
+      ]
+    ];
+    \Drupal::configFactory()
+      ->getEditable('field.field.comment.comment.comment_body')
+      ->set('third_party_settings', $settings)
+      ->save();
+  }
 }
