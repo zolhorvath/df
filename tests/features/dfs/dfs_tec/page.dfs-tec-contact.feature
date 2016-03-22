@@ -7,5 +7,3 @@ Feature: DFS TEC: Contact page
   Scenario: Contact: Default
     Given I am at "/contact"
     Then I should see the heading "Contact Our Team"
-    And I should see the "form" element with the "class" attribute set to "contact-form" in the "content" region
-    And I should see the "section" element with the "id" attribute set to "block-contacthero" in the "header" region
