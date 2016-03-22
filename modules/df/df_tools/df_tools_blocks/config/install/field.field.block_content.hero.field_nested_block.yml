@@ -16,7 +16,7 @@ bundle: hero
 label: 'Nested Block'
 description: 'This Block will be displayed inside your Hero.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
