@@ -5,8 +5,6 @@
  * Set up the Article content type for Demo Framework.
  */
 
-use mo
-
 /**
  * Implements hook_install().
  */
