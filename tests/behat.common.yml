@@ -34,7 +34,7 @@ default:
         middle: ".block-region-middle"
         sidebar: ".block-region-sidebar"
         bottom: ".block-region-bottom"
-        footer: "footer"
+        footer: "#footer"
         header: ".region-header"
         body: ".body"
         main: "#main"
