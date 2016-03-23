@@ -15,15 +15,14 @@ php:
 
 matrix:
   fast_finish: true
-#  Disable additional tests to reduce job count.
-#  allow_failures:
-#    - php: 7
-#    - php: hhvm
-#  include:
-#    - php: "5.5"
-#      env: SCENARIO=none
-#    - php: "7"
-#      env: SCENARIO=none
+  allow_failures:
+    - php: 7
+    - php: hhvm
+  include:
+    - php: "7"
+      env: SCENARIO=none
+    - php: "7"
+      env: SCENARIO=dfs_tec
 
 env:
   global:
