@@ -65,7 +65,7 @@ class DFToolsServicesSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  static function getSubscribedEvents() {
+  public static function getSubscribedEvents() {
     $events = [];
     $events[KernelEvents::RESPONSE][] = ['allowCORSResponse'];
     $events[RoutingEvents::ALTER][] = ['allowOPTIONSRoute'];
