@@ -21,8 +21,8 @@ matrix:
   include:
     - php: "7"
       env: SCENARIO=none
-    - php: "7"
-      env: SCENARIO=dfs_tec
+#    - php: "7"
+#      env: SCENARIO=dfs_tec
 
 env:
   global:
