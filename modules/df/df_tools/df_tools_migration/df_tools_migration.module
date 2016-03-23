@@ -8,31 +8,6 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
- * Implements hook_help().
- */
-function df_tools_migration_help($route_name, RouteMatchInterface $route_match) {
-  switch ($route_name) {
-    // Main module help for the df_tools_migration module.
-    case 'help.page.df_tools_migration':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Migration establishment patterns for DF Scenario installation.') . '</p>';
-      return $output;
-
-    default:
-  }
-}
-
-/**
- * Implements hook_theme().
- */
-function df_tools_migration_theme() {
-  $theme = [];
-
-  return $theme;
-}
-
-/**
  * Helper function to copy a migration.
  *
  * @param string $base_migration
