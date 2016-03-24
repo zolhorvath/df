@@ -118,7 +118,6 @@ function drupal_ti_install_drupal() {
   if [[ "$SCENARIO" != none ]]
   then
     df_header Enabling scenario
-    drush cc all
     drush df-es $SCENARIO
   fi
 
