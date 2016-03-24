@@ -94,6 +94,7 @@ env:
     #- DRUPAL_TI_RUNNERS="phpunit simpletest behat"
   matrix:
     - SCENARIO=none
+    - SCENARIO=dfs_dev
     - SCENARIO=dfs_med
     - SCENARIO=dfs_wem
 
