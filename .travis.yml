@@ -94,9 +94,7 @@ env:
     #- DRUPAL_TI_RUNNERS="phpunit simpletest behat"
   matrix:
     - SCENARIO=none
-    - SCENARIO=dfs_fin
     - SCENARIO=dfs_med
-    - SCENARIO=dfs_vac
     - SCENARIO=dfs_wem
 
 # Cache Composer & Drush directories.
