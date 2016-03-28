@@ -20,7 +20,7 @@ function df_tools_blocks_preprocess_block(&$variables) {
         '#type' => 'container',
         '#weight' => -1,
         '#attributes' => array(
-        'class' => array('hero-block-fields row align-center')
+          'class' => array('hero-block-fields row align-center')
         ),
         '#children' => array()
       );
@@ -44,5 +44,89 @@ function df_tools_blocks_theme_suggestions_block_alter(array &$suggestions, arra
     /** @var \Drupal\block_content\Entity\BlockContent $entity */
     $entity = $variables['elements']['content']['#block_content'];
     $suggestions[] = 'block__block_content__' . $entity->bundle();
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (preg_match('/^block_content.*panels_ipe_form$/', $form_id)) {
+    // Wrap the revision information and any other vertical tabs in a fieldset.
+    // This breaks vertical tab styling, but we don't want this open most of
+    // the time anyway.
+    $form['advanced'] = [
+      '#type' => 'details',
+      '#title' => t('Advanced'),
+      '#collapsed' => TRUE,
+      '#attributes' => ['class' => ['fieldset']],
+      '#weight' => 100,
+      0 => $form['advanced'],
+    ];
+
+    $form['info']['widget'][0]['value']['#description'] = [];
+  }
+
+  if ($form_id == 'block_content_hero_panels_ipe_form') {
+    // Group the form into multiple fieldsets.
+    $grouping = [
+      'Hero Text' => ['field_first_line', 'field_second_line'],
+      'Hero Link' => ['field_hero_link'],
+      'Nested Block' => ['field_nested_block'],
+    ];
+    foreach ($grouping as $label => $fields) {
+      $fieldset_key = strtolower(str_replace(' ', '_', $label));
+      $form[$fieldset_key] = [
+        '#type' => 'details',
+        '#title' => t($label),
+        '#attributes' => ['class' => ['fieldset']],
+        '#collapsed' => TRUE,
+        '#weight' => 99,
+      ];
+      foreach ($fields as $field) {
+        $form[$fieldset_key][$field] = $form[$field];
+        unset($form[$field]);
+      }
+    }
+  }
+
+  // Group slideshow actions into containers.
+  if ($form_id == 'block_content_slideshow_panels_ipe_form') {
+    // Remove unneeded title added to field.
+    $form['field_block']['widget']['#title'] = '';
+
+    // Add default styling to the inline form.
+    if (isset($form['field_block']['widget']['form'])) {
+      if (!isset($form['field_block']['widget']['form']['#title'])) {
+        $form['field_block']['widget']['form']['#title'] = t('Add new custom block');
+      }
+      $form['field_block']['widget']['form']['#attributes'] = ['class' => ['fieldset']];
+    }
+
+    // Wrap the edit/add actions in fieldsets to improve the look/feel of the
+    // form.
+    if (isset($form['field_block']['widget']['actions']['ief_add'])) {
+      $form['field_block']['widget']['actions_add'] = [
+        '#type' => 'fieldset',
+        '#title' => t('Add new custom block'),
+        '#attributes' => ['class' => ['fieldset']],
+        '#weight' => 100,
+        0 => $form['field_block']['widget']['actions']['bundle'],
+        1 => $form['field_block']['widget']['actions']['ief_add'],
+      ];
+      unset($form['field_block']['widget']['actions']['ief_add']);
+      unset($form['field_block']['widget']['actions']['bundle']);
+    }
+
+    if (isset($form['field_block']['widget']['actions']['ief_add_existing'])) {
+      $form['field_block']['widget']['actions_existing'] = [
+        '#type' => 'fieldset',
+        '#title' => t('Add existing custom block'),
+        '#attributes' => ['class' => ['fieldset']],
+        '#weight' => 101,
+        0 => $form['field_block']['widget']['actions']['ief_add_existing'],
+      ];
+      unset($form['field_block']['widget']['actions']['ief_add_existing']);
+    }
   }
 }
