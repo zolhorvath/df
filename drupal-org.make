@@ -100,6 +100,9 @@ projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][branch] = "8.x-1.x"
+; AJAX errors when embedding entities with Entity Browser
+; https://www.drupal.org/node/2696261
+projects[entity_embed][patch][2696261] = "https://www.drupal.org/files/issues/2696261-2.patch"
 
 projects[features][version] = "3.x-dev"
 projects[features][type] = "module"
