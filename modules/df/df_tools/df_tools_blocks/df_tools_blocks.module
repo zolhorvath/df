@@ -64,7 +64,29 @@ function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
       0 => $form['advanced'],
     ];
 
+    // Hide the Block description description.
     $form['info']['widget'][0]['value']['#description'] = [];
+  }
+
+  // Modify the block placement form.
+  if ($form_id == 'panels_ipe_block_plugin_form') {
+    if (isset($form['flipper']['front']['settings']['admin_label'])) {
+      $form['flipper']['front']['settings']['admin_label']['#weight'] = -2;
+    }
+
+    if (isset($form['flipper']['front']['settings']['label_display'])) {
+      $form['flipper']['front']['settings']['label_display']['#default_value'] = FALSE;
+      $form['flipper']['front']['settings']['label_display']['#weight'] = -1;
+    }
+
+    if (isset($form['flipper']['front']['settings']['label'])) {
+      $form['flipper']['front']['settings']['label']['#weight'] = 0;
+      $form['flipper']['front']['settings']['label']['#states'] = [
+        'visible' => [
+          ':input[name="settings[label_display]"]' => ['checked' => TRUE],
+        ],
+      ];
+    }
   }
 
   if ($form_id == 'block_content_hero_panels_ipe_form') {
