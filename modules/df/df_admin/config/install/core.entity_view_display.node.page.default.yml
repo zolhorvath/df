@@ -32,18 +32,6 @@ third_party_settings:
             region: middle
             weight: 1
             uuid: 197a21c8-479d-4d6b-9a05-5eaaf82b0e0e
-          23221601-15b5-4383-8e25-37759ffe7abe:
-            id: 'block_content:e834ce73-7029-4bff-8613-19b4b579bf56'
-            label: 'Contact Hero'
-            provider: block_content
-            label_display: '0'
-            status: true
-            info: ''
-            view_mode: full
-            context_mapping: {  }
-            region: middle
-            uuid: 23221601-15b5-4383-8e25-37759ffe7abe
-            weight: 2
         id: panels_variant
         uuid: df0d1b37-8cd5-46d3-b900-f18df4825325
         label: ''
