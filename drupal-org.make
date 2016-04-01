@@ -172,6 +172,12 @@ projects[leaflet][subdir] = "contrib"
 projects[leaflet][download][type] = "git"
 projects[leaflet][download][branch] = "8.x-1.x"
 
+projects[lite][version] = "1.x-dev"
+projects[lite][type] = "module"
+projects[lite][subdir] = "contrib"
+projects[lite][download][type] = "git"
+projects[lite][download][branch] = "8.x-1.x"
+
 projects[manualcrop][version] = "x-1.x-dev"
 projects[manualcrop][type] = "module"
 projects[manualcrop][subdir] = "contrib"
@@ -278,9 +284,6 @@ projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/i
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
 projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-8.patch"
-; Call to a member function isPublishedState() on a non-object
-; http://www.drupal.org/node/2693653 
-projects[workbench_moderation][patch][2693653] = "https://www.drupal.org/files/issues/2693653-empty-field_0.patch"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
@@ -306,6 +309,11 @@ libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu
 libraries[imagesloaded][destination] = "../../libraries"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
+
+libraries[lite][destination] = "../../libraries"
+libraries[lite][download][type] = "get"
+libraries[lite][directory_name] = "lite"
+libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
 
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"

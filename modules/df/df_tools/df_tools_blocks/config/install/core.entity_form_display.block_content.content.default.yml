@@ -6,22 +6,24 @@ dependencies:
     - block_content.type.content
     - field.field.block_content.content.field_content
   module:
-    - inline_entity_form
+    - entity_browser
+_core:
+  default_config_hash: zSo0CvZ2td5fmgn8dnEAgTS_6Gbxdb5ardAWyzZ-JZM
 id: block_content.content.default
 targetEntityType: block_content
 bundle: content
 mode: default
 content:
   field_content:
-    type: inline_entity_form_complex
+    type: entity_browser_entity_reference
     weight: 3
     settings:
-      allow_existing: 1
-      match_operator: CONTAINS
-      delete_references: 0
-      override_labels: 0
-      label_singular: ''
-      label_plural: ''
+      entity_browser: browse_content_grid
+      field_widget_display: label
+      field_widget_remove: '1'
+      field_widget_edit: 0
+      open: 0
+      field_widget_display_settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield
@@ -29,5 +31,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

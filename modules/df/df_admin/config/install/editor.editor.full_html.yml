@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+  default_config_hash: ZBRcn-UfnhFaX9mbyTedf8KB47dGTatClSEKgLFXuh8
 format: full_html
 editor: ckeditor
 settings:
@@ -44,6 +44,15 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+        -
+          name: 'Track Changes'
+          items:
+            - lite-acceptall
+            - lite-rejectall
+            - lite-acceptone
+            - lite-rejectone
+            - lite-toggleshow
+            - lite-toggletracking
         -
           name: Tools
           items:

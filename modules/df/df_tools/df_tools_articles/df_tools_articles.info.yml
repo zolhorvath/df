@@ -9,6 +9,7 @@ dependencies:
   - datetime
   - df_tools_blocks
   - df_tools_translation
+  - content_browser_grid
   - file_browser
   - image
   - link
