@@ -16,3 +16,7 @@ projects[drupal][patch][2664290] = "http://drupal.org/files/issues/2664290-2--ba
 ; Combination of --prefer-dist and .gitattributes confuses our vendor test cleanup
 ; https://www.drupal.org/node/2664274
 projects[drupal][patch][2664274] = "http://drupal.org/files/issues/2664274-19-fix-composer.patch"
+
+; Quickedit cant edit images
+; https://www.drupal.org/node/2635712
+projects[drupal][patch][2635712] = "http://drupal.org/files/issues/2635712-14.patch"
