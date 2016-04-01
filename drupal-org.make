@@ -172,6 +172,12 @@ projects[leaflet][subdir] = "contrib"
 projects[leaflet][download][type] = "git"
 projects[leaflet][download][branch] = "8.x-1.x"
 
+projects[lite][version] = "1.x-dev"
+projects[lite][type] = "module"
+projects[lite][subdir] = "contrib"
+projects[lite][download][type] = "git"
+projects[lite][download][branch] = "8.x-1.x"
+
 projects[manualcrop][version] = "x-1.x-dev"
 projects[manualcrop][type] = "module"
 projects[manualcrop][subdir] = "contrib"
@@ -306,6 +312,11 @@ libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu
 libraries[imagesloaded][destination] = "../../libraries"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
+
+libraries[lite][destination] = "../../libraries"
+libraries[lite][download][type] = "get"
+libraries[lite][directory_name] = "lite"
+libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
 
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"
