@@ -284,9 +284,6 @@ projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/i
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
 projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-8.patch"
-; Call to a member function isPublishedState() on a non-object
-; http://www.drupal.org/node/2693653 
-projects[workbench_moderation][patch][2693653] = "https://www.drupal.org/files/issues/2693653-empty-field_0.patch"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
