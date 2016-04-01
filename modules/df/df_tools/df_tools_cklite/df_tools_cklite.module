@@ -2,30 +2,8 @@
 
 /**
  * @file
- * Integrates the lite track changes plugin for CKEditor with Drupal.
+ * Integrates the Lite track changes plugin for CKEditor with Demo Framework.
  */
-
-/**
- * Implements hook_libraries_info().
- */
-function df_tools_cklite_libraries_info() {
-  return array(
-    'lite' => array(
-      'name' => 'LITE',
-      'vendor url' => 'http://www.loopindex.com/portfolio-item/track-changes-plugin/',
-      'download url' => 'http://ckeditor.com/addon/lite',
-      'path' => 'src/lite',
-      'version' => '1.1.30',
-      'files' => array(
-        'js' => array(
-          'lite-includes.js',
-          'lite-interface.js',
-          'plugin.js',
-        ),
-      ),
-    ),
-  );
-}
 
 /**
  * Implements hook_filter_default_formats_alter().
