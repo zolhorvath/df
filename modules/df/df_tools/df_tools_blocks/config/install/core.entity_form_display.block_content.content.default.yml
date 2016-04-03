@@ -1,4 +1,3 @@
-uuid: 003dfdaa-5af6-43ec-ac00-bb8c0afe1290
 langcode: en
 status: true
 dependencies:
@@ -8,7 +7,7 @@ dependencies:
   module:
     - entity_browser
 _core:
-  default_config_hash: zSo0CvZ2td5fmgn8dnEAgTS_6Gbxdb5ardAWyzZ-JZM
+  default_config_hash: FO9l9k4u03paEzT0W9fNmCXRIxv6Br3uDshrGq3ue38
 id: block_content.content.default
 targetEntityType: block_content
 bundle: content
@@ -21,8 +20,8 @@ content:
       entity_browser: browse_content_grid
       field_widget_display: label
       field_widget_remove: '1'
+      open: '1'
       field_widget_edit: 0
-      open: 0
       field_widget_display_settings: {  }
     third_party_settings: {  }
   info:
