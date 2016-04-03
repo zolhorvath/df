@@ -1,4 +1,3 @@
-uuid: 1bdbec73-0da9-44a9-a90b-11ff9186fd17
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,10 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
-    - image.style.file_entity_browser_thumbnail
+    - field.field.node.article.field_unpublish_on
+    - image.style.browse_content
     - node.type.article
   module:
     - image
@@ -127,7 +128,7 @@ third_party_settings:
         storage_id: 'node:article:full:default'
         builder: ipe
 _core:
-  default_config_hash: Omw1Z0fSJ-P4zaGBvvRpkqFUy7J0ZEa0l-NAxOQh_HU
+  default_config_hash: zA22A4Yvy3gVgoEhcYokmCzLsPnlCiFDGrqoD2rNpCQ
 id: node.article.content_browser
 targetEntityType: node
 bundle: article
@@ -137,7 +138,7 @@ content:
     type: image
     weight: -1
     settings:
-      image_style: file_entity_browser_thumbnail
+      image_style: browse_content
       image_link: ''
     third_party_settings: {  }
     label: hidden
