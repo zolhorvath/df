@@ -9,6 +9,7 @@ dependencies:
     - node.type.page
   module:
     - panelizer
+    - text
     - user
 third_party_settings:
   panelizer:
@@ -44,14 +45,20 @@ third_party_settings:
         storage_id: 'node:page:full:default'
         builder: ipe
 _core:
-  default_config_hash: L18_G1QfwSCNlv3cFWRVGAaDIYaXh-HTpZ2N0TFgVGE
+  default_config_hash: o4H_BuRVAym6ZX4GzSvlEifkhY3zbryMtk7eE24pAj0
 id: node.page.content_browser
 targetEntityType: node
 bundle: page
 mode: content_browser
-content: {  }
+content:
+  body:
+    type: text_trimmed
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
 hidden:
-  body: true
   langcode: true
   links: true
   panelizer: true
