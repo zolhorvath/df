@@ -6,9 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_publish_on
     - field.field.node.article.field_tags
-    - field.field.node.article.field_unpublish_on
     - image.style.browse_content
     - node.type.article
   module:
