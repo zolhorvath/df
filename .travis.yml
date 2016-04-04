@@ -96,7 +96,7 @@ env:
     - SCENARIO=none
     - SCENARIO=dfs_dev
     #- SCENARIO=dfs_med
-    #- SCENARIO=dfs_wem
+    - SCENARIO=dfs_wem
 
 # Cache Composer & Drush directories.
 cache:
