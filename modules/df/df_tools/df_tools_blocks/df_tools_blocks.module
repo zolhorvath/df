@@ -64,7 +64,8 @@ function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
       0 => $form['advanced'],
     ];
 
-    // Hide the Block description description.
+    // Hide the Block description description and remove any mention of "Block".
+    $form['info']['widget'][0]['value']['#title'] = t('Description');
     $form['info']['widget'][0]['value']['#description'] = [];
   }
 
