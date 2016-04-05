@@ -234,7 +234,7 @@ projects[panels][download][branch] = "8.x-3.x"
 projects[panels][patch][2667754] = "https://www.drupal.org/files/issues/2667754-3.patch"
 ; Allow items to be searched in the Panels IPE CategoryView (Change Layout/Manage Content tabs)
 ; https://www.drupal.org/node/2700703
-projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-ipe-category-view-search.patch"
+projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-ipe-category-search-2700703-2.patch"
 
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][type] = "module"
