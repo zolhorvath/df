@@ -241,6 +241,9 @@ projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
 projects[panelizer][download][branch] = "8.x-3.x"
+; Explicitly set the Panels IPE URL root when saving in Panelizer
+; https://www.drupal.org/node/2700597
+projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
 
 projects[pathauto][version] = "1.0-alpha2"
 projects[pathauto][type] = "module"
