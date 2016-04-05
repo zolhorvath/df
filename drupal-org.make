@@ -232,6 +232,9 @@ projects[panels][download][branch] = "8.x-3.x"
 ; Allow other modules to disable the IPE based on custom logic
 ; https://www.drupal.org/node/2667754
 projects[panels][patch][2667754] = "https://www.drupal.org/files/issues/2667754-3.patch"
+; Allow items to be searched in the Panels IPE CategoryView (Change Layout/Manage Content tabs)
+; https://www.drupal.org/node/2700703
+projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-ipe-category-view-search.patch"
 
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][type] = "module"
