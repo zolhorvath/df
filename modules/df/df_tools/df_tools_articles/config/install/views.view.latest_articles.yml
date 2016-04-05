@@ -10,6 +10,8 @@ dependencies:
     - node
     - text
     - user
+_core:
+  default_config_hash: NbetbN0YXfW6xPfJRcizE3CbtGlcZvZDxmXxkJw5F_E
 id: latest_articles
 label: 'Latest Articles'
 module: views
@@ -59,8 +61,8 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'columns large-4 small-12'
-          default_row_class: true
+          row_class: 'columns medium-4 small-12'
+          default_row_class: false
       row:
         type: fields
         options:
@@ -120,7 +122,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: hero_square
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -137,39 +139,54 @@ display:
           id: title
           table: node_field_data
           field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
+          label: ''
           exclude: false
-          element_type: ''
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h4
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -180,6 +197,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -291,7 +311,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Read More'
+          text: 'Read Article'
           entity_type: node
           plugin_id: entity_link
       filters:
@@ -378,7 +398,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'row latest-articles'
+      css_class: latest-articles
     cache_metadata:
       max-age: -1
       contexts:
