@@ -262,11 +262,9 @@ projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
 projects[scenarios][download][branch] = "8.x-1.x"
 
-projects[token][version] = "1.x-dev"
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
-projects[token][download][type] = "git"
-projects[token][download][branch] = "8.x-1.x"
+projects[token][version] = "1.0-alpha2"
 
 projects[url_embed][version] = "1.x-dev"
 projects[url_embed][type] = "module"
