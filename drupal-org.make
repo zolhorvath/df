@@ -159,11 +159,9 @@ projects[inline_entity_form][subdir] = "contrib"
 projects[inline_entity_form][download][type] = "git"
 projects[inline_entity_form][download][branch] = "8.x-1.x"
 
-projects[layout_plugin][version] = "1.x-dev"
 projects[layout_plugin][type] = "module"
 projects[layout_plugin][subdir] = "contrib"
-projects[layout_plugin][download][type] = "git"
-projects[layout_plugin][download][branch] ="8.x-1.x"
+projects[layout_plugin][version] = "1.0-alpha22"
 
 projects[leaflet][version] = "1.x-dev"
 projects[leaflet][type] = "module"
