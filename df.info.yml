@@ -5,6 +5,7 @@ version: VERSION
 core: 8.x
 exclusive: 1
 dependencies:
+  - contact
   - df_admin
   - df_tools
 themes:

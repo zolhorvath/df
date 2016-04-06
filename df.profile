@@ -23,5 +23,5 @@ function df_form_install_configure_form_alter(&$form, FormStateInterface $form_s
  */
 function df_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
-  ContactForm::load('feedback')->setRecipients([$site_mail])->save();
+  ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 }
