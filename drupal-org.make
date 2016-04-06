@@ -272,9 +272,9 @@ projects[url_embed][subdir] = "contrib"
 projects[url_embed][download][type] = "git"
 projects[url_embed][download][branch] = "8.x-1.x"
 
-projects[workbench_moderation][version] = "1.x-dev"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
+projects[workbench_moderation][version] = "1.0-beta2"
 ; Provide logical access control for when IPE should be applied to moderated nodes
 ; https://www.drupal.org/node/2668006
 projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/issues/2668006-2.patch"
