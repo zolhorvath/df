@@ -8,7 +8,7 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
-projects[addtoany][version] = "1.1"
+projects[addtoany][version] = "1.2"
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
 ; Remove silly installation message.
