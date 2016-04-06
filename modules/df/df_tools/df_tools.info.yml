@@ -6,6 +6,7 @@ package: Demo Framework Tools
 dependencies:
   - df_tools_articles
   - df_tools_display
+  - df_tools_landing
   - df_tools_moderation
   - df_tools_translation
   - df_tools_user
