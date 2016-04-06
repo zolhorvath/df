@@ -29,8 +29,7 @@ projects[block_class][version] = "1.x-dev"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
 projects[block_class][download][type] = "git"
-projects[block_class][download][branch] = "8.0.x-1.x"
-projects[block_class][download][url] = "http://git.drupal.org/sandbox/YaronTal/2345855.git"
+projects[block_class][download][branch] = "8.x-1.x"
 ; Add support for page manager.
 ; http://drupal.org/node/2509142
 projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
