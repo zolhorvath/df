@@ -70,6 +70,10 @@ projects[content_browser][type] = "module"
 projects[content_browser][subdir] = "contrib"
 projects[content_browser][download][type] = "git"
 projects[content_browser][download][branch] = "8.x-1.x"
+; fix grid alignment
+; https://www.drupal.org/node/2701093
+projects[content_browser][patch][2701093] = "https://www.drupal.org/files/issues/better-grid-alignment-for-mobile-2701093-1.patch"
+
 
 projects[crop][version] = "1.x-dev"
 projects[crop][type] = "module"
