@@ -217,11 +217,9 @@ projects[oauth][subdir] = "contrib"
 projects[oauth][download][type] = "git"
 projects[oauth][download][branch] = "8.x-1.x"
 
-projects[page_manager][version] = "1.x-dev"
 projects[page_manager][type] = "module"
 projects[page_manager][subdir] = "contrib"
-projects[page_manager][download][type] = "git"
-projects[page_manager][download][branch] = "8.x-1.x"
+projects[page_manager][version] = "1.0-alpha23"
 ; Rename the core "Page with blocks" admin_label and sort display variants
 ; https://www.drupal.org/node/2503947
 projects[page_manager][patch][2503947] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
