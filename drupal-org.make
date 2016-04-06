@@ -102,11 +102,9 @@ projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][branch] = "8.x-1.x"
 
-projects[features][version] = "3.x-dev"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][download][type] = "git"
-projects[features][download][branch] = "8.x-3.x"
+projects[features][version] = "3.0-beta1"
 
 projects[field_group][version] ="1.0-rc4"
 projects[field_group][type] = "module"
