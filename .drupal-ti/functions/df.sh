@@ -116,7 +116,7 @@ function drupal_ti_install_drupal() {
 	# Do the site install.
 	df_header Installing Drupal
 	cd drupal
-	php -d sendmail_path=$(which true) ~/.composer/vendor/bin/drush.php --yes site-install df --db-url="$DRUPAL_TI_DB_URL" --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="Demo Framework"
+	php -d sendmail_path=$(which true) ~/.composer/vendor/bin/drush.php --yes site-install "$DRUPAL_TI_INSTALL_PROFILE" --db-url="$DRUPAL_TI_DB_URL" --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="Demo Framework"
 	drush config-set -y system.file path.private "sites/default/private/files"
 	drush config-set -y system.file path.temporary "sites/default/private/temp"
 
