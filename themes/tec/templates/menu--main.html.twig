@@ -20,13 +20,12 @@
   We call a macro which calls itself to render the full tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
-<div class="menu-wrap">
+<div class="menu-wrap hide-for-small-only">
   {{ menus.menu_links(items, attributes, 0, linked_logo) }}
 </div>
 
 <div class="menu-mobile-wrap">
-  <a data-dropdown="menu-mobile" aria-controls="menu-mobile" aria-expanded="false" class="menu-icon" data-options="align:right">Menu &#9776;</a>
-  <div id="menu-mobile" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+  <div id="menu-mobile" data-dropdown class="f-dropdown" aria-hidden="true" aria-autoclose="true" data-auto-focus="false" tabindex="-1">
     {{ menus.menu_links(items, attributes, 0, linked_logo) }}
   </div>
 </div>

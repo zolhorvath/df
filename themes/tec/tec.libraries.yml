@@ -4,6 +4,7 @@ main:
     theme:
       css/tec.css: {}
   js:
+    js/vendor.all.js: {}
     js/tec.js: {}
   dependencies:
     - core/jquery

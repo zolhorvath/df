@@ -56,12 +56,14 @@
 <div class="meta-wrap">
   <div class="row">
     <div class="large-12 columns">
+      <div class="row">
       {% if page.meta %}
         {{ page.meta }}
       {% endif %}
-      <div class="meta-login large-3 right columns">
-        <a data-dropdown="account-menu" aria-controls="account-menu" aria-expanded="false" class="account-link" data-options="">{{ 'Account'|t }}</a>
-        <ul id="account-menu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+      <div class="meta-login large-3 large-offset-9 small-offset-1 columns">
+        <a class="login-dropdown-button account-link" data-toggle="user-logout-wrapper" aria-controls="user-logout-wrapper" aria-expanded="false">{{ 'Account'|t }}</a>
+        <div id="user-logout-wrapper" class="dropdown-pane f-dropdown" data-dropdown aria-hidden="true" aria-autoclose="false" data-auto-focus="false">
+          <ul>
           {% if logged_in %}
            <li> <a href="{{ path('user.page') }}">{{ 'My Account'|t }}</a></li>
             <li><a href="{{ path('user.logout') }}">{{ 'Logout'|t }}</a></li>
@@ -70,14 +72,18 @@
             <li><a href="{{ path('user.register') }}">{{ 'Sign Up'|t }}</a></li>
           {% endif %}
         </ul>
-        <a class="language-link" data-dropdown="language-menu" aria-controls="language-menu" aria-expanded="false" data-options="">{{ language_current_link }}</a>
-        <ul id="language-menu" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+      </div>
+        <a class="language-link" data-toggle="language-menu" aria-controls="language-menu" aria-expanded="false">{{ language_current_link }}</a>
+        <div id="language-menu" data-dropdown class="dropdown-pane f-dropdown" aria-hidden="true" aria-autoclose="false" data-auto-focus="false">
+          <ul>
           {% for link in language_links %}
             <li>{{ link }}</li>
           {% endfor %}
         </ul>
       </div>
+      </div>
     </div>
+  </div>
   </div>
 </div>
 
@@ -103,6 +109,9 @@
 <div class="l-help row">
   <div class="large-12 columns">
     {{ page.help }}
+     <div class="highlight panel callout">
+    {{ page.highlighted }}
+  </div>
   </div>
 </div>
 {% endif %}
@@ -111,9 +120,7 @@
   <div class="row">
     <div id="main" class="{{ main_grid }} columns">
       {% if page.highlighted %}
-        <div class="highlight panel callout">
-          {{ page.highlighted }}
-        </div>
+ 
       {% endif %}
       <a id="main-content"></a>
       {% if breadcrumb %} {{ breadcrumb }} {% endif %}

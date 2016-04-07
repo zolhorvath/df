@@ -66,11 +66,13 @@
     margin: 0;
     background-color: $primary-alt-color;
     padding: rem-calc(10px);
+    position:relative;
     a {
         color: $white;
     }
     .meta-login {
         .account-link {
+            position:relative;
             &:before {
                 background-image: url(../images/user.svg);
                 background-size: 20px;
@@ -78,7 +80,7 @@
                 height: 20px;
                 content: "";
                 position: absolute;
-                left: -10px;
+                left: -25px;
                 top: 1px;
             }
         }
@@ -86,10 +88,14 @@
             padding-right: rem-calc(10px);
         }
         .language-link {
-            &:after {
-                @include css-triangle(5px, #fff, top);
-                display: inline-block;
-                margin-left: 5px;
+            &:before {
+                background-size: 20px;
+                width: 20px;
+                height: 20px;
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 1px;
             }
         }
     }
