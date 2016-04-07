@@ -62,5 +62,4 @@ dependencies:
   - views_ui
   - workbench_moderation
 themes:
-  - adminimal_theme 
-  - bartik
+  - adminimal_theme
