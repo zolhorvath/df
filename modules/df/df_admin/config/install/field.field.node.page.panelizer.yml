@@ -1,3 +1,4 @@
+uuid: 988d2dcc-4f9d-4717-b26b-e6b9b0fb3993
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.page
   module:
     - panelizer
+_core:
+  default_config_hash: ua6_2C5i3t-7MEVqbi3yK9KPdoAseqy5V4o_hp8MmaE
 id: node.page.panelizer
 field_name: panelizer
 entity_type: node

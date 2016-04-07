@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: zjjJ4edG7DwpSxuofpksYfSKx9UxFRytS0a5Nxgdags
 id: user.field_first_name
 field_name: field_first_name
 entity_type: user
@@ -19,4 +21,3 @@ translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false
-

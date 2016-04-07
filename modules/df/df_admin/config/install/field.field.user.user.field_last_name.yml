@@ -6,6 +6,8 @@ dependencies:
     - field.storage.user.field_last_name
   module:
     - user
+_core:
+  default_config_hash: IOK0dNnCi4Ks_khtuz_oKnWCUgJaJeHK0z9pigDwnVs
 id: user.user.field_last_name
 field_name: field_last_name
 entity_type: user
@@ -18,4 +20,3 @@ default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: string
-

@@ -1,3 +1,4 @@
+uuid: 677cc6c5-18ab-4666-9796-3207ba4a7634
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,9 @@ dependencies:
   module:
     - path
     - text
+    - workbench_moderation
+_core:
+  default_config_hash: KSvzyFhdLuxniTsunUnUfpfMmod2l57GibtVjL8ymHM
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -23,6 +27,11 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   path:
