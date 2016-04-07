@@ -10,6 +10,4 @@ dependencies:
   - df_tools
 themes:
   - adminimal_theme
-  - bartik
-  - seven
   - zurb_foundation
