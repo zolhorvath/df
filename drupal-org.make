@@ -268,7 +268,7 @@ projects[responsive_menus][version] = "1.5"
 projects[responsive_menus][type] = "module"
 projects[responsive_menus][subdir] = "contrib"
 
-projects[restws][version] = "2.4"
+projects[restws][version] = "2.5"
 projects[restws][type] = "module"
 projects[restws][subdir] = "contrib"
 
