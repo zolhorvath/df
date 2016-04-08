@@ -21,11 +21,15 @@ use Drupal\Core\Routing\RouteMatchInterface;
  *  @param boolean $local_csv
  *   Override the original CSV file from the copied migration. Defaults to TRUE.
  *
- * @return \Drupal\migrate\Entity\MigrationInterface $migration
+ * @return \Drupal\migrate\Plugin\Migration $migration
  */
 function _df_migration_copy($base_migration, $prefix, $type, $entity_type, $path, $local_csv = TRUE) {
-  $base_migration = entity_load('migration', $base_migration);
-  $migration = $base_migration->createDuplicate();
+  /** @var \Drupal\migrate\Plugin\MigrationPluginManager $migration_manager */
+  $migration_manager = \Drupal::getContainer()->get('plugin.manager.migration');
+
+  /** @var \Drupal\migrate\Plugin\Migration $migration */
+  $migration = $migration_manager->createInstance($base_migration);
+
   $label = "Import $prefix:$entity_type:$type";
   $migration->set('label', $label);
   $migration->set('id', "import_$prefix" . "_$type");
