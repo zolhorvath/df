@@ -11,20 +11,15 @@ cd "$DRUPAL_TI_DRUPAL_DIR"
 # needed for example for the drush runner.
 cd "$DRUPAL_TI_BEHAT_DIR"
 
-df_header Running tets
+df_header Running tests
 
 # Copy into place.
 mv -f "$TRAVIS_BUILD_DIR"/behat.travis.yml.dist .
 
-# This replaces environment vars from $DRUPAL_TI_BEHAT_YML into 'behat.yml'.
+# We need to create a behat.yml file from behat.yml.dist.
 drupal_ti_replace_behat_vars
 
+# And run the tests.
 ARGS=( $DRUPAL_TI_BEHAT_ARGS )
-
-# First, run all the tests in Firefox.
 if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=df; fi
 ./bin/behat --tags=$SCENARIO
-
-# Then run some Chrome-only tests.
-if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=df -p chrome; fi
-./bin/behat --tags=$SCENARIO -p chrome
