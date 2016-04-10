@@ -5,118 +5,44 @@
  * Set up the Demo user base migrations.
  */
 
-use Drupal\migrate\Plugin\MigrationInterface;
-use Drupal\user\Entity\User;
-
 /**
  * Implements hook_migration_plugins_alter().
  */
 function df_tools_user_migration_plugins_alter(&$definitions) {
-  // Allow visitor account creation with administrative approval.
-  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save();
-
-  // Enable default permissions for system roles.
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access comments', 'use search', 'search content', 'access user profiles'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access comments', 'post comments', 'skip comment approval', 'search content', 'access user profiles'));
-
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
-
-  // Enable the Contact link in the footer menu.
-  /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
-  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
-  $menu_link_manager->updateDefinition('contact.site_page', array('enabled' => 1));
-
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access site-wide contact form'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access site-wide contact form'));
-
-  // Allow authenticated users to use shortcuts.
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access shortcuts'));
-
-  // Populate the default shortcut set.
-  $shortcut = entity_create('shortcut', array(
-    'shortcut_set' => 'default',
-    'title' => t('Add content'),
-    'weight' => -20,
-    'link' => array('uri' => 'internal:/node/add'),
-  ));
-  $shortcut->save();
-
-  $shortcut = entity_create('shortcut', array(
-    'shortcut_set' => 'default',
-    'title' => t('All content'),
-    'weight' => -19,
-    'link' => array('uri' => 'internal:/admin/content'),
-  ));
-  $shortcut->save();
-
-  /** @var \Drupal\migrate\Plugin\MigrationPluginManager $migration_manager */
-  $migration_manager = \Drupal::getContainer()->get('plugin.manager.migration');
-
   // Set up base path.
   $path = dirname(__FILE__) . '/data/';
 
   // Demo user picture file migration based on import_file_image.
   $label = 'demo_user_pictures';
-  /** @var \Drupal\migrate\Plugin\Migration $migration */
-  $migration = $migration_manager->createInstance('import_file_image');
-  $migration->set('label', 'Import file:' . $label);
-  $migration->set('id', 'import_file_' . $label);
+  $migration = $definitions['import_file_image'];
+  $migration['label'] = 'Import file:' . $label;
+  $migration['id'] = 'import_file_' . $label;
   // Point source path to local CSV file.
-  $source = $migration->get('source');
-  $source['path'] = $path . 'df_tools_user.users.csv';
+  $migration['source']['path'] = $path . 'df_tools_user.users.csv';
   // User picture file source plugin.
-  $source['plugin'] = 'user_picture_file';
+  $migration['source']['plugin'] = 'user_picture_file';
   // Set key for user picture.
-  $source['keys'] = array('Picture');
-  $source['columns'] = array(4 => 'Picture');
-  $migration->set('source', $source);
+  $migration['source']['keys'] = array('Picture');
+  $migration['source']['columns'] = array(4 => 'Picture');
   // Set user picture filepath for processing.
-  $process = $migration->get('process');
-  $process['filepath'] = 'Picture';
-  $migration->set('process', $process);
-  $definitions[] = $migration;
+  $migration['process']['filepath'] = 'Picture';
+  $definitions[$migration['id']] = $migration;
 
   // Add a demo users import using based on import_user_user.
   $label = 'demo_users';
-  /** @var \Drupal\migrate\Plugin\Migration $migration */
-  $migration = $migration_manager->createInstance('import_user_user');
-  $migration->set('label', 'Import user:' . $label);
-  $migration->set('id', 'import_user_' . $label);
+  $migration = $definitions['import_user_user'];
+  $migration['label'] = 'Import user:' . $label;
+  $migration['id'] = 'import_user_' . $label;
   // Point source path to local CSV file.
-  $source = $migration->get('source');
-  $source['plugin'] = 'user_with_roles';
-  $source['path'] = $path . 'df_tools_user.users.csv';
-  $migration->set('source', $source);
+  $migration['source']['plugin'] = 'user_with_roles';
+  $migration['source']['path'] = $path . 'df_tools_user.users.csv';
   // Set user pictures.
-  $process = $migration->get('process');
-  $process['user_picture']['migration'] = 'import_file_demo_user_pictures';
-  $process['field_first_name'] = 'First';
-  $process['field_last_name'] = 'Last';
-  $migration->set('process', $process);
+  $migration['process']['user_picture']['migration'] = 'import_file_demo_user_pictures';
+  $migration['process']['field_first_name'] = 'First';
+  $migration['process']['field_last_name'] = 'Last';
   // Set up proper dependencies for image files.
   $dependencies = array('import_file_demo_user_pictures');
-  $migration->set('migration_dependencies', ['required' => $dependencies]);
+  $migration['migration_dependencies'] = ['required' => $dependencies];
   // Save the new migration.
-  $definitions[] = $migration;
-
-  // Add the First and Last Name fields to the user entity form display.
-  entity_get_form_display('user', 'user', 'default')
-    ->setComponent('field_first_name', array(
-      'type' => 'string_textfield',
-    ))
-    ->setComponent('field_last_name', array(
-      'type' => 'string_textfield',
-    ))
-    ->save();
-
-  // Add values for the First and Last name fields to the admin user.
-  $user = User::load(1);
-  $user->set('field_first_name', 'Bill');
-  $user->set('field_last_name', 'James');
-  $user->save();
-
+  $definitions[$migration['id']] = $migration;
 }
