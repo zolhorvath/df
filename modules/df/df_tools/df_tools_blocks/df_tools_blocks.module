@@ -206,6 +206,14 @@ function df_tools_blocks_migration_plugins_alter(&$definitions) {
         'field_media' => 'Media'
       ]
     ],
+    'url' => [
+      'columns' => [
+        2 => 'URL'
+      ],
+      'fields' => [
+        'field_url' => 'URL'
+      ]
+    ],
   ];
   foreach ($types as $type => $info) {
     $migration = _df_migration_copy($definitions['import_block_base'], 'block', $type, 'block_content', $path);

@@ -15,5 +15,6 @@ dependencies:
   - inline_entity_form
   - geolocation
   - text
+  - url_embed
   - user
   - responsive_image
