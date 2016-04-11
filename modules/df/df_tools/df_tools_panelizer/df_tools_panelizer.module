@@ -10,7 +10,7 @@ use Drupal\migrate_source_csv\CSVFileObject;
 /**
  * Implements hook_scenarios_migration_finished().
  */
-function df_tools_panelizer_scenarios_migration_finished(Drupal\migrate\Entity\Migration $migration) {
+function df_tools_panelizer_scenarios_migration_finished(Drupal\migrate\Plugin\Migration $migration) {
   // Initialize variables required to parse migration.
   /** @var Drupal\migrate_source_csv\Plugin\migrate\source\CSV $source */
   $source = $migration->getSourcePlugin();
