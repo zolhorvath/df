@@ -180,6 +180,10 @@ projects[image_url_formatter][version] = "1.4"
 projects[image_url_formatter][type] = "module"
 projects[image_url_formatter][subdir] = "contrib"
 
+projects[imagezoom][version] = "2.0-beta2"
+projects[imagezoom][type] = "module"
+projects[imagezoom][subdir] = "contrib"
+
 projects[jcarousel][version] = "2.7"
 projects[jcarousel][type] = "module"
 projects[jcarousel][subdir] = "contrib"
