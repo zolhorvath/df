@@ -8,7 +8,7 @@ Feature: Demo Framework: Landing page
   Scenario: Create Landing Page
     Given I am logged in as a user with the "administrator" role
       When I go to "/node/add/landing_page"
-        Then I fill in "title" with "TestLanding Page"
+        Then I fill in "edit-title" with "Test Landing Page"
           And I press "Save and Create New Draft"
           Then I should see "Test Landing Page"
           And I should see "Change Layout"
