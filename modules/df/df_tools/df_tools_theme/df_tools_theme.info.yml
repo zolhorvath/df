@@ -1,0 +1,8 @@
+name: DF Tools Theme
+type: module
+description: Set up Demo Framework themes.
+core: 8.x
+package: Demo Framework
+themes:
+  - adminimal_theme
+  - zurb_foundation
