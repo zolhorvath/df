@@ -148,6 +148,9 @@ projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
 projects[import][download][branch] = "8.x-1.x"
+; Replace use of Static Map plugin with Default Value plugin
+; https://www.drupal.org/node/2706553
+projects[import][patch][2706553] = "https://www.drupal.org/files/issues/import-static-map-fix.patch"
 
 projects[inline_entity_form][version] = "1.x-dev"
 projects[inline_entity_form][type] = "module"
