@@ -53,7 +53,7 @@ function dfs_tec_install() {
         'field_title' =>  'Job Title',
         'field_biography/value' =>  'Biography',
         'field_biography/format' => [
-          'plugin' => 'static_map',
+          'plugin' => 'default_value',
           'default_value' => 'full_html'
         ],
         'field_headshot' =>  'Headshot',

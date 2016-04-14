@@ -44,7 +44,7 @@ function _df_migration_copy($base_migration, $prefix, $type, $entity_type, $path
   // Override default moderation state to 'Published' for imported nodes.
   if ($entity_type == 'node') {
     $process['moderation_state'] = [
-      'plugin' => 'static_map',
+      'plugin' => 'default_value',
       'default_value' => 'published'
     ];
   }
