@@ -153,3 +153,32 @@ function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
     }
   }
 }
+
+/**
+ * Implements hook_block_alter().
+ */
+function df_tools_blocks_block_alter(&$block_info) {
+  $category_map = [
+    'User' => 'System',
+    'Chaos tools' => 'System',
+    'Help' => 'System',
+    'core' => 'System',
+    'Workbench moderation' => 'System',
+    'Lists (Views)' => 'Lists',
+    'AddToAny' => 'Social',
+  ];
+
+  foreach ($block_info as $key => $info) {
+    $category = $info['category'];
+    if ($category instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+      $category = $category->getUntranslatedString();
+    }
+
+    if ($category == '@entity') {
+      $block_info[$key]['category'] = 'Current ' . $info['category']->render();
+    }
+    else if (isset($category_map[$category])) {
+      $block_info[$key]['category'] = t($category_map[$category]);
+    }
+  }
+}
