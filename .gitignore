@@ -16,8 +16,9 @@ vendor
 composer.lock
 
 # Behat
-bin
-behat.local.yml
+tests/bin
+tests/behat.local.yml
+tests/behat.yml
 
 # Contrib
 modules/contrib/*
