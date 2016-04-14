@@ -1,4 +1,4 @@
-@df
+@df @ipe
 Feature: Demo Framework: Landing page
   In order to prove that landing pages for a given scenario function properly
   As a developer
@@ -8,7 +8,7 @@ Feature: Demo Framework: Landing page
   Scenario: Create Landing Page
     Given I am logged in as a user with the "administrator" role
       When I go to "/node/add/landing_page"
-        Then I fill in "edit-title" with "Test Landing Page"
+        Then I fill "edit-title-0-value" with "Test Landing Page"
           And I press "Save and Create New Draft"
           Then I should see "Test Landing Page"
           And I should see "Change Layout"
@@ -17,8 +17,9 @@ Feature: Demo Framework: Landing page
       When I follow "Change Layout"
         Then I should see "Current Layout"
           And I should see "Columns: 1"
-          And I I click on the element with xpath "//a[@data-layout-id='onecol']"
-      When I click the "Single column"
+          And I follow "Columns: 1"
+          And I should see "Single column"
+      When I click on the element with xpath "//li[@data-layout-id='onecol']"
         Then I should see "Save"
           And I should see "Cancel"
           And I should see "Manage Content"
