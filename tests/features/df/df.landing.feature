@@ -16,7 +16,8 @@ Feature: Demo Framework: Landing page
           And I should see "Manage Content"
           And I should see "Edit"
       When I click on the element with xpath "//li[@data-tab-id='change_layout']"
-        Then I click on the element with xpath "//a[@data-category='Columns: 1']"
+        Then I wait for ajax to finish
+          And I click on the element with xpath "//a[@data-category='Columns: 1']"
           And I click on the element with xpath "//li[@data-layout-id='onecol']"
           Then I wait for ajax to finish
           And I should see "Region: middle"
@@ -24,8 +25,10 @@ Feature: Demo Framework: Landing page
           And I should see "Cancel"
           And I should see "Manage Content"
       When I click on the element with xpath "//li[@data-tab-id='manage_content']"
-        Then  I should see "Create Content"
+        Then I wait for ajax to finish
+          And I should see "Create Content"
           And I click on the element with xpath "//a[@data-category='Create Content']"
+          And I wait for ajax to finish
           And I should see "A basic block"
           And I should see "A block that inserts one"
           And I should see "A hero used on"
