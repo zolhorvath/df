@@ -16,19 +16,15 @@ Feature: Demo Framework: Landing page
           And I should see "Manage Content"
           And I should see "Edit"
       When I click on the element with xpath "//li[@data-tab-id='change_layout']"
-        Then I wait for ajax to finish
-          And I should see "Current Layout"
-          And I should see "Columns: 1"
-          And I click on the element with xpath "//a[@data-category='Columns: 1']"
+        Then I click on the element with xpath "//a[@data-category='Columns: 1']"
           And I click on the element with xpath "//li[@data-layout-id='onecol']"
-          And I wait for ajax to finish
-          Then I should see "Region: middle"
+          Then I wait for ajax to finish
+          And I should see "Region: middle"
           And I should see "Save"
           And I should see "Cancel"
           And I should see "Manage Content"
       When I click on the element with xpath "//li[@data-tab-id='manage_content']"
-        Then I wait for ajax to finish
-          And I should see "Create Content"
+        Then  I should see "Create Content"
           And I click on the element with xpath "//a[@data-category='Create Content']"
           And I should see "A basic block"
           And I should see "A block that inserts one"
@@ -38,7 +34,6 @@ Feature: Demo Framework: Landing page
           And I should see "Displays other blocks as"
       When I click on the element with xpath "//a[@data-block-type='basic']"
         Then I wait for ajax to finish
-          And I should see "Create new"
           And I fill in "Description" with "My block"
       When I press "Create and Place"
         Then I wait for ajax to finish
