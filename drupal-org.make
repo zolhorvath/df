@@ -80,11 +80,9 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "3.0-alpha25"
 
-projects[embed][version] = "1.x-dev"
 projects[embed][type] = "module"
 projects[embed][subdir] = "contrib"
-projects[embed][download][type] = "git"
-projects[embed][download][branch] = "8.x-1.x"
+projects[embed][version] = "1.0-rc2"
 
 projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
