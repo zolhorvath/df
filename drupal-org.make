@@ -70,11 +70,9 @@ projects[content_browser][subdir] = "contrib"
 projects[content_browser][download][type] = "git"
 projects[content_browser][download][branch] = "8.x-1.x"
 
-projects[crop][version] = "1.x-dev"
 projects[crop][type] = "module"
 projects[crop][subdir] = "contrib"
-projects[crop][download][type] = "git"
-projects[crop][download][branch] = "8.x-1.x"
+projects[crop][version] = "1.0-alpha2"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
