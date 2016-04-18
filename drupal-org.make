@@ -90,11 +90,9 @@ projects[entity_browser][subdir] = "contrib"
 projects[entity_browser][download][type] = "git"
 projects[entity_browser][download][branch] = "8.x-1.x"
 
-projects[entity_embed][version] = "1.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][branch] = "8.x-1.x"
+projects[entity_embed][version] = "1.0-alpha1"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
