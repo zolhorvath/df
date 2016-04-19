@@ -313,7 +313,7 @@ projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
 projects[adminimal_theme][download][type] = "git"
 projects[adminimal_theme][download][branch] = "8.x-1.x"
-projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-2.patch"
+projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-6.patch"
 
 projects[zurb-foundation][version] = "6.x-dev"
 projects[zurb-foundation][type] = "theme"
