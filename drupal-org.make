@@ -303,7 +303,7 @@ libraries[lite][download][type] = "get"
 libraries[lite][directory_name] = "lite"
 libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
 
-libraries[slick][destination] = "libraries"
+libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
 
