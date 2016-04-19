@@ -29,4 +29,8 @@ else
   fi
 fi
 
+# Create the drushrc.php file and symlink to a writeable location
+cd sites/default
+ln -s ./files/.drushrc ./drushrc.php
+
 cd -
