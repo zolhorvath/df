@@ -8,12 +8,9 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
-projects[addtoany][version] = "1.2"
+projects[addtoany][version] = "1.3"
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
-; Remove silly installation message.
-; https://www.drupal.org/node/2685125
-projects[addtoany][patch][2685125] = "http://drupal.org/files/issues/addtoany-remove-hook-install-message-0.patch"
 
 projects[admin_toolbar][version] ="1.14"
 projects[admin_toolbar][type] ="module"
