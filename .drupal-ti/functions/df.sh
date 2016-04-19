@@ -51,10 +51,8 @@ function df_build_distribution() {
 	cd "$DRUPAL_TI_DRUPAL_BASE"
 
 	# Build Codebase
-	mkdir profiles
-	mv df profiles/
-	mkdir drupal
-	mv profiles drupal/
+	mkdir -p drupal/profiles
+	mv df drupal/profiles/df
 
 	# Build the current branch.
 	df_header Building Demo Framework from current branch

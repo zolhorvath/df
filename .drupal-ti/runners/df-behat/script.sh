@@ -21,5 +21,5 @@ drupal_ti_replace_behat_vars
 
 # And run the tests.
 ARGS=( $DRUPAL_TI_BEHAT_ARGS )
-if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=df; fi
-./bin/behat --tags=$SCENARIO
+if [[ "$SCENARIO" == none ]]; then ./bin/behat --tags=df; fi
+if [[ "$SCENARIO" != none ]]; then ./bin/behat --tags=$SCENARIO; fi
