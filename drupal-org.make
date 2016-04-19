@@ -221,11 +221,9 @@ projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-i
 ; https://www.drupal.org/node/2701433
 projects[panels][patch][2701433] = "https://www.drupal.org/files/issues/bandaid.patch"
 
-projects[panelizer][version] = "3.x-dev"
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
-projects[panelizer][download][type] = "git"
-projects[panelizer][download][branch] = "8.x-3.x"
+projects[panelizer][version] = "3.0-alpha2"
 ; Explicitly set the Panels IPE URL root when saving in Panelizer
 ; https://www.drupal.org/node/2700597
 projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
