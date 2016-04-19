@@ -237,9 +237,6 @@ projects[refreshless][type] = "module"
 projects[refreshless][subdir] = "contrib"
 projects[refreshless][download][type] = "git"
 projects[refreshless][download][branch] = "8.x-1.x"
-; Fix composer.json syntax errors
-; https://www.drupal.org/node/2708579
-projects[refreshless][patch][2708579] = "https://www.drupal.org/files/issues/missing-comma-2708579-9.patch"
 
 projects[restui][version] = "1.x-dev"
 projects[restui][type] = "module"
