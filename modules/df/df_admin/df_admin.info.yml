@@ -5,6 +5,7 @@ core: 8.x
 package: Demo Framework
 dependencies:
   - admin_toolbar
+  - admin_toolbar_tools
   - basic_auth
   - block
   - block_class
