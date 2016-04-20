@@ -10,45 +10,46 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Helper function to copy a migration.
  *
- * @param string $base_migration
+ * @param array $base_migration
  *   The machine name of the migration you want to copy.
  * @param string $prefix
  *   The prefix to prepend to the new machine name (ex: dfs_tec).
  * @param string $type
+ *   The Entity bundle, i.e. article or slideshow.
+ * @param $entity_type
  *   The Entity Type (not bundle), i.e. node or block.
  * @param string $path
  *   A directory path that contains a properly named CSV for this migration.
  *  @param boolean $local_csv
  *   Override the original CSV file from the copied migration. Defaults to TRUE.
  *
- * @return \Drupal\migrate\Entity\MigrationInterface $migration
+ * @return array $migration
  */
 function _df_migration_copy($base_migration, $prefix, $type, $entity_type, $path, $local_csv = TRUE) {
-  $base_migration = entity_load('migration', $base_migration);
-  $migration = $base_migration->createDuplicate();
+  $migration = $base_migration;
+
   $label = "Import $prefix:$entity_type:$type";
-  $migration->set('label', $label);
-  $migration->set('id', "import_$prefix" . "_$type");
+  $migration['label'] = $label;
+  $migration['id'] = "import_{$prefix}_{$type}";
+
   // Point source path to local CSV file.
   if ($local_csv == TRUE) {
-    $source = $migration->get('source');
-    $source['path'] = $path . $prefix . "." . $entity_type  . "." . $type . '.csv';
-    // Set new source and process modifications.
-    $migration->set('source', $source);
+    $migration['source']['path'] = $path . $prefix . "." . $entity_type  . "." . $type . '.csv';
   }
+
   // Set content type to current bundle.
-  $process = $migration->get('process');
-  if (isset($process['type'])) {
-    $process['type']['default_value'] = $type;
+  if (isset($migration['process']['type'])) {
+    $migration['process']['type']['default_value'] = $type;
   }
+
   // Override default moderation state to 'Published' for imported nodes.
   if ($entity_type == 'node') {
-    $process['moderation_state'] = [
+    $migration['process']['moderation_state'] = [
       'plugin' => 'default_value',
       'default_value' => 'published'
     ];
   }
-  $migration->set('process', $process);
+
   // Return the new migration.
   return $migration;
 }
@@ -56,23 +57,18 @@ function _df_migration_copy($base_migration, $prefix, $type, $entity_type, $path
 /**
  * Helper function to add or modify an existing field mapping on a migration.
  *
- * @param \Drupal\migrate\Entity\MigrationInterface &$migration
- *   The migration you're looking to modify.
+ * @param array &$migration
+ *   The migration that needs modification.
  * @param array $columns
  *   An array describing the order and name of CSV columns.
  * @param array $fields
  *   An associative array mapping field machine names to their CSV column name.
  */
 function _df_migration_fields(&$migration, $columns, $fields) {
-  $source = $migration->get('source');
-  $process = $migration->get('process');
   foreach ($columns as $column => $value) {
-    $source['csvColumns'][$column] = $value;
+    $migration['source']['csvColumns'][$column] = $value;
   }
   foreach ($fields as $field => $settings) {
-    $process[$field] = $settings;
+    $migration['process'][$field] = $settings;
   }
-  $migration->set('source', $source);
-  $migration->set('process', $process);
 }
-

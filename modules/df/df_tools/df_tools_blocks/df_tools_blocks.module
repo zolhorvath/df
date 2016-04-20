@@ -155,6 +155,78 @@ function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
 }
 
 /**
+ * Implements hook_migration_plugins_alter().
+ */
+function df_tools_blocks_migration_plugins_alter(&$definitions) {
+  // Set up base path.
+  $path = dirname(__FILE__) . '/data/';
+
+  // Add our block migrations
+  $types = [
+    'content' => [
+      'columns' => [
+        2 => 'Content'
+      ],
+      'fields' => [
+        'field_content' => 'Content',
+      ]
+    ],
+    'hero' => [
+      'columns' => [
+        2 => 'First Line',
+        3 => 'Second Line',
+        4 => 'Link',
+        5 => 'Link Title',
+        6 => 'Image',
+        7 => 'Nested Blocks',
+      ],
+      'fields' => [
+        'field_first_line/value' => 'First Line',
+        'field_second_line/value' => 'Second Line',
+        'field_hero_link/uri' => 'Link',
+        'field_hero_link/title' => 'Link Title',
+        'field_hero_image' => 'Image',
+        'field_nested_block' => 'Nested Blocks',
+      ]
+    ],
+    'map' => [
+      'columns' => [
+        2 => 'Lat',
+        3 => 'Long'
+      ],
+      'fields' => [
+        'field_location' => 'Location'
+      ]
+    ],
+    'media' => [
+      'columns' => [
+        2 => 'Media'
+      ],
+      'fields' => [
+        'field_media' => 'Media'
+      ]
+    ],
+    'url' => [
+      'columns' => [
+        2 => 'URL'
+      ],
+      'fields' => [
+        'field_url' => 'URL'
+      ]
+    ],
+  ];
+  foreach ($types as $type => $info) {
+    $migration = _df_migration_copy($definitions['import_block_base'], 'block', $type, 'block_content', $path);
+    // Add our custom fields.
+    _df_migration_fields($migration, $info['columns'], $info['fields']);
+    // Add our custom plugins.
+    $migration['source']['plugin'] = $type . '_block';
+    // Save the new migration.
+    $definitions[$migration['id']] = $migration;
+  }
+}
+
+/**
  * Implements hook_block_alter().
  */
 function df_tools_blocks_block_alter(&$block_info) {
@@ -177,8 +249,10 @@ function df_tools_blocks_block_alter(&$block_info) {
     if ($category == '@entity') {
       $block_info[$key]['category'] = 'Current ' . $info['category']->render();
     }
-    else if (isset($category_map[$category])) {
-      $block_info[$key]['category'] = t($category_map[$category]);
+    else {
+      if (isset($category_map[$category])) {
+        $block_info[$key]['category'] = t($category_map[$category]);
+      }
     }
   }
 }

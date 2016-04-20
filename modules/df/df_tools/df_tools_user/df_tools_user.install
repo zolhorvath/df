@@ -2,16 +2,11 @@
 
 /**
  * @file
- * Set up the Demo user base migrations.
+ * Set up the Demo user base install routines.
  */
 
-use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
-use Drupal\migrate\Entity\MigrationInterface;
 use Drupal\user\Entity\User;
 
-/**
- * Implements hook_install().
- */
 function df_tools_user_install() {
   // Allow visitor account creation with administrative approval.
   $user_settings = \Drupal::configFactory()->getEditable('user.settings');
@@ -54,52 +49,6 @@ function df_tools_user_install() {
   ));
   $shortcut->save();
 
-  // Set up base path.
-  $path = dirname(__FILE__) . '/data/';
-
-  // Demo user picture file migration based on import_file_image.
-  $label = 'demo_user_pictures';
-  $base_migration = entity_load('migration', 'import_file_image');
-  $migration = $base_migration->createDuplicate();
-  $migration->set('label', 'Import file:' . $label);
-  $migration->set('id', 'import_file_' . $label);
-  // Point source path to local CSV file.
-  $source = $migration->get('source');
-  $source['path'] = $path . 'df_tools_user.users.csv';
-  // User picture file source plugin.
-  $source['plugin'] = 'user_picture_file';
-  // Set key for user picture.
-  $source['keys'] = array('Picture');
-  $source['columns'] = array(4 => 'Picture');
-  $migration->set('source', $source);
-  // Set user picture filepath for processing.
-  $process = $migration->get('process');
-  $process['filepath'] = 'Picture';
-  $migration->set('process', $process); 
-  $migration->save();
-
-  // Add a demo users import using based on import_user_user.
-  $label = 'demo_users';
-  $base_migration = entity_load('migration', 'import_user_user');
-  $migration = $base_migration->createDuplicate();
-  $migration->set('label', 'Import user:' . $label);
-  $migration->set('id', 'import_user_' . $label);
-  // Point source path to local CSV file.
-  $source = $migration->get('source');
-  $source['plugin'] = 'user_with_roles';
-  $source['path'] = $path . 'df_tools_user.users.csv';
-  $migration->set('source', $source);
-  // Set user pictures.
-  $process = $migration->get('process');
-  $process['user_picture']['migration'] = 'import_file_demo_user_pictures';
-  $process['field_first_name'] = 'First';
-  $process['field_last_name'] = 'Last';
-  $migration->set('process', $process);
-  // Set up proper dependencies for image files.
-  $dependencies = array('import_file_demo_user_pictures');
-  $migration->set('migration_dependencies', ['required' => $dependencies]);
-  // Save the new migration.
-  $migration->save();
 
   // Add the First and Last Name fields to the user entity form display.
   entity_get_form_display('user', 'user', 'default')
@@ -116,5 +65,4 @@ function df_tools_user_install() {
   $user->set('field_first_name', 'Bill');
   $user->set('field_last_name', 'James');
   $user->save();
-
 }

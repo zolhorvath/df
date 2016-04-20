@@ -127,6 +127,9 @@ projects[geophp][type] = "module"
 projects[geophp][subdir] = "contrib"
 projects[geophp][download][type] = "git"
 projects[geophp][download][branch] = "8.x-1.x"
+; Yaml parse error in geophp.info.yml
+; https://www.drupal.org/node/2690207
+projects[geophp][patch][2690207] = "https://www.drupal.org/files/issues/geophp-yaml-parse-error-2690207-1-D8.patch"
 
 projects[geolocation][version] = "1.x-dev"
 projects[geolocation][type] = "module"
@@ -139,6 +142,9 @@ projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
 projects[import][download][branch] = "8.x-1.x"
+; Create a 8.x-2.x-dev branch and add support for Drupal 8.1.x
+; https://www.drupal.org/node/2702323
+projects[import][patch][2702323] = "https://www.drupal.org/files/issues/import-8.1-update-2702323-5.patch"
 
 projects[inline_entity_form][version] = "1.x-dev"
 projects[inline_entity_form][type] = "module"
@@ -175,23 +181,23 @@ projects[moderate_mmenu][subdir] = "contrib"
 projects[moderate_mmenu][download][type] = "git"
 projects[moderate_mmenu][download][branch] = "8.x-1.x"
 
-projects[migrate_plus][version] = "1.x-dev"
+projects[migrate_plus][version] = "2.x-dev"
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][subdir] = "contrib"
 projects[migrate_plus][download][type] = "git"
-projects[migrate_plus][download][branch] = "8.x-1.x"
+projects[migrate_plus][download][branch] = "8.x-2.x"
 
-projects[migrate_source_csv][version] = "1.x-dev"
+projects[migrate_source_csv][version] = "2.x-dev"
 projects[migrate_source_csv][type] = "module"
 projects[migrate_source_csv][subdir] = "contrib"
 projects[migrate_source_csv][download][type] = "git"
-projects[migrate_source_csv][download][branch] = "8.x-1.x"
+projects[migrate_source_csv][download][branch] = "8.x-2.x"
 
-projects[migrate_tools][version] = "1.x-dev"
+projects[migrate_tools][version] = "2.x-dev"
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][subdir] = "contrib"
 projects[migrate_tools][download][type] = "git"
-projects[migrate_tools][download][branch] = "8.x-1.x"
+projects[migrate_tools][download][branch] = "8.x-2.x"
 
 projects[oauth][version] = "1.x-dev"
 projects[oauth][type] = "module"
@@ -249,6 +255,9 @@ projects[scenarios][type] = "module"
 projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
 projects[scenarios][download][branch] = "8.x-1.x"
+; Create a 8.x-2.x-dev branch and add support for Drupal 8.1.x
+; https://www.drupal.org/node/2702965
+projects[scenarios][patch][2702965] = "https://www.drupal.org/files/issues/scenarios-8.1-support-2702965-2.patch"
 
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
