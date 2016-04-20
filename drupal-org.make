@@ -137,14 +137,11 @@ projects[geolocation][subdir] = "contrib"
 projects[geolocation][download][type] = "git"
 projects[geolocation][download][branch] = "8.x-1.x"
 
-projects[import][version] = "1.x-dev"
+projects[import][version] = "2.x-dev"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
-projects[import][download][branch] = "8.x-1.x"
-; Create a 8.x-2.x-dev branch and add support for Drupal 8.1.x
-; https://www.drupal.org/node/2702323
-projects[import][patch][2702323] = "https://www.drupal.org/files/issues/import-8.1-update-2702323-5.patch"
+projects[import][download][branch] = "8.x-2.x"
 
 projects[inline_entity_form][version] = "1.x-dev"
 projects[inline_entity_form][type] = "module"
@@ -250,14 +247,11 @@ projects[restui][subdir] = "contrib"
 projects[restui][download][type] = "git"
 projects[restui][download][branch] = "8.x-1.x"
 
-projects[scenarios][version] = "1.x-dev"
+projects[scenarios][version] = "2.x-dev"
 projects[scenarios][type] = "module"
 projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
-projects[scenarios][download][branch] = "8.x-1.x"
-; Create a 8.x-2.x-dev branch and add support for Drupal 8.1.x
-; https://www.drupal.org/node/2702965
-projects[scenarios][patch][2702965] = "https://www.drupal.org/files/issues/scenarios-8.1-support-2702965-2.patch"
+projects[scenarios][download][branch] = "8.x-2.x"
 
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
