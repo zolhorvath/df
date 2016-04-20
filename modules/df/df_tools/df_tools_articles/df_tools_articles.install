@@ -42,4 +42,13 @@ function df_tools_articles_install() {
       ->set('third_party_settings', $settings)
       ->save();
   }
+
+  // Add Article to the default shortcut set.
+  $shortcut = entity_create('shortcut', array(
+    'shortcut_set' => 'default',
+    'title' => t('Add Article'),
+    'weight' => -2,
+    'link' => array('uri' => 'internal:/node/add/article'),
+  ));
+  $shortcut->save();
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Provide Behat step-definitions for generic Lightning tests.
+ * Provide Behat step-definitions for generic Demo Framework tests.
  */
 
 use Drupal\DrupalExtension\Context\DrupalSubContextInterface;

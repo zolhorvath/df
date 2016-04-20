@@ -24,6 +24,11 @@ class MenuRouterRebuildSubscriber implements EventSubscriberInterface {
    */
   public function onKernelRequestMenuRouterRebuild(GetResponseEvent $event) {
     if (file_exists("public://rebuild.dat")) {
+      $site_path = preg_replace('/^sites\//', '', \Drupal::service('site.path'));
+      if (!file_exists('public://.drushrc') && file_exists('public://') && is_writable('public://') && file_put_contents('public:///.drushrc', "<?php\n\$options['l'] = 'http://${site_path}';")) {
+        drupal_chmod('public:///.drushrc', 0444);
+      }
+
       if (\Drupal::service('router.builder')->rebuild()) {
         file_unmanaged_delete("public://rebuild.dat");
       }

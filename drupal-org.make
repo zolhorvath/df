@@ -8,12 +8,9 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
-projects[addtoany][version] = "1.2"
+projects[addtoany][version] = "1.3"
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
-; Remove silly installation message.
-; https://www.drupal.org/node/2685125
-projects[addtoany][patch][2685125] = "http://drupal.org/files/issues/addtoany-remove-hook-install-message-0.patch"
 
 projects[admin_toolbar][version] ="1.14"
 projects[admin_toolbar][type] ="module"
@@ -70,21 +67,17 @@ projects[content_browser][subdir] = "contrib"
 projects[content_browser][download][type] = "git"
 projects[content_browser][download][branch] = "8.x-1.x"
 
-projects[crop][version] = "1.x-dev"
 projects[crop][type] = "module"
 projects[crop][subdir] = "contrib"
-projects[crop][download][type] = "git"
-projects[crop][download][branch] = "8.x-1.x"
+projects[crop][version] = "1.0-alpha2"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "3.0-alpha25"
 
-projects[embed][version] = "1.x-dev"
 projects[embed][type] = "module"
 projects[embed][subdir] = "contrib"
-projects[embed][download][type] = "git"
-projects[embed][download][branch] = "8.x-1.x"
+projects[embed][version] = "1.0-rc2"
 
 projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
@@ -92,11 +85,9 @@ projects[entity_browser][subdir] = "contrib"
 projects[entity_browser][download][type] = "git"
 projects[entity_browser][download][branch] = "8.x-1.x"
 
-projects[entity_embed][version] = "1.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][branch] = "8.x-1.x"
+projects[entity_embed][version] = "1.0-alpha1"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
@@ -236,11 +227,9 @@ projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-i
 ; https://www.drupal.org/node/2701433
 projects[panels][patch][2701433] = "https://www.drupal.org/files/issues/bandaid.patch"
 
-projects[panelizer][version] = "3.x-dev"
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
-projects[panelizer][download][type] = "git"
-projects[panelizer][download][branch] = "8.x-3.x"
+projects[panelizer][version] = "3.0-alpha2"
 ; Explicitly set the Panels IPE URL root when saving in Panelizer
 ; https://www.drupal.org/node/2700597
 projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
@@ -323,7 +312,7 @@ libraries[lite][download][type] = "get"
 libraries[lite][directory_name] = "lite"
 libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
 
-libraries[slick][destination] = "libraries"
+libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
 
@@ -333,7 +322,7 @@ projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
 projects[adminimal_theme][download][type] = "git"
 projects[adminimal_theme][download][branch] = "8.x-1.x"
-projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-2.patch"
+projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-6.patch"
 
 projects[zurb-foundation][version] = "6.x-dev"
 projects[zurb-foundation][type] = "theme"

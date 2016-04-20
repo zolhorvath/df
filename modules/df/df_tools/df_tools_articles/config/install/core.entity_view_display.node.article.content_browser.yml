@@ -119,7 +119,7 @@ third_party_settings:
         uuid: 06966804-adc7-47e2-8700-bd3bc70467d7
         label: ''
         weight: 0
-        layout: onecol
+        layout: foundation_1col
         layout_settings: {  }
         page_title: '[node:title]'
         storage_type: panelizer_default
