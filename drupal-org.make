@@ -144,7 +144,7 @@ projects[import][download][type] = "git"
 projects[import][download][branch] = "8.x-1.x"
 ; Create a 8.x-2.x-dev branch and add support for Drupal 8.1.x
 ; https://www.drupal.org/node/2702323
-projects[import][patch][2702323] = "https://www.drupal.org/files/issues/import-8.1-update-2702323-4.patch"
+projects[import][patch][2702323] = "https://www.drupal.org/files/issues/import-8.1-update-2702323-5.patch"
 
 projects[inline_entity_form][version] = "1.x-dev"
 projects[inline_entity_form][type] = "module"
