@@ -395,6 +395,10 @@ libraries[jquery.jcarousel][destination] = "libraries"
 libraries[jquery.jcarousel][download][type] = "get"
 libraries[jquery.jcarousel][download][url] = "https://github.com/jsor/jcarousel/archive/master.zip"
 
+libraries[jQuery.mmenu][destination] = "libraries"
+libraries[jQuery.mmenu][download][type] = "get"
+libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/v5.2.0.zip"
+
 libraries[slick][destination] = "libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
