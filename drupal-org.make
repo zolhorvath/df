@@ -268,13 +268,13 @@ projects[url_embed][patch][2546204] = "https://www.drupal.org/files/issues/25462
 
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
-projects[workbench_moderation][version] = "1.0-beta2"
+projects[workbench_moderation][version] = "1.0"
 ; Provide logical access control for when IPE should be applied to moderated nodes
 ; https://www.drupal.org/node/2668006
 projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/issues/2668006-2.patch"
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
-projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-8.patch"
+projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-19.patch"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
