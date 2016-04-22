@@ -321,6 +321,5 @@ projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues
 projects[zurb-foundation][version] = "6.x-dev"
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][subdir] = "contrib"
-projects[zurb-foundation][directory_name] = "zurb_foundation"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "8.x-6.x"
