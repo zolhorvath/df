@@ -248,7 +248,7 @@ projects[oauth][version] = "3.2"
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
 
-projects[og][version] = "2.8"
+projects[og][version] = "2.9"
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
 
