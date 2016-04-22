@@ -39,7 +39,7 @@ projects[charts][download][type] = "git"
 projects[charts][download][revision] = "050670f"
 projects[charts][download][branch] = "7.x-2.x"
 
-projects[commerce][version] = "1.11"
+projects[commerce][version] = "1.13"
 projects[commerce][type] = "module"
 projects[commerce][subdir] = "contrib"
 
