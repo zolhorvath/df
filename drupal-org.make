@@ -116,7 +116,7 @@ projects[facetapi_slider][version] = "1.0"
 projects[facetapi_slider][type] = "module"
 projects[facetapi_slider][subdir] = "contrib"
 
-projects[feeds][version] = "2.0-beta1"
+projects[feeds][version] = "2.0-beta2"
 projects[feeds][type] = "module"
 projects[feeds][subdir] = "contrib"
 
