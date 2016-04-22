@@ -133,15 +133,9 @@ projects[google_analytics][version] = "2.1"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
-projects[google_analytics_reports][version] = "3.x-dev"
+projects[google_analytics_reports][version] = "3.0"
 projects[google_analytics_reports][type] = "module"
 projects[google_analytics_reports][subdir] = "contrib"
-projects[google_analytics_reports][download][type] = "git"
-projects[google_analytics_reports][download][revision] = "a874b60"
-projects[google_analytics_reports][download][branch] = "7.x-3.x"
-; Optionally suppress query warning about authentication
-; http://drupal.org/node/2558847
-projects[google_analytics_reports][patch][2558847] = "http://drupal.org/files/issues/google_analytics_reports-warning-0.patch"
 
 projects[i18n][version] = "1.13"
 projects[i18n][type] = "module"
