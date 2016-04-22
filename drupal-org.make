@@ -233,7 +233,7 @@ projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panel
 
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.0-alpha2"
+projects[pathauto][version] = "1.0-alpha3"
 
 projects[refreshless][version] = "1.x-dev"
 projects[refreshless][type] = "module"
