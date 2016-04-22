@@ -94,12 +94,9 @@ projects[domain][version] = "3.12"
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 
-projects[entity_translation][version] = "1.x-dev"
+projects[entity_translation][version] = "1.0-beta4"
 projects[entity_translation][type] = "module"
 projects[entity_translation][subdir] = "contrib"
-projects[entity_translation][download][type] = "git"
-projects[entity_translation][download][revision] = "ba653e1"
-projects[entity_translation][download][branch] = "7.x-1.x"
 
 projects[eva][version] = "1.x-dev"
 projects[eva][type] = "module"
