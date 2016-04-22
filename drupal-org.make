@@ -113,7 +113,6 @@ projects[geocoder][version] = "2.x-dev"
 projects[geocoder][type] = "module"
 projects[geocoder][subdir] = "contrib"
 projects[geocoder][download][type] = "git"
-projects[geocoder][download][url]= "http://github.com/mortenson/geocoder.git"
 projects[geocoder][download][branch] = "8.x-2.x"
 
 projects[geofield][version] = "1.x-dev"
