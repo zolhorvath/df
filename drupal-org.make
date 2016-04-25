@@ -129,7 +129,7 @@ projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
-projects[google_analytics][version] = "2.1"
+projects[google_analytics][version] = "2.2"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
