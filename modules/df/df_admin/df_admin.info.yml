@@ -33,6 +33,7 @@ dependencies:
   - field_ui
   - file
   - file_browser
+  - google_analytics
   - help
   - history
   - image
