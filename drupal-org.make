@@ -136,6 +136,10 @@ projects[geolocation][subdir] = "contrib"
 projects[geolocation][download][type] = "git"
 projects[geolocation][download][branch] = "8.x-1.x"
 
+projects[google_analytics][version] = "2.0"
+projects[google_analytics][type] = "module"
+projects[google_analytics][subdir] = "contrib"
+
 projects[import][version] = "2.x-dev"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
