@@ -346,12 +346,9 @@ projects[views_megarow][version] = "1.5"
 projects[views_megarow][type] = "module"
 projects[views_megarow][subdir] = "contrib"
 
-projects[views_slideshow][version] = "1.x-dev"
+projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][type] = "module"
 projects[views_slideshow][subdir] = "contrib"
-projects[views_slideshow][download][type] = "git"
-projects[views_slideshow][download][revision] = "3588fde"
-projects[views_slideshow][download][branch] = "7.x-1.x"
 
 projects[views_datasource][version] = "1.0-alpha2"
 projects[views_datasource][type] = "module"
