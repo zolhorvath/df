@@ -238,11 +238,9 @@ projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.0-alpha3"
 
-projects[refreshless][version] = "1.x-dev"
 projects[refreshless][type] = "module"
 projects[refreshless][subdir] = "contrib"
-projects[refreshless][download][type] = "git"
-projects[refreshless][download][branch] = "8.x-1.x"
+projects[refreshless][version] = "1.0-alpha3"
 
 projects[restui][version] = "1.x-dev"
 projects[restui][type] = "module"
