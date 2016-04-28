@@ -160,13 +160,6 @@ projects[l10n_update][version] = "1.1"
 projects[l10n_update][type] = "module"
 projects[l10n_update][subdir] = "contrib"
 
-projects[lite][version] = "1.x-dev"
-projects[lite][type] = "module"
-projects[lite][subdir] = "contrib"
-projects[lite][download][type] = "git"
-projects[lite][download][revision] = "c143067"
-projects[lite][download][branch] = "7.x-1.x"
-
 projects[image_url_formatter][version] = "1.4"
 projects[image_url_formatter][type] = "module"
 projects[image_url_formatter][subdir] = "contrib"
