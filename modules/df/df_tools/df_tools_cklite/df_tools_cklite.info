@@ -1,6 +1,0 @@
-name = DF Tools Lite
-description = Integrates the Lite track changes plugin for CKEditor with Demo Framework.
-package = User interface
-core = 7.x
-
-dependencies[] = lite
