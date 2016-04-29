@@ -67,7 +67,7 @@ projects[commerce_fancy_attributes][version] = "1.0"
 projects[commerce_fancy_attributes][type] = "module"
 projects[commerce_fancy_attributes][subdir] = "contrib"
 
-projects[commerce_features][version] = "1.1"
+projects[commerce_features][version] = "1.2"
 projects[commerce_features][type] = "module"
 projects[commerce_features][subdir] = "contrib"
 
