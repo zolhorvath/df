@@ -107,11 +107,9 @@ projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
 projects[file_entity][download][branch] = "8.x-2.x"
 
-projects[geocoder][version] = "2.x-dev"
 projects[geocoder][type] = "module"
 projects[geocoder][subdir] = "contrib"
-projects[geocoder][download][type] = "git"
-projects[geocoder][download][branch] = "8.x-2.x"
+projects[geocoder][version] = "2.0-alpha3"
 
 projects[geofield][version] = "1.x-dev"
 projects[geofield][type] = "module"
