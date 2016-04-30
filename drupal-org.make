@@ -89,7 +89,7 @@ projects[entity_embed][version] = "1.0-alpha1"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "3.0-beta1"
+projects[features][version] = "3.0-beta3"
 
 projects[field_group][version] ="1.0-rc4"
 projects[field_group][type] = "module"
