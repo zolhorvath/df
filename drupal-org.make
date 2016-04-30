@@ -33,11 +33,9 @@ projects[block_class][download][branch] = "8.x-1.x"
 ; http://drupal.org/node/2509142
 projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
 
-projects[dropzonejs][version] = "1.x-dev"
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][subdir] = "contrib"
-projects[dropzonejs][download][type] = "git"
-projects[dropzonejs][download][branch] = "8.x-1.x"
+projects[dropzonejs][version] = "1.0-alpha1"
 
 projects[composer_manager][version] = "1.x-dev"
 projects[composer_manager][type] = "module"
