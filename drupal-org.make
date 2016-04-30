@@ -51,11 +51,9 @@ projects[config_devel][subdir] = "contrib"
 projects[config_devel][download][type] = "git"
 projects[config_devel][download][branch] = "8.x-1.x"
 
-projects[config_update][version] = "1.x-dev"
 projects[config_update][type] = "module"
 projects[config_update][subdir] = "contrib"
-projects[config_update][download][type] = "git"
-projects[config_update][download][branch] = "8.x-1.x"
+projects[config_update][version] = "1.1"
 
 projects[config_sync][version] = "1.x-dev"
 projects[config_sync][type] = "module"
