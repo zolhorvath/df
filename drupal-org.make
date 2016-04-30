@@ -8,9 +8,9 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
-projects[addtoany][version] = "1.3"
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
+projects[addtoany][version] = "1.3"
 
 projects[admin_toolbar][version] ="1.x-dev"
 projects[admin_toolbar][type] ="module"
@@ -91,9 +91,9 @@ projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][version] = "3.0-beta3"
 
-projects[field_group][version] ="1.0-rc4"
 projects[field_group][type] = "module"
-projects[field_group][subdir] ="contrib"
+projects[field_group][subdir] = "contrib"
+projects[field_group][version] = "1.0-rc4"
 
 projects[file_browser][version] = "1.x-dev"
 projects[file_browser][type] = "module"
@@ -132,9 +132,9 @@ projects[geolocation][subdir] = "contrib"
 projects[geolocation][download][type] = "git"
 projects[geolocation][download][branch] = "8.x-1.x"
 
-projects[google_analytics][version] = "2.0"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
+projects[google_analytics][version] = "2.0"
 
 projects[import][version] = "2.x-dev"
 projects[import][type] = "module"
