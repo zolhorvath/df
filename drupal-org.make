@@ -298,10 +298,9 @@ libraries[imagesloaded][destination] = "../../libraries"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
 
-libraries[lite][destination] = "../../libraries"
-libraries[lite][download][type] = "get"
-libraries[lite][directory_name] = "lite"
-libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
+libraries[ckeditor-track-changes][download][type] = "get"
+libraries[ckeditor-track-changes][download][url] = "https://github.com/loopindex/ckeditor-track-changes/archive/fe309f5f5ea98ce739bf21e06f34d1d935d0c0ad.zip"
+libraries[ckeditor-track-changes][directory_name] = "lite"
 
 libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
