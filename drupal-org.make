@@ -301,6 +301,9 @@ libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesload
 libraries[ckeditor-track-changes][download][type] = "get"
 libraries[ckeditor-track-changes][download][url] = "https://github.com/loopindex/ckeditor-track-changes/archive/fe309f5f5ea98ce739bf21e06f34d1d935d0c0ad.zip"
 libraries[ckeditor-track-changes][directory_name] = "lite"
+; CKLite interferes with content insertion
+; http://drupal.org/node/2482879
+libraries[ckeditor-track-changes][patch][2482879] = "http://drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
 
 libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
