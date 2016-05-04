@@ -7,7 +7,7 @@ fontawesome_textfield:
     theme:
       css/iconpicker.css: {}
       /libraries/fontawesome-iconpicker/dist/css/fontawesome-iconpicker.min.css: {}
-      /libraries/font-awesome/css/font-awesome.min.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css: { type: external }
   dependencies:
     - core/jquery
     - core/drupal

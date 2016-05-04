@@ -287,10 +287,6 @@ libraries[dropzone][destination] = "../../libraries"
 libraries[dropzone][download][type] = "get"
 libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.2.0.zip"
 
-libraries[font-awesome][destination] = "../../libraries"
-libraries[font-awesome][download][type] = "get"
-libraries[font-awesome][download][url] = "https://github.com/FortAwesome/Font-Awesome/archive/v4.5.0.zip"
-
 libraries[fontawesome-iconpicker][destination] = "../../libraries"
 libraries[fontawesome-iconpicker][download][type] = "get"
 libraries[fontawesome-iconpicker][download][url] = "https://github.com/mjolnic/fontawesome-iconpicker/archive/1.2.0.zip"
