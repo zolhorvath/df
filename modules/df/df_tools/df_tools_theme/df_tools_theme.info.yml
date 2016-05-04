@@ -8,3 +8,4 @@ dependencies:
 themes:
   - adminimal_theme
   - zurb_foundation
+  - views_infinite_scroll
