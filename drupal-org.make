@@ -299,10 +299,6 @@ libraries[masonry][destination] = "../../libraries"
 libraries[masonry][download][type] = "get"
 libraries[masonry][download][url] = "https://github.com/desandro/masonry/archive/v3.3.1.zip"
 
-libraries[jQuery.mmenu][destination] = "../../libraries"
-libraries[jQuery.mmenu][download][type] = "get"
-libraries[jQuery.mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/v5.2.0.zip"
-
 libraries[imagesloaded][destination] = "../../libraries"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
