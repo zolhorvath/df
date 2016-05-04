@@ -272,6 +272,10 @@ projects[url_embed][download][branch] = "8.x-1.x"
 ; https://www.drupal.org/node/2546204
 projects[url_embed][patch][2546204] = "https://www.drupal.org/files/issues/2546204-6.patch"
 
+projects[views_infinite_scroll][version] = "1.0"
+projects[views_infinite_scroll][type] = "module"
+projects[views_infinite_scroll][subdir] = "contrib"
+
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
 projects[workbench_moderation][version] = "1.0"
