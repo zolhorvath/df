@@ -86,6 +86,7 @@ function drush_df_tools_config_df_cex() {
                 drush_log(dt('New copy from @source to @destination failed.', ['@source' => $source, '@destination' => $destination]), LogLevel::ERROR);
               }
               else {
+                _df_tools_config_strip_uuid($destination);
                 drush_log(dt('Successfully created @config.', ['@config' => $config]), LogLevel::OK);
               }
             }
@@ -101,10 +102,12 @@ function drush_df_tools_config_df_cex() {
             $instances = _df_tools_config_find_config_instances($destination_storage, $config);
             $choice = drush_choice($instances, dt('Choose update destination for @config.', ['@config' => $config]));
             if ($choice !== FALSE) {
-              if (!copy($source, $instances[$choice])) {
-                drush_log(dt('Copy from @source to @destination failed.', ['@source' => $source, '@destination' => $instances[$choice]]), LogLevel::ERROR);
+              $destination = $instances[$choice];
+              if (!copy($source, $destination)) {
+                drush_log(dt('Copy from @source to @destination failed.', ['@source' => $source, '@destination' => $destination]), LogLevel::ERROR);
               }
               else {
+                _df_tools_config_strip_uuid($destination);
                 drush_log(dt('Successfully copied @config.', ['@config' => $config]), LogLevel::OK);
               }
             }
@@ -146,7 +149,7 @@ function _df_tools_config_find_config_instances($storage, $config) {
   $file_path = $storage->getFilePath($config);
   $filename = basename($file_path);
 
-  $iterator = new RecursiveDirectoryIterator(DRUPAL_ROOT);
+  $iterator = new RecursiveDirectoryIterator(DRUPAL_ROOT, FilesystemIterator::FOLLOW_SYMLINKS);
   $files = [];
   foreach(new RecursiveIteratorIterator($iterator) as $file){
     if(strpos($file, $filename) !== FALSE && strpos($file, DRUPAL_ROOT . '/sites/') === FALSE){
@@ -200,4 +203,26 @@ function _df_tools_config_get_change_list($destination_dir) {
   $change_list = $config_comparer->getChangelist();
 
   return $change_list;
+}
+
+/**
+ * Strips UUID from a config file, if the file exists and has a UUID.
+ *
+ * @param string $filepath
+ *   The full path to the file.
+ *
+ * @return bool
+ *   Whether or not the operation was successful.
+ */
+function _df_tools_config_strip_uuid($filepath) {
+  if ($file = file($filepath)) {
+    if (strpos($file[0], 'uuid:') === 0) {
+      array_shift($file);
+      file_put_contents($filepath, implode($file));
+    }
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
 }
