@@ -25,7 +25,17 @@ function df_tools_blocks_preprocess_block(&$variables) {
         '#children' => array()
       );
       foreach (Element::getVisibleChildren($variables['content']) as $field_name) {
-        if ($field_name != 'field_hero_image') {
+        if ($field_name == 'field_icon' && isset($variables['content'][$field_name]['#object'])) {
+          $icon = $variables['content'][$field_name]['#object']->field_icon->getString();
+          if (!empty($icon)) {
+            $wrapper['#children'][] = [
+              '#markup' => '<i class="fa ' . $icon . ' hero-icon"></i>',
+              '#allowed_tags' => ['i'],
+            ];
+          }
+          unset($variables['content'][$field_name]);
+        }
+        else if ($field_name != 'field_hero_image') {
           $wrapper['#children'][] = $variables['content'][$field_name];
           unset($variables['content'][$field_name]);
         }
@@ -95,6 +105,7 @@ function df_tools_blocks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
     $grouping = [
       'Hero Text' => ['field_first_line', 'field_second_line'],
       'Hero Link' => ['field_hero_link'],
+      'Hero Icon' => ['field_icon'],
       'Nested Block' => ['field_nested_block'],
     ];
     foreach ($grouping as $label => $fields) {

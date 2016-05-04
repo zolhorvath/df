@@ -1,0 +1,13 @@
+fontawesome_textfield:
+  version: VERSION
+  js:
+    js/iconpicker.js: {}
+    /libraries/fontawesome-iconpicker/dist/js/fontawesome-iconpicker.min.js: {}
+  css:
+    theme:
+      css/iconpicker.css: {}
+      /libraries/fontawesome-iconpicker/dist/css/fontawesome-iconpicker.min.css: {}
+      /libraries/font-awesome/css/font-awesome.min.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

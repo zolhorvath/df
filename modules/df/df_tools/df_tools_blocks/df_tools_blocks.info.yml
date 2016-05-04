@@ -7,6 +7,7 @@ dependencies:
   - content_browser_grid
   - file_browser
   - df_admin
+  - df_tools_icons
   - df_tools_migration
   - df_tools_translation
   - node
