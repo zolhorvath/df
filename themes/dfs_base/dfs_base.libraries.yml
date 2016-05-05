@@ -1,0 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/dfs_base.css: {}
+  js:
+    js/dfs_base.js: {}
+    js/safari-shim.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

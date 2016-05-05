@@ -11,6 +11,7 @@
 function df_tools_theme_install() {
   // Enable Zurb Foundation and Adminimal for use as initial themes.
   \Drupal::service('theme_installer')->install(array('zurb_foundation'), TRUE);
+  \Drupal::service('theme_installer')->install(array('dfs_base'), TRUE);
   \Drupal::service('theme_installer')->install(array('adminimal_theme'), TRUE);
   
   // Set the admin theme and the base theme.
