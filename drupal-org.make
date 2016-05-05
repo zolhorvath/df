@@ -219,12 +219,12 @@ projects[panels][download][branch] = "8.x-3.x"
 ; Allow other modules to disable the IPE based on custom logic
 ; https://www.drupal.org/node/2667754
 projects[panels][patch][2667754] = "https://www.drupal.org/files/issues/2667754-3.patch"
-; Allow items to be searched in the Panels IPE CategoryView (Change Layout/Manage Content tabs)
-; https://www.drupal.org/node/2700703
-projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-ipe-category-search-2700703-2.patch"
 ; Editing layouts via IPE affects other users editing content until custom is selected
 ; https://www.drupal.org/node/2701433
 projects[panels][patch][2701433] = "https://www.drupal.org/files/issues/bandaid.patch"
+; IPE's cancel button is easy to mistake for a button to close the tray (rather than throw away all changes).
+; https://www.drupal.org/node/2636490
+projects[panels][patch][2636490] = "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
 
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
