@@ -38,6 +38,7 @@ dependencies:
   - history
   - image
   - import
+  - libraries
   - lite
   - manualcrop
   - menu_link_content

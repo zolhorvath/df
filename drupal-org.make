@@ -158,6 +158,12 @@ projects[leaflet][subdir] = "contrib"
 projects[leaflet][download][type] = "git"
 projects[leaflet][download][branch] = "8.x-1.x"
 
+projects[libraries][version] = "3.x-dev"
+projects[libraries][type] = "module"
+projects[libraries][subdir] = "contrib"
+projects[libraries][download][type] = "git"
+projects[libraries][download][branch] = "8.x-3.x"
+
 projects[lite][version] = "1.x-dev"
 projects[lite][type] = "module"
 projects[lite][subdir] = "contrib"
