@@ -171,7 +171,7 @@ projects[lite][download][type] = "git"
 projects[lite][download][branch] = "8.x-1.x"
 ; Lite uses the wrong path
 ; https://www.drupal.org/node/2718189
-projects[lite][patch][2718189] = "https://www.drupal.org/files/issues/2718189-2.patch"
+projects[lite][patch][2718189] = "https://www.drupal.org/files/issues/2718189-3.patch"
 
 projects[manualcrop][version] = "x-1.x-dev"
 projects[manualcrop][type] = "module"
