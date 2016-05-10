@@ -192,11 +192,9 @@ projects[migrate_source_csv][subdir] = "contrib"
 projects[migrate_source_csv][download][type] = "git"
 projects[migrate_source_csv][download][branch] = "8.x-2.x"
 
-projects[migrate_tools][version] = "2.x-dev"
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][subdir] = "contrib"
-projects[migrate_tools][download][type] = "git"
-projects[migrate_tools][download][branch] = "8.x-2.x"
+projects[migrate_tools][version] = "2.0-beta1"
 
 projects[oauth][version] = "1.x-dev"
 projects[oauth][type] = "module"
