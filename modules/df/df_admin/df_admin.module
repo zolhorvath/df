@@ -277,8 +277,8 @@ function _df_admin_watchdog_cache_clear($scenario, &$context) {
  * Replaces instances of "sites/default/files" in fields with the current file
  * path.
  */
-function df_admin_entity_insert($entity, $type) {
-  if (isset($entity->migrate)) {
+function df_admin_entity_insert($entity, $type, $ignore_migrate = FALSE) {
+  if (isset($entity->migrate) || $ignore_migrate) {
     $bundle = NULL;
     if (isset($entity->type)) {
       $bundle = $entity->type;
@@ -296,6 +296,19 @@ function df_admin_entity_insert($entity, $type) {
           entity_save($type, $entity);
         }
       }
+    }
+  }
+}
+
+/**
+ * Replaces instances of "sites/default/files" in fields with the current file
+ * path, for all entities we care about.
+ */
+function _df_admin_reset_file_paths() {
+  $entity_types = array('user', 'fieldable_panels_pane', 'node');
+  foreach ($entity_types as $type) {
+    foreach (entity_load($type) as $entity) {
+      df_admin_entity_insert($entity, $type, TRUE);
     }
   }
 }
