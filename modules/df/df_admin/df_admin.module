@@ -269,3 +269,33 @@ function _df_admin_watchdog_defaultconfig_rebuild($scenario, &$context) {
 function _df_admin_watchdog_cache_clear($scenario, &$context) {
   watchdog('df_admin', 'Cleared caches after enabling the %scenario scenario.', array('%scenario' => $scenario), WATCHDOG_INFO);
 }
+
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * Replaces instances of "sites/default/files" in fields with the current file
+ * path.
+ */
+function df_admin_entity_insert($entity, $type) {
+  if (isset($entity->migrate)) {
+    $bundle = NULL;
+    if (isset($entity->type)) {
+      $bundle = $entity->type;
+    }
+    else if (isset($entity->bundle)) {
+      $bundle = $entity->bundle;
+    }
+    $fields = array_keys(field_info_instances($type, $bundle));
+    foreach ($fields as $field) {
+      if (isset($entity->{$field}) && isset($entity->{$field}[LANGUAGE_NONE][0]['value'])) {
+        $value = $entity->{$field}[LANGUAGE_NONE][0]['value'];
+        if (strpos($value, 'sites/default/files') !== FALSE) {
+          $file_path = variable_get('file_public_path', 'sites/default/files');
+          $entity->{$field}[LANGUAGE_NONE][0]['value'] = str_replace('sites/default/files', $file_path, $value);
+          entity_save($type, $entity);
+        }
+      }
+    }
+  }
+}
