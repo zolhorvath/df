@@ -122,9 +122,6 @@ projects[geophp][type] = "module"
 projects[geophp][subdir] = "contrib"
 projects[geophp][download][type] = "git"
 projects[geophp][download][branch] = "8.x-1.x"
-; Yaml parse error in geophp.info.yml
-; https://www.drupal.org/node/2690207
-projects[geophp][patch][2690207] = "https://www.drupal.org/files/issues/geophp-yaml-parse-error-2690207-1-D8.patch"
 
 projects[geolocation][version] = "1.x-dev"
 projects[geolocation][type] = "module"
