@@ -136,6 +136,10 @@ projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.0"
 
+projects[image_widget_crop][type] = "module"
+projects[image_widget_crop][subdir] = "contrib"
+projects[image_widget_crop][version] = "1.0"
+
 projects[import][version] = "2.x-dev"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
@@ -172,13 +176,6 @@ projects[lite][download][branch] = "8.x-1.x"
 ; Lite uses the wrong path
 ; https://www.drupal.org/node/2718189
 projects[lite][patch][2718189] = "https://www.drupal.org/files/issues/2718189-3.patch"
-
-projects[manualcrop][version] = "x-1.x-dev"
-projects[manualcrop][type] = "module"
-projects[manualcrop][subdir] = "contrib"
-projects[manualcrop][download][type] = "git"
-projects[manualcrop][download][branch] = "8.x-1.x"
-projects[manualcrop][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/2572651.git"
 
 projects[moderate_mmenu][version] = "1.x-dev"
 projects[moderate_mmenu][type] = "module"

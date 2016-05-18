@@ -37,10 +37,10 @@ dependencies:
   - help
   - history
   - image
+  - image_widget_crop
   - import
   - libraries
   - lite
-  - manualcrop
   - menu_link_content
   - menu_ui
   - migrate_plus
