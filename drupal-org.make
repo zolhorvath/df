@@ -254,11 +254,9 @@ projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
 projects[scenarios][download][branch] = "8.x-2.x"
 
-projects[scheduler][version] = "1.x-dev"
 projects[scheduler][type] = "module"
 projects[scheduler][subdir] = "contrib"
-projects[scheduler][download][type] = "git"
-projects[scheduler][download][branch] = "8.x-1.x"
+projects[scheduler][version] = "1.0-alpha1"
 
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
