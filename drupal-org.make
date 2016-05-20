@@ -74,7 +74,7 @@ projects[crop][version] = "1.0-alpha2"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "3.0-alpha25"
+projects[ctools][version] = "3.0-alpha26"
 
 projects[embed][type] = "module"
 projects[embed][subdir] = "contrib"
