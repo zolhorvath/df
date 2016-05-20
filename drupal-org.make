@@ -183,11 +183,12 @@ projects[moderate_mmenu][subdir] = "contrib"
 projects[moderate_mmenu][download][type] = "git"
 projects[moderate_mmenu][download][branch] = "8.x-1.x"
 
-projects[migrate_plus][version] = "2.x-dev"
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][subdir] = "contrib"
-projects[migrate_plus][download][type] = "git"
-projects[migrate_plus][download][branch] = "8.x-2.x"
+projects[migrate_plus][version] = "2.0-beta1"
+; Update migrate plus migrate URL plugin and SourcePluginExtension to work with 8.1.0
+; https://www.drupal.org/node/2714357
+projects[migrate_plus][patch][2714357] = "https://www.drupal.org/files/issues/migrate_url_sourcepluginextension-2714357-1.patch"
 
 projects[migrate_source_csv][version] = "2.x-dev"
 projects[migrate_source_csv][type] = "module"
