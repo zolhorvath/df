@@ -336,7 +336,7 @@ projects[variable][version] = "2.5"
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 
-projects[views_megarow][version] = "1.5"
+projects[views_megarow][version] = "1.6"
 projects[views_megarow][type] = "module"
 projects[views_megarow][subdir] = "contrib"
 
