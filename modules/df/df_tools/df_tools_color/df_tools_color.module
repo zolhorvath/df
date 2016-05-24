@@ -148,7 +148,7 @@ function df_tools_color_preprocess_page(&$variables) {
 function df_tools_color_navbar() {
   global $theme;
   $items = array();
-  if ($theme == variable_get('theme_default')) {
+  if ($theme == variable_get('theme_default') && !path_is_admin(current_path())) {
     $path = drupal_get_path('module', 'df_tools_color');
     $items['df_tools_color'] = array(
       '#type' => 'navbar_item',
