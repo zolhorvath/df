@@ -57,7 +57,7 @@ function df_tools_vertical_tabs_form_node_form_alter(&$form, &$form_state, $form
 
   // Pre-render all actions and move them to dropbuttons.
   foreach ($form['actions'] as $key => $action) {
-    if ($action['#type'] == 'submit') {
+    if (is_array($action) && $action['#type'] == 'submit') {
       if ($key == 'preview' || $key == 'preview_changes') {
         $button_2[$key] = array(
           'title' => render($form['actions'][$key]),
