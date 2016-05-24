@@ -17,7 +17,6 @@ function df_admin_install() {
   \Drupal::configFactory()->getEditable('views.view.content')
   ->set('display.default.display_options.fields.node_bulk_form.selected_actions', ['node_publish_action', 'node_unpublish_action'])
   ->save();
-}
 
   // Create the rebuild.dat file to trigger a menu router rebuild on first use.
   $rebuild_path = 'public:///rebuild.dat';
