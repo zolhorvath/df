@@ -285,6 +285,10 @@ projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/i
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
 projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-19.patch"
+;allow for latest revision to be used in a views_infinite_scroll
+;https://www.drupal.org/node/2702041
+projects[workbench_moderation][patch][2702041] = "https://www.drupal.org/files/issues/2702041-20.patch"
+
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
