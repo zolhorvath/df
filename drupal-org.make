@@ -320,7 +320,7 @@ projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
 projects[adminimal_theme][download][type] = "git"
 projects[adminimal_theme][download][branch] = "8.x-1.x"
-projects[adminimal_theme][patch][2680689] = "https://gist.githubusercontent.com/briancwald/91ef2f8fc54475a91d6661169f6382e0/raw/f7472b9a876e447d2e497bdabb6a968687c37f5b/adminimal-merged-patch-from-2680689-and-2733517.patch"
+projects[adminimal_theme][patch][2733651] = "https://www.drupal.org/files/issues/adminimal-merged-patch-from-2680689-and-2733517.patch"
 
 projects[zurb-foundation][version] = "6.x-dev"
 projects[zurb-foundation][type] = "theme"
