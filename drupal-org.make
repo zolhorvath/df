@@ -23,9 +23,9 @@ projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][download][type] = "git"
 projects[better_formats][download][branch] = "8.x-1.x"
-; Fix field validation.
-; http://drupal.org/node/2709313
-projects[better_formats][patch][2709313] = "http://drupal.org/files/issues/bef_field_is_not-2709313-2.patch"
+; [meta] Utilize multiple Better Formats patches in DF without conflict
+; http://drupal.org/node/2737757
+projects[better_formats][patch][2737757] = "http://drupal.org/files/issues/2737757-2.patch"
 
 projects[block_class][version] = "1.x-dev"
 projects[block_class][type] = "module"
