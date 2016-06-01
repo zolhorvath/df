@@ -40,11 +40,9 @@ projects[dropzonejs][type] = "module"
 projects[dropzonejs][subdir] = "contrib"
 projects[dropzonejs][version] = "1.0-alpha1"
 
-projects[composer_manager][version] = "1.x-dev"
 projects[composer_manager][type] = "module"
 projects[composer_manager][subdir] = "contrib"
-projects[composer_manager][download][type] = "git"
-projects[composer_manager][download][branch] = "8.x-1.x"
+projects[composer_manager][version] = "1.0-rc2"
 
 projects[config_devel][version] = "1.x-dev"
 projects[config_devel][type] = "module"
