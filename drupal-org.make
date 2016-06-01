@@ -68,7 +68,7 @@ projects[content_browser][download][branch] = "8.x-1.x"
 
 projects[crop][type] = "module"
 projects[crop][subdir] = "contrib"
-projects[crop][version] = "1.0-alpha2"
+projects[crop][version] = "1.0-rc1"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
