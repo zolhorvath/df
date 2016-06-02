@@ -45,7 +45,7 @@ function df_tools_articles_install() {
 
   if (!\Drupal::service('config.installer')->isSyncing()) {
     // Add Article to the default shortcut set.
-    $shortcut = Shortcut::create('shortcut', array(
+    $shortcut = Shortcut::create(array(
       'shortcut_set' => 'default',
       'title' => t('Add Article'),
       'weight' => -2,

@@ -17,7 +17,7 @@ function df_tools_blocks_install() {
   
   if (!\Drupal::service('config.installer')->isSyncing()) {
     // Add Hero to the default shortcut set.
-    $shortcut = Shortcut::create('shortcut', array(
+    $shortcut = Shortcut::create(array(
       'shortcut_set' => 'default',
       'title' => t('Add Hero'),
       'weight' => -1,

@@ -36,7 +36,7 @@ function df_tools_user_install() {
 
   if (!\Drupal::service('config.installer')->isSyncing()) {
     // Populate the default shortcut set.
-    $shortcut = Shortcut::create('shortcut', array(
+    $shortcut = Shortcut::create(array(
       'shortcut_set' => 'default',
       'title' => t('All content'),
       'weight' => -20,
@@ -44,7 +44,7 @@ function df_tools_user_install() {
     ));
     $shortcut->save();
 
-    $shortcut = Shortcut::create('shortcut', array(
+    $shortcut = Shortcut::create(array(
       'shortcut_set' => 'default',
       'title' => t('All files'),
       'weight' => -19,

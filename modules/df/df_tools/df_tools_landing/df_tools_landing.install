@@ -13,7 +13,7 @@ use Drupal\shortcut\Entity\Shortcut;
 function df_tools_landing_install() {
   if (!\Drupal::service('config.installer')->isSyncing()) {
     // Add Landing Page to the default shortcut set.
-    $shortcut = Shortcut::create('shortcut', array(
+    $shortcut = Shortcut::create(array(
       'shortcut_set' => 'default',
       'title' => t('Add Landing Page'),
       'weight' => -3,
