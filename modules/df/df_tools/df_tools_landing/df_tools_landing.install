@@ -5,12 +5,14 @@
  * Set up the Landing Page content type for Demo Framework.
  */
 
+use Drupal\shortcut\Entity\Shortcut;
+
 /**
  * Implements hook_install().
  */
 function df_tools_landing_install() {
   // Add Ladning Page to the default shortcut set.
-  $shortcut = entity_create('shortcut', array(
+  $shortcut = Shortcut::create('shortcut', array(
     'shortcut_set' => 'default',
     'title' => t('Add Landing Page'),
     'weight' => -3,
