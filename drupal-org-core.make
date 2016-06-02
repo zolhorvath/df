@@ -17,10 +17,6 @@ projects[drupal][patch][2703669] = "https://www.drupal.org/files/issues/node-mig
 ; https://www.drupal.org/node/2635712
 projects[drupal][patch][2635712] = "http://drupal.org/files/issues/2635712-14.patch"
 
-; Method removing expired drupalSettings.ajax tries to remove settings when there is no ajax defined
-; https://www.drupal.org/node/2700495
-projects[drupal][patch][2700495] = "https://www.drupal.org/files/issues/core-js-ajax-views-2700495-5.patch"
-
 ; Can we test RefreshLess with simplytest.me?
 ; https://www.drupal.org/node/2695717
 projects[drupal][patch][2695717] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
