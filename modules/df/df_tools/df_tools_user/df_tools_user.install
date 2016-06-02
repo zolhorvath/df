@@ -18,9 +18,10 @@ function df_tools_user_install() {
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access comments', 'post comments', 'skip comment approval', 'search content', 'access user profiles'));
 
   // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
+  if ($user = User::load(1)) {
+    $user->roles[] = 'administrator';
+    $user->save();
+  }
 
   // Enable the Contact link in the footer menu.
   /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
@@ -63,8 +64,9 @@ function df_tools_user_install() {
     ->save();
 
   // Add values for the First and Last name fields to the admin user.
-  $user = User::load(1);
-  $user->set('field_first_name', 'Bill');
-  $user->set('field_last_name', 'James');
-  $user->save();
+  if ($user = User::load(1)) {
+    $user->set('field_first_name', 'Bill');
+    $user->set('field_last_name', 'James');
+    $user->save();
+  }
 }
