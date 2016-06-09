@@ -189,7 +189,7 @@
         "drupal/google_analytics": "2.0",
         "drupal/image_effects": "1.0-alpha2",
         "drupal/image_widget_crop": "1.0",
-        "drupal/import": "dev-1.0.x",
+        "drupal/import": "dev-2.0.x",
         "drupal/inline_entity_form": "1.0.x-dev",
         "drupal/layout_plugin": "1.0-alpha22",
         "drupal/leaflet": "1.0.x-dev",
