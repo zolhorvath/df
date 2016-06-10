@@ -271,9 +271,6 @@ projects[url_embed][type] = "module"
 projects[url_embed][subdir] = "contrib"
 projects[url_embed][download][type] = "git"
 projects[url_embed][download][branch] = "8.x-1.x"
-; Provide field formatters for core's URL field type
-; https://www.drupal.org/node/2546204
-projects[url_embed][patch][2546204] = "https://www.drupal.org/files/issues/2546204-6.patch"
 
 projects[views_infinite_scroll][version] = "1.0"
 projects[views_infinite_scroll][type] = "module"
