@@ -36,7 +36,7 @@ function drush_df_tools_config_df_cex() {
   // Allow user to choose the destination.
   $choices = drush_map_assoc(array_keys($config_directories));
   unset($choices[CONFIG_ACTIVE_DIRECTORY]);
-  if (!isset($destination) && count($choices) >= 2) {
+  if (count($choices) >= 2) {
     $destination = drush_choice($choices, dt('Choose a destination.'));
     if (empty($destination)) {
       return drush_user_abort();
@@ -59,6 +59,7 @@ function drush_df_tools_config_df_cex() {
   // If config was exported by _drush_config_export(), cycle through the config
   // CRUD operations and attempt to automatically update config.
   if ($result) {
+    $storage_filters = drush_config_get_storage_filters();
     $destination_storage = new FileStorage($destination_dir);
     // If there are any filters, then attach them to the destination storage
     if (!empty($storage_filters)) {

@@ -12,6 +12,7 @@ build
 build.properties
 
 # Composer
+docroot
 vendor
 composer.lock
 
