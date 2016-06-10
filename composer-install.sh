@@ -7,7 +7,7 @@
 TARGET=$1
 SCENARIO=$2
 
-# Move into the target directory.
+# Ensure the target directory exists.
 if [ ! -r $TARGET ]; then
   mkdir -p $TARGET
 fi
