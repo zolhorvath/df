@@ -195,7 +195,7 @@
         "drupal/features": "3.0-beta5",
         "drupal/field_group": "1.0-rc4",
         "drupal/file_browser": "1.0.x-dev",
-        "drupal/file_entity": "2.0.x-dev",
+        "drupal/file_entity": "2.0-beta1",
         "drupal/geocoder": "2.0-alpha3",
         "drupal/geofield": "1.0.x-dev",
         "drupal/geophp": "1.0.x-dev",

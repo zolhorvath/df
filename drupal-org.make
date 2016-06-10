@@ -100,11 +100,9 @@ projects[file_browser][subdir] = "contrib"
 projects[file_browser][download][type] = "git"
 projects[file_browser][download][branch] = "8.x-1.x"
 
-projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][download][type] = "git"
-projects[file_entity][download][branch] = "8.x-2.x"
+projects[file_entity][version] = "2.0-beta1"
 
 projects[geocoder][type] = "module"
 projects[geocoder][subdir] = "contrib"
