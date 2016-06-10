@@ -18,15 +18,19 @@ if [ -d $TARGET ]; then
 fi
 
 # Use Composer to attempt to install dependencies.
-if [ -r composer.lock ]; then
-  rm -rf composer.lock
-fi
 composer install $@
 
-# Move vendor and docroot folders to target directory.
-if [ -r vendor ]; then
-  mv vendor $TARGET/.
+# Move build files to target directory.
+mkdir -p $TARGET
+if [ -r composer.lock ]; then
+  mv composer.lock $TARGET/.
 fi
 if [ -r docroot ]; then
   mv docroot $TARGET/.
+fi
+if [ -r vendor ]; then
+  mv vendor $TARGET/.
+fi
+if [ -r bin ]; then
+  mv bin $TARGET/.
 fi
