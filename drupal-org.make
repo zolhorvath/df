@@ -88,7 +88,7 @@ projects[entity_embed][version] = "1.0-alpha1"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "3.0-beta3"
+projects[features][version] = "3.0-beta5"
 
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
@@ -212,6 +212,9 @@ projects[page_manager][version] = "1.0-alpha23"
 ; Rename the core "Page with blocks" admin_label and sort display variants
 ; https://www.drupal.org/node/2503947
 projects[page_manager][patch][2503947] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
+; Make Page Manager compatible with Drupal Packagist and Drupal.org
+; https://www.drupal.org/node/2746149
+projects[page_manager][patch][2746149] = "https://www.drupal.org/files/issues/2746149-2.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
@@ -235,9 +238,11 @@ projects[panelizer][version] = "3.0-alpha2"
 ; https://www.drupal.org/node/2700597
 projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
 
+projects[pathauto][version] = "1.x-dev"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.0-alpha3"
+projects[pathauto][download][type] = "git"
+projects[pathauto][download][branch] = "8.x-1.x"
 
 projects[refreshless][type] = "module"
 projects[refreshless][subdir] = "contrib"
