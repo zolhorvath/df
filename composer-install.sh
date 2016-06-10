@@ -1,16 +1,14 @@
 #!/bin/sh
 
 # Use: Run this file to install Demo Framework and optionally enable a scenario.
-# Example: ./install.sh ../d8df dfs_fin
+# Example: ./composer-install.sh ../d8df dfs_fin
 
 TARGET=$1
 SCENARIO=$2
 
 # Ensure the target directory exists.
-if [ ! -r $TARGET/docroot ]; then
+if [ -r $TARGET/docroot ]; then
   cd $TARGET/docroot
-else
-  return
 fi
 
 # Install the profile.

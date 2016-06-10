@@ -34,3 +34,8 @@ fi
 if [ -r bin ]; then
   mv bin $TARGET/.
 fi
+
+# Move into newly built directory
+if [ -r $TARGET/docroot ]; then
+  cd $TARGET/docroot
+fi
