@@ -5,6 +5,15 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "require-dev": {
+        "drupal/drupal-extension": "~3.0",
+        "lakion/mink-debug-extension": "^1.0.3",
+        "symfony/dependency-injection": "^2.8.2",
+        "symfony/event-dispatcher": "^2.8.2"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
     "repositories": [
         {   "type": "composer",
             "url": "https://packages.drupal.org/8"
