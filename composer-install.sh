@@ -13,9 +13,6 @@ else
   return
 fi
 
-# Clone zurb-foundation as zurb_foundation (d.o. packaging cannot currently find this repo)
-git clone --branch 8.x-6.x https://git.drupal.org/project/zurb-foundation.git profiles/df/themes/contrib/zurb_foundation
-
 # Install the profile.
 if [ ! -r sites/default/settings.php ]; then
   echo "No DB connection for docroot: $TARGET. Ensure settings.php is configured before installation."
