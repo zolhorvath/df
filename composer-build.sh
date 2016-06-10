@@ -21,15 +21,12 @@ fi
 if [ -r composer.lock ]; then
   rm -rf composer.lock
 fi
-
 composer install $@
 
+# Move vendor and docroot folders to target directory.
 if [ -r vendor ]; then
   mv vendor $TARGET/.
 fi
-
 if [ -r docroot ]; then
-  mkdir -p $TARGET/docroot
-  cp -R docroot/* $TARGET/.
-  cp -R docroot/.* $TARGET/.
+  mv docroot $TARGET/.
 fi
