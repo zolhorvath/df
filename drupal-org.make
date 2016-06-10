@@ -212,6 +212,9 @@ projects[page_manager][version] = "1.0-alpha23"
 ; Rename the core "Page with blocks" admin_label and sort display variants
 ; https://www.drupal.org/node/2503947
 projects[page_manager][patch][2503947] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
+; Make Page Manager compatible with Drupal Packagist and Drupal.org
+; https://www.drupal.org/node/2746149
+projects[page_manager][patch][2746149] = "https://www.drupal.org/files/issues/2746149-2.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"

@@ -143,7 +143,9 @@
             },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
-                "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
+                "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
+                "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149":
+                "https://www.drupal.org/files/issues/2746149-2.patch"
             },
             "drupal/url_embed": {
                 "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597":
