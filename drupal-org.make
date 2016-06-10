@@ -235,9 +235,11 @@ projects[panelizer][version] = "3.0-alpha2"
 ; https://www.drupal.org/node/2700597
 projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
 
+projects[pathauto][version] = "1.x-dev"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.0-alpha3"
+projects[pathauto][download][type] = "git"
+projects[pathauto][download][branch] = "8.x-1.x"
 
 projects[refreshless][type] = "module"
 projects[refreshless][subdir] = "contrib"

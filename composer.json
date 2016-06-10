@@ -213,7 +213,7 @@
         "drupal/page_manager": "1.0-alpha23",
         "drupal/panels": "3.0.x-dev",
         "drupal/panelizer": "3.0-alpha2",
-        "drupal/pathauto": "1.0-alpha3",
+        "drupal/pathauto": "1.0.x-dev",
         "drupal/refreshless": "1.0-alpha3",
         "drupal/restui": "1.0.x-dev",
         "drupal/scenarios": "1.0.x-dev",
