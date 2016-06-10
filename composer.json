@@ -6,10 +6,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drupal/drupal-extension": "~3.0",
-        "lakion/mink-debug-extension": "^1.0.3",
-        "symfony/dependency-injection": "^2.8.2",
-        "symfony/event-dispatcher": "^2.8.2"
+        "drush/drush": "^9.0",
+        "drupal/drupal-extension": "^3.1",
+        "jakoch/phantomjs-installer": "1.9.8",
+        "behat/behat": "^3.0",
+        "drupal/coder": "8.*",
+        "lakion/mink-debug-extension": "^1.0.3"
     },
     "config": {
         "bin-dir": "bin/"
@@ -233,6 +235,7 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS",
             "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr libraries modules/contrib themes/contrib"
         ],
         "post-update-cmd": [
