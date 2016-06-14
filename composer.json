@@ -104,7 +104,7 @@
             "docroot/core": [
                 "type:drupal-core"
             ],
-            "libraries/contrib/{$name}": [
+            "docroot/libraries/{$name}": [
                 "type:drupal-library"
             ],
             "modules/contrib/{$name}": [
@@ -236,10 +236,10 @@
     "scripts": {
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
-            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr libraries modules/contrib themes/contrib"
+            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr modules/contrib themes/contrib"
         ],
         "post-update-cmd": [
-            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr libraries modules/contrib themes/contrib"
+            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr modules/contrib themes/contrib"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     }
