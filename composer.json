@@ -115,7 +115,7 @@
             ]
         },
         "patches": {
-            "drupal/drupal": {
+            "drupal/core": {
                 "Add authentication support for Views | https://www.drupal.org/node/2228141":
                 "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch",
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
