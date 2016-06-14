@@ -9,7 +9,7 @@ Feature: Demo Framework: Moderation
     Given I am logged in as a user with the "curator" role
       When I go to "/node/add/article"
         Then I fill in "edit-title-0-value" with "A rant about sports"
-          And I maximize the browser window
+          And I maximize the window
           And I fill in "body" with "A really long diatribe regarding why St. Louis needed to get rid of Pujols so that they could rebuild for the future."
           And I press "Save and Create New Draft"
           Then I should see "A rant about sports"

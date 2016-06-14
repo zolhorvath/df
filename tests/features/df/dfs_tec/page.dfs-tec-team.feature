@@ -7,7 +7,7 @@ Feature: DFS TEC: Team page
   Scenario: Team: Default
     Given I am at "/team"
     Then I should see the heading "Your Team"
-    And I should see the "form" element with the "class" attribute set to "views-exposed-form"
+    And The element "form.views-exposed-form" should exist
     And I should see "Bob Smith"
     And I should see "CEO"
     And I should see "bobsmith@tec.com"
