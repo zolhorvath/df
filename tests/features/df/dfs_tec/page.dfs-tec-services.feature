@@ -7,7 +7,7 @@ Feature: DFS TEC: Services page
   Scenario: Services: Default
     Given I am at "/services"
     Then I should see the heading "Jump Start Your Business"
-    And I should see "Digital Consulting" in the "secondary" region
-    And I should see "Business Transformation" in the "secondary" region
-    And I should see "System Integration" in the "secondary" region
-    And I should see "Research Analysis" in the "secondary" region
+    And I should see "Digital Consulting"
+    And I should see "Business Transformation"
+    And I should see "System Integration"
+    And I should see "Research Analysis"
