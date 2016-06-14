@@ -6,7 +6,7 @@ Feature: Demo Framework: Moderation
  
   @api @javascript
   Scenario: Article workflow
-    Given I am logged in as the user "KatieAuthor"
+    Given I am logged in as a user with the "curator" role
       When I go to "/node/add/article"
         Then I fill in "edit-title-0-value" with "A rant about sports"
           And I maximize the browser window
@@ -18,7 +18,7 @@ Feature: Demo Framework: Moderation
           And I should see "Change Layout"
           And I should see "Manage Content"
           And I should see "Edit"
-      When I click on the element with xpath "//a[@id='moderate-mmenu-link']"
+      When I click the "a#moderate-mmenu-link" element
         Then I should see "Moderate Article"
           And I should see "Currently Viewing: Draft"
           And I should see "View"
