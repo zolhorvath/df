@@ -135,10 +135,6 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
-            "drupal/lite": {
-                "Lite uses the wrong path | https://www.drupal.org/node/2718189":
-                "https://www.drupal.org/files/issues/2718189-3.patch"
-            },
             "drupal/migrate_plus": {
                 "Update migrate plus migrate URL plugin and SourcePluginExtension to work with 8.1.0 | https://www.drupal.org/node/2714357":
                 "https://www.drupal.org/files/issues/migrate_url_sourcepluginextension-2714357-1.patch"

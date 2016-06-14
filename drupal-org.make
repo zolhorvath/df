@@ -171,9 +171,6 @@ projects[lite][type] = "module"
 projects[lite][subdir] = "contrib"
 projects[lite][download][type] = "git"
 projects[lite][download][branch] = "8.x-1.x"
-; Lite uses the wrong path
-; https://www.drupal.org/node/2718189
-projects[lite][patch][2718189] = "https://www.drupal.org/files/issues/2718189-3.patch"
 
 projects[moderate_mmenu][version] = "1.x-dev"
 projects[moderate_mmenu][type] = "module"
@@ -307,6 +304,7 @@ libraries[imagesloaded][destination] = "../../libraries"
 libraries[imagesloaded][download][type] = "get"
 libraries[imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip"
 
+libraries[ckeditor-track-changes][destination] = "../../libraries"
 libraries[ckeditor-track-changes][download][type] = "get"
 libraries[ckeditor-track-changes][download][url] = "https://github.com/loopindex/ckeditor-track-changes/archive/fe309f5f5ea98ce739bf21e06f34d1d935d0c0ad.zip"
 libraries[ckeditor-track-changes][directory_name] = "lite"
