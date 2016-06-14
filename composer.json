@@ -88,7 +88,7 @@
         {
             "type": "package",
             "package": {
-                "name": "loopindex/ckeditor-track-changes",
+                "name": "lite",
                 "version": "dev-master",
                 "type": "drupal-library",
                 "source": {
@@ -163,7 +163,7 @@
                 "Fix styling so that admin_toolbar can be used | https://www.drupal.org/node/2680689":
                 "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-7.patch"
             },
-            "loopindex/ckeditor-track-changes": {
+            "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
@@ -230,7 +230,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "enyo/dropzone": "4.2.0",
         "kenwheeler/slick": "1.5.0",
-        "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
+        "lite": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
         "mjolnic/fontawesome-iconpicker": "1.2.0"
     },
     "scripts": {
