@@ -21,5 +21,3 @@ else
     drush es $SCENARIO
   fi
 fi
-
-cd -
