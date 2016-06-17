@@ -125,7 +125,9 @@
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Views which load the same entity type... https://www.drupal.org/node/2714989":
-                "https://www.drupal.org/files/issues/2714989-19.patch"
+                "https://www.drupal.org/files/issues/2714989-19.patch",
+                "Disable body-level scrolling when a dialog is open as a modal | https://www.drupal.org/node/2707291":
+                "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch"
             },
             "drupal/better_formats": {
                 "[meta] Utilize multiple Better Formats patches in DF without conflict | http://drupal.org/node/2737757":
