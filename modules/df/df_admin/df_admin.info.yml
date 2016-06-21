@@ -65,5 +65,3 @@ dependencies:
   - url_embed
   - views_ui
   - workbench_moderation
-themes:
-  - adminimal_theme
