@@ -108,6 +108,9 @@
             "docroot/core": [
                 "type:drupal-core"
             ],
+            "docroot/profiles": [
+                "type:drupal-profile"
+            ],
             "docroot/libraries/{$name}": [
                 "type:drupal-library"
             ],
@@ -159,6 +162,10 @@
                 "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-3.patch"
             },
             "drupal/panels": {
+                "Allow other modules to disable the IPE based on custom logic | https://www.drupal.org/node/2667754":
+                "https://www.drupal.org/files/issues/2667754-3.patch",
+                "Editing layouts via IPE affects other users editing content until custom is selected | https://www.drupal.org/node/2701433":
+                "https://www.drupal.org/files/issues/bandaid.patch",
                 "IPE's cancel button is easy to mistake for a button to close the tray (rather than throw away all changes). | https://www.drupal.org/node/2636490":
                 "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
             },
@@ -227,8 +234,8 @@
         "drupal/migrate_tools": "8.2.0-beta1",
         "drupal/oauth": "8.1.x-dev",
         "drupal/page_manager": "8.1.0-alpha23",
-        "drupal/panels": "8.3.0-beta4",
-        "drupal/panelizer": "8.3.0-alpha2",
+        "drupal/panels": "8.x-3.x-dev as 8.3.0-beta4",
+        "drupal/panelizer": "8.x-3.x-dev as 8.3.0-alpha2",
         "drupal/pathauto": "8.1.0-alpha3",
         "drupal/refreshless": "8.1.0-alpha3",
         "drupal/restui": "8.1.x-dev",
