@@ -3,7 +3,8 @@ type: profile
 description: 'Architects start here.'
 version: VERSION
 core: 8.x
-exclusive: 1
+distribution:
+  name: Demo Framework
 dependencies:
   - contact
   - dblog

@@ -34,10 +34,3 @@ function dfs_tec_install() {
   $data['content']['field_image']['settings']['image_style'] = '';
   $article_config->setData($data)->save();
 }
-
-/**
- * Implements hook_uninstall().
- */
-function dfs_tec_uninstall() {
-
-}

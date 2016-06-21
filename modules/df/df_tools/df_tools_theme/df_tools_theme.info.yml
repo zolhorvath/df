@@ -7,6 +7,3 @@ dependencies:
   - file_browser
   - help
   - views_infinite_scroll
-themes:
-  - adminimal_theme
-  - zurb_foundation

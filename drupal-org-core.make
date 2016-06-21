@@ -24,3 +24,7 @@ projects[drupal][patch][2695717] = "https://www.drupal.org/files/issues/refreshl
 ; Views which load the same entity type as entity and non default revision cause fatal error
 ; https://www.drupal.org/node/2714989
 projects[drupal][patch][2714989] = "https://www.drupal.org/files/issues/2714989-19.patch"
+
+; Disable body-level scrolling when a dialog is open as a modal
+; https://www.drupal.org/node/2707291
+projects[drupal][patch][2707291] = "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch"
