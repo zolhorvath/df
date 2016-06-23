@@ -13,3 +13,4 @@ dependencies:
   - df_tools_translation
   - df_tools_user
   - import
+scenarios_theme: tec
