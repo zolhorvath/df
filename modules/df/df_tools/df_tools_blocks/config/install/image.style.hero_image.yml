@@ -25,5 +25,5 @@ effects:
       x_offset: 0
       y_offset: 0
       opacity: 100
-      watermark_image: profiles/demo_framework/modules/df/df_tools/df_tools_blocks/images/overlay.png
+      watermark_image: profiles/df/modules/df/df_tools/df_tools_blocks/images/overlay.png
       watermark_scale: null
