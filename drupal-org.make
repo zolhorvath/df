@@ -257,6 +257,9 @@ projects[scenarios][type] = "module"
 projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
 projects[scenarios][download][branch] = "8.x-2.x"
+; Add support for theme dependencies
+; https://www.drupal.org/node/2754525
+projects[scenarios][patch][2754525] = "https://www.drupal.org/files/issues/scenario-theme-dependency-2754525-2.patch"
 
 projects[scheduler][type] = "module"
 projects[scheduler][subdir] = "contrib"
