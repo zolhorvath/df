@@ -36,6 +36,8 @@ function dfs_base_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function dfs_base_preprocess_page(&$variables) {
+	// remove main_grid classes since we use flex-grid and it causes layout issues with empty regions
+	$variables['main_grid'] = " ";
 }
 
 /**
