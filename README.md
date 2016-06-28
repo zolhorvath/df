@@ -5,23 +5,31 @@ DF is a distribution consisting of modules, themes and libraries. It highlights 
 
 ### Installation
 
-Installation currently only supported via Drush commands. First, build the profile using Drush make.
+Although Drush make files are still made available, we recommend using Composer to install DF.
 
-  ``drush make build-df.make ~/Destination/docroot``
+  ``composer install``
 
-Use Composer Manager to install additional dependencies in the Drupal 8 docroot.
+DF and its dependencies will be downloaded into the current working directory. If nothing fails, you will see a 'docroot' with Drupal in it.
 
-  ``php profiles/df/modules/contrib/composer_manager/scripts/init.php && composer drupal-update``
-  
-  Note: depending on how you have gitignore set up, you may need to run ``composer drupal-update --no-dev`` if you get a runtime error on drupal-update.
+We provide a build script that wraps the composer install command and moves everything into a target directory as well.
 
-Use the ``site-install`` command to install Drupal with the DF installation profile.
+  ``./build.sh ~/Destination``
+
+You can also add in commands for composer here. We suggest using the --no-dev option unless you want to run behat and have DF manage your version of Drush used on the site.
+
+  ``./build.sh ~/Destination --no-dev``
+
+At this point, you will need to prepare your settings.php file just as you would for a normal Drupal install.
+
+We recommend Acquia Dev Desktop running ``PHP 5_6`` and using the ``Import local Drupal site...`` function.
+
+Now use the ``site-install`` command to install Drupal with the DF installation profile.
 
   ``drush si df``
 
 Enable a DF Scenario using the ``enable-scenario`` command.
 
-  ``drush es dfs_dev``
+  ``drush es dfs_tec``
 
 If everything worked correctly, you should see console output that some migrations ran.
 
@@ -31,7 +39,7 @@ You may now login to your site.
 
 You may also reset the content of a DF Scenario if it is enabled.
 
-  ``drush rs dfs_dev``
+  ``drush rs dfs_tec``
   
 ### Using the Zurb Foundation Sub Theme
 
