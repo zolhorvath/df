@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Usage ./build.sh ~/Sites/demo.local --dev
-CALLPATH=`dirname $0`
 TARGET=$1
 shift
 
@@ -18,24 +17,9 @@ if [ -d $TARGET ]; then
 fi
 
 # Use Composer to attempt to install dependencies.
+rm -rf vendor
+composer clear-cache
 composer install $@
 
-# Move build files to target directory.
-mkdir -p $TARGET
-if [ -r composer.lock ]; then
-  mv composer.lock $TARGET/.
-fi
-if [ -r docroot ]; then
-  mv docroot $TARGET/.
-fi
-if [ -r vendor ]; then
-  mv vendor $TARGET/.
-fi
-if [ -r bin ]; then
-  mv bin $TARGET/.
-fi
-
-# Move into newly built directory
-if [ -r $TARGET/docroot ]; then
-  cd $TARGET/docroot
-fi
+# Copy build files to target directory.
+rsync -a . $TARGET
