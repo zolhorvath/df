@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Use: Run this file to install Demo Framework and optionally enable a scenario.
-# Example: ./composer-install.sh ../d8df dfs_fin
+# Example: ./install.sh ../d8df dfs_tec
 
 TARGET=$1
 SCENARIO=$2
