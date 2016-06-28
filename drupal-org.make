@@ -288,9 +288,6 @@ projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/i
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
 projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-19.patch"
-;allow for latest revision to be used in views
-;https://www.drupal.org/node/2702041
-projects[workbench_moderation][patch][2702041] = "https://www.drupal.org/files/issues/2702041-20.patch"
 ; Add basic support for QuickEdit
 ;https://www.drupal.org/node/2749503
 projects[workbench_moderation][patch][2749503] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
