@@ -7,6 +7,7 @@ dependencies:
   - df_tools_articles
   - df_tools_config
   - df_tools_display
+  - df_tools_editor
   - df_tools_landing
   - df_tools_moderation
   - df_tools_translation
