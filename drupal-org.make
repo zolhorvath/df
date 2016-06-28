@@ -8,7 +8,7 @@ projects[address][version] = "1.0-beta3"
 
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
-projects[addtoany][version] = "1.3"
+projects[addtoany][version] = "1.4"
 
 projects[admin_toolbar][version] ="1.x-dev"
 projects[admin_toolbar][type] ="module"
@@ -37,10 +37,6 @@ projects[block_class][patch][2509142] = "http://drupal.org/files/issues/add-page
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][subdir] = "contrib"
 projects[dropzonejs][version] = "1.0-alpha1"
-
-projects[composer_manager][type] = "module"
-projects[composer_manager][subdir] = "contrib"
-projects[composer_manager][version] = "1.0-rc2"
 
 projects[config_devel][version] = "1.x-dev"
 projects[config_devel][type] = "module"
