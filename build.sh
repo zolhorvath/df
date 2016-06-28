@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Usage ./build.sh ~/Sites/demo.local --working-copy
-MAKEFILE='build-df.make'
+# Usage ./build.sh ~/Sites/demo.local --dev
 CALLPATH=`dirname $0`
 TARGET=$1
 shift
@@ -18,12 +17,25 @@ if [ -d $TARGET ]; then
   yes "yes" | rm -rf $TARGET
 fi
 
-if [[ ! -z "$@" ]]; then
-  echo "Running drush make with additional params: $@"
-  drush make $CALLPATH/$MAKEFILE $TARGET $@
-else
-  drush make $CALLPATH/$MAKEFILE $TARGET --concurrency=5
+# Use Composer to attempt to install dependencies.
+composer install $@
+
+# Move build files to target directory.
+mkdir -p $TARGET
+if [ -r composer.lock ]; then
+  mv composer.lock $TARGET/.
+fi
+if [ -r docroot ]; then
+  mv docroot $TARGET/.
+fi
+if [ -r vendor ]; then
+  mv vendor $TARGET/.
+fi
+if [ -r bin ]; then
+  mv bin $TARGET/.
 fi
 
-# Rename zurb-foundation to zurb_foundation (d.o. packaging does not allow this via make)
-mv $TARGET/profiles/df/themes/contrib/zurb-foundation $TARGET/profiles/df/themes/contrib/zurb_foundation
+# Move into newly built directory
+if [ -r $TARGET/docroot ]; then
+  cd $TARGET/docroot
+fi
