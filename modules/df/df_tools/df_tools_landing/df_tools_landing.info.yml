@@ -12,4 +12,3 @@ dependencies:
   - path
   - user
   - workbench_moderation
-version: 8.x-1.0
