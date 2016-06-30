@@ -60,25 +60,42 @@ if you need to update the vendor js, I added in some gulp files that make that e
 Once that is installed, start the gulp file which will watch for scss changes:
 - ``npm start``
 
-
 ### Behat tests
 
-Install the drupal-extension for mink/behat from the DF profile.
+When built via Composer, DF includes a copy of Behat, Mink and the Drupal
+Extension to Behat and Mink in the /bin folder located outside of the docroot.
+Alternatively, you may install and use the Drupal Extension globally by
+following the instructions at:
+http://behat-drupal-extension.readthedocs.io/en/3.1/globalinstall.html
 
-  ``cd profiles/df/tests && composer install``
+Selenium is required to run the JavaScript tests. You can download Selenium from
+http://www.seleniumhq.org and run it with:
 
-Set up a behat.yml file replacing ``@BASE_URL@`` with the URL to your site and ``@DRUPAL_ROOT@`` with the path to your site on disk.
+``java -jar selenium.jar``
 
-  ``cp behat.template.yml behat.yml``
+Note that you may require a newer version of Java which can be downloaded from
+http://www.oracle.com/technetwork/java/javase/downloads/index.html.
+
+Before running any tests you must edit the behat.local.yml file, located within
+DRUPAL_ROOT/profiles/df, replacing "base_url" with the URL to your site.
+
+In order to run the tests, you must be in the DRUPAL_ROOT/profiles/df directory.
+
+  ``cd DRUPAL_ROOT/profiles/df``
 
 Check that behat is installed and running.
 
-  ``bin/behat --help``
+  ``behat --help``
 
 Execute a batch of tagged features that apply to all DF Scenarios.
 
-  ``bin/behat --tags=df``
+  ``behat --tags=df``
 
 Execute a batch of tagged features for a specific DF Scenario.
 
-  ``bin/behat --tags=dfs_dev``
+  ``behat --tags=dfs_dev``
+
+If you're using the copy of Behat included with DF, then substitute "behat" in
+the above examples with:
+
+``/path/to/MYPROJECT/bin/behat``
