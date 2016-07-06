@@ -16,8 +16,13 @@ if [ -d $TARGET ]; then
   yes "yes" | rm -rf $TARGET
 fi
 
+# Remove existing build files.
+if [ -d docroot/sites ]; then
+  chmod -R 777 docroot/sites
+fi
+rm -rf bin composer.lock docroot vendor
+
 # Use Composer to attempt to install dependencies.
-rm -rf docroot vendor
 composer clear-cache
 composer install $@
 
