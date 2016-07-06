@@ -17,7 +17,7 @@ if [ -d $TARGET ]; then
 fi
 
 # Use Composer to attempt to install dependencies.
-rm -rf vendor
+rm -rf docroot vendor
 composer clear-cache
 composer install $@
 
