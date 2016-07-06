@@ -1,12 +1,9 @@
-uuid: ec82a19e-253f-4e0a-8ae1-975522acfb78
 langcode: en
 status: true
 dependencies:
   module:
     - entity_embed
     - file
-_core:
-  default_config_hash: _DTXZl5tb4qVTEqXQefcc7xHemYoasLQl4e_RLCqUoU
 label: File
 id: file
 type_id: entity

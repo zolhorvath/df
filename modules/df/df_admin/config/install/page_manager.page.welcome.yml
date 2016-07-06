@@ -1,9 +1,6 @@
-uuid: 34e9dc34-dd0d-4794-a264-7930968d7881
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: f8R2t8eRltaNJVsqa-P6nU5dDOdb0YAwfvMsG46qUhY
 id: welcome
 label: Welcome
 description: null

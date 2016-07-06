@@ -1,4 +1,3 @@
-uuid: 3924bc5d-717d-4486-b6fe-1e2ed469fbd2
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
   module:
     - text
     - workbench_moderation
-_core:
-  default_config_hash: kv6gwb6PJ8DcMSj5kgsd52qCIHl1xkxBDL5_AMm-g8k
 id: block_content.basic.default
 targetEntityType: block_content
 bundle: basic

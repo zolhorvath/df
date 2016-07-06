@@ -1,4 +1,3 @@
-uuid: 3acd695e-c720-414a-bed0-658ac60cd213
 langcode: en
 status: true
 dependencies:
@@ -43,8 +42,6 @@ third_party_settings:
         storage_type: panelizer_default
         storage_id: 'node:page:full:default'
         builder: ipe
-_core:
-  default_config_hash: bTx2Eqg8_JYg2G6Km-UvoKyftPMsF2dmCdJd-l0AGIg
 id: node.page.default
 targetEntityType: node
 bundle: page
