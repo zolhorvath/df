@@ -3,7 +3,7 @@ core = 8.x
 
 ; Drupal Core
 projects[drupal][type] = "core"
-projects[drupal][version] = "8.1.3"
+projects[drupal][version] = "8.1.4"
 
 ; Add authentication support for Views
 ; https://www.drupal.org/node/2228141
@@ -20,10 +20,6 @@ projects[drupal][patch][2635712] = "http://drupal.org/files/issues/2635712-14.pa
 ; Can we test RefreshLess with simplytest.me?
 ; https://www.drupal.org/node/2695717
 projects[drupal][patch][2695717] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
-
-; Views which load the same entity type as entity and non default revision cause fatal error
-; https://www.drupal.org/node/2714989
-projects[drupal][patch][2714989] = "https://www.drupal.org/files/issues/2714989-19.patch"
 
 ; Disable body-level scrolling when a dialog is open as a modal
 ; https://www.drupal.org/node/2707291
