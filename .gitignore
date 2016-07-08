@@ -15,7 +15,6 @@ build.properties
 bin
 docroot
 vendor
-composer.lock
 
 # Behat
 tests/bin
