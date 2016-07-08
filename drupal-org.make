@@ -99,12 +99,12 @@ projects[entity_browser][patch][1] = "https://www.drupal.org/files/issues/273884
 projects[entity_embed][type] = "module"
 projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][url] = "https://git.drupal.org/project/entity_embed.git"
-projects[entity_embed][download][tag] = "8.x-1.0-alpha1"
+projects[entity_embed][download][tag] = "8.x-1.0-alpha2"
 
 projects[features][type] = "module"
 projects[features][download][type] = "git"
 projects[features][download][url] = "https://git.drupal.org/project/features"
-projects[features][download][tag] = "8.x-3.0-beta5"
+projects[features][download][tag] = "8.x-3.0-beta6"
 
 projects[field_group][type] = "module"
 projects[field_group][download][type] = "git"
@@ -125,7 +125,7 @@ projects[file_entity][download][tag] = "8.x-2.0-beta1"
 projects[geocoder][type] = "module"
 projects[geocoder][download][type] = "git"
 projects[geocoder][download][url] = "https://git.drupal.org/project/geocoder"
-projects[geocoder][download][tag] = "8.x-2.0-alpha3"
+projects[geocoder][download][tag] = "8.x-2.0-alpha4"
 
 projects[geofield][type] = "module"
 projects[geofield][download][type] = "git"

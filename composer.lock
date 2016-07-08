@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d898d272175e882e4974ac725d601772",
-    "content-hash": "fe60bd153ed3ef139dcca77c88461b0a",
+    "hash": "b9452a7e75ed37f5cf0c87c9605ac071",
+    "content-hash": "c90929161c3ebed75dae4d396b5415dd",
     "packages": [
         {
             "name": "commerceguys/addressing",
@@ -1399,12 +1399,12 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch",
                     "Add authentication support for Views | https://www.drupal.org/node/2228141": "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch",
                     "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception.patch",
                     "Quickedit cant edit images | https://www.drupal.org/node/2635712": "https://www.drupal.org/files/issues/2635712-14.patch",
                     "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
-                    "Disable body-level scrolling when a dialog is open as a modal | https://www.drupal.org/node/2707291": "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch"
+                    "Disable body-level scrolling when a dialog is open as a modal | https://www.drupal.org/node/2707291": "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch",
+                    "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
                 }
             },
             "autoload": {
@@ -1682,15 +1682,15 @@
         },
         {
             "name": "drupal/entity_embed",
-            "version": "8.1.0-alpha1",
+            "version": "8.1.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_embed.git",
-                "reference": "a40f556feaf921980f69d9fe4ccbc1ef2e325edb"
+                "reference": "c248cda0da575d6a9f5f979497852137a6d07811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-alpha1.zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-alpha2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1712,19 +1712,19 @@
             ],
             "description": "Allows entities to be embedded using a text editor.",
             "homepage": "https://www.drupal.org/project/entity_embed",
-            "time": "2016-04-14 05:38:14"
+            "time": "2016-07-05 12:08:46"
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta5",
+            "version": "8.3.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6"
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta5.zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1751,7 +1751,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-06-09 14:12:34"
+            "time": "2016-07-08 12:53:14"
         },
         {
             "name": "drupal/field_group",
@@ -1872,15 +1872,15 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "8.2.0-alpha3",
+            "version": "8.2.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "a742a6d6c8976516a768d8b9bc680c3d96541ecd"
+                "reference": "1cfed9a0d716d18df229bbdacced8295455a39eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha3.zip",
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1896,8 +1896,9 @@
             "suggest": {
                 "drupal/address": "Required by drupal/geocoder_address",
                 "drupal/core": "Required by drupal/geocoder_address, drupal/geocoder_field, drupal/geocoder_geofield",
-                "drupal/geocoder_field": "Required by drupal/geocoder_geofield",
-                "drupal/geophp": "Required by drupal/geocoder_geofield"
+                "drupal/field": "Required by drupal/geocoder_field",
+                "drupal/geocoder_field": "Required by drupal/geocoder_address, drupal/geocoder_geofield",
+                "drupal/geofield": "Required by drupal/geocoder_geofield"
             },
             "type": "drupal-module",
             "extra": {
@@ -1911,7 +1912,7 @@
             ],
             "description": "An API to geocode and reverse geocode data into other GIS data types.",
             "homepage": "https://www.drupal.org/project/geocoder",
-            "time": "2016-01-31 19:42:33"
+            "time": "2016-05-20 20:32:02"
         },
         {
             "name": "drupal/geofield",
@@ -2925,9 +2926,9 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch",
                     "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947": "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
-                    "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149": "https://www.drupal.org/files/issues/2746149-2.patch"
+                    "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149": "https://www.drupal.org/files/issues/2746149-2.patch",
+                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2971,13 +2972,11 @@
                     "dev-8.x-3.x": "8.3.x-dev"
                 },
                 "patches_applied": {
+                    "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597": "https://www.drupal.org/files/issues/2546204-6.patch",
                     "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
                     "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
                     "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                    "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch",
-                    "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597": "https://www.drupal.org/files/issues/2546204-6.patch",
-                    "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163": "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch",
-                    "Undefined index: #attached | https://www.drupal.org/node/2760051": "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
+                    "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3023,8 +3022,7 @@
                     "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
                     "2667754 - Allow other modules to disable the IPE based on custom logic": "https://www.drupal.org/files/issues/2667754-3.patch",
                     "Bandaid tempstore patch": "https://www.drupal.org/files/issues/bandaid.patch",
-                    "2697587 - Wizard API integration": "https://www.drupal.org/files/issues/2697587-48.patch",
-                    "IPE's cancel button is easy to mistake for a button to close the tray (rather than throw away all changes). | https://www.drupal.org/node/2636490": "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
+                    "2697587 - Wizard API integration": "https://www.drupal.org/files/issues/2697587-48.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3432,9 +3430,9 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
                     "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-19.patch",
-                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
+                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch",
+                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
