@@ -3,9 +3,7 @@ core = 8.x
 
 ; Core
 projects[drupal][type] = "core"
-projects[drupal][download][type] = "git"
-projects[drupal][download][url] = "https://github.com/drupal-composer/drupal-core.git"
-projects[drupal][download][tag] = "8.1.4"
+projects[drupal][version] = "8.1.4"
 projects[drupal][patch][0] = "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
 projects[drupal][patch][1] = "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch"
 projects[drupal][patch][2] = "https://www.drupal.org/files/issues/node-migration-traits-database-exception.patch"
