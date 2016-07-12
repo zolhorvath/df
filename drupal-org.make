@@ -82,7 +82,7 @@ projects[dropzonejs][download][tag] = "8.x-1.0-alpha1"
 projects[embed][type] = "module"
 projects[embed][download][type] = "git"
 projects[embed][download][url] = "https://git.drupal.org/project/embed.git"
-projects[embed][download][tag] = "8.x-1.0-rc2"
+projects[embed][download][tag] = "8.x-1.0-rc3"
 
 projects[entity][type] = "module"
 projects[entity][download][type] = "git"
