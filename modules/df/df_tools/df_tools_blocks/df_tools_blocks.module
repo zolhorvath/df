@@ -134,39 +134,33 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function df_tools_blocks_block_content_slideshow_panels_ipe_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+function df_tools_blocks_form_block_content_slideshow_panels_ipe_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#attributes']['class'][] = 'df-tools-slideshow-form';
   // Remove unneeded title added to field.
   $form['field_block']['widget']['#title'] = '';
   // Add default styling to the inline form.
+  $form['field_block']['widget']['#title'] = t('Add slide');
+  $form['field_block']['widget']['#type'] = 'fieldset';
+  $form['field_block']['widget']['#attributes'] = ['class' => ['fieldset']];
   if (isset($form['field_block']['widget']['form'])) {
-    if (!isset($form['field_block']['widget']['form']['#title'])) {
-      $form['field_block']['widget']['form']['#title'] = t('Add new custom block');
+    $widget_form = &$form['field_block']['widget']['form'];
+    // Existing.
+    if (isset($widget_form['entity_id'])) {
+      $widget_form['#title'] = '';
+      $widget_form['entity_id']['#title'] = t('Existing slide');
+      $widget_form['actions']['ief_reference_save']['#value'] = t('Add');
     }
-    $form['field_block']['widget']['form']['#attributes'] = ['class' => ['fieldset']];
+    else {
+      $widget_form['inline_entity_form']['#ief_labels']['singular'] = 'slide';
+    }
   }
-  // Wrap the edit/add actions in fieldsets to improve the look/feel of the
-  // form.
   if (isset($form['field_block']['widget']['actions']['ief_add'])) {
-    $form['field_block']['widget']['actions_add'] = [
-      '#type' => 'fieldset',
-      '#title' => t('Add new custom block'),
-      '#attributes' => ['class' => ['fieldset']],
-      '#weight' => 100,
-      0 => $form['field_block']['widget']['actions']['bundle'],
-      1 => $form['field_block']['widget']['actions']['ief_add'],
-      ];
-    unset($form['field_block']['widget']['actions']['ief_add']);
-    unset($form['field_block']['widget']['actions']['bundle']);
+    $label = t('Add a new slide');
+    $form['field_block']['widget']['actions']['ief_add']['#value'] = $label;
   }
   if (isset($form['field_block']['widget']['actions']['ief_add_existing'])) {
-    $form['field_block']['widget']['actions_existing'] = [
-      '#type' => 'fieldset',
-      '#title' => t('Add existing custom block'),
-      '#attributes' => ['class' => ['fieldset']],
-      '#weight' => 101,
-      0 => $form['field_block']['widget']['actions']['ief_add_existing'],
-      ];
-    unset($form['field_block']['widget']['actions']['ief_add_existing']);
+    $label = t('Add existing slide');
+    $form['field_block']['widget']['actions']['ief_add_existing']['#value'] = $label;
   }
 }
 
