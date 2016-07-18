@@ -141,6 +141,10 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
+            "drupal/dropzonejs": {
+                "Update to support recent WidgetBase.php changes | http://drupal.org/node/2763529":
+                "https://www.drupal.org/files/issues/2763529-21.patch"
+            },
             "drupal/entity_browser": {
                 "[meta] Utilize multiple Entity Browser patches in DF without conflict | https://www.drupal.org/node/2768835":
                 "https://www.drupal.org/files/issues/alpha6-to-head-2768835-3.patch"
@@ -193,7 +197,7 @@
         "drupal/adminimal_theme": "8.1.1",
         "drupal/better_formats": "8.1.x-dev",
         "drupal/block_class": "8.1.x-dev",
-        "drupal/dropzonejs": "8.1.0-alpha1",
+        "drupal/dropzonejs": "8.1.x-dev",
         "drupal/config_devel": "8.1.x-dev",
         "drupal/config_update": "8.1.1",
         "drupal/config_sync": "8.1.x-dev",
