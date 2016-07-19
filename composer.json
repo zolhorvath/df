@@ -202,7 +202,7 @@
         "drupal/config_update": "8.1.1",
         "drupal/config_sync": "8.1.x-dev",
         "drupal/content_browser": "8.1.x-dev",
-        "drupal/crop": "8.1.0-rc1",
+        "drupal/crop": "8.1.0",
         "drupal/ctools": "8.3.0-alpha26",
         "drupal/embed": "8.1.0-rc3",
         "drupal/entity_browser": "8.1.0-alpha6",
