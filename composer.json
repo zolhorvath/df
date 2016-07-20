@@ -177,10 +177,6 @@
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
                 "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
             },
-            "drupal/adminimal_theme": {
-                "Fix styling so that admin_toolbar can be used | https://www.drupal.org/node/2680689":
-                "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-7.patch"
-            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
@@ -193,6 +189,7 @@
         "desandro/imagesloaded": "3.1.8",
         "drupal/address": "8.1.0-beta3",
         "drupal/addtoany": "8.1.4",
+        "drupal/adminimal_admin_toolbar": "8.x-1.x-dev",
         "drupal/admin_toolbar": "8.1.x-dev",
         "drupal/adminimal_theme": "8.1.1",
         "drupal/better_formats": "8.1.x-dev",

@@ -6,6 +6,7 @@ package: Demo Framework
 dependencies:
   - admin_toolbar
   - admin_toolbar_tools
+  - adminimal_admin_toolbar
   - basic_auth
   - block
   - block_class
