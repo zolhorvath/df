@@ -34,7 +34,6 @@ projects[better_formats][type] = "module"
 projects[better_formats][download][type] = "git"
 projects[better_formats][download][url] = "https://git.drupal.org/project/better_formats"
 projects[better_formats][download][branch] = "8.x-1.x-dev"
-projects[better_formats][patch][0] = "https://www.drupal.org/files/issues/2737757-2.patch"
 
 projects[block_class][type] = "module"
 projects[block_class][download][type] = "git"
