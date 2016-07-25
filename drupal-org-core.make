@@ -10,3 +10,4 @@ projects[drupal][patch][2] = "https://www.drupal.org/files/issues/node-migration
 projects[drupal][patch][3] = "https://www.drupal.org/files/issues/2635712-14.patch"
 projects[drupal][patch][4] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
 projects[drupal][patch][5] = "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch"
+projects[drupal][patch][6] = "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch"
