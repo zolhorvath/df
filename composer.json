@@ -133,7 +133,9 @@
                 "Disable body-level scrolling when a dialog is open as a modal | https://www.drupal.org/node/2707291":
                 "https://www.drupal.org/files/issues/drupal-dialog-modal-disable-scroll-2707291-8.patch",
                 "Allow profiles to provide a base/parent profile and load them in the correct order | https://www.drupal.org/node/1356276":
-                "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch"
+                "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch",
+                "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
+                "https://www.drupal.org/files/issues/2684873-28.patch"
             },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":
