@@ -10,7 +10,6 @@ dependencies:
   - dblog
   - df_admin
   - df_tools
-  - lightning_core
 themes:
   - adminimal_theme
   - zurb_foundation
