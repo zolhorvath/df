@@ -59,7 +59,7 @@ class SimpleProximity extends FilterPluginBase {
         '<a class="simple-proximity-location-button button" title="' . $this->t('Use your current location') . '">' .
         '  <i class="fa fa-map-marker" aria-hidden="true"></i>' .
         '</a>' . $form['value']['#suffix'];
-      $form['value']['#attached'] = ['library' => ['dfs_fin_location/main']];
+      $form['value']['#attached'] = ['library' => ['df_tools_map/main']];
     }
   }
 
