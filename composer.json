@@ -155,6 +155,10 @@
                 "[meta] Utilize Entity Embed patches in DF without conflict | https://www.drupal.org/node/2771455":
                 "https://www.drupal.org/files/issues/alpha2-to-head-2771455-2.patch"
             },
+            "drupal/lightning": {
+                "Lightning Workflow doesn't check if the 'content' view exists in hook_install | https://www.drupal.org/node/2772949":
+                "https://www.drupal.org/files/issues/add-view-check-2772949-2_0.patch"
+            },
             "drupal/migrate_plus": {
                 "Update migrate plus migrate URL plugin and SourcePluginExtension to work with 8.1.0 | https://www.drupal.org/node/2714357":
                 "https://www.drupal.org/files/issues/migrate_url_sourcepluginextension-2714357-1.patch"
