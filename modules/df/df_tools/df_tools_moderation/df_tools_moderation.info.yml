@@ -6,5 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - df_tools_articles
   - df_tools_user
-  - lightning_workflow
   - workbench_moderation
