@@ -14,6 +14,10 @@ dependencies:
     - df_tools_display
     - system
     - user
+    - dfs_dev
+  enforced:
+    module:
+      - dfs_dev
 id: dfs_dev_home
 label: 'Developer Home'
 use_admin_theme: false

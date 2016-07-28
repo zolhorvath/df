@@ -8,6 +8,10 @@ dependencies:
     - help
     - df_tools_display
     - search
+    - dfs_dev
+  enforced:
+    module:
+      - dfs_dev
 id: home_page
 label: 'Home Page Variant'
 variant: landing_display
