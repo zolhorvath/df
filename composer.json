@@ -141,6 +141,10 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
+            "drupal/ctools": {
+                "EntityFieldDeriver naive about field info, throws PHP warnings | http://drupal.org/node/2672110":
+                "https://www.drupal.org/files/issues/ctools_2672110_16.patch"
+            },
             "drupal/dropzonejs": {
                 "Update to support recent WidgetBase.php changes | http://drupal.org/node/2763529":
                 "https://www.drupal.org/files/issues/2763529-21.patch"
