@@ -247,7 +247,6 @@
         "drupal/scheduler": "8.1.0-alpha1",
         "drupal/token": "8.1.0-alpha2",
         "drupal/url_embed": "8.1.x-dev",
-        "drupal/views_infinite_scroll": "8.1.0",
         "drupal/workbench_moderation": "8.1.1",
         "drupal/zurb_foundation": "8.6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.1",
