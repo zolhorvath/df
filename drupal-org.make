@@ -76,7 +76,7 @@ projects[ctools][patch][1] = "https://www.drupal.org/files/issues/ctools_2672110
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][download][type] = "git"
 projects[dropzonejs][download][url] = "https://git.drupal.org/project/dropzonejs.git"
-projects[dropzonejs][download][tag] = "8.x-1.0-alpha1"
+projects[dropzonejs][download][branch] = "8.x-1.x-dev"
 
 projects[embed][type] = "module"
 projects[embed][download][type] = "git"
