@@ -151,9 +151,7 @@
             },
             "drupal/entity_browser": {
                 "[meta] Utilize multiple Entity Browser patches in DF without conflict | https://www.drupal.org/node/2768835":
-                "https://www.drupal.org/files/issues/alpha6-to-head-2768835-3.patch",
-                "Modal display's \"open_modal\" button executes submit callback | https://www.drupal.org/node/2769941":
-                "https://www.drupal.org/files/issues/entity-browser-modal-execute-submit.patch"
+                "https://www.drupal.org/files/issues/lightning-to-head-2768835-5.patch"
             },
             "drupal/entity_embed": {
                 "[meta] Utilize Entity Embed patches in DF without conflict | https://www.drupal.org/node/2771455":
