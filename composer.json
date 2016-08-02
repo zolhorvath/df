@@ -145,10 +145,6 @@
                 "EntityFieldDeriver naive about field info, throws PHP warnings | http://drupal.org/node/2672110":
                 "https://www.drupal.org/files/issues/ctools_2672110_16.patch"
             },
-            "drupal/dropzonejs": {
-                "Update to support recent WidgetBase.php changes | http://drupal.org/node/2763529":
-                "https://www.drupal.org/files/issues/2763529-21.patch"
-            },
             "drupal/entity_browser": {
                 "[meta] Utilize multiple Entity Browser patches in DF without conflict | https://www.drupal.org/node/2768835":
                 "https://www.drupal.org/files/issues/lightning-to-head-2768835-5.patch"
