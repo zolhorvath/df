@@ -157,7 +157,7 @@
             },
             "drupal/entity_embed": {
                 "[meta] Utilize Entity Embed patches in DF without conflict | https://www.drupal.org/node/2771455":
-                "https://www.drupal.org/files/issues/alpha2-to-head-2771455-2.patch"
+                "https://www.drupal.org/files/issues/lightning-to-head-2771455-4.patch"
             },
             "drupal/lightning": {
                 "Lightning Workflow doesn't check if the 'content' view exists in hook_install | https://www.drupal.org/node/2772949":
