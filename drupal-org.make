@@ -98,7 +98,7 @@ projects[entity_browser][patch][1] = "https://www.drupal.org/files/issues/273884
 projects[entity_embed][type] = "module"
 projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][url] = "https://git.drupal.org/project/entity_embed.git"
-projects[entity_embed][download][tag] = "8.x-1.0-alpha2"
+projects[entity_embed][download][branch] = "8.x-1.x-dev"
 
 projects[features][type] = "module"
 projects[features][download][type] = "git"
