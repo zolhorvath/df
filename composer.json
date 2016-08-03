@@ -141,19 +141,17 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
-            "drupal/dropzonejs": {
-                "Update to support recent WidgetBase.php changes | http://drupal.org/node/2763529":
-                "https://www.drupal.org/files/issues/2763529-21.patch"
+            "drupal/ctools": {
+                "EntityFieldDeriver naive about field info, throws PHP warnings | http://drupal.org/node/2672110":
+                "https://www.drupal.org/files/issues/ctools_2672110_16.patch"
             },
             "drupal/entity_browser": {
                 "[meta] Utilize multiple Entity Browser patches in DF without conflict | https://www.drupal.org/node/2768835":
-                "https://www.drupal.org/files/issues/alpha6-to-head-2768835-3.patch",
-                "Modal display's \"open_modal\" button executes submit callback | https://www.drupal.org/node/2769941":
-                "https://www.drupal.org/files/issues/entity-browser-modal-execute-submit.patch"
+                "https://www.drupal.org/files/issues/lightning-to-head-2768835-5.patch"
             },
             "drupal/entity_embed": {
                 "[meta] Utilize Entity Embed patches in DF without conflict | https://www.drupal.org/node/2771455":
-                "https://www.drupal.org/files/issues/alpha2-to-head-2771455-2.patch"
+                "https://www.drupal.org/files/issues/lightning-to-head-2771455-4.patch"
             },
             "drupal/lightning": {
                 "Lightning Workflow doesn't check if the 'content' view exists in hook_install | https://www.drupal.org/node/2772949":
@@ -247,7 +245,6 @@
         "drupal/scheduler": "8.1.0-alpha1",
         "drupal/token": "8.1.0-alpha2",
         "drupal/url_embed": "8.1.x-dev",
-        "drupal/views_infinite_scroll": "8.1.0",
         "drupal/workbench_moderation": "8.1.1",
         "drupal/zurb_foundation": "8.6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.1",
