@@ -160,8 +160,6 @@
                 "https://www.drupal.org/files/issues/2746149-2.patch"
             },
             "drupal/panelizer": {
-                "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597":
-                "https://www.drupal.org/files/issues/2546204-6.patch",
                 "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163":
                 "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch",
                 "Undefined index: #attached | https://www.drupal.org/node/2760051":
