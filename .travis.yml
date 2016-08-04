@@ -10,9 +10,10 @@ matrix:
 
 env:
   matrix:
-    - SCENARIO=none
-    - SCENARIO=dfs_dev
-    - SCENARIO=dfs_tec
+    - SCENARIO=none LIGHTNING=HEAD
+    - SCENARIO=none LIGHTNING=STABLE
+    - SCENARIO=dfs_dev LIGHTNING=STABLE
+    - SCENARIO=dfs_tec LIGHTNING=STABLE
 
 # Cache Composer & Drush directories.
 cache:
@@ -53,6 +54,9 @@ install:
   - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
   - phpenv config-add drupal.php.ini
   - phpenv rehash
+
+  # Test Lightning HEAD
+  - if [[ "$LIGHTNING" == HEAD ]]; then composer require "drupal/lightning:dev-8.x-1.x" --no-update; fi
 
   # Let Composer do all the magic!
   - composer install
