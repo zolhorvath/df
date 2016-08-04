@@ -222,7 +222,7 @@
         "drupal/layout_plugin": "8.1.0-alpha22",
         "drupal/leaflet": "8.1.x-dev",
         "drupal/libraries": "8.3.x-dev",
-        "drupal/lightning": "^8.1.03",
+        "drupal/lightning": "8.1.03",
         "drupal/lite": "8.1.x-dev",
         "drupal/moderate_mmenu": "8.1.x-dev",
         "drupal/migrate_plus": "8.2.0-beta1",
