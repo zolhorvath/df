@@ -149,10 +149,6 @@
                 "Lightning Workflow doesn't check if the 'content' view exists in hook_install | https://www.drupal.org/node/2772949":
                 "https://www.drupal.org/files/issues/add-view-check-2772949-2_0.patch"
             },
-            "drupal/migrate_plus": {
-                "Update migrate plus migrate URL plugin and SourcePluginExtension to work with 8.1.0 | https://www.drupal.org/node/2714357":
-                "https://www.drupal.org/files/issues/migrate_url_sourcepluginextension-2714357-1.patch"
-            },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
                 "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
