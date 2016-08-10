@@ -157,6 +157,7 @@ projects[import][type] = "module"
 projects[import][download][type] = "git"
 projects[import][download][url] = "https://git.drupal.org/project/import.git"
 projects[import][download][branch] = "8.x-2.x-dev"
+projects[import][download][revision] = 1315ba6
 
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][download][type] = "git"
@@ -177,6 +178,7 @@ projects[libraries][type] = "module"
 projects[libraries][download][type] = "git"
 projects[libraries][download][url] = "https://git.drupal.org/project/libraries.git"
 projects[libraries][download][branch] = "8.x-3.x-dev"
+projects[libraries][download][revision] = 548f3c2
 
 projects[lite][type] = "module"
 projects[lite][download][type] = "git"
@@ -222,6 +224,7 @@ projects[migrate_source_csv][type] = "module"
 projects[migrate_source_csv][download][type] = "git"
 projects[migrate_source_csv][download][url] = "https://git.drupal.org/project/migrate_source_csv.git"
 projects[migrate_source_csv][download][branch] = "8.x-2.x-dev"
+projects[migrate_source_csv][download][revision] = eb3336f
 
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][download][type] = "git"
@@ -287,6 +290,7 @@ projects[scenarios][type] = "module"
 projects[scenarios][download][type] = "git"
 projects[scenarios][download][url] = "https://git.drupal.org/project/scenarios.git"
 projects[scenarios][download][branch] = "8.x-2.x-dev"
+projects[scenarios][download][revision] = 972c46f
 
 projects[scheduled_updates][type] = "module"
 projects[scheduled_updates][download][type] = "git"
@@ -338,6 +342,7 @@ projects[zurb_foundation][type] = "theme"
 projects[zurb_foundation][download][type] = "git"
 projects[zurb_foundation][download][url] = "https://git.drupal.org/project/zurb-foundation.git"
 projects[zurb_foundation][download][branch] = "8.x-6.x-dev"
+projects[zurb_foundation][download][revision] = 9eba86d
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
