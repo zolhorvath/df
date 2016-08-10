@@ -247,7 +247,7 @@ function df_tools_blocks_block_content_replicate($form, FormStateInterface $form
   // Replicate the block content entity.
   if ($copy = $replicator->replicateEntity($entity)) {
     $message = t('Block Content: copied @info [id:@id]', ['@info' => $block_info, '@id' => $block_id]);
-    \Drupal::logger('DF Tools Blocks')->info($message);
+    \Drupal::logger('df_tools_blocks')->info($message);
     drupal_set_message($message, 'status');
   }
   // Redirect to block list comes free!
