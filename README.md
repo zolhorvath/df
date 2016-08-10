@@ -42,27 +42,30 @@ You may also reset the content of a Demo Framework Scenario if it is enabled.
 
 ### Behat tests
 
-Install the drupal-extension for mink/behat from the DF profile.
+Use Composer to install the drupal-extension for mink/behat in the DF profile.
 
   ``cd profiles/df/tests && composer install``
 
-Set up the behat.local.yml file replacing ``BASE_URL`` with your own url.
+Use the behat.template.yml file as a template for a behat.yml file, replacing ``BASE_URL`` with your own url.
 
-  ``cp behat.local.example.yml behat.local.yml``
+  ``cp behat.template.yml behat.yml``
 
-Check that behat is installed and running under the dev profile.
+Check that behat is installed and running
 
-  ``bin/behat --help --profile=dev``
+  ``bin/behat --help``
 
-Execute a specific feature scenario using the "dev" Behat profile.
-
-  ``bin/behat --name="Welcome" --profile=dev``
-
-Execute a batch of tagged features for the Drupal installation profile using the "default" Behat profile.
+Run tests tagged for the entire profile or a specific scenario.
 
   ``bin/behat --tags=df``
+  ``bin/behat --tags=dfs_wem``
 
-Execute a batch of tagged features for a Demo Framework Scenario using the "dev" Behat profile.
+Selenium is required to run the JavaScript tests. You can download Selenium from
+http://www.seleniumhq.org and run it with:
+
+  ``java -jar selenium.jar``
+
+Note that you may require a newer version of Java which can be downloaded from
+http://www.oracle.com/technetwork/java/javase/downloads/index.html.
 
 ### Demo Scenario Logins
 
