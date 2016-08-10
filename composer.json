@@ -173,6 +173,10 @@
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
                 "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
             },
+            "drupal/content_browser": {
+                "ContentEmbedBlock does not properly protect against recursion | https://www.drupal.org/node/2782217":
+                "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch"
+            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
