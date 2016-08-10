@@ -101,7 +101,7 @@ projects[entity_embed][download][branch] = "8.1.0-alpha3"
 projects[features][type] = "module"
 projects[features][download][type] = "git"
 projects[features][download][url] = "https://git.drupal.org/project/features"
-projects[features][download][tag] = "8.x-3.0-beta6"
+projects[features][download][tag] = "8.x-3.0-beta7"
 
 projects[field_group][type] = "module"
 projects[field_group][download][type] = "git"
