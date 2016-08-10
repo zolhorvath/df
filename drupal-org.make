@@ -116,7 +116,7 @@ projects[file_browser][download][branch] = "8.1.0-alpha1"
 projects[file_entity][type] = "module"
 projects[file_entity][download][type] = "git"
 projects[file_entity][download][url] = "https://git.drupal.org/project/file_entity"
-projects[file_entity][download][tag] = "8.x-2.0-beta1"
+projects[file_entity][download][tag] = "8.x-2.0-beta2"
 
 projects[geocoder][type] = "module"
 projects[geocoder][download][type] = "git"
