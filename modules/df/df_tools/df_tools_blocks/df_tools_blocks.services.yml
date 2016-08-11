@@ -1,5 +1,4 @@
 services:
   df_tools_blocks.copier:
     class: Drupal\df_tools_blocks\Copier
-    arguments: ["@entity_type.manager", "@event_dispatcher"]
-
+    arguments: ["@replicate.replicator"]

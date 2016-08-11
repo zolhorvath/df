@@ -3,8 +3,6 @@
 namespace Drupal\df_tools_blocks;
 
 use Drupal\replicate\Replicator;
-use Drupal\Core\Entity\EntityTypeManager;
-use Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher;
 
 /**
  * Class Copier.
@@ -14,30 +12,22 @@ use Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher;
 class Copier {
 
   /**
-   * Drupal\Core\Entity\EntityTypeManager definition.
+   * Drupal\replicate\Replicator definition.
    *
-   * @var \Drupal\Core\Entity\EntityTypeManager
+   * @var \Drupal\replicate\Replicator
    */
-  protected $entityTypeManager;
-  /**
-   * Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher definition.
-   *
-   * @var \Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher
-   */
-  protected $eventDispatcher;
+  protected $replicator;
+
   /**
    * Constructor.
    */
-  public function __construct(EntityTypeManager $entity_type_manager, ContainerAwareEventDispatcher $event_dispatcher) {
-    $this->entityTypeManager = $entity_type_manager;
-    $this->eventDispatcher = $event_dispatcher;
+  public function __construct(Replicator $replicator) {
+    $this->replicator = $replicator;
   }
 
-  public function makeCopy($entity) {
-    // Instantiate a new replicator.
-    $replicator = new Replicator($this->entityTypeManager, $this->eventDispatcher);
+  public function makeCopy($entity, $options = null) {
     // Copy and return the entity.
-    if ($copy = $replicator->replicateEntity($entity)) {
+    if ($copy = $this->replicator->replicateEntity($entity)) {
       return $copy;
     }
     else {
