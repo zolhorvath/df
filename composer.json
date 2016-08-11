@@ -222,7 +222,7 @@
         "drupal/geofield": "8.1.x-dev",
         "drupal/geophp": "8.1.x-dev",
         "drupal/geolocation": "8.1.x-dev",
-        "drupal/google_analytics": "8.2.0",
+        "drupal/google_analytics": "8.2.1",
         "drupal/image_effects": "8.1.0-alpha2",
         "drupal/image_widget_crop": "8.1.0",
         "drupal/import": "8.2.x-dev",

@@ -147,7 +147,7 @@ projects[geophp][download][branch] = "8.x-1.x"
 projects[google_analytics][type] = "module"
 projects[google_analytics][download][type] = "git"
 projects[google_analytics][download][url] = "https://git.drupal.org/project/google_analytics.git"
-projects[google_analytics][download][tag] = "8.x-2.0"
+projects[google_analytics][download][tag] = "8.x-2.1"
 
 projects[image_effects][type] = "module"
 projects[image_effects][download][type] = "git"
