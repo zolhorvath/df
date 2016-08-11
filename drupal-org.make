@@ -4,6 +4,12 @@ api = 2
 ; Defaults
 defaults[projects][subdir] = "contrib"
 
+; Profiles
+projects[lightning][type] = "profile"
+projects[lightning][download][type] = "git"
+projects[lightning][download][url] = "https://git.drupal.org/project/lightning.git"
+projects[lightning][download][tag] = "8.x-1.03"
+
 ; Modules
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][download][type] = "git"
