@@ -9,6 +9,7 @@ projects[lightning][type] = "profile"
 projects[lightning][download][type] = "git"
 projects[lightning][download][url] = "https://git.drupal.org/project/lightning.git"
 projects[lightning][download][tag] = "8.x-1.03"
+projects[lightning][subdir] = ""
 
 ; Modules
 projects[acquia_connector][type] = "module"
