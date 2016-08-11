@@ -312,7 +312,7 @@ projects[scheduler][download][tag] = "8.x-1.0-alpha1"
 projects[token][type] = "module"
 projects[token][download][type] = "git"
 projects[token][download][url] = "https://git.drupal.org/project/token.git"
-projects[token][download][tag] = "8.x-1.0-alpha2"
+projects[token][download][tag] = "8.x-1.0-beta1"
 
 projects[url_embed][type] = "module"
 projects[url_embed][download][type] = "git"
