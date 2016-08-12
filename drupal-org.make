@@ -288,6 +288,12 @@ projects[refreshless][download][type] = "git"
 projects[refreshless][download][url] = "https://git.drupal.org/project/refreshless.git"
 projects[refreshless][download][tag] = "8.x-1.0-alpha3"
 
+projects[replicate][type] = "module"
+projects[replicate][download][type] = "git"
+projects[replicate][download][url] = "https://git.drupal.org/project/replicate.git"
+projects[replicate][download][branch] = "8.x-1.x-dev"
+projects[replicate][download][revision] = 2d466f3
+
 projects[restui][type] = "module"
 projects[restui][download][type] = "git"
 projects[restui][download][url] = "https://git.drupal.org/project/restui.git"
