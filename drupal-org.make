@@ -265,7 +265,7 @@ projects[rich_snippets][version] = "1.0-beta4"
 projects[rich_snippets][type] = "module"
 projects[rich_snippets][subdir] = "contrib"
 
-projects[scheduler][version] = "1.4"
+projects[scheduler][version] = "1.5"
 projects[scheduler][type] = "module"
 projects[scheduler][subdir] = "contrib"
 
