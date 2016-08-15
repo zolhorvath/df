@@ -302,7 +302,7 @@ projects[search_facetapi][version] = "1.0-beta2"
 projects[search_facetapi][type] = "module"
 projects[search_facetapi][subdir] = "contrib"
 
-projects[sharethis][version] = "2.12"
+projects[sharethis][version] = "2.13"
 projects[sharethis][type] = "module"
 projects[sharethis][subdir] = "contrib"
 
