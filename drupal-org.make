@@ -203,7 +203,7 @@ projects[menu_attributes][version] = "1.0"
 projects[menu_attributes][type] = "module"
 projects[menu_attributes][subdir] = "contrib"
 
-projects[message][version] = "1.11"
+projects[message][version] = "1.12"
 projects[message][type] = "module"
 projects[message][subdir] = "contrib"
 
