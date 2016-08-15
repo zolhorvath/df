@@ -131,7 +131,7 @@ projects[google_analytics][version] = "2.3"
 projects[google_analytics][type] = "module"
 projects[google_analytics][subdir] = "contrib"
 
-projects[google_analytics_reports][version] = "3.0"
+projects[google_analytics_reports][version] = "3.1"
 projects[google_analytics_reports][type] = "module"
 projects[google_analytics_reports][subdir] = "contrib"
 
