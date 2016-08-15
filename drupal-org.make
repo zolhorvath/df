@@ -99,12 +99,9 @@ projects[entity_translation][version] = "1.0-beta5"
 projects[entity_translation][type] = "module"
 projects[entity_translation][subdir] = "contrib"
 
-projects[eva][version] = "1.x-dev"
+projects[eva][version] = "1.3"
 projects[eva][type] = "module"
 projects[eva][subdir] = "contrib"
-projects[eva][download][type] = "git"
-projects[eva][download][revision] = "5798231"
-projects[eva][download][branch] = "7.x-1.x"
 
 projects[facetapi][version] = "1.5"
 projects[facetapi][type] = "module"
