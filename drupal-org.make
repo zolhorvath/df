@@ -10,6 +10,7 @@ projects[lightning][download][type] = "git"
 projects[lightning][download][url] = "https://git.drupal.org/project/lightning.git"
 projects[lightning][download][tag] = "8.x-1.03"
 projects[lightning][subdir] = ""
+projects[lightning][patch][0] = "https://www.drupal.org/files/issues/add-view-check-2772949-2_0.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
