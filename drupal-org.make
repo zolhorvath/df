@@ -244,7 +244,7 @@ projects[url_embed][download][branch] = "8.x-1.x"
 projects[url_embed][version] = "1.x-dev"
 
 projects[video_embed_field][type] = "module"
-projects[video_embed_field][version] = "1.1"
+projects[video_embed_field][version] = "1.3"
 
 projects[views_infinite_scroll][type] = "module"
 projects[views_infinite_scroll][version] = "1.2"
