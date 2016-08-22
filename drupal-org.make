@@ -151,7 +151,7 @@ projects[media_entity_document][type] = "module"
 projects[media_entity_document][version] = "1.1"
 
 projects[media_entity_image][type] = "module"
-projects[media_entity_image][version] = "1.1"
+projects[media_entity_image][version] = "1.2"
 
 projects[media_entity_instagram][type] = "module"
 projects[media_entity_instagram][version] = "1.1"
