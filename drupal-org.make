@@ -62,7 +62,7 @@ projects[crop][type] = "module"
 projects[crop][version] = "1.0"
 
 projects[ctools][type] = "module"
-projects[ctools][version] = "3.0-alpha27"
+projects[ctools][version] = "3.0-alpha26"
 
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][version] = "1.0-alpha2"
@@ -145,7 +145,7 @@ projects[lite][download][branch] = "8.x-1.x"
 projects[lite][version] = "1.x-dev"
 
 projects[media_entity][type] = "module"
-projects[media_entity][version] = "1.2"
+projects[media_entity][version] = "1.3"
 
 projects[media_entity_document][type] = "module"
 projects[media_entity_document][version] = "1.0"
