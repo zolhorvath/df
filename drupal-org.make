@@ -157,7 +157,7 @@ projects[media_entity_instagram][type] = "module"
 projects[media_entity_instagram][version] = "1.2"
 
 projects[media_entity_twitter][type] = "module"
-projects[media_entity_twitter][version] = "1.1"
+projects[media_entity_twitter][version] = "1.2"
 
 projects[metatag][type] = "module"
 projects[metatag][version] = "1.0-beta9"
