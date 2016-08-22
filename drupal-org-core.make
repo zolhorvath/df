@@ -3,7 +3,7 @@ core = 8.x
 
 ; Core
 projects[drupal][type] = "core"
-projects[drupal][version] = "8.1.7"
+projects[drupal][version] = "8.1.8"
 projects[drupal][patch][0] = "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
 projects[drupal][patch][1] = "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch"
 projects[drupal][patch][2] = "https://www.drupal.org/files/issues/node-migration-traits-database-exception.patch"
