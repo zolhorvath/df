@@ -68,6 +68,7 @@ projects[content_browser][type] = "module"
 projects[content_browser][download][type] = "git"
 projects[content_browser][download][url] = "https://git.drupal.org/project/content_browser.git"
 projects[content_browser][download][branch] = "8.x-1.0-alpha1"
+projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch"
 
 projects[crop][type] = "module"
 projects[crop][download][type] = "git"
