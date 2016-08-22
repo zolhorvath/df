@@ -259,10 +259,10 @@ projects[workbench_moderation][patch][2] = "https://www.drupal.org/files/issues/
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][version] = "1.1"
 
-projects[zurb_foundation][type] = "theme"
-projects[zurb_foundation][download][type] = "git"
-projects[zurb_foundation][download][branch] = "8.x-6.x"
-projects[zurb_foundation][version] = "6.x-dev"
+projects[zurb-foundation][type] = "theme"
+projects[zurb-foundation][download][type] = "git"
+projects[zurb-foundation][download][branch] = "8.x-6.x"
+projects[zurb-foundation][version] = "6.x-dev"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
