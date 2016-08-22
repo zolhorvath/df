@@ -16,7 +16,7 @@ projects[lightning][patch][0] = "https://www.drupal.org/files/issues/add-view-ch
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][download][type] = "git"
 projects[acquia_connector][download][url] = "https://git.drupal.org/project/acquia_connector.git"
-projects[acquia_connector][download][tag] = "8.x-1.2"
+projects[acquia_connector][download][tag] = "8.x-1.3"
 
 projects[address][type] = "module"
 projects[address][download][type] = "git"
