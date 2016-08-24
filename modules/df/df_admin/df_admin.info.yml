@@ -26,7 +26,6 @@ dependencies:
   - editor
   - embed
   - entity_embed
-  - entity_gallery
   - entity_reference
   - field_group
   - field_ui
