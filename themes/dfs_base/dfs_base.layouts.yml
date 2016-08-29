@@ -18,6 +18,8 @@ lf-landscape:
   css: lf-landscape.css
   template: lf-landscape
   regions:
+    meta:
+      label: Title and Meta data
     left:
       label: Left Half
     right:
