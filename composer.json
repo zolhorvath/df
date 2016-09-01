@@ -148,7 +148,9 @@
                 "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
                 "https://www.drupal.org/files/issues/2684873-28.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
-                "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch"
+                "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch",
+                "Call to a member function getFieldStorageDefinition() on string | https://www.drupal.org/node/2788277":
+                "https://gist.githubusercontent.com/mortenson/d180b20eaff3857c07eefebb023d74d8/raw/c0417a19a38ae0eb1286c89463e77e78fa4a933d/core-hotfix-2788277.patch"
             },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":
