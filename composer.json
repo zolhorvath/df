@@ -12,6 +12,16 @@
         "jakoch/phantomjs-installer": "dev-master as 1.9.8",
         "behat/behat": "^3.0",
         "drupal/coder": "8.*",
+        "phing/phing": "^2.14",
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/devel": "^8.0.0",
+        "squizlabs/php_codesniffer": "2.*",
         "lakion/mink-debug-extension": "^1.0.3"
     },
     "config": {
@@ -23,7 +33,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/mortenson/composer-patches"
+            "url": "https://github.com/DevinCarlson/composer-patches"
         },
         {
             "type": "package",
@@ -265,10 +275,10 @@
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "@composer drupal-scaffold",
-            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr modules/contrib themes/contrib"
+            "./bin/phing push"
         ],
         "post-update-cmd": [
-            "mkdir -p docroot/profiles/df && rsync -a . docroot/profiles/df --exclude \".idea\" --exclude bin --exclude \".git\" --exclude \".gitignore\" --exclude docroot --exclude \"*.make\" --exclude \".travis.yml\" --exclude vendor && rm -fr modules/contrib themes/contrib"
+            "./bin/phing push"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     }
