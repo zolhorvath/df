@@ -137,8 +137,6 @@
                 "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch",
                 "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
                 "https://www.drupal.org/files/issues/2684873-28.patch",
-                "Random AJAX errors on complicated forms | https://www.drupal.org/node/2750463":
-                "https://gist.githubusercontent.com/mortenson/2dd078b26ba3d13ca5d0c1402537794f/raw/310d9774e35faf3ec221d67cd8797dda8912fe67/emergency-core-hotfix-2750463.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
                 "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch"
             },
