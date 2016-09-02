@@ -73,6 +73,11 @@ projects[embed][version] = "1.0-rc3"
 projects[entity][type] = "module"
 projects[entity][version] = "1.0-alpha3"
 
+projects[entity_block][type] = "module"
+projects[entity_block][download][type] = "git"
+projects[entity_block][download][branch] = "8.x-1.x"
+projects[entity_block][version] = "1.x-dev"
+
 projects[entity_browser][type] = "module"
 projects[entity_browser][version] = "1.0-alpha7"
 
