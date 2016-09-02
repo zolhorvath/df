@@ -108,7 +108,7 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
     $form['flipper']['front']['settings']['label']['#weight'] = 0;
     $form['flipper']['front']['settings']['label']['#states'] = [
       'visible' => [
-      ':input[name="settings[label_display]"]' => ['checked' => TRUE],
+        ':input[name="settings[label_display]"]' => ['checked' => TRUE],
       ],
     ];
   }
@@ -124,6 +124,12 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
       $form['#attributes']['data-df-tools-blocks-auto-open'] = 'settings_selection_fids_entity_browser';
     }
   }
+
+  // Set the default view_mode for Content Embed blocks to "featured" to avoid
+  // demo missteps.
+  if (isset($form['flipper']['front']['settings']['view_mode']) && empty($form['flipper']['front']['settings']['view_mode']['#default_value'])) {
+    $form['flipper']['front']['settings']['view_mode']['#default_value'] = 'featured';
+  }
 }
 
 /**
@@ -136,7 +142,7 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
     'Hero Link' => ['field_hero_link'],
     'Hero Icon' => ['field_icon'],
     'Nested Block' => ['field_nested_block'],
-    ];
+  ];
   foreach ($grouping as $label => $fields) {
     $fieldset_key = strtolower(str_replace(' ', '_', $label));
     $form[$fieldset_key] = [
@@ -145,7 +151,7 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
       '#attributes' => ['class' => ['fieldset']],
       '#collapsed' => TRUE,
       '#weight' => 99,
-      ];
+    ];
     foreach ($fields as $field) {
       $form[$fieldset_key][$field] = $form[$field];
       unset($form[$field]);
