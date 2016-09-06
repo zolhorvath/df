@@ -148,7 +148,9 @@
                 "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
                 "https://www.drupal.org/files/issues/2684873-28.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
-                "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch"
+                "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch",
+                "Patch Drupal core to fix obscure AJAX form bug | https://www.drupal.org/node/2794457":
+                "https://www.drupal.org/files/issues/core-hotfix-2788277.patch"
             },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":
@@ -227,6 +229,7 @@
         "drupal/crop": "8.1.0",
         "drupal/ctools": "8.3.0-alpha26",
         "drupal/embed": "8.1.0-rc3",
+        "drupal/entity_block": "8.1.x-dev",
         "drupal/entity_browser": "8.1.0-alpha7",
         "drupal/entity_embed": "8.1.0-alpha3",
         "drupal/entity_gallery": "8.1.x-dev",
