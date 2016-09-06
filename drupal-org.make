@@ -126,7 +126,7 @@ projects[image_effects][type] = "module"
 projects[image_effects][version] = "1.0-alpha2"
 
 projects[image_widget_crop][type] = "module"
-projects[image_widget_crop][version] = "1.0"
+projects[image_widget_crop][version] = "1.3"
 
 projects[import][type] = "module"
 projects[import][download][type] = "git"
