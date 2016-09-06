@@ -192,7 +192,7 @@ projects[oauth][download][branch] = "8.x-1.x"
 projects[oauth][version] = "1.x-dev"
 
 projects[page_manager][type] = "module"
-projects[page_manager][version] = "1.0-alpha23"
+projects[page_manager][version] = "1.0-alpha24"
 projects[page_manager][patch][0] = "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
 projects[page_manager][patch][1] = "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
 projects[page_manager][patch][2] = "https://www.drupal.org/files/issues/2746149-2.patch"
