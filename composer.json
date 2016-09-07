@@ -156,10 +156,6 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
-            "drupal/lightning": {
-                "Lightning Workflow doesn't check if the 'content' view exists in hook_install | https://www.drupal.org/node/2772949":
-                "https://www.drupal.org/files/issues/add-view-check-2772949-2_0.patch"
-            },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
                 "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
