@@ -170,9 +170,7 @@
                 "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163":
                 "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch",
                 "Undefined index: #attached | https://www.drupal.org/node/2760051":
-                "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch",
-                "Panelizer default patch breaks Quick Edit integration | https://www.drupal.org/node/2664682#comment-11455447":
-                "https://www.drupal.org/files/issues/interdiff-2600634-49-52.txt"
+                "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
             },
             "drupal/panels": {
                 "IPE's cancel button is easy to mistake for a button to close the tray (rather than throw away all changes). | https://www.drupal.org/node/2636490":
