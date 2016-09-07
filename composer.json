@@ -192,18 +192,6 @@
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
-        },
-        "patches-ignore": {
-            "drupal/lightning": {
-                "drupal/panels": {
-                    "Bandaid patch breaking save after previewing blocks with Panelizer":
-                    "https://www.drupal.org/files/issues/bandaid.patch"
-                },
-                "drupal/metatag": {
-                    "Patch already committed to metatag 8.1.0-beta10":
-                    "https://www.drupal.org/files/issues/2765137-2.patch"
-                }
-            }
         }
     },
     "require": {
