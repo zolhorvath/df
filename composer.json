@@ -263,7 +263,6 @@
         "drupal/restui": "8.1.x-dev",
         "drupal/scenarios": "8.2.x-dev",
         "drupal/scheduler": "8.1.0-alpha1",
-        "drupal/token": "8.1.0-beta1",
         "drupal/url_embed": "8.1.x-dev",
         "drupal/workbench_moderation": "8.1.1",
         "drupal/zurb_foundation": "8.6.x-dev",
