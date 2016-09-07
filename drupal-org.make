@@ -202,10 +202,9 @@ projects[panelizer][version] = "3.0-alpha2"
 projects[panelizer][patch][0] = "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch"
 projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2701349-2.patch"
 projects[panelizer][patch][2] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
-projects[panelizer][patch][3] = "https://www.drupal.org/files/issues/2664682-49.patch"
-projects[panelizer][patch][4] = "https://www.drupal.org/files/issues/2546204-6.patch"
-projects[panelizer][patch][5] = "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch"
-projects[panelizer][patch][6] = "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
+projects[panelizer][patch][3] = "https://www.drupal.org/files/issues/2664682-55.patch"
+projects[panelizer][patch][4] = https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch
+projects[panelizer][patch][5] = https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch
 
 projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta4"
