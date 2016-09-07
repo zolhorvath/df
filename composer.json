@@ -224,7 +224,6 @@
         "drupal/crop": "8.1.0",
         "drupal/embed": "8.1.0-rc3",
         "drupal/entity_block": "8.1.x-dev",
-        "drupal/entity_embed": "8.1.0-alpha3",
         "drupal/entity_gallery": "8.1.x-dev",
         "drupal/field_group": "8.1.0-rc4",
         "drupal/file_browser": "8.1.0-alpha1",
