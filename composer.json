@@ -230,7 +230,6 @@
         "drupal/ctools": "8.3.0-alpha26",
         "drupal/embed": "8.1.0-rc3",
         "drupal/entity_block": "8.1.x-dev",
-        "drupal/entity_browser": "8.1.0-alpha8",
         "drupal/entity_embed": "8.1.0-alpha3",
         "drupal/entity_gallery": "8.1.x-dev",
         "drupal/features": "8.3.0-beta7",
