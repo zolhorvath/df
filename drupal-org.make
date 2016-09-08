@@ -6,9 +6,8 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "1.03"
+projects[lightning][version] = "1.04"
 projects[lightning][subdir] = ""
-projects[lightning][patch][0] = "https://www.drupal.org/files/issues/add-view-check-2772949-2_0.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
