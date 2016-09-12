@@ -157,8 +157,8 @@
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
             "drupal/metatag": {
-                "DrupalConsole integration breaks Drush | https://www.drupal.org/node/2786795#comment-11616133":
-                "https://www.drupal.org/files/issues/metatag-drupal-console-beta10.patch"
+                "DrupalConsole integration breaks Drush | https://www.drupal.org/node/2786795":
+                "https://www.drupal.org/files/issues/metatag-deactivate_drupalconsole_services_0.patch"
             },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
