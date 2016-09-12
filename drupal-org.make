@@ -167,9 +167,7 @@ projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.2"
 
 projects[metatag][type] = "module"
-projects[metatag][download][type] = "git"
-projects[metatag][download][branch] = "8.x-1.x"
-projects[metatag][version] = "1.0-dev"
+projects[metatag][version] = "1.0-beta9"
 
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][version] = "2.0-beta2"
