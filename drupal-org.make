@@ -167,7 +167,8 @@ projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.2"
 
 projects[metatag][type] = "module"
-projects[metatag][version] = "1.0-beta9"
+projects[metatag][version] = "1.0-beta10"
+projects[metatag][patch][0] = "https://www.drupal.org/files/issues/metatag-drupal-console-beta10.patch"
 
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][version] = "2.0-beta2"
