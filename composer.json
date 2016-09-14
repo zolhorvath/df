@@ -110,6 +110,31 @@
                     "reference": "origin/master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "openannotation/annotator",
+                "version": "1.2.10",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/openannotation/annotator/releases/download/v1.2.10/annotator-full.1.2.10.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/workbench_annotation",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/mortenson/workbench_annotations",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ],
     "extra": {
@@ -178,7 +203,7 @@
             },
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
-                "https://www.drupal.org/files/issues/2685163-19.patch",
+                "https://www.drupal.org/files/issues/2685163-21.patch",
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
                 "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
             },
@@ -246,8 +271,10 @@
         "drupal/scenarios": "8.2.x-dev",
         "drupal/scheduler": "8.1.0-alpha1",
         "drupal/url_embed": "8.1.x-dev",
+        "drupal/workbench_annotation": "dev-master",
         "drupal/workbench_moderation": "8.1.1",
         "drupal/zurb_foundation": "8.6.x-dev",
+        "openannotation/annotator": "1.2.10",
         "enyo/dropzone": "4.2.0",
         "kenwheeler/slick": "1.5.0",
         "lite": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
