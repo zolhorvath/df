@@ -56,6 +56,7 @@ projects[config_update][version] = "1.1"
 projects[content_browser][type] = "module"
 projects[content_browser][version] = "1.0-alpha1"
 projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch"
+projects[content_browser][patch][1] = "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
 
 projects[crop][type] = "module"
 projects[crop][version] = "1.0"
@@ -96,6 +97,7 @@ projects[field_group][version] = "1.0-rc4"
 
 projects[file_browser][type] = "module"
 projects[file_browser][version] = "1.0-alpha1"
+projects[file_browser][patch][0] = "https://www.drupal.org/files/issues/file-browser-multi-step-2779451-7.patch"
 
 projects[file_entity][type] = "module"
 projects[file_entity][version] = "2.0-beta2"
