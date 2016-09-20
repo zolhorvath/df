@@ -100,7 +100,12 @@ class SimpleProximity extends FilterPluginBase {
    */
   public function query() {
     $this->ensureMyTable();
-    $location = $this->value[0];
+    if (is_array($this->value)) {
+      $location = $this->value[0];
+    }
+    else {
+      $location = $this->value;
+    }
 
     // Geocode the location if it's present.
     if (!empty($location)) {
