@@ -78,7 +78,7 @@ projects[entity_browser][type] = "module"
 projects[entity_browser][version] = "1.0-alpha9"
 
 projects[entity_embed][type] = "module"
-projects[entity_embed][version] = "1.0-alpha3"
+projects[entity_embed][version] = "1.0-beta1"
 
 projects[entity_gallery][type] = "module"
 projects[entity_gallery][download][type] = "git"
