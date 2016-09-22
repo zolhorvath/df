@@ -3,7 +3,7 @@ core = 8.x
 
 ; Drupal Core
 projects[drupal][type] = "core"
-projects[drupal][version] = "8.1.9"
+projects[drupal][version] = "8.1.10"
 projects[drupal][patch][0] = "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch"
 projects[drupal][patch][1] = "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch"
 projects[drupal][patch][2] = "https://www.drupal.org/files/issues/2635712-14.patch"
