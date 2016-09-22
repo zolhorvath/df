@@ -210,7 +210,7 @@ projects[panels][patch][3] = "https://www.drupal.org/files/issues/2697587-48.pat
 projects[panels][patch][4] = "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
 
 projects[pathauto][type] = "module"
-projects[pathauto][version] = "1.0-alpha3"
+projects[pathauto][version] = "1.0-beta1"
 
 projects[refreshless][type] = "module"
 projects[refreshless][version] = "1.0-alpha3"
