@@ -84,7 +84,7 @@ projects[entity_gallery][download][branch] = "8.x-1.x"
 projects[entity_gallery][version] = "1.x-dev"
 
 projects[features][type] = "module"
-projects[features][version] = "3.0-beta7"
+projects[features][version] = "3.0-beta9"
 
 projects[field_group][type] = "module"
 projects[field_group][version] = "1.0-rc4"
