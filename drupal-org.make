@@ -58,7 +58,7 @@ projects[crop][type] = "module"
 projects[crop][version] = "1.0"
 
 projects[ctools][type] = "module"
-projects[ctools][version] = "3.0-alpha26"
+projects[ctools][version] = "3.0-alpha27"
 
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][version] = "1.0-alpha2"
