@@ -235,7 +235,7 @@ projects[scheduled_updates][version] = "1.0-alpha5"
 projects[scheduled_updates][patch][0] = "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
 
 projects[scheduler][type] = "module"
-projects[scheduler][version] = "1.0-alpha1"
+projects[scheduler][version] = "1.0-alpha2"
 
 projects[token][type] = "module"
 projects[token][version] = "1.0-beta1"
