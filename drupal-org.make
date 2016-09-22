@@ -42,9 +42,7 @@ projects[config_devel][download][branch] = "8.x-1.x"
 projects[config_devel][version] = "1.x-dev"
 
 projects[config_sync][type] = "module"
-projects[config_sync][download][type] = "git"
-projects[config_sync][download][branch] = "8.x-1.x"
-projects[config_sync][version] = "1.x-dev"
+projects[config_sync][version] = "1.0-alpha3"
 
 projects[config_update][type] = "module"
 projects[config_update][version] = "1.1"
