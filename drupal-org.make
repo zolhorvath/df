@@ -23,9 +23,7 @@ projects[admin_toolbar][type] = "module"
 projects[admin_toolbar][version] = "1.17"
 
 projects[adminimal_admin_toolbar][type] = "module"
-projects[adminimal_admin_toolbar][download][type] = "git"
-projects[adminimal_admin_toolbar][download][branch] = "8.x-1.x"
-projects[adminimal_admin_toolbar][version] = "1.x-dev"
+projects[adminimal_admin_toolbar][version] = "1.3"
 
 projects[better_formats][type] = "module"
 projects[better_formats][download][type] = "git"
