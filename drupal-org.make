@@ -172,9 +172,7 @@ projects[migrate_plus][type] = "module"
 projects[migrate_plus][version] = "2.0-beta2"
 
 projects[migrate_source_csv][type] = "module"
-projects[migrate_source_csv][download][type] = "git"
-projects[migrate_source_csv][download][branch] = "8.x-2.x"
-projects[migrate_source_csv][version] = "2.x-dev"
+projects[migrate_source_csv][version] = "2.0-beta1"
 
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][version] = "2.0-beta1"
