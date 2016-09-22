@@ -20,9 +20,7 @@ projects[addtoany][type] = "module"
 projects[addtoany][version] = "1.4"
 
 projects[admin_toolbar][type] = "module"
-projects[admin_toolbar][download][type] = "git"
-projects[admin_toolbar][download][branch] = "8.x-1.x"
-projects[admin_toolbar][version] = "1.x-dev"
+projects[admin_toolbar][version] = "1.17"
 
 projects[adminimal_admin_toolbar][type] = "module"
 projects[adminimal_admin_toolbar][download][type] = "git"
