@@ -75,7 +75,7 @@ projects[entity_block][download][branch] = "8.x-1.x"
 projects[entity_block][version] = "1.x-dev"
 
 projects[entity_browser][type] = "module"
-projects[entity_browser][version] = "1.0-alpha8"
+projects[entity_browser][version] = "1.0-alpha9"
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][version] = "1.0-alpha3"
