@@ -11,7 +11,7 @@ projects[lightning][subdir] = ""
 
 ; Modules
 projects[acquia_connector][type] = "module"
-projects[acquia_connector][version] = "1.3"
+projects[acquia_connector][version] = "1.4"
 
 projects[address][type] = "module"
 projects[address][version] = "1.0-beta3"
