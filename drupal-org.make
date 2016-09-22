@@ -238,7 +238,7 @@ projects[scheduler][type] = "module"
 projects[scheduler][version] = "1.0-alpha2"
 
 projects[token][type] = "module"
-projects[token][version] = "1.0-beta1"
+projects[token][version] = "1.0-beta2"
 
 projects[url_embed][type] = "module"
 projects[url_embed][download][type] = "git"
