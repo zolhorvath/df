@@ -215,7 +215,7 @@
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
-                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support.patch"
+                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-4.patch"
             },
             "drupal/content_browser": {
                 "ContentEmbedBlock does not properly protect against recursion | https://www.drupal.org/node/2782217":
