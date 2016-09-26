@@ -170,8 +170,6 @@
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "Add authentication support for Views | https://www.drupal.org/node/2228141":
-                "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch",
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
                 "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
                 "Quickedit cant edit images | https://www.drupal.org/node/2635712":
