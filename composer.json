@@ -203,7 +203,7 @@
             },
             "drupal/panelizer": {
                 "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163":
-                "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-2.patch",
+                "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-3_0.patch",
                 "Undefined index: #attached | https://www.drupal.org/node/2760051":
                 "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
             },
