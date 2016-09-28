@@ -11,11 +11,12 @@
 
   Drupal.behaviors.DFToolsGalleryView = {
     attach: function (context) {
-      $('.df-masonry-gallery').masonry({
-        columnWidth: 320,
-        itemSelector: '.field-item'
-      }).imagesLoaded(function() {
-        $('.df-masonry-gallery').masonry('reload');
+      var container = $('.df-masonry-gallery');
+      container.imagesLoaded(function() {
+        container.masonry({
+          columnWidth: 220,
+          itemSelector: '.df-masonry-gallery > .field-items > .field-item'
+        });
       });
     }
   };

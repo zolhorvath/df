@@ -43,8 +43,6 @@ class EntityReferenceMasonryFormatter extends EntityReferenceEntityFormatter {
    */
   public function settingsSummary() {
     $summary = [];
-    // Implement settings summary.
-
     return $summary;
   }
 
@@ -53,10 +51,8 @@ class EntityReferenceMasonryFormatter extends EntityReferenceEntityFormatter {
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = parent::viewElements($items, $langcode);
-
     $elements['#attached']['library'][] = 'df_tools_gallery/view';
     $elements['#attributes']['class'][] = 'df-masonry-gallery';
-
     return $elements;
   }
 
