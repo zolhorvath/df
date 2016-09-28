@@ -6,7 +6,7 @@ dependencies:
     - entity_gallery.type.image
     - field.field.entity_gallery.image.entity_gallery_file
   module:
-    - df_tools_slideshow
+    - df_tools_gallery
     - user
 id: entity_gallery.image.default
 targetEntityType: entity_gallery
@@ -15,28 +15,13 @@ mode: default
 content:
   entity_gallery_file:
     label: hidden
-    type: entity_reference_slideshow
+    type: entity_reference_masonry
     settings:
-      view_mode: default
+      view_mode: gallery_item
       link: false
-      slick:
-        arrows: true
-        draggable: true
-        dots: true
-        accessibility: true
-        adaptiveHeight: false
-        variableWidth: false
-        autoplay: true
-        centerMode: false
-        infinite: true
-        useCSS: true
-        mobileFirst: false
-        rtl: false
-        fade: false
-        pauseOnDotsHover: false
-        vertical: false
     weight: 101
     third_party_settings: {  }
 hidden:
   langcode: true
   links: true
+
