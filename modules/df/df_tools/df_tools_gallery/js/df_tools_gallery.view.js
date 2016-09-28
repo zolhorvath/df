@@ -11,11 +11,11 @@
 
   Drupal.behaviors.DFToolsGalleryView = {
     attach: function (context) {
-      $('.masonry-gallery').masonry({
+      $('.df-masonry-gallery').masonry({
         columnWidth: 320,
-        itemSelector: '.item'
+        itemSelector: '.field-item'
       }).imagesLoaded(function() {
-        $('.masonry-gallery').masonry('reload');
+        $('.df-masonry-gallery').masonry('reload');
       });
     }
   };

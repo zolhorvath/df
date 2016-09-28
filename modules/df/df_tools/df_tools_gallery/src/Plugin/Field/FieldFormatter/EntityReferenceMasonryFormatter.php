@@ -55,7 +55,7 @@ class EntityReferenceMasonryFormatter extends EntityReferenceEntityFormatter {
     $elements = parent::viewElements($items, $langcode);
 
     $elements['#attached']['library'][] = 'df_tools_gallery/view';
-    $elements['#attributes']['class'][] = 'masonry-gallery';
+    $elements['#attributes']['class'][] = 'df-masonry-gallery';
 
     return $elements;
   }
