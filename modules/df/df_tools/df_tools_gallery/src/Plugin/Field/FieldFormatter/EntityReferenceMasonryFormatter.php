@@ -12,7 +12,7 @@ use Drupal\Core\Render\Element;
  *
  * @FieldFormatter(
  *   id = "entity_reference_masonry",
- *   label = @Translation("Rendered entity in Masonry grid"),
+ *   label = @Translation("Rendered as Masonry grid"),
  *   field_types = {
  *     "entity_reference"
  *   }
