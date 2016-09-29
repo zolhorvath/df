@@ -145,7 +145,7 @@ projects[libraries][download][branch] = "8.x-3.x"
 projects[libraries][version] = "3.x-dev"
 
 projects[lite][type] = "module"
-projects[lite][version] = "1.1"
+projects[lite][version] = "1.2"
 
 projects[media_entity][type] = "module"
 projects[media_entity][version] = "1.5"
