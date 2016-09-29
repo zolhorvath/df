@@ -223,11 +223,15 @@
                 "ContentEmbedBlock does not properly protect against recursion | https://www.drupal.org/node/2782217":
                 "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch",
                 "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
-                "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
+                "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
+                "Fix bug when using Views Infinite Scroll with Content Browser | https://www.drupal.org/node/2808919":
+                "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch"
             },
             "drupal/file_browser": {
               "Current multi-step behaviour is confusing for users | https://www.drupal.org/node/2779451":
-              "https://www.drupal.org/files/issues/file-browser-multi-step-2779451-7.patch"
+              "https://www.drupal.org/files/issues/file-browser-multi-step-2779451-7.patch",
+              "Fix bug when using Views Infinite Scroll with File Browser | https://www.drupal.org/node/2808913":
+              "https://www.drupal.org/files/issues/file-browser-views-infinite-scroll.patch"
             },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
