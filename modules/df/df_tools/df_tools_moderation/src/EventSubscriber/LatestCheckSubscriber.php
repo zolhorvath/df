@@ -48,12 +48,21 @@ class LatestCheckSubscriber implements EventSubscriberInterface {
     return $events;
   }
 
+  /**
+   * Given 'node' in the request params,
+   * and the current user can view 'latest' revisions:
+   * Invalidate the current theme's local actions cache,
+   * so that hook_local_tasks_alter() is called.
+   *
+   * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
+   */
   public function checkForLatest(GetResponseEvent $event) {
-    if (\Drupal::currentUser()->hasPermission('view latest version')) {
-      // Invalidate cache tag for current theme's local actions.
-      $theme = $this->themeManager->getActiveTheme()->getName();
-      $tag = 'config:block.block.' . $theme . '_local_actions';
-      $this->cacheTagsInvalidator->invalidateTags([$tag]);
+    if ($node = $event->getRequest()->get('node')) {
+      if (\Drupal::currentUser()->hasPermission('view latest version')) {
+        $theme = $this->themeManager->getActiveTheme()->getName();
+        $tag = 'config:block.block.' . $theme . '_local_actions';
+        $this->cacheTagsInvalidator->invalidateTags([$tag]);
+      }
     }
   }
 
