@@ -43,7 +43,13 @@ function df_tools_moderation_menu_local_tasks_alter(&$data, $route_name) {
       $node = Node::load($param['node']);
       $moderation_info = \Drupal::service('workbench_moderation.moderation_information');
       $latest_node = $moderation_info->getLatestRevision('node', $node->id());
+      // Modify the tabs when the canonical route is the latest revision.
       if ($latest_node->getRevisionId() == $node->getRevisionId()) {
+        // Highlight the 'View' tab at /node/%/latest.
+        if ($data['tabs'][0]['moderation_state.entities:node.latest_version_tab']['#active']) {
+          $data['tabs'][0]['entity.node.canonical']['#active'] = true;
+        }
+        // Remove the latest version tab.
         unset($data['tabs'][0]['moderation_state.entities:node.latest_version_tab']);
       }
     }
