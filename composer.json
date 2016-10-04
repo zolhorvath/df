@@ -271,7 +271,6 @@
         "drupal/migrate_tools": "8.2.0-beta1",
         "drupal/oauth": "8.1.x-dev",
         "drupal/page_manager": "8.1.0-alpha24",
-        "drupal/panels": "8.3.0-beta4",
         "drupal/panelizer": "8.3.0-alpha2",
         "drupal/refreshless": "8.1.0-alpha3",
         "drupal/replicate": "8.1.x-dev",
