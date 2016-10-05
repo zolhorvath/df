@@ -203,6 +203,7 @@ projects[panelizer][patch][6] = "https://www.drupal.org/files/issues/check-for-b
 projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta5"
 projects[panels][patch][0] = "https://www.drupal.org/files/issues/2793801-9.patch"
+projects[panels][patch][1] = "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-beta1"

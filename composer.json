@@ -205,6 +205,10 @@
                 "Undefined index: #attached | https://www.drupal.org/node/2760051":
                 "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
             },
+            "drupal/panels": {
+                "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":
+                "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+            },
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
