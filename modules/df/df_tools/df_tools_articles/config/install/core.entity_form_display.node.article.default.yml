@@ -47,7 +47,7 @@ content:
       entity_browser: browse_files_modal
       field_widget_edit: '1'
       field_widget_remove: '1'
-      view_mode: default
+      view_mode: thumbnail
       open: 0
       preview_image_style: thumbnail
     third_party_settings: {  }
