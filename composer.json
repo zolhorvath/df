@@ -12,6 +12,7 @@
         "jakoch/phantomjs-installer": "dev-master as 1.9.8",
         "behat/behat": "^3.0",
         "drupal/coder": "8.*",
+        "drupal/console": "~1.0",
         "phing/phing": "^2.14",
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
