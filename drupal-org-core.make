@@ -9,4 +9,4 @@ projects[drupal][patch][2] = "https://www.drupal.org/files/issues/2635712-14.pat
 projects[drupal][patch][3] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
 projects[drupal][patch][5] = "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch"
 projects[drupal][patch][6] = "https://www.drupal.org/files/issues/2684873-28.patch"
-projects[drupal][patch][7] = "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch"
+projects[drupal][patch][7] = "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch"

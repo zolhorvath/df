@@ -181,7 +181,7 @@
                 "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
                 "https://www.drupal.org/files/issues/2684873-28.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
-                "https://www.drupal.org/files/issues/core-quickeditimage-2421427-102.patch",
+                "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch",
                 "Patch Drupal core to fix obscure AJAX form bug | https://www.drupal.org/node/2794457":
                 "https://www.drupal.org/files/issues/core-hotfix-2788277.patch"
             },
