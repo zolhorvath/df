@@ -201,10 +201,8 @@ projects[panelizer][patch][5] = "https://www.drupal.org/files/issues/panelizer-q
 projects[panelizer][patch][6] = "https://www.drupal.org/files/issues/check-for-build-array-keys-2760051_1.patch"
 
 projects[panels][type] = "module"
-projects[panels][version] = "3.0-beta4"
-projects[panels][patch][0] = "https://www.drupal.org/files/issues/panels-beta4-75131285.patch"
-projects[panels][patch][1] = "https://www.drupal.org/files/issues/2667754-3.patch"
-projects[panels][patch][2] = "https://www.drupal.org/files/issues/2793801-9.patch"
+projects[panels][version] = "3.0-beta5"
+projects[panels][patch][0] = "https://www.drupal.org/files/issues/2793801-9.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-beta1"
