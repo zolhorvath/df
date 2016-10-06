@@ -118,17 +118,32 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
     if ($form['plugin_id']['#value'] == 'content_embed') {
       $form['#attached']['library'][] = 'df_tools_blocks/auto_open';
       $form['#attributes']['data-df-tools-blocks-auto-open'] = 'settings_selection_nids_entity_browser';
+
+      // Modify the Content Embed form to guide users to valid View Modes.
+      if (empty($form['flipper']['front']['settings']['view_mode']['#default_value'])) {
+        $form['flipper']['front']['settings']['view_mode']['#default_value'] = 'featured';
+      }
+      $excluded_modes = [
+        'basic_info',
+        'content_browser',
+        'rss',
+        'search_index',
+        'search_result',
+        'token',
+        'full',
+        'df'
+      ];
+      foreach ($excluded_modes as $view_mode) {
+        if (isset($form['flipper']['front']['settings']['view_mode']['#options'][$view_mode])) {
+          unset($form['flipper']['front']['settings']['view_mode']['#options'][$view_mode]);
+        }
+      }
+
     }
     else if ($form['plugin_id']['#value'] == 'image_embed') {
       $form['#attached']['library'][] = 'df_tools_blocks/auto_open';
       $form['#attributes']['data-df-tools-blocks-auto-open'] = 'settings_selection_fids_entity_browser';
     }
-  }
-
-  // Set the default view_mode for Content Embed blocks to "featured" to avoid
-  // demo missteps.
-  if (isset($form['flipper']['front']['settings']['view_mode']) && empty($form['flipper']['front']['settings']['view_mode']['#default_value'])) {
-    $form['flipper']['front']['settings']['view_mode']['#default_value'] = 'featured';
   }
 }
 
