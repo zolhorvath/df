@@ -73,10 +73,14 @@
           // Make the modal full width.
           $modal.dialog({
             width: '100%',
-            height: $(window).height()
+            height: $(window).height(),
+            close: function() {
+              $('body').removeClass('full-width-modal-open');
+            }
           });
           $modal.parent().addClass('ui-dialog-full-width');
           $child.css('height', $modal.innerHeight());
+          $('body').addClass('full-width-modal-open');
         }
       }
     }

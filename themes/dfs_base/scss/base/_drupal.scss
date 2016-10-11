@@ -1,7 +1,14 @@
 // Place any Drupal-related quirks here.
 
-// twig is weird and doesnt check to see if regions are empty, so we need to do that here
+// Twig is weird and doesn't check to see if regions are empty,
+// so we need to do that here.
 
 #sidebar-second:empty, #sidebar-first:empty {
-display:none;
+  display:none;
+}
+
+// Hide the toolbar when full-width modals are open.
+
+.full-width-modal-open #toolbar-bar {
+  display: none;
 }
