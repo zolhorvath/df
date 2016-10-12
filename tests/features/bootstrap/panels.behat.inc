@@ -102,6 +102,27 @@ class PanelsSubContext extends DrupalSubContextBase implements DrupalSubContextI
   }
 
   /**
+   * Changes the layout of an IPE controlled entity via the IPE.
+   *
+   * @param string $category
+   *   The layout's category.
+   * @param string $layout_id
+   *   The layout's data-layout-id value.
+   *
+   * @When I change the layout to :layout_id from the :category category
+   */
+  public function changeLayout($category, $layout_id) {
+    $this->df->clickElementBySelector('a[title = "Change Layout"]');
+    $this->minkContext->iWaitForAjaxToFinish();
+
+    $this->df->clickElementBySelector('a[data-category = "' . $category . '"]');
+    $this->minkContext->iWaitForAjaxToFinish();
+
+    $this->df->clickElementBySelector('a[data-layout-id = "' . $layout_id . '"]');
+    $this->minkContext->iWaitForAjaxToFinish();
+  }
+
+  /**
    * Places a block into a panelizer layout via Wizard.
    *
    * @param string $label
@@ -235,10 +256,10 @@ class PanelsSubContext extends DrupalSubContextBase implements DrupalSubContextI
    * @When I save the layout as default
    */
   public function saveDefaultLayout() {
-    $this->lightning->clickElementBySelector('a[title = "Save"]');
+    $this->df->clickElementBySelector('a[title = "Save"]');
     $this->minkContext->iWaitForAjaxToFinish();
 
-    $this->lightning->clickElementBySelector('a.panelizer-ipe-save-default');
+    $this->df->clickElementBySelector('a.panelizer-ipe-save-default');
     $this->minkContext->iWaitForAjaxToFinish();
   }
 

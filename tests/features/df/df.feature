@@ -1,4 +1,4 @@
-@df
+@none
 Feature: Demo Framework
   In order to prove that general features for a given scenario function properly
   As a developer

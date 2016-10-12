@@ -1,6 +1,16 @@
 @df @layout @api
 Feature: Panelizer
 
+#  Scenario: Panelizer is enabled for landing pages
+#    Given I am logged in as a user with the landing_page_creator role
+#    And landing_page content:
+#      | title  | path    |
+#      | Foobar | /foobar |
+#    When I visit "/foobar"
+#    Then I should see a "#panels-ipe-content" element
+#    And I should not see a ".field--name-uid" element
+#    And I should not see a ".field--name-created" element
+
   @javascript
   Scenario: One-off changes can be made to Landing Pages using the IPE out of the box.
     Given I am logged in as a user with the "access panels in-place editing,administer panelizer node landing_page content,edit any landing_page content,view any unpublished content,use draft_draft transition,view latest version,access user profiles" permissions
@@ -15,7 +25,7 @@ Feature: Panelizer
     Then I should see a "views_block:who_s_online-who_s_online_block" block
 
   @javascript
-  Scenario: Quick Edit custom blocks in an IPE layout
+  Scenario: Quick-editing custom blocks in an IPE layout
     Given I am logged in as a user with the administrator role
     And landing_page content:
       | title  | path    | moderation_state |
@@ -27,18 +37,8 @@ Feature: Panelizer
     And I place the "block_content:test--here-be-dragons" block from the "Custom" category
     And I save the layout
     And I reload the page
+    And I wait 5 seconds
     Then I should see a "block_content:test--here-be-dragons" block with a "quickedit" contextual link
-
-  @javascript
-  Scenario: Quick Edit a Panelized Node
-    Given I am logged in as a user with the administrator role
-    And landing_page content:
-      | title  | path    | moderation_state |
-      | Foobar | /foobar | draft            |
-    When I visit "/foobar"
-    And I Quick Edit the field title with the text "Foobar!"
-    And I reload the page
-    Then I should see "Foobar!"
 
 # @todo Update when https://github.com/acquia/lightning/pull/145 is closed.
 #  @javascript
