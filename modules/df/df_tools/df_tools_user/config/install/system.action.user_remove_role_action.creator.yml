@@ -6,7 +6,7 @@ dependencies:
   module:
     - user
 id: user_remove_role_action.creator
-label: 'Remove the Curator role from the selected users'
+label: 'Remove the Creator role from the selected users'
 type: user
 plugin: user_remove_role_action
 configuration:
