@@ -98,5 +98,5 @@ before_script:
 script:
   - cd ./profiles/df
   - behat --strict --stop-on-failure --tags=none
-  - if [[ "$SCENARIO" == none ]]; then behat --strict --stop-on-failure --tags=df; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=df; fi
   - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=$SCENARIO; fi
