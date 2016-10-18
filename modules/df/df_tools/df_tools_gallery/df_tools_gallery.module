@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Contains df_tools_gallery.module.
+ */
+
+/**
+ * Implements hook_migration_plugins_alter().
+ */
+function df_tools_gallery_migration_plugins_alter(&$definitions) {
+  $id = 'import_gallery_image';
+  if (isset($definitions[$id])) {
+    $definitions[$id]['source']['path'] = str_replace('..', dirname(__FILE__), $definitions[$id]['source']['path']);
+  }
+}
