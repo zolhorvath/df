@@ -28,11 +28,11 @@ Feature: Demo Framework: Blocks
   Scenario: Map workflow
     Given I am logged in as a user with the "administrator" role
     When I go to "/block/add/map"
-    Then I fill in "edit-info-0-value" with "Homepage Map"
-    And I fill in "edit-field-map-address-0-address-line1" with "1120 SW 5th Ave"
-    And I fill in "edit-field-map-address-0-locality" with "Portland"
-    And I select "US-OR" from "edit-field-map-address-0-administrative-area"
-    And I fill in "edit-field-map-address-0-postal-code" with "97210"
+    Then I fill in "Block description" with "Homepage Map"
+    And I fill in "Street address" with "1120 SW 5th Ave"
+    And I fill in "City" with "Portland"
+    And I select "Oregon" from "State"
+    And I fill in "Zip code" with "97210"
     And I press "Save"
     Then I should see "Configure block"
     When I select "content" from "edit-region"
