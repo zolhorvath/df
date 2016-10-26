@@ -14,7 +14,9 @@ projects[acquia_connector][type] = "module"
 projects[acquia_connector][version] = "1.4"
 
 projects[address][type] = "module"
-projects[address][version] = "1.0-beta3"
+projects[address][download][type] = "git"
+projects[address][download][branch] = "8.x-1.x"
+projects[address][version] = "1.x-dev"
 
 projects[addtoany][type] = "module"
 projects[addtoany][version] = "1.4"
