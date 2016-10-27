@@ -19,7 +19,7 @@ projects[address][download][branch] = "8.x-1.x"
 projects[address][version] = "1.x-dev"
 
 projects[addtoany][type] = "module"
-projects[addtoany][version] = "1.4"
+projects[addtoany][version] = "1.6"
 
 projects[admin_toolbar][type] = "module"
 projects[admin_toolbar][version] = "1.17"
