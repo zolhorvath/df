@@ -270,7 +270,7 @@ projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/
 
 ; Themes
 projects[adminimal_theme][type] = "theme"
-projects[adminimal_theme][version] = "1.1"
+projects[adminimal_theme][version] = "1.2"
 
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][download][type] = "git"
