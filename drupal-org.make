@@ -145,7 +145,7 @@ projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.0-alpha6"
 
 projects[layout_plugin][type] = "module"
-projects[layout_plugin][version] = "1.0-alpha22"
+projects[layout_plugin][version] = "1.0-alpha23"
 
 projects[leaflet][type] = "module"
 projects[leaflet][download][type] = "git"
