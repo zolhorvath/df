@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "1.06"
+projects[lightning][version] = "1.11"
 projects[lightning][subdir] = ""
 
 ; Modules
