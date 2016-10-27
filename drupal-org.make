@@ -99,6 +99,9 @@ projects[entity_gallery][version] = "1.x-dev"
 projects[features][type] = "module"
 projects[features][version] = "3.0-beta9"
 
+projects[field_formatter_class][type] = "module"
+projects[field_formatter_class][version] = "1.0-rc2"
+
 projects[field_group][type] = "module"
 projects[field_group][version] = "1.0-rc4"
 
@@ -156,6 +159,9 @@ projects[libraries][type] = "module"
 projects[libraries][download][type] = "git"
 projects[libraries][download][branch] = "8.x-3.x"
 projects[libraries][version] = "3.x-dev"
+
+projects[link_class][type] = "module"
+projects[link_class][version] = "1.0"
 
 projects[lite][type] = "module"
 projects[lite][version] = "1.3"
@@ -257,6 +263,9 @@ projects[url_embed][version] = "1.x-dev"
 
 projects[video_embed_field][type] = "module"
 projects[video_embed_field][version] = "1.3"
+
+projects[view_modes_display][version] = "1.0"
+projects[view_modes_display][type] = "module"
 
 projects[views_infinite_scroll][type] = "module"
 projects[views_infinite_scroll][version] = "1.2"
