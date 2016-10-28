@@ -13,7 +13,7 @@ If you don't want to use Composer, you can install Demo Framework the traditiona
 
 Before installing Demo Framework via drupal.org or after building it from scratch using Drush Make, you must download a small number of PHP libraries that cannot currently be packaged automatically due to limitations with both drupal.org and Drush.
 
-  ``composer require "commerceguys/intl: ~0.7" "commerceguys/addressing: ~0.8" "commerceguys/zone: ~0.7" "embed/embed: ~2.2"``
+  ``composer require "commerceguys/intl: ~0.7" "commerceguys/addressing: ~1.0" "commerceguys/zone: ~1.0" "embed/embed: ~2.2"``
 
 A build script is also provided that wraps the composer install command and moves everything into a target directory as well.
 
