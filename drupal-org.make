@@ -11,7 +11,7 @@ projects[lightning][subdir] = ""
 
 ; Modules
 projects[acquia_connector][type] = "module"
-projects[acquia_connector][version] = "1.4"
+projects[acquia_connector][version] = "1.6"
 
 projects[address][type] = "module"
 projects[address][download][type] = "git"
@@ -59,7 +59,7 @@ projects[config_tools][version] = "1.x-dev"
 projects[config_tools][patch][0] = "https://www.drupal.org/files/issues/config_partial_override-8.x-1.x.patch"
 
 projects[config_update][type] = "module"
-projects[config_update][version] = "1.1"
+projects[config_update][version] = "1.2"
 
 projects[content_browser][type] = "module"
 projects[content_browser][version] = "1.0-alpha1"
@@ -90,7 +90,7 @@ projects[entity_browser][type] = "module"
 projects[entity_browser][version] = "1.0-alpha9"
 
 projects[entity_embed][type] = "module"
-projects[entity_embed][version] = "1.0-beta1"
+projects[entity_embed][version] = "1.0-beta2"
 
 projects[entity_gallery][type] = "module"
 projects[entity_gallery][download][type] = "git"
@@ -98,7 +98,7 @@ projects[entity_gallery][download][branch] = "8.x-1.x"
 projects[entity_gallery][version] = "1.x-dev"
 
 projects[features][type] = "module"
-projects[features][version] = "3.0-beta9"
+projects[features][version] = "3.0-rc1"
 
 projects[field_formatter_class][type] = "module"
 projects[field_formatter_class][version] = "1.0-rc2"
@@ -253,6 +253,11 @@ projects[scheduled_updates][patch][1] = "https://www.drupal.org/files/issues/sch
 
 projects[scheduler][type] = "module"
 projects[scheduler][version] = "1.0-alpha2"
+
+projects[search_autocomplete][type] = "module"
+projects[search_autocomplete][download][type] = "git"
+projects[search_autocomplete][download][branch] = "8.x-1.x"
+projects[search_autocomplete][version] = "1.x-dev"
 
 projects[token][type] = "module"
 projects[token][version] = "1.0-beta2"
