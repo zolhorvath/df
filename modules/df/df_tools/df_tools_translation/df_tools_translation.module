@@ -93,7 +93,8 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
 
           // Add a translation with the current values and save.
           $entity->addTranslation($langcode, $values);
-          $entity->save();
+          $translation = $entity->getTranslation($langcode);
+          $translation->save();
         }
 
         // Move to the next row.
