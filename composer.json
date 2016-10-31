@@ -189,10 +189,6 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
-            "drupal/config_rewrite": {
-              "Use hook to track module install until core events are finalized | https://www.drupal.org/node/2822900":
-              "https://www.drupal.org/files/issues/2822900-2.patch"
-            },
             "drupal/config_tools": {
               "Rewrite ConfigPartialOverrideFactory::loadOverrides | https://www.drupal.org/node/2820086":
               "https://www.drupal.org/files/issues/config_partial_override-8.x-1.x.patch"
@@ -260,7 +256,7 @@
         "drupal/block_class": "8.1.x-dev",
         "drupal/dropzonejs": "8.1.0-alpha2",
         "drupal/config_devel": "8.1.0-alpha3",
-        "drupal/config_rewrite": "8.1.x-dev",
+        "drupal/config_rewrite": "8.1.0-beta1",
         "drupal/config_sync": "8.1.x-dev",
         "drupal/config_tools": "8.1.x-dev",
         "drupal/content_browser": "8.1.0-alpha1",
@@ -278,7 +274,7 @@
         "drupal/google_analytics": "8.2.1",
         "drupal/image_effects": "8.1.0-alpha2",
         "drupal/image_widget_crop": "8.1.3",
-        "drupal/import": "8.2.x-dev",
+        "drupal/import": "8.2.0-beta1",
         "drupal/leaflet": "8.1.x-dev",
         "drupal/libraries": "8.3.x-dev",
         "drupal/lightning": "8.1.11",

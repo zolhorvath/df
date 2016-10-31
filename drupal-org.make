@@ -44,10 +44,7 @@ projects[config_devel][download][branch] = "8.x-1.x"
 projects[config_devel][version] = "1.x-dev"
 
 projects[config_rewrite][type] = "module"
-projects[config_rewrite][download][type] = "git"
-projects[config_rewrite][download][branch] = "8.x-1.x"
-projects[config_rewrite][version] = "1.x-dev"
-projects[config_rewrite][patch][0] = "https://www.drupal.org/files/issues/2822900-2.patch"
+projects[config_rewrite][version] = "1.0-beta1"
 
 projects[config_sync][type] = "module"
 projects[config_sync][version] = "1.0-alpha3"
@@ -141,9 +138,7 @@ projects[image_widget_crop][type] = "module"
 projects[image_widget_crop][version] = "1.3"
 
 projects[import][type] = "module"
-projects[import][download][type] = "git"
-projects[import][download][branch] = "8.x-2.x"
-projects[import][version] = "2.x-dev"
+projects[import][version] = "2.0-beta1"
 
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.0-alpha6"
