@@ -10,6 +10,7 @@ article.node--type-cta.view-mode-hero .intro {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin:0 auto;
   text-align: center;
 }
 article.node--type-cta.view-mode-hero h1,
