@@ -35,7 +35,7 @@ function df_tools_hero_lightning_fpp_types_alter(&$types) {
  * Implements hook_preprocess_HOOK.
  */
 function df_tools_hero_preprocess_fieldable_panels_pane(&$vars) {
-  if ($vars['elements']['#bundle'] == 'hero') {
+  if (isset($vars['elements']['#bundle']) && $vars['elements']['#bundle'] == 'hero') {
     // Wrap everything other than the hero image/title in a container
     $container = array(
       '#type' => 'container',
