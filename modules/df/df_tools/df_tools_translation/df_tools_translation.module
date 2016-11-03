@@ -73,6 +73,14 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
           $entity_values['path'] = [];
           $translation = $entity->addTranslation($langcode, $entity_values);
 
+          // Properly set the content translation metadata, if applicable.
+          if ($translation->hasField('content_translation_source')) {
+            /** @var \Drupal\content_translation\ContentTranslationManager $manager */
+            $manager = \Drupal::service('content_translation.manager');
+            $manager->getTranslationMetadata($translation)
+              ->setSource($entity->language()->getId());
+          }
+
           // Parse the process array and find anything that came from a CSV.
           // Then, map the translated CSV value's onto the current field.
           // @todo Add multivalue field support.
