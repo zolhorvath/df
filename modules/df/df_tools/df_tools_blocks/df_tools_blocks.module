@@ -207,6 +207,7 @@ function df_tools_blocks_block_alter(&$block_info) {
   $entity_block_id_whitelist = [
     'entity_block:entity_gallery',
     'entity_block:file',
+    'entity_block:media',
     'entity_block:node',
     'entity_block:taxonomy_term',
     'entity_block:user'

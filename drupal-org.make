@@ -103,10 +103,6 @@ projects[field_formatter_class][version] = "1.0-rc2"
 projects[field_group][type] = "module"
 projects[field_group][version] = "1.0-rc4"
 
-projects[file_browser][type] = "module"
-projects[file_browser][version] = "1.0-alpha1"
-projects[file_browser][patch][0] = "https://www.drupal.org/files/issues/file-browser-multi-step-2779451-7.patch"
-
 projects[file_entity][type] = "module"
 projects[file_entity][version] = "2.0-beta2"
 
@@ -133,9 +129,6 @@ projects[google_analytics][version] = "2.1"
 
 projects[image_effects][type] = "module"
 projects[image_effects][version] = "1.0-alpha2"
-
-projects[image_widget_crop][type] = "module"
-projects[image_widget_crop][version] = "1.3"
 
 projects[import][type] = "module"
 projects[import][version] = "2.0-beta1"
