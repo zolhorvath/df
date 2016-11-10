@@ -5,6 +5,7 @@
 // %font-FONTNAME   {}
 // %font-sans-serif { font-family: sans-serif; }
 // %font-serif      { font-family: serif; }
+
 .vertical-margin-space {
     margin-top: rem-calc(10px);
     margin-bottom: rem-calc(10px);
@@ -40,7 +41,6 @@
 
 .row .row {margin-left:0; margin-right:0; max-width:$grid-row-width}
 
-
 .dark-bg {
     background: $dark-bg
 }
@@ -62,7 +62,7 @@
     }
 }
 
-//special case if standard icon is attached to an a
+// Special case if standard icon is attached to an anchor tag.
 a.standard-icon {
     &:hover i,
     &:hover span
@@ -111,7 +111,7 @@ a.standard-icon {
     }
 }
 
-//this allowws you to have text with the centering bar. E.G. --- headline ---
+// This allows you to have text with the centering bar. E.G. --- headline ---.
 .center-focus-bar {
     position: relative;
     display: inline-block;
@@ -254,7 +254,7 @@ ul.checklist {
     }
 }
 
-//small profile pic
+// Small profile pic.
 .profile-pic {
     width: rem-calc(75px);
     border-radius: 75px;

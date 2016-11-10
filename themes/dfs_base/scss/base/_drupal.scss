@@ -32,47 +32,8 @@
   }
 }
 
-.ipe-block-form {
-  input[type="submit"] {
-    border-radius: 0;
-    margin: 0 5px 0 0;
-  }
-  input[name^="ief"][name$="add-existing"],
-  input[name^="ief"][name$="add"],
-  input[type="submit"].ief-entity-submit {
-    background: #2199e8;
-    color: white;
-    margin: 0 5px 0 0;
-  }
-  .ief-entity-table {
-    th {
-      display: none;
-    }
-    td {
-      display: inline-block;
-    }
-    td:last-child {
-      float: right;
-    }
-    .ief-entity-operations {
-      input {
-        font-size: 12px;
-      }
-    }
-  }
-  a.tabledrag-handle .handle {
-    width: 16px;
-    height: 16px;
-    background-position: left top;
-    margin: 0;
-    margin-top: 5px;
-    padding: 0;
-  }
-}
-
-
 // A fix for https://www.drupal.org/node/953034 - Themes currently cannot
-// determine if a region is empty
+// determine if a region is empty.
 .region-highlighted:empty {
   display: none;
 }
@@ -96,7 +57,7 @@
   }
 }
 
-//convert the logo to greyscale in the header
+// Convert the logo to greyscale in the header.
 .toolbar-icon-admin-toolbar-tools-help {
   &:before {
     -webkit-filter: grayscale(100%);
@@ -113,20 +74,10 @@
   }
 }
 
-//avoid FOUC when loading offcanvas items
-#moderate-mmenu:not( .mm-menu) {
-  display: none;
-}
-
 .comment-form {
   .filter-guidelines, .filter-help  {
     display:none;
   }
-}
-
-//avoid FOUC when having to move workbench moderation block to offcanvas (cant place forms in mmenu be default so we have to move it in the DOM)
-.left-off-canvas-menu .workbench-moderation-entity-moderation-form {
-  display: none;
 }
 
 // Offset the top bar if the Navbar (toolbar) is present.
@@ -170,7 +121,8 @@ body.toolbar-fixed .sticky.is-stuck.is-at-top {
   }
 }
 
-//disable some contextual links that just cause issues with demoing logged in because the block is too small. also nobody should be editing these.
+// Disable some contextual links that just cause issues with demoing logged in
+// because the block is too small. Also, nobody should be editing these.
 .search-block-form,
 #block-userdropdown,
 #block-languageswitcher {
@@ -186,7 +138,8 @@ nav {
   }
 }
 
-//move contextual link for heros down. Because nav sits ontop of the hero, the contextual link gets covered up.
+// Move contextual link for heroes down. Because nav sits ontop of the hero,
+// the contextual link gets covered up.
 .hero {
   .contextual,
   [data-block-id] [data-contextual-id].contextual {
@@ -194,7 +147,7 @@ nav {
   }
 }
 
-//make the dialogs responsive (copy from core theme css)
+// Make the dialogs responsive (copied from core theme css).
 @media all and (max-width: 48em) {
   /* 768px */
   .ui-dialog {
@@ -203,17 +156,13 @@ nav {
   }
 }
 
-#moderate-mmenu-link {
-  z-index: 7;
-}
-
-//dont let the background scroll when the category picker is open
+// Don't let the background scroll when the category picker is open.
 .panels-ipe-category-picker-top-open {
   overflow: hidden;
   position: fixed!important;
 }
 
-//hide those crazy gray bars that quickedit has flying all over the page
+// Hide those crazy gray bars that Quick Edit has flying all over the page.
 .quickedit-toolbar-container {
   -webkit-transition: ease-out .5s;
   transition: ease-out .5s;
@@ -255,7 +204,53 @@ nav {
   }
 }
 
-//various updates to site when IPE (and quickedit) are on.
+/* IPE Styles */
+
+.ipe-form .entities-list {
+  .description {
+    display: none;
+  }
+  tr {
+    vertical-align: middle;
+  }
+  td:empty {
+    padding: 0;
+    margin: 0;
+  }
+  td {
+    padding: 5px;
+  }
+  .form-item {
+    padding-bottom: 0;
+    input {
+      margin: 0;
+    }
+  }
+  .item-container {
+    background: $white;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 5px;
+    &:before {
+      content: "\f263";
+      font-family: "Ionicons";
+      padding-right: .5em;
+    }
+  }
+}
+
+.ipe-category-picker-top::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.ipe-category-picker-top::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+  outline: 2px solid slategrey;
+}
+
+// Various updates to site when IPE (and Quick Edit) are on.
+
 .quickedit-on .absoluteNav,
 .panels-ipe-tabs-open .absoluteNav,
 .panels-ipe-active .absoluteNav
@@ -282,12 +277,9 @@ nav {
   padding-top: 0!important;
 }
 
-//hide other administration tasks when in edit mode.
+// Hide other administration tasks when in edit mode.
 .panels-ipe-tabs-open #toolbar-bar,
-.panels-ipe-tabs-open #moderate-mmenu-link,
-.panels-ipe-active #toolbar-bar,
-.panels-ipe-active #moderate-mmenu-link,
-.mm-opened #panels-ipe-tray {
+.panels-ipe-active #toolbar-bar {
   display: none;
   transition: opacity 0.5s ease-out;
   -ms-transition: opacity 0.5s ease-out;
@@ -295,7 +287,44 @@ nav {
   -webkit-transition: opacity 0.5s ease-out;
 }
 
-//ipe
+.ipe-block-form {
+  input[type="submit"] {
+    border-radius: 0;
+    margin: 0 5px 0 0;
+  }
+  input[name^="ief"][name$="add-existing"],
+  input[name^="ief"][name$="add"],
+  input[type="submit"].ief-entity-submit {
+    background: #2199e8;
+    color: white;
+    margin: 0 5px 0 0;
+  }
+  .ief-entity-table {
+    th {
+      display: none;
+    }
+    td {
+      display: inline-block;
+    }
+    td:last-child {
+      float: right;
+    }
+    .ief-entity-operations {
+      input {
+        font-size: 12px;
+      }
+    }
+  }
+  a.tabledrag-handle .handle {
+    width: 16px;
+    height: 16px;
+    background-position: left top;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+  }
+}
+
 .ipe-tabs-content {
   box-shadow: 3px -1px 2px 0px rgba(0, 0, 0, 0.3333);
 }
@@ -307,7 +336,7 @@ nav {
 .ipe-tab:first-child {
   box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.3333);
   z-index: 2;
-  //offset box-shadow causes a gap between the other tabs, this fixes that.
+  // Offset box-shadow causes a gap between the other tabs, this fixes that.
   right: -5px;
 }
 
@@ -499,7 +528,7 @@ a[data-block-type="url"] {
   }
 }
 
-//set to max width 100% to prevent horizontal scroll on mobile
+// Set to max width 100% to prevent horizontal scroll on mobile.
 .ipe-form {
   @include breakpoint(small only) {
     width: 100%;
@@ -670,8 +699,21 @@ a[data-block-type="url"] {
   }
 }
 
+.social_login {
+  max-height:100px;
+  overflow:hidden;
+  iframe {
+    visibility: inherit!important;
+    height: inherit!important
+  }
+}
 
 /* Dialog styles. */
+
+#drupal-modal {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
 
 .ui-dialog {
   .ui-dialog-titlebar {
@@ -717,7 +759,8 @@ a[data-block-type="url"] {
   }
 }
 
-//stuff that doesnt really work on mobile so hide for now...
+// Stuff that doesn't really work on mobile so hide for now...
+
 .tabledrag-toggle-weight-wrapper
 {
   @include breakpoint(small only) {
@@ -725,65 +768,8 @@ a[data-block-type="url"] {
   }
 }
 
-.ipe-form .entities-list {
-  .description {
-    display: none;
-  }
-  tr {
-    vertical-align: middle;
-  }
-  td:empty {
-    padding: 0;
-    margin: 0;
-  }
-  td {
-    padding: 5px;
-  }
-  .form-item {
-    padding-bottom: 0;
-    input {
-      margin: 0;
-    }
-  }
-  .item-container {
-    background: $white;
-    color: $primary-color;
-    border: 1px solid $primary-color;
-    padding: 5px;
-    &:before {
-      content: "\f263";
-      font-family: "Ionicons";
-      padding-right: .5em;
-    }
-  }
-}
-
 .ipe-form .tabledrag-handle {
   @include breakpoint(small only) {
     display: none;
-  }
-}
-
-.ipe-category-picker-top::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.ipe-category-picker-top::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  border-radius: 10px;
-  outline: 2px solid slategrey;
-}
-
-#drupal-modal {
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-}
-
-.social_login {
-  max-height:100px;
-  overflow:hidden;
-  iframe {
-    visibility: inherit!important;
-    height: inherit!important
   }
 }
