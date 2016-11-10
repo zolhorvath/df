@@ -52,14 +52,16 @@ $flex: true;
 // Common file is where you place common utility classes to extend or
 // parametrics.
 // Optional.
-// @import "base/common";
+ @import "base/common";
+
+// Fonts!
+@import "base/fonts/font-awesome";
+@import "base/fonts/ionicons";
+@import "base/font-settings";
 
 // Drupal specific styles (to fix Drupalisms).
 @import "base/drupal";
-
-// Styling for elements.
-// Optional.
-// @import "base/elements";
+@import "base/elements";
 
 // Layout
 // Each section of the document has it's own partial seperated out to improve
