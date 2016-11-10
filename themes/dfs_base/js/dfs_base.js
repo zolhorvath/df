@@ -97,6 +97,8 @@
     }
   });
 
+  Drupal.behaviors.dfs_base = {};
+
   Drupal.behaviors.dfs_base.formFilled = {
     attach: function (context, settings) {
       var formID = $('.contact-form');
