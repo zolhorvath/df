@@ -97,9 +97,7 @@
     }
   });
 
-  Drupal.behaviors.dfs_base = {};
-
-  Drupal.behaviors.dfs_base.formFilled = {
+  Drupal.behaviors.DFSBaseformFilled = {
     attach: function (context, settings) {
       var formID = $('.contact-form');
       var checkbox = $('.form-checkbox');
@@ -155,7 +153,7 @@
   // Another foundation bug on resize. When the window resizes, the hidden
   // dropdown page causes the page to expand beyond window size.
   // It only uses visibility hidden, but we need display none.
-  Drupal.behaviors.dfs_base.FoundationUser = {
+  Drupal.behaviors.DFSBaseFoundationUser = {
     attach: function (context, settings) {
       var dropDownButton = $('.login-dropdown-button');
       var languageDownButton = $('.language-dropdown-button');
@@ -177,7 +175,7 @@
   };
 
   // Temp fix until this is resolved: http://foundation.zurb.com/forum/posts/38056-responsive-navigation-problem
-  Drupal.behaviors.dfs_base.FoundationMenu = {
+  Drupal.behaviors.DFSBaseFoundationMenu = {
     attach: function (context, settings) {
       var Icon = $('button.menu-icon');
       var topbar = $('.top-bar');
@@ -196,7 +194,7 @@
 
   // Remove sticky nav when Quick Edit is turned on as it causes all kinds of
   // complications.
-  Drupal.behaviors.dfs_base.QuickEdit = {
+  Drupal.behaviors.DFSBaseQuickEdit = {
     attach: function (context, settings) {
       $(document).on('DOMNodeInserted', function (e) {
         if (e.target.id == 'quickedit-entity-toolbar') {
@@ -215,7 +213,7 @@
 
   // Sometimes we get weird issues with images not loading due to image styles,
   // so at least provide a fallback.
-  Drupal.behaviors.dfs_base.imgError = {
+  Drupal.behaviors.DFSBaseimgError = {
     attach: function (context, settings) {
       $('img').one('error', function () {
         var image = this;
