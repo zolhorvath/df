@@ -30,10 +30,8 @@ class MediaImage extends CSV {
         $data = file_get_contents($path);
         $uri = file_build_uri($image);
         $file = file_save_data($data, $uri);
-        echo "\nSAVED NEW FILE $image\n";
       }
       else {
-        echo "\nFOUND FILE $image\n";
         $file = reset($files);
       }
 
