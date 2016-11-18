@@ -123,7 +123,7 @@ projects[features_override][version] = "2.0-rc3"
 projects[features_override][type] = "module"
 projects[features_override][subdir] = "contrib"
 
-projects[field_permissions][version] = "1.0-beta2"
+projects[field_permissions][version] = "1.0"
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
 
