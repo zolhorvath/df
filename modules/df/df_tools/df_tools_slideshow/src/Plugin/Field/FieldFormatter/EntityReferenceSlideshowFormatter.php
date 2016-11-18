@@ -151,6 +151,9 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
 
     $elements['#attributes']['class'][] = 'df-tools-slideshow';
 
+    $slideshow_id = \Drupal::service('uuid')->generate();
+    $elements['#attributes']['data-df-tools-slideshow-instance-id'] = $slideshow_id;
+
     // Fix slick boolean values so that they're passed to javascript correctly.
     $slick = [];
     foreach ($this->getSetting('slick') as $setting => $value) {
@@ -177,7 +180,7 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
       $slick['dots'] = TRUE;
     }
 
-    $elements['#attached']['drupalSettings']['DFToolsSlideshow']['slick'] = $slick;
+    $elements['#attached']['drupalSettings']['DFToolsSlideshow'][$slideshow_id]['slick'] = $slick;
 
     return $elements;
   }

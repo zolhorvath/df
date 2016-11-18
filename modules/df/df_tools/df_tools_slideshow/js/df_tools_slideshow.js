@@ -9,16 +9,20 @@
 
   Drupal.behaviors.DFToolsSlideshow = {
     attach: function (context, settings) {
-      // @todo Support multiple slideshows on one page with different settings.
-      var $slideshow = $('.df-tools-slideshow > .field-items').not('.slick-initialized');
-      if (settings.DFToolsSlideshow.slick.customPaging === true) {
-        settings.DFToolsSlideshow.slick.customPaging = function(slider, i) {
-          var $slide = $(slider.$slides[i]);
-          return $('<a href="javascript:;" class="df-tools-slideshow-custom-pager"></a>').append($slide.find('.df-tools-slideshow-pager-element').clone());
-        };
-        $slideshow.addClass('df-tools-slideshow-uses-custom-pager');
+      for (var i in settings.DFToolsSlideshow) {
+        var config = settings.DFToolsSlideshow[i].slick;
+        var $slideshow = $('[data-df-tools-slideshow-instance-id="' + i + '"] > .field-items').not('.slick-initialized');
+        if ($slideshow.length) {
+          if (config.customPaging === true) {
+            config.customPaging = function (slider, i) {
+              var $slide = $(slider.$slides[i]);
+              return $('<a href="javascript:;" class="df-tools-slideshow-custom-pager"></a>').append($slide.find('.df-tools-slideshow-pager-element').clone());
+            };
+            $slideshow.addClass('df-tools-slideshow-uses-custom-pager');
+          }
+          $slideshow.slick(config);
+        }
       }
-      $slideshow.not('.slick-initialized').slick(settings.DFToolsSlideshow.slick);
     }
   };
 
