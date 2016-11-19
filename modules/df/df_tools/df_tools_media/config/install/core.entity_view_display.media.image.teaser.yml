@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.media.teaser
     - field.field.media.image.field_media_in_library
     - field.field.media.image.image
-    - image.style.thumbnail
     - media_entity.bundle.image
   module:
     - image
