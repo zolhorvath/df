@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.media.hero
     - field.field.media.image.field_media_in_library
     - field.field.media.image.image
-    - image.style.hero_image
     - media_entity.bundle.image
   module:
     - image
