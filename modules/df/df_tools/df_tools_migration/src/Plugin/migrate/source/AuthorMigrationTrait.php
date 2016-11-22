@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\dfs_fin\Plugin\migrate\source\AuthorMigrationTrait.
+ * Contains \Drupal\df_tools_migration\Plugin\migrate\source\AuthorMigrationTrait.
  */
 
 namespace Drupal\df_tools_migration\Plugin\migrate\source;

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\dfs_fin\Plugin\migrate\source\ImageMigrationTrait.
+ * Contains \Drupal\df_tools_migration\Plugin\migrate\source\ImageMigrationTrait.
  */
 
 namespace Drupal\df_tools_migration\Plugin\migrate\source;
