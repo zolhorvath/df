@@ -1,0 +1,7 @@
+tabs:
+  version: VERSION
+  js:
+    js/tabs.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.tabs
