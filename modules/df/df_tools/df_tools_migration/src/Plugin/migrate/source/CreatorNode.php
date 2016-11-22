@@ -5,7 +5,7 @@
  * Contains \Drupal\dfs_fin\Plugin\migrate\source\CreatorNode.
  */
 
-namespace Drupal\dfs_fin\Plugin\migrate\source;
+namespace Drupal\df_tools_migration\Plugin\migrate\source;
 
 use Drupal\migrate\Row;
 use Drupal\migrate_source_csv\Plugin\migrate\source\CSV;
