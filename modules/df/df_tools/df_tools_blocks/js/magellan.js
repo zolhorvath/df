@@ -31,6 +31,9 @@
           }
         });
         $(this).foundation();
+        $(this).find('a').on('click', function () {
+          $('[data-magellan]').data('zfPlugin').options.barOffset = $('#toolbar-bar:visible').outerHeight() + $('#toolbar-item-administration-tray:visible').outerHeight() + $(this).outerHeight() - 10;
+        });
       });
     }
   };
