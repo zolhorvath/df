@@ -151,7 +151,7 @@ projects[link_class][type] = "module"
 projects[link_class][version] = "1.0"
 
 projects[lite][type] = "module"
-projects[lite][version] = "1.3"
+projects[lite][version] = "1.4"
 
 projects[media_entity][type] = "module"
 projects[media_entity][version] = "1.5"
