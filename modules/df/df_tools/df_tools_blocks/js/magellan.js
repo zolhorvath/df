@@ -15,7 +15,7 @@
         var $menu = $(this).find('.menu');
         $menu.empty();
         $blocks_after.each(function () {
-          $(this).find('h1,h2').each(function () {
+          $(this).find('.block-title').each(function () {
             if (!this.hasAttribute('id')) {
               $(this).uniqueId();
             }
