@@ -4,3 +4,16 @@ auto_open:
     js/auto_open.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once
+
+magellan:
+  version: VERSION
+  js:
+    js/magellan.js: {}
+  css:
+    theme:
+      css/magellan.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui
