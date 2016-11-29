@@ -208,12 +208,13 @@ function df_tools_blocks_block_alter(&$block_info) {
 
   // Create a whitelist of entity types to pare down the list of entity blocks.
   $entity_block_id_whitelist = [
+    'entity_block:block_content',
     'entity_block:entity_gallery',
     'entity_block:file',
     'entity_block:media',
     'entity_block:node',
     'entity_block:taxonomy_term',
-    'entity_block:user'
+    'entity_block:user',
   ];
 
   foreach ($block_info as $key => $info) {
