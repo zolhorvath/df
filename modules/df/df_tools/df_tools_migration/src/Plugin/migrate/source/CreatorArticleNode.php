@@ -23,9 +23,6 @@ class CreatorArticleNode extends CSV {
   use ImageMigrationTrait;
 
   public function prepareRow(Row $row) {
-    if ($value = $row->getSourceProperty('Tags')) {
-      $row->setSourceProperty('Tags', explode(',', $value));
-    }
     $this->setImageProperty($row, 'Image');
     $this->setUidProperty($row, null, 'creator');
   }
