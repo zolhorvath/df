@@ -4,6 +4,7 @@
 
 .df-tools-tabs-wrapper {
   border: none;
+  background: transparent;
 }
 
 .df-tools-tabs-wrapper .ui-tabs-nav {
