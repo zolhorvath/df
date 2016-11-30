@@ -251,7 +251,7 @@
         "drupal/entity_block": "8.1.x-dev",
         "drupal/entity_gallery": "8.1.x-dev",
         "drupal/field_formatter_class": "8.1.0-rc2",
-        "drupal/field_group": "8.1.0-rc4",
+        "drupal/field_group": "8.1.0-rc5",
         "drupal/file_entity": "8.2.0-beta2",
         "drupal/geocoder": "8.2.0-alpha4",
         "drupal/geofield": "8.1.x-dev",
