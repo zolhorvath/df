@@ -166,7 +166,9 @@
                 "\"offcanvas-lining\" div inappropriately covers whole page | https://www.drupal.org/node/2825154":
                 "https://www.drupal.org/files/issues/removes-offcanvas-lining-div-2825154-11.patch",
                 "Outside In is intermittently unable to bind dialog events to the window | https://www.drupal.org/node/2831924":
-                "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch"
+                "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch",
+                "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
+                "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch"
             },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":

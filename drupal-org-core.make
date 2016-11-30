@@ -11,3 +11,4 @@ projects[drupal][patch][4] = "https://www.drupal.org/files/issues/make_inherited
 projects[drupal][patch][5] = "https://www.drupal.org/files/issues/2684873-28.patch"
 projects[drupal][patch][6] = "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch"
 projects[drupal][patch][7] = "https://www.drupal.org/files/issues/core-hotfix-2788277-3.patch"
+projects[drupal][patch][8] = "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch"
