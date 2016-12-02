@@ -113,7 +113,7 @@ before_script:
   - cd ./profiles/df
 
 script:
-  - composer validate --no-check-all --ansi
+  - if [[ "$LIGHTNING" != HEAD ]]; then composer validate --no-check-all --ansi; fi
   - behat --strict --stop-on-failure --tags=none
   - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=df; fi
   - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=$SCENARIO; fi
