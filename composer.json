@@ -245,7 +245,7 @@
         "drupal/block_class": "8.1.x-dev",
         "drupal/dropzonejs": "8.1.0-alpha2",
         "drupal/config_devel": "8.1.0-alpha3",
-        "drupal/config_rewrite": "8.1.0-beta1",
+        "drupal/config_rewrite": "8.1.0-beta2",
         "drupal/config_sync": "8.1.x-dev",
         "drupal/config_tools": "8.1.x-dev",
         "drupal/content_browser": "8.1.0-alpha2",

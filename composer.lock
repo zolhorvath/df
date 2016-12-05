@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acc850e491a09b039489e47957ca0b14",
-    "content-hash": "347d10686fd550f8ea5ccc6c4eefa415",
+    "hash": "da47a4ce34a598fe4e1cff3f4e40a32f",
+    "content-hash": "23dbe685e10826e75af04b2c460d25ba",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1319,15 +1319,15 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "8.1.0-beta1",
+            "version": "8.1.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_rewrite.git",
-                "reference": "33bfc8e9994705a1ca7681c0190c7b3247f99e72"
+                "reference": "f2464d7c9b73f485733ba95cafca5aa4a9a659a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.0-beta2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1346,7 +1346,7 @@
             ],
             "description": "Changes configuration YAML from config/install|optional with YAML from config/rewrite.",
             "homepage": "https://www.drupal.org/project/config_rewrite",
-            "time": "2016-10-31 21:06:00"
+            "time": "2016-12-05 19:34:47"
         },
         {
             "name": "drupal/config_sync",
