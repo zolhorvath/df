@@ -985,15 +985,15 @@
         },
         {
             "name": "drupal/acquia_connector",
-            "version": "8.1.6",
+            "version": "8.1.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_connector",
-                "reference": "07d3fc1894071949e8d934ce6cfb3b5c0d3f1bd6"
+                "reference": "535f27b1ee669e277e52390a198a1605192bbe88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.6.zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1020,7 +1020,7 @@
             ],
             "description": "Allows Drupal to securely communicate with the Acquia Subscription, and checks for updates to Acquia Drupal.",
             "homepage": "https://www.drupal.org/project/acquia_connector",
-            "time": "2016-10-26 13:52:51"
+            "time": "2016-11-30 14:34:37"
         },
         {
             "name": "drupal/address",
@@ -3131,7 +3131,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_plus.git",
-                "reference": "c951f7aa94593aa32ac98da0648f139d93098956"
+                "reference": "23081a2220597375839a028f64a12ebdd64bd13f"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -3168,7 +3168,7 @@
             ],
             "description": "Enhancements to core migration support",
             "homepage": "https://www.drupal.org/project/migrate_plus",
-            "time": "2016-11-30 23:07:39"
+            "time": "2016-12-02 22:31:25"
         },
         {
             "name": "drupal/migrate_source_csv",
@@ -7808,15 +7808,15 @@
         },
         {
             "name": "drupal/devel",
-            "version": "8.1.0-alpha1",
+            "version": "8.1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "930b7b89c2fa2047ebbb0fb3ba53f45a67409242"
+                "reference": "e6fdb5fcf7c7de92e6b0d72425cd627642f227ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-alpha1.zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-beta1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -7825,13 +7825,12 @@
             },
             "replace": {
                 "drupal/devel_generate": "self.version",
-                "drupal/devel_node_access": "self.version",
                 "drupal/kint": "self.version",
                 "drupal/webprofiler": "self.version"
             },
             "suggest": {
-                "drupal/core": "Required by drupal/devel_generate, drupal/devel_node_access, drupal/kint, drupal/webprofiler",
-                "drupal/menu_ui": "Required by drupal/devel_node_access"
+                "drupal/core": "Required by drupal/devel_generate, drupal/kint, drupal/webprofiler",
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
             },
             "type": "drupal-module",
             "extra": {
@@ -7853,7 +7852,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2016-06-23 14:14:07"
+            "time": "2016-12-03 10:25:23"
         },
         {
             "name": "drupal/drupal-driver",
