@@ -2,7 +2,7 @@
  * @file magellan.css
  */
 
-.df-tools-magellan-block .sticky {
+.df-tools-magellan-block [data-sticky] {
   display: block;
   min-height: 40px;
   text-align: center;
@@ -15,7 +15,8 @@
   transition: .2s color;
 }
 
-.df-tools-magellan-block .menu > li > a:hover {
+.df-tools-magellan-block .menu > li > a:hover,
+.df-tools-magellan-block .menu > li > a.active {
   color: #3366cc;
 }
 

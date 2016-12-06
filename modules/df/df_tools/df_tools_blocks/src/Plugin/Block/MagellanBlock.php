@@ -26,7 +26,7 @@ class MagellanBlock extends BlockBase {
         '<div id="' . $anchor_id . '"></div>' .
         '<div data-sticky-container class="df-tools-magellan-block">' .
         '  <div class="sticky" data-sticky data-top-anchor="' . $anchor_id . '" data-margin-top="0">' .
-        '    <nav data-magellan>' .
+        '    <nav data-magellan data-active-class="active">' .
         '      <ul class="horizontal menu expanded"></ul>' .
         '    </nav>' .
         '  </div>' .
