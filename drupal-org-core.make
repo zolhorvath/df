@@ -12,5 +12,4 @@ projects[drupal][patch][5] = "https://www.drupal.org/files/issues/2684873-28.pat
 projects[drupal][patch][6] = "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch"
 projects[drupal][patch][7] = "https://www.drupal.org/files/issues/core-hotfix-2788277-3.patch"
 projects[drupal][patch][8] = "https://www.drupal.org/files/issues/quickedit-undefined-attr-2661880-14.patch"
-projects[drupal][patch][9] = "https://www.drupal.org/files/issues/removes-offcanvas-lining-div-2825154-11.patch"
-projects[drupal][patch][10] = "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch"
+projects[drupal][patch][9] = "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch"
