@@ -187,7 +187,7 @@
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
-                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-4.patch"
+                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
             },
             "drupal/content_browser": {
                 "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":

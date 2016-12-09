@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3cdb5b1f91105d5fc329dc027932e5df",
-    "content-hash": "8c93518b90c923ec423c7a4e7ed50a75",
+    "hash": "051158284c193e575401c42ff63ee413",
+    "content-hash": "5529b3086b1e6138710e7c4f5d745b44",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4054,7 +4054,7 @@
                     "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
                     "2780691 - Incorrect EntityRevision paramconverter service definition causes a fatal error": "https://www.drupal.org/files/issues/workbench_moderation-invalid_service_definition.patch",
                     "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-21.patch",
-                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-4.patch"
+                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
