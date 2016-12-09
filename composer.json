@@ -169,6 +169,10 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
+            "drupal/entity_block": {
+                "Add UUID support. | http://drupal.org/node/2834377":
+                "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
+            },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
                 "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",

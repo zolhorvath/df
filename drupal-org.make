@@ -80,6 +80,7 @@ projects[entity_block][type] = "module"
 projects[entity_block][download][type] = "git"
 projects[entity_block][download][branch] = "8.x-1.x"
 projects[entity_block][version] = "1.x-dev"
+projects[entity_block][patch][0] = "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
 
 projects[entity_browser][type] = "module"
 projects[entity_browser][version] = "1.0-alpha10"
