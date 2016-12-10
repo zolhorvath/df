@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drush/drush": "^9.0",
+        "drush/drush": "8.1.5",
         "drupal/drupal-extension": "^3.2",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "behat/behat": "^3.0",
@@ -227,6 +227,10 @@
                 "drupal/panelizer": {
                     "Bandaid patch breaking save after previewing blocks with Panelizer":
                     "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
+                },
+                "drush/drush": {
+                    "Commit is already present in Drush 8.1.5":
+                    "https://github.com/drush-ops/drush/commit/c389aebb7d3e26ff0f544684d8b3ec3528107e55.diff"
                 }
             }
         }
