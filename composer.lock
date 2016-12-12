@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "54ce660a764dc1764c6cc655e3aec068",
-    "content-hash": "d4c2f8fe7207c8d8cb2cc54b3b085ece",
+    "hash": "8d52aa09ca3865b5753cde2a3346fadc",
+    "content-hash": "250ebd63dd8a84f24ae6fff9c424e045",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2043,15 +2043,15 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.1",
+            "version": "8.3.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "042fe45f476a5ef2ce3a4cb4997f61430fc62be5"
+                "reference": "9d4cc90e2ca2fc1c9321e533b9c1b4df0a4e4fae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.1.zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2078,7 +2078,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-11-17 22:52:43"
+            "time": "2016-12-11 01:42:49"
         },
         {
             "name": "drupal/field_formatter_class",
@@ -2607,7 +2607,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "3ea00f23e31a5cd7cd4fed633a675f864b0b1e3c"
+                "reference": "dcd717dc541293ae5c4003f304921cca9200728c"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -2624,7 +2624,7 @@
             ],
             "description": "Allows version-dependent and shared usage of external libraries.",
             "homepage": "http://drupal.org/project/libraries",
-            "time": "2016-11-13 12:04:32"
+            "time": "2016-12-12 06:56:46"
         },
         {
             "name": "drupal/lightning",
@@ -2912,6 +2912,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Remove version constraints. | http://drupal.org/node/2770791": "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -7827,16 +7830,16 @@
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.0-rc9",
+            "version": "1.0.0-rc10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "8a2a490cd99f9e47ff4a3d88d88b6c5044ae20ad"
+                "reference": "6482b4e7102d91c6a3650ed3ed1f0081ceca5e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/8a2a490cd99f9e47ff4a3d88d88b6c5044ae20ad",
-                "reference": "8a2a490cd99f9e47ff4a3d88d88b6c5044ae20ad",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/6482b4e7102d91c6a3650ed3ed1f0081ceca5e99",
+                "reference": "6482b4e7102d91c6a3650ed3ed1f0081ceca5e99",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -7877,7 +7880,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-11-24 06:04:33"
+            "time": "2016-12-12 00:56:06"
         },
         {
             "name": "drupal/devel",

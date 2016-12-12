@@ -173,6 +173,10 @@
                 "Add UUID support. | http://drupal.org/node/2834377":
                 "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
             },
+            "drupal/media_entity": {
+                "Remove version constraints. | http://drupal.org/node/2770791":
+                "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
+            },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
                 "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",

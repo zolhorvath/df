@@ -156,6 +156,7 @@ projects[lite][version] = "1.4"
 
 projects[media_entity][type] = "module"
 projects[media_entity][version] = "1.5"
+projects[media_entity][patch][0] = "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
 
 projects[media_entity_document][type] = "module"
 projects[media_entity_document][version] = "1.1"
