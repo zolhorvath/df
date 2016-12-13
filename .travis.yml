@@ -82,7 +82,7 @@ install:
   - phpenv rehash
 
   # Test Lightning HEAD
-  - if [[ "$LIGHTNING" == HEAD ]]; then composer require "drupal/lightning:dev-8.x-1.x" --no-update; fi
+  - if [[ "$LIGHTNING" == HEAD ]]; then composer require "drupal/lightning:dev-2.x" --no-update; fi
 
   # We need Phing to execute our build steps.
   - composer global require phing/phing

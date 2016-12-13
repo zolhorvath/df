@@ -44,7 +44,7 @@ projects[config_devel][download][branch] = "8.x-1.x"
 projects[config_devel][version] = "1.x-dev"
 
 projects[config_rewrite][type] = "module"
-projects[config_rewrite][version] = "1.0-beta2"
+projects[config_rewrite][version] = "1.0-beta1"
 
 projects[config_sync][type] = "module"
 projects[config_sync][version] = "1.0-alpha3"
