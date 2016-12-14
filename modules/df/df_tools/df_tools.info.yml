@@ -13,6 +13,7 @@ dependencies:
   - df_tools_frontend
   - df_tools_gallery
   - df_tools_image
+  - df_tools_landing_page
   - df_tools_layout
   - df_tools_map
   - df_tools_media

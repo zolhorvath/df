@@ -1,0 +1,8 @@
+name: 'DF Tools Landing Page'
+description: 'Extends the landing page content type provided by Lightning.'
+type: module
+core: 8.x
+dependencies:
+  - lightning_landing_page
+  - df_tools_moderation
+  - df_tools_translation
