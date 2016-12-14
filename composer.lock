@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5493b8be6ad0879638df640f3603363f",
-    "content-hash": "2a45ec9665847ada0dba05a765178eb6",
+    "hash": "da8e7413205d16e90b61bb0ab0dd12aa",
+    "content-hash": "44ab6ec4963409d2c55d6755d664c453",
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "dev-8.x-2.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
@@ -12219,7 +12219,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "acquia/lightning": 20,
         "drupal/address": 20,
         "drupal/better_formats": 20,
         "drupal/block_class": 20,
