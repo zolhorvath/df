@@ -4603,20 +4603,14 @@ table.hover tbody tr:nth-of-type(even):hover {
   font-size: 1.5625rem;
   line-height: 1.875rem; }
 
-.standard-icon, .main-menu-icon, #search-block-form .searchbox-icon,
-#search-block-form .main-menu-icon, .login-dropdown-button {
+.standard-icon, .main-menu-icon, .login-dropdown-button {
   color: #353535; }
-  .standard-icon.hover span:before, .hover.main-menu-icon span:before, #search-block-form .hover.searchbox-icon span:before,
-  #search-block-form .hover.main-menu-icon span:before, .hover.login-dropdown-button span:before,
-  .standard-icon.hover i:before, .hover.main-menu-icon i:before, #search-block-form .hover.searchbox-icon i:before,
-  #search-block-form .hover.main-menu-icon i:before, .hover.login-dropdown-button i:before, .standard-icon.hover:before, .hover.main-menu-icon:before, #search-block-form .hover.searchbox-icon:before,
-  #search-block-form .hover.main-menu-icon:before, .hover.login-dropdown-button:before {
+  .standard-icon.hover span:before, .hover.main-menu-icon span:before, .hover.login-dropdown-button span:before,
+  .standard-icon.hover i:before, .hover.main-menu-icon i:before, .hover.login-dropdown-button i:before, .standard-icon.hover:before, .hover.main-menu-icon:before, .hover.login-dropdown-button:before {
     color: #399bc9; }
 
-a.standard-icon:hover i:before, a.main-menu-icon:hover i:before, #search-block-form a.searchbox-icon:hover i:before,
-#search-block-form a.main-menu-icon:hover i:before, a.login-dropdown-button:hover i:before,
-a.standard-icon:hover span:before, a.main-menu-icon:hover span:before, #search-block-form a.searchbox-icon:hover span:before,
-#search-block-form a.main-menu-icon:hover span:before, a.login-dropdown-button:hover span:before {
+a.standard-icon:hover i:before, a.main-menu-icon:hover i:before, a.login-dropdown-button:hover i:before,
+a.standard-icon:hover span:before, a.main-menu-icon:hover span:before, a.login-dropdown-button:hover span:before {
   color: #399bc9; }
 
 .display-none {
@@ -4628,8 +4622,7 @@ a.standard-icon:hover span:before, a.main-menu-icon:hover span:before, #search-b
   max-width: 100%;
   position: relative; }
 
-.form-reset, #search-block-form .searchbox-icon,
-#search-block-form .form-submit, #search-block-form .form-search {
+.form-reset {
   top: 0;
   right: 0;
   padding: 0;
@@ -10486,40 +10479,6 @@ a[data-block-type="url"]:before {
   @media screen and (max-width: 39.9375em) {
     .main-menu-icon {
       display: none; } }
-
-#search-block-form.searchbox-open {
-  width: 100%; }
-
-#search-block-form {
-  position: relative;
-  min-width: 1.875rem;
-  width: 0%;
-  float: right;
-  overflow: hidden; }
-  #search-block-form .searchbox-icon,
-  #search-block-form .form-submit {
-    width: 1.875rem;
-    height: 1.875rem;
-    display: block;
-    position: absolute;
-    text-align: center;
-    cursor: pointer;
-    background: #f3f3f3; }
-  #search-block-form .form-submit {
-    text-indent: -9999px; }
-  #search-block-form .searchbox-icon:hover:before,
-  #search-block-form .main-menu-icon:hover:before {
-    color: #399bc9; }
-  #search-block-form .searchbox-icon.hover,
-  #search-block-form .main-menu-icon.hover {
-    background: #fefefe; }
-  #search-block-form .form-search {
-    width: 100%;
-    height: 1.875rem;
-    margin: 0;
-    padding: 0px 55px 0px 10px;
-    font-size: 0.875rem;
-    color: #353535; }
 
 .login-dropdown-button {
   display: block;
