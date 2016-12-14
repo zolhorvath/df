@@ -163,53 +163,6 @@
     }
 }
 
-#search-block-form.searchbox-open {
-    width: 100%;
-}
-
-#search-block-form {
-    position: relative;
-    min-width: rem-calc(30px);
-    width: 0%;
-    float: right;
-    overflow: hidden;
-    .searchbox-icon,
-    .form-submit {
-        @extend .form-reset;
-        width: rem-calc(30px);
-        height: rem-calc(30px);
-        display: block;
-        position: absolute;
-        text-align: center;
-        cursor: pointer;
-        background: $secondary-bg;
-    }
-    .form-submit {
-        text-indent: -9999px;
-    }
-    .searchbox-icon,
-    .main-menu-icon {
-        @extend .standard-icon;
-        &:hover {
-            &:before {
-                color: $primary-font-hover-color;
-            }
-        }
-        &.hover {
-            background: $white;
-        }
-    }
-    .form-search {
-        @extend .form-reset;
-        width: 100%;
-        height: rem-calc(30px);
-        margin: 0;
-        padding: 0px 55px 0px 10px;
-        font-size: rem-calc(14px);
-        color: $primary-font-color;
-    }
-}
-
 .login-dropdown-button {
     display: block;
     max-width: 200px;
