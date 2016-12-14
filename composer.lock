@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de60a90423606101ada23c70c62b976b",
-    "content-hash": "d83846cb342cf9d5c9113f1881e83707",
+    "hash": "5493b8be6ad0879638df640f3603363f",
+    "content-hash": "2a45ec9665847ada0dba05a765178eb6",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "2e3031e3de03de0615446832ef02d0c445ae594e"
+                "reference": "1b1c502b182d09815feb1ad111ac0d65ecbbc2c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/2e3031e3de03de0615446832ef02d0c445ae594e",
-                "reference": "2e3031e3de03de0615446832ef02d0c445ae594e",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/1b1c502b182d09815feb1ad111ac0d65ecbbc2c7",
+                "reference": "1b1c502b182d09815feb1ad111ac0d65ecbbc2c7",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,11 @@
                         "2820105 - User references are not replicated": "https://www.drupal.org/files/issues/2820105-10.patch"
                     },
                     "drupal/core": {
-                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch"
+                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                        "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
+                    },
+                    "drupal/entity_embed": {
+                        "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                     }
                 }
             },
@@ -126,7 +130,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2016-12-02 01:22:21"
+            "time": "2016-12-14 10:36:28"
         },
         {
             "name": "asm89/stack-cors",
@@ -1665,17 +1669,17 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_rewrite",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.0-beta2.zip",
                 "reference": null,
-                "shasum": "d776fef348aff7f45b9d1debb5ee823ee83fc465"
+                "shasum": "0f85e1b1e4758158bcd8ff72a81e6eaca1f28d1f"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1686,8 +1690,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1477948440"
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1481740085"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2107,6 +2111,7 @@
             "extra": {
                 "patches_applied": {
                     "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                    "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch",
                     "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
                     "Quickedit cant edit images | https://www.drupal.org/node/2635712": "https://www.drupal.org/files/issues/2635712-14.patch",
                     "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
@@ -2697,6 +2702,9 @@
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1476698339"
+                },
+                "patches_applied": {
+                    "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3206,7 +3214,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "41380901f21353ec66abfd128034da8de1b88877"
+                "reference": "07e051a560da7f84a409bc966d684da3b7320851"
             },
             "require": {
                 "drupal/core": "*"
@@ -3217,8 +3225,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8+51-dev",
-                    "datestamp": "1481638684"
+                    "version": "8.x-1.8+54-dev",
+                    "datestamp": "1481724186"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3240,7 +3248,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2016-12-13 14:16:53"
+            "time": "2016-12-14 13:51:44"
         },
         {
             "name": "drupal/geophp",
@@ -8047,16 +8055,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.28.2",
+            "version": "v1.29.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c"
+                "reference": "74f723e542368ca2080b252740be5f1113ebb898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b22ce0eb070e41f7cba65d78fe216de29726459c",
-                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/74f723e542368ca2080b252740be5f1113ebb898",
+                "reference": "74f723e542368ca2080b252740be5f1113ebb898",
                 "shasum": ""
             },
             "require": {
@@ -8069,7 +8077,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.28-dev"
+                    "dev-master": "1.29-dev"
                 }
             },
             "autoload": {
@@ -8104,7 +8112,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-11-23 18:41:40"
+            "time": "2016-12-13 17:28:18"
         },
         {
             "name": "willdurand/geocoder",
@@ -9252,22 +9260,22 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.2.9",
+            "version": "8.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/klausi/coder.git",
-                "reference": "b08682bd939cf7d3ac7034bee792aa17f80e19d7"
+                "reference": "c835ff5c1733676fe0d3f3b861e814d570baaa6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klausi/coder/zipball/b08682bd939cf7d3ac7034bee792aa17f80e19d7",
-                "reference": "b08682bd939cf7d3ac7034bee792aa17f80e19d7",
+                "url": "https://api.github.com/repos/klausi/coder/zipball/c835ff5c1733676fe0d3f3b861e814d570baaa6f",
+                "reference": "c835ff5c1733676fe0d3f3b861e814d570baaa6f",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=5.4.0",
-                "squizlabs/php_codesniffer": ">=2.7.0",
+                "squizlabs/php_codesniffer": ">=2.7.0 <3.0",
                 "symfony/yaml": ">=2.0.0"
             },
             "require-dev": {
@@ -9285,7 +9293,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-17 16:49:15"
+            "time": "2016-12-09 21:57:53"
         },
         {
             "name": "drupal/console",
