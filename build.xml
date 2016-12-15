@@ -107,6 +107,12 @@
     <exec command="${drush} config-set media_entity.bundle.tweet type_configuration.oauth_access_token 52258222-ICStkPK2QcFN5d7v1FKJ1BMnqqPuuJnLIDr12Jsjs --yes" dir="${docroot}" />
     <exec command="${drush} config-set media_entity.bundle.tweet type_configuration.oauth_access_token_secret Z4qff1DPLhqxHwei0jXgsnU0xdBFET4wSpQYn6Si3G3lF --yes" dir="${docroot}" />
     <exec command="${drush} config-set media_entity.bundle.tweet type_configuration.generate_thumbnails 1 --yes --format=boolean" dir="${docroot}" />
+
+    <!--
+    Install DF Tools Lite, which is not installed by default. Enable passthru()
+    for this as well.
+    -->
+    <exec command="${drush} pm-enable df_tools_lite --yes" dir="${docroot}" passthru="true" />
   </target>
 
   <!-- Prepares DF for the drupal.org packaging system. -->
