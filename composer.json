@@ -1,5 +1,5 @@
 {
-    "name": "drupal/df",
+    "name": "acquia/df",
     "description": "A framework for demoing enterprise-ready Drupal solutions.",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
