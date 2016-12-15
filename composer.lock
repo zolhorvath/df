@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "935697180b0aef320a22950affc6218b",
-    "content-hash": "0b5de366421d67b919f2c13e8711d312",
+    "hash": "5ba7262028c951d05d2b1c9aed244594",
+    "content-hash": "c668a29b32faea93ee19d6f49de77529",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4635,7 +4635,6 @@
                     "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
                     "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
                     "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/panelizer-2664682-93.patch",
-                    "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch",
                     "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163": "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-10.patch"
                 }
             },
