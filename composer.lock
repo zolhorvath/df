@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5ba7262028c951d05d2b1c9aed244594",
-    "content-hash": "c668a29b32faea93ee19d6f49de77529",
+    "hash": "d42fc669e7f873dd9af3310d7cc5bd95",
+    "content-hash": "38f07be3f77151cadb891536fe788e1d",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -118,6 +118,9 @@
                     "drupal/entity_embed": {
                         "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                     }
+                },
+                "patches_applied": {
+                    "Skip lightning_core_form_user_form_alter() | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
                 }
             },
             "autoload": {
@@ -3214,7 +3217,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "a29ab9d6ecbf7e237e0f5a370142677f3b9565da"
+                "reference": "7f427fdd863dadfc3a44c41f9b67f9c08dded081"
             },
             "require": {
                 "drupal/core": "*"
@@ -3225,8 +3228,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8+55-dev",
-                    "datestamp": "1481752983"
+                    "version": "8.x-1.8+58-dev",
+                    "datestamp": "1481903584"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3248,7 +3251,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2016-12-14 21:56:04"
+            "time": "2016-12-16 15:48:02"
         },
         {
             "name": "drupal/geophp",
@@ -4628,7 +4631,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha2",
-                    "datestamp": "1455659039"
+                    "datestamp": "1481832184"
                 },
                 "patches_applied": {
                     "2747739 - Mega Patch 8.x-3.0-alpha2 --> 54f0ac6e": "https://www.drupal.org/files/issues/panelizer--8.x-3.0-alpha2--54f0ac6e.patch",
