@@ -147,8 +147,8 @@
         "enable-patching": true,
         "patches": {
             "acquia/lightning": {
-                "Skip lightning_core_form_user_form_alter() | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
+                "Disable lightning_core_entity_load() and lightning_core_form_user_form_alter() | https://www.drupal.org/node/2770791":
+                "https://www.drupal.org/files/issues/disable-lightning_core-functions-0.patch"
             },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":

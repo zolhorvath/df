@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "391679984132554480383816e9fabc81",
-    "content-hash": "43cd5ba2e50693891244f61bce6b7609",
+    "hash": "3483d5bfae3afe22b213887371212163",
+    "content-hash": "0dce0753b47075cc8f71663a938459d6",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -120,7 +120,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Skip lightning_core_form_user_form_alter() | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
+                    "Disable lightning_core_entity_load() and lightning_core_form_user_form_alter() | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/disable-lightning_core-functions-0.patch"
                 }
             },
             "autoload": {
