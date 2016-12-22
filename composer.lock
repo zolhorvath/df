@@ -1190,7 +1190,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address",
-                "reference": "be940c96c5c6427104ba78c95c6c6f363651d2b4"
+                "reference": "725375be40106c682e0091f450b0a9dd6c4b5ecf"
             },
             "require": {
                 "commerceguys/addressing": "~1.0",
@@ -1204,8 +1204,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc3+1-dev",
-                    "datestamp": "1477826940"
+                    "version": "8.x-1.0-rc3+2-dev",
+                    "datestamp": "1482431582"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1231,7 +1231,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
             },
-            "time": "2016-10-30 11:26:44"
+            "time": "2016-12-22 18:29:13"
         },
         {
             "name": "drupal/addtoany",
@@ -3220,7 +3220,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "96bdee4c4084f29481b4eec0a08fbc5d1b8dae94"
+                "reference": "56774de50c4726e49449f12be39dc7e67c1212c9"
             },
             "require": {
                 "drupal/core": "*"
@@ -3231,8 +3231,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+2-dev",
-                    "datestamp": "1482403683"
+                    "version": "8.x-1.9+3-dev",
+                    "datestamp": "1482422884"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3254,7 +3254,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2016-12-22 10:45:58"
+            "time": "2016-12-22 15:48:58"
         },
         {
             "name": "drupal/geophp",
@@ -9463,16 +9463,16 @@
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.0-rc11",
+            "version": "1.0.0-rc12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "694f46c5dfa69efc3f8a0bdc6eab4d63c306b1b6"
+                "reference": "e32e54aa97905b31389155337b61ccfdd91b7cc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/694f46c5dfa69efc3f8a0bdc6eab4d63c306b1b6",
-                "reference": "694f46c5dfa69efc3f8a0bdc6eab4d63c306b1b6",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/e32e54aa97905b31389155337b61ccfdd91b7cc6",
+                "reference": "e32e54aa97905b31389155337b61ccfdd91b7cc6",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -9513,7 +9513,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-12-12 17:16:39"
+            "time": "2016-12-22 16:11:31"
         },
         {
             "name": "drupal/devel",
