@@ -44,6 +44,9 @@ function dfs_base_preprocess_block(&$variables) {
 		$block_content = $variables['content']['#block_content'];
 		$variables['attributes']['class'][] = Html::cleanCssIdentifier('block-content-type-' . $block_content->bundle());
 	}
+	else if ($variables['elements']['#base_plugin_id'] === 'entity_block') {
+		$variables['attributes']['class'][] = Html::cleanCssIdentifier('block-entity-type-' . $variables['elements']['#derivative_plugin_id']);
+	}
 	$variables['attributes']['class'][] = Html::cleanCssIdentifier('block-plugin-id-' . $variables['elements']['#base_plugin_id']);
 }
 
