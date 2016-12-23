@@ -50,7 +50,8 @@ function drush_df_tools_panelizer_df_panelizer_export($nid, $scenario) {
 
     // Write YAML to a file.
     $panels_file = $base_path . '/data/panelizer.panels_display.node.'.$node->uuid() . '.yml';
-    $yaml = \Symfony\Component\Yaml\Yaml::dump($node->panelizer->panels_display, 99, 2);
+    $configuration = \Drupal::service('panelizer')->getPanelsDisplay($node, 'full')->getConfiguration();
+    $yaml = \Symfony\Component\Yaml\Yaml::dump($configuration, 99, 2);
     file_put_contents($panels_file, $yaml);
 
     drupal_set_message(t('Successfully exported Panelizer display for Node @nid to @panels_file', ['@nid' => $node->id(), '@panels_file' => $panels_file]));
