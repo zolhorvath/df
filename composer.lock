@@ -3220,7 +3220,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "56774de50c4726e49449f12be39dc7e67c1212c9"
+                "reference": "f6d976d3fb2e0d6af50ed43d10f2a8b6b9f5585c"
             },
             "require": {
                 "drupal/core": "*"
@@ -3231,8 +3231,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+3-dev",
-                    "datestamp": "1482422884"
+                    "version": "8.x-1.9+5-dev",
+                    "datestamp": "1482598383"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3254,7 +3254,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2016-12-22 15:48:58"
+            "time": "2016-12-24 16:49:04"
         },
         {
             "name": "drupal/geophp",
@@ -4350,7 +4350,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "d1dea26de832e928cb4997f7f2ffe901ed765547"
+                "reference": "3445b38043405887f401084a19a1cfb877d5fe59"
             },
             "require": {
                 "drupal/core": "*"
@@ -4365,7 +4365,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1478215439"
+                    "datestamp": "1482883985"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4383,7 +4383,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_note"
             },
-            "time": "2016-11-03 23:20:49"
+            "time": "2016-12-28 00:09:55"
         },
         {
             "name": "drupal/moderation_sidebar",
@@ -4391,13 +4391,13 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "61855837e2109f784cec8748eecc38d04ad8ff4f"
+                "reference": "027e1df0461ee4a11e088f8736c223d55599061b"
             },
             "require": {
                 "drupal/core": "*"
             },
-            "suggest": {
-                "drupal/workbench_moderation": "Required by drupal/moderation_sidebar"
+            "require-dev": {
+                "drupal/workbench_moderation": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -4406,7 +4406,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1478896151"
+                    "datestamp": "1482886983"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4424,7 +4424,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2016-11-11 20:27:52"
+            "time": "2016-12-28 01:01:33"
         },
         {
             "name": "drupal/multiversion",
@@ -5064,7 +5064,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/restui",
-                "reference": "ada367e7a26fff7dc0340f07ab504c9d9020e957"
+                "reference": "dd9d0bf438da8c16a62a4d79aea96b65bd231900"
             },
             "require": {
                 "drupal/core": "^8.2.0"
@@ -5075,8 +5075,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12+1-dev",
-                    "datestamp": "1476691739"
+                    "version": "8.x-1.13+3-dev",
+                    "datestamp": "1482507483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5112,7 +5112,7 @@
                 "source": "https://cgit.drupalcode.org/restui",
                 "issues": "https://www.drupal.org/project/issues/restui"
             },
-            "time": "2016-10-17 08:03:48"
+            "time": "2016-12-23 15:33:09"
         },
         {
             "name": "drupal/scenarios",
@@ -8064,16 +8064,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.29.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898"
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/74f723e542368ca2080b252740be5f1113ebb898",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c6ff71094fde15d12398eaba029434b013dc5e59",
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59",
                 "shasum": ""
             },
             "require": {
@@ -8086,7 +8086,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.29-dev"
+                    "dev-master": "1.30-dev"
                 }
             },
             "autoload": {
@@ -8121,7 +8121,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-13 17:28:18"
+            "time": "2016-12-23 11:06:22"
         },
         {
             "name": "willdurand/geocoder",
@@ -9306,23 +9306,23 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.0.0-rc11",
+            "version": "1.0.0-rc12",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hechoendrupal/DrupalConsole.git",
-                "reference": "7eb98a13458da1a63f87435ced4128cd15f34d9e"
+                "url": "https://github.com/hechoendrupal/drupal-console.git",
+                "reference": "da0e61df3451d465334ee0f6750d557f37073165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/7eb98a13458da1a63f87435ced4128cd15f34d9e",
-                "reference": "7eb98a13458da1a63f87435ced4128cd15f34d9e",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/da0e61df3451d465334ee0f6750d557f37073165",
+                "reference": "da0e61df3451d465334ee0f6750d557f37073165",
                 "shasum": ""
             },
             "require": {
                 "alchemy/zippy": "0.3.5",
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "1.2.*",
-                "drupal/console-core": "~1.0",
+                "drupal/console-core": "1.0.0-rc12",
                 "gabordemooij/redbean": "~4.3",
                 "guzzlehttp/guzzle": "~6.1",
                 "php": "^5.5.9 || ^7.0",
@@ -9378,25 +9378,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-12-12 22:41:41"
+            "time": "2016-12-22 23:48:04"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.0.0-rc11",
+            "version": "1.0.0-rc12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "b0b73776d6495d253ed1dfdda67a6e05bb5895f6"
+                "reference": "59e2f5069db3eec1260eecd7e7b4e7167c36cc91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/b0b73776d6495d253ed1dfdda67a6e05bb5895f6",
-                "reference": "b0b73776d6495d253ed1dfdda67a6e05bb5895f6",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/59e2f5069db3eec1260eecd7e7b4e7167c36cc91",
+                "reference": "59e2f5069db3eec1260eecd7e7b4e7167c36cc91",
                 "shasum": ""
             },
             "require": {
-                "dflydev/dot-access-configuration": "dev-master#9dc52aeeab5ae99afcbb0d67bb5c1af8c87d03dc",
-                "drupal/console-en": "~1.0",
+                "dflydev/dot-access-configuration": "dev-master",
+                "drupal/console-en": "1.0.0-rc12",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": ">=2.7 <3.2",
@@ -9459,7 +9459,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-12-12 21:43:08"
+            "time": "2016-12-22 23:33:09"
         },
         {
             "name": "drupal/console-en",
@@ -9467,12 +9467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "e32e54aa97905b31389155337b61ccfdd91b7cc6"
+                "reference": "810cc4d3e45d47ff444be57c8d25f50ebfcfae28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/e32e54aa97905b31389155337b61ccfdd91b7cc6",
-                "reference": "e32e54aa97905b31389155337b61ccfdd91b7cc6",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/810cc4d3e45d47ff444be57c8d25f50ebfcfae28",
+                "reference": "810cc4d3e45d47ff444be57c8d25f50ebfcfae28",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -9513,7 +9513,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-12-22 16:11:31"
+            "time": "2016-12-22 23:08:32"
         },
         {
             "name": "drupal/devel",
