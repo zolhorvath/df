@@ -195,6 +195,13 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
 /**
  * Implements hook_form_FORM_ID_alter().
  */
+function df_tools_blocks_form_block_content_hero_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  df_tools_blocks_form_block_content_hero_panels_ipe_form_alter($form, $form_state, $form_id);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Move the hero image out of the details element and set a better label.
   $form['field_hero_image']['widget']['#type'] = 'container';
@@ -210,10 +217,8 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
   $form['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="large-6 columns">';
   $form['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
   // Group complex form elements into the advanced section.
-  $form['advanced'][] = $form['field_icon'];
-  $form['advanced'][] = $form['field_nested_block'];
-  unset($form['field_icon']);
-  unset($form['field_nested_block']);
+  $form['field_icon']['#attributes']['class'][] = 'visually-hidden';
+  $form['field_nested_block']['#attributes']['class'][] = 'visually-hidden';
   $style_fields = [
     'field_text_color',
     'field_gradient_color',
