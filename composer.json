@@ -200,7 +200,9 @@
             },
             "drupal/panels": {
                 "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":
-                "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+                "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
+                "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
+                "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
             },
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c09c12fce33adb4d5b402e915853ae0f",
-    "content-hash": "ce908ab8053b2f97ee7f0929553ed054",
+    "hash": "7da8e4817b6ae54704612f6aa41004fd",
+    "content-hash": "8d2e0c0a3dd25e0f23580ebcc2cad3bb",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4391,7 +4391,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "027e1df0461ee4a11e088f8736c223d55599061b"
+                "reference": "089abeb9674e5b0b51636544d7f5d0b39eec5389"
             },
             "require": {
                 "drupal/core": "*"
@@ -4406,7 +4406,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1482886983"
+                    "datestamp": "1482964984"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4424,7 +4424,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2016-12-28 01:01:33"
+            "time": "2016-12-28 22:42:55"
         },
         {
             "name": "drupal/multiversion",
@@ -4719,7 +4719,8 @@
                 },
                 "patches_applied": {
                     "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch",
-                    "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897": "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+                    "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897": "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
+                    "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
