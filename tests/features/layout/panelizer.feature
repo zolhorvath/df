@@ -34,7 +34,7 @@ Feature: Panelizer
       | type  | info               | body    | uuid                  |
       | basic | Here be dragons... | RAWWWR! | test--here-be-dragons |
     When I visit "/foobar"
-    And I place the "block_content:test--here-be-dragons" block from the "Custom" category
+    And I place the "block_content:test--here-be-dragons" block from the "Basic Block" category
     And I save the layout
     And I reload the page
     And I wait 5 seconds
