@@ -1,0 +1,6 @@
+panels_ipe:
+  version: VERSION
+  js:
+    js/panels_ipe.js: {}
+  dependencies:
+    - panels_ipe/panels_ipe
