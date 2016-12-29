@@ -773,3 +773,13 @@ a[data-block-type="url"] {
     display: none;
   }
 }
+
+// Hide an IPE category we create dynamically in df_tools_blocks_block_alter().
+
+[data-category="Hidden"] {
+  display: none;
+}
+
+.toolbar-icon-edit {
+  display: none;
+}

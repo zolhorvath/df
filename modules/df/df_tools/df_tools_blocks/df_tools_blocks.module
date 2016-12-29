@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\block_content\Entity\BlockContent;
+use Drupal\block_content\Entity\BlockContentType;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Component\Utility\Html;
@@ -278,15 +280,17 @@ function df_tools_blocks_migration_plugins_alter(&$definitions) {
 function df_tools_blocks_block_alter(&$block_info) {
   // Create an associative array which maps default => custom block categories.
   $category_map = [
-    'Embed' => 'Create Display',
-    'Entity Block' => 'Existing Content',
-    'User' => 'System',
-    'Chaos tools' => 'System',
-    'Help' => 'System',
-    'core' => 'System',
-    'Workbench moderation' => 'System',
+    'Embed' => 'Embed content',
+    'Entity Block' => 'Embed content',
+    'Commerce' => 'Forms',
     'Lists (Views)' => 'Lists',
     'AddToAny' => 'Social',
+    'Workbench moderation' => 'Hidden',
+    'User' => 'Hidden',
+    'Chaos tools' => 'Hidden',
+    'Help' => 'Hidden',
+    'core' => 'Hidden',
+    'System' => 'Hidden',
   ];
 
   // Create a whitelist of entity types to pare down the list of entity blocks.
@@ -296,7 +300,6 @@ function df_tools_blocks_block_alter(&$block_info) {
     'entity_block:entity_gallery',
     'entity_block:file',
     'entity_block:media',
-    'entity_block:node',
     'entity_block:taxonomy_term',
     'entity_block:user',
   ];
@@ -314,7 +317,7 @@ function df_tools_blocks_block_alter(&$block_info) {
     // 'Current @Entity_Type' category. If the block is not a field on the
     // current entity, allow its category to be remapped.
     if ($category == '@entity') {
-      $block_info[$key]['category'] = 'Current ' . $info['category']->render();
+      $block_info[$key]['category'] = $info['category']->render() . ' Fields';
     }
     else {
       if (isset($category_map[$category])) {
@@ -325,6 +328,19 @@ function df_tools_blocks_block_alter(&$block_info) {
     // Restrict entity blocks according to the whitelist.
     if ($category == 'Entity Block' && !in_array($key, $entity_block_id_whitelist)) {
       unset($block_info[$key]);
+    }
+
+    // Place Block Content entities into categories based on their type.
+    if ($category == 'Custom') {
+      list($type, $uuid) = explode(':', $key);
+      $ids = \Drupal::entityQuery('block_content')
+        ->condition('uuid', $uuid, '=')
+        ->execute();
+      if ($block = BlockContent::load(reset($ids))) {
+        if ($bundle = BlockContentType::load($block->bundle())) {
+          $block_info[$key]['category'] = t($bundle->label());
+        }
+      }
     }
   }
 }
