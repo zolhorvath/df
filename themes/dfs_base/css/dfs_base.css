@@ -10326,6 +10326,12 @@ a[data-block-type="url"]:before {
   .ipe-form .tabledrag-handle {
     display: none; } }
 
+[data-category="Hidden"] {
+  display: none; }
+
+.toolbar-icon-edit {
+  display: none; }
+
 @media screen and (min-width: 40em) {
   #top-bar-sticky-container {
     height: 100px;
