@@ -79,14 +79,15 @@ third_party_settings:
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
-        classes: 'full-width-row l-over-each'
+        label: Hero
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: l-over-each
       label: Hero
     group_hero_content_spanned:
       children:
@@ -116,17 +117,16 @@ third_party_settings:
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
-        classes: 'medium-7 large-5 column'
+        label: Column
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: 'medium-8 large-8 column'
       label: Column
-_core:
-  default_config_hash: KwZKHfM7Ixui_187qEJvrlRPW_LMvGch5orlPGTe4S0
 id: block_content.hero.featured
 targetEntityType: block_content
 bundle: hero
@@ -186,4 +186,3 @@ hidden:
   field_hero_alignment: true
   field_text_color: true
   langcode: true
-
