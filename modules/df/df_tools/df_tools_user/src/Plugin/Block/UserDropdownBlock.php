@@ -66,7 +66,7 @@ class UserDropdownBlock extends BlockBase implements ContainerFactoryPluginInter
       // Create a 'person' icon that toggles a login form.
       $markup = '';
       $markup .= '<a class="login-dropdown-button standard-icon meta-icon-size left" data-toggle="user-login-wrapper" aria-controls="user-login-wrapper" aria-expanded="false">';
-      $markup .= '<i class="icon ion-person"></i>';
+      $markup .= '<i class="icon ion-ios-person"><span>Login</span></i>';
       $markup .= '</a>';
 
       $block['login'] = [
@@ -108,13 +108,13 @@ class UserDropdownBlock extends BlockBase implements ContainerFactoryPluginInter
       // Create a 'person' icon that toggles user profile and log out links.
       $markup = '';
       $markup .= '<a class="login-dropdown-button standard-icon meta-icon-size left" data-toggle="user-logout-wrapper" aria-controls="user-logout-wrapper" aria-expanded="false">';
-      $markup .= '<i class="icon ion-person"></i>';
+      $markup .= '<i class="icon ion-ios-person"></i>';
       $markup .= '<span> '. $username . '</span>';
       $markup .= '</a>';
 
       $markup .= '<div id="user-logout-wrapper" class="dropdown-pane f-dropdown" data-dropdown aria-hidden="true" aria-autoclose="false" data-auto-focus="false">';
       $markup .= '<div class="user-links">';
-      $markup .= '<a class="" href="' . $user_page_url . '"><i class="icon ion-person"></i> ' . $username . '</a>';
+      $markup .= '<a class="" href="' . $user_page_url . '"><i class="icon ion-ios-person"></i> ' . $username . '</a>';
       $markup .= '<a class="logout-button" href="' . $user_logout_url . '"><i class="icon ion-log-out"></i> ' . t('Log Out') . '</a>';
       $markup .= '</div>';
       $markup .= '</div>';
