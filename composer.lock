@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66f74b6837ebcf0e54ae09a9b65cec20",
-    "content-hash": "84283fd955139ead7f6aea34830c2071",
+    "hash": "23a65bbc0c8a8fc58553957c54b7a6a0",
+    "content-hash": "418ff9e923b017324ad4220b938faadc",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3360,20 +3360,23 @@
         },
         {
             "name": "drupal/image_effects",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/image_effects",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-1.0-alpha2.zip",
+                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-1.0-alpha3.zip",
                 "reference": null,
-                "shasum": "7f51cd808dd43f8e6ad4b1d8c568cdadbd6cf1d8"
+                "shasum": "8c130c6bb4b9a3a87ef8b92d169833230185f598"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.2.0"
+            },
+            "require-dev": {
+                "drupal/imagemagick": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3381,7 +3384,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
+                    "version": "8.x-1.0-alpha3",
                     "datestamp": "1479725943"
                 }
             },
