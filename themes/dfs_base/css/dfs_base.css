@@ -10329,7 +10329,8 @@ a[data-block-type="url"]:before {
 [data-category="Hidden"] {
   display: none; }
 
-.toolbar-icon-edit {
+.toolbar-icon-edit,
+.outside-inblock-configure {
   display: none; }
 
 @media screen and (min-width: 40em) {

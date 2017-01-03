@@ -780,6 +780,9 @@ a[data-block-type="url"] {
   display: none;
 }
 
-.toolbar-icon-edit {
+// Hide Outside In elements that interfere with normal demo flow.
+
+.toolbar-icon-edit,
+.outside-inblock-configure {
   display: none;
 }
