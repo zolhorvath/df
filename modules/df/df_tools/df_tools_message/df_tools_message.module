@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * @file
+ * Adds the ability to create and send messages.
+ */

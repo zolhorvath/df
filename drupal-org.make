@@ -154,6 +154,9 @@ projects[link_class][version] = "1.0"
 projects[lite][type] = "module"
 projects[lite][version] = "1.4"
 
+projects[mailsystem][type] = "module"
+projects[mailsystem][version] = "4.1"
+
 projects[media_entity][type] = "module"
 projects[media_entity][version] = "1.5"
 projects[media_entity][patch][0] = "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
@@ -169,6 +172,12 @@ projects[media_entity_instagram][version] = "1.2"
 
 projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.2"
+
+projects[message][type] = "module"
+projects[message][version] = "1.0-alpha4"
+
+projects[message_notify][type] = "module"
+projects[message_notify][version] = "1.0-alpha3"
 
 projects[metatag][type] = "module"
 projects[metatag][version] = "1.0-beta10"
@@ -223,6 +232,10 @@ projects[pathauto][version] = "1.0-beta1"
 projects[refreshless][type] = "module"
 projects[refreshless][version] = "1.0-alpha3"
 
+projects[rules][type] = "module"
+projects[rules][version] = "3.0-alpha2"
+projects[rules][patch][0] = "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch"
+
 projects[replicate][type] = "module"
 projects[replicate][download][type] = "git"
 projects[replicate][download][branch] = "8.x-1.x"
@@ -250,6 +263,9 @@ projects[search_autocomplete][type] = "module"
 projects[search_autocomplete][download][type] = "git"
 projects[search_autocomplete][download][branch] = "8.x-1.x"
 projects[search_autocomplete][version] = "1.x-dev"
+
+projects[swiftmailer][type] = "module"
+projects[swiftmailer][version] = "1.0-alpha2"
 
 projects[token][type] = "module"
 projects[token][version] = "1.0-beta2"

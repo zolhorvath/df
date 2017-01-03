@@ -176,17 +176,45 @@
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
                 "https://www.drupal.org/files/issues/allow-2681947-20_0.patch"
             },
+            "drupal/adminimal_theme": {
+                "Updating to 8.x-1.2 made font size increase | https://www.drupal.org/node/2820992": 
+                "https://www.drupal.org/files/issues/2820992-adminial-theme-remove-zoom.patch"
+            },
+            "drupal/adminimal_admin_toolbar": {
+                "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
+                "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
+            },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
+            },
+            "drupal/content_browser": {
+                "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
+                "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
+                "Fix bug when using Views Infinite Scroll with Content Browser | https://www.drupal.org/node/2808919":
+                "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch",
+                "Modal opens automatically after Entity browser 8.x-1.0-beta1 | https://www.drupal.org/node/2829413":
+                "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
             },
             "drupal/entity_block": {
                 "Add UUID support. | http://drupal.org/node/2834377":
                 "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
             },
+            "drupal/entity_browser": {
+                "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555":
+                "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch"
+            },
             "drupal/media_entity": {
                 "Remove version constraints. | http://drupal.org/node/2770791":
                 "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
+            },
+            "drupal/migrate_plus": {
+                "Properly integrate configuration-entity-based migrations with the core plugin manager | https://www.drupal.org/node/2752335":
+                "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
+            },
+            "drupal/migrate_tools": {
+                "Use the core plugin manager | https://www.drupal.org/node/2795447":
+                "https://www.drupal.org/files/issues/use_the_core_plugin-2795447-3.patch"
             },
             "drupal/page_manager": {
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
@@ -204,43 +232,19 @@
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
             },
+            "drupal/rules": {
+                "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
+                "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch"
+            },
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
                 "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
             },
-            "drupal/content_browser": {
-                "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
-                "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
-                "Fix bug when using Views Infinite Scroll with Content Browser | https://www.drupal.org/node/2808919":
-                "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch",
-                "Modal opens automatically after Entity browser 8.x-1.0-beta1 | https://www.drupal.org/node/2829413":
-                "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
-            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
-            },
-            "drupal/adminimal_theme": {
-                "Updating to 8.x-1.2 made font size increase | https://www.drupal.org/node/2820992": 
-                "https://www.drupal.org/files/issues/2820992-adminial-theme-remove-zoom.patch"
-            },
-            "drupal/adminimal_admin_toolbar": {
-                "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
-                "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
-            },
-            "drupal/entity_browser": {
-                "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555":
-                "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch"
-            },
-            "drupal/migrate_plus": {
-              "Properly integrate configuration-entity-based migrations with the core plugin manager | https://www.drupal.org/node/2752335":
-              "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
-            },
-            "drupal/migrate_tools": {
-              "Use the core plugin manager | https://www.drupal.org/node/2795447":
-              "https://www.drupal.org/files/issues/use_the_core_plugin-2795447-3.patch"
             }
         },
         "patches-ignore": {
@@ -291,6 +295,9 @@
         "drupal/libraries": "3.x-dev",
         "drupal/link_class": "1.0.0",
         "drupal/lite": "1.4.0",
+        "drupal/mailsystem": "4.1.0",
+        "drupal/message": "1.0.0-alpha4",
+        "drupal/message_notify": "1.0-alpha3",
         "drupal/moderation_note": "1.x-dev",
         "drupal/moderation_sidebar": "1.x-dev",
         "drupal/migrate_plus": "3.x-dev",
@@ -300,9 +307,11 @@
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
         "drupal/restui": "1.x-dev",
+        "drupal/rules": "3.0.0-alpha2",
         "drupal/search_autocomplete": "1.x-dev",
         "drupal/scenarios": "2.x-dev",
         "drupal/scheduler": "1.0.0-alpha2",
+        "drupal/swiftmailer": "1.0.0-alpha2",
         "drupal/url_embed": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
         "drupal/zurb_foundation": "6.x-dev",
