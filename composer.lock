@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "759ec2fe0283d2ab041a672977f22f5d",
-    "content-hash": "0820d172ee5e1c27e93160a1b0d5001c",
+    "hash": "66f74b6837ebcf0e54ae09a9b65cec20",
+    "content-hash": "84283fd955139ead7f6aea34830c2071",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3057,17 +3057,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.0.0-alpha4",
+            "version": "2.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "8.x-2.0-alpha4"
+                "reference": "8.x-2.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha4.zip",
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha5.zip",
                 "reference": null,
-                "shasum": "0e9b5f03fd55cf07c21c29be3fa6a3cb9e6366c6"
+                "shasum": "1cbac01cc6217e17fd53dd8be68d4ad8f018c004"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3084,7 +3084,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha4",
+                    "version": "8.x-2.0-alpha5",
                     "datestamp": "1481538483"
                 }
             },
@@ -3094,8 +3094,9 @@
             ],
             "authors": [
                 {
-                    "name": "Brandonian",
-                    "homepage": "https://www.drupal.org/user/77766"
+                    "name": "Pol Dellaiera (@drupol)",
+                    "homepage": "https://www.drupal.org/u/pol",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "Dean Reilly",
@@ -3130,10 +3131,12 @@
                     "homepage": "https://www.drupal.org/user/585764"
                 }
             ],
-            "description": "Provides the geocoder module",
-            "homepage": "https://www.drupal.org/project/geocoder",
+            "description": "An API to geocode and reverse geocode data into other GIS data types.",
+            "homepage": "https://drupal.org/project/geocoder",
             "support": {
-                "source": "http://cgit.drupalcode.org/geocoder"
+                "source": "https://cgit.drupalcode.org/geocoder",
+                "issues": "https://drupal.org/project/issues/geocoder",
+                "irc": "irc://irc.freenode.org/drupal-geo"
             }
         },
         {
