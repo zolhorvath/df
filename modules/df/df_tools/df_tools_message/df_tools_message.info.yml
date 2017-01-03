@@ -5,7 +5,7 @@ core: 8.x
 package: Demo Framework Tools
 dependencies:
   - config_rewrite
-  - mail_system
+  - mailsystem
   - message
   - message_notify
   - rules
