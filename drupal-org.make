@@ -293,8 +293,7 @@ projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/
 
 ; Themes
 projects[adminimal_theme][type] = "theme"
-projects[adminimal_theme][version] = "1.2"
-projects[adminimal_theme][patch][0] = "https://www.drupal.org/files/issues/2820992-adminial-theme-remove-zoom.patch"
+projects[adminimal_theme][version] = "1.3"
 
 projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][download][type] = "git"
