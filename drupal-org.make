@@ -103,7 +103,7 @@ projects[field_group][type] = "module"
 projects[field_group][version] = "1.0-rc6"
 
 projects[file_entity][type] = "module"
-projects[file_entity][version] = "2.0-beta2"
+projects[file_entity][version] = "2.0-beta3"
 
 projects[geocoder][type] = "module"
 projects[geocoder][version] = "2.0-alpha4"
