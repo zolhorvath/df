@@ -241,6 +241,11 @@ projects[replicate][download][type] = "git"
 projects[replicate][download][branch] = "8.x-1.x"
 projects[replicate][version] = "1.x-dev"
 
+projects[replicate_ui][type] = "module"
+projects[replicate_ui][download][type] = "git"
+projects[replicate_ui][download][branch] = "8.x-1.x"
+projects[replicate_ui][version] = "1.x-dev"
+
 projects[restui][type] = "module"
 projects[restui][download][type] = "git"
 projects[restui][download][branch] = "8.x-1.x"

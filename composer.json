@@ -302,6 +302,7 @@
         "drupal/oauth": "1.x-dev",
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
+        "drupal/replicate_ui": "1.x-dev",
         "drupal/restui": "1.x-dev",
         "drupal/rules": "3.0.0-alpha2",
         "drupal/search_autocomplete": "1.x-dev",
