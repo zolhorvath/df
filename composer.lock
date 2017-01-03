@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc736194c8a3707d8559f6da7ebf5c6b",
-    "content-hash": "93358741130b765abecb78ff31d0147e",
+    "hash": "eeed2c9765187d761e222bdaa68fbf71",
+    "content-hash": "d1e12250ca174ef43344a1c72904f423",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2907,17 +2907,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0-rc5",
+            "version": "1.0.0-rc6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
-                "reference": "8.x-1.0-rc5"
+                "reference": "8.x-1.0-rc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc5.zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc6.zip",
                 "reference": null,
-                "shasum": "f423c0b5a2d35012fae1c8c032e1418ce08141d8"
+                "shasum": "1ce3c6387e745a04a1099956a5bf39bb50096d44"
             },
             "require": {
                 "drupal/core": "*"
@@ -2928,7 +2928,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc5",
+                    "version": "8.x-1.0-rc6",
                     "datestamp": "1480365484"
                 }
             },

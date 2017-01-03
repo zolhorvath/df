@@ -100,7 +100,7 @@ projects[field_formatter_class][type] = "module"
 projects[field_formatter_class][version] = "1.0-rc2"
 
 projects[field_group][type] = "module"
-projects[field_group][version] = "1.0-rc5"
+projects[field_group][version] = "1.0-rc6"
 
 projects[file_entity][type] = "module"
 projects[file_entity][version] = "2.0-beta2"
