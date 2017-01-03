@@ -22,7 +22,7 @@ projects[addtoany][type] = "module"
 projects[addtoany][version] = "1.6"
 
 projects[admin_toolbar][type] = "module"
-projects[admin_toolbar][version] = "1.17"
+projects[admin_toolbar][version] = "1.18"
 
 projects[adminimal_admin_toolbar][type] = "module"
 projects[adminimal_admin_toolbar][version] = "1.3"
