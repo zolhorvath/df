@@ -7,8 +7,8 @@ email templates using a grid system in a similar way to Foundation for Sites.
 
 To compile the Twig templates used by this module, run:
 
-# npm install
-# gulp
+1. npm install
+1. gulp
 
 And you should see templates updated from /inky_templates to /templates.
 
@@ -16,7 +16,7 @@ And you should see templates updated from /inky_templates to /templates.
 
 If you want to compile templates for another directory, run:
 
-# gulp --directory ~/Sites/my_site/modules/my_module
+* gulp --directory ~/Sites/my_site/modules/my_module
 
 It's expected that the directory you pass will contain
 inky_templates/_wrap.html.twig, which should contain the wrapping tags for your
