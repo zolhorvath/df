@@ -1961,16 +1961,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.2.4",
+            "version": "8.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097"
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/0741cbf486fc55721b5dab050b37c721c80df097",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/fbf10f63dba6b312e1d1b67bac521db1648384f3",
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3",
                 "shasum": ""
             },
             "require": {
@@ -2151,7 +2151,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-12-07 18:31:42"
+            "time": "2017-01-04 11:31:35"
         },
         {
             "name": "drupal/crop",
@@ -3697,7 +3697,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "dcd717dc541293ae5c4003f304921cca9200728c"
+                "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3709,7 +3709,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1481525886"
+                    "datestamp": "1483547343"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3741,7 +3741,7 @@
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2016-12-12 06:56:46"
+            "time": "2017-01-04 16:26:54"
         },
         {
             "name": "drupal/link_class",
@@ -5998,7 +5998,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1467086939"
+                    "datestamp": "1483529942"
                 },
                 "patches_applied": {
                     "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
