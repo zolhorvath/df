@@ -17,7 +17,7 @@ process:
     field_tags:
       -
         plugin: explode
-        delimiter: ,
+        delimiter: ','
         source: Tags
       -
         plugin: migration
