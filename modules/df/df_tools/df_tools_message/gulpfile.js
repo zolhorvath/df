@@ -2,20 +2,15 @@ var $ = require('gulp-load-plugins')();
 var inky = require('inky');
 var gulp = require('gulp');
 var lazypipe = require('lazypipe');
-var deject = require('gulp-remove-html');
 var argv = require('minimist')(process.argv.slice(2));
 
 // Adapted from https://github.com/zurb/foundation-emails/blob/develop/gulpfile.js#L205
 function inliner() {
   var pipe = lazypipe()
     .pipe($.inlineCss, {
-      applyStyleTags: false,
-      removeStyleTags: false,
-      removeLinkTags: false
-    })
-    .pipe($.htmlmin, {
-      collapseWhitespace: false,
-      minifyCSS: false
+      applyStyleTags: true,
+      removeStyleTags: true,
+      removeLinkTags: true
     });
 
   return pipe();
@@ -30,7 +25,6 @@ gulp.task('default', function() {
     .pipe($.wrap({ src: 'inky_templates/_wrap.html.twig' }, { base_dir: base_dir }))
     .pipe(inky())
     .pipe(inliner())
-    .pipe(deject())
     .pipe($.prettify({ indent_size: 2 }))
     .pipe(gulp.dest('templates'));
 });
