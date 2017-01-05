@@ -13,4 +13,3 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/quickedit-image
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/core-hotfix-2788277-3.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/quickedit-undefined-attr-2661880-14.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch"
-projects[drupal][patch][] = "https://www.drupal.org/files/issues/2830036-17.patch"
