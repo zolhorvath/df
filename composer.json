@@ -224,10 +224,6 @@
                 "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149":
                 "https://www.drupal.org/files/issues/2746149-2.patch"
             },
-            "drupal/panelizer": {
-                "Quickedit support for fields displayed using the ctools_field block. | https://www.drupal.org/node/2693163":
-                "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-10.patch"
-            },
             "drupal/panels": {
                 "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":
                 "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
@@ -263,7 +259,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.0.0",
+        "acquia/lightning": "2.0.2",
         "cweagans/composer-patches": "^1.5.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",

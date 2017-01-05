@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "2.00"
+projects[lightning][version] = "2.02"
 projects[lightning][subdir] = ""
 
 ; Modules
@@ -219,7 +219,6 @@ projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2701349-2.p
 projects[panelizer][patch][2] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
 projects[panelizer][patch][3] = "https://www.drupal.org/files/issues/2664682-89.patch"
 projects[panelizer][patch][4] = "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
-projects[panelizer][patch][5] = "https://www.drupal.org/files/issues/panelizer-quickedit-2693163-10.patch"
 
 projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta5"
