@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e70a788ed0dec0901a56978da5c21719",
+    "content-hash": "64d297b421d9a86b99e40e9ddff74258",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -640,16 +640,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.5.1",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DevinCarlson/composer-patches.git",
-                "reference": "91ce72ca983536d07de4d55e817e46cf94a8eaee"
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevinCarlson/composer-patches/zipball/91ce72ca983536d07de4d55e817e46cf94a8eaee",
-                "reference": "91ce72ca983536d07de4d55e817e46cf94a8eaee",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6",
+                "reference": "7cd5c6eb7e68b8f7436ce1a7b9fffa4418bf59c6",
                 "shasum": ""
             },
             "require": {
@@ -669,13 +669,9 @@
                     "cweagans\\Composer\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "cweagans\\Composer\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-2-Clause"
             ],
             "authors": [
                 {
@@ -684,10 +680,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "support": {
-                "source": "https://github.com/DevinCarlson/composer-patches/tree/1.5.1"
-            },
-            "time": "2016-09-01T13:34:20+00:00"
+            "time": "2016-12-01T01:19:32+00:00"
         },
         {
             "name": "desandro/imagesloaded",
@@ -2227,8 +2220,6 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
-                    "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch",
                     "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
                     "Quickedit cant edit images | https://www.drupal.org/node/2635712": "https://www.drupal.org/files/issues/2635712-14.patch",
                     "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
@@ -2242,7 +2233,9 @@
                     "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
                     "MigrationPluginManager::getDefinitions() blows up in node derivers | https://www.drupal.org/node/2830036": "https://www.drupal.org/files/issues/2830036-17.patch",
                     "Fix SqlBase fallback priorities and document them | https://www.drupal.org/node/2830031": "https://www.drupal.org/files/issues/fix_sqlbase_fallback-2830031-5.patch",
-                    "Do not scan the migration_templates directory in the MigrationPluginManager | https://www.drupal.org/node/2841437": "https://www.drupal.org/files/issues/dont-scan-migration-templates.patch"
+                    "Do not scan the migration_templates directory in the MigrationPluginManager | https://www.drupal.org/node/2841437": "https://www.drupal.org/files/issues/dont-scan-migration-templates.patch",
+                    "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                    "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
                 }
             },
             "autoload": {
@@ -5023,7 +5016,9 @@
                     "version": "8.x-3.0-alpha3",
                     "datestamp": "1481832184"
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -5093,9 +5088,9 @@
                     "datestamp": "1475335394"
                 },
                 "patches_applied": {
-                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch",
                     "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897": "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
-                    "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
+                    "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
+                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6192,9 +6187,9 @@
                     "datestamp": "1483529942"
                 },
                 "patches_applied": {
-                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
                     "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-21.patch",
-                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
+                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch",
+                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

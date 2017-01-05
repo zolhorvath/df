@@ -31,10 +31,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/DevinCarlson/composer-patches"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "desandro/masonry",
@@ -244,23 +240,11 @@
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
-        },
-        "patches-ignore": {
-            "acquia/lightning": {
-                "drupal/panelizer": {
-                    "Bandaid patch breaking save after previewing blocks with Panelizer":
-                    "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
-                },
-                "drush/drush": {
-                    "Commit is already present in Drush 8.1.5":
-                    "https://github.com/drush-ops/drush/commit/c389aebb7d3e26ff0f544684d8b3ec3528107e55.diff"
-                }
-            }
         }
     },
     "require": {
         "acquia/lightning": "2.0.2",
-        "cweagans/composer-patches": "^1.5.0",
+        "cweagans/composer-patches": "^1.6.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",
         "drupal/address": "1.x-dev",

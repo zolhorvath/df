@@ -6,6 +6,17 @@
  */
 
 /**
+ * Implements hook_module_implements_alter().
+ *
+ * @todo Remove after #2793841 is fixed.
+ */
+function df_admin_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'panels_ipe_tempstore_id_alter') {
+    unset($implementations['panelizer']);
+  }
+}
+
+/**
  * Implements hook_menu_local_tasks_alter().
  */
 function df_admin_menu_local_tasks_alter(&$data, $route_name) {
