@@ -172,11 +172,7 @@
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
                 "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
                 "MigrationPluginManager::getDefinitions() blows up in node derivers | https://www.drupal.org/node/2830036":
-                "https://www.drupal.org/files/issues/2830036-17.patch",
-                "Fix SqlBase fallback priorities and document them | https://www.drupal.org/node/2830031":
-                "https://www.drupal.org/files/issues/fix_sqlbase_fallback-2830031-5.patch",
-                "Do not scan the migration_templates directory in the MigrationPluginManager | https://www.drupal.org/node/2841437":
-                "https://www.drupal.org/files/issues/dont-scan-migration-templates.patch"
+                "https://www.drupal.org/files/issues/2830036-17.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
@@ -272,7 +268,7 @@
         "drupal/geolocation": "1.x-dev",
         "drupal/google_analytics": "2.1.0",
         "drupal/image_effects": "1.0.0-alpha3",
-        "drupal/import": "2.0.0-beta1",
+        "drupal/import": "2.0.0-beta2",
         "drupal/leaflet": "1.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/link_class": "1.0.0",
