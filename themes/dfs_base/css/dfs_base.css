@@ -10333,6 +10333,9 @@ a[data-block-type="url"]:before {
 .outside-inblock-configure {
   display: none; }
 
+.adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
+  float: left; }
+
 @media screen and (min-width: 40em) {
   #top-bar-sticky-container {
     height: 100px;
