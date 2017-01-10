@@ -1,4 +1,4 @@
-uuid: a2c55cff-907b-43ce-a461-9700cba70aaf
+uuid: e12bccd0-689d-46c2-8b41-2dd941a54471
 langcode: en
 status: true
 dependencies:
@@ -14,8 +14,9 @@ bundle: article
 label: Panelizer
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: panelizer
+
