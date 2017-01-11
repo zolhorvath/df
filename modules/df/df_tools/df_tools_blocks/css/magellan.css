@@ -17,7 +17,7 @@
 
 .df-tools-magellan-block .menu > li > a:hover,
 .df-tools-magellan-block .menu > li > a.active {
-  color: #3366cc;
+  background-color: #3366cc;
 }
 
 body.toolbar-fixed .df-tools-magellan-block .sticky.is-stuck.is-at-top {
