@@ -2,6 +2,7 @@
 
 namespace Drupal\df_tools_tabs\Plugin\Field\FieldFormatter;
 
+use Drupal\Component\Utility\Xss;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Url;
@@ -34,6 +35,7 @@ class TextWithTabFormatter extends FormatterBase {
         '#attributes' => [
           'id' => $this->getFieldId($items, $delta),
         ],
+        '#prefix' => '<h3 class="df-tools-tabs-accordion-title">' . Xss::filter($item->tab_title) . '</h3>',
       ];
       $elements[$delta][] = [
         '#type' => 'processed_text',

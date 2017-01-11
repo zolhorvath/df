@@ -8,3 +8,4 @@ tabs:
   dependencies:
     - core/jquery
     - core/jquery.ui.tabs
+    - core/jquery.ui.accordion
