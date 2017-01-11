@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.callout
     - field.field.node.cta.field_cta_background
     - field.field.node.cta.field_cta_detail
     - field.field.node.cta.field_cta_headline
@@ -19,10 +19,10 @@ third_party_settings:
     custom: false
     allow: false
     default: default
-id: node.cta.card
+id: node.cta.callout
 targetEntityType: node
 bundle: cta
-mode: card
+mode: callout
 content:
   field_cta_detail:
     weight: 1

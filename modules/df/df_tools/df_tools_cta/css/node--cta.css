@@ -19,24 +19,24 @@ article.node--type-cta.view-mode-hero p {
   color: #333;
 }
 
-article.node--type-cta.view-mode-card {
+article.node--type-cta.view-mode-callout {
 }
-article.node--type-cta.view-mode-card .card {
+article.node--type-cta.view-mode-callout .callout {
   display: block;
   border: 1px solid #c6c6c6;
   border-radius: 5px;
 }
-article.node--type-cta.view-mode-card .card:hover {
+article.node--type-cta.view-mode-callout .callout:hover {
   border-color: #2586b7;
 }
-article.node--type-cta.view-mode-card .image {
+article.node--type-cta.view-mode-callout .image {
   background-image: linear-gradient(to bottom right, #999, #eee);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 170px;
 }
-article.node--type-cta.view-mode-card .inner {
+article.node--type-cta.view-mode-callout .inner {
   padding: 30px 10px;
   text-align: center;
 }

@@ -76,7 +76,7 @@
 {%
 set article_classes = [
   'node--type-cta',
-  'view-mode-card',
+  'view-mode-callout',
   'row'
 ]
 %}
@@ -89,7 +89,7 @@ set content_classes = [
 %}
 <article{{ attributes.addClass(article_classes) }}>
   <div {{ content_attributes.addClass(content_classes) }}>
-    <a class="card" href="{{ node.field_cta_link.0.url }}">
+    <a class="callout" href="{{ node.field_cta_link.0.url }}">
       <div class="image" style="background-image:url('{{ file_url(node.field_cta_background.0.entity.uri.value) }}')">
       </div>
       <div class="inner">

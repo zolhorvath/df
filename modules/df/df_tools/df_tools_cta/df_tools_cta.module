@@ -22,10 +22,10 @@ function df_tools_cta_theme($existing, $type, $theme, $path) {
       'template' => 'node--cta',
       'path' => drupal_get_path('module', 'df_tools_cta') . '/templates',
   );
-  $theme['node__cta__card'] = array(
+  $theme['node__cta__callout'] = array(
       'render element' => 'content',
       'base hook' => 'node',
-      'template' => 'node--cta--card',
+      'template' => 'node--cta--callout',
       'path' => drupal_get_path('module', 'df_tools_cta') . '/templates',
   );
   $theme['node__cta__notification'] = array(
