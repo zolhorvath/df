@@ -4764,7 +4764,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "c568e24f8ab9554b10f8ff9f768119196c3cac45"
+                "reference": "2753a41772529ae3382cc91f18a71b9f09fd392a"
             },
             "require": {
                 "drupal/core": "*"
@@ -4779,7 +4779,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1483989243"
+                    "datestamp": "1484329084"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4797,7 +4797,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2017-01-09 19:10:33"
+            "time": "2017-01-13 17:37:28"
         },
         {
             "name": "drupal/multiversion",
