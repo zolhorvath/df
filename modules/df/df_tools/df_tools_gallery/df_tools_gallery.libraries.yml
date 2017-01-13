@@ -22,6 +22,21 @@ masonry:
   dependencies:
     - core/jquery
 
+lightbox2:
+  remote: http://lokeshdhakar.com/projects/lightbox2/
+  version: VERSION
+  license:
+    name: MIT
+    url: https://github.com/lokesh/lightbox2/
+    gpl-compatible: true
+  css:
+    theme:
+      /libraries/lightbox2/dist/css/lightbox.min.css: {}
+  js:
+    /libraries/lightbox2/dist/js/lightbox.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+
 view:
   version: VERSION
   js:
@@ -34,3 +49,4 @@ view:
     - core/drupal
     - df_tools_gallery/imagesloaded
     - df_tools_gallery/masonry
+    - df_tools_gallery/lightbox2

@@ -2,6 +2,8 @@
 
 namespace Drupal\df_tools_gallery\Plugin\Field\FieldFormatter;
 
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\EntityReferenceEntityFormatter;
 use Drupal\Core\Form\FormStateInterface;
@@ -51,7 +53,13 @@ class EntityReferenceMasonryFormatter extends EntityReferenceEntityFormatter {
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = parent::viewElements($items, $langcode);
+    $lightbox_id = Html::getUniqueId('df-tools-gallery');
     foreach ($elements as &$element) {
+      if (isset($element['#file']) && $element['#file']->bundle() === 'image') {
+        $url = UrlHelper::filterBadProtocol((file_create_url($element['#file']->getFileUri())));
+        $element['#prefix'] = "<a href=\"$url\" data-lightbox=\"$lightbox_id\">";
+        $element['#suffix'] = '</a>';
+      }
       $element['#attributes']['class'][] = 'grid-item';
     }
     $elements['#attached']['library'][] = 'df_tools_gallery/view';
