@@ -117,6 +117,18 @@
                     "reference": "origin/master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "lokesh/lightbox2",
+                "version": "2.9.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/lokesh/lightbox2/archive/v2.9.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "extra": {
@@ -297,7 +309,8 @@
         "enyo/dropzone": "4.2.0",
         "kenwheeler/slick": "1.5.0",
         "lite": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
-        "mjolnic/fontawesome-iconpicker": "1.2.0"
+        "mjolnic/fontawesome-iconpicker": "1.2.0",
+        "lokesh/lightbox2": "2.9.0"
     },
     "scripts": {
         "post-install-cmd": [

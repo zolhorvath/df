@@ -332,3 +332,7 @@ libraries[ckeditor-track-changes][patch][2482879] = "http://drupal.org/files/iss
 libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
+
+libraries[lightbox2][destination] = "../../libraries"
+libraries[lightbox2][download][type] = "get"
+libraries[lightbox2][download][url] = "https://github.com/lokesh/lightbox2/archive/v2.9.0.zip"
