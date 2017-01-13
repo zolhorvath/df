@@ -8,6 +8,8 @@ defaults[projects][subdir] = "contrib"
 projects[lightning][type] = "profile"
 projects[lightning][version] = "2.02"
 projects[lightning][subdir] = ""
+projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
+projects[lightning][patch][1] = "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
@@ -26,6 +28,7 @@ projects[admin_toolbar][version] = "1.18"
 
 projects[adminimal_admin_toolbar][type] = "module"
 projects[adminimal_admin_toolbar][version] = "1.3"
+projects[adminimal_admin_toolbar][patch][0] = "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
 
 projects[better_formats][type] = "module"
 projects[better_formats][download][type] = "git"
@@ -60,6 +63,7 @@ projects[content_browser][type] = "module"
 projects[content_browser][version] = "1.0-alpha1"
 projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch"
 projects[content_browser][patch][1] = "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
+projects[content_browser][patch][2] = "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
 
 projects[crop][type] = "module"
 projects[crop][version] = "1.0"
@@ -84,6 +88,7 @@ projects[entity_block][patch][0] = "https://www.drupal.org/files/issues/add-uuid
 
 projects[entity_browser][type] = "module"
 projects[entity_browser][version] = "1.0-alpha10"
+projects[entity_browser][patch][0] = "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch"
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][version] = "1.0-beta2"
@@ -153,6 +158,7 @@ projects[link_class][version] = "1.0"
 
 projects[lite][type] = "module"
 projects[lite][version] = "1.4"
+projects[lite][patch][0] = "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
 
 projects[mailsystem][type] = "module"
 projects[mailsystem][version] = "4.1"
@@ -185,12 +191,14 @@ projects[metatag][patch][0] = "https://www.drupal.org/files/issues/metatag-deact
 
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][version] = "2.0-beta2"
+projects[migrate_plus][patch][0] = "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
 
 projects[migrate_source_csv][type] = "module"
 projects[migrate_source_csv][version] = "2.0-beta1"
 
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][version] = "2.0-beta1"
+projects[migrate_tools][patch][0] = "https://www.drupal.org/files/issues/use_the_core_plugin-2795447-3.patch"
 
 projects[moderation_note][type] = "module"
 projects[moderation_note][download][type] = "git"
@@ -224,6 +232,7 @@ projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta5"
 projects[panels][patch][0] = "https://www.drupal.org/files/issues/2793801-9.patch"
 projects[panels][patch][1] = "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-beta1"
@@ -293,7 +302,7 @@ projects[workbench_moderation][version] = "1.1"
 projects[workbench_moderation][patch][0] = "https://www.drupal.org/files/issues/2668006-2.patch"
 projects[workbench_moderation][patch][1] = "https://www.drupal.org/files/issues/workbench_moderation-invalid_service_definition.patch"
 projects[workbench_moderation][patch][2] = "https://www.drupal.org/files/issues/2685163-21.patch"
-projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-4.patch"
+projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
 
 ; Themes
 projects[adminimal_theme][type] = "theme"
