@@ -1,0 +1,8 @@
+/**
+ * @file lightning_media.css
+ */
+
+input[name="field_tags_target_id"],
+input[name="field_tags_target_id"].form-text {
+  max-width: 250px;
+}
