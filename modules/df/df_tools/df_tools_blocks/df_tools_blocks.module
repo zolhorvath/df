@@ -7,6 +7,7 @@ use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\FieldableEntityInterface;
 
 /**
  * Implements hook_ENTITY_TYPE_view_alter().
@@ -343,6 +344,31 @@ function df_tools_blocks_block_alter(&$block_info) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_panels_ipe_blocks_alter().
+ *
+ * Improves Panelizer/Panels IPE UX by removing fields that cannot be placed.
+ */
+function df_tools_blocks_panels_ipe_blocks_alter(&$block_info) {
+  $request = \Drupal::request();
+  $storage_id = str_replace('*', '', $request->attributes->get('panels_storage_id', ''));
+  list($entity_type, $id) = explode(':', $storage_id);
+  $entity_type_manager = \Drupal::entityTypeManager();
+  if (!empty($entity_type) && !empty($id) && $entity_type_manager->hasDefinition($entity_type)) {
+    if ($entity = $entity_type_manager->getStorage($entity_type)->load($id)) {
+      foreach ($block_info as $key => $info) {
+        if ($info['id'] === 'entity_field') {
+          list($block_id,$block_entity_type,$field_name) = explode(':', $info['plugin_id']);
+          if ($block_entity_type !== $entity_type || ($entity instanceof FieldableEntityInterface && !$entity->hasField($field_name))) {
+            unset($block_info[$key]);
+          }
+        }
+      }
+    }
+  }
+  $block_info = array_values($block_info);
 }
 
 function df_tools_blocks_block_content_replicate($form, FormStateInterface $form_state) {
