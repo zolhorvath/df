@@ -100,6 +100,22 @@ $(document).ready(function(){
   });
 });
 
+  if (!Drupal.Ajax.dfsBaseOverrides) {
+    Drupal.Ajax.dfsBaseOverrides = true;
+    var temp = Drupal.Ajax.prototype.success;
+    Drupal.Ajax.prototype.success = function (response, status) {
+      if (this.progress.element && $(this.progress.element).hasClass('ajax-progress-fullscreen')) {
+        var self = this;
+        $(this.progress.element).fadeOut('fast', function () {
+          temp.call(self, response, status);
+        });
+      }
+      else {
+        temp.call(this, response, status);
+      }
+    };
+  }
+
   Drupal.behaviors.DFSBaseformFilled = {
     attach: function (context, settings) {
       var formID = $('.contact-form');
