@@ -10,6 +10,7 @@
    */
   Backbone.on('PanelsIPEInitialized', function () {
     Drupal.panels_ipe.app.get('layout').on('sync', function () {
+      $('body').after('<div class="ajax-progress ajax-progress-fullscreen">&nbsp;</div>');
       location.reload();
     }, 'df_tools_frontend');
 
