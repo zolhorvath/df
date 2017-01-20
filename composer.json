@@ -234,7 +234,9 @@
                 "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":
                 "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
-                "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
+                "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
+                "Provide hook to alter available blocks | https://www.drupal.org/node/2767087":
+                "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
