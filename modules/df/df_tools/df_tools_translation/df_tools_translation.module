@@ -6,11 +6,19 @@
  */
 
 use Drupal\migrate_source_csv\CSVFileObject;
+use Drupal\migrate\Plugin\Migration;
+use Drupal\migrate_tools\DrushLogMigrateMessage;
+use Drupal\migrate\MigrateMessage;
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\Row;
+use Drupal\Core\TypedData\TypedDataInterface;
 
 /**
  * Implements hook_scenarios_migration_finished().
+ *
+ * @todo Can we refactor this to use derived migration plugins?
  */
-function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin\Migration $migration) {
+function df_tools_translation_scenarios_migration_finished(Migration $migration) {
   // Initialize variables required to parse migration.
   /** @var Drupal\migrate_source_csv\Plugin\migrate\source\CSV $source */
   $source = $migration->getSourcePlugin();
@@ -18,9 +26,10 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
   $iterator = $source->initializeIterator();
   $filename = $iterator->getPath() . '/' . $iterator->getFilename();
 
-  $destination = $migration->getDestinationPlugin();
-  $entity_type = explode(':', $destination->getPluginId())[1];
-  $entityStorage = \Drupal::entityManager()->getStorage($entity_type);
+  /** @var \Drupal\migrate\Plugin\migrate\destination\EntityContentBase $destination_plugin */
+  $destination_plugin = $migration->getDestinationPlugin();
+  $entity_type = explode(':', $destination_plugin->getPluginId())[1];
+  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
 
   // Determine the ID required to lookup entities in this migration.
   $id_map = [];
@@ -38,6 +47,14 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
   // We only care about langcodes.
   $langcodes = array_keys($languageManager->getLanguages());
 
+  // Create a migrate executable, which we use later to set row values.
+  if (function_exists('drush_log')) {
+    $log = new DrushLogMigrateMessage();
+  } else {
+    $log = new MigrateMessage();
+  }
+  $executable = new MigrateExecutable($migration, $log);
+
   // Process translations for each langcode.
   foreach ($langcodes as $langcode) {
     $new_filename = str_replace('.csv', ".$langcode.csv", $filename);
@@ -50,8 +67,8 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
       // Update translations for each Entity.
       for ($i = 0; $i < $count; ++$i) {
         // Get the current row.
-        $row = $file->current();
         $source_row = $iterator->current();
+        $row = new Row($file->current(), $source->getIds());
 
         // Search for the Entity based on its identifier.
         $field = $id_map[0];
@@ -61,54 +78,54 @@ function df_tools_translation_scenarios_migration_finished(Drupal\migrate\Plugin
         $ids = \Drupal::entityQuery($entity_type)
           ->condition($field, $value)
           ->execute();
-
         // If a migration failed the Entity won't exist, check for that.
-        if (!empty($ids)) {
-          // Load the Entity, so we can grab field values and add a translation.
-          $id = reset($ids);
+        if (empty($ids)) {
+          continue;
+        }
 
-          /** @var Drupal\Core\Entity\ContentEntityBase $entity */
-          $entity = $entityStorage->load($id);
+        // Load the Entity, so we can grab field values and add a translation.
+        $id = reset($ids);
+        /** @var Drupal\Core\Entity\ContentEntityBase $entity */
+        $entity = $storage->load($id);
+        if (!$entity->hasTranslation($langcode)) {
           $entity_values = $entity->toArray();
           $entity_values['path'] = [];
           $translation = $entity->addTranslation($langcode, $entity_values);
+        }
+        else {
+          $translation = $entity->getTranslation($langcode);
+        }
 
-          // Properly set the content translation metadata, if applicable.
-          if ($translation->hasField('content_translation_source')) {
-            /** @var \Drupal\content_translation\ContentTranslationManager $manager */
-            $manager = \Drupal::service('content_translation.manager');
-            $manager->getTranslationMetadata($translation)
-              ->setSource($entity->language()->getId());
-          }
+        // Properly set the content translation metadata, if applicable.
+        if ($translation->hasField('content_translation_source')) {
+          /** @var \Drupal\content_translation\ContentTranslationManager $manager */
+          $manager = \Drupal::service('content_translation.manager');
+          $manager->getTranslationMetadata($translation)
+            ->setSource($entity->language()->getId());
+        }
 
-          // Parse the process array and find anything that came from a CSV.
-          // Then, map the translated CSV value's onto the current field.
-          // @todo Add multivalue field support.
-          foreach ($processes as $field => $process) {
-            $untranslatable = ['uuid', 'type', 'path'];
-            if (!in_array($field, $untranslatable) && isset($process[0]['source']) && isset($row[$process[0]['source']])) {
-              $new_value = $row[$process[0]['source']];
-              $field_parts = explode('/', $field);
-              $field_name = $field_parts[0];
-              $value_key = isset($field_parts[1]) ? $field_parts[1] : FALSE;
-              if ($entity->hasField($field_name)) {
-                // If the process is defined as something like body/value, we
-                // know that we only need to change the key "value".
-                if ($value_key) {
-                  $value = $translation->get($field_name)->getValue();
-                  $value[0][$value_key] = $new_value;
-                  $translation->get($field_name)->setValue($value);
-                }
-                // This is probably a property like title.
-                else {
-                  $translation->get($field_name)->setValue($new_value);
-                }
-              }
+        // Collect a list of process plugins that either have no source, or
+        // have a source that our translated CSV also has.
+        $process_plugins = [];
+        foreach ($migration->getProcess() as $field_name => $process) {
+          $untranslatable = ['uuid', 'type', 'path'];
+          if (!in_array($field_name, $untranslatable)) {
+            if (!isset($process[0]['source']) || $row->hasSourceProperty($process[0]['source'])) {
+              $process_plugins[$field_name] = $process;
             }
           }
-
-          $translation->save();
         }
+        // Process the row, then use its destination values as field values
+        // for our translation.
+        $executable->processRow($row, $process_plugins);
+        foreach ($row->getDestination() as $field_name => $values) {
+          $field = $translation->$field_name;
+          if ($field instanceof TypedDataInterface) {
+            $field->setValue($values);
+          }
+        }
+        // Save the translation.
+        $translation->save();
 
         // Move to the next row.
         $file->next();
