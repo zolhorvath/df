@@ -10618,6 +10618,48 @@ a[data-block-type="url"]:before {
 .adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
   float: left; }
 
+.ajax-progress-fullscreen {
+  background-color: rgba(0, 0, 0, 0.37);
+  background-image: none;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  animation: 1s fullscreen-fadein;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex; }
+  .ajax-progress-fullscreen:after {
+    display: block;
+    content: "";
+    margin-left: -10px;
+    margin-top: -5px;
+    animation: 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s infinite normal fullscreen-image-spin;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 8px;
+    border-color: transparent #3366cc transparent transparent; }
+
+@keyframes fullscreen-fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fullscreen-image-spin {
+  0% {
+    transform: rotate(0deg); }
+  /*50% {transform: rotate(180deg);}*/
+  100% {
+    transform: rotate(360deg); } }
+
 @media screen and (min-width: 40em) {
   #top-bar-sticky-container {
     height: 100px;
