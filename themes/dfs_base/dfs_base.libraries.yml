@@ -9,6 +9,7 @@ global:
     //cdn.rawgit.com/CliffCloud/Leaflet.Sleep/master/Leaflet.Sleep.js: {}
   dependencies:
     - core/drupal
+    - core/drupal.ajax
     - core/jquery
     - leaflet/leaflet
     - zurb_foundation/global
