@@ -26,3 +26,10 @@ function df_tools_frontend_panels_build_alter(&$build, PanelsDisplayVariant $pan
     $build['#attached']['library'][] = 'df_tools_frontend/panels_ipe';
   }
 }
+
+/**
+ * Implements hook_page_attachments().
+ */
+function df_tools_frontend_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'df_tools_frontend/full_screen_modal';
+}

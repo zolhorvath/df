@@ -1,0 +1,5 @@
+.ui-dialog-full-width {
+  top: 0 !important;
+  left: 0 !important;
+  max-width: 100%!important;
+}

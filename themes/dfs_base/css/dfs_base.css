@@ -10582,11 +10582,6 @@ a[data-block-type="url"]:before {
   background: #3adb76;
   border: none; }
 
-.ui-dialog-full-width {
-  top: 0 !important;
-  left: 0 !important;
-  max-width: 100% !important; }
-
 .ipe-block-picker-list .ipe-category-picker-top.active {
   overflow-y: auto;
   -ms-flex-pack: center;
