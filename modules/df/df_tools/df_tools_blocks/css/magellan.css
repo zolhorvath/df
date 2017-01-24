@@ -9,6 +9,10 @@
   background: black;
 }
 
+.df-tools-magellan-block .sticky {
+  max-width:100%!important;
+}
+
 .df-tools-magellan-block .menu > li > a {
   color: white;
   flex-direction: column;
