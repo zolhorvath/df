@@ -13,7 +13,7 @@ bundle: hero
 label: Alignment
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: center
