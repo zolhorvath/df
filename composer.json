@@ -194,6 +194,10 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
+            "drupal/config_rewrite": {
+                "Support language config override rewrites | https://www.drupal.org/node/2846515":
+                "https://www.drupal.org/files/issues/config-rewrite-multilingual-2846515-13.patch"
+            },
             "drupal/content_browser": {
                 "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
                 "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",

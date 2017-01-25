@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e20ad84486b078db2d4654cc5cb7b46c",
-    "content-hash": "2b1f23c2368e8acca733f7cede56f191",
+    "hash": "db650bdf4a5f28621c1f06c2e6c85606",
+    "content-hash": "f4bc995028b1f26913e4b2d83baa8656",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1738,7 +1738,8 @@
                 "drupal": {
                     "version": "8.x-1.0-beta3",
                     "datestamp": "1485276185"
-                }
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3831,7 +3832,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "f613b434bad0c9ecece1e3dee57b6f4d156b8822"
+                "reference": "da0386d50987b63199937163bfe438807e7affcd"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3842,8 +3843,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+1-dev",
-                    "datestamp": "1476171839"
+                    "version": "8.x-1.0-beta1+3-dev",
+                    "datestamp": "1485300782"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3883,7 +3884,7 @@
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
             },
-            "time": "2017-01-23 20:08:54"
+            "time": "2017-01-25 20:55:54"
         },
         {
             "name": "drupal/libraries",
@@ -11610,16 +11611,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.32",
+            "version": "4.8.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1"
+                "reference": "6381a99bd2a398d2994b454ad6d57c73f5a7de3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6381a99bd2a398d2994b454ad6d57c73f5a7de3d",
+                "reference": "6381a99bd2a398d2994b454ad6d57c73f5a7de3d",
                 "shasum": ""
             },
             "require": {
@@ -11678,7 +11679,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-01-22 08:37:05"
+            "time": "2017-01-25 19:17:47"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
