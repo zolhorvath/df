@@ -17,7 +17,7 @@ bundle: employee
 label: Name
 description: 'The employee''s full name.'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: ''

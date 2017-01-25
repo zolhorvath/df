@@ -17,7 +17,7 @@ bundle: employee
 label: Email
 description: 'The employee''s email address.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

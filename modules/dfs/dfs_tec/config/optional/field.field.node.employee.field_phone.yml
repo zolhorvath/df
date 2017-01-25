@@ -16,7 +16,7 @@ bundle: employee
 label: Phone
 description: 'The employee''s phone number.'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: ''

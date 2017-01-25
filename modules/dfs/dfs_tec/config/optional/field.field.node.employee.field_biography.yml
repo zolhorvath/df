@@ -18,7 +18,7 @@ bundle: employee
 label: Biography
 description: 'A biography for the employee. Images and basic markup are allowed.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

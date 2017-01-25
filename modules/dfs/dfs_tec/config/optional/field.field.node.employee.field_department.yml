@@ -18,7 +18,7 @@ bundle: employee
 label: Department
 description: 'The employee''s department.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

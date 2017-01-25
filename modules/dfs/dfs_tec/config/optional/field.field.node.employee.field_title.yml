@@ -16,7 +16,7 @@ bundle: employee
 label: 'Job Title'
 description: 'The employee''s job title.'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: ''
