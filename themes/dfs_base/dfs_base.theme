@@ -12,6 +12,8 @@ function dfs_base_preprocess_block(&$variables) {
 		$language = \Drupal::languageManager()->getCurrentLanguage();
 		$block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
 		$region = $block->getRegion();
+		$regions = ['footer_first', 'footer_middle', 'footer_last'];
+		$class = (in_array($region, $regions) ? 'top' : 'bottom');
 		$content = $variables['content'];
 		$variables['content'] = [];
 		$variables['content'][] = [
@@ -22,29 +24,16 @@ function dfs_base_preprocess_block(&$variables) {
 				'</a>',
 			'#allowed_tags' => ['a', 'i', 'span'],
 		];
-		if ($region == "footer_first" || "footer_middle" || "footer_last") {
-			$variables['content'][] = [
-				'#type' => 'container',
+		$variables['content'][] = [
+			  '#type' => 'container',
 				'#attributes' => [
-					'class' => ['dropdown-pane', 'top', 'language-pane'],
+				  'class' => ['dropdown-pane', $class, 'language-pane'],
 					'id' => 'language-dropdown',
 					'data-dropdown' => '',
 					'data-auto-focus' => 'true',
 				],
-				0 => $content
-			];
-		} else {
-			$variables['content'][] = [
-				'#type' => 'container',
-				'#attributes' => [
-					'class' => ['dropdown-pane', 'bottom', 'language-pane'],
-					'id' => 'language-dropdown',
-					'data-dropdown' => '',
-					'data-auto-focus' => 'true',
-				],
-				0 => $content
-			];
-		}
+			0 => $content
+		];
 	}
 	// We get really verbose when it comes to block classes.
 	else if ($variables['elements']['#base_plugin_id'] === 'entity_field') {
