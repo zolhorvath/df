@@ -71,10 +71,10 @@
             "type": "package",
             "package": {
                 "name": "leaflet/leaflet",
-                "version": "v0.7.7",
+                "version": "1.0.3",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/Leaflet/Leaflet/archive/v0.7.7.zip",
+                    "url": "https://github.com/Leaflet/Leaflet/archive/v1.0.3.zip",
                     "type": "zip"
                 }
             }
@@ -318,7 +318,8 @@
         "kenwheeler/slick": "1.5.0",
         "lite": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
         "mjolnic/fontawesome-iconpicker": "1.2.0",
-        "lokesh/lightbox2": "2.9.0"
+        "lokesh/lightbox2": "2.9.0",
+        "leaflet/leaflet": "1.0.3"
     },
     "scripts": {
         "post-install-cmd": [

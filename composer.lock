@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "363ab1f0aa17320fbd23279c56bb549c",
-    "content-hash": "da0a470b2201ca7bd1307683362aac2f",
+    "hash": "1127511870068ec6852bbfd557c99059",
+    "content-hash": "97d46f2eda8f85531590e4806cd4f0ea",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2739,7 +2739,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_block",
-                "reference": "86ee2086c4abf7fbc87874ba8edfbd076fc4720a"
+                "reference": "ab025951e0292a4a4d3c8599288e75f83f96317c"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2784,7 +2784,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_block"
             },
-            "time": "2017-01-17 08:14:34"
+            "time": "2017-01-27 15:51:08"
         },
         {
             "name": "drupal/entity_browser",
@@ -3889,7 +3889,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+                "reference": "32f503ffd9fc3f2c175e2144136702da0fa7619d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3933,7 +3933,7 @@
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-01-04 16:26:54"
+            "time": "2017-01-27 17:42:46"
         },
         {
             "name": "drupal/link_class",
@@ -6652,23 +6652,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.9.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b"
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/a1c09b09e398687deeb8e309a6305def4b43439b",
-                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
-            },
-            "require-dev": {
-                "simpletest/simpletest": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -6695,7 +6692,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-01-13 12:31:37"
+            "time": "2016-07-16 12:58:58"
         },
         {
             "name": "graphp/algorithms",
@@ -7099,6 +7096,17 @@
                 "type": "git",
                 "url": "https://github.com/kenwheeler/slick",
                 "reference": "origin/master"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "leaflet/leaflet",
+            "version": "1.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Leaflet/Leaflet/archive/v1.0.3.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -11608,16 +11616,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.33",
+            "version": "4.8.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6381a99bd2a398d2994b454ad6d57c73f5a7de3d"
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6381a99bd2a398d2994b454ad6d57c73f5a7de3d",
-                "reference": "6381a99bd2a398d2994b454ad6d57c73f5a7de3d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca",
                 "shasum": ""
             },
             "require": {
@@ -11676,7 +11684,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-01-25 19:17:47"
+            "time": "2017-01-26 16:15:36"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
