@@ -276,18 +276,25 @@ function df_tools_blocks_migration_plugins_alter(&$definitions) {
 }
 
 /**
- * Implements hook_block_alter().
+ * Callback to re-sort blocks into categories.
+ *
+ * @param array &$block_info
+ *   An array of block plugin definitions.
  */
-function df_tools_blocks_block_alter(&$block_info) {
+function df_tools_blocks_alter_block_categories(&$block_info) {
   // Create an associative array which maps default => custom block categories.
   $category_map = [
     'Embed' => 'Embed content',
     'Entity Block' => 'Embed content',
     'Commerce' => 'Forms',
     'Lists (Views)' => 'Lists',
+    'Listes (Views)' => 'Lists',
+    'Listas (Views)' => 'Lists',
     'AddToAny' => 'Social',
     'Workbench moderation' => 'Hidden',
     'User' => 'Hidden',
+    'Utilisateur' => 'Hidden',
+    'Usuario' => 'Hidden',
     'Chaos tools' => 'Hidden',
     'Help' => 'Hidden',
     'core' => 'Hidden',
@@ -343,6 +350,11 @@ function df_tools_blocks_block_alter(&$block_info) {
         }
       }
     }
+
+    // Force translation for block categories.
+    if (is_string($block_info[$key]['category'])) {
+      $block_info[$key]['category'] = t($block_info[$key]['category']);
+    }
   }
 }
 
@@ -352,6 +364,9 @@ function df_tools_blocks_block_alter(&$block_info) {
  * Improves Panelizer/Panels IPE UX by removing fields that cannot be placed.
  */
 function df_tools_blocks_panels_ipe_blocks_alter(&$block_info) {
+  // Re-sort blocks into specific categories.
+  df_tools_blocks_alter_block_categories($block_info);
+  // Filter out fields that aren't relevant for this entity.
   $request = \Drupal::request();
   $storage_id = str_replace('*', '', $request->attributes->get('panels_storage_id', ''));
   list($entity_type, $id) = explode(':', $storage_id);
