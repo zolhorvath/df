@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1127511870068ec6852bbfd557c99059",
-    "content-hash": "97d46f2eda8f85531590e4806cd4f0ea",
+    "hash": "f17e74791ad284193dd3c517a6ee1219",
+    "content-hash": "f9123ebc31fbe951c7cc840d19c86688",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5093,6 +5093,7 @@
                     "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897": "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
                     "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                     "Provide hook to alter available blocks | https://www.drupal.org/node/2767087": "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
+                    "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
                     "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
                 }
             },
