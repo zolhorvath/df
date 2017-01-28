@@ -340,7 +340,7 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
 
     // Place Block Content entities into categories based on their type.
     if ($category == 'Custom') {
-      list($type, $uuid) = explode(':', $key);
+      list($type, $uuid) = explode(':', $block_info[$key]['plugin_id']);
       $ids = \Drupal::entityQuery('block_content')
         ->condition('uuid', $uuid, '=')
         ->execute();
