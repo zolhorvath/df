@@ -11,7 +11,7 @@
             $child.attr('src').indexOf('/entity-browser/modal/media_browser_in_modal') == 0) {
             // Make the modal full width.
             $modal.dialog({
-              width: '100%',
+              width: '100vw',
               height: $(window).height(),
               close: function () {
                 $('body').removeClass('full-width-modal-open').css('overflow','auto');
