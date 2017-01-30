@@ -1,4 +1,4 @@
 filters:
   filter_html:
     settings:
-      allowed_html: '<a href class hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type class id> <ol start type class id> <li class id> <dl> <dt> <dd> <h1 id class> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table class id> <caption> <tbody> <thead> <tfoot> <th> <td class> <tr class> <hr class> <p class id> <br> <pre> <drupal-entity data-*> <figure> <div id class> <span id class> <i id class>'
+      allowed_html: '<a href class hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type class id> <ol start type class id> <li class id> <dl> <dt> <dd> <h1 id class> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table class id> <caption> <tbody> <thead> <tfoot> <th> <td class> <tr class> <hr class> <p class id> <br> <pre> <drupal-entity data-*> <figure> <div id class> <span data-tooltip aria-haspopup data-disable-hover tabindex title id class> <i id class>'
