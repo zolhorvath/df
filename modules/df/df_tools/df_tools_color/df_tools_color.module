@@ -22,7 +22,7 @@ function df_tools_color_form_system_theme_settings_alter(&$form, FormStateInterf
     // handles variable replacement.
     // Note that color.module requires that its submission function run first so
     // we replace the submit handler in place.
-    if ($key = array_search('color_scheme_form_submit', $form['#submit'])) {
+    if (($key = array_search('color_scheme_form_submit', $form['#submit'])) !== FALSE) {
       $form['#submit'][$key] = 'df_tools_color_color_scheme_form_submit';
     }
   }
