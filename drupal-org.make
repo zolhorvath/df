@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "2.02"
+projects[lightning][version] = "2.03"
 projects[lightning][subdir] = ""
 projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
 projects[lightning][patch][1] = "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
