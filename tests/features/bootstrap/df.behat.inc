@@ -492,4 +492,20 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
     $this->getSession()->wait($timeout, $condition);
   }
 
+  /**
+   * @Then I should see the :tag element with the color :value
+   */
+  public function assertElementColorValue($tag, $value) {
+    // JS script that makes the CSS assertion in the browser.
+    $script = <<<JS
+      (function(){
+        return $("$tag").css('color') === "$value";
+      })();
+JS;
+
+    if (!$this->getSession()->evaluateScript($script)) {
+      throw new Exception();
+    }
+  }
+
 }
