@@ -31,6 +31,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/DevinCarlson/composer-patches"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "desandro/masonry",
