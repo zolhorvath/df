@@ -258,6 +258,13 @@
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
+        },
+        "patches-ignore": {
+            "acquia/lightning": {
+                "drupal/entity_block": {
+                    "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
+                }
+            }
         }
     },
     "require": {
@@ -279,7 +286,6 @@
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha2",
         "drupal/crop": "1.0.0",
-        "drupal/entity_block": "1.x-dev",
         "drupal/entity_gallery": "1.x-dev",
         "drupal/field_formatter_class": "1.0.0-rc2",
         "drupal/field_group": "1.0.0-rc6",
