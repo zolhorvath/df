@@ -182,7 +182,7 @@
                 "Quick Edit doesn't work for Custom Blocks referenced by other Custom Blocks | https://www.drupal.org/node/2661880":
                 "https://www.drupal.org/files/issues/quickedit-undefined-attr-2661880-14.patch",
                 "Outside In is intermittently unable to bind dialog events to the window | https://www.drupal.org/node/2831924":
-                "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix.patch",
+                "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix-2831924-5.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
                 "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
