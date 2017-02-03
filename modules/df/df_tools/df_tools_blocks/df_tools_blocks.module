@@ -321,10 +321,6 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
       $category = $category->getUntranslatedString();
     }
 
-    if (isset($category_map[$category])) {
-      $block_info[$key]['category'] = t($category_map[$category]);
-    }
-
     // Move all fields of the currently panelized entity into a
     // 'Current @Entity_Type' category. If the block is not a field on the
     // current entity, allow its category to be remapped.
@@ -332,7 +328,7 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
       $block_info[$key]['category'] = $info['category']->render() . ' Fields';
     }
     // Restrict entity blocks according to the whitelist.
-    else if ($category == 'Entity Block' && !in_array($key, $entity_block_id_whitelist)) {
+    else if ($category == 'Entity Block' && !in_array($block_info[$key]['plugin_id'], $entity_block_id_whitelist)) {
       unset($block_info[$key]);
     }
     // Place Block Content entities into categories based on their type.
@@ -348,10 +344,15 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
       }
     }
 
-    // Force translation for block categories.
-    if (isset($block_info[$key]) && is_string($block_info[$key]['category'])) {
-      $block_info[$key]['category'] = t($block_info[$key]['category']);
+    if (isset($block_info[$key])) {
+      if (isset($category_map[$category])) {
+        $block_info[$key]['category'] = t($category_map[$category]);
+      }
+      else if (is_string($block_info[$key]['category'])) {
+        $block_info[$key]['category'] = t($block_info[$key]['category']);
+      }
     }
+
   }
 }
 
