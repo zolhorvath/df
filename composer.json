@@ -311,7 +311,7 @@
         "drupal/moderation_note": "1.x-dev",
         "drupal/moderation_sidebar": "1.x-dev",
         "drupal/migrate_plus": "3.x-dev",
-        "drupal/migrate_source_csv": "2.0.0-rc3",
+        "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "3.x-dev",
         "drupal/oauth": "1.x-dev",
         "drupal/refreshless": "1.0.0-alpha3",
