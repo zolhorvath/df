@@ -1,5 +1,0 @@
-Don't edit the templates here!
-
-They're dynamically compiled from the Inky templates in inky_templates.
-
-Anything you change will be overridden on the next "gulp" call.

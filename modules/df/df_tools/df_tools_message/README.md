@@ -10,7 +10,7 @@ To compile the Twig templates used by this module, run:
 1. npm install
 1. gulp
 
-And you should see templates updated from /inky_templates to /templates.
+And you should see templates updated from /inky_templates to /inky_templates/compiled.
 
 # Compiling templates from other directories
 

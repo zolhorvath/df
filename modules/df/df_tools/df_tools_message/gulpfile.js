@@ -26,5 +26,5 @@ gulp.task('default', function() {
     .pipe(inky())
     .pipe(inliner())
     .pipe($.prettify({ indent_size: 2 }))
-    .pipe(gulp.dest('templates'));
+    .pipe(gulp.dest('inky_templates/compiled'));
 });
