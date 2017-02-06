@@ -135,7 +135,7 @@ projects[google_analytics_reports][version] = "3.1"
 projects[google_analytics_reports][type] = "module"
 projects[google_analytics_reports][subdir] = "contrib"
 
-projects[i18n][version] = "1.14"
+projects[i18n][version] = "1.15"
 projects[i18n][type] = "module"
 projects[i18n][subdir] = "contrib"
 ; PHP Fatal Error Call to undefined method i18n_object_wrapper::strings_update()
