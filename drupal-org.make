@@ -319,12 +319,9 @@ projects[uuid][version] = "1.0-beta2"
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
 
-projects[uuid_features][version] = "1.x-dev"
+projects[uuid_features][version] = "1.0-rc1"
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
-projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][revision] = "2e5217a"
-projects[uuid_features][download][branch] = "7.x-1.x"
 
 projects[variable][version] = "2.5"
 projects[variable][type] = "module"
