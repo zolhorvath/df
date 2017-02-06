@@ -307,7 +307,7 @@ projects[slick][version] = "2.0"
 projects[slick][type] = "module"
 projects[slick][subdir] = "contrib"
 
-projects[title][version] = "1.0-alpha8"
+projects[title][version] = "1.0-alpha9"
 projects[title][type] = "module"
 projects[title][subdir] = "contrib"
 
