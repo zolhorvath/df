@@ -247,7 +247,7 @@ projects[potx][download][type] = "git"
 projects[potx][download][revision] = "f9ccfbe"
 projects[potx][download][branch] = "7.x-1.x"
 
-projects[responsive_menus][version] = "1.5"
+projects[responsive_menus][version] = "1.6"
 projects[responsive_menus][type] = "module"
 projects[responsive_menus][subdir] = "contrib"
 
