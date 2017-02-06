@@ -250,7 +250,13 @@
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
-                "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch"
+                "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
+                "Implement missing PluginDefinitionInterface methods in RulesUiDefinition | https://www.drupal.org/node/2849779":
+                "https://www.drupal.org/files/issues/rules-fix-tests.patch",
+                "Warnings when using token replacements in multiple string context parameters | https://www.drupal.org/node/2824348":
+                "https://www.drupal.org/files/issues/rules-2824348-9.patch",
+                "Data processors do not check type before performing type-specific operations | https://www.drupal.org/node/2849810":
+                "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
             },
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
