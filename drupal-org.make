@@ -75,7 +75,7 @@ projects[commerce_license][version] = "1.3"
 projects[commerce_license][type] = "module"
 projects[commerce_license][subdir] = "contrib"
 
-projects[commerce_message][version] = "1.0-rc4"
+projects[commerce_message][version] = "1.0-rc5"
 projects[commerce_message][type] = "module"
 projects[commerce_message][subdir] = "contrib"
 
