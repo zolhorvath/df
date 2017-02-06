@@ -223,7 +223,7 @@ projects[nice_menus][version] = "2.5"
 projects[nice_menus][type] = "module"
 projects[nice_menus][subdir] = "contrib"
 
-projects[oauth][version] = "3.2"
+projects[oauth][version] = "3.4"
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
 
