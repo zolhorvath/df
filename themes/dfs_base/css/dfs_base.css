@@ -4569,7 +4569,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem; }
 
-.vertical-padding-space, .contact-form .form-item {
+.vertical-padding-space, .dfs-block-grid ul.row li.columns, .contact-form .form-item {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem; }
 
@@ -4780,6 +4780,9 @@ ul.checklist {
 
 .topbar-toplevel > li:last-child a.button:after {
   border-color: #fefefe transparent transparent !important; }
+
+.dfs-block-grid ul.row li.columns {
+  list-style: none; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

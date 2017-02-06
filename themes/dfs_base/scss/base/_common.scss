@@ -276,3 +276,12 @@ ul.checklist {
         border-color:$white transparent transparent!important;
     }
 }
+
+.dfs-block-grid {
+    ul.row {
+        li.columns {
+            list-style:none; 
+            @extend .vertical-padding-space
+        }
+    }
+}

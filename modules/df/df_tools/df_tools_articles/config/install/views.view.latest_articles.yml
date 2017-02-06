@@ -4,14 +4,13 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
+    - image.style.hero_square
     - node.type.article
   module:
     - image
     - node
     - text
     - user
-_core:
-  default_config_hash: NbetbN0YXfW6xPfJRcizE3CbtGlcZvZDxmXxkJw5F_E
 id: latest_articles
 label: 'Latest Articles'
 module: views
@@ -58,11 +57,14 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: default
+        type: html_list
         options:
           grouping: {  }
-          row_class: 'columns medium-4 small-12'
-          default_row_class: false
+          row_class: columns
+          default_row_class: true
+          type: ul
+          wrapper_class: dfs-block-grid
+          class: 'row small-up-1 medium-up-2 large-up-3'
       row:
         type: fields
         options:
@@ -316,7 +318,7 @@ display:
           plugin_id: entity_link
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
