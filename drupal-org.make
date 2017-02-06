@@ -48,7 +48,7 @@ projects[commerce_addressbook][version] = "2.0-rc9"
 projects[commerce_addressbook][type] = "module"
 projects[commerce_addressbook][subdir] = "contrib"
 
-projects[commerce_checkout_redirect][version] = "2.0-rc1"
+projects[commerce_checkout_redirect][version] = "2.0"
 projects[commerce_checkout_redirect][type] = "module"
 projects[commerce_checkout_redirect][subdir] = "contrib"
 
