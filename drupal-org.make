@@ -29,7 +29,7 @@ projects[advancedqueue][version] = "1.0-beta3"
 projects[advancedqueue][type] = "module"
 projects[advancedqueue][subdir] = "contrib"
 
-projects[better_exposed_filters][version] = "3.2"
+projects[better_exposed_filters][version] = "3.4"
 projects[better_exposed_filters][type] = "module"
 projects[better_exposed_filters][subdir] = "contrib"
 
