@@ -91,7 +91,7 @@ projects[custom_search][version] = "1.20"
 projects[custom_search][type] = "module"
 projects[custom_search][subdir] = "contrib"
 
-projects[domain][version] = "3.12"
+projects[domain][version] = "3.13"
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 
