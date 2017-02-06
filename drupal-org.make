@@ -185,12 +185,9 @@ projects[mailsystem][version] = "2.34"
 projects[mailsystem][type] = "module"
 projects[mailsystem][subdir] = "contrib"
 
-projects[manualcrop][version] = "1.x-dev"
+projects[manualcrop][version] = "1.6"
 projects[manualcrop][type] = "module"
 projects[manualcrop][subdir] = "contrib"
-projects[manualcrop][download][type] = "git"
-projects[manualcrop][download][revision] = "37ac8e3"
-projects[manualcrop][download][branch] = "7.x-1.x"
 
 projects[masquerade][version] = "1.0-rc7"
 projects[masquerade][type] = "module"
