@@ -52,7 +52,7 @@ projects[commerce_checkout_redirect][version] = "2.0-rc1"
 projects[commerce_checkout_redirect][type] = "module"
 projects[commerce_checkout_redirect][subdir] = "contrib"
 
-projects[commerce_checkout_progress][version] = "1.4"
+projects[commerce_checkout_progress][version] = "1.5"
 projects[commerce_checkout_progress][type] = "module"
 projects[commerce_checkout_progress][subdir] = "contrib"
 
