@@ -4748,7 +4748,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "15a002b9a40c0644ba12de1f07d772785cfc1d34"
+                "reference": "a5911dbcbe18c9284d2455d368a231d41653b857"
             },
             "require": {
                 "drupal/core": "*"
@@ -4763,7 +4763,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1482883985"
+                    "datestamp": "1486147684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4781,7 +4781,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_note"
             },
-            "time": "2017-02-03 18:43:29"
+            "time": "2017-02-07 18:37:06"
         },
         {
             "name": "drupal/moderation_sidebar",
@@ -4789,7 +4789,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "010c047ae1fca94ed76c120866b1f1cbf98f01e8"
+                "reference": "b538062afa367fa0f3e143efc6eb95c671a5d9a7"
             },
             "require": {
                 "drupal/core": "*"
@@ -4804,7 +4804,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1484329084"
+                    "datestamp": "1486147684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4822,7 +4822,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2017-02-03 18:44:15"
+            "time": "2017-02-07 18:36:30"
         },
         {
             "name": "drupal/multiversion",
