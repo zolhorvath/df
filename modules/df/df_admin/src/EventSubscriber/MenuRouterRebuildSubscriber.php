@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_admin\EventSubscriber\MenuRouterRebuildSubscriber.
- */
-
 namespace Drupal\df_admin\EventSubscriber;
 
 use Symfony\Component\HttpKernel\KernelEvents;

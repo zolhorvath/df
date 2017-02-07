@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_user\Plugin\migrate\source\UserPictureFile.
- */
-
 namespace Drupal\df_tools_user\Plugin\migrate\source;
 
 use Drupal\migrate\Row;

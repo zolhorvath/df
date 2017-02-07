@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_migration\Plugin\migrate\source\CreatorArticleNode.
- */
-
 namespace Drupal\df_tools_migration\Plugin\migrate\source;
 
 use Drupal\migrate\Row;

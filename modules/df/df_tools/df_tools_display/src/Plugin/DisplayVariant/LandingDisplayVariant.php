@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_display\Plugin\DisplayVariant\LandingDisplayVariant.
- */
-
 namespace Drupal\df_tools_display\Plugin\DisplayVariant;
 
 use Drupal\Component\Utility\Html;

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_blocks\Plugin\migrate\source\MediaBlock.
- */
-
 namespace Drupal\df_tools_blocks\Plugin\migrate\source;
 
 use Drupal\migrate\Row;

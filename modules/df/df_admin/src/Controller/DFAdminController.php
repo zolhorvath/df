@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\df_admin\Controller\DFAdminController.
- */
-
 namespace Drupal\df_admin\Controller;
 
 use Drupal\Core\Controller\ControllerBase;

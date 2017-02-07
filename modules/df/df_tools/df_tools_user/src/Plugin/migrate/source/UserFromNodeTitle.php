@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_user\Plugin\migrate\source\UserFromNodeTitle.
- */
-
 namespace Drupal\df_tools_user\Plugin\migrate\source;
 
 use Drupal\migrate\Row;

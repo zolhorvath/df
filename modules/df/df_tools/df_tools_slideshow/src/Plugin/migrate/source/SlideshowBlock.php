@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_slideshow\Plugin\migrate\source\SlideshowBlock.
- */
-
 namespace Drupal\df_tools_slideshow\Plugin\migrate\source;
 
 use Drupal\migrate\Row;

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_icons\Plugin\Field\FieldWidget\FontAwesomeWidget.
- */
-
 namespace Drupal\df_tools_icons\Plugin\Field\FieldWidget;
 
 use Drupal\Core\Field\FieldItemListInterface;

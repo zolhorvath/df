@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\df_tools_slideshow\Plugin\Field\FieldFormatter\EntityReferenceSlideshowFormatter.
- */
-
 namespace Drupal\df_tools_slideshow\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FieldItemListInterface;

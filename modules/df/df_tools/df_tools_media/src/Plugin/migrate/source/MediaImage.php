@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\import\Plugin\migrate\source\ImageFile.
- */
-
 namespace Drupal\df_tools_media\Plugin\migrate\source;
 
 use Drupal\migrate\Row;
