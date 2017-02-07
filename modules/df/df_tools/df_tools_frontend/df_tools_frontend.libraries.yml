@@ -4,6 +4,9 @@ panels_ipe:
     js/panels_ipe.js: {}
   dependencies:
     - panels_ipe/panels_ipe
+  css:
+    component:
+      css/panels_ipe.css: {}
 
 full_screen_modal:
   version: VERSION
