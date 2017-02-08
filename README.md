@@ -82,6 +82,11 @@ http://www.seleniumhq.org and run it with:
 Note that you may require a newer version of Java which can be downloaded from
 http://www.oracle.com/technetwork/java/javase/downloads/index.html.
 
+The default browser for our tests is Google Chrome. You will need to add the Chromedriver to your path to run tests.
+Download the latest Chromedriver for your OS from https://sites.google.com/a/chromium.org/chromedriver/downloads
+Unpack the archive and move the ``chromedriver`` file to ``/usr/local/bin/chromedriver``
+If you are not using OSX, see the getting started docs https://sites.google.com/a/chromium.org/chromedriver/getting-started
+
 Before running any tests you must edit the behat.local.yml file, located within
 DRUPAL_ROOT/profiles/df, replacing "base_url" with the URL to your site.
 
