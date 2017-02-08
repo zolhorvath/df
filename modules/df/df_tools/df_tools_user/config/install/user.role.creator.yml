@@ -1,6 +1,9 @@
+uuid: 87706879-c042-4a51-b1d5-081a915192df
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: DDay3FSb-tzOCqH2x7aies6xlhyDS5wSbTwX34VbEKo
 id: creator
 label: Creator
 weight: 3
@@ -38,4 +41,38 @@ permissions:
   - 'access browse_content entity browser pages'
   - 'access browse_content_modal entity browser pages'
   - 'access toolbar'
+  - 'hide more format tips link'
+  - 'access browse_content_iframe entity browser pages'
+  - 'access image_browser entity browser pages'
+  - 'access media_browser entity browser pages'
+  - 'access media_browser_in_modal entity browser pages'
+  - 'view own unpublished entity galleries'
+  - 'access entity galleries'
+  - 'create media'
+  - 'update media'
+  - 'view media'
+  - 'use moderation sidebar'
+  - 'access content'
+  - 'create page content'
+  - 'delete own page content'
+  - 'edit own page content'
+  - 'view page revisions'
+  - 'create landing_page content'
+  - 'delete own landing_page content'
+  - 'edit own landing_page content'
+  - 'view landing_page revisions'
+  - 'administer panelizer node article content'
+  - 'administer panelizer node article layout'
+  - 'administer panelizer node page content'
+  - 'administer panelizer node page layout'
+  - 'administer panelizer node landing_page content'
+  - 'administer panelizer node landing_page layout'
+  - 'view scheduled update entities'
+  - 'view scheduled content'
+  - 'access tour'
+  - 'view moderation states'
+  - 'use published_archived transition'
+  - 'use published_draft transition'
+  - 'use needs_review_draft transition'
+  - 'use archived_published transition'
 
