@@ -2,8 +2,6 @@ uuid: 47aff5be-feb2-4bae-b1c3-c3b8bc9f7b2c
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 7hEXqETj8EPMS4PPTUJ9YNV2nD3_2skA_bd85-mFfbU
 id: reviewer
 label: Reviewer
 weight: 4

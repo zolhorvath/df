@@ -2,8 +2,6 @@ uuid: 87706879-c042-4a51-b1d5-081a915192df
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: DDay3FSb-tzOCqH2x7aies6xlhyDS5wSbTwX34VbEKo
 id: creator
 label: Creator
 weight: 3
