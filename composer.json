@@ -220,7 +220,9 @@
                 "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555":
                 "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch",
                 "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037":
-                "https://www.drupal.org/files/issues/2845037-4.patch"
+                "https://www.drupal.org/files/issues/2845037-4.patch",
+                "Quick edit compatibility | https://www.drupal.org/node/2733605":
+                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-4.patch"
             },
             "drupal/media_entity": {
                 "Remove version constraints. | http://drupal.org/node/2770791":
