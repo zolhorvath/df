@@ -190,7 +190,9 @@
                 "MigrationPluginManager::getDefinitions() blows up in node derivers | https://www.drupal.org/node/2830036":
                 "https://www.drupal.org/files/issues/2830036-17.patch",
                 "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850":
-                "https://www.drupal.org/files/issues/2652850-17.patch"
+                "https://www.drupal.org/files/issues/2652850-17.patch",
+                "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
+                "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
@@ -222,7 +224,7 @@
                 "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037":
                 "https://www.drupal.org/files/issues/2845037-4.patch",
                 "Quick edit compatibility | https://www.drupal.org/node/2733605":
-                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-4.patch"
+                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-6.patch"
             },
             "drupal/media_entity": {
                 "Remove version constraints. | http://drupal.org/node/2770791":

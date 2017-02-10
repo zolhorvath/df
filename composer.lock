@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a6e5ec078887551bcdb21a2dee415a3b",
-    "content-hash": "771af20b617c5a5448a0e7bfb3301409",
+    "hash": "20dfcc4c6ae0abff8bde0f7619872e7c",
+    "content-hash": "8f3af71145bcd8998a03acac5f509f7a",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1252,7 +1252,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address",
-                "reference": "bca416ec9536f2da14b2407104a0556a23343c92"
+                "reference": "aa0456a4bf6fac8719573b3d3e00d1a8f021462d"
             },
             "require": {
                 "commerceguys/addressing": "~1.0",
@@ -1266,8 +1266,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc3+4-dev",
-                    "datestamp": "1485214683"
+                    "version": "8.x-1.0-rc4+0-dev",
+                    "datestamp": "1486736283"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1293,7 +1293,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
             },
-            "time": "2017-01-23 23:39:41"
+            "time": "2017-02-10 14:14:54"
         },
         {
             "name": "drupal/addtoany",
@@ -2248,6 +2248,7 @@
                     "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
                     "MigrationPluginManager::getDefinitions() blows up in node derivers | https://www.drupal.org/node/2830036": "https://www.drupal.org/files/issues/2830036-17.patch",
                     "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850": "https://www.drupal.org/files/issues/2652850-17.patch",
+                    "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
                     "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
                 }
@@ -2846,7 +2847,7 @@
                 "patches_applied": {
                     "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555": "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch",
                     "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037": "https://www.drupal.org/files/issues/2845037-4.patch",
-                    "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-4.patch"
+                    "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
