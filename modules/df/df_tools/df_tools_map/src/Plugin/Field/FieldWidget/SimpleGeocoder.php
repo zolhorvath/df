@@ -115,6 +115,11 @@ class SimpleGeocoder extends WidgetBase {
 
       // For each value, geocode the address and set our coordinates.
       foreach ($field_value as $delta => $value) {
+        // The address module changed its structure, at some point.
+        if (isset($value['address'])) {
+          $value = $value['address'];
+        }
+
         // Check if this field is an Address field.
         if (isset($value['address_line1'])) {
           $address_line2 = !empty($value['address_line2']) ? $value['address_line2'] . "\n" : '';
@@ -127,7 +132,7 @@ class SimpleGeocoder extends WidgetBase {
         }
 
         // Geocode the source field's value.
-        if ($collection = \Drupal::service('geocoder')->geocode($value['value'], ['googlemaps'])) {
+        if (isset($value['value']) && $collection = \Drupal::service('geocoder')->geocode($value['value'], ['googlemaps'])) {
           // Set our value in a similar way to Geofield's LatLon Widget.
           // @see \Drupal\geofield\Plugin\Field\FieldWidget\GeofieldLatLonWidget::massageFormValues()
           $coordinates = $collection->first()->getCoordinates();
