@@ -73,4 +73,5 @@ permissions:
   - 'use published_draft transition'
   - 'use needs_review_draft transition'
   - 'use archived_published transition'
-
+  - 'access media overview'
+  - 'update any media'
