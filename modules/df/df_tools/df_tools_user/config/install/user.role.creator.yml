@@ -65,8 +65,6 @@ permissions:
   - 'administer panelizer node page layout'
   - 'administer panelizer node landing_page content'
   - 'administer panelizer node landing_page layout'
-  - 'view scheduled update entities'
-  - 'view scheduled content'
   - 'access tour'
   - 'view moderation states'
   - 'use published_archived transition'
