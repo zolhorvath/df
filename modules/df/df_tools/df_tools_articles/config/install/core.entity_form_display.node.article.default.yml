@@ -41,6 +41,10 @@ content:
     weight: 6
     settings: {  }
     third_party_settings: {  }
+  fake_moderation_state:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     type: entity_browser_file
     weight: 1

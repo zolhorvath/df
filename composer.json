@@ -268,7 +268,9 @@
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
                 "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
-                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
+                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch",
+                "The the ability to rearrange the moderation state field | https://www.drupal.org/node/2833892":
+                "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch"
             },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
