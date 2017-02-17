@@ -178,7 +178,7 @@ projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.2"
 
 projects[message][type] = "module"
-projects[message][version] = "1.0-alpha4"
+projects[message][version] = "1.0-alpha5"
 
 projects[message_notify][type] = "module"
 projects[message_notify][version] = "1.0-alpha3"
