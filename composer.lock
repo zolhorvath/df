@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "681fdcbb709f56964c920895df5227bd",
-    "content-hash": "5d7448f46e8be2de89e7d7950cd16a4a",
+    "content-hash": "7ad10da9a00ad0c7bd4b86e5a669a1a4",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3582,23 +3581,24 @@
         },
         {
             "name": "drupal/image_effects",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/image_effects",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-1.0-alpha4.zip",
+                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-1.0-alpha5.zip",
                 "reference": null,
-                "shasum": "4b655fbad6f81abd24db06851d0f614534852b92"
+                "shasum": "6b8cf2822d66ea0455dede0c08a418fc3867ab90"
             },
             "require": {
                 "drupal/core": "^8.2.0"
             },
             "require-dev": {
-                "drupal/imagemagick": "*"
+                "drupal/imagemagick": "*",
+                "drupal/jquery_colorpicker": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3606,7 +3606,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
+                    "version": "8.x-1.0-alpha5",
                     "datestamp": "1487259483"
                 }
             },

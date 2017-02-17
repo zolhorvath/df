@@ -130,7 +130,7 @@ projects[google_analytics][type] = "module"
 projects[google_analytics][version] = "2.1"
 
 projects[image_effects][type] = "module"
-projects[image_effects][version] = "1.0-alpha3"
+projects[image_effects][version] = "1.0-alpha5"
 
 projects[import][type] = "module"
 projects[import][version] = "2.0-beta1"
