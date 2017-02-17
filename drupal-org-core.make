@@ -3,7 +3,7 @@ core = 8.x
 
 ; Drupal Core
 projects[drupal][type] = "core"
-projects[drupal][version] = "8.2.4"
+projects[drupal][version] = "8.2.6"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/2635712-14.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
@@ -16,3 +16,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/outside-in-earl
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/allow-2681947-20_0.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/2830036-17.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/2652850-17.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/2652138-28.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"

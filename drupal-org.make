@@ -9,16 +9,14 @@ projects[lightning][type] = "profile"
 projects[lightning][version] = "2.03"
 projects[lightning][subdir] = ""
 projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
-projects[lightning][patch][1] = "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter.patch"
+projects[lightning][patch][1] = "https://www.drupal.org/files/issues/lightning_core-skip-user-edit-form-alter-2770791-14.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
-projects[acquia_connector][version] = "1.6"
+projects[acquia_connector][version] = "1.7"
 
 projects[address][type] = "module"
-projects[address][download][type] = "git"
-projects[address][download][branch] = "8.x-1.x"
-projects[address][version] = "1.x-dev"
+projects[address][version] = "1.0-rc4"
 
 projects[addtoany][type] = "module"
 projects[addtoany][version] = "1.7"
@@ -42,27 +40,34 @@ projects[block_class][version] = "1.x-dev"
 projects[block_class][patch][0] = "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
 
 projects[config_devel][type] = "module"
-projects[config_devel][download][type] = "git"
-projects[config_devel][download][branch] = "8.x-1.x"
-projects[config_devel][version] = "1.x-dev"
+projects[config_devel][version] = "1.0-alpha3"
 
 projects[config_rewrite][type] = "module"
-projects[config_rewrite][version] = "1.0-beta2"
+projects[config_rewrite][version] = "1.0-beta4"
 
 projects[config_sync][type] = "module"
-projects[config_sync][version] = "1.0-alpha3"
+projects[config_sync][download][type] = "git"
+projects[config_sync][download][branch] = "8.x-1.x"
+projects[config_sync][version] = "1.x-dev"
 
 projects[config_tools][type] = "module"
 projects[config_tools][download][type] = "git"
 projects[config_tools][download][branch] = "8.x-1.x"
+projects[config_tools][version] = "1.x-dev"
 
 projects[config_update][type] = "module"
-projects[config_update][version] = "1.2"
+projects[config_update][version] = "1.3"
+
+projects[conflict][type] = "module"
+projects[conflict][version] = "1.0-alpha1"
+
+projects[contact_storage][type] = "module"
+projects[contact_storage][version] = "1.0-beta8"
 
 projects[content_browser][type] = "module"
-projects[content_browser][version] = "1.0-alpha1"
-projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-recursive-embed-protection.patch"
-projects[content_browser][patch][1] = "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
+projects[content_browser][version] = "1.0-alpha2"
+projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
+projects[content_browser][patch][1] = "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch"
 projects[content_browser][patch][2] = "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
 
 projects[crop][type] = "module"
@@ -71,6 +76,9 @@ projects[crop][version] = "1.0"
 projects[ctools][type] = "module"
 projects[ctools][version] = "3.0-alpha27"
 
+projects[diff][type] = "module"
+projects[diff][version] = "1.0-rc1"
+
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][version] = "1.0-alpha2"
 
@@ -78,18 +86,22 @@ projects[embed][type] = "module"
 projects[embed][version] = "1.0-rc3"
 
 projects[entity][type] = "module"
-projects[entity][version] = "1.0-alpha3"
+projects[entity][version] = "1.0-alpha4"
 
 projects[entity_block][type] = "module"
 projects[entity_block][version] = "1.0-alpha2"
 projects[entity_block][patch][0] = "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
+projects[entity_block][patch][1] = "https://www.drupal.org/files/issues/entity_block-view-builder-class.patch"
 
 projects[entity_browser][type] = "module"
-projects[entity_browser][version] = "1.0-alpha10"
+projects[entity_browser][version] = "1.0-beta4"
 projects[entity_browser][patch][0] = "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch"
+projects[entity_browser][patch][1] = "https://www.drupal.org/files/issues/2845037-4.patch"
+projects[entity_browser][patch][2] = "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-6.patch"
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][version] = "1.0-beta2"
+projects[entity_embed][patch][0] = https://www.drupal.org/files/issues/2832504-2.patch
 
 projects[entity_gallery][type] = "module"
 projects[entity_gallery][download][type] = "git"
@@ -97,7 +109,7 @@ projects[entity_gallery][download][branch] = "8.x-1.x"
 projects[entity_gallery][version] = "1.x-dev"
 
 projects[features][type] = "module"
-projects[features][version] = "3.0-rc1"
+projects[features][version] = "3.2"
 
 projects[field_formatter_class][type] = "module"
 projects[field_formatter_class][version] = "1.0-rc2"
@@ -133,10 +145,13 @@ projects[image_effects][type] = "module"
 projects[image_effects][version] = "1.0-alpha5"
 
 projects[import][type] = "module"
-projects[import][version] = "2.0-beta1"
+projects[import][version] = "2.0-beta2"
+
+projects[key_value][type] = "module"
+projects[key_value][version] = "1.0"
 
 projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][version] = "1.0-alpha6"
+projects[inline_entity_form][version] = "1.0-beta1"
 
 projects[layout_plugin][type] = "module"
 projects[layout_plugin][version] = "1.0-alpha23"
@@ -156,13 +171,12 @@ projects[link_class][version] = "1.0"
 
 projects[lite][type] = "module"
 projects[lite][version] = "1.4"
-projects[lite][patch][0] = "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
 
 projects[mailsystem][type] = "module"
 projects[mailsystem][version] = "4.1"
 
 projects[media_entity][type] = "module"
-projects[media_entity][version] = "1.5"
+projects[media_entity][version] = "1.6"
 projects[media_entity][patch][0] = "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
 
 projects[media_entity_document][type] = "module"
@@ -175,7 +189,7 @@ projects[media_entity_instagram][type] = "module"
 projects[media_entity_instagram][version] = "1.2"
 
 projects[media_entity_twitter][type] = "module"
-projects[media_entity_twitter][version] = "1.2"
+projects[media_entity_twitter][version] = "1.3"
 
 projects[message][type] = "module"
 projects[message][version] = "1.0-alpha5"
@@ -184,18 +198,21 @@ projects[message_notify][type] = "module"
 projects[message_notify][version] = "1.0-alpha3"
 
 projects[metatag][type] = "module"
-projects[metatag][version] = "1.0-beta10"
-projects[metatag][patch][0] = "https://www.drupal.org/files/issues/metatag-deactivate_drupalconsole_services_0.patch"
+projects[metatag][version] = "1.0"
 
 projects[migrate_plus][type] = "module"
-projects[migrate_plus][version] = "2.0-beta2"
+projects[migrate_plus][download][type] = "git"
+projects[migrate_plus][download][branch] = "8.x-3.x"
+projects[migrate_plus][version] = "3.x-dev"
 projects[migrate_plus][patch][0] = "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
 
 projects[migrate_source_csv][type] = "module"
-projects[migrate_source_csv][version] = "2.0-beta1"
+projects[migrate_source_csv][version] = "2.0"
 
 projects[migrate_tools][type] = "module"
-projects[migrate_tools][version] = "2.0-beta1"
+projects[migrate_tools][download][type] = "git"
+projects[migrate_tools][download][branch] = "8.x-3.x"
+projects[migrate_tools][version] = "3.x-dev"
 projects[migrate_tools][patch][0] = "https://www.drupal.org/files/issues/use_the_core_plugin-2795447-3.patch"
 
 projects[moderation_note][type] = "module"
@@ -208,6 +225,12 @@ projects[moderation_sidebar][download][type] = "git"
 projects[moderation_sidebar][download][branch] = "8.x-1.x"
 projects[moderation_sidebar][version] = "1.x-dev"
 
+projects[multiversion][type] = "module"
+projects[multiversion][version] = "1.0-alpha12"
+projects[multiversion][patch][0] = "https://www.drupal.org/files/issues/2822915-2.patch"
+projects[multiversion][patch][1] = "https://www.drupal.org/files/issues/2825477-2.patch"
+projects[multiversion][patch][2] = "https://www.drupal.org/files/issues/2844998-2.patch"
+
 projects[oauth][type] = "module"
 projects[oauth][download][type] = "git"
 projects[oauth][download][branch] = "8.x-1.x"
@@ -219,21 +242,25 @@ projects[page_manager][patch][0] = "https://www.drupal.org/files/issues/page_man
 projects[page_manager][patch][1] = "https://www.drupal.org/files/issues/2746149-2.patch"
 
 projects[panelizer][type] = "module"
-projects[panelizer][version] = "3.0-alpha2"
-projects[panelizer][patch][0] = "https://www.drupal.org/files/issues/panelizer--8.x-3.0-alpha2--54f0ac6e.patch"
-projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2701349-2.patch"
-projects[panelizer][patch][2] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
-projects[panelizer][patch][3] = "https://www.drupal.org/files/issues/2664682-89.patch"
-projects[panelizer][patch][4] = "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
+projects[panelizer][version] = "3.0-alpha3"
+projects[panelizer][patch][0] = "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
+projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2664574-26.patch"
 
 projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta5"
-projects[panels][patch][0] = "https://www.drupal.org/files/issues/2793801-9.patch"
-projects[panels][patch][1] = "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
-projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
+projects[panels][patch][0] = "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+projects[panels][patch][1] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
+projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
+projects[panels][patch][3] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+projects[panels][patch][3] = "https://www.drupal.org/files/issues/2793801-9.patch"
 
 projects[pathauto][type] = "module"
-projects[pathauto][version] = "1.0-beta1"
+projects[pathauto][version] = "1.0-rc1"
+
+projects[replication][type] = "module"
+projects[replication][version] = "1.0-alpha5"
+projects[replication][patch][0] = "https://www.drupal.org/files/issues/2814055-2.patch"
+projects[replication][patch][1] = "https://www.drupal.org/files/issues/2820105-10.patch"
 
 projects[refreshless][type] = "module"
 projects[refreshless][version] = "1.0-alpha3"
@@ -241,6 +268,9 @@ projects[refreshless][version] = "1.0-alpha3"
 projects[rules][type] = "module"
 projects[rules][version] = "3.0-alpha2"
 projects[rules][patch][0] = "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch"
+projects[rules][patch][1] = "https://www.drupal.org/files/issues/rules-fix-tests.patch"
+projects[rules][patch][2] = "https://www.drupal.org/files/issues/rules-2824348-9.patch"
+projects[rules][patch][3] = "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
 
 projects[replicate][type] = "module"
 projects[replicate][download][type] = "git"
@@ -270,6 +300,9 @@ projects[scheduled_updates][patch][1] = "https://www.drupal.org/files/issues/sch
 projects[scheduler][type] = "module"
 projects[scheduler][version] = "1.0-alpha2"
 
+projects[search_api][type] = "module"
+projects[search_api][version] = "1.0-beta4"
+
 projects[search_autocomplete][type] = "module"
 projects[search_autocomplete][download][type] = "git"
 projects[search_autocomplete][download][branch] = "8.x-1.x"
@@ -279,7 +312,7 @@ projects[swiftmailer][type] = "module"
 projects[swiftmailer][version] = "1.0-alpha2"
 
 projects[token][type] = "module"
-projects[token][version] = "1.0-beta2"
+projects[token][version] = "1.0-rc1"
 
 projects[url_embed][type] = "module"
 projects[url_embed][download][type] = "git"
@@ -287,20 +320,24 @@ projects[url_embed][download][branch] = "8.x-1.x"
 projects[url_embed][version] = "1.x-dev"
 
 projects[video_embed_field][type] = "module"
-projects[video_embed_field][version] = "1.3"
+projects[video_embed_field][version] = "1.4"
 
 projects[view_modes_display][version] = "1.0"
 projects[view_modes_display][type] = "module"
 
 projects[views_infinite_scroll][type] = "module"
-projects[views_infinite_scroll][version] = "1.2"
+projects[views_infinite_scroll][version] = "1.3"
 
 projects[workbench_moderation][type] = "module"
-projects[workbench_moderation][version] = "1.1"
-projects[workbench_moderation][patch][0] = "https://www.drupal.org/files/issues/2668006-2.patch"
-projects[workbench_moderation][patch][1] = "https://www.drupal.org/files/issues/workbench_moderation-invalid_service_definition.patch"
-projects[workbench_moderation][patch][2] = "https://www.drupal.org/files/issues/2685163-21.patch"
-projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
+projects[workbench_moderation][version] = "1.2"
+projects[workbench_moderation][patch][0] = "https://www.drupal.org/files/issues/2685163-21.patch"
+projects[workbench_moderation][patch][1] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
+projects[workbench_moderation][patch][2] = "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch"
+projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/2668006-2.patch"
+projects[workbench_moderation][patch][4] = "https://www.drupal.org/files/issues/2847078-6.patch"
+
+projects[workspace][type] = "module"
+projects[workspace][version] = "1.0-alpha4"
 
 ; Themes
 projects[adminimal_theme][type] = "theme"
