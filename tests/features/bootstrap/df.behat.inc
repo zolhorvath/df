@@ -499,7 +499,7 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
     // JS script that makes the CSS assertion in the browser.
     $script = <<<JS
       (function(){
-        return $("$tag").css('color') === "$value";
+        return jQuery("$tag").css('color') === "$value";
       })();
 JS;
 
