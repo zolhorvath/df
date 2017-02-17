@@ -202,10 +202,6 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
-            "drupal/config_rewrite": {
-                "Support language config override rewrites | https://www.drupal.org/node/2846515":
-                "https://www.drupal.org/files/issues/config-rewrite-multilingual-2846515-13.patch"
-            },
             "drupal/content_browser": {
                 "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
                 "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
@@ -299,7 +295,7 @@
         "drupal/block_class": "1.x-dev",
         "drupal/dropzonejs": "1.0.0-alpha2",
         "drupal/config_devel": "1.0.0-alpha3",
-        "drupal/config_rewrite": "dev-1.x#8.x-1.0-beta3",
+        "drupal/config_rewrite": "1.0.0-beta4",
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha2",
