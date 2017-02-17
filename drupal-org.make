@@ -287,7 +287,7 @@ projects[search_api_solr][version] = "1.11"
 projects[search_api_solr][type] = "module"
 projects[search_api_solr][subdir] = "contrib"
 
-projects[search_api_sorts][version] = "1.6"
+projects[search_api_sorts][version] = "1.7"
 projects[search_api_sorts][type] = "module"
 projects[search_api_sorts][subdir] = "contrib"
 
