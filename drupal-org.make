@@ -331,7 +331,7 @@ projects[views_megarow][version] = "1.7"
 projects[views_megarow][type] = "module"
 projects[views_megarow][subdir] = "contrib"
 
-projects[views_slideshow][version] = "3.5"
+projects[views_slideshow][version] = "3.6"
 projects[views_slideshow][type] = "module"
 projects[views_slideshow][subdir] = "contrib"
 
