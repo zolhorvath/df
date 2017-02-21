@@ -1,0 +1,10 @@
+status: true
+region: content
+weight: -11
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+
