@@ -19,6 +19,9 @@ Feature: Demo Framework
 #    Then I should see the heading "User account"
     And I should see "Username"
     And I should see "Password"
+    And I should see "Log in"
+    And I should see "Create new account"
+    And I should see "Reset your password"
 
   @api
   Scenario: Confirm authenticated user
@@ -27,9 +30,13 @@ Feature: Demo Framework
     Then I should not see the heading "User account"
     And I should not see "Username"
     And I should not see "Password"
+    And I should not see "Log in"
+    And I should not see "Create new account"
+    And I should not see "Reset your password"
 
   @api
   Scenario: Ensure that database logging is available
     Given I am logged in as a user with the "administrator" role
     And I am on "/admin/reports/dblog"
     Then I should see "Recent log messages"
+    
