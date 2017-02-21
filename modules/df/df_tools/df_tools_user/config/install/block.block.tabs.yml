@@ -1,0 +1,32 @@
+uuid: 9e1e07f3-da29-47d2-8042-c76a2fb950c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - zurb_foundation
+third_party_settings:
+  block_class:
+    classes: ''
+id: tabs
+theme: zurb_foundation
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+
