@@ -47,6 +47,7 @@ permissions:
   - 'use needs_review_draft transition'
   - 'use archived_published transition'
   - 'translate any entity'
+  - 'use moderation sidebar'
   - 'access content'
   - 'create page content'
   - 'delete any page content'
