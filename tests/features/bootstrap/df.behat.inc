@@ -408,6 +408,28 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
   }
 
   /**
+   * Checks, that page contains specified title
+   * Example: Then I should see the page title "Who is the Batman?"
+   * Example: And I should see the page title "Who is the Batman?"
+   *
+   * @Then /^(?:|I )should see the page title "(?P<text>(?:[^"]|\\")*)"$/
+   */
+  public function assertPageContainsTitle($title) {
+    $this->assertSession()->elementContains('css', 'h1', $title);
+  }
+
+  /**
+   * Checks, that page doesn't contains specified title
+   * Example: Then I should not see the page title "Who is the Batman?"
+   * Example: And I should not see the page title "Who is the Batman?"
+   *
+   * @Then /^(?:|I )should not see the page title "(?P<text>(?:[^"]|\\")*)"$/
+   */
+  public function assertPageNotContainsTitle($title) {
+    $this->assertSession()->elementNotContains('css', 'h1', $title);
+  }
+
+  /**
    * Schedules a node for publication.
    *
    * @param string $when
