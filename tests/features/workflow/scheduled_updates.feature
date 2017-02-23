@@ -1,4 +1,4 @@
-@df @api @workflow
+@dfs_edu @dfs_fin @dfs_obio @dfs_obio_showroom @api @workflow
 Feature: Scheduled updates to content
 
   @javascript
