@@ -16,6 +16,7 @@
 .df-tools-slideshow .slick-prev {
 	left:3%;
 	width:inherit;
+	z-index: 10;
 
 }
 
