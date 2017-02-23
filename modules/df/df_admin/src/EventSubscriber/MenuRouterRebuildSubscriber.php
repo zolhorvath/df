@@ -34,8 +34,8 @@ class MenuRouterRebuildSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   static function getSubscribedEvents() {
+    $events = [];
     $events[KernelEvents::REQUEST][] = ['onKernelRequestMenuRouterRebuild', 255];
-
     return $events;
   }
 
