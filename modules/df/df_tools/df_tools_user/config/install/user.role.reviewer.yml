@@ -18,6 +18,7 @@ permissions:
   - 'access files overview'
   - 'use text format full_html'
   - 'use text format rich_text'
+  - 'view the administration theme'
   - 'access content overview'
   - 'delete all revisions'
   - 'revert all revisions'
