@@ -19,6 +19,7 @@ permissions:
   - 'use text format full_html'
   - 'use text format rich_text'
   - 'view the administration theme'
+  - 'access toolbar'
   - 'hide more format tips link'
   - 'access content overview'
   - 'delete all revisions'
