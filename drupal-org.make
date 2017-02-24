@@ -267,7 +267,7 @@ projects[schemaorg][version] = "1.0-rc1"
 projects[schemaorg][type] = "module"
 projects[schemaorg][subdir] = "contrib"
 
-projects[search_api][version] = "1.20"
+projects[search_api][version] = "1.21"
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
 
