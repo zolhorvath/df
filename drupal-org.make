@@ -283,7 +283,7 @@ projects[search_api_ranges][version] = "1.5"
 projects[search_api_ranges][type] = "module"
 projects[search_api_ranges][subdir] = "contrib"
 
-projects[search_api_solr][version] = "1.11"
+projects[search_api_solr][version] = "1.12"
 projects[search_api_solr][type] = "module"
 projects[search_api_solr][subdir] = "contrib"
 
