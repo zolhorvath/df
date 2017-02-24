@@ -32,7 +32,6 @@ permissions:
   - 'use text format rich_text'
   - 'access panels in-place editing'
   - 'access shortcuts'
-  - 'access administration pages'
   - 'view the administration theme'
   - 'post comments'
   - 'access comments'
