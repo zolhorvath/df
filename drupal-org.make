@@ -271,7 +271,7 @@ projects[search_api][version] = "1.21"
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
 
-projects[search_api_db][version] = "1.5"
+projects[search_api_db][version] = "1.6"
 projects[search_api_db][type] = "module"
 projects[search_api_db][subdir] = "contrib"
 
