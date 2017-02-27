@@ -285,3 +285,8 @@ ul.checklist {
         }
     }
 }
+
+//responsive preview label should not inherit the theme styles
+label.responsive-preview-device-label {
+    background:transparent
+}
