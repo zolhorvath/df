@@ -316,6 +316,7 @@
         "drupal/link_class": "1.0.0",
         "drupal/lite": "1.4.0",
         "drupal/mailsystem": "4.1.0",
+        "drupal/media_entity_video": "1.0.0-beta1",
         "drupal/message": "1.0.0-alpha5",
         "drupal/message_notify": "1.0-alpha3",
         "drupal/moderation_note": "1.x-dev",
