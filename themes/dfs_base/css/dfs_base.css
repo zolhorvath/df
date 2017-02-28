@@ -1730,10 +1730,7 @@ select {
   .form-error.is-visible {
     display: block; }
 
-.button, .ipe-form input[data-drupal-selector="edit-preview"],
-.ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-.ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[data-drupal-selector="edit-submit"],
-.ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+.button, .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -1748,370 +1745,127 @@ select {
   cursor: pointer;
   background-color: #2199e8;
   color: #fff; }
-  [data-whatinput='mouse'] .button, [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-preview"], [data-whatinput='mouse']
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], [data-whatinput='mouse']
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-submit"], [data-whatinput='mouse']
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  [data-whatinput='mouse'] .button, [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-preview"], [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-submit"], [data-whatinput='mouse'] .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form [data-whatinput='mouse'] input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     outline: 0; }
-  .button:hover, .ipe-form input[data-drupal-selector="edit-preview"]:hover,
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[data-drupal-selector="edit-submit"]:hover,
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button:focus, .ipe-form input[data-drupal-selector="edit-preview"]:focus,
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[data-drupal-selector="edit-submit"]:focus,
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+  .button:hover, .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button:focus, .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
     background-color: #1583cc;
     color: #fff; }
-  .button.tiny, .ipe-form input.tiny[data-drupal-selector="edit-preview"],
-  .ipe-form input.tiny[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.tiny[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.tiny[data-drupal-selector="edit-submit"],
-  .ipe-form input.tiny[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.tiny, .ipe-form input.tiny[data-drupal-selector="edit-preview"], .ipe-form input.tiny[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.tiny[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.tiny[data-drupal-selector="edit-submit"], .ipe-form input.tiny[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 0.6rem; }
-  .button.small, .ipe-form input.small[data-drupal-selector="edit-preview"],
-  .ipe-form input.small[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.small[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.small[data-drupal-selector="edit-submit"],
-  .ipe-form input.small[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.small, .ipe-form input.small[data-drupal-selector="edit-preview"], .ipe-form input.small[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.small[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.small[data-drupal-selector="edit-submit"], .ipe-form input.small[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 0.75rem; }
-  .button.large, .ipe-form input.large[data-drupal-selector="edit-preview"],
-  .ipe-form input.large[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.large[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.large[data-drupal-selector="edit-submit"],
-  .ipe-form input.large[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.large, .ipe-form input.large[data-drupal-selector="edit-preview"], .ipe-form input.large[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.large[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.large[data-drupal-selector="edit-submit"], .ipe-form input.large[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 1.25rem; }
-  .button.expanded, .ipe-form input.expanded[data-drupal-selector="edit-preview"],
-  .ipe-form input.expanded[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.expanded[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.expanded[data-drupal-selector="edit-submit"],
-  .ipe-form input.expanded[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.expanded, .ipe-form input.expanded[data-drupal-selector="edit-preview"], .ipe-form input.expanded[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.expanded[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.expanded[data-drupal-selector="edit-submit"], .ipe-form input.expanded[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     display: block;
     width: 100%;
     margin-right: 0;
     margin-left: 0; }
-  .button.primary, .ipe-form input.primary[data-drupal-selector="edit-preview"],
-  .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.primary[data-drupal-selector="edit-submit"],
-  .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.primary, .ipe-form input.primary[data-drupal-selector="edit-preview"], .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.primary[data-drupal-selector="edit-submit"], .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #2199e8;
     color: #000; }
-    .button.primary:hover, .ipe-form input.primary[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.primary[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.primary:focus, .ipe-form input.primary[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.primary[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.primary:hover, .ipe-form input.primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.primary:focus, .ipe-form input.primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #147cc0;
       color: #000; }
-  .button.secondary, .ipe-form input.secondary[data-drupal-selector="edit-preview"],
-  .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.secondary[data-drupal-selector="edit-submit"],
-  .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.secondary, .ipe-form input.secondary[data-drupal-selector="edit-preview"], .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.secondary[data-drupal-selector="edit-submit"], .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #777;
     color: #000; }
-    .button.secondary:hover, .ipe-form input.secondary[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.secondary[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.secondary:focus, .ipe-form input.secondary[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.secondary[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.secondary:hover, .ipe-form input.secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.secondary:focus, .ipe-form input.secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #5f5f5f;
       color: #000; }
-  .button.success, .ipe-form input.success[data-drupal-selector="edit-preview"],
-  .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.success[data-drupal-selector="edit-submit"],
-  .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.success, .ipe-form input.success[data-drupal-selector="edit-preview"], .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.success[data-drupal-selector="edit-submit"], .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #3adb76;
     color: #000; }
-    .button.success:hover, .ipe-form input.success[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.success[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.success:focus, .ipe-form input.success[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.success[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.success:hover, .ipe-form input.success[data-drupal-selector="edit-preview"]:hover, .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.success[data-drupal-selector="edit-submit"]:hover, .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.success:focus, .ipe-form input.success[data-drupal-selector="edit-preview"]:focus, .ipe-form input.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.success[data-drupal-selector="edit-submit"]:focus, .ipe-form input.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #22bb5b;
       color: #000; }
-  .button.warning, .ipe-form input.warning[data-drupal-selector="edit-preview"],
-  .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.warning[data-drupal-selector="edit-submit"],
-  .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.warning, .ipe-form input.warning[data-drupal-selector="edit-preview"], .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.warning[data-drupal-selector="edit-submit"], .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #ffae00;
     color: #000; }
-    .button.warning:hover, .ipe-form input.warning[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.warning[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.warning:focus, .ipe-form input.warning[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.warning[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.warning:hover, .ipe-form input.warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.warning:focus, .ipe-form input.warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #cc8b00;
       color: #000; }
-  .button.alert, .ipe-form input.alert[data-drupal-selector="edit-preview"],
-  .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.alert[data-drupal-selector="edit-submit"],
-  .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.alert, .ipe-form input.alert[data-drupal-selector="edit-preview"], .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.alert[data-drupal-selector="edit-submit"], .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #ec5840;
     color: #000; }
-    .button.alert:hover, .ipe-form input.alert[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.alert[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.alert:focus, .ipe-form input.alert[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.alert[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.alert:hover, .ipe-form input.alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.alert:focus, .ipe-form input.alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #da3116;
       color: #000; }
-  .button.hollow, .ipe-form input.hollow[data-drupal-selector="edit-preview"],
-  .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-submit"],
-  .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.hollow, .ipe-form input.hollow[data-drupal-selector="edit-preview"], .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-submit"], .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     border: 1px solid #2199e8;
     color: #2199e8; }
-    .button.hollow, .ipe-form input.hollow[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.hollow:hover, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow:focus, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.hollow, .ipe-form input.hollow[data-drupal-selector="edit-preview"], .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow[data-drupal-selector="edit-submit"], .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.hollow:hover, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow:focus, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: transparent; }
-    .button.hollow:hover, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow:focus, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.hollow:hover, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow:focus, .ipe-form input.hollow[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       border-color: #0c4d78;
       color: #0c4d78; }
-    .button.hollow.primary, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.hollow.primary, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"], .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"], .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       border: 1px solid #2199e8;
       color: #2199e8; }
-      .button.hollow.primary:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.primary:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.hollow.primary:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.primary:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         border-color: #0c4d78;
         color: #0c4d78; }
-    .button.hollow.secondary, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.hollow.secondary, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"], .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"], .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       border: 1px solid #777;
       color: #777; }
-      .button.hollow.secondary:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.secondary:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.hollow.secondary:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.secondary:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         border-color: #3c3c3c;
         color: #3c3c3c; }
-    .button.hollow.success, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.success[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.hollow.success, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"], .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.success[data-drupal-selector="edit-submit"], .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       border: 1px solid #3adb76;
       color: #3adb76; }
-      .button.hollow.success:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.success:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.hollow.success:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.success:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         border-color: #157539;
         color: #157539; }
-    .button.hollow.warning, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.hollow.warning, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"], .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"], .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       border: 1px solid #ffae00;
       color: #ffae00; }
-      .button.hollow.warning:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.warning:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.hollow.warning:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.warning:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         border-color: #805700;
         color: #805700; }
-    .button.hollow.alert, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"],
-    .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"],
-    .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.hollow.alert, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"], .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"], .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       border: 1px solid #ec5840;
       color: #ec5840; }
-      .button.hollow.alert:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.alert:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.hollow.alert:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.hollow.alert:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         border-color: #881f0e;
         color: #881f0e; }
-  .button.disabled, .ipe-form input.disabled[data-drupal-selector="edit-preview"],
-  .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-submit"],
-  .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled], .ipe-form input[disabled][data-drupal-selector="edit-preview"],
-  .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-submit"],
-  .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button.disabled, .ipe-form input.disabled[data-drupal-selector="edit-preview"], .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-submit"], .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled], .ipe-form input[disabled][data-drupal-selector="edit-preview"], .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-submit"], .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     opacity: 0.25;
     cursor: not-allowed; }
-    .button.disabled:hover, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled:focus, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled]:hover, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:hover,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:hover,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled]:focus, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:focus,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:focus,
-    .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.disabled:hover, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled:focus, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled]:hover, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled]:focus, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #2199e8;
       color: #fff; }
-    .button.disabled.primary, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"],
-    .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"],
-    .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].primary, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"],
-    .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"],
-    .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.disabled.primary, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].primary, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.primary:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.primary:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].primary:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].primary:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.primary:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.primary:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].primary:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].primary:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #2199e8;
         color: #fff; }
-    .button.disabled.secondary, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"],
-    .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"],
-    .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].secondary, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"],
-    .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"],
-    .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.disabled.secondary, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].secondary, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.secondary:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.secondary:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].secondary:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].secondary:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.secondary:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.secondary:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].secondary:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].secondary:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #777;
         color: #fff; }
-    .button.disabled.success, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"],
-    .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-submit"],
-    .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].success, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"],
-    .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-submit"],
-    .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.disabled.success, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-submit"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].success, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-submit"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.success:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.success:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].success:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].success:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.success:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.success:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].success:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].success:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #3adb76;
         color: #fff; }
-    .button.disabled.warning, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"],
-    .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"],
-    .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].warning, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"],
-    .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"],
-    .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.disabled.warning, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].warning, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.warning:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.warning:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].warning:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].warning:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.warning:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.warning:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].warning:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].warning:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #ffae00;
         color: #fff; }
-    .button.disabled.alert, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"],
-    .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"],
-    .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].alert, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"],
-    .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"],
-    .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button.disabled.alert, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].alert, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.alert:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.alert:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].alert:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:hover,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:hover,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].alert:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:focus,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:focus,
-      .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.alert:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.alert:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].alert:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].alert:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #ec5840;
         color: #fff; }
-  .button.dropdown::after, .ipe-form input.dropdown[data-drupal-selector="edit-preview"]::after,
-  .ipe-form input.dropdown[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after,
-  .ipe-form input.dropdown[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-submit"]::after,
-  .ipe-form input.dropdown[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
+  .button.dropdown::after, .ipe-form input.dropdown[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
     display: block;
     width: 0;
     height: 0;
@@ -2125,10 +1879,7 @@ select {
     display: inline-block;
     float: right;
     margin-left: 1em; }
-  .button.arrow-only::after, .ipe-form input.arrow-only[data-drupal-selector="edit-preview"]::after,
-  .ipe-form input.arrow-only[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after,
-  .ipe-form input.arrow-only[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-submit"]::after,
-  .ipe-form input.arrow-only[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
+  .button.arrow-only::after, .ipe-form input.arrow-only[data-drupal-selector="edit-preview"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-submit"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
     top: -0.1em;
     float: none;
     margin-left: 0; }
@@ -2274,256 +2025,76 @@ select {
         order: 1; }
   .button-group::after {
     clear: both; }
-  .button-group .button, .button-group .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group input[data-drupal-selector="edit-preview"], .button-group
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group input[data-drupal-selector="edit-submit"], .button-group
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group .button, .button-group .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group input[data-drupal-selector="edit-preview"], .button-group .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group input[data-drupal-selector="edit-submit"], .button-group .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     margin: 0;
     margin-right: 1px;
     margin-bottom: 1px;
     font-size: 0.9rem;
     -ms-flex: 0 0 auto;
         flex: 0 0 auto; }
-    .button-group .button:last-child, .button-group .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-preview"]:last-child, .button-group
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child,
-    .ipe-form .button-group input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child,
-    .ipe-form .button-group input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-submit"]:last-child, .button-group
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child,
-    .ipe-form .button-group input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child {
+    .button-group .button:last-child, .button-group .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-preview"]:last-child, .button-group .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-submit"]:last-child, .button-group .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .ipe-form .button-group input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child {
       margin-right: 0; }
-  .button-group.tiny .button, .button-group.tiny .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-preview"], .button-group.tiny
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.tiny
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.tiny .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-submit"], .button-group.tiny
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.tiny .button, .button-group.tiny .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-preview"], .button-group.tiny .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.tiny .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.tiny .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-submit"], .button-group.tiny .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.tiny input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 0.6rem; }
-  .button-group.small .button, .button-group.small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.small input[data-drupal-selector="edit-preview"], .button-group.small
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.small
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.small input[data-drupal-selector="edit-submit"], .button-group.small
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.small .button, .button-group.small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.small input[data-drupal-selector="edit-preview"], .button-group.small .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.small .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.small input[data-drupal-selector="edit-submit"], .button-group.small .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 0.75rem; }
-  .button-group.large .button, .button-group.large .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.large input[data-drupal-selector="edit-preview"], .button-group.large
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.large input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.large
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.large input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.large .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.large input[data-drupal-selector="edit-submit"], .button-group.large
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.large input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.large .button, .button-group.large .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.large input[data-drupal-selector="edit-preview"], .button-group.large .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.large input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.large .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.large input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.large .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.large input[data-drupal-selector="edit-submit"], .button-group.large .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.large input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     font-size: 1.25rem; }
-  .button-group.expanded .button, .button-group.expanded .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-preview"], .button-group.expanded
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.expanded
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.expanded .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-submit"], .button-group.expanded
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.expanded .button, .button-group.expanded .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-preview"], .button-group.expanded .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.expanded .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.expanded .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-submit"], .button-group.expanded .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.expanded input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     -ms-flex: 1 1 0px;
         flex: 1 1 0px; }
-  .button-group.primary .button, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"], .button-group.primary
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.primary
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"], .button-group.primary
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.primary .button, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"], .button-group.primary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.primary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"], .button-group.primary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #2199e8;
     color: #000; }
-    .button-group.primary .button:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"]:hover, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"]:hover, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.primary .button:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"]:focus, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"]:focus, .button-group.primary
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus,
-    .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button-group.primary .button:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"]:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"]:hover, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.primary .button:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-preview"]:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-submit"]:focus, .button-group.primary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .ipe-form .button-group.primary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #147cc0;
       color: #000; }
-  .button-group.secondary .button, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"], .button-group.secondary
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.secondary
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"], .button-group.secondary
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.secondary .button, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"], .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"], .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #777;
     color: #000; }
-    .button-group.secondary .button:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"]:hover, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"]:hover, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.secondary .button:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"]:focus, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"]:focus, .button-group.secondary
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus,
-    .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button-group.secondary .button:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"]:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"]:hover, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.secondary .button:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-preview"]:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-submit"]:focus, .button-group.secondary .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .ipe-form .button-group.secondary input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #5f5f5f;
       color: #000; }
-  .button-group.success .button, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.success input[data-drupal-selector="edit-preview"], .button-group.success
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.success
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.success .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.success input[data-drupal-selector="edit-submit"], .button-group.success
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.success .button, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.success input[data-drupal-selector="edit-preview"], .button-group.success .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.success .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.success .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.success input[data-drupal-selector="edit-submit"], .button-group.success .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #3adb76;
     color: #000; }
-    .button-group.success .button:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-preview"]:hover, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-submit"]:hover, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.success .button:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-preview"]:focus, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-submit"]:focus, .button-group.success
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus,
-    .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button-group.success .button:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-preview"]:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-submit"]:hover, .button-group.success .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.success .button:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-preview"]:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-submit"]:focus, .button-group.success .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .ipe-form .button-group.success input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #22bb5b;
       color: #000; }
-  .button-group.warning .button, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"], .button-group.warning
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.warning
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"], .button-group.warning
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.warning .button, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"], .button-group.warning .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.warning .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"], .button-group.warning .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #ffae00;
     color: #000; }
-    .button-group.warning .button:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"]:hover, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"]:hover, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.warning .button:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"]:focus, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"]:focus, .button-group.warning
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus,
-    .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button-group.warning .button:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"]:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"]:hover, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.warning .button:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-preview"]:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-submit"]:focus, .button-group.warning .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .ipe-form .button-group.warning input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #cc8b00;
       color: #000; }
-  .button-group.alert .button, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"], .button-group.alert
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.alert
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"], .button-group.alert
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .button-group.alert .button, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"], .button-group.alert .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.alert .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"], .button-group.alert .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     background-color: #ec5840;
     color: #000; }
-    .button-group.alert .button:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"]:hover, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"]:hover, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.alert .button:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"]:focus, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"]:focus, .button-group.alert
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus,
-    .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button-group.alert .button:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"]:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"]:hover, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button-group.alert .button:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-preview"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-preview"]:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-submit"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-submit"]:focus, .button-group.alert .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .ipe-form .button-group.alert input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #da3116;
       color: #000; }
   .button-group.stacked, .button-group.stacked-for-small, .button-group.stacked-for-medium {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .button-group.stacked .button, .button-group.stacked .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-preview"], .button-group.stacked
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-submit"], .button-group.stacked
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-    .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button-group.stacked-for-small .button, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button-group.stacked .button, .button-group.stacked .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-preview"], .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-submit"], .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button-group.stacked-for-small .button, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
-      .button-group.stacked .button:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked
-      .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked
-      .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked
-      .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child,
-      .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked-for-small
-      .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked-for-small
-      .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked-for-small
-      .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child,
-      .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .button-group.stacked-for-medium .button:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked-for-medium
-      .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked-for-medium
-      .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child,
-      .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked-for-medium
-      .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child,
-      .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child {
+      .button-group.stacked .button:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .ipe-form .button-group.stacked input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .button-group.stacked-for-medium .button:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"]:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"]:last-child, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child, .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:last-child {
         margin-bottom: 0; }
   @media print, screen and (min-width: 40em) {
-    .button-group.stacked-for-small .button, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-    .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button-group.stacked-for-small .button, .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked-for-small input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
       margin-bottom: 0; } }
   @media print, screen and (min-width: 64em) {
-    .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"], .button-group.stacked-for-medium
-    .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-    .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+    .button-group.stacked-for-medium .button, .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-preview"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-submit"], .button-group.stacked-for-medium .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked-for-medium input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
       margin-bottom: 0; } }
   @media screen and (max-width: 39.9375em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
-      .button-group.stacked-for-small.expanded .button, .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small.expanded
-      .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-      .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small.expanded
-      .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-      .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small.expanded
-      .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-      .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+      .button-group.stacked-for-small.expanded .button, .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-preview"], .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-submit"], .button-group.stacked-for-small.expanded .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .button-group.stacked-for-small.expanded input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
         display: block;
         margin-right: 0; } }
 
@@ -4162,13 +3733,7 @@ a.thumbnail {
   .top-bar .input-group-field {
     width: 100%;
     margin-right: 0; }
-  .top-bar input.button, .top-bar .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .top-bar input[data-drupal-selector="edit-preview"], .top-bar
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .top-bar input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .top-bar
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .top-bar input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .top-bar .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .top-bar input[data-drupal-selector="edit-submit"], .top-bar
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .top-bar input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .top-bar input.button, .top-bar .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .top-bar input[data-drupal-selector="edit-preview"], .top-bar .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .top-bar input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .top-bar .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .top-bar input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .top-bar .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .top-bar input[data-drupal-selector="edit-submit"], .top-bar .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .top-bar input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     width: auto; }
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
@@ -10439,6 +10004,15 @@ label.responsive-preview-device-label {
 .full-width-modal-open #toolbar-bar {
   display: none; }
 
+.toolbar-menu-administration ul.menu {
+  display: block;
+  position: relative; }
+  .toolbar-menu-administration ul.menu li {
+    display: block;
+    position: relative; }
+    .toolbar-menu-administration ul.menu li a {
+      display: block; }
+
 .block-slideshow-form .iconpicker-element {
   width: calc(100% - 40px);
   display: inline-block; }
@@ -10486,39 +10060,28 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .sticky.is-stuck .top-ba
 body.toolbar-fixed .sticky.is-stuck.is-at-top {
   margin-top: 0 !important; }
 
-.top-bar .menu-item--collapsed,
-.top-bar .menu-item--expanded {
+.top-bar .menu-item--collapsed, .top-bar .menu-item--expanded {
   list-style: none; }
 
-.top-bar .search-block-form .form-item-keys,
-.top-bar .search-block-form .form-actions {
+.top-bar .search-block-form .form-item-keys, .top-bar .search-block-form .form-actions {
   display: inline-block; }
 
 .dropbutton-wrapper {
   background-color: #008CBA;
   margin: 0 0 1.25rem; }
-  .dropbutton-wrapper .button, .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-preview"], .dropbutton-wrapper
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .dropbutton-wrapper
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-submit"], .dropbutton-wrapper
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .dropbutton-wrapper .button, .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-preview"], .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-submit"], .dropbutton-wrapper .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .dropbutton-wrapper input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     margin-bottom: 0;
     width: 100%;
     text-align: left; }
 
-.search-block-form .contextual,
-#block-userdropdown .contextual,
-#block-languageswitcher .contextual {
+.search-block-form .contextual, #block-userdropdown .contextual, #block-languageswitcher .contextual {
   display: none !important; }
 
 nav .contextual {
   left: 0;
   right: inherit; }
 
-.hero .contextual,
-.hero [data-block-id] [data-contextual-id].contextual {
+.hero .contextual, .hero [data-block-id] [data-contextual-id].contextual {
   top: 20% !important; }
 
 @media all and (max-width: 48em) {
@@ -10602,28 +10165,21 @@ nav .contextual {
   border-radius: 10px;
   outline: 2px solid slategrey; }
 
-.quickedit-on .absoluteNav,
-.panels-ipe-tabs-open .absoluteNav,
-.panels-ipe-active .absoluteNav {
+.quickedit-on .absoluteNav, .panels-ipe-tabs-open .absoluteNav, .panels-ipe-active .absoluteNav {
   position: relative !important; }
 
-.panels-ipe-tabs-open #top-bar-sticky-container .is-stuck,
-.panels-ipe-active #top-bar-sticky-container .is-stuck {
+.panels-ipe-tabs-open #top-bar-sticky-container .is-stuck, .panels-ipe-active #top-bar-sticky-container .is-stuck {
   position: absolute;
   border-bottom: none; }
-  .panels-ipe-tabs-open #top-bar-sticky-container .is-stuck .top-bar,
-  .panels-ipe-active #top-bar-sticky-container .is-stuck .top-bar {
+  .panels-ipe-tabs-open #top-bar-sticky-container .is-stuck .top-bar, .panels-ipe-active #top-bar-sticky-container .is-stuck .top-bar {
     margin-top: 0px; }
-    .panels-ipe-tabs-open #top-bar-sticky-container .is-stuck .top-bar .top-bar-left li a img,
-    .panels-ipe-active #top-bar-sticky-container .is-stuck .top-bar .top-bar-left li a img {
+    .panels-ipe-tabs-open #top-bar-sticky-container .is-stuck .top-bar .top-bar-left li a img, .panels-ipe-active #top-bar-sticky-container .is-stuck .top-bar .top-bar-left li a img {
       max-width: 200px; }
 
-.panels-ipe-tabs-open,
-.panels-ipe-active {
+.panels-ipe-tabs-open, .panels-ipe-active {
   padding-top: 0 !important; }
 
-.panels-ipe-tabs-open #toolbar-bar,
-.panels-ipe-active #toolbar-bar {
+.panels-ipe-tabs-open #toolbar-bar, .panels-ipe-active #toolbar-bar {
   display: none;
   transition: opacity 0.5s ease-out;
   -ms-transition: opacity 0.5s ease-out;
@@ -10634,9 +10190,7 @@ nav .contextual {
   border-radius: 0;
   margin: 0 5px 0 0; }
 
-.ipe-block-form input[name^="ief"][name$="add-existing"],
-.ipe-block-form input[name^="ief"][name$="add"],
-.ipe-block-form input[type="submit"].ief-entity-submit {
+.ipe-block-form input[name^="ief"][name$="add-existing"], .ipe-block-form input[name^="ief"][name$="add"], .ipe-block-form input[type="submit"].ief-entity-submit {
   background: #2199e8;
   color: white;
   margin: 0 5px 0 0; }
@@ -10678,8 +10232,7 @@ nav .contextual {
 .ipe-tab:last-child {
   box-shadow: 2px -1px 2px rgba(0, 0, 0, 0.3333); }
 
-.ipe-category.active:after,
-.ipe-category.active:before {
+.ipe-category.active:after, .ipe-category.active:before {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
@@ -10702,10 +10255,7 @@ nav .contextual {
   border-width: 12px;
   margin-left: -12px; }
 
-.ipe-block-plugin-info p,
-.ipe-block-content-type-info p,
-#js-form-item-settings-admin-label,
-.js-form-item-settings-admin-label {
+.ipe-block-plugin-info p, .ipe-block-content-type-info p, #js-form-item-settings-admin-label, .js-form-item-settings-admin-label {
   display: none; }
 
 .ipe-icons-ion, a[data-block-type="basic"]:before, a[data-block-type="content"]:before, a[data-block-type="hero"]:before, a[data-block-type="slideshow"]:before, a[data-block-type="map"]:before, a[data-block-type="media"]:before, a[data-block-type="url"]:before {
@@ -10813,11 +10363,9 @@ a[data-block-type="url"]:before {
   .ipe-form {
     width: 100%; } }
 
-.ipe-form input[data-drupal-selector="edit-submit"],
-.ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+.ipe-form input[data-drupal-selector="edit-submit"], .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
   background: #3adb76; }
-  .ipe-form input[data-drupal-selector="edit-submit"]:hover,
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover {
+  .ipe-form input[data-drupal-selector="edit-submit"]:hover, .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover {
     background: #24c761; }
 
 .ipe-icon.ipe-icon-revert:before {
@@ -10872,8 +10420,7 @@ a[data-block-type="url"]:before {
     -moz-transform: scale(0.5); }
 
 /* Content browser styles. */
-#views-exposed-form-content-browser-entity-browser .form-item,
-#views-exposed-form-content-browser-entity-browser .form-actions {
+#views-exposed-form-content-browser-entity-browser .form-item, #views-exposed-form-content-browser-entity-browser .form-actions {
   display: inline-block;
   margin-left: .5em; }
 
@@ -10982,8 +10529,7 @@ a[data-block-type="url"]:before {
 [data-category="Hidden"] {
   display: none; }
 
-.toolbar-icon-edit,
-.outside-inblock-configure {
+.toolbar-icon-edit, .outside-inblock-configure {
   display: none; }
 
 .adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
@@ -11067,13 +10613,7 @@ a[data-block-type="url"]:before {
   .header-bar .input-group-field {
     width: 100%;
     margin-right: 0; }
-  .header-bar input.button, .header-bar .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .header-bar input[data-drupal-selector="edit-preview"], .header-bar
-  .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-  .ipe-form .header-bar input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .header-bar
-  .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"],
-  .ipe-form .header-bar input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .header-bar .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .header-bar input[data-drupal-selector="edit-submit"], .header-bar
-  .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"],
-  .ipe-form .header-bar input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  .header-bar input.button, .header-bar .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form .header-bar input[data-drupal-selector="edit-preview"], .header-bar .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form .header-bar input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .header-bar .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form .header-bar input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .header-bar .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form .header-bar input[data-drupal-selector="edit-submit"], .header-bar .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form .header-bar input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     width: auto; }
   @media screen and (min-width: 40em) {
     .header-bar {

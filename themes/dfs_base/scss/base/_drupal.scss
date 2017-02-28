@@ -1,20 +1,31 @@
 // Place any Drupal-related quirks here.
-
 // Twig is weird and doesn't check to see if regions are empty,
 // so we need to do that here.
-
 #sidebar-second:empty, #sidebar-first:empty {
-  display:none;
+  display: none;
 }
 
 // Hide the toolbar when full-width modals are open.
-
 .full-width-modal-open #toolbar-bar {
   display: none;
 }
 
-// Slideshow block styles.
+//dont let flexgrid from foundation update the toolbar menu
+.toolbar-menu-administration {
+  ul.menu {
+    display: block;
+    position: relative;
+    li {
+      display: block;
+      position: relative;
+      a {
+        display: block;
+      }
+    }
+  }
+}
 
+// Slideshow block styles.
 .block-slideshow-form {
   .iconpicker-element {
     width: calc(100% - 40px);
@@ -75,8 +86,8 @@
 }
 
 .comment-form {
-  .filter-guidelines, .filter-help  {
-    display:none;
+  .filter-guidelines, .filter-help {
+    display: none;
   }
 }
 
@@ -95,16 +106,14 @@ body.toolbar-fixed .sticky.is-stuck.is-at-top {
 
 // Removes core arrow image from menu items.
 .top-bar {
-  .menu-item--collapsed,
-  .menu-item--expanded {
+  .menu-item--collapsed, .menu-item--expanded {
     list-style: none;
   }
 }
 
 // Style the search form, if embedded in the Top Bar.
 .top-bar .search-block-form {
-  .form-item-keys,
-  .form-actions {
+  .form-item-keys, .form-actions {
     display: inline-block;
   }
 }
@@ -123,9 +132,7 @@ body.toolbar-fixed .sticky.is-stuck.is-at-top {
 
 // Disable some contextual links that just cause issues with demoing logged in
 // because the block is too small. Also, nobody should be editing these.
-.search-block-form,
-#block-userdropdown,
-#block-languageswitcher {
+.search-block-form, #block-userdropdown, #block-languageswitcher {
   .contextual {
     display: none!important;
   }
@@ -141,8 +148,7 @@ nav {
 // Move contextual link for heroes down. Because nav sits ontop of the hero,
 // the contextual link gets covered up.
 .hero {
-  .contextual,
-  [data-block-id] [data-contextual-id].contextual {
+  .contextual, [data-block-id] [data-contextual-id].contextual {
     top: 20%!important;
   }
 }
@@ -204,6 +210,7 @@ nav {
   }
 }
 
+
 /* IPE Styles */
 
 .ipe-form .entities-list {
@@ -250,16 +257,11 @@ nav {
 }
 
 // Various updates to site when IPE (and Quick Edit) are on.
-
-.quickedit-on .absoluteNav,
-.panels-ipe-tabs-open .absoluteNav,
-.panels-ipe-active .absoluteNav
-{
+.quickedit-on .absoluteNav, .panels-ipe-tabs-open .absoluteNav, .panels-ipe-active .absoluteNav {
   position: relative!important;
 }
 
-.panels-ipe-tabs-open #top-bar-sticky-container .is-stuck,
-.panels-ipe-active #top-bar-sticky-container .is-stuck {
+.panels-ipe-tabs-open #top-bar-sticky-container .is-stuck, .panels-ipe-active #top-bar-sticky-container .is-stuck {
   position: absolute;
   border-bottom: none;
   .top-bar {
@@ -272,14 +274,12 @@ nav {
   }
 }
 
-.panels-ipe-tabs-open,
-.panels-ipe-active {
+.panels-ipe-tabs-open, .panels-ipe-active {
   padding-top: 0!important;
 }
 
 // Hide other administration tasks when in edit mode.
-.panels-ipe-tabs-open #toolbar-bar,
-.panels-ipe-active #toolbar-bar {
+.panels-ipe-tabs-open #toolbar-bar, .panels-ipe-active #toolbar-bar {
   display: none;
   transition: opacity 0.5s ease-out;
   -ms-transition: opacity 0.5s ease-out;
@@ -292,9 +292,7 @@ nav {
     border-radius: 0;
     margin: 0 5px 0 0;
   }
-  input[name^="ief"][name$="add-existing"],
-  input[name^="ief"][name$="add"],
-  input[type="submit"].ief-entity-submit {
+  input[name^="ief"][name$="add-existing"], input[name^="ief"][name$="add"], input[type="submit"].ief-entity-submit {
     background: #2199e8;
     color: white;
     margin: 0 5px 0 0;
@@ -348,8 +346,7 @@ nav {
   box-shadow: 2px -1px 2px rgba(0, 0, 0, 0.3333);
 }
 
-.ipe-category.active:after,
-.ipe-category.active:before {
+.ipe-category.active:after, .ipe-category.active:before {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
@@ -375,10 +372,7 @@ nav {
   margin-left: -12px;
 }
 
-.ipe-block-plugin-info p,
-.ipe-block-content-type-info p,
-#js-form-item-settings-admin-label,
-.js-form-item-settings-admin-label {
+.ipe-block-plugin-info p, .ipe-block-content-type-info p, #js-form-item-settings-admin-label, .js-form-item-settings-admin-label {
   display: none;
 }
 
@@ -535,14 +529,11 @@ a[data-block-type="url"] {
   }
 }
 
-.ipe-form input[data-drupal-selector="edit-preview"],
-.ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"],
-.ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"] {
+.ipe-form input[data-drupal-selector="edit-preview"], .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"] {
   @extend .button;
 }
 
-.ipe-form input[data-drupal-selector="edit-submit"],
-.ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+.ipe-form input[data-drupal-selector="edit-submit"], .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
   @extend .button;
   background: $success-color;
   &:hover {
@@ -625,8 +616,7 @@ a[data-block-type="url"] {
 /* Content browser styles. */
 
 #views-exposed-form-content-browser-entity-browser {
-  .form-item,
-  .form-actions {
+  .form-item, .form-actions {
     display: inline-block;
     margin-left: .5em;
   }
@@ -689,7 +679,7 @@ a[data-block-type="url"] {
 
 .content-browser-form .content-browser-actions {
   z-index: 1000;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
 .content-browser-form .views-field-entity-browser-select {
@@ -699,13 +689,14 @@ a[data-block-type="url"] {
 }
 
 .social_login {
-  max-height:100px;
-  overflow:hidden;
+  max-height: 100px;
+  overflow: hidden;
   iframe {
     visibility: inherit!important;
     height: inherit!important
   }
 }
+
 
 /* Dialog styles. */
 
@@ -753,9 +744,7 @@ a[data-block-type="url"] {
 }
 
 // Stuff that doesn't really work on mobile so hide for now...
-
-.tabledrag-toggle-weight-wrapper
-{
+.tabledrag-toggle-weight-wrapper {
   @include breakpoint(small only) {
     display: none;
   }
@@ -768,15 +757,12 @@ a[data-block-type="url"] {
 }
 
 // Hide an IPE category we create dynamically in df_tools_blocks_block_alter().
-
 [data-category="Hidden"] {
   display: none;
 }
 
 // Hide Outside In elements that interfere with normal demo flow.
-
-.toolbar-icon-edit,
-.outside-inblock-configure {
+.toolbar-icon-edit, .outside-inblock-configure {
   display: none;
 }
 
@@ -785,7 +771,6 @@ a[data-block-type="url"] {
 }
 
 // Full screen throbber styles.
-
 .ajax-progress-fullscreen {
   background-color: rgba(0, 0, 0, 0.37);
   background-image: none;
@@ -815,12 +800,20 @@ a[data-block-type="url"] {
 }
 
 @keyframes fullscreen-fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fullscreen-image-spin {
-  0% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
   /*50% {transform: rotate(180deg);}*/
-  100% {transform: rotate(360deg);}
+  100% {
+    transform: rotate(360deg);
+  }
 }
