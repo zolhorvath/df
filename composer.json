@@ -310,6 +310,7 @@
         "drupal/geolocation": "1.x-dev",
         "drupal/google_analytics": "2.1.0",
         "drupal/image_effects": "1.0.0-alpha5",
+        "drupal/image_widget_crop": "1.4",
         "drupal/import": "2.0.0-beta2",
         "drupal/leaflet": "1.x-dev",
         "drupal/libraries": "3.x-dev",
@@ -342,7 +343,8 @@
         "lite": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
         "mjolnic/fontawesome-iconpicker": "1.2.0",
         "lokesh/lightbox2": "2.9.0",
-        "leaflet/leaflet": "1.0.3"
+        "leaflet/leaflet": "1.0.3",
+        "fengyuanchen/cropper": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

@@ -144,6 +144,9 @@ projects[google_analytics][version] = "2.1"
 projects[image_effects][type] = "module"
 projects[image_effects][version] = "1.0-alpha5"
 
+projects[image_widget_crop][type] = "module"
+projects[image_widget_crop][version] = "1.4"
+
 projects[import][type] = "module"
 projects[import][version] = "2.0-beta2"
 
@@ -383,3 +386,7 @@ libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1
 libraries[lightbox2][destination] = "../../libraries"
 libraries[lightbox2][download][type] = "get"
 libraries[lightbox2][download][url] = "https://github.com/lokesh/lightbox2/archive/v2.9.0.zip"
+
+libraries[cropper][destination] = "../../libraries"
+libraries[cropper][download][type] = "get"
+libraries[cropper][download][url] = "https://github.com/fengyuanchen/cropper/archive/master.zip"
