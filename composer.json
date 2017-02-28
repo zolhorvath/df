@@ -238,7 +238,9 @@
                 "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
                 "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
                 "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149":
-                "https://www.drupal.org/files/issues/2746149-2.patch"
+                "https://www.drupal.org/files/issues/2746149-2.patch",
+                "Page Manager routing is overly complex and brittle | https://www.drupal.org/node/2736385":
+                "https://www.drupal.org/files/issues/2736385-format-56.patch"
             },
             "drupal/panels": {
                 "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":

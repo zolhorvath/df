@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d1c40afb4445477263a576f754b0272f",
-    "content-hash": "27c0b0e99b8e862b0e78db2185c5fc8c",
+    "hash": "ca436d710af8dc9b2d210f29b962f123",
+    "content-hash": "739c7276cad45eef65be4493105837f3",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5141,7 +5141,8 @@
                 },
                 "patches_applied": {
                     "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947": "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
-                    "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149": "https://www.drupal.org/files/issues/2746149-2.patch"
+                    "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149": "https://www.drupal.org/files/issues/2746149-2.patch",
+                    "Page Manager routing is overly complex and brittle | https://www.drupal.org/node/2736385": "https://www.drupal.org/files/issues/2736385-format-56.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7032,21 +7033,21 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.2",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60"
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
-                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.3.1",
+                "guzzlehttp/psr7": "^1.4",
                 "php": ">=5.5"
             },
             "require-dev": {
@@ -7090,7 +7091,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-10-08 15:01:37"
+            "time": "2017-02-28 22:50:30"
         },
         {
             "name": "guzzlehttp/promises",
