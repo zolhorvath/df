@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca436d710af8dc9b2d210f29b962f123",
-    "content-hash": "739c7276cad45eef65be4493105837f3",
+    "hash": "476504bed382db88d7707dfb029b33b6",
+    "content-hash": "53d94fd3e87dade3ee7e537a1ef44f9f",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2042,6 +2042,9 @@
                 "drupal": {
                     "version": "8.x-1.0-beta8",
                     "datestamp": "1476400139"
+                },
+                "patches_applied": {
+                    "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3486,7 +3489,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "0823cfe9845f79d3365d171555c29212f3d187b5"
+                "reference": "468ea0704aa9c116a6bfbbf71aff0f723bec4c22"
             },
             "require": {
                 "drupal/core": "*"
@@ -3497,8 +3500,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+37-dev",
-                    "datestamp": "1488211084"
+                    "version": "8.x-1.10+2-dev",
+                    "datestamp": "1488383284"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3520,7 +3523,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2017-02-27 15:49:49"
+            "time": "2017-03-01 16:04:55"
         },
         {
             "name": "drupal/geophp",
@@ -12090,16 +12093,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.1",
+            "version": "v0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a"
+                "reference": "97113db4107a4126bef933b60fea6dbc9f615d41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a",
-                "reference": "701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/97113db4107a4126bef933b60fea6dbc9f615d41",
+                "reference": "97113db4107a4126bef933b60fea6dbc9f615d41",
                 "shasum": ""
             },
             "require": {
@@ -12159,7 +12162,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-01-15 17:54:13"
+            "time": "2017-03-01 00:13:29"
         },
         {
             "name": "se/selenium-server-standalone",
