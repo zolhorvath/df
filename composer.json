@@ -202,6 +202,10 @@
                 "Add support for page manager. | http://drupal.org/node/2509142":
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
+            "drupal/contact_storage": {
+                "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490":
+                "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
+            },
             "drupal/content_browser": {
                 "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
                 "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
