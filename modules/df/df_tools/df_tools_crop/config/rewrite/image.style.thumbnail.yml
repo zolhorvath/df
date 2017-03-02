@@ -12,7 +12,7 @@ effects:
   65fa2c01-c68c-4802-b689-a3d40b74f621:
     uuid: 65fa2c01-c68c-4802-b689-a3d40b74f621
     id: crop_crop
-    weight: 2
+    weight: -10
     data:
       crop_type: square
 
