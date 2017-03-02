@@ -2,18 +2,10 @@ dependencies:
   module:
     - crop
 effects:
-  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
-    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
-    id: image_scale
-    weight: -9
-    data:
-      width: 480
-      height: 480
-      upscale: false
-  bbbf5405-d3ef-4618-9c8a-ea64c87035d2:
-    uuid: bbbf5405-d3ef-4618-9c8a-ea64c87035d2
+  b2c3cb9c-7d93-4006-b3ad-176ad17bbc47:
+    uuid: b2c3cb9c-7d93-4006-b3ad-176ad17bbc47
     id: crop_crop
-    weight: -10
+    weight: -11
     data:
-      crop_type: square
+      crop_type: hero
 

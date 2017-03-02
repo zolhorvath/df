@@ -2,8 +2,8 @@ dependencies:
   module:
     - crop
 effects:
-  ab3ecbd4-5b23-459c-b91e-5b080a7dca23:
-    uuid: ab3ecbd4-5b23-459c-b91e-5b080a7dca23
+  3a3ecbd4-5b23-459c-b91e-5b080a7dca23:
+    uuid: 3a3ecbd4-5b23-459c-b91e-5b080a7dca23
     id: crop_crop
     weight: -13
     data:

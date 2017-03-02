@@ -14,5 +14,6 @@ content:
       progress_indicator: throbber
       crop_list:
         - square
+        - hero
       show_crop_area: false
     third_party_settings: {  }
