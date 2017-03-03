@@ -5,9 +5,9 @@ dependencies: {  }
 label: Hero
 id: hero
 description: ''
-aspect_ratio: '16:9'
+aspect_ratio: '16:10'
 soft_limit_width: null
 soft_limit_height: null
-hard_limit_width: 80
-hard_limit_height: 45
+hard_limit_width: 320
+hard_limit_height: 200
 
