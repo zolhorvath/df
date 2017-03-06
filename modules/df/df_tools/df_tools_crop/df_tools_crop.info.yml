@@ -6,5 +6,6 @@ package: Demo Framework Tools
 dependencies:
   - crop
   - image_widget_crop
+  - df_tools_article
   - df_tools_blocks
   - df_tools_media
