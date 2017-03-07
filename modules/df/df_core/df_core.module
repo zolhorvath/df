@@ -8,8 +8,7 @@ use Drupal\user\Entity\User;
  */
 
 function df_core_form_alter(array &$form) {
-  $roles = \Drupal::currentUser()->getRoles();
-  if (substr($form['#form_id'], 0, 5) == "node_" && !in_array('reviewer', $roles)) {
+  if (substr($form['#form_id'], 0, 5) == "node_" && !\Drupal::currentUser()->hasPermission('schedule publishing of nodes')) {
     $form['scheduled_update']['#access'] = false;
   }
 }
