@@ -188,7 +188,9 @@
                 "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850":
                 "https://www.drupal.org/files/issues/2652850-17.patch",
                 "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
-                "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch"
+                "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
+                "List unmet configuration dependencies instead of just failing | https://www.drupal.org/node/2655104":
+                "https://www.drupal.org/files/issues/2655104-39.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
