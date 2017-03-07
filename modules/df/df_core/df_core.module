@@ -7,8 +7,11 @@ use Drupal\user\Entity\User;
  * Contains core functionality for the DF distribution.
  */
 
+/**
+ * Implements hook_form_alter().
+ */
 function df_core_form_alter(array &$form) {
-  if (substr($form['#form_id'], 0, 5) == "node_" && !\Drupal::currentUser()->hasPermission('schedule publishing of nodes')) {
+  if (isset($form['scheduled_update']) && !\Drupal::currentUser()->hasPermission('schedule publishing of nodes')) {
     $form['scheduled_update']['#access'] = false;
   }
 }
