@@ -1,7 +1,45 @@
 <?php
 
+use Drupal\user\Entity\User;
+
 /**
  * @file
  * Contains core functionality for the DF distribution.
  */
 
+function df_core_form_alter(array &$form) {
+  $roles = \Drupal::currentUser()->getRoles();
+  if (substr($form['#form_id'], 0, 5) == "node_" && !in_array('reviewer', $roles)) {
+    $form['scheduled_update']['#access'] = false;
+  }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * @todo Remove after #2793841 is fixed.
+ */
+function df_core_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'panels_ipe_tempstore_id_alter') {
+    unset($implementations['panelizer']);
+  }
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function df_core_menu_local_tasks_alter(&$data, $route_name) {
+  // Core doesn't currently clean up local tasks created via Views when the View
+  // is disabled/deleted. Remove the core file listing view's local tasks in
+  // order to prevent duplicate 'Files' tabs from appear on admin/content.
+  // @todo: remove this when https://www.drupal.org/node/2027043 is fixed.
+  if (!empty($data['tabs'])) {
+    foreach ($data['tabs'] as $tab_level => $tabs) {
+      foreach ($tabs as $href => $tab_data) {
+        if ($href == 'views_view:view.files.page_1') {
+          $data['tabs'][$tab_level][$href]['#access'] = FALSE;
+        }
+      }
+    }
+  }
+}
