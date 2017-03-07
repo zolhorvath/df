@@ -16,23 +16,16 @@ Feature: Demo Framework
 
   Scenario: Confirm anonymous user
     Given I am on "/user"
-#    Then I should see the heading "User account"
+    Then I should see the heading "Log in"
     And I should see "Username"
     And I should see "Password"
-    And I should see "Log in"
-    And I should see "Create new account"
-    And I should see "Reset your password"
 
   @api
   Scenario: Confirm authenticated user
     Given I am logged in as a user with the "administrator" role
     And I am on "/user"
-    Then I should not see the heading "User account"
-    And I should not see "Username"
-    And I should not see "Password"
-    And I should not see "Log in"
-    And I should not see "Create new account"
-    And I should not see "Reset your password"
+    Then I should see the heading "My account"
+    And I should see "Member for"
 
   @api
   Scenario: Ensure that database logging is available

@@ -23,7 +23,7 @@ dependencies:
   - content_browser
   - contextual
   - datetime
-  - df_tools_theme
+  - df_core
   - editor
   - embed
   - entity_embed

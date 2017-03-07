@@ -1,9 +1,0 @@
-name: DF Tools Theme
-type: module
-description: Set up Demo Framework themes.
-core: 8.x
-package: Demo Framework
-dependencies:
-  - config_rewrite
-  - help
-  - views_infinite_scroll
