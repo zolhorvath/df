@@ -170,7 +170,7 @@
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Allow profiles to provide a base/parent profile and load them in the correct order | https://www.drupal.org/node/1356276":
-                "https://www.drupal.org/files/issues/make_inherited_install-1356276-157.patch",
+                "https://www.drupal.org/files/issues/1356276-249.patch",
                 "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
                 "https://www.drupal.org/files/issues/2684873-28.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
