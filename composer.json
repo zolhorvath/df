@@ -177,8 +177,6 @@
                 "https://www.drupal.org/files/issues/2684873-28.patch",
                 "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
                 "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch",
-                "Patch Drupal core to fix obscure AJAX form bug | https://www.drupal.org/node/2794457":
-                "https://www.drupal.org/files/issues/core-hotfix-2788277-3.patch",
                 "Quick Edit doesn't work for Custom Blocks referenced by other Custom Blocks | https://www.drupal.org/node/2661880":
                 "https://www.drupal.org/files/issues/quickedit-undefined-attr-2661880-14.patch",
                 "Outside In is intermittently unable to bind dialog events to the window | https://www.drupal.org/node/2831924":
@@ -213,6 +211,10 @@
                 "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch",
                 "Modal opens automatically after Entity browser 8.x-1.0-beta1 | https://www.drupal.org/node/2829413":
                 "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
+            },
+            "drupal/ctools": {
+                "Avoid unserialization of blockPluginCollection in BlockDisplayVariant. | https://www.drupal.org/node/2831521":
+                "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
             },
             "drupal/entity_block": {
                 "Add UUID support. | http://drupal.org/node/2834377":
