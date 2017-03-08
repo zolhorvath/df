@@ -284,8 +284,8 @@ function df_tools_blocks_migration_plugins_alter(&$definitions) {
 function df_tools_blocks_alter_block_categories(&$block_info) {
   // Create an associative array which maps default => custom block categories.
   $category_map = [
-    'Embed' => 'Embed content',
-    'Entity Block' => 'Embed content',
+    'Embed' => 'Existing Content',
+    'Entity Block' => 'Existing Content',
     'Commerce' => 'Forms',
     'Lists (Views)' => 'Lists',
     'Listes (Views)' => 'Lists',
@@ -301,13 +301,21 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
     'System' => 'Hidden',
   ];
 
+  $label_map = [
+    'Content Embed' => 'Content',
+  ];
+
   foreach ($block_info as $key => $info) {
     // Retrieve the name of the block category.
     $category = $info['category'];
+    $label = $info['label'];
 
     // Retrieve the untranslated name of the category if it has been translated.
     if ($category instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
       $category = $category->getUntranslatedString();
+    }
+    if ($label instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+      $label = $label->getUntranslatedString();
     }
 
     // Move all fields of the currently panelized entity into a
@@ -335,6 +343,12 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
       }
       else if (is_string($block_info[$key]['category'])) {
         $block_info[$key]['category'] = t($block_info[$key]['category']);
+      }
+      if (isset($label_map[$label])) {
+        $block_info[$key]['label'] = $label_map[$label];
+      }
+      else if (is_string($block_info[$key]['label'])) {
+        $block_info[$key]['label'] = t($block_info[$key]['label']);
       }
     }
 
