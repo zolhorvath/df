@@ -24,6 +24,9 @@ Feature: Demo Framework: Blocks
     And I should see "This stuff"
     And I should see "Click me"
     And I should see "" in the "i.fa-ambulance" element
+    And I go to "/admin/structure/block/manage/homepagehero/delete"
+    And I press "Delete"
+    Then I should see "The block Homepage Hero has been deleted."
 
   Scenario: Map workflow
     Given I am logged in as a user with the "administrator" role
@@ -42,6 +45,9 @@ Feature: Demo Framework: Blocks
     Then I should see "Homepage Map"
     And I should see "Address"
     And I should see "1120 SW 5th Ave"
+    And I go to "/admin/structure/block/manage/homepagemap/delete"
+    And I press "Delete"
+    Then I should see "The block Homepage Map has been deleted."
 
 #  @javascript
 #  Scenario: Content Embed
