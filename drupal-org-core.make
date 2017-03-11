@@ -20,4 +20,5 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/2652850-17.patc
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/2652138-28.patch"
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
-projects[drupal][patch][] = https://www.drupal.org/files/issues/2655104-39.patch
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/2655104-39.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch"

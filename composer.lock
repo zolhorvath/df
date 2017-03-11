@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "32faa21af497f1aecf570b12f96c636c",
+    "content-hash": "38a62ab048c8d6637f2ffce0a10f9ffb",
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "63ce3b2b23138a25a280d34c2a240b83ed288fba"
+                "reference": "31b5c5ec455bdf234c85ea04f4fded57fd1d44e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/63ce3b2b23138a25a280d34c2a240b83ed288fba",
-                "reference": "63ce3b2b23138a25a280d34c2a240b83ed288fba",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/31b5c5ec455bdf234c85ea04f4fded57fd1d44e1",
+                "reference": "31b5c5ec455bdf234c85ea04f4fded57fd1d44e1",
                 "shasum": ""
             },
             "require": {
@@ -45,8 +45,8 @@
                 "drupal/metatag": "^1.0",
                 "drupal/multiversion": "1.0.0-alpha12",
                 "drupal/page_manager": "1.0.0-alpha24",
-                "drupal/panelizer": "3.0.0-alpha3",
-                "drupal/panels": "3.0.0-beta5",
+                "drupal/panelizer": "3.0.0-beta1",
+                "drupal/panels": "3.0.0-beta6",
                 "drupal/pathauto": "^1.0",
                 "drupal/replication": "1.0.0-alpha5",
                 "drupal/scheduled_updates": "1.0.0-alpha5",
@@ -62,11 +62,13 @@
                 "behat/mink": "~1.7",
                 "behat/mink-goutte-driver": "~1.2",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/coder": "8.*",
+                "drupal/coder": "^2.0",
                 "drupal/devel": "^1.0",
                 "drupal/drupal-extension": "^3.2",
                 "drush/drush": "^8.0",
+                "jakoch/phantomjs-installer": "1.9.8",
                 "jcalderonzumba/gastonjs": "~1.0.2",
+                "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
                 "mikey179/vfsstream": "~1.2",
                 "phing/phing": "^2.14",
                 "phpunit/phpunit": "~4.8",
@@ -89,11 +91,10 @@
                 },
                 "patches": {
                     "drupal/panelizer": {
-                        "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch",
-                        "2664574 - Add support for Taxonomy Term entities": "https://www.drupal.org/files/issues/2664574-26.patch"
+                        "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
                     },
                     "drupal/panels": {
-                        "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
+                        "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-13.patch"
                     },
                     "drupal/scheduled_updates": {
                         "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch",
@@ -101,7 +102,8 @@
                     },
                     "drupal/workbench_moderation": {
                         "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
-                        "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch"
+                        "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch",
+                        "2749503 - Add basic support for Quick Edit": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
                     },
                     "drupal/multiversion": {
                         "2822915 - Migration source plugin makes bad assumptions that can lead to data loss": "https://www.drupal.org/files/issues/2822915-2.patch",
@@ -113,7 +115,7 @@
                         "2820105 - User references are not replicated": "https://www.drupal.org/files/issues/2820105-10.patch"
                     },
                     "drupal/core": {
-                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138.patch",
                         "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
                     },
                     "drupal/entity_embed": {
@@ -138,7 +140,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2017-02-01T20:07:28+00:00"
+            "time": "2017-03-09T21:00:15+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2340,7 +2342,8 @@
                     "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850": "https://www.drupal.org/files/issues/2652850-17.patch",
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "List unmet configuration dependencies instead of just failing | https://www.drupal.org/node/2655104": "https://www.drupal.org/files/issues/2655104-39.patch",
-                    "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                    "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
+                    "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138.patch",
                     "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
                 }
             },
@@ -5225,17 +5228,17 @@
         },
         {
             "name": "drupal/panelizer",
-            "version": "3.0.0-alpha3",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panelizer",
-                "reference": "8.x-3.0-alpha3"
+                "reference": "8.x-3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-alpha3.zip",
+                "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-beta1.zip",
                 "reference": null,
-                "shasum": "f862ae14f47cb486cd4719242763064e7d6ac387"
+                "shasum": "1a61865b5e8ad1b28b2dbcdb1bafc7caf02c1fa2"
             },
             "require": {
                 "drupal/core": "*",
@@ -5249,12 +5252,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha3",
+                    "version": "8.x-3.0-beta1",
                     "datestamp": "1486220583"
                 },
                 "patches_applied": {
-                    "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch",
-                    "2664574 - Add support for Taxonomy Term entities": "https://www.drupal.org/files/issues/2664574-26.patch"
+                    "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5295,17 +5297,17 @@
         },
         {
             "name": "drupal/panels",
-            "version": "3.0.0-beta5",
+            "version": "3.0.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panels",
-                "reference": "8.x-3.0-beta5"
+                "reference": "8.x-3.0-beta6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta5.zip",
+                "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta6.zip",
                 "reference": null,
-                "shasum": "3f62240b59b503902f349f2667a65c668d1e3fb2"
+                "shasum": "44b59e5009d16d1d1b17907cd3305f488c22a757"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5313,7 +5315,8 @@
                 "drupal/layout_plugin": ">=1.0.0-alpha22"
             },
             "require-dev": {
-                "drupal/page_manager": "*"
+                "drupal/page_manager": "*",
+                "drupal/panelizer": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -5321,15 +5324,15 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5",
+                    "version": "8.x-3.0-beta6",
                     "datestamp": "1488057783"
                 },
                 "patches_applied": {
-                    "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897": "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
+                    "Incorrect logic inside of StandardDisplayBuilder could lead to fatal error | https://www.drupal.org/node/2812721": "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch",
                     "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                     "Provide hook to alter available blocks | https://www.drupal.org/node/2767087": "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
                     "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
-                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
+                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-13.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5384,7 +5387,7 @@
         },
         {
             "name": "drupal/panels_ipe",
-            "version": "3.0.0-beta5",
+            "version": "3.0.0-beta6",
             "require": {
                 "drupal/core": "*",
                 "drupal/panels": "self.version"
@@ -5395,7 +5398,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5",
+                    "version": "8.x-3.0-beta6",
                     "datestamp": "1488057783"
                 }
             },
@@ -6478,10 +6481,10 @@
                 },
                 "patches_applied": {
                     "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-21.patch",
-                    "Add basic support for QuickEdit | https://www.drupal.org/node/2749503": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch",
                     "The the ability to rearrange the moderation state field | https://www.drupal.org/node/2833892": "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch",
                     "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
-                    "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch"
+                    "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch",
+                    "2749503 - Add basic support for Quick Edit": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

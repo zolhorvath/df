@@ -190,7 +190,9 @@
                 "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
                 "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                 "List unmet configuration dependencies instead of just failing | https://www.drupal.org/node/2655104":
-                "https://www.drupal.org/files/issues/2655104-39.patch"
+                "https://www.drupal.org/files/issues/2655104-39.patch",
+                "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219":
+                "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
@@ -249,8 +251,8 @@
                 "https://www.drupal.org/files/issues/2736385-format-56.patch"
             },
             "drupal/panels": {
-                "Revert: Title of empty block is rendered | https://www.drupal.org/node/2781897":
-                "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch",
+                "Incorrect logic inside of StandardDisplayBuilder could lead to fatal error | https://www.drupal.org/node/2812721":
+                "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch",
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Provide hook to alter available blocks | https://www.drupal.org/node/2767087":
@@ -271,8 +273,6 @@
             "drupal/workbench_moderation": {
                 "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163":
                 "https://www.drupal.org/files/issues/2685163-21.patch",
-                "Add basic support for QuickEdit | https://www.drupal.org/node/2749503":
-                "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch",
                 "The the ability to rearrange the moderation state field | https://www.drupal.org/node/2833892":
                 "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch"
             },
@@ -290,7 +290,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.0.3",
+        "acquia/lightning": "2.0.4",
         "cweagans/composer-patches": "^1.6.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",

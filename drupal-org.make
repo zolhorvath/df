@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "2.03"
+projects[lightning][version] = "2.04"
 projects[lightning][subdir] = ""
 projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
 
@@ -253,7 +253,7 @@ projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2664574-26.
 
 projects[panels][type] = "module"
 projects[panels][version] = "3.0-beta5"
-projects[panels][patch][0] = "https://www.drupal.org/files/issues/0001-Revert-Issue-2781897-by-lauriii-Title-of-empty-block.patch"
+projects[panels][patch][0] = "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch"
 projects[panels][patch][1] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
 projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
 projects[panels][patch][3] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
@@ -336,7 +336,7 @@ projects[views_infinite_scroll][version] = "1.3"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][version] = "1.2"
 projects[workbench_moderation][patch][0] = "https://www.drupal.org/files/issues/2685163-21.patch"
-projects[workbench_moderation][patch][1] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-5.patch"
+projects[workbench_moderation][patch][1] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
 projects[workbench_moderation][patch][2] = "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch"
 projects[workbench_moderation][patch][3] = "https://www.drupal.org/files/issues/2668006-2.patch"
 projects[workbench_moderation][patch][4] = "https://www.drupal.org/files/issues/2847078-6.patch"
