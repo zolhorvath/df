@@ -2,6 +2,7 @@ third_party_settings:
   panelizer:
     enable: true
     custom: true
+    ipe_always_custom: true
     displays:
       default:
         blocks:
