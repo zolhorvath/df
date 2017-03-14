@@ -250,6 +250,10 @@
                 "Page Manager routing is overly complex and brittle | https://www.drupal.org/node/2736385":
                 "https://www.drupal.org/files/issues/2736385-format-56.patch"
             },
+            "drupal/panelizer": {
+                "Add setting to force Panels IPE to always save as Custom | https://www.drupal.org/node/2856471":
+                "https://www.drupal.org/files/issues/panelizer-always-custom-2856471-7.patch"
+            },
             "drupal/panels": {
                 "Incorrect logic inside of StandardDisplayBuilder could lead to fatal error | https://www.drupal.org/node/2812721":
                 "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch",
@@ -259,6 +263,10 @@
                 "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503":
                 "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+            },
+            "drupal/responsive_preview": {
+                "Closing responsive preview should deselect the tab | https://www.drupal.org/node/2860635":
+                "https://www.drupal.org/files/issues/responsive-preview-unselect-tab-on-close.patch"
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
@@ -338,6 +346,7 @@
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
         "drupal/replicate_ui": "1.x-dev",
+        "drupal/responsive_preview": "1.x-dev",
         "drupal/restui": "1.x-dev",
         "drupal/rules": "3.0.0-alpha2",
         "drupal/search_autocomplete": "1.x-dev",
