@@ -1,15 +1,13 @@
-@dfs_tec
+@dfs_tec @api
 Feature: DFS TEC: Service node
   In order to prove that dfs_tec was enabled correctly
   As a developer
   I need to be able to create nodes of the Service content type
 
-  @api
   Scenario: Create a service node
     Given I am viewing a "service" content with the title "Investments"
     Then I should see the heading "Investments"
 
-  @api
   Scenario: Create a service node with fields
     Given "tags" terms:
     | name     |

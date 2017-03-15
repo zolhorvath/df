@@ -1,4 +1,4 @@
-@dfs_tec
+@dfs_tec @api
 Feature: DFS TEC: Contact page
   In order to prove that dfs_tec was enabled correctly
   As a developer

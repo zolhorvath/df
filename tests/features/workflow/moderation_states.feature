@@ -61,3 +61,14 @@ Feature: Workflow moderation states
     And I should not see "Graham Chapman"
     And I should not see "Terry Jones"
     And I should see "Eric Idle"
+
+  Scenario: Content whose content type is not moderated is visible in the Content view
+    Given node_type entities:
+      | type          | name          |
+      | not_moderated | Not Moderated |
+    And not_moderated content:
+      | title       |
+      | Lazy Lummox |
+    And I am logged in as a user with the administrator role
+    When I visit "admin/content"
+    Then I should see "Lazy Lummox"

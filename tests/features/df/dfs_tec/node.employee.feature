@@ -1,16 +1,14 @@
-@dfs_tec
+@dfs_tec @api
 Feature: DFS TEC: Employee node
   In order to prove that dfs_tec was enabled correctly
   As a developer
   I need to be able to create nodes of the Employee content type
 
-  @api
   Scenario: Create an employee node
     Given I am viewing an "employee" content with the title "Dries"
     Then I should see the heading "Dries"
     And I should not see the heading "Tom"
-#
-#  @api
+
 #  Scenario: Create an employee node with fields
 #    Given "employee" content:
 #      | title       | field_title | field_employee_name | field_biography | field_department | field_email    | field_title | field_phone  | field_location |

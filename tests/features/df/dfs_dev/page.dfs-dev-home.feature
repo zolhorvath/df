@@ -1,4 +1,4 @@
-@dfs_dev
+@dfs_dev @api
 Feature: DFS DEV: Homepage
   In order to prove that dfs_dev was enabled correctly
   As a developer

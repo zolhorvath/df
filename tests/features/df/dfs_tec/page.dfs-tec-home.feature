@@ -1,17 +1,15 @@
-@dfs_tec
+@dfs_tec @api
 Feature: DFS TEC: Homepage
   In order to prove that dfs_tec was enabled correctly
   As a developer
   I need to check for elements on the front page
 
-  @api
   Scenario: Block: Slideshow
     Given I am on the homepage
     Then I should see "Insight that makes sense of it all"
     And I should see "Strong providers in innovation."
     And I should see "The perspective that affects your bottom line."
 
-  @api
   Scenario: Block: Services Promo
     Given I am on the homepage
     Then I should see "Bayside Consulting is your global business consulting partner."

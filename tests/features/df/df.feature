@@ -1,4 +1,4 @@
-@none
+@none @api
 Feature: Demo Framework
   In order to prove that general features for a given scenario function properly
   As a developer
@@ -8,7 +8,6 @@ Feature: Demo Framework
     Given I am on the homepage
     Then the response status code should be 200
 
-  @api
   Scenario: Homepage (admin)
     Given I am logged in as a user with the "administrator" role
     And I am on the homepage
@@ -20,16 +19,13 @@ Feature: Demo Framework
     And I should see "Username"
     And I should see "Password"
 
-  @api
   Scenario: Confirm authenticated user
     Given I am logged in as a user with the "administrator" role
     And I am on "/user"
     Then I should see the heading "My account"
     And I should see "Member for"
 
-  @api
   Scenario: Ensure that database logging is available
     Given I am logged in as a user with the "administrator" role
     And I am on "/admin/reports/dblog"
     Then I should see "Recent log messages"
-    

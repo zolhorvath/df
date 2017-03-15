@@ -1,10 +1,10 @@
-@ipe
+@ipe @api
 Feature: Demo Framework: Landing page
   In order to prove that landing pages for a given scenario function properly
   As a developer
   I need to perform various basic tests
 
-  @api @javascript
+  @javascript
   Scenario: Create Landing Page
     Given I am logged in as a user with the "administrator" role
       When I go to "/node/add/landing_page"

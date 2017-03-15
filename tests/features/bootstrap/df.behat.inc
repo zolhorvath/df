@@ -6,17 +6,39 @@
  */
 
 use Behat\Behat\Hook\Scope\BeforeScenarioScope;
+use Behat\Behat\Hook\Scope\AfterScenarioScope;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Mink\Exception\ExpectationException;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
 use Drupal\DrupalExtension\Context\DrupalSubContextBase;
-use Drupal\DrupalExtension\Context\DrupalSubContextInterface;
 
 /**
  * Sub context for DF step definitions.
  */
-class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInterface {
+class DFSubContext extends DrupalSubContextBase {
+
+  /**
+   * Installs the DF Test module before a @test_module scenario.
+   *
+   * @BeforeScenario @test_module
+   */
+  public function installTestModule() {
+    $driver = $this->getDriver();
+    if ($driver->isBootstrapped() === FALSE) {
+      $driver->bootstrap();
+    }
+    \Drupal::service('module_installer')->install(['df_test']);
+  }
+
+  /**
+   * Uninstalls the DF Test module after a @test_module scenario.
+   *
+   * @AfterScenario @test_module
+   */
+  public function uninstallTestModule() {
+    \Drupal::service('module_installer')->uninstall(['df_test']);
+  }
 
   /**
    * The Mink context.
@@ -24,6 +46,13 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
    * @var \Drupal\DrupalExtension\Context\MinkContext
    */
   protected $minkContext;
+
+  /**
+   * Start time for each scenario.
+   *
+   * @var int
+   */
+  protected $startTime;
 
   /**
    * Pre-scenario hook.
@@ -34,6 +63,39 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
     $environment = $scope->getEnvironment();
 
     $this->minkContext = $environment->getContext('Drupal\DrupalExtension\Context\MinkContext');
+  }
+
+  /**
+   * Store current time.
+   *
+   * @BeforeScenario ~@errors
+   */
+  public function setStartTime() {
+    $this->startTime = time();
+  }
+
+  /**
+   * Check for errors since the scenario started.
+   *
+   * @AfterScenario ~@errors
+   */
+  public function checkWatchdog(AfterScenarioScope $scope) {
+    if (db_table_exists('watchdog')) {
+      $log = db_select('watchdog', 'w')
+        ->fields('w')
+        ->condition('w.type', 'php', '=')
+        ->condition('w.timestamp', $this->startTime, '>=')
+        ->execute()
+        ->fetchAll();
+      if (!empty($log)) {
+        foreach ($log as $error) {
+          // Make the substitutions easier to read in the log.
+          $error->variables = unserialize($error->variables);
+          print_r($error);
+        }
+        throw new \Exception('PHP errors logged to watchdog in this scenario.');
+      }
+    }
   }
 
   /**
@@ -263,6 +325,23 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
   }
 
   /**
+   *  Dumps the HTML directly to stdout and a file.
+   *
+   * @When I view the HTML
+   */
+  public function viewTheHtml() {
+
+    $html_data = $this->getSession()->getDriver()->getContent();
+    echo $html_data;
+    $file_and_path = '/tmp/behat_page.html';
+    file_put_contents($file_and_path, $html_data);
+
+    if (PHP_OS === "Darwin" && PHP_SAPI === "cli") {
+      exec('open -a "Safari.app" ' . $file_and_path);
+    };
+  }
+
+  /**
    * Fills in an autocompleting entity reference field.
    *
    * @param string $entity_type
@@ -339,7 +418,11 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
    * @BeforeScenario
    */
   public function setFilePath() {
-    $this->minkContext->setMinkParameter('files_path', __DIR__ . '/../../files');
+
+    $existing = $this->minkContext->getMinkParameter('files_path');
+    if (empty($existing)) {
+      $this->minkContext->setMinkParameter('files_path', __DIR__ . '/../../files');
+    }
   }
 
   /**
@@ -386,13 +469,16 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
   }
 
   /**
-   * Submits the image browser.
+   * Asserts that a link is not present.
    *
-   * @When I submit the entity browser
+   * @param string $locator
+   *   The link title, ID, or text.
+   *
+   * @Then I should not see a(n) :locator link
    */
-  public function submitEntityBrowser() {
-    $this->getSession()
-      ->executeScript('window.frames["entity_browser_iframe_image_browser"].document.forms[0].op.click()');
+  public function assertLinkNotExists($locator) {
+    $this->assertSession()
+      ->elementNotExists('named', ['link', $locator]);
   }
 
   /**
@@ -405,6 +491,30 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
    */
   public function switchToFrame($name) {
     $this->getSession()->switchToIFrame($name);
+  }
+
+  /**
+   * Schedules a node for publication.
+   *
+   * @param string $when
+   *   The date and time at which to publish the node, in the format
+   *   YYYY-MM-DD HH:MM:SS.
+   *
+   * @When I schedule the node to be published at :when
+   */
+  public function schedulePublication($when) {
+    $this->minkContext->pressButton('Add new scheduled update');
+    $this->minkContext->iWaitForAjaxToFinish();
+
+    list ($date, $time) = explode(' ', $when, 2);
+
+    $this->minkContext->getSession()->executeScript('document.querySelector("[data-drupal-selector=\"edit-scheduled-update-form-inline-entity-form-update-timestamp-0-value-date\"]").value="' . $date . '"');
+    $this->minkContext->getSession()->executeScript('document.querySelector("[data-drupal-selector=\"edit-scheduled-update-form-inline-entity-form-update-timestamp-0-value-time\"]").value="' . $time . '"');
+
+    $this->minkContext->selectOption('scheduled_update[form][inline_entity_form][field_moderation_state]', 'published');
+
+    $this->minkContext->pressButton('Create scheduled update');
+    $this->minkContext->iWaitForAjaxToFinish();
   }
 
   /**
@@ -427,28 +537,6 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
    */
   public function assertPageNotContainsTitle($title) {
     $this->assertSession()->elementNotContains('css', 'h1', $title);
-  }
-
-  /**
-   * Schedules a node for publication.
-   *
-   * @param string $when
-   *   The date and time at which to publish the node, in the format
-   *   YYYY-MM-DD HH:MM:SS.
-   *
-   * @When I schedule the node to be published at :when
-   */
-  public function schedulePublication($when) {
-    $this->minkContext->pressButton('Add new scheduled update');
-    $this->minkContext->iWaitForAjaxToFinish();
-
-    list ($date, $time) = explode(' ', $when, 2);
-    $this->minkContext->fillField('scheduled_update[form][inline_entity_form][update_timestamp][0][value][date]', $date);
-    $this->minkContext->fillField('scheduled_update[form][inline_entity_form][update_timestamp][0][value][time]', $time);
-    $this->minkContext->selectOption('scheduled_update[form][inline_entity_form][field_moderation_state]', 'published');
-
-    $this->minkContext->pressButton('Create scheduled update');
-    $this->minkContext->iWaitForAjaxToFinish();
   }
 
   /**
@@ -524,6 +612,7 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
     $this->clickElementBySelector('[value="Add"]');
     $this->minkContext->iWaitForAjaxToFinish();
   }
+
   /**
    * Waits for an arbitrary Javascript condition to return TRUE.
    *
@@ -534,6 +623,48 @@ class DFSubContext extends DrupalSubContextBase implements DrupalSubContextInter
    */
   protected function waitForJsCondition($condition, $timeout = 5000) {
     $this->getSession()->wait($timeout, $condition);
+  }
+
+  /**
+   * Accepts a popup dialog.
+   *
+   * @Then I accept the popup
+   */
+  public function acceptPopup() {
+    $this->getSession()->getDriver()->getWebDriverSession()->accept_alert();
+  }
+
+  /**
+   * Cancels a popup dialog.
+   *
+   * @Then I cancel the popup
+   */
+  public function cancelPopup() {
+    $this->getSession()->getDriver()->getWebDriverSession()->dismiss_alert();
+  }
+
+  /**
+   * Asserts a popup dialog.
+   *
+   * @Then I should see :message in the popup
+   *
+   * @param string $message The message.
+   *
+   * @return bool
+   */
+  public function assertPopupMessage($message) {
+    return $message == $this->getSession()->getDriver()->getWebDriverSession()->getAlert_text();
+  }
+
+  /**
+   * Creates a popup dialog.
+   *
+   * @Then I fill :message in the popup
+   *
+   * @param string $message The message.
+   */
+  public function setPopupText($message) {
+    $this->getSession()->getDriver()->getWebDriverSession()->postAlert_text($message);
   }
 
   /**
