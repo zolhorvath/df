@@ -245,9 +245,6 @@ class PanelsSubContext extends DrupalSubContextBase implements DrupalSubContextI
   public function saveCustomLayout() {
     $this->df->clickElementBySelector('a[title = "Save"]');
     $this->minkContext->iWaitForAjaxToFinish();
-
-    $this->df->clickElementBySelector('a.panelizer-ipe-save-custom');
-    $this->minkContext->iWaitForAjaxToFinish();
   }
 
   /**
