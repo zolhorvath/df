@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3839cc3550307712557b76afc2920302",
-    "content-hash": "95e83485277dbaf18c2e6f507578cef2",
+    "hash": "1452d1c9745f04ae83e179e407a0ad7b",
+    "content-hash": "3b6d3a31daa127e2092ff679a7df0ff2",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5726,7 +5726,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/responsive_preview",
-                "reference": "211254d75e89bd0d10683a9d1b35198135d243dd"
+                "reference": "c47abeedbfb556321cdf6b84f801ced1bc2ebc76"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5737,11 +5737,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+4-dev",
-                    "datestamp": "1487081284"
-                },
-                "patches_applied": {
-                    "Closing responsive preview should deselect the tab | https://www.drupal.org/node/2860635": "https://www.drupal.org/files/issues/responsive-preview-unselect-tab-on-close.patch"
+                    "version": "8.x-1.0-alpha3+4-dev",
+                    "datestamp": "1489570985"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5771,7 +5768,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/responsive_preview"
             },
-            "time": "2017-03-13 15:59:27"
+            "time": "2017-03-15 09:38:01"
         },
         {
             "name": "drupal/restui",

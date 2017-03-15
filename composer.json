@@ -264,10 +264,6 @@
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503":
                 "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
             },
-            "drupal/responsive_preview": {
-                "Closing responsive preview should deselect the tab | https://www.drupal.org/node/2860635":
-                "https://www.drupal.org/files/issues/responsive-preview-unselect-tab-on-close.patch"
-            },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
                 "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
