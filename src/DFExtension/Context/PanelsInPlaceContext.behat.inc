@@ -197,9 +197,20 @@ class PanelsInPlaceContext extends DrupalSubContextBase {
   }
 
   /**
-   * Saves the current IPE layout as a custom layout.
+   * Saves the current IPE layout.
    *
    * @When I save the layout
+   */
+  public function saveLayout() {
+    $this->openTab('Save');
+
+    $this->minkContext->iWaitForAjaxToFinish();
+  }
+
+  /**
+   * Saves the current IPE layout as a custom layout.
+   *
+   * @When I save the layout as custom
    */
   public function saveLayoutAsCustom() {
     $this->assertSession()
