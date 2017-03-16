@@ -53,19 +53,20 @@ Feature: Panelizer
     And I wait 5 seconds
     Then I should see a "system_main_block" block with a "quickedit" contextual link
 
-#  @javascript
-#  Scenario: Editing layouts does not affect other layouts if the user has not saved the edited layout as default
-#    Given I am logged in as a user with the administrator role
-#    And landing_page content:
-#      | title   | path     | moderation_state |
-#      | Layout1 | /layout1 | draft            |
-#      | Layout2 | /layout2 | draft            |
-#    When I visit "/layout1"
-#    And I place the "views_block:who_s_online-who_s_online_block" block from the "Lists" category
-#    # And visit the second landing page without saving the layout changes to the first
-#    And I visit "/layout2"
-#    # I should not see the block placed by the first landing page
-#    Then I should not see a "views_block:who_s_online-who_s_online_block" block
+  @javascript
+  Scenario: Editing layouts does not affect other layouts if the user has not saved the edited layout as default
+    Given I am logged in as a user with the administrator role
+    And landing_page content:
+      | title   | path     | moderation_state |
+      | Layout1 | /layout1 | draft            |
+      | Layout2 | /layout2 | draft            |
+    When I visit "/layout1"
+    And I place the "views_block:who_s_online-who_s_online_block" block from the "Lists" category
+    # And visit the second landing page without saving the layout changes to the first
+    And I visit "/layout2"
+    And I accept the popup
+    # I should not see the block placed by the first landing page
+    Then I should not see a "views_block:who_s_online-who_s_online_block" block
 
   @javascript
   Scenario: Changing layouts through the IPE
