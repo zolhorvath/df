@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "2.04"
+projects[lightning][version] = "2.05"
 projects[lightning][subdir] = ""
 projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
 
@@ -93,7 +93,7 @@ projects[entity_block][patch][0] = "https://www.drupal.org/files/issues/add-uuid
 projects[entity_block][patch][1] = "https://www.drupal.org/files/issues/entity_block-view-builder-class.patch"
 
 projects[entity_browser][type] = "module"
-projects[entity_browser][version] = "1.0-beta4"
+projects[entity_browser][version] = "1.0-rc2"
 projects[entity_browser][patch][0] = "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch"
 projects[entity_browser][patch][1] = "https://www.drupal.org/files/issues/2845037-4.patch"
 projects[entity_browser][patch][2] = "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-6.patch"
@@ -108,7 +108,7 @@ projects[entity_gallery][download][branch] = "8.x-1.x"
 projects[entity_gallery][version] = "1.x-dev"
 
 projects[features][type] = "module"
-projects[features][version] = "3.2"
+projects[features][version] = "3.5"
 
 projects[field_formatter_class][type] = "module"
 projects[field_formatter_class][version] = "1.0-rc2"
@@ -149,11 +149,11 @@ projects[image_widget_crop][version] = "1.4"
 projects[import][type] = "module"
 projects[import][version] = "2.0-beta2"
 
-projects[key_value][type] = "module"
-projects[key_value][version] = "1.0"
-
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.0-beta1"
+
+projects[key_value][type] = "module"
+projects[key_value][version] = "1.0"
 
 projects[layout_plugin][type] = "module"
 projects[layout_plugin][version] = "1.0-alpha23"
@@ -247,18 +247,18 @@ projects[page_manager][patch][0] = "https://www.drupal.org/files/issues/page_man
 projects[page_manager][patch][1] = "https://www.drupal.org/files/issues/2746149-2.patch"
 
 projects[panelizer][type] = "module"
-projects[panelizer][version] = "3.0-alpha3"
+projects[panelizer][version] = "3.0-beta1"
 projects[panelizer][patch][0] = "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
 projects[panelizer][patch][1] = "https://www.drupal.org/files/issues/2664574-26.patch"
 projects[panelizer][patch][2] = "https://www.drupal.org/files/issues/panelizer-always-custom-2856471-7.patch"
 
 projects[panels][type] = "module"
-projects[panels][version] = "3.0-beta5"
-projects[panels][patch][0] = "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch"
-projects[panels][patch][1] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
-projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
-projects[panels][patch][3] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
-projects[panels][patch][3] = "https://www.drupal.org/files/issues/2793801-9.patch"
+projects[panels][version] = "3.0-beta6"
+projects[panels][patch][0] = "https://www.drupal.org/files/issues/2793801-13.patch"
+projects[panels][patch][1] = "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch"
+projects[panels][patch][2] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
+projects[panels][patch][3] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
+projects[panels][patch][4] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-rc1"
@@ -305,9 +305,7 @@ projects[scenarios][download][branch] = "8.x-2.x"
 projects[scenarios][version] = "2.x-dev"
 
 projects[scheduled_updates][type] = "module"
-projects[scheduled_updates][version] = "1.0-alpha5"
-projects[scheduled_updates][patch][0] = "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
-projects[scheduled_updates][patch][1] = "https://www.drupal.org/files/issues/scheduled_updates-no-canonical-link-for-update-type.patch"
+projects[scheduled_updates][version] = "1.0-alpha6"
 
 projects[scheduler][type] = "module"
 projects[scheduler][version] = "1.0-alpha2"
