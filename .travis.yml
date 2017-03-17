@@ -11,7 +11,7 @@ cache:
     - "$HOME/.npm"
 
 php:
-  - 5.6
+  - 7.0
 
 env:
   matrix:
@@ -33,15 +33,15 @@ addons:
     - fonts-liberation
 
 before_install:
+  # Add the oauth token to prevent GitHub timeouts.
+  - git config --global github.accesstoken $GITHUB_OAUTH_TOKEN
+
   # Disable xdebug.
   - phpenv config-rm xdebug.ini
 
   # Update composer.
   - composer self-update
   - composer --version
-
-  # Add the oauth token to prevent GitHub timeouts.
-  - git config --global github.accesstoken $GITHUB_OAUTH_TOKEN
 
   # Initialize xvfb (see https://docs.travis-ci.com/user/gui-and-headless-browsers)
   - export DISPLAY=:99.0

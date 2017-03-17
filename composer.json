@@ -10,8 +10,7 @@
         "drupal/drupal-extension": "^3.2",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "behat/behat": "^3.0",
-        "drupal/coder": "8.*",
-        "drupal/console": "~1.0",
+        "drupal/coder": "^2.0",
         "phing/phing": "^2.14",
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
@@ -19,9 +18,13 @@
         "mikey179/vfsStream": "~1.2",
         "phpunit/phpunit": "~4.8",
         "symfony/css-selector": "~2.8",
-        "drupal/devel": "1.0.0-rc1",
+        "drupal/devel": "^1.0",
         "squizlabs/php_codesniffer": "2.*",
-        "se/selenium-server-standalone": "^2.53"
+        "se/selenium-server-standalone": "^2.53",
+        "drupal/console": "^1.0",
+        "jakoch/phantomjs-installer": "1.9.8",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "composer/composer": "^1.4"
     },
     "config": {
         "bin-dir": "bin/"
@@ -135,6 +138,17 @@
             }
         }
     ],
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS",
+            "@composer drupal-scaffold",
+            "./bin/phing push"
+        ],
+        "post-update-cmd": [
+            "./bin/phing push"
+        ],
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    },
     "extra": {
         "packagist.drupal-composer.org": {
             "discover-make-files": false
@@ -358,15 +372,10 @@
         "leaflet/leaflet": "1.0.3",
         "fengyuanchen/cropper": "dev-master"
     },
-    "scripts": {
-        "post-install-cmd": [
-            "PhantomInstaller\\Installer::installPhantomJS",
-            "@composer drupal-scaffold",
-            "./bin/phing push"
-        ],
-        "post-update-cmd": [
-            "./bin/phing push"
-        ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    "autoload": {
+        "psr-4": {
+            "Acquia\\DF\\": "src",
+            "Acquia\\DFExtension\\": "src/DFExtension"
+        }
     }
 }
