@@ -111,7 +111,7 @@ projects[features][type] = "module"
 projects[features][version] = "3.5"
 
 projects[field_formatter_class][type] = "module"
-projects[field_formatter_class][version] = "1.0-rc2"
+projects[field_formatter_class][version] = "1.0"
 
 projects[field_group][type] = "module"
 projects[field_group][version] = "1.0-rc6"

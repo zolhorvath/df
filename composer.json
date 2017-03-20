@@ -326,7 +326,7 @@
         "drupal/content_browser": "1.0.0-alpha2",
         "drupal/crop": "1.0.0",
         "drupal/entity_gallery": "1.x-dev",
-        "drupal/field_formatter_class": "1.0.0-rc2",
+        "drupal/field_formatter_class": "1.0.0",
         "drupal/field_group": "1.0.0-rc6",
         "drupal/file_entity": "2.0.0-beta3",
         "drupal/geocoder": "2.0.0-alpha5",
