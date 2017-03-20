@@ -169,7 +169,7 @@ projects[libraries][download][branch] = "8.x-3.x"
 projects[libraries][version] = "3.x-dev"
 
 projects[link_class][type] = "module"
-projects[link_class][version] = "1.0"
+projects[link_class][version] = "1.2"
 
 projects[lite][type] = "module"
 projects[lite][version] = "1.4"
