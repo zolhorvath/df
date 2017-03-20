@@ -197,7 +197,7 @@ projects[media_entity_video][type] = "module"
 projects[media_entity_video][version] = "1.0-beta1"
 
 projects[message][type] = "module"
-projects[message][version] = "1.0-alpha5"
+projects[message][version] = "1.0-alpha6"
 
 projects[message_notify][type] = "module"
 projects[message_notify][version] = "1.0-alpha3"
