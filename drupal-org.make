@@ -141,7 +141,7 @@ projects[google_analytics][type] = "module"
 projects[google_analytics][version] = "2.1"
 
 projects[image_effects][type] = "module"
-projects[image_effects][version] = "1.0-alpha5"
+projects[image_effects][version] = "1.0-beta1"
 
 projects[image_widget_crop][type] = "module"
 projects[image_widget_crop][version] = "1.4"
