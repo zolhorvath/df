@@ -344,7 +344,7 @@
         "drupal/mailsystem": "4.1.0",
         "drupal/media_entity_video": "1.0.0-beta1",
         "drupal/message": "1.0.0-alpha6",
-        "drupal/message_notify": "1.0-alpha3",
+        "drupal/message_notify": "1.0-alpha4",
         "drupal/moderation_note": "1.x-dev",
         "drupal/moderation_sidebar": "1.x-dev",
         "drupal/migrate_plus": "3.x-dev",
