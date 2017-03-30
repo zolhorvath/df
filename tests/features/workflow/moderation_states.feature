@@ -1,4 +1,4 @@
-@dfs_edu @dfs_fin @dfs_obio @dfs_obio_showroom @workflow @api
+@df @workflow @api
 Feature: Workflow moderation states
   As a site administator, I need to be able to manage moderation states for
   content.
