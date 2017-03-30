@@ -5,6 +5,16 @@
 use Drupal\Component\Utility\Html;
 
 /**
+ * Implements hook_page_attachments_alter().
+ */
+function dfs_base_page_attachments_alter(&$page) {
+  // Force IE to use Chrome Frame if installed.
+  $callout_auto_close = theme_get_setting('dfs_base_callout_auto_close');
+
+  $page['#attached']['drupalSettings']['dfs_base']['callout_auto_close'] = $callout_auto_close;
+}
+
+/**
  * Implements hook_preprocess_block()
  */
 function dfs_base_preprocess_block(&$variables) {

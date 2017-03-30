@@ -4,7 +4,7 @@
  *
  */
 
-(function ($, Drupal) {
+(function ($, Drupal, drupalSettings) {
 
   // FOUC fix for menu.
   function showMenu () {
@@ -56,15 +56,17 @@
     openTab();
   });
 
-  // After 5 seconds, hide notifications.
   function removeWhiteSpace () {
     $('.region-highlighted').removeClass('callout');
   }
 
-  setTimeout(function () {
-    elem = $('.zurb-foundation-callout');
-    Foundation.Motion.animateOut(elem, 'hinge-out-from-top', removeWhiteSpace);
-  }, 5000);
+  // After 5 seconds, hide notifications.
+  if (drupalSettings.dfs_base.callout_auto_close) {
+    setTimeout(function () {
+      elem = $('.zurb-foundation-callout');
+      Foundation.Motion.animateOut(elem, 'hinge-out-from-top', removeWhiteSpace);
+    }, 5000);
+  }
 
   // When a comment link is clicked, smooth scroll.
   var $root = $('html, body');
@@ -238,4 +240,4 @@
     }
   };
 
-})(jQuery, Drupal);
+})(jQuery, Drupal, drupalSettings);

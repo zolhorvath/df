@@ -10,6 +10,7 @@ global:
   dependencies:
     - core/drupal
     - core/drupal.ajax
+    - core/drupalSettings
     - core/jquery
     - leaflet/leaflet
     - zurb_foundation/global
