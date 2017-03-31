@@ -42,7 +42,7 @@ projects[config_devel][type] = "module"
 projects[config_devel][version] = "1.0-alpha3"
 
 projects[config_rewrite][type] = "module"
-projects[config_rewrite][version] = "1.0-beta4"
+projects[config_rewrite][version] = "1.0"
 
 projects[config_sync][type] = "module"
 projects[config_sync][download][type] = "git"
