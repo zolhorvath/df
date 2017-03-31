@@ -311,7 +311,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.0.5",
+        "acquia/lightning": "2.0.6",
         "cweagans/composer-patches": "^1.6.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",
