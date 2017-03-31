@@ -173,8 +173,10 @@
         "enable-patching": true,
         "patches": {
             "acquia/lightning": {
-                "Disable lightning_core_entity_load()| https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
+                "Disable lightning_core_entity_load() | https://www.drupal.org/node/2770791":
+                "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch",
+                "Lightning Media Image requires Lightning Roles to be installed | https://www.drupal.org/node/2770791":
+                "https://www.drupal.org/files/issues/lightning-318.patch"
             },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
