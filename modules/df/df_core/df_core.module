@@ -8,6 +8,20 @@ use Drupal\user\Entity\User;
  */
 
 /**
+ * Implements hook_module_implements_alter().
+ *
+ * @todo Remove after #2635978 is fixed.
+ */
+function df_core_module_implements_alter(&$implementations, $hook) {
+  // Disable block initialization/inheritance for themes enabled after Lightning
+  // is installed in order to prevent blocks associated with the profile from
+  // bleeding over into scenarios.
+  if ($hook == 'themes_installed') {
+    unset($implementations['block']);
+  }
+}
+
+/**
  * Implements hook_form_alter().
  */
 function df_core_form_alter(array &$form) {
