@@ -16,7 +16,7 @@
           $(this).find('[data-sticky]').removeClass('sticky');
           return;
         }
-        var $blocks_after = $(this).parents().eq(1).nextAll();
+        var $blocks_after = $(this).closest('.block-plugin-id-magellan').nextAll();
         var $menu = $(this).find('.menu');
         $menu.empty();
         $blocks_after.each(function () {
