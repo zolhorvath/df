@@ -1,16 +1,18 @@
-uuid: 22bff92f-1a51-4473-b923-35b4036e8544
+uuid: f6a94705-59df-4afc-b92a-82f1a0214035
 langcode: en
 status: true
 dependencies:
   module:
     - block_class
+  theme:
+    - tec
 third_party_settings:
   block_class:
     classes: ''
 id: pagetitle
 theme: tec
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: page_title_block
 settings:
@@ -18,9 +20,4 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: "/user\r\n/user/*"
-    negate: false
-    context_mapping: {  }
+visibility: {  }

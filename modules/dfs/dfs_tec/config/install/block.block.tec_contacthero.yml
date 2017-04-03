@@ -8,6 +8,8 @@ dependencies:
     - block_class
     - block_content
     - system
+  theme:
+    - tec
 third_party_settings:
   block_class:
     classes: 'full-width contact-hero'

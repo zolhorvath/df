@@ -7,6 +7,8 @@ dependencies:
   module:
     - block_class
     - block_content
+  theme:
+    - tec
 third_party_settings:
   block_class:
     classes: ''
