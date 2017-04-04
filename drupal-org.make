@@ -195,7 +195,7 @@ projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.3"
 
 projects[media_entity_video][type] = "module"
-projects[media_entity_video][version] = "1.0-beta1"
+projects[media_entity_video][version] = "1.0-beta2"
 
 projects[message][type] = "module"
 projects[message][version] = "1.0-alpha6"
