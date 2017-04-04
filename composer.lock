@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c7010ecab82f9756c60b5a3286417ab",
+    "content-hash": "a203ab1916ada54481cfbd786e517aa5",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4614,17 +4614,17 @@
         },
         {
             "name": "drupal/media_entity_video",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/media_entity_video",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_entity_video-8.x-1.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_video-8.x-1.0-beta2.zip",
                 "reference": null,
-                "shasum": "167fcb5dca241b205964890ad770fae3b901e906"
+                "shasum": "a77b667f2d77b5711ab5fbd90f98895c0318ce3f"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4636,7 +4636,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
+                    "version": "8.x-1.0-beta2",
                     "datestamp": "1489117085"
                 }
             },
