@@ -170,9 +170,7 @@
         "patches": {
             "acquia/lightning": {
                 "Disable lightning_core_entity_load() | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch",
-                "Lightning Media Image requires Lightning Roles to be installed | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/lightning-318.patch"
+                "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
             },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
@@ -181,31 +179,21 @@
                 "https://www.drupal.org/files/issues/2635712-14.patch",
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
-                "ConfigurableLanguageManager::getConfigOverrideLanguage() returns NULL | https://www.drupal.org/node/2684873":
-                "https://www.drupal.org/files/issues/2684873-28.patch",
-                "Improve the UX of Quick Editing images | https://www.drupal.org/node/2421427":
-                "https://www.drupal.org/files/issues/quickedit-image-2421427-125.patch",
                 "Quick Edit doesn't work for Custom Blocks referenced by other Custom Blocks | https://www.drupal.org/node/2661880":
                 "https://www.drupal.org/files/issues/quickedit-undefined-attr-2661880-14.patch",
-                "Outside In is intermittently unable to bind dialog events to the window | https://www.drupal.org/node/2831924":
-                "https://www.drupal.org/files/issues/outside-in-early-event-binding-fix-2831924-5.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
                 "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
                 "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
-                "MigrationPluginManager::getDefinitions() blows up in node derivers | https://www.drupal.org/node/2830036":
-                "https://www.drupal.org/files/issues/2830036-17.patch",
                 "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850":
                 "https://www.drupal.org/files/issues/2652850-17.patch",
                 "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
                 "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
-                "List unmet configuration dependencies instead of just failing | https://www.drupal.org/node/2655104":
-                "https://www.drupal.org/files/issues/2655104-39.patch",
                 "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219":
                 "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch"
             },
             "drupal/adminimal_admin_toolbar": {
-                "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": 
+                "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670":
                 "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
             },
             "drupal/block_class": {
@@ -309,7 +297,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.0.6",
+        "acquia/lightning": "2.1.0",
         "cweagans/composer-patches": "^1.6.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",

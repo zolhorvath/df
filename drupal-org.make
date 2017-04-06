@@ -6,10 +6,9 @@ defaults[projects][subdir] = "contrib"
 
 ; Profiles
 projects[lightning][type] = "profile"
-projects[lightning][version] = "2.06"
+projects[lightning][version] = "2.10"
 projects[lightning][subdir] = ""
 projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
-projects[lightning][patch][1] = "https://www.drupal.org/files/issues/lightning-318.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
