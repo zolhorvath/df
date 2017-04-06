@@ -168,10 +168,6 @@
         },
         "enable-patching": true,
         "patches": {
-            "acquia/lightning": {
-                "Disable lightning_core_entity_load() | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
-            },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
                 "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",

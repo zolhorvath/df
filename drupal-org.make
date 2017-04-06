@@ -8,7 +8,6 @@ defaults[projects][subdir] = "contrib"
 projects[lightning][type] = "profile"
 projects[lightning][version] = "2.10"
 projects[lightning][subdir] = ""
-projects[lightning][patch][0] = "https://www.drupal.org/files/issues/disable-lightning_core_entity_load-2.patch"
 
 ; Modules
 projects[acquia_connector][type] = "module"
