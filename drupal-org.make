@@ -312,6 +312,9 @@ projects[scheduler][version] = "1.0-alpha2"
 projects[search_api][type] = "module"
 projects[search_api][version] = "1.0-beta4"
 
+projects[search_api_solr][type] = "module"
+projects[search_api_solr][version] = "1.0-beta1"
+
 projects[search_autocomplete][type] = "module"
 projects[search_autocomplete][download][type] = "git"
 projects[search_autocomplete][download][branch] = "8.x-1.x"
