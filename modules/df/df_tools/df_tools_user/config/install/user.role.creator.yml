@@ -72,3 +72,5 @@ permissions:
   - 'use archived_published transition'
   - 'access media overview'
   - 'update any media'
+  - 'administer block classes'
+  - 'administer blocks'
