@@ -63,10 +63,7 @@ projects[contact_storage][type] = "module"
 projects[contact_storage][version] = "1.0-beta8"
 
 projects[content_browser][type] = "module"
-projects[content_browser][version] = "1.0-alpha2"
-projects[content_browser][patch][0] = "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch"
-projects[content_browser][patch][1] = "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch"
-projects[content_browser][patch][2] = "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
+projects[content_browser][version] = "1.0-alpha4"
 
 projects[crop][type] = "module"
 projects[crop][version] = "1.0"

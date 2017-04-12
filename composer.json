@@ -200,14 +200,6 @@
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490":
                 "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
-            "drupal/content_browser": {
-                "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499":
-                "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
-                "Fix bug when using Views Infinite Scroll with Content Browser | https://www.drupal.org/node/2808919":
-                "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch",
-                "Modal opens automatically after Entity browser 8.x-1.0-beta1 | https://www.drupal.org/node/2829413":
-                "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
-            },
             "drupal/ctools": {
                 "Avoid unserialization of blockPluginCollection in BlockDisplayVariant. | https://www.drupal.org/node/2831521":
                 "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
@@ -310,7 +302,7 @@
         "drupal/config_rewrite": "1.0.0",
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
-        "drupal/content_browser": "1.0.0-alpha2",
+        "drupal/content_browser": "1.0.0-alpha4",
         "drupal/crop": "1.0.0",
         "drupal/entity_gallery": "1.x-dev",
         "drupal/field_formatter_class": "1.0.0",
