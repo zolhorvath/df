@@ -53,8 +53,6 @@ dependencies:
   - quickedit
   - rdf
   - scenarios
-  - search
-  - search_autocomplete
   - shortcut
   - system
   - taxonomy
