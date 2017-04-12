@@ -13,6 +13,10 @@ use Drupal\Core\Form\FormStateInterface;
  * Allows the profile to alter the site configuration form.
  */
 function df_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  // Don't enable update.module by default.
+  $form['update_notifications']['enable_update_status_module']['#access'] = FALSE;
+  $form['update_notifications']['enable_update_status_module']['#default_value'] = 0;
+
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = \Drupal::request()->server->get('SERVER_NAME');
   $form['#submit'][] = 'df_form_install_configure_submit';
