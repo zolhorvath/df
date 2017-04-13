@@ -9,11 +9,6 @@ Feature: DFS DEV: Homepage
     Then I should see "Example Slideshow"
     And I should see "Who likes blocks?"
 
-  Scenario: Block: Example Content Reference
-    Given I am on the homepage  
-    Then I should see "Example Content Reference"
-#    And I should see "Donec quam felis ultricies"
-
   Scenario: Block: Example Hero
     Given I am on the homepage
     Then I should see "Example Hero"

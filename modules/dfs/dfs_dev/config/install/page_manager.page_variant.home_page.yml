@@ -95,20 +95,6 @@ variant_settings:
         max_age: '-1'
       uuid: cb424f6e-8748-45b4-a309-9a3c8eaac37e
       context_mapping: {  }
-    1c417ef5-d58b-4797-a308-8d5bc0967aeb:
-      id: 'block_content:b128845a-8fbd-4794-a100-ba4f810e529f'
-      label: 'Example Content Reference'
-      provider: block_content
-      label_display: visible
-      region: primary
-      weight: '-9'
-      cache:
-        max_age: '-1'
-      status: true
-      info: ''
-      view_mode: full
-      uuid: 1c417ef5-d58b-4797-a308-8d5bc0967aeb
-      context_mapping: {  }
     9c75bfc6-f899-43a2-8c00-c788b2078fbc:
       id: 'block_content:0150f79a-0f4c-43f5-b843-679e72ef90dc'
       label: 'Example Map'
