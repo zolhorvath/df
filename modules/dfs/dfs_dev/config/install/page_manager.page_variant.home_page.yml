@@ -4,26 +4,31 @@ status: true
 dependencies:
   config:
     - page_manager.page.dfs_dev_home
+  content:
+    - 'block_content:basic:305d69a2-080f-4903-a700-0f31236a5c35'
+    - 'block_content:basic:febc918c-41bb-43b4-b907-7a4d5e675f74'
+    - 'block_content:hero:099e1a88-52e0-43a8-8d00-c0f2c0d24cde'
+    - 'block_content:map:0150f79a-0f4c-43f5-b843-679e72ef90dc'
+    - 'block_content:slideshow:f19730de-ab6b-44e6-ba00-a9196034e190'
   module:
-    - help
+    - block_content
     - df_tools_display
-    - search
-    - dfs_dev
+    - system
+    - user
 id: home_page
 label: 'Home Page Variant'
 variant: landing_display
 variant_settings:
-  selection_conditions: {  }
   blocks:
     15e6d15d-092e-4027-b403-3f917c0eaddc:
       id: system_messages_block
       label: Messages
       provider: system
       label_display: 0
-      cache:
-        max_age: -1
       region: top
       weight: '0'
+      cache:
+        max_age: -1
       uuid: 15e6d15d-092e-4027-b403-3f917c0eaddc
       context_mapping: {  }
     a50f8e99-0d21-4856-8800-a67e85ae893e:
@@ -31,10 +36,10 @@ variant_settings:
       label: 'User login'
       provider: user
       label_display: visible
-      cache:
-        max_age: '-1'
       region: sidebar
       weight: '0'
+      cache:
+        max_age: '-1'
       uuid: a50f8e99-0d21-4856-8800-a67e85ae893e
       context_mapping: {  }
     625ab720-c7ab-4df9-be43-672377924ec0:
@@ -42,13 +47,13 @@ variant_settings:
       label: 'Block vero eos et'
       provider: block_content
       label_display: visible
-      cache:
-        max_age: '-1'
       status: true
       info: ''
       view_mode: full
       region: middle
       weight: '-6'
+      cache:
+        max_age: '-1'
       uuid: 625ab720-c7ab-4df9-be43-672377924ec0
       context_mapping: {  }
     f568f185-b1e4-42d3-be5d-933e1a505223:
@@ -56,13 +61,13 @@ variant_settings:
       label: 'Quis aute Block iure reprehenderit'
       provider: block_content
       label_display: visible
-      cache:
-        max_age: '-1'
       status: true
       info: ''
       view_mode: full
       region: middle
       weight: '0'
+      cache:
+        max_age: '-1'
       uuid: f568f185-b1e4-42d3-be5d-933e1a505223
       context_mapping: {  }
     282d76ea-d401-4894-a006-6c0da92734c3:
@@ -70,10 +75,10 @@ variant_settings:
       label: 'Powered by Drupal'
       provider: system
       label_display: 0
-      cache:
-        max_age: -1
       region: bottom
       weight: '0'
+      cache:
+        max_age: -1
       uuid: 282d76ea-d401-4894-a006-6c0da92734c3
       context_mapping: {  }
     cb424f6e-8748-45b4-a309-9a3c8eaac37e:
@@ -81,13 +86,13 @@ variant_settings:
       label: 'Example Slideshow'
       provider: block_content
       label_display: visible
-      cache:
-        max_age: '-1'
       status: true
       info: ''
       view_mode: full
       region: primary
       weight: '-10'
+      cache:
+        max_age: '-1'
       uuid: cb424f6e-8748-45b4-a309-9a3c8eaac37e
       context_mapping: {  }
     1c417ef5-d58b-4797-a308-8d5bc0967aeb:
@@ -95,13 +100,13 @@ variant_settings:
       label: 'Example Content Reference'
       provider: block_content
       label_display: visible
+      region: primary
+      weight: '-9'
       cache:
         max_age: '-1'
       status: true
       info: ''
       view_mode: full
-      region: primary
-      weight: '-9'
       uuid: 1c417ef5-d58b-4797-a308-8d5bc0967aeb
       context_mapping: {  }
     9c75bfc6-f899-43a2-8c00-c788b2078fbc:
@@ -109,13 +114,13 @@ variant_settings:
       label: 'Example Map'
       provider: block_content
       label_display: visible
-      cache:
-        max_age: '-1'
       status: true
       info: ''
       view_mode: full
       region: secondary
       weight: '-7'
+      cache:
+        max_age: '-1'
       uuid: 9c75bfc6-f899-43a2-8c00-c788b2078fbc
       context_mapping: {  }
     90611d51-c83e-4a9c-8900-d74a83c95d43:
@@ -123,23 +128,25 @@ variant_settings:
       label: 'Example Hero'
       provider: block_content
       label_display: visible
-      cache:
-        max_age: '-1'
       status: true
       info: ''
       view_mode: full
       region: secondary
       weight: '-8'
+      cache:
+        max_age: '-1'
       uuid: 90611d51-c83e-4a9c-8900-d74a83c95d43
       context_mapping: {  }
   id: landing_display
+  selection_conditions: {  }
   label: Dashboard
   uuid: ec5eb9df-9013-4d28-9909-9e47b908a1fe
   weight: 0
   selection_logic: and
   page_title: ''
+  page_class: ''
 page: dfs_dev_home
 weight: 0
 selection_criteria: {  }
 selection_logic: and
-contexts: {  }
+static_context: {  }
