@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7628fa2a7fc093be5fa659165f9d0d7f",
+    "content-hash": "f81c80c5182f80b39df734b81bafaff2",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3598,7 +3598,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1489994284"
+                    "datestamp": "1492431842"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3995,7 +3995,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1480798684"
+                    "datestamp": "1492432443"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4859,7 +4859,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "b538062afa367fa0f3e143efc6eb95c671a5d9a7"
+                "reference": "d440c51f1193538368f745dfc2a380c0344b640f"
             },
             "require": {
                 "drupal/core": "*"
@@ -4874,7 +4874,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1486147684"
+                    "datestamp": "1492199943"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4892,7 +4892,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2017-02-07 18:36:30"
+            "time": "2017-04-17 22:25:55"
         },
         {
             "name": "drupal/oauth",
@@ -5835,6 +5835,50 @@
             }
         },
         {
+            "name": "drupal/search_api_autocomplete",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search_api_autocomplete",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "bd7c15570809e346f60e9f30a6612fd00d36f38e"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1478684640"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                }
+            ],
+            "description": "Adds autocomplete functionality to searches.",
+            "homepage": "https://www.drupal.org/project/search_api_autocomplete",
+            "support": {
+                "source": "http://cgit.drupalcode.org/search_api_autocomplete"
+            }
+        },
+        {
             "name": "drupal/search_api_solr",
             "version": "1.0.0-beta1",
             "source": {
@@ -5860,7 +5904,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1477470239"
+                    "datestamp": "1492189143"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
