@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "46df10a14473bf8ee8a77fb76ccaedec",
+    "content-hash": "7628fa2a7fc093be5fa659165f9d0d7f",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -132,27 +132,36 @@
         },
         {
             "name": "asm89/stack-cors",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/asm89/stack-cors.git",
-                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc"
+                "reference": "65ccbd455370f043c2e3b93482a3813603d68731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
-                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/65ccbd455370f043c2e3b93482a3813603d68731",
+                "reference": "65ccbd455370f043c2e3b93482a3813603d68731",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "symfony/http-foundation": "~2.1|~3.0",
-                "symfony/http-kernel": "~2.1|~3.0"
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "~2.7|~3.0",
+                "symfony/http-kernel": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^4.8.10",
+                "squizlabs/php_codesniffer": "^2.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Asm89\\Stack": "src/"
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/Asm89/Stack/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -171,7 +180,7 @@
                 "cors",
                 "stack"
             ],
-            "time": "2016-08-01T12:05:04+00:00"
+            "time": "2017-04-11T20:03:41+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
@@ -1140,17 +1149,17 @@
         },
         {
             "name": "drupal/acquia_connector",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_connector",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.8.zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.9.zip",
                 "reference": null,
-                "shasum": "457e44a9a9411c4d54dfd7284a1b55e6ed5a4ed3"
+                "shasum": "a52f410b077f955ecadbb249218b4abd9cad17d1"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1164,8 +1173,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1490205485"
+                    "version": "8.x-1.9",
+                    "datestamp": "1491851344"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1353,7 +1362,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.18",
-                    "datestamp": "1480614184"
+                    "datestamp": "1491487683"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2002,17 +2011,17 @@
         },
         {
             "name": "drupal/content_browser",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/content_browser",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_browser-8.x-1.0-alpha2.zip",
+                "url": "https://ftp.drupal.org/files/projects/content_browser-8.x-1.0-alpha4.zip",
                 "reference": null,
-                "shasum": "0126ff2b7c2f16c5109030d9386cd5fd8008ec94"
+                "shasum": "9a59098140ab1db4cc513993f3a037747da7da01"
             },
             "require": {
                 "drupal/core": "*",
@@ -2025,13 +2034,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1480354680"
-                },
-                "patches_applied": {
-                    "Simplify the Block Plugin form's table | https://www.drupal.org/node/2799499": "https://www.drupal.org/files/issues/content-browser-simple-block-table.patch",
-                    "Fix bug when using Views Infinite Scroll with Content Browser | https://www.drupal.org/node/2808919": "https://www.drupal.org/files/issues/content-browser-views-infinite-scroll.patch",
-                    "Modal opens automatically after Entity browser 8.x-1.0-beta1 | https://www.drupal.org/node/2829413": "https://www.drupal.org/files/issues/content-browser-auto-open.patch"
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1485822485"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2835,7 +2839,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1487581984"
+                    "datestamp": "1487795881"
                 },
                 "patches_applied": {
                     "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555": "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch",
@@ -2962,7 +2966,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_gallery",
-                "reference": "00effff18c806f46749ee8780aa10cdb8b657bbe"
+                "reference": "9e73f37b854a6fe67f07240681a3fcd0c8d1dfae"
             },
             "require": {
                 "drupal/core": "*"
@@ -2974,7 +2978,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1490854385"
+                    "datestamp": "1491846542"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2992,7 +2996,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_gallery"
             },
-            "time": "2017-03-30 07:10:04"
+            "time": "2017-04-10 19:04:29"
         },
         {
             "name": "drupal/features",
@@ -4663,7 +4667,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_plus",
-                "reference": "23081a2220597375839a028f64a12ebdd64bd13f"
+                "reference": "9baf04f0c0e835e47e46d6396775b745ebd78548"
             },
             "require": {
                 "drupal/core": "^8.2"
@@ -4697,6 +4701,10 @@
                     "name": "Mike Ryan",
                     "homepage": "https://www.drupal.org/u/mikeryan",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Enhancements to core migration support.",
@@ -4706,7 +4714,7 @@
                 "issues": "https://www.drupal.org/project/issues/migrate_plus",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
             },
-            "time": "2016-12-02 22:31:25"
+            "time": "2017-04-12 17:30:35"
         },
         {
             "name": "drupal/migrate_source_csv",
@@ -5043,7 +5051,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1486220583"
+                    "datestamp": "1491580982"
                 },
                 "patches_applied": {
                     "Add setting to force Panels IPE to always save as Custom | https://www.drupal.org/node/2856471": "https://www.drupal.org/files/issues/panelizer-always-custom-2856471-7.patch",
@@ -5509,7 +5517,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/restui",
-                "reference": "b4f03f0000ba0f6d67803544abe2fd5eb293aa73"
+                "reference": "22f3528fc943b2a51ac77c3460ee8f5d5a2834c5"
             },
             "require": {
                 "drupal/core": "^8.2.0"
@@ -5520,8 +5528,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.13+4-dev",
-                    "datestamp": "1490692083"
+                    "version": "8.x-1.13+5-dev",
+                    "datestamp": "1490693283"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5557,7 +5565,7 @@
                 "source": "https://cgit.drupalcode.org/restui",
                 "issues": "https://www.drupal.org/project/issues/restui"
             },
-            "time": "2017-03-28 09:24:17"
+            "time": "2017-04-12 15:19:31"
         },
         {
             "name": "drupal/rules",
@@ -5794,7 +5802,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta5",
-                    "datestamp": "1491153783"
+                    "datestamp": "1491764883"
                 },
                 "patches_applied": {
                     "2866454 - Update 8103 causes sadness": "https://www.drupal.org/files/issues/2866454-2.patch"
@@ -5823,6 +5831,73 @@
             "support": {
                 "source": "http://git.drupal.org/project/search_api.git",
                 "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_solr",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search_api_solr",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "2b8c127d5da0124f61aab80979b3313ae22d9b82"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/search_api": "*",
+                "solarium/solarium": "3.6.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1477470239"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Nick_vh",
+                    "homepage": "https://www.drupal.org/user/122682"
+                },
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Offers an implementation of the Search API that uses an Apache Solr server for indexing content.",
+            "homepage": "https://www.drupal.org/project/search_api_solr",
+            "support": {
+                "source": "http://cgit.drupalcode.org/search_api_solr",
+                "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
         },
@@ -7482,6 +7557,60 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
+            "name": "solarium/solarium",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solariumphp/solarium.git",
+                "reference": "b945cbe4e8f96b639d82c4d1e2cae4ef3ab6fce5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/b945cbe4e8f96b639d82c4d1e2cae4ef3ab6fce5",
+                "reference": "b945cbe4e8f96b639d82c4d1e2cae4ef3ab6fce5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/event-dispatcher": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7",
+                "satooshi/php-coveralls": "~1.0",
+                "squizlabs/php_codesniffer": "~1.4",
+                "zendframework/zendframework1": "~1.12"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Solarium\\": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "See GitHub contributors",
+                    "homepage": "https://github.com/basdenooijer/solarium/contributors"
+                }
+            ],
+            "description": "PHP Solr client",
+            "homepage": "http://www.solarium-project.org",
+            "keywords": [
+                "php",
+                "search",
+                "solr"
+            ],
+            "time": "2016-05-03T07:08:49+00:00"
+        },
+        {
             "name": "stack/builder",
             "version": "v1.0.4",
             "source": {
@@ -8965,16 +9094,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.10",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "83e8d98b9915de76c659ce27d683c02a0f99fa90"
+                "reference": "b03f285a333f51e58c95cce54109a4a9ed691436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/83e8d98b9915de76c659ce27d683c02a0f99fa90",
-                "reference": "83e8d98b9915de76c659ce27d683c02a0f99fa90",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b03f285a333f51e58c95cce54109a4a9ed691436",
+                "reference": "b03f285a333f51e58c95cce54109a4a9ed691436",
                 "shasum": ""
             },
             "require": {
@@ -8982,17 +9111,19 @@
                 "psr/http-message": "~1.0"
             },
             "provide": {
-                "psr/http-message-implementation": "~1.0.0"
+                "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
                 "phpunit/phpunit": "^4.6 || ^5.5",
                 "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev",
-                    "dev-develop": "1.4-dev"
+                    "dev-master": "1.4-dev",
+                    "dev-develop": "1.5-dev"
                 }
             },
             "autoload": {
@@ -9011,7 +9142,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-01-23T04:53:24+00:00"
+            "time": "2017-04-06T16:18:34+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
