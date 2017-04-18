@@ -61,9 +61,9 @@
   }
 
   // After 5 seconds, hide notifications.
-  if (drupalSettings.dfs_base.callout_auto_close) {
+  if (drupalSettings.dfs_base && drupalSettings.dfs_base.callout_auto_close) {
     setTimeout(function () {
-      elem = $('.zurb-foundation-callout');
+      var elem = $('.zurb-foundation-callout');
       Foundation.Motion.animateOut(elem, 'hinge-out-from-top', removeWhiteSpace);
     }, 5000);
   }
