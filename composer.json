@@ -228,29 +228,13 @@
                 "Use the core plugin manager | https://www.drupal.org/node/2795447":
                 "https://www.drupal.org/files/issues/use_the_core_plugin-2795447-3.patch"
             },
-            "drupal/page_manager": {
-                "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947":
-                "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch",
-                "Make Page Manager compatible with Drupal Packagist and Drupal.org | https://www.drupal.org/node/2746149":
-                "https://www.drupal.org/files/issues/2746149-2.patch",
-                "Page Manager routing is overly complex and brittle | https://www.drupal.org/node/2736385":
-                "https://www.drupal.org/files/issues/2736385-format-56.patch"
-            },
-            "drupal/panelizer": {
-                "Add setting to force Panels IPE to always save as Custom | https://www.drupal.org/node/2856471":
-                "https://www.drupal.org/files/issues/panelizer-always-custom-2856471-7.patch"
-            },
             "drupal/panels": {
-                "Incorrect logic inside of StandardDisplayBuilder could lead to fatal error | https://www.drupal.org/node/2812721":
-                "https://www.drupal.org/files/issues/panels-fatal_error_standard_dysplay_builder-2819235-34.patch",
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Provide hook to alter available blocks | https://www.drupal.org/node/2767087":
                 "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503":
-                "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
-                "Allow modules to influence the IPE tempstore ID | https://www.drupal.org/node/2793801":
-                "https://www.drupal.org/files/issues/2793801-17.patch"
+                "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
@@ -277,15 +261,12 @@
             "acquia/lightning": {
                 "drupal/entity_block": {
                     "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
-                },
-                "drupal/panels": {
-                    "We replace this patch with the patch from #17": "https://www.drupal.org/files/issues/2793801-13.patch"
                 }
             }
         }
     },
     "require": {
-        "acquia/lightning": "2.1.0",
+        "acquia/lightning": "2.1.1",
         "cweagans/composer-patches": "^1.6.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8",
