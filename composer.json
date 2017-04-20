@@ -252,6 +252,10 @@
                 "The the ability to rearrange the moderation state field | https://www.drupal.org/node/2833892":
                 "https://www.drupal.org/files/issues/workbench_moderation-ability-to-rearrange-field-in-form-2833892-4.patch"
             },
+            "drupal/zurb_foundation": {
+                "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479":
+                "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
+            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
                 "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"

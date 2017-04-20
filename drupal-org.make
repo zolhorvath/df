@@ -354,6 +354,7 @@ projects[zurb-foundation][type] = "theme"
 projects[zurb-foundation][download][type] = "git"
 projects[zurb-foundation][download][branch] = "8.x-6.x"
 projects[zurb-foundation][version] = "6.x-dev"
+projects[zurb-foundation][patch][] = "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
