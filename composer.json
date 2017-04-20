@@ -261,6 +261,9 @@
             "acquia/lightning": {
                 "drupal/entity_block": {
                     "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
+                },
+                "drupal/entity_browser": {
+                    "This patch is already in Entity Browser 8.x-1.0": "https://www.drupal.org/files/issues/entity-browser-widget-context-2761833-37.patch"
                 }
             }
         }
