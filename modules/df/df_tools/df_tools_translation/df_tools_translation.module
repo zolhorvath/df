@@ -5,6 +5,7 @@
  * Contains df_tools_translation.module.
  */
 
+use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\migrate_source_csv\CSVFileObject;
 use Drupal\migrate\Plugin\Migration;
 use Drupal\migrate_tools\DrushLogMigrateMessage;
@@ -132,6 +133,9 @@ function df_tools_translation_scenarios_migration_finished(Migration $migration)
           }
         }
         // Save the translation.
+        if ($translation instanceof RevisionLogInterface) {
+          $translation->setRevisionLogMessage(NULL);
+        }
         $translation->save();
 
         // Move to the next row.

@@ -5,13 +5,16 @@
  * Contains df_tools_panelizer.module.
  */
 
-use Drupal\migrate_source_csv\CSVFileObject;
+use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\migrate_source_csv\CSVFileObject;
+use Drupal\migrate\Plugin\Migration;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Implements hook_scenarios_migration_finished().
  */
-function df_tools_panelizer_scenarios_migration_finished(Drupal\migrate\Plugin\Migration $migration) {
+function df_tools_panelizer_scenarios_migration_finished(Migration $migration) {
   // Initialize variables required to parse migration.
   /** @var Drupal\migrate_source_csv\Plugin\migrate\source\CSV $source */
   $source = $migration->getSourcePlugin();
@@ -74,7 +77,7 @@ function df_tools_panelizer_scenarios_migration_finished(Drupal\migrate\Plugin\M
         if (file_exists($panels_file) && isset($entity->panelizer)) {
           $yaml = file_get_contents($panels_file);
 
-          $panels_display = \Symfony\Component\Yaml\Yaml::parse($yaml);
+          $panels_display = Yaml::parse($yaml);
 
           // The storage ID isn't based on UUIDs, unfortunately. Hotswap it with current info.
           $panels_display['storage_id'] = $entity_type . ':' . $entity->id() . ':full:' . $entity->getRevisionId();
@@ -87,6 +90,10 @@ function df_tools_panelizer_scenarios_migration_finished(Drupal\migrate\Plugin\M
 
           // This is a required field in SQL with no default, but it always "full".
           $entity->panelizer->view_mode = 'full';
+
+          if ($entity instanceof RevisionLogInterface) {
+            $entity->setRevisionLogMessage(NULL);
+          }
 
           $entity->save();
         }
@@ -118,7 +125,7 @@ function df_tools_panelizer_layout_alter(&$definitions) {
   foreach ($definitions as $layout_name => $layout) {
     $category = $definitions[$layout_name]->getCategory();
 
-    if ($category instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+    if ($category instanceof TranslatableMarkup) {
       $category = $category->getUntranslatedString();
     }
 
