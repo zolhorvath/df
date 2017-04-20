@@ -18,6 +18,7 @@ projects[address][version] = "1.0-rc4"
 
 projects[addtoany][type] = "module"
 projects[addtoany][version] = "1.7"
+projects[addtoany][patch][] = "https://www.drupal.org/files/issues/addtoany-revision-2855283-2.patch"
 
 projects[admin_toolbar][type] = "module"
 projects[admin_toolbar][version] = "1.18"
@@ -289,6 +290,11 @@ projects[restui][type] = "module"
 projects[restui][download][type] = "git"
 projects[restui][download][branch] = "8.x-1.x"
 projects[restui][version] = "1.x-dev"
+
+projects[revision_log_default][type] = "module"
+projects[revision_log_default][download][type] = "git"
+projects[revision_log_default][download][branch] = "8.x-1.x"
+projects[revision_log_default][version] = "1.x-dev"
 
 projects[scenarios][type] = "module"
 projects[scenarios][download][type] = "git"
