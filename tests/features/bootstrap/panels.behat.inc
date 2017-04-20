@@ -95,9 +95,6 @@ class PanelsSubContext extends DrupalSubContextBase {
 
     $this->df->clickElementBySelector('a[data-layout-id = "' . $layout_id . '"]');
     $this->minkContext->iWaitForAjaxToFinish();
-
-    $this->minkContext->pressButton('Change Layout');
-    $this->minkContext->iWaitForAjaxToFinish();
   }
 
   /**
