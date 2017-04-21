@@ -305,7 +305,7 @@ projects[scheduled_updates][type] = "module"
 projects[scheduled_updates][version] = "1.0-alpha6"
 
 projects[scheduler][type] = "module"
-projects[scheduler][version] = "1.0-alpha2"
+projects[scheduler][version] = "1.0-rc1"
 
 projects[search_api][type] = "module"
 projects[search_api][version] = "1.0-beta4"

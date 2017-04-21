@@ -330,7 +330,7 @@
         "drupal/search_api_solr": "1.0.0-beta1",
         "drupal/search_autocomplete": "1.x-dev",
         "drupal/scenarios": "2.x-dev",
-        "drupal/scheduler": "1.0.0-alpha2",
+        "drupal/scheduler": "1.0.0-rc1",
         "drupal/swiftmailer": "1.x-dev#142fcdf2b9b50d380c9a0d4d74c030524d0e9288",
         "drupal/url_embed": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
