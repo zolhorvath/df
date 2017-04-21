@@ -76,7 +76,7 @@ projects[diff][type] = "module"
 projects[diff][version] = "1.0-rc1"
 
 projects[dropzonejs][type] = "module"
-projects[dropzonejs][version] = "1.0-alpha5"
+projects[dropzonejs][version] = "1.0-alpha6"
 
 projects[embed][type] = "module"
 projects[embed][version] = "1.0-rc3"
