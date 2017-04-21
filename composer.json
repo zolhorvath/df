@@ -311,7 +311,7 @@
         "drupal/lite": "1.4.0",
         "drupal/mailsystem": "4.1.0",
         "drupal/media_entity_video": "1.0.0-beta2",
-        "drupal/message": "1.0.0-alpha6",
+        "drupal/message": "1.0.0-beta1",
         "drupal/message_notify": "1.0-alpha4",
         "drupal/moderation_note": "1.x-dev",
         "drupal/moderation_sidebar": "1.x-dev",
