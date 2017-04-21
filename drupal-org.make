@@ -197,7 +197,7 @@ projects[message][type] = "module"
 projects[message][version] = "1.0-beta1"
 
 projects[message_notify][type] = "module"
-projects[message_notify][version] = "1.0-alpha4"
+projects[message_notify][version] = "1.0-beta1"
 
 projects[metatag][type] = "module"
 projects[metatag][version] = "1.0"
