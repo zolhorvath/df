@@ -141,7 +141,7 @@ projects[image_effects][type] = "module"
 projects[image_effects][version] = "1.0"
 
 projects[image_widget_crop][type] = "module"
-projects[image_widget_crop][version] = "1.4"
+projects[image_widget_crop][version] = "2.0"
 
 projects[import][type] = "module"
 projects[import][version] = "2.0-beta2"
