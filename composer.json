@@ -302,7 +302,7 @@
         "drupal/geophp": "1.x-dev",
         "drupal/geolocation": "1.x-dev",
         "drupal/google_analytics": "2.1.0",
-        "drupal/image_effects": "1.0.0-beta1",
+        "drupal/image_effects": "1.0.0",
         "drupal/image_widget_crop": "1.4",
         "drupal/import": "2.0.0-beta2",
         "drupal/leaflet": "1.x-dev",
