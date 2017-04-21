@@ -21,7 +21,7 @@ projects[addtoany][version] = "1.7"
 projects[addtoany][patch][] = "https://www.drupal.org/files/issues/addtoany-revision-2855283-2.patch"
 
 projects[admin_toolbar][type] = "module"
-projects[admin_toolbar][version] = "1.18"
+projects[admin_toolbar][version] = "1.19"
 
 projects[adminimal_admin_toolbar][type] = "module"
 projects[adminimal_admin_toolbar][version] = "1.3"
