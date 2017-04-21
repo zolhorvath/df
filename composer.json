@@ -292,7 +292,7 @@
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha4",
-        "drupal/crop": "1.0.0",
+        "drupal/crop": "1.2.0",
         "drupal/entity_gallery": "1.x-dev",
         "drupal/field_formatter_class": "1.0.0",
         "drupal/field_group": "1.0.0-rc6",

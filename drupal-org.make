@@ -67,7 +67,7 @@ projects[content_browser][type] = "module"
 projects[content_browser][version] = "1.0-alpha4"
 
 projects[crop][type] = "module"
-projects[crop][version] = "1.0"
+projects[crop][version] = "1.2"
 
 projects[ctools][type] = "module"
 projects[ctools][version] = "3.0-alpha27"
