@@ -118,6 +118,8 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
       $slick[$setting] = (bool) $value;
     }
 
+    $original_view_mode = $this->getSetting('view_mode');
+
     if ($this->getSetting('use_view_mode_pager')) {
       static::$recursiveRenderDepth = [];
       $pager_view_mode = $this->getSetting('pager_view_mode');
@@ -137,6 +139,8 @@ class EntityReferenceSlideshowFormatter extends EntityReferenceEntityFormatter {
       $slick['customPaging'] = TRUE;
       $slick['dots'] = TRUE;
     }
+
+    $this->setSetting('view_mode', $original_view_mode);
 
     $elements['#attached']['drupalSettings']['DFToolsSlideshow'][$slideshow_id]['slick'] = $slick;
 
