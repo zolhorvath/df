@@ -204,6 +204,10 @@
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490":
                 "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
+            "drupal/content_browser": {
+                "Does not respect content type limitations. | https://www.drupal.org/node/2851687":
+                "https://www.drupal.org/files/issues/content-browser-respect-type-2851687-5.patch"
+            },
             "drupal/ctools": {
                 "Avoid unserialization of blockPluginCollection in BlockDisplayVariant. | https://www.drupal.org/node/2831521":
                 "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"

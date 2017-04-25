@@ -72,6 +72,7 @@ projects[contact_storage][patch][] = "https://www.drupal.org/files/issues/contac
 
 projects[content_browser][type] = "module"
 projects[content_browser][version] = "1.0-alpha4"
+projects[content_browser][patch][] = "https://www.drupal.org/files/issues/content-browser-respect-type-2851687-5.patch"
 
 projects[crop][type] = "module"
 projects[crop][version] = "1.2"

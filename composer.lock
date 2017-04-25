@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48c1c7a7cc5b1a36490d8a7c80d36e12",
-    "content-hash": "3d4d0ce27a142fda97601aec68bb4c36",
+    "hash": "5a8ae25439e1945698ba2aa90ff26b48",
+    "content-hash": "95d117f0569eb206ed1107ef6e273d62",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -477,16 +477,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
+                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
+                "url": "https://api.github.com/repos/composer/installers/zipball/79ad876c7498c0bbfe7eed065b8651c93bfd6045",
+                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045",
                 "shasum": ""
             },
             "require": {
@@ -528,12 +528,16 @@
             "keywords": [
                 "Craft",
                 "Dolibarr",
+                "Eliasis",
                 "Hurad",
                 "ImageCMS",
+                "Kanboard",
                 "MODX Evo",
                 "Mautic",
+                "Maya",
                 "OXID",
                 "Plentymarkets",
+                "Porto",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -556,9 +560,11 @@
                 "fuelphp",
                 "grav",
                 "installer",
+                "itop",
                 "joomla",
                 "kohana",
                 "laravel",
+                "lavalite",
                 "lithium",
                 "magento",
                 "mako",
@@ -573,6 +579,7 @@
                 "roundcube",
                 "shopware",
                 "silverstripe",
+                "sydes",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -580,7 +587,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13 20:53:52"
+            "time": "2017-04-24 06:37:16"
         },
         {
             "name": "composer/semver",
@@ -850,28 +857,29 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a"
+                "reference": "1a4fb7e902202c33cce8c55989b945612943c2ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
-                "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/1a4fb7e902202c33cce8c55989b945612943c2ba",
+                "reference": "1a4fb7e902202c33cce8c55989b945612943c2ba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "doctrine/coding-standard": "~0.1@dev",
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -912,7 +920,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2015-04-14 22:21:58"
+            "time": "2017-01-03 10:49:41"
         },
         {
             "name": "doctrine/common",
@@ -1151,17 +1159,17 @@
         },
         {
             "name": "drupal/acquia_connector",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_connector",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.9.zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.10.zip",
                 "reference": null,
-                "shasum": "a52f410b077f955ecadbb249218b4abd9cad17d1"
+                "shasum": "aa56f04d572e7963e14abc9bcfb3d8cc9c00eb7d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1175,8 +1183,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1491851344"
+                    "version": "8.x-1.10",
+                    "datestamp": "1493037542"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2041,6 +2049,9 @@
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
                     "datestamp": "1485822485"
+                },
+                "patches_applied": {
+                    "Does not respect content type limitations. | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-respect-type-2851687-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4686,7 +4697,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_plus",
-                "reference": "9baf04f0c0e835e47e46d6396775b745ebd78548"
+                "reference": "586c6177191dcf5532d7a674800b9ddb9fda16d4"
             },
             "require": {
                 "drupal/core": "^8.2"
@@ -4704,8 +4715,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+4-dev",
-                    "datestamp": "1480717983"
+                    "version": "8.x-3.0-beta1+6-dev",
+                    "datestamp": "1493149695"
                 },
                 "patches_applied": {
                     "Properly integrate configuration-entity-based migrations with the core plugin manager | https://www.drupal.org/node/2752335": "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
@@ -4733,7 +4744,7 @@
                 "issues": "https://www.drupal.org/project/issues/migrate_plus",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
             },
-            "time": "2017-04-12 17:30:35"
+            "time": "2017-04-25 16:49:58"
         },
         {
             "name": "drupal/migrate_source_csv",
@@ -4878,7 +4889,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "dc3d7c4acc212b22bf5aceb1b582265f6aabf2ef"
+                "reference": "81543f2130bae92dafcff7fc72ce75b62297b3e1"
             },
             "require": {
                 "drupal/core": "*"
@@ -4893,7 +4904,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1492468144"
+                    "datestamp": "1492791243"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4911,7 +4922,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
             },
-            "time": "2017-04-21 16:12:38"
+            "time": "2017-04-21 19:06:50"
         },
         {
             "name": "drupal/oauth",
@@ -5526,7 +5537,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/restui",
-                "reference": "22f3528fc943b2a51ac77c3460ee8f5d5a2834c5"
+                "reference": "39abe87944207c58aa64d13785917fd94f5c329e"
             },
             "require": {
                 "drupal/core": "^8.2.0"
@@ -5537,8 +5548,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.13+5-dev",
-                    "datestamp": "1490693283"
+                    "version": "8.x-1.13+9-dev",
+                    "datestamp": "1493056142"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5547,34 +5558,28 @@
             ],
             "authors": [
                 {
-                    "name": "Juampy NR",
-                    "homepage": "https://www.drupal.org/u/juampynr"
+                    "name": "-enzo-",
+                    "homepage": "https://www.drupal.org/user/294937"
                 },
                 {
-                    "name": "Clemens Tolboom",
-                    "homepage": "https://www.drupal.org/u/clemens.tolboom"
+                    "name": "clemens.tolboom",
+                    "homepage": "https://www.drupal.org/user/125814"
                 },
                 {
-                    "name": "Eduardo García",
-                    "homepage": "https://www.drupal.org/u/enzo"
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
                 },
                 {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/1938140/committers"
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
                 }
             ],
             "description": "Provides a user interface to manage REST resources",
             "homepage": "https://www.drupal.org/project/restui",
-            "keywords": [
-                "rest",
-                "restdata",
-                "webservice"
-            ],
             "support": {
-                "source": "https://cgit.drupalcode.org/restui",
-                "issues": "https://www.drupal.org/project/issues/restui"
+                "source": "http://cgit.drupalcode.org/restui"
             },
-            "time": "2017-04-12 15:19:31"
+            "time": "2017-04-24 18:22:54"
         },
         {
             "name": "drupal/revision_log_default",
@@ -5582,7 +5587,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/revision_log_default",
-                "reference": "f7a503bc8ffd3a3bbdaf3f84bb6b62c35e1edf7d"
+                "reference": "b6b045654b89cb8b92f64822ddb5b2816f3ac0a4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5594,7 +5599,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1492649343"
+                    "datestamp": "1492801443"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5612,7 +5617,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/revision_log_default"
             },
-            "time": "2017-04-20 18:45:18"
+            "time": "2017-04-21 19:02:48"
         },
         {
             "name": "drupal/rules",
@@ -10544,24 +10549,24 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.0.0-rc16",
+            "version": "1.0.0-rc17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "955b057042635a5dc935799228ec7bbddf2c0cc2"
+                "reference": "102a2b6c911493af905e7647a84b27fd5f8094a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/955b057042635a5dc935799228ec7bbddf2c0cc2",
-                "reference": "955b057042635a5dc935799228ec7bbddf2c0cc2",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/102a2b6c911493af905e7647a84b27fd5f8094a1",
+                "reference": "102a2b6c911493af905e7647a84b27fd5f8094a1",
                 "shasum": ""
             },
             "require": {
                 "alchemy/zippy": "0.4.3",
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "1.2.*",
-                "doctrine/collections": "1.3.0",
-                "drupal/console-core": "1.0.0-rc16",
+                "doctrine/collections": "~1.3",
+                "drupal/console-core": "1.0.0-rc17",
                 "drupal/console-extend-plugin": "~0",
                 "gabordemooij/redbean": "~4.3",
                 "guzzlehttp/guzzle": "~6.1",
@@ -10618,25 +10623,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-02-09 18:54:29"
+            "time": "2017-04-23 22:22:12"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.0.0-rc16",
+            "version": "1.0.0-rc17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "42690f652b3a61d7d15fe9b785b946f3eb9227bf"
+                "reference": "d0f45db119ca4234976f2485b765c4dcdac50efa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/42690f652b3a61d7d15fe9b785b946f3eb9227bf",
-                "reference": "42690f652b3a61d7d15fe9b785b946f3eb9227bf",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/d0f45db119ca4234976f2485b765c4dcdac50efa",
+                "reference": "d0f45db119ca4234976f2485b765c4dcdac50efa",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-configuration": "1.0.1",
-                "drupal/console-en": "1.0.0-rc16",
+                "drupal/console-en": "1.0.0-rc17",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": ">=2.7 <3.0",
@@ -10699,20 +10704,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-02-09 18:22:32"
+            "time": "2017-04-23 22:04:36"
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.0-rc16",
+            "version": "1.0.0-rc17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "32c1e4c31500ba4ccd5e68bd74977fd6258c3e37"
+                "reference": "117370ecf8e8933adf0350538f9ee2a5804369a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/32c1e4c31500ba4ccd5e68bd74977fd6258c3e37",
-                "reference": "32c1e4c31500ba4ccd5e68bd74977fd6258c3e37",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/117370ecf8e8933adf0350538f9ee2a5804369a7",
+                "reference": "117370ecf8e8933adf0350538f9ee2a5804369a7",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -10753,7 +10758,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-02-09 16:02:27"
+            "time": "2017-04-23 21:55:33"
         },
         {
             "name": "drupal/console-extend-plugin",
@@ -10798,17 +10803,17 @@
         },
         {
             "name": "drupal/devel",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "8.x-1.0-rc1"
+                "reference": "8.x-1.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc1.zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc2.zip",
                 "reference": null,
-                "shasum": "04a01f50d508eca70e065b7eba38cd6c83a436c0"
+                "shasum": "011322bf9c263dab29f94640829f4b654e9c5632"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -10822,8 +10827,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1484837884"
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1492989244"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11243,7 +11248,7 @@
                 {
                     "name": "Anthon Pang",
                     "email": "apang@softwaredevelopment.ca",
-                    "role": "Fork Maintainer"
+                    "role": "Fork maintainer"
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
