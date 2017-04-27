@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a8ae25439e1945698ba2aa90ff26b48",
-    "content-hash": "95d117f0569eb206ed1107ef6e273d62",
+    "hash": "4543ff3f05c0409d1982871454f46a2f",
+    "content-hash": "d098a6bb2142fbfdedb1653642f07e61",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4179,7 +4179,8 @@
                     "datestamp": "1480363983"
                 },
                 "patches_applied": {
-                    "Remove version constraints. | http://drupal.org/node/2770791": "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
+                    "Remove version constraints. | http://drupal.org/node/2770791": "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch",
+                    "The getRevisionUserId and setRevisionUserId methods do not work | https://www.drupal.org/node/2873448": "https://www.drupal.org/files/issues/media-entity-revision-id-api-broken.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4848,7 +4849,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "c80e8aa3a6a6bb706c071e520b35557baf25bf1a"
+                "reference": "dcf295c7cdfe5425b83f06a1369c3787e9aca539"
             },
             "require": {
                 "drupal/core": "*"
@@ -4863,7 +4864,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1490288285"
+                    "datestamp": "1493247784"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4881,7 +4882,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_note"
             },
-            "time": "2017-03-23 17:21:33"
+            "time": "2017-04-27 00:18:35"
         },
         {
             "name": "drupal/moderation_sidebar",
@@ -6248,17 +6249,17 @@
         },
         {
             "name": "drupal/video_embed_field",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/video_embed_field",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.4.zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.5.zip",
                 "reference": null,
-                "shasum": "7bf93a52e2e8d639b4dbefd65f0ee2b170d73f43"
+                "shasum": "f54d470ef7f863604e51e6ae98cd40ef25de5f79"
             },
             "require": {
                 "drupal/core": "*"
@@ -6275,7 +6276,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x",
-                    "datestamp": "1484253183",
+                    "datestamp": "1493246342",
                     "package": "Field types"
                 }
             },

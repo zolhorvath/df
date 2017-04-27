@@ -188,6 +188,7 @@ projects[mailsystem][version] = "4.1"
 projects[media_entity][type] = "module"
 projects[media_entity][version] = "1.6"
 projects[media_entity][patch][] = "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
+projects[media_entity][patch][] = "https://www.drupal.org/files/issues/media-entity-revision-id-api-broken.patch"
 
 projects[media_entity_document][type] = "module"
 projects[media_entity_document][version] = "1.1"

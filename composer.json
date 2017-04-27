@@ -226,7 +226,9 @@
             },
             "drupal/media_entity": {
                 "Remove version constraints. | http://drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch"
+                "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch",
+                "The getRevisionUserId and setRevisionUserId methods do not work | https://www.drupal.org/node/2873448":
+                "https://www.drupal.org/files/issues/media-entity-revision-id-api-broken.patch"
             },
             "drupal/migrate_plus": {
                 "Properly integrate configuration-entity-based migrations with the core plugin manager | https://www.drupal.org/node/2752335":
