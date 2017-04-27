@@ -80,26 +80,6 @@ class PanelsInPlaceContext extends DrupalSubContextBase {
   }
 
   /**
-   * Close the Panels IPE tray.
-   *
-   * @When I close the editor
-   */
-  public function closeEditor() {
-    $assert = $this->assertSession();
-
-    // Assert that the tab exists...
-    $link = $assert->elementExists(
-      'named',
-      ['link', 'Cancel'],
-      $assert->elementExists('css', '.ipe-tabs', $this->assertTray())
-    );
-
-    $link->click();
-    $this->getSession()->getDriver()->getWebDriverSession()->accept_alert();
-    $this->minkContext->iWaitForAjaxToFinish();
-  }
-
-  /**
    * Opens a particular block category of the "Manage Content" tab.
    *
    * @param string $category
@@ -209,6 +189,7 @@ class PanelsInPlaceContext extends DrupalSubContextBase {
         $this->assertTray()
       )
       ->click();
+
     $this->minkContext->iWaitForAjaxToFinish();
   }
 
@@ -240,6 +221,48 @@ class PanelsInPlaceContext extends DrupalSubContextBase {
       ->elementExists('named', ['link', 'Revert to default'], $this->assertTray())
       ->click();
 
+    $this->minkContext->iWaitForAjaxToFinish();
+  }
+
+  /**
+   * Opens the moderation sidebar.
+   *
+   * @When I open the moderation sidebar
+   */
+  public function openModerationSidebar() {
+    $assert = $this->assertSession();
+
+    // Assert that the tab exists...
+    $link = $assert->elementExists(
+      'named',
+      ['link', 'Tasks'],
+      $assert->elementExists('css', '.moderation-sidebar-toolbar-tab')
+    );
+
+    // ...but only open it if not already active.
+    if ($link->hasClass('sidebar-open') == FALSE) {
+      $link->click();
+      $this->minkContext->iWaitForAjaxToFinish();
+    }
+  }
+
+  /**
+   * Close the Panels IPE tray.
+   *
+   * @When I close the editor
+   */
+  public function closeEditor() {
+    $assert = $this->assertSession();
+
+    // Assert that the tab exists...
+    $link = $assert->elementExists(
+      'named',
+      ['link', 'Cancel'],
+      $assert->elementExists('css', '.ipe-tabs', $this->assertTray())
+    );
+
+    $link->click();
+    $this->getSession()->getDriver()->getWebDriverSession()->accept_alert();
     $this->minkContext->iWaitForAjaxToFinish();
   }
 
