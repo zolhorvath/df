@@ -115,6 +115,9 @@ projects[entity_gallery][download][type] = "git"
 projects[entity_gallery][download][branch] = "8.x-1.x"
 projects[entity_gallery][version] = "1.x-dev"
 
+projects[facets][type] = "module"
+projects[facets][version] = "1.0-alpha9"
+
 projects[features][type] = "module"
 projects[features][version] = "3.5"
 
