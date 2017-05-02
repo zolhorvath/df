@@ -9,4 +9,5 @@ dependencies:
   - df_tools_user
   - moderation_sidebar
   - revision_log_default
+  - workbench_email
   - workbench_moderation

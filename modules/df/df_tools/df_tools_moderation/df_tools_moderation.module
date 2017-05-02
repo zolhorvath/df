@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
 
 /**
@@ -54,4 +55,57 @@ function df_tools_moderation_menu_local_tasks_alter(&$data, $route_name) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function df_tools_moderation_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
+  $replacements = [];
+
+  if ($type == 'node' && !empty($data['node'])) {
+    $url_options = ['absolute' => TRUE];
+    if (isset($options['langcode'])) {
+      $url_options['language'] = \Drupal::languageManager()->getLanguage($options['langcode']);
+      $langcode = $options['langcode'];
+    }
+    else {
+      $langcode = NULL;
+    }
+
+    /** @var \Drupal\node\NodeInterface $node */
+    $node = $data['node'];
+    /** @var \Drupal\workbench_moderation\ModerationInformation $moderation_information */
+    $moderation_information = \Drupal::service('workbench_moderation.moderation_information');
+    /** @var \Drupal\node\NodeInterface $latest */
+    $latest = $moderation_information->getLatestRevision('node', $node->id());
+    if ($langcode) {
+      $latest = $latest->getTranslation($langcode);
+    }
+
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'latest_author':
+          $replacements[$original] = $latest->getRevisionUser()->label();
+          break;
+        case 'latest_url':
+          if ($node->getRevisionId() !== $latest->getRevisionId()) {
+            $replacements[$original] = Url::fromRoute('entity.node.latest_version', [
+              'node' => $node->id(),
+            ], $url_options)->toString();
+          }
+          else {
+            $replacements[$original] = $latest->toUrl('canonical', $url_options)->toString();
+          }
+          break;
+      }
+    }
+
+    $token_service = \Drupal::token();
+    if ($author_tokens = $token_service->findWithPrefix($tokens, 'latest_author')) {
+      $replacements += $token_service->generate('user', $author_tokens, ['user' => $latest->getRevisionUser()], $options, $bubbleable_metadata);
+    }
+  }
+
+  return $replacements;
 }
