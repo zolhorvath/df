@@ -355,6 +355,9 @@ projects[view_modes_display][type] = "module"
 projects[views_infinite_scroll][type] = "module"
 projects[views_infinite_scroll][version] = "1.3"
 
+projects[workbench_email][type] = "module"
+projects[workbench_email][version] = "1.0-alpha4"
+
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][version] = "1.2"
 projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/2685163-21.patch"
