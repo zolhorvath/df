@@ -244,7 +244,9 @@
                 "Provide hook to alter available blocks | https://www.drupal.org/node/2767087":
                 "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503":
-                "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+                "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
+                "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425":
+                "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch"
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":

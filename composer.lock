@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fa799ab4540c9b033eb4a35c18616b21",
-    "content-hash": "5e3dadba48c2e2268827901a73e1f32d",
+    "hash": "a0c954f8a9ba13353ac0e90c41a47efa",
+    "content-hash": "510b71aa71ee1bb8965bd312152d8ef1",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5156,7 +5156,8 @@
                 "patches_applied": {
                     "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                     "Provide hook to alter available blocks | https://www.drupal.org/node/2767087": "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch",
-                    "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+                    "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
+                    "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
