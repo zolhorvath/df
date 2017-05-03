@@ -12,7 +12,7 @@ third_party_settings:
 id: pagetitle
 theme: tec
 region: content
-weight: 0
+weight: -50
 provider: null
 plugin: page_title_block
 settings:
