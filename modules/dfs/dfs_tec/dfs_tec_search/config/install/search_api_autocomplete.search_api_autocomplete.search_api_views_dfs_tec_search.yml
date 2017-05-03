@@ -1,0 +1,23 @@
+uuid: 168d5f69-e3b4-4d5c-b1e5-0b0df2f5ab01
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.content
+id: search_api_views_dfs_tec_search
+label: search_api_views_dfs_tec_search
+index_id: content
+suggester_id: server
+type: views
+options:
+  suggester_configuration:
+    fields:
+      rendered: 0
+      label: 0
+  min_length: '0'
+  results: 1
+  delay: ''
+  custom:
+    display: default
+  submit_button_selector: ':submit'
+  autosubmit: 1
