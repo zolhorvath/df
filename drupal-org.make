@@ -325,7 +325,7 @@ projects[search_api_autocomplete][type] = "module"
 projects[search_api_autocomplete][version] = "1.0-alpha1"
 
 projects[search_api_solr][type] = "module"
-projects[search_api_solr][version] = "1.0-beta2"
+projects[search_api_solr][version] = "1.0-beta3"
 
 projects[search_autocomplete][type] = "module"
 projects[search_autocomplete][download][type] = "git"
