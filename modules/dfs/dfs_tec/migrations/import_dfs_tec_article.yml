@@ -24,6 +24,7 @@ process:
         migration: import_dfs_tec_tags
     body/format: { plugin: default_value, default_value: rich_text }
     moderation_state: { plugin: default_value, default_value: published }
+    created: Created
 provider: import
 migration_dependencies:
     required: [import_dfs_tec_tags]
