@@ -24,7 +24,7 @@ projects[admin_toolbar][type] = "module"
 projects[admin_toolbar][version] = "1.19"
 
 projects[adminimal_admin_toolbar][type] = "module"
-projects[adminimal_admin_toolbar][version] = "1.3"
+projects[adminimal_admin_toolbar][version] = "1.4"
 projects[adminimal_admin_toolbar][patch][] = "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
 
 projects[better_formats][type] = "module"
