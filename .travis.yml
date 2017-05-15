@@ -96,6 +96,10 @@ install:
   # Install DF cleanly so that settings.php will be created properly.
   - phing install -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1
 
+  # Generate Behat configuration.
+  - drupal behat:init http://127.0.0.1:8080 --merge=../tests/behat.yml
+  - drupal behat:include ../tests/features --with-subcontexts=../tests/features/bootstrap --with-subcontexts=../src/DFExtension/Context
+
   # Import the fixture, if it exists.
   - phing remember -Dversion=$VERSION -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1
 
@@ -103,20 +107,17 @@ install:
   - cd docroot
   - drush cache-rebuild
   - if [[ "$SCENARIO" != none ]]; then travis_wait drush es $SCENARIO; fi
-  - cd ..
 
 before_script:
-  - cd docroot
   - drush runserver --default-server=builtin 8080 &>/dev/null &
   - jdk_switcher use oraclejdk8
   # Start Selenium and dump its ginormous log into a temporary file.
   - mkdir ../tmp
   - selenium-server-standalone -port 4444 -log ../tmp/selenium2.log &
   - sleep 5
-  - cd ./profiles/df
 
 script:
-  - if [[ "$LIGHTNING" != HEAD ]]; then composer validate --no-check-all --ansi; fi
-  - behat --strict --stop-on-failure --tags=none
-  - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=df; fi
-  - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --tags=$SCENARIO; fi
+  - if [[ "$LIGHTNING" != HEAD ]]; then composer validate ./profiles/df/composer.json --no-check-all --ansi; fi
+  - behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=none
+  - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=df; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=$SCENARIO; fi

@@ -16,11 +16,6 @@ bin/
 docroot/
 vendor/
 
-# Behat
-tests/bin
-tests/behat.local.yml
-tests/behat.yml
-
 # Contrib
 modules/contrib/*
 themes/contrib/*

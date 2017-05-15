@@ -65,48 +65,18 @@ Once that is installed, start the gulp file which will watch for scss changes:
 - ``npm start``
 
 ## Running Tests
-
-These instructions assume you have used Composer to install Demo Framework.
+These instructions assume you have used Composer to install Lightning. Once you
+have it up and running, follow these steps to execute all of Lightning's Behat
+tests:
 
 ### Behat
+    $ cd MYPROJECT
+    $ ./bin/drupal behat:init http://YOUR.DF.SITE --merge=../tests/behat.yml
+    $ ./bin/drupal behat:include ../tests/features --with-subcontexts=../tests/features/bootstrap --with-subcontexts=../src/LightningExtension/Context
+    $ ./bin/behat --config ./docroot/sites/default/files/behat.yml
 
-Demo Framework includes a copy of Behat, Mink and the Drupal
-Extension to Behat and Mink in the /bin folder located outside of the docroot.
-Alternatively, you may [globally install](http://behat-drupal-extension.readthedocs.io/en/3.1/globalinstall.html) and use the Drupal Extension.
-
-Selenium is required to run the JavaScript tests. You can download Selenium from
-http://www.seleniumhq.org and run it with:
-
-``java -jar selenium.jar``
-
-Note that you may require a newer version of Java which can be downloaded from
-http://www.oracle.com/technetwork/java/javase/downloads/index.html.
-
-The default browser for our tests is Google Chrome. You will need to add the Chromedriver to your path to run tests. [Download the latest Chromedriver for your OS](https://sites.google.com/a/chromium.org/chromedriver/downloads) then unpack the archive and move the ``chromedriver`` file to ``/usr/local/bin/chromedriver``. If you are not using OSX, see Google's [Getting started](https://sites.google.com/a/chromium.org/chromedriver/getting-started) docs for installing the WebDriver for Chrome.
-
-Before running any tests you must edit the behat.local.yml file, located within
-DRUPAL_ROOT/profiles/df, replacing "base_url" with the URL to your site.
-
-In order to run the tests, you must be in the DRUPAL_ROOT/profiles/df directory.
-
-  ``cd DRUPAL_ROOT/profiles/df``
-
-Check that behat is installed and running.
-
-  ``behat --help``
-
-Execute a batch of tagged features that apply to all DF Scenarios.
-
-  ``behat --tags=df``
-
-Execute a batch of tagged features for a specific DF Scenario.
-
-  ``behat --tags=dfs_dev``
-
-If you're using the copy of Behat included with DF, then substitute "behat" in
-the above examples with:
-
-``/path/to/MYPROJECT/bin/behat``
+If necessary, you can edit ```docroot/sites/default/files/behat.yml``` to match
+your environment, but generally you will not need to do this.
 
 ## Resources
 
