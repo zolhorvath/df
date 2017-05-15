@@ -263,6 +263,7 @@ projects[panels][version] = "4.0-beta1"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-layout-picker-styling.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-rc1"
