@@ -159,7 +159,9 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
   }
 
   if (isset($form['flipper']['front']['settings']['label_display'])) {
-    $form['flipper']['front']['settings']['label_display']['#default_value'] = FALSE;
+    if (empty($form['uuid']['#value'])) {
+      $form['flipper']['front']['settings']['label_display']['#default_value'] = FALSE;
+    }
     $form['flipper']['front']['settings']['label_display']['#weight'] = -1;
   }
 
