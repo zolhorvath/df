@@ -264,6 +264,7 @@ projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-remo
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-layout-picker-styling.patch"
+projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch"
 
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.0-rc1"
