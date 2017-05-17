@@ -1,0 +1,38 @@
+# This file is used by Acquia Pipelines continuous integration. It builds
+# Demo Framework and runs its functional tests. Upon success, an artifact is
+# deployed to the demoframeworktests (adef0efb-9742-4158-9a17-3554db4c5e7c) sub
+# on Acquia cloud.
+version: 1.0.0
+services:
+  - mysql
+
+events:
+  build:
+    steps:
+      - setup:
+          type: script
+          script:
+            - set -x
+            - composer validate --no-check-all --ansi
+            - composer install
+      - install:
+          type: script
+          script:
+            - set -x
+            - mysql -u root -proot -e 'CREATE DATABASE drupal;'
+            - ./bin/phing install -Ddb.password=root -Ddb.database=drupal
+            # Add the Acquia cloud database snippet to the settings file.
+            - ./bin/phing cloud-db-snippet
+            - mkdir -p ./config/default
+            # Generate Behat configuration.
+            - ./bin/drupal behat:init http://127.0.0.1:8080 --merge=../tests/behat.yml
+            - ./bin/drupal behat:include ../tests/features --with-subcontexts=../tests/features/bootstrap --with-subcontexts=../src/DFExtension/Context
+      - test:
+          type: script
+          script:
+            - set -x
+            - cd docroot
+            - ../bin/drush runserver --default-server=builtin 8080 &>/dev/null &
+            - ../bin/phantomjs --webdriver=4444 > /dev/null &
+            - sleep 10
+            - ../bin/behat --stop-on-failure --config ./sites/default/files/behat.yml --tags=~javascript
