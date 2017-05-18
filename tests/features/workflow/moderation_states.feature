@@ -71,13 +71,12 @@ Feature: Workflow moderation states
   Scenario: Quick edit a forward revision
     Given I am logged in as a user with the "administrator" role
     And page content:
-      | title | moderation_state | path   |
-      | Squid | published        | /squid |
+      | title | body   | moderation_state | path   |
+      | Squid | Squid. | published        | /squid |
     When I visit "/squid"
-    And I click "New draft"
-    And I select "Draft" from "Moderation state"
-    And I press "Save"
-    And I wait 2 seconds
+    And I open the moderation sidebar
+    And I press the "Create New Draft" button
+    And I wait for AJAX to finish
     Then I should see a "system_main_block" block with a "quickedit" contextual link
 
   @35d54919
@@ -101,17 +100,3 @@ Feature: Workflow moderation states
     When I visit "/node/add/not_moderated"
     Then I should see the "Save and publish" button
     And I should see the "Save as unpublished" button
-
-  @7cef449b
-  Scenario: Unmoderated content types have the "Create new revision" Checkbox
-    Given node_type entities:
-      | type          | name          |
-      | not_moderated | Not Moderated |
-    And not_moderated content:
-      | title       | path       |
-      | Deft Zebra  | /deft-zebra |
-    And I am logged in as a user with the administrator role
-    When I visit "/deft-zebra"
-    And I click "Edit"
-    Then I should see "Create new revision"
-
