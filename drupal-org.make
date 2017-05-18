@@ -336,6 +336,7 @@ projects[swiftmailer][version] = "1.x-dev"
 
 projects[token][type] = "module"
 projects[token][version] = "1.0-rc1"
+projects[token][patch][] = "https://www.drupal.org/files/issues/token-deprecated-calls.patch"
 
 projects[typed_data][type] = "module"
 projects[typed_data][version] = "1.0-alpha1"
@@ -364,6 +365,7 @@ projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/w
 projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/2668006-2.patch"
 projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/2847078-6.patch"
 projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
+projects[workbench_moderation][patch][] = "https://www.drupal.org/files/issues/workbench-moderation-deprecated.patch"
 
 projects[workspace][type] = "module"
 projects[workspace][version] = "1.0-alpha4"
