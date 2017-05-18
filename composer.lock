@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00705c01cc8a044069bb548ced834b57",
-    "content-hash": "5c7681ca87b3b9f7c9853337836876bc",
+    "hash": "4508e180276c7b9e68d648d6f8b4154b",
+    "content-hash": "eb3953a8fa8003ca9bc7ac9a99b454c6",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3961,6 +3961,9 @@
                 "drupal": {
                     "version": "8.x-1.0-beta1+3-dev",
                     "datestamp": "1485300782"
+                },
+                "patches_applied": {
+                    "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091": "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

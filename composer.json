@@ -220,6 +220,10 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605":
                 "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605-6.patch"
             },
+            "drupal/leaflet": {
+                "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
+                "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
+            },
             "drupal/media_entity": {
                 "Remove version constraints. | http://drupal.org/node/2770791":
                 "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch",

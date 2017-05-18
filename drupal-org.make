@@ -172,6 +172,7 @@ projects[leaflet][type] = "module"
 projects[leaflet][download][type] = "git"
 projects[leaflet][download][branch] = "8.x-1.x"
 projects[leaflet][version] = "1.x-dev"
+projects[leaflet][patch][] = "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
 
 projects[libraries][type] = "module"
 projects[libraries][download][type] = "git"
