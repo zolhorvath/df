@@ -240,4 +240,11 @@
     }
   };
 
+  Drupal.behaviors.DFSBaseLeafletSleepCleanup = {
+    attach: function (context, settings) {
+      // Remove duplicate leaflet sleep messages.
+      $('.sleep-note:not(:last-child)').remove();
+    }
+  }
+
 })(jQuery, Drupal, drupalSettings);
