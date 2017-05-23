@@ -6,6 +6,10 @@ version: 1.0.0
 services:
   - mysql
 
+variables:
+  global:
+    SCENARIO: none
+
 events:
   build:
     steps:
@@ -21,6 +25,7 @@ events:
             - set -x
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
             - ./bin/phing install -Ddb.password=root -Ddb.database=drupal
+            - if [[ "$SCENARIO" != none ]]; then cd docroot; ../bin/drush cache-rebuild; ../bin/drush es $SCENARIO; cd ..; fi
             # Add the Acquia cloud database snippet to the settings file.
             - ./bin/phing cloud-db-snippet
             - mkdir -p ./config/default
@@ -35,4 +40,5 @@ events:
             - ../bin/drush runserver --default-server=builtin 8080 &>/dev/null &
             - ../bin/phantomjs --webdriver=4444 > /dev/null &
             - sleep 10
-            - ../bin/behat --stop-on-failure --config ./sites/default/files/behat.yml --tags='df&&~javascript'
+            - ../bin/behat --stop-on-failure --config ./sites/default/files/behat.yml --tags="df&&~javascript"
+            - if [[ "$SCENARIO" != none ]]; then ../bin/behat --stop-on-failure --config ./sites/default/files/behat.yml --tags="$SCENARIO&&~javascript"; fi
