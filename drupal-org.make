@@ -329,7 +329,7 @@ projects[search_api_autocomplete][type] = "module"
 projects[search_api_autocomplete][version] = "1.0-alpha2"
 
 projects[search_api_solr][type] = "module"
-projects[search_api_solr][version] = "1.0-beta3"
+projects[search_api_solr][version] = "1.0-rc3"
 
 projects[swiftmailer][type] = "module"
 projects[swiftmailer][download][type] = "git"
