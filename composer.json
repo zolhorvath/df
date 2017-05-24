@@ -248,7 +248,9 @@
                 "Improve Layout Picker styling in Panels IPE | https://www.drupal.org/node/2878650":
                 "https://www.drupal.org/files/issues/panels-ipe-layout-picker-styling.patch",
                 "Use String.match to correlate regions when switching Layouts in Panels IPE | https://www.drupal.org/node/2878684":
-                "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch"
+                "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch",
+                "Form error messages do not appear in IPE | https://www.drupal.org/node/2825034":
+                "https://www.drupal.org/files/issues/panels-ipe-propogate-errors-2825034-5.patch"
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685":
