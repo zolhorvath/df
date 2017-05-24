@@ -323,7 +323,7 @@ projects[scheduler][type] = "module"
 projects[scheduler][version] = "1.0-rc1"
 
 projects[search_api][type] = "module"
-projects[search_api][version] = "1.0-rc4"
+projects[search_api][version] = "1.1"
 
 projects[search_api_autocomplete][type] = "module"
 projects[search_api_autocomplete][version] = "1.0-alpha1"
