@@ -84,7 +84,7 @@ projects[diff][type] = "module"
 projects[diff][version] = "1.0-rc1"
 
 projects[dropzonejs][type] = "module"
-projects[dropzonejs][version] = "1.0-alpha6"
+projects[dropzonejs][version] = "1.0-alpha7"
 projects[dropzonejs][patch][] = "https://www.drupal.org/files/issues/2868449-2.patch"
 
 projects[embed][type] = "module"
