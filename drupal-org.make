@@ -358,7 +358,7 @@ projects[views_infinite_scroll][type] = "module"
 projects[views_infinite_scroll][version] = "1.3"
 
 projects[workbench_email][type] = "module"
-projects[workbench_email][version] = "1.0-alpha4"
+projects[workbench_email][version] = "1.0-alpha5"
 
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][version] = "1.2"
