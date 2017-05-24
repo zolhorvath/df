@@ -285,6 +285,9 @@
         },
         "patches-ignore": {
             "acquia/lightning": {
+                "drupal/dropzonejs": {
+                    "2868449 - dropzonejs/integration library is missing a dependency on jquery.once": "https://www.drupal.org/files/issues/2868449-2.patch"
+                },
                 "drupal/entity_block": {
                     "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
                 }
