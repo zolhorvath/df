@@ -7,17 +7,17 @@ dependencies:
 id: search_api_views_search
 label: search_api_views_search
 index_id: content
-suggester_id: server
+suggester: server
+suggester_settings:
+  fields:
+    rendered: rendered
+    label: label
 type: views
+type_settings:
+  display: default
 options:
-  suggester_configuration:
-    fields:
-      rendered: 0
-      label: 0
-  min_length: '0'
-  results: 1
-  delay: ''
-  custom:
-    display: default
+  min_length: 1
+  show_count: false
+  delay: null
   submit_button_selector: ':submit'
-  autosubmit: 1
+  autosubmit: true
