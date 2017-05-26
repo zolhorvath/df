@@ -11,7 +11,7 @@ projects[lightning][subdir] = ""
 
 ; Modules
 projects[acquia_connector][type] = "module"
-projects[acquia_connector][version] = "1.10"
+projects[acquia_connector][version] = "1.11"
 
 projects[address][type] = "module"
 projects[address][version] = "1.0-rc4"
@@ -77,7 +77,7 @@ projects[crop][type] = "module"
 projects[crop][version] = "1.2"
 
 projects[ctools][type] = "module"
-projects[ctools][version] = "3.0-alpha27"
+projects[ctools][version] = "3.0"
 projects[ctools][patch][] = "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
 
 projects[diff][type] = "module"
@@ -85,7 +85,6 @@ projects[diff][version] = "1.0-rc1"
 
 projects[dropzonejs][type] = "module"
 projects[dropzonejs][version] = "1.0-alpha7"
-projects[dropzonejs][patch][] = "https://www.drupal.org/files/issues/2868449-2.patch"
 
 projects[embed][type] = "module"
 projects[embed][version] = "1.0"
@@ -200,7 +199,7 @@ projects[media_entity_image][type] = "module"
 projects[media_entity_image][version] = "1.2"
 
 projects[media_entity_instagram][type] = "module"
-projects[media_entity_instagram][version] = "1.2"
+projects[media_entity_instagram][version] = "1.4"
 
 projects[media_entity_twitter][type] = "module"
 projects[media_entity_twitter][version] = "1.3"
@@ -254,22 +253,22 @@ projects[oauth][download][branch] = "8.x-1.x"
 projects[oauth][version] = "1.x-dev"
 
 projects[page_manager][type] = "module"
-projects[page_manager][version] = "4.0-beta1"
+projects[page_manager][version] = "4.0-beta2"
 
 projects[panelizer][type] = "module"
-projects[panelizer][version] = "4.0-beta3"
+projects[panelizer][version] = "4.0"
 
 projects[panels][type] = "module"
-projects[panels][version] = "4.0-beta1"
+projects[panels][version] = "4.1"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch"
-projects[panels][patch][] = "https://www.drupal.org/files/issues/panels_override_blocks-2767087-4.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch"
+projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-layout-picker-styling.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch"
 projects[panels][patch][] = "https://www.drupal.org/files/issues/panels-ipe-propogate-errors-2825034-5.patch"
 
 projects[pathauto][type] = "module"
-projects[pathauto][version] = "1.0-rc1"
+projects[pathauto][version] = "1.0"
 
 projects[replication][type] = "module"
 projects[replication][version] = "1.0-alpha5"
@@ -337,7 +336,7 @@ projects[swiftmailer][download][branch] = "8.x-1.x"
 projects[swiftmailer][version] = "1.x-dev"
 
 projects[token][type] = "module"
-projects[token][version] = "1.0-rc1"
+projects[token][version] = "1.0"
 projects[token][patch][] = "https://www.drupal.org/files/issues/token-deprecated-calls.patch"
 
 projects[typed_data][type] = "module"
@@ -349,7 +348,7 @@ projects[url_embed][download][branch] = "8.x-1.x"
 projects[url_embed][version] = "1.x-dev"
 
 projects[video_embed_field][type] = "module"
-projects[video_embed_field][version] = "1.4"
+projects[video_embed_field][version] = "1.5"
 
 projects[view_modes_display][version] = "1.0"
 projects[view_modes_display][type] = "module"
