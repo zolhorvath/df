@@ -279,10 +279,9 @@ projects[refreshless][type] = "module"
 projects[refreshless][version] = "1.0-alpha3"
 
 projects[rules][type] = "module"
-projects[rules][version] = "3.0-alpha2"
+projects[rules][version] = "3.0-alpha3"
 projects[rules][patch][] = "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch"
 projects[rules][patch][] = "https://www.drupal.org/files/issues/rules-fix-tests.patch"
-projects[rules][patch][] = "https://www.drupal.org/files/issues/rules-2824348-9.patch"
 projects[rules][patch][] = "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
 
 projects[replicate][type] = "module"
