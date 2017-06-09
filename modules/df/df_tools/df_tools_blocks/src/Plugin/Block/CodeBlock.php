@@ -30,11 +30,12 @@ class CodeBlock extends BlockBase {
    */
   public function blockForm($form, FormStateInterface $form_state) {
     $form['code'] = [
-      '#type' => 'textarea',
       '#title' => $this->t('Code'),
+      '#type' => 'text_format',
+      '#format' => 'full_html',
       '#description' => $this->t('Add javascript or html code.'),
       '#default_value' => $this->configuration['code'],
-      '#weight' => '0',
+      '#weight' => '6',
     ];
 
     return $form;
