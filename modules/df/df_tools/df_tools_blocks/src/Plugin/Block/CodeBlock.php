@@ -34,7 +34,7 @@ class CodeBlock extends BlockBase {
       '#type' => 'text_format',
       '#format' => 'full_html',
       '#description' => $this->t('Add javascript or html code.'),
-      '#default_value' => $this->configuration['code'],
+      '#default_value' => $this->configuration['code']['value'],
       '#weight' => '6',
     ];
 
@@ -52,7 +52,7 @@ class CodeBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return ['code_block_code' => ['#markup' => $this->configuration['code']]];
+    return ['code_block_code' => ['#markup' => $this->configuration['code']['value']]];
   }
 
 }
