@@ -20,10 +20,8 @@ class CodeBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return [
-         'code' => $this->t(''),
-        ] + parent::defaultConfiguration();
- }
+    return ['code' => $this->t('')] + parent::defaultConfiguration();
+  }
 
   /**
    * {@inheritdoc}
@@ -52,7 +50,8 @@ class CodeBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return ['code_block_code' => ['#markup' => $this->configuration['code']['value']]];
+    return ['code_block_code' => ['#theme' => 'code_block', '#code' => $this->configuration['code']['value']]];
   }
 
 }
+
