@@ -123,7 +123,7 @@ class Package {
 
       // Override the default 'contrib' subdirectory set above in order to
       // prevent the profile from being placed in a 'contrib' folder.
-      unset($make['projects']['lightning']['subdir']);
+      $make['projects']['lightning']['subdir'] = '""';
 
       // Fix the download tag which is incorrectly set to the download branch.
       $make['projects']['lightning']['download']['tag'] = $make['projects']['lightning']['download']['branch'];
