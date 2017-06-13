@@ -1,7 +1,6 @@
 core = 8.x
 api = 2
 defaults[projects][subdir] = contrib
-defaults[libraries][destination] = ../../libraries
 projects[acquia_connector][type] = module
 projects[acquia_connector][version] = 1.12
 projects[address][type] = module
@@ -286,8 +285,7 @@ projects[zurb-foundation][download][branch] = 6.x
 projects[zurb-foundation][download][revision] = 3e62524be52ab84de2c608fb6e917bd2af030da3
 projects[zurb-foundation][patch][] = https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch
 projects[lightning][type] = profile
-projects[lightning][subdir] = 
-projects[lightning][version] = 2.1.4
+projects[lightning][version] = 2.14
 libraries[masonry][type] = library
 libraries[masonry][download][type] = git
 libraries[masonry][download][url] = https://github.com/desandro/masonry.git

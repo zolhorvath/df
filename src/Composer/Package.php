@@ -85,7 +85,6 @@ class Package {
 
     // Set default settings for projects and libraries.
     $make['defaults']['projects']['subdir'] = 'contrib';
-    $make['defaults']['libraries']['destination'] = '../../libraries';
 
     if (isset($make['projects']['drupal'])) {
       // Always use drupal.org's core repository, or patches will not apply.
@@ -119,9 +118,12 @@ class Package {
       // Copy the library into a project which uses the correct name.
       $make['projects']['lightning'] = $make['libraries']['acquia/lightning'];
 
-      // Override the project 'type' and 'subdir' with the correct values.
+      // Identify the project as a 'profile'.
       $make['projects']['lightning']['type'] = 'profile';
-      $make['projects']['lightning']['subdir'] = '';
+
+      // Override the default 'contrib' subdirectory set above in order to
+      // prevent the profile from being placed in a 'contrib' folder.
+      unset($make['projects']['lightning']['subdir']);
 
       // Fix the download tag which is incorrectly set to the download branch.
       $make['projects']['lightning']['download']['tag'] = $make['projects']['lightning']['download']['branch'];
@@ -136,9 +138,15 @@ class Package {
         if (isset($project['download']['tag'])) {
           $tag = $project['download']['tag'];
 
-          // The Lightning project has the correct version information which
-          // does not need to be altered.
-          if ($key != 'lightning') {
+          // The Lightning project uses semantic versioning.
+          if ($key == 'lightning') {
+            $sem_ver = explode('.', $tag);
+
+            list($major, $minor, $patch) = $sem_ver;
+
+            $tag = "$major.$minor$patch";
+          }
+          else {
             preg_match('/\d+\.x-\d+\.0/', $tag, $match);
             $tag = str_replace($match, str_replace('x-', NULL, $match), $tag);
             preg_match('/\d+\.\d+\.0/', $tag, $match);
