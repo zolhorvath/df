@@ -47,7 +47,7 @@ class Package {
     // allows distributions to include libraries that have been specifically
     // approved. See the Packaging Whitelist for a list of approved libraries
     // (https://www.drupal.org/packaging-whitelist).
-    $whitelist = ['dropzone', 'fontawesome-iconpicker', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick', 'lightbox2', 'cropper'];
+    $whitelist = ['dropzone', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick', 'lightbox2', 'cropper'];
 
     foreach ($libraries as $library) {
       // Libraries definitions converted from composer.lock are in the form of
