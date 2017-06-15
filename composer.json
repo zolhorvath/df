@@ -365,7 +365,7 @@
         "drupal/search_api_solr": "1.0.0-rc3",
         "drupal/scenarios": "2.x-dev",
         "drupal/scheduler": "1.0.0-rc1",
-        "drupal/swiftmailer": "1.x-dev#142fcdf2b9b50d380c9a0d4d74c030524d0e9288",
+        "drupal/swiftmailer": "1.0.0-beta1",
         "drupal/url_embed": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
         "drupal/workbench_email": "1.0-alpha5",
