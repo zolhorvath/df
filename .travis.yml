@@ -98,11 +98,7 @@ install:
   - drush cc drush
 
   # Install DF cleanly so that settings.php will be created properly.
-  - phing install -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1
-
-  # Generate Behat configuration.
-  - drupal behat:init http://127.0.0.1:8080 --merge=../docroot/profiles/df/tests/behat.yml
-  - drupal behat:include ../docroot/profiles/df/tests/features --with-subcontexts=../docroot/profiles/df/tests/features/bootstrap --with-subcontexts=../docroot/profiles/df/src/DFExtension/Context
+  - phing install -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1 -Durl=http://127.0.0.1:8080
 
   # Import the fixture, if it exists.
   - phing recall -Dversion=$VERSION -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1
