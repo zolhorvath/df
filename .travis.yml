@@ -119,6 +119,5 @@ before_script:
 script:
   - if [[ "$LIGHTNING" != HEAD ]]; then drush verify-makefile ../drupal-org.make; fi
   - if [[ "$LIGHTNING" != HEAD ]]; then composer validate ./profiles/df/composer.json --no-check-all --ansi; fi
-  - behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=none
   - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=df; fi
   - if [[ "$SCENARIO" != none ]]; then behat --strict --stop-on-failure --config ./sites/default/files/behat.yml --tags=$SCENARIO; fi
