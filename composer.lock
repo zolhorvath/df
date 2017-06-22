@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77bd2a9f411ec90849326b9f011c2ee1",
+    "content-hash": "188abc2ccd24e3158975f1c602d562a9",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2053,16 +2053,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.3",
+            "version": "8.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "98da955d81c79f1a753536ab9c9dad5f80a72922"
+                "reference": "f34eee7255142ab5416107972ef13d011f11e163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/98da955d81c79f1a753536ab9c9dad5f80a72922",
-                "reference": "98da955d81c79f1a753536ab9c9dad5f80a72922",
+                "url": "https://api.github.com/repos/drupal/core/zipball/f34eee7255142ab5416107972ef13d011f11e163",
+                "reference": "f34eee7255142ab5416107972ef13d011f11e163",
                 "shasum": ""
             },
             "require": {
@@ -2252,7 +2252,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-06-07T17:35:30+00:00"
+            "time": "2017-06-21T18:13:27+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4892,11 +4892,17 @@
         },
         {
             "name": "drupal/moderation_note",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "dcf295c7cdfe5425b83f06a1369c3787e9aca539"
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_note-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "43f87e3327f5895d53a8d424b9d9ea41f7bfd6ee"
             },
             "require": {
                 "drupal/core": "*"
@@ -4910,8 +4916,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1497631742"
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1497636242"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4928,16 +4934,21 @@
             "homepage": "https://www.drupal.org/project/moderation_note",
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_note"
-            },
-            "time": "2017-04-27 00:18:35"
+            }
         },
         {
             "name": "drupal/moderation_sidebar",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "6ab167fe91c69714f769fa64122494f9c0294c0f"
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "75752af8a2eb034313b7b831120a1d25d116bf31"
             },
             "require": {
                 "drupal/core": "*"
@@ -4951,8 +4962,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1497631742"
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1497635942"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4969,8 +4980,7 @@
             "homepage": "https://www.drupal.org/project/moderation_sidebar",
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
-            },
-            "time": "2017-06-15 22:53:41"
+            }
         },
         {
             "name": "drupal/oauth",
@@ -12184,16 +12194,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.35",
+            "version": "4.8.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87"
+                "reference": "46023de9a91eec7dfb06cc56cb4e260017298517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/791b1a67c25af50e230f841ee7a9c6eba507dc87",
-                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/46023de9a91eec7dfb06cc56cb4e260017298517",
+                "reference": "46023de9a91eec7dfb06cc56cb4e260017298517",
                 "shasum": ""
             },
             "require": {
@@ -12252,7 +12262,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-02-06T05:18:07+00:00"
+            "time": "2017-06-21T08:07:12+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -13691,8 +13701,6 @@
         "drupal/geolocation": 20,
         "drupal/leaflet": 20,
         "drupal/libraries": 20,
-        "drupal/moderation_note": 20,
-        "drupal/moderation_sidebar": 20,
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
         "drupal/oauth": 20,
