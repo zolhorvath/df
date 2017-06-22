@@ -16,7 +16,7 @@
           if (config.customPaging === true) {
             config.customPaging = function (slider, i) {
               var $slide = $(slider.$slides[i]);
-              return $('<a href="javascript:;" class="df-tools-slideshow-custom-pager"></a>').append($slide.find('.df-tools-slideshow-pager-element').clone());
+              return '<a href="javascript:;" class="df-tools-slideshow-custom-pager">'+$slide.find('.df-tools-slideshow-pager-element').html()+'</a>';
             };
             $slideshow.addClass('df-tools-slideshow-uses-custom-pager');
           }
