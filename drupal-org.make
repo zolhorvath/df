@@ -95,7 +95,7 @@ projects[domain][version] = "3.13"
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 
-projects[entity_translation][version] = "1.0-beta5"
+projects[entity_translation][version] = "1.0-beta6"
 projects[entity_translation][type] = "module"
 projects[entity_translation][subdir] = "contrib"
 
