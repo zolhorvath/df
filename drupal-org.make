@@ -315,7 +315,7 @@ projects[translation_helpers][version] = "1.0"
 projects[translation_helpers][type] = "module"
 projects[translation_helpers][subdir] = "contrib"
 
-projects[uuid][version] = "1.0-beta2"
+projects[uuid][version] = "1.0"
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
 
