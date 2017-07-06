@@ -359,7 +359,7 @@
         "drupal/revision_log_default": "1.x-dev",
         "drupal/rules": "3.0.0-alpha3",
         "drupal/search_api_autocomplete": "1.0.0-alpha2",
-        "drupal/search_api_solr": "1.0.0-rc4",
+        "drupal/search_api_solr": "1.0.0",
         "drupal/scenarios": "2.x-dev",
         "drupal/scheduler": "1.0.0-rc1",
         "drupal/swiftmailer": "1.0.0-beta1",
