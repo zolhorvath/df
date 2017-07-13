@@ -330,7 +330,7 @@
         "drupal/field_group": "1.0.0-rc6",
         "drupal/file_entity": "2.0.0-beta3",
         "drupal/geocoder": "2.0.0-alpha5",
-        "drupal/geofield": "1.x-dev",
+        "drupal/geofield": "1.0.0-alpha4",
         "drupal/geophp": "1.x-dev",
         "drupal/geolocation": "1.x-dev",
         "drupal/google_analytics": "2.1.0",
