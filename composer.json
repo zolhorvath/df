@@ -250,10 +250,6 @@
                 "The getRevisionUserId and setRevisionUserId methods do not work | https://www.drupal.org/node/2873448":
                 "https://www.drupal.org/files/issues/media-entity-revision-id-api-broken.patch"
             },
-            "drupal/migrate_plus": {
-                "Properly integrate configuration-entity-based migrations with the core plugin manager | https://www.drupal.org/node/2752335":
-                "https://www.drupal.org/files/issues/properly_integrate-2752335-33.patch"
-            },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
@@ -344,7 +340,7 @@
         "drupal/moderation_dashboard": "1.x-dev",
         "drupal/moderation_note": "1.0.0-alpha1",
         "drupal/moderation_sidebar": "1.0.0-alpha1",
-        "drupal/migrate_plus": "3.x-dev",
+        "drupal/migrate_plus": "4.0.0-beta1",
         "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "4.0.0-beta1",
         "drupal/oauth": "2.1.0",
