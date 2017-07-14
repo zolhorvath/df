@@ -120,6 +120,7 @@ function df_tools_panelizer_layout_alter(&$definitions) {
     'Columns: 1' => t('Hidden'),
     'Columns: 2' => t('Hidden'),
     'Columns: 3' => t('Hidden'),
+    'Moderation Dashboard' => t('Hidden'),
   ];
 
   foreach ($definitions as $layout_name => $layout) {

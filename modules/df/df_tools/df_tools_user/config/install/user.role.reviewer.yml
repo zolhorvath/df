@@ -83,3 +83,4 @@ permissions:
   - 'view latest version'
   - 'administer block classes'
   - 'administer blocks'
+  - 'use moderation dashboard'

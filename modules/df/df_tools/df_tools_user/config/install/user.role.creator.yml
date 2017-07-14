@@ -74,3 +74,4 @@ permissions:
   - 'update any media'
   - 'administer block classes'
   - 'administer blocks'
+  - 'use moderation dashboard'
