@@ -345,6 +345,7 @@
         "drupal/media_entity_video": "1.0.0-beta2",
         "drupal/message": "1.0.0-beta1",
         "drupal/message_notify": "1.0.0-beta1",
+        "drupal/moderation_dashboard": "1.x-dev",
         "drupal/moderation_note": "1.0.0-alpha1",
         "drupal/moderation_sidebar": "1.0.0-alpha1",
         "drupal/migrate_plus": "3.x-dev",

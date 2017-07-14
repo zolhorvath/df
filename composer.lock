@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7da229d1b9c5c36cb54afaca77d85816",
+    "content-hash": "e59c9c52ba7a5df6b9c920493dae71b4",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1237,7 +1237,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1495109886"
+                    "datestamp": "1499893143"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3026,7 +3026,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha9",
-                    "datestamp": "1492681579"
+                    "datestamp": "1499507343"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4799,7 +4799,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_tools",
-                "reference": "c7b6bbd1bc6a5262e7cc1a59c81e2afee8792ad4"
+                "reference": "0df4bfdfdc640138b87be80b738b30c69004738a"
             },
             "require": {
                 "drupal/core": "^8.2",
@@ -4826,6 +4826,10 @@
                 {
                     "name": "mikeryan",
                     "homepage": "https://www.drupal.org/user/4420"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
@@ -4833,7 +4837,52 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_tools"
             },
-            "time": "2017-05-10 19:19:59"
+            "time": "2017-07-12 15:50:55"
+        },
+        {
+            "name": "drupal/moderation_dashboard",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/moderation_dashboard",
+                "reference": "39a33c391a410ee134955eacd5692a058c5f2b39"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/page_manager": "*",
+                "drupal/panels": "*",
+                "drupal/workbench_moderation": "*"
+            },
+            "require-dev": {
+                "drupal/moderation_note": "*",
+                "drupal/scheduled_updates": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1499992143"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                }
+            ],
+            "description": "Provides a per-user dashboard for moderation.",
+            "homepage": "https://www.drupal.org/project/moderation_dashboard",
+            "support": {
+                "source": "http://cgit.drupalcode.org/moderation_dashboard"
+            },
+            "time": "2017-07-14 13:34:28"
         },
         {
             "name": "drupal/moderation_note",
@@ -5565,7 +5614,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/revision_log_default",
-                "reference": "b6b045654b89cb8b92f64822ddb5b2816f3ac0a4"
+                "reference": "f9998ee5c71bcbbb8ab467dd79698dae6689a871"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5576,8 +5625,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1492801443"
+                    "version": "8.x-1.0-alpha1+1-dev",
+                    "datestamp": "1499806743"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5595,7 +5644,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/revision_log_default"
             },
-            "time": "2017-04-21 19:02:48"
+            "time": "2017-07-11 20:56:51"
         },
         {
             "name": "drupal/rules",
@@ -10175,16 +10224,16 @@
         },
         {
             "name": "dflydev/dot-access-configuration",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-dot-access-configuration.git",
-                "reference": "9b65c83159c9003e00284ea1144ad96b69d9c8b9"
+                "reference": "ae6e7138b1d9063d343322cca63994ee1ac5161d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-configuration/zipball/9b65c83159c9003e00284ea1144ad96b69d9c8b9",
-                "reference": "9b65c83159c9003e00284ea1144ad96b69d9c8b9",
+                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-configuration/zipball/ae6e7138b1d9063d343322cca63994ee1ac5161d",
+                "reference": "ae6e7138b1d9063d343322cca63994ee1ac5161d",
                 "shasum": ""
             },
             "require": {
@@ -10231,7 +10280,7 @@
                 "config",
                 "configuration"
             ],
-            "time": "2014-11-14T03:26:12+00:00"
+            "time": "2016-12-12T17:43:40+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -10470,16 +10519,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.0.0-rc23",
+            "version": "1.0.0-rc24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "2bac21223573f5fd8c4d7b725baf5d404e406b0b"
+                "reference": "72ed29dcfb14a13554f3c81cd88bae9bf1c5b6cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/2bac21223573f5fd8c4d7b725baf5d404e406b0b",
-                "reference": "2bac21223573f5fd8c4d7b725baf5d404e406b0b",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/72ed29dcfb14a13554f3c81cd88bae9bf1c5b6cb",
+                "reference": "72ed29dcfb14a13554f3c81cd88bae9bf1c5b6cb",
                 "shasum": ""
             },
             "require": {
@@ -10487,7 +10536,7 @@
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "1.2.*",
                 "doctrine/collections": "1.3.*",
-                "drupal/console-core": "1.0.0-rc23",
+                "drupal/console-core": "1.0.0-rc24",
                 "drupal/console-dotenv": "~0",
                 "drupal/console-extend-plugin": "~0",
                 "gabordemooij/redbean": "~4.3",
@@ -10545,25 +10594,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-06-27T09:27:00+00:00"
+            "time": "2017-07-14T09:18:06+00:00"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.0.0-rc23",
+            "version": "1.0.0-rc24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "b1f3680ae19a4d00f8b701b060521bab2cccd6b1"
+                "reference": "dcf0f04a97a72b23596398a4ed9daa22a8dd5bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/b1f3680ae19a4d00f8b701b060521bab2cccd6b1",
-                "reference": "b1f3680ae19a4d00f8b701b060521bab2cccd6b1",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/dcf0f04a97a72b23596398a4ed9daa22a8dd5bd0",
+                "reference": "dcf0f04a97a72b23596398a4ed9daa22a8dd5bd0",
                 "shasum": ""
             },
             "require": {
-                "dflydev/dot-access-configuration": "1.0.1",
-                "drupal/console-en": "1.0.0-rc23",
+                "dflydev/dot-access-configuration": "^1.0",
+                "drupal/console-en": "1.0.0-rc24",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": "~2.8",
@@ -10626,7 +10675,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-06-27T09:16:56+00:00"
+            "time": "2017-07-14T08:51:18+00:00"
         },
         {
             "name": "drupal/console-dotenv",
@@ -10669,16 +10718,16 @@
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.0-rc23",
+            "version": "1.0.0-rc24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "e2461a8cf8bb29aacae0cf0f8a0a2c8d36ed4220"
+                "reference": "3235d0e3fd30e73b55585d746e7ba8dc39ca9281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/e2461a8cf8bb29aacae0cf0f8a0a2c8d36ed4220",
-                "reference": "e2461a8cf8bb29aacae0cf0f8a0a2c8d36ed4220",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/3235d0e3fd30e73b55585d746e7ba8dc39ca9281",
+                "reference": "3235d0e3fd30e73b55585d746e7ba8dc39ca9281",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -10719,20 +10768,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-06-22T19:05:23+00:00"
+            "time": "2017-07-14T02:44:41+00:00"
         },
         {
             "name": "drupal/console-extend-plugin",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-extend-plugin.git",
-                "reference": "b3a61614c5ba7dc3dcd8d2bff35dd965822aed87"
+                "reference": "ae2a76680f93c0fea31bbcafc6b0bcc234bb2fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/b3a61614c5ba7dc3dcd8d2bff35dd965822aed87",
-                "reference": "b3a61614c5ba7dc3dcd8d2bff35dd965822aed87",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/ae2a76680f93c0fea31bbcafc6b0bcc234bb2fb4",
+                "reference": "ae2a76680f93c0fea31bbcafc6b0bcc234bb2fb4",
                 "shasum": ""
             },
             "require": {
@@ -10760,7 +10809,7 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
-            "time": "2017-07-04T01:55:20+00:00"
+            "time": "2017-07-07T05:12:50+00:00"
         },
         {
             "name": "drupal/devel",
@@ -12304,16 +12353,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.8",
+            "version": "v0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "fe65c30cbc55c71e61ba3a38b5a581149be31b8e"
+                "reference": "58a31cc4404c8f632d8c557bc72056af2d3a83db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/fe65c30cbc55c71e61ba3a38b5a581149be31b8e",
-                "reference": "fe65c30cbc55c71e61ba3a38b5a581149be31b8e",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/58a31cc4404c8f632d8c557bc72056af2d3a83db",
+                "reference": "58a31cc4404c8f632d8c557bc72056af2d3a83db",
                 "shasum": ""
             },
             "require": {
@@ -12373,7 +12422,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-06-24T06:16:19+00:00"
+            "time": "2017-07-06T14:53:52+00:00"
         },
         {
             "name": "se/selenium-server-standalone",
@@ -13684,6 +13733,7 @@
         "drupal/geolocation": 20,
         "drupal/leaflet": 20,
         "drupal/libraries": 20,
+        "drupal/moderation_dashboard": 20,
         "drupal/migrate_plus": 20,
         "drupal/migrate_tools": 20,
         "drupal/oauth": 20,
