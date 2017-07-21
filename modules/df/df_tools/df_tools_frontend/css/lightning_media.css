@@ -2,14 +2,18 @@
  * @file lightning_media.css
  */
 
+body {
+	background: white !important;
+}
+
 input[name="field_tags_target_id"],
 input[name="field_tags_target_id"].form-text {
   max-width: 250px;
 }
 
 nav.eb-tabs ul {
-	margin-top:15px;
 	margin-bottom:15px;
+	display: flex;
 }
 
 nav.eb-tabs ul li.active a {
@@ -29,7 +33,6 @@ nav.eb-tabs ul li a {
 
 .eb-media .pager {
 	text-align: center;
-	border-bottom:1px solid #d0d0d0;
 	bottom:50px;
 	height:50px;
 	line-height: 50px;
@@ -53,6 +56,22 @@ nav.eb-tabs ul li a {
 	padding-top:20px;
 }
 
+.view.eb-media .views-exposed-form {
+	background-color: transparent;
+	padding: 0;
+	margin-bottom: 1.5em;
+}
+
+.views-exposed-form .form-item,
+.views-exposed-form .form-actions {
+	display: inline-block;
+	margin-left: .5em;
+}
+
+.views-exposed-form .form-actions .button {
+	margin-bottom: .4em;
+}
+
 .entity-browser-media-browser-form .view-content {
 	padding-bottom:10px;
 	position: relative;
@@ -73,14 +92,19 @@ nav.eb-tabs ul li a {
 
 .entity-browser-media-browser-form > .form-actions, .entity-browser-image-browser-form > .form-actions, .entity-browser-media-browser-in-modal-form > .form-actions{
 	position: fixed;
-	bottom:0px;
-	background:#fff;
-	width:100%;
-	margin-top:0;
-	margin-bottom:0;
-	padding:10px 0 20px 0;
-	z-index:3;
+	z-index: 1000;
+	padding-bottom: 10px;
+	bottom: 0;
+	padding: 0;
+	background: white;
+	width: 100%;
+	border-top: 1px solid lightgray;
+}
 
+.entity-browser-media-browser-form .is-entity-browser-submit,
+.entity-browser-image-browser-form .is-entity-browser-submit,
+.entity-browser-media-browser-in-modal-form .is-entity-browser-submit {
+	margin: 10px;
 }
 
 .entity-browser-media-browser-form .button, .entity-browser-image-browser-form .button, .entity-browser-media-browser-in-modal-form .button{
