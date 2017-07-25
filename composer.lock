@@ -1400,7 +1400,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1493885887"
+                    "datestamp": "1500955443"
                 },
                 "patches_applied": {
                     "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
@@ -4854,7 +4854,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_dashboard",
-                "reference": "df7602d7b6c2593124b32c07769c6726330aab82"
+                "reference": "ce8af2a8a936a5a974ac87879826ea07bc695245"
             },
             "require": {
                 "drupal/core": "*",
@@ -4873,7 +4873,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1500039242"
+                    "datestamp": "1500334142"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4891,7 +4891,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_dashboard"
             },
-            "time": "2017-07-17 23:24:44"
+            "time": "2017-07-25 19:08:07"
         },
         {
             "name": "drupal/moderation_note",
