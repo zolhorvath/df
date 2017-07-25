@@ -68,6 +68,14 @@ class Package {
       }
     }
 
+    // The doctrine/inflector library is included with Drupal core and does not
+    // need to be added to the make file. It is pinned to a specific version for
+    // Composer-based workflows in order to support PHP < 7 which is still used
+    // in the development, testing and deployment of DF.
+    if (isset($make['libraries']['doctrine/inflector'])) {
+      unset($make['libraries']['doctrine/inflector']);
+    }
+
     // The ckeditor-track-changes library is designed to be renamed, after
     // download, to 'lite'.
     if (isset($make['libraries']['ckeditor-track-changes'])) {
