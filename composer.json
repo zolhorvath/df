@@ -302,7 +302,7 @@
         "desandro/masonry": "v3.3.1",
         "desandro/imagesloaded": "v3.1.8",
         "doctrine/inflector": "1.1.0",
-        "drupal/address": "1.0.0",
+        "drupal/address": "1.1.0",
         "drupal/addtoany": "1.8.0",
         "drupal/admin_toolbar": "1.19.0",
         "drupal/adminimal_admin_toolbar": "1.4.0",
