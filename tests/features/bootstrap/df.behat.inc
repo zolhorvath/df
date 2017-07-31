@@ -583,7 +583,6 @@ class DFSubContext extends DrupalSubContextBase {
    * @When I embed the content :title in the :region region
    */
   public function embedIPEContent($title, $region) {
-    $this->maximize();
     // Open the Content Embed form.
     $this->clickElementBySelector('a[title="Manage Content"]');
     $this->minkContext->iWaitForAjaxToFinish();
