@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.content
+    - search_api.index.dfs_tec
   module:
     - search_api
 id: dfs_tec_search
@@ -11,7 +11,7 @@ label: 'DFS Tec Search'
 module: views
 description: ''
 tag: ''
-base_table: search_api_index_content
+base_table: search_api_index_dfs_tec
 base_field: search_api_id
 core: 8.x
 display:
@@ -81,7 +81,7 @@ display:
               service: default
       fields:
         rendered:
-          table: search_api_index_content
+          table: search_api_index_dfs_tec
           field: rendered
           id: rendered
           entity_type: null
@@ -137,7 +137,7 @@ display:
       filters:
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_content
+          table: search_api_index_dfs_tec
           field: search_api_fulltext
           relationship: none
           group_type: group
@@ -181,7 +181,7 @@ display:
       sorts:
         search_api_relevance:
           id: search_api_relevance
-          table: search_api_index_content
+          table: search_api_index_dfs_tec
           field: search_api_relevance
           relationship: none
           group_type: group

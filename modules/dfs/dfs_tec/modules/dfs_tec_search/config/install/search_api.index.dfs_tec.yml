@@ -1,4 +1,3 @@
-config_rewrite: replace
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,8 @@ dependencies:
   module:
     - search_api
     - node
-id: content
-name: Content
+id: dfs_tec
+name: DFS Tec
 description: 'An index of all content in your site.'
 read_only: false
 field_settings:

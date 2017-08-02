@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.content
+    - search_api.index.dfs_tec
 id: search_api_views_dfs_tec_search
 label: search_api_views_dfs_tec_search
-index_id: content
+index_id: dfs_tec
 suggester: server
 suggester_settings:
   fields:

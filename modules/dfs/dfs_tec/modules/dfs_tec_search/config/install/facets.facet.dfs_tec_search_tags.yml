@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.content
+    - search_api.index.dfs_tec
     - views.view.dfs_tec_search
   module:
     - search_api
