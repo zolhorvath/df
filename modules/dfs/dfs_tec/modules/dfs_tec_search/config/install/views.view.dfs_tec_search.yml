@@ -72,13 +72,7 @@ display:
       row:
         type: search_api
         options:
-          view_modes:
-            'entity:node':
-              article: teaser
-              employee: default
-              landing_page: default
-              page: teaser
-              service: default
+          view_modes: {  }
       fields:
         rendered:
           table: search_api_index_dfs_tec

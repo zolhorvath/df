@@ -5,6 +5,7 @@
  * Contains dfs_tec_search.module.
  */
 
+use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\node\NodeTypeInterface;
 use Drupal\search_api\Entity\Index;
 use Drupal\views\Entity\View;
@@ -12,7 +13,7 @@ use Drupal\views\Entity\View;
 /**
  * Implements hook_ENTITY_TYPE_insert().
  */
-function dfs_tec_search_search_node_type_insert(NodeTypeInterface $node_type) {
+function dfs_tec_search_node_type_insert(NodeTypeInterface $node_type) {
   // Don't do anything during config sync.
   if (\Drupal::isConfigSyncing()) {
     return;
@@ -54,7 +55,7 @@ function dfs_tec_search_search_node_type_insert(NodeTypeInterface $node_type) {
 /**
  * Implements hook_ENTITY_TYPE_delete().
  */
-function dfs_tec_search_search_node_type_delete(NodeTypeInterface $node_type) {
+function dfs_tec_search_node_type_delete(NodeTypeInterface $node_type) {
   // Don't do anything during config sync.
   if (\Drupal::isConfigSyncing()) {
     return;
@@ -64,7 +65,7 @@ function dfs_tec_search_search_node_type_delete(NodeTypeInterface $node_type) {
 
   // No point in continuing without an index to configure.
   /** @var \Drupal\search_api\IndexInterface $index */
-  $index = Index::load('dfs_tec');
+  $index = Index::load('dfs_obio');
   if (empty($index)) {
     return;
   }
@@ -93,7 +94,7 @@ function dfs_tec_search_search_node_type_delete(NodeTypeInterface $node_type) {
 /**
  * Implements hook_views_data_alter().
  */
-function dfs_tec_search_search_views_data_alter(array &$data) {
+function dfs_tec_search_views_data_alter(array &$data) {
   // @TODO: Remove this when #2843724 is fixed.
   $data['search_api_index_dfs_tec']['rendered']['field']['id'] = 'search_api';
 }

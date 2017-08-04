@@ -20,13 +20,7 @@ field_settings:
     configuration:
       roles:
         anonymous: anonymous
-      view_mode:
-        'entity:node':
-          article: default
-          landing_page: full
-          page: default
-          employee: default
-          service: default
+      view_mode: {  }
   label:
     label: Label
     property_path: aggregated_field
