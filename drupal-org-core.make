@@ -1,7 +1,7 @@
 api = 2
 core = 8.x
 projects[drupal][type] = core
-projects[drupal][version] = 8.3.6
+projects[drupal][version] = 8.3.5
 projects[drupal][patch][] = https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2635712-14.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch
