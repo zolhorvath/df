@@ -1,0 +1,27 @@
+uuid: 41f98304-6678-42a1-acb0-6f6f9fdd0db3
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.dfs_tec
+id: dfs_tec_search
+label: 'DFS Tec Search'
+index_id: dfs_tec
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+type_settings:
+  'views:dfs_tec_search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null
