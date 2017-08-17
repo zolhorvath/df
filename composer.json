@@ -323,7 +323,7 @@
         "drupal/facets": "1.0.0-alpha11",
         "drupal/field_formatter_class": "1.0.0",
         "drupal/field_group": "1.0.0-rc6",
-        "drupal/file_entity": "2.0.0-beta3",
+        "drupal/file_entity": "2.0.0-beta4",
         "drupal/geocoder": "2.0.0-alpha5",
         "drupal/geofield": "1.0.0-alpha4",
         "drupal/geophp": "1.x-dev",
