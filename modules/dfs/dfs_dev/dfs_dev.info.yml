@@ -10,5 +10,4 @@ dependencies:
   - df_tools_map
   - df_tools_slideshow
   - import
-scenarios_theme: dfs_base
-scenarios_admin_theme: adminimal_theme
+scenarios_module: dfs_dev
