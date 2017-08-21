@@ -78,19 +78,6 @@
         {
             "type": "package",
             "package": {
-                "name": "fengyuanchen/cropper",
-                "version": "v3.0.0-rc.2",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/fengyuanchen/cropper.git",
-                    "type": "git",
-                    "reference": "v3.0.0-rc.2"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "leaflet/leaflet",
                 "version": "v1.0.3",
                 "type": "drupal-library",
@@ -366,7 +353,7 @@
         "drupal/zurb_foundation": "6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "enyo/dropzone": "v4.2.0",
-        "fengyuanchen/cropper": "v3.0.0-rc.2",
+        "bower-asset/cropper": "v3.0.0-rc.2",
         "itsjavi/fontawesome-iconpicker": "1.2.0",
         "kenwheeler/slick": "1.5.0",
         "leaflet/leaflet": "v1.0.3",
