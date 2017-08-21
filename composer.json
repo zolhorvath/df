@@ -78,19 +78,6 @@
         {
             "type": "package",
             "package": {
-                "name": "itsjavi/fontawesome-iconpicker",
-                "version": "1.2.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/itsjavi/fontawesome-iconpicker.git",
-                    "type": "git",
-                    "reference": "1.2.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "kenwheeler/slick",
                 "version": "1.5.0",
                 "type": "drupal-library",
@@ -341,7 +328,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "bower-asset/cropper": "v3.0.0-rc.2",
         "bower-asset/dropzone": "v4.2.0",
-        "itsjavi/fontawesome-iconpicker": "1.2.0",
+        "bower-asset/fontawesome-iconpicker": "1.2.0",
         "kenwheeler/slick": "1.5.0",
         "leaflet/leaflet": "v1.0.3",
         "lokesh/lightbox2": "v2.9.0",
