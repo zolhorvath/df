@@ -39,19 +39,6 @@
         {
             "type": "package",
             "package": {
-                "name": "desandro/imagesloaded",
-                "version": "v3.1.8",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/desandro/imagesloaded.git",
-                    "type": "git",
-                    "reference": "v3.1.8"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "loopindex/ckeditor-track-changes",
                 "version": "dev-master",
                 "type": "drupal-library",
@@ -210,7 +197,6 @@
     "require": {
         "acquia/lightning": "2.1.7",
         "cweagans/composer-patches": "^1.6.0",
-        "desandro/imagesloaded": "v3.1.8",
         "doctrine/inflector": "1.1.0",
         "drupal/address": "1.1.0",
         "drupal/addtoany": "1.8.0",
@@ -276,6 +262,7 @@
         "bower-asset/cropper": "v3.0.0-rc.2",
         "bower-asset/dropzone": "v4.2.0",
         "bower-asset/fontawesome-iconpicker": "1.2.0",
+        "bower-asset/imagesloaded": "v3.1.8",
         "bower-asset/leaflet": "v1.0.3",
         "bower-asset/lightbox2": "v2.9.0",
         "bower-asset/masonry": "v3.3.1",
