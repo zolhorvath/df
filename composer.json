@@ -65,19 +65,6 @@
         {
             "type": "package",
             "package": {
-                "name": "enyo/dropzone",
-                "version": "v4.2.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/enyo/dropzone.git",
-                    "type": "git",
-                    "reference": "v4.2.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "leaflet/leaflet",
                 "version": "v1.0.3",
                 "type": "drupal-library",
@@ -352,8 +339,8 @@
         "drupal/workbench_email": "1.0-alpha6",
         "drupal/zurb_foundation": "6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "enyo/dropzone": "v4.2.0",
         "bower-asset/cropper": "v3.0.0-rc.2",
+        "bower-asset/dropzone": "v4.2.0",
         "itsjavi/fontawesome-iconpicker": "1.2.0",
         "kenwheeler/slick": "1.5.0",
         "leaflet/leaflet": "v1.0.3",
