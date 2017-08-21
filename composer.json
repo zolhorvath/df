@@ -65,19 +65,6 @@
         {
             "type": "package",
             "package": {
-                "name": "kenwheeler/slick",
-                "version": "1.5.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/kenwheeler/slick.git",
-                    "type": "git",
-                    "reference": "1.5.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "loopindex/ckeditor-track-changes",
                 "version": "dev-master",
                 "type": "drupal-library",
@@ -305,7 +292,7 @@
         "bower-asset/fontawesome-iconpicker": "1.2.0",
         "bower-asset/leaflet": "v1.0.3",
         "bower-asset/lightbox2": "v2.9.0",
-        "kenwheeler/slick": "1.5.0",
+        "bower-asset/slick-carousel": "1.5.0",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a"
     },
     "autoload": {
