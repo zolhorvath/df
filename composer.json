@@ -259,7 +259,7 @@
         "drupal/workbench_email": "1.0-alpha6",
         "drupal/zurb_foundation": "6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "bower-asset/cropper": "v3.0.0-rc.2",
+        "bower-asset/cropper": "v3.0.0-rc.3",
         "bower-asset/dropzone": "v4.2.0",
         "bower-asset/fontawesome-iconpicker": "1.2.0",
         "bower-asset/imagesloaded": "v3.1.8",
