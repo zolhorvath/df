@@ -196,7 +196,6 @@
     },
     "require": {
         "acquia/lightning": "2.1.7",
-        "cweagans/composer-patches": "^1.6.0",
         "doctrine/inflector": "1.1.0",
         "drupal/address": "1.1.0",
         "drupal/addtoany": "1.8.0",
@@ -258,7 +257,6 @@
         "drupal/view_modes_display": "1.0.0",
         "drupal/workbench_email": "1.0-alpha6",
         "drupal/zurb_foundation": "6.x-dev",
-        "drupal-composer/drupal-scaffold": "^2.0.0",
         "bower-asset/cropper": "v3.0.0-rc.3",
         "bower-asset/dropzone": "v4.3.0",
         "bower-asset/fontawesome-iconpicker": "1.3.0",
