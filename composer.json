@@ -87,19 +87,6 @@
                     "reference": "dev-master"
                 }
             }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "lokesh/lightbox2",
-                "version": "v2.9.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/lokesh/lightbox2.git",
-                    "type": "git",
-                    "reference": "v2.9.0"
-                }
-            }
         }
     ],
     "scripts": {
@@ -317,8 +304,8 @@
         "bower-asset/dropzone": "v4.2.0",
         "bower-asset/fontawesome-iconpicker": "1.2.0",
         "bower-asset/leaflet": "v1.0.3",
+        "bower-asset/lightbox2": "v2.9.0",
         "kenwheeler/slick": "1.5.0",
-        "lokesh/lightbox2": "v2.9.0",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a"
     },
     "autoload": {
