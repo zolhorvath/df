@@ -39,19 +39,6 @@
         {
             "type": "package",
             "package": {
-                "name": "desandro/masonry",
-                "version": "v3.3.1",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/desandro/masonry.git",
-                    "type": "git",
-                    "reference": "v3.3.1"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "desandro/imagesloaded",
                 "version": "v3.1.8",
                 "type": "drupal-library",
@@ -223,7 +210,6 @@
     "require": {
         "acquia/lightning": "2.1.7",
         "cweagans/composer-patches": "^1.6.0",
-        "desandro/masonry": "v3.3.1",
         "desandro/imagesloaded": "v3.1.8",
         "doctrine/inflector": "1.1.0",
         "drupal/address": "1.1.0",
@@ -292,6 +278,7 @@
         "bower-asset/fontawesome-iconpicker": "1.2.0",
         "bower-asset/leaflet": "v1.0.3",
         "bower-asset/lightbox2": "v2.9.0",
+        "bower-asset/masonry": "v3.3.1",
         "bower-asset/slick-carousel": "1.5.0",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a"
     },
