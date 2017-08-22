@@ -9,5 +9,6 @@ dependencies:
   - df_tools_blocks
   - df_tools_map
   - df_tools_slideshow
+  - dfs_dev_search
   - import
 scenarios_module: dfs_dev
