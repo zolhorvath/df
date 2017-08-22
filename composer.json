@@ -137,6 +137,14 @@
                 "Add UUID support. | http://drupal.org/node/2834377":
                 "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
             },
+            "drupal/entity_browser": {
+                "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555":
+                "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch",
+                "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037":
+                "https://www.drupal.org/files/issues/2845037-4.patch",
+                "Quick edit compatibility | https://www.drupal.org/node/2733605":
+                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch"
+            },
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
                 "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
@@ -190,6 +198,9 @@
             "acquia/lightning": {
                 "drupal/entity_block": {
                     "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
+                },
+                "drupal/entity_browser": {
+                    "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-17.patch"
                 }
             }
         }
