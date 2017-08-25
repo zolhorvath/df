@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "387d97209b2250c4da268f4a9bccadb0",
+    "content-hash": "930fc75b05947114d8d39f9503f482a9",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -6946,17 +6946,17 @@
         },
         {
             "name": "drupal/search_api_autocomplete",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search_api_autocomplete",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "d820e2d3a767e56778c89c48acefd7f50965a5a4"
+                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "e1b444d6235aab1fa4fb7f6d16c3dae482b1c6b9"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -6968,7 +6968,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
+                    "version": "8.x-1.0-alpha2",
                     "datestamp": "1502711044",
                     "security-coverage": {
                         "status": "not-covered",
