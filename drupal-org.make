@@ -113,6 +113,7 @@ projects[import][version] = 2.0-beta2
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-beta1
 projects[jsonapi][type] = module
+projects[jsonapi][patch][] = https://www.drupal.org/files/issues/jsonapi-url-field-configurable.patch
 projects[jsonapi][version] = 1.1
 projects[leaflet][type] = module
 projects[leaflet][download][type] = git

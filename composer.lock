@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe370a81f5529a133913f54c88533279",
+    "content-hash": "5681c9f942554fe8f0859a3913d23589",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4455,6 +4455,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "The File entity url field should [...] be hidden by default | https://www.drupal.org/node/2906033": "https://www.drupal.org/files/issues/jsonapi-url-field-configurable.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

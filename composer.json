@@ -147,6 +147,10 @@
                 "Entity browser views [...] are broken with 8.3.7 | https://www.drupal.org/node/2902831":
                 "https://www.drupal.org/files/issues/entity-browser-use-ajax-2902831-24.patch"
             },
+            "drupal/jsonapi": {
+              "The File entity url field should [...] be hidden by default | https://www.drupal.org/node/2906033":
+              "https://www.drupal.org/files/issues/jsonapi-url-field-configurable.patch"
+            },
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
                 "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
