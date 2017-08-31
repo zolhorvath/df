@@ -139,6 +139,33 @@ class DFSubContext extends DrupalSubContextBase {
   }
 
   /**
+   * Triggers a click for an arbitrary element, found by CSS selector.
+   *
+   * @param string $selector
+   *   The CSS selector.
+   *
+   * @throws \Behat\Mink\Exception\ElementNotFoundException
+   *   If the specified element is not present on the page.
+   *
+   * @When I trigger a click for the :selector element
+   */
+  public function triggerClickElementBySelector($selector) {
+    $session = $this->getSession();
+    $element = $session->getPage()->find('css', $selector);
+    if ($element) {
+      $script = <<<JS
+      (function(){
+        return jQuery("$selector").trigger("click");
+      })();
+JS;
+      $session->executeScript($script);
+    }
+    else {
+      throw new ElementNotFoundException($session, 'element', 'css', $selector);
+    }
+  }
+
+  /**
    * Asserts that a role as a set of permissions.
    *
    * @param string $rid
@@ -508,10 +535,10 @@ class DFSubContext extends DrupalSubContextBase {
 
     list ($date, $time) = explode(' ', $when, 2);
 
-    $this->minkContext->getSession()->executeScript('document.querySelector("[data-drupal-selector=\"edit-scheduled-update-form-inline-entity-form-update-timestamp-0-value-date\"]").value="' . $date . '"');
-    $this->minkContext->getSession()->executeScript('document.querySelector("[data-drupal-selector=\"edit-scheduled-update-form-inline-entity-form-update-timestamp-0-value-time\"]").value="' . $time . '"');
+    $this->minkContext->getSession()->executeScript('document.querySelector("[name=\"scheduled_update[form][inline_entity_form][update_timestamp][0][value][date]\"]").value="' . $date . '"');
+    $this->minkContext->getSession()->executeScript('document.querySelector("[name=\"scheduled_update[form][inline_entity_form][update_timestamp][0][value][time]\"]").value="' . $time . '"');
 
-    $this->minkContext->selectOption('scheduled_update[form][inline_entity_form][field_moderation_state]', 'published');
+    $this->minkContext->getSession()->executeScript('document.querySelector("[name=\"scheduled_update[form][inline_entity_form][field_moderation_state]\"]").value="published"');
 
     $this->minkContext->pressButton('Create scheduled update');
     $this->minkContext->iWaitForAjaxToFinish();
@@ -591,16 +618,18 @@ class DFSubContext extends DrupalSubContextBase {
     $this->clickElementBySelector('a[data-plugin-id="content_embed"]');
     $this->minkContext->iWaitForAjaxToFinish();
     // Wait for the modal to load.
-    $this->waitForJsCondition("jQuery('.ui-dialog .views-exposed-form:visible').length > 0");
+    $this->waitForJsCondition("jQuery('.ui-dialog iframe').contents().find('.exposed-form-collapsible:visible').length > 0");
     // Switch to the iFrame context.
     $this->getSession()->switchToIFrame('entity_browser_iframe_browse_content');
     // Search for content matching the passed in title and select the result.
+    $this->getSession()->getDriver()->executeScript('jQuery(".exposed-form-collapsible .collapsible-header").click()');
+    $this->minkContext->iWaitForAjaxToFinish();
     $this->getSession()->getDriver()->setValue('//*[@id="edit-title"]', $title);
-    $this->getSession()->getDriver()->click('//*[@id="edit-submit-content-browser"]');
+    $this->getSession()->getDriver()->executeScript('jQuery("[id*=edit-submit-content-browser]").click()');
     $this->minkContext->iWaitForAjaxToFinish();
     $this->getSession()->getDriver()->executeScript('jQuery(".views-field-entity-browser-select").first().click()');
     // Submit the entity browser form.
-    $this->getSession()->getDriver()->executeScript('jQuery(".is-entity-browser-submit").click()');
+    $this->getSession()->getDriver()->executeScript('jQuery(".is-entity-browser-submit input").click()');
     $this->minkContext->iWaitForAjaxToFinish();
     // Wait for the modal to close.
     $this->getSession()->switchToIFrame();
