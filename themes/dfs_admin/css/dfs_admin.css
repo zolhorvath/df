@@ -3,3 +3,7 @@
  * Simple overrides on top of the Material Admin theme.
  *
  */
+
+.entities-list.ui-sortable {
+  overflow:auto;
+}
