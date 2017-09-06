@@ -35,3 +35,15 @@ Feature: Site search
     And I enter "dragons" for "Keywords"
     And I press "Search"
     Then I should see "Foobar"
+
+  @page @javascript @6ae34970
+  Scenario: Autocomplete for search keywords
+    Given I am an anonymous user
+    And article content:
+      | title        | moderation_state | body                                          |
+      | Autocomplete | published        | Etiam et felis vitae metus convallis dapibus. |
+    When I visit "/search"
+    And I write "auto" into "Keywords"
+    And I wait 1 seconds
+    And I wait for AJAX to finish
+    Then I should see "Autocomplete"
