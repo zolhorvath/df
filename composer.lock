@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d024971e8fc8f4444c79da3ba71c963",
+    "content-hash": "b0b479aa9533771443993cb41b03aeea",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2662,6 +2662,7 @@
                     "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850": "https://www.drupal.org/files/issues/2652850-17.patch",
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
+                    "Error \"Column 'langcode' in field list is ambiguous\" thrown... | https://www.drupal.org/node/2446681": "https://www.drupal.org/files/issues/2446681-22.patch",
                     "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-41.patch",
                     "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-360.patch",
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
@@ -11327,16 +11328,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "d60a1ff0cb421fcd2811c3f2b57f7e3e2b6c9d0e"
+                "reference": "c639623fa2178b404ed4bab80f0d1263853fa4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/d60a1ff0cb421fcd2811c3f2b57f7e3e2b6c9d0e",
-                "reference": "d60a1ff0cb421fcd2811c3f2b57f7e3e2b6c9d0e",
+                "url": "https://api.github.com/repos/composer/composer/zipball/c639623fa2178b404ed4bab80f0d1263853fa4ae",
+                "reference": "c639623fa2178b404ed4bab80f0d1263853fa4ae",
                 "shasum": ""
             },
             "require": {
@@ -11400,7 +11401,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2017-08-09T14:07:22+00:00"
+            "time": "2017-09-11T14:59:26+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -14493,7 +14494,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -14726,16 +14727,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "d15dfaf71b65bf3affb80900470caf4451a8217e"
+                "reference": "6b511d7329b203a620f09a2288818d27dcc915ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/d15dfaf71b65bf3affb80900470caf4451a8217e",
-                "reference": "d15dfaf71b65bf3affb80900470caf4451a8217e",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/6b511d7329b203a620f09a2288818d27dcc915ae",
+                "reference": "6b511d7329b203a620f09a2288818d27dcc915ae",
                 "shasum": ""
             },
             "require": {
@@ -14778,20 +14779,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-15T13:31:09+00:00"
+            "time": "2017-09-11T15:55:22+00:00"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "26c9a4b90b646a5df5dfbcfb597af574e36892f7"
+                "reference": "c5215067aaf70f329bc114f057aac9f7a3f3c922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/26c9a4b90b646a5df5dfbcfb597af574e36892f7",
-                "reference": "26c9a4b90b646a5df5dfbcfb597af574e36892f7",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/c5215067aaf70f329bc114f057aac9f7a3f3c922",
+                "reference": "c5215067aaf70f329bc114f057aac9f7a3f3c922",
                 "shasum": ""
             },
             "require": {
@@ -14828,11 +14829,11 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29T21:54:42+00:00"
+            "time": "2017-09-06T16:40:18+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
