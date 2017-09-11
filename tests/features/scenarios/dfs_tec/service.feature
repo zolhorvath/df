@@ -4,10 +4,12 @@ Feature: DFS TEC: Service node
   As a developer
   I need to be able to create nodes of the Service content type
 
+  @074293f1
   Scenario: Create a service node
     Given I am viewing a "service" content with the title "Investments"
     Then I should see the heading "Investments"
 
+  @67a2737d
   Scenario: Create a service node with fields
     Given "tags" terms:
     | name     |

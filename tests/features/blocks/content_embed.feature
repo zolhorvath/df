@@ -1,7 +1,7 @@
 @df @df_tools @df_tools_blocks @blocks @content_embed @api
 Feature: Demo Framework: Content Embed Block
 
-  @javascript
+  @javascript @9bdb8174
   Scenario: Content Embed
     Given I am logged in as a user with the "administrator" role
     And article content:

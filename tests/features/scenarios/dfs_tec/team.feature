@@ -4,6 +4,7 @@ Feature: DFS TEC: Team page
   As a developer
   I need to check for the team page and team view
 
+  @b7722807
   Scenario: Team: Default
     Given I am at "/team"
     Then I should see the heading "Your Team"

@@ -1,6 +1,7 @@
 @df @df_tools @df_tools_blocks @blocks @hero @api
 Feature: Demo Framework: Hero Block
 
+  @fcbbb7d6
   Scenario: Hero workflow
     Given I am logged in as a user with the "administrator" role
     When I go to "/block/add/hero"
