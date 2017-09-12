@@ -43,7 +43,7 @@ Feature: Site search
       | title        | moderation_state | body                                          |
       | Autocomplete | published        | Etiam et felis vitae metus convallis dapibus. |
     When I visit "/search"
-    And I write "auto" into "Keywords"
+    And I write "Autocomplet" into "Keywords"
     And I wait 1 seconds
     And I wait for AJAX to finish
     Then I should see "Autocomplete"
