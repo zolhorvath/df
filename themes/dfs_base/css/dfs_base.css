@@ -25,7 +25,7 @@
  */
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.0
+ * Version 6.3.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -482,6 +482,7 @@ textarea {
   border-radius: 0; }
 
 select {
+  box-sizing: border-box;
   width: 100%;
   border-radius: 0; }
 
@@ -504,6 +505,9 @@ button {
   line-height: 1; }
   [data-whatinput='mouse'] button {
     outline: 0; }
+
+pre {
+  overflow: auto; }
 
 .is-visible {
   display: block !important; }
@@ -530,7 +534,12 @@ button {
       .row .row {
         margin-right: -0.9375rem;
         margin-left: -0.9375rem; } }
+    .row .row.collapse {
+      margin-right: 0;
+      margin-left: 0; }
   .row.expanded {
+    max-width: none; }
+  .row:not(.expanded) .row {
     max-width: none; }
   .row.collapse > .column, .row.collapse > .columns {
     padding-right: 0;
@@ -553,8 +562,8 @@ button {
       padding-left: 0.9375rem; } }
 
 .column.row.row, .row.row.columns {
-  display: -ms-flexbox;
-  display: flex; }
+  float: none;
+  display: block; }
 
 .row .column.row.row, .row .row.row.columns {
   margin-right: 0;
@@ -1175,6 +1184,16 @@ button {
       flex: 0 0 auto;
   max-width: 100%; }
 
+.column-block {
+  margin-bottom: 1.25rem; }
+  .column-block > :last-child {
+    margin-bottom: 0; }
+  @media print, screen and (min-width: 40em) {
+    .column-block {
+      margin-bottom: 1.875rem; }
+      .column-block > :last-child {
+        margin-bottom: 0; } }
+
 div,
 dl,
 dt,
@@ -1520,10 +1539,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -1710,8 +1725,6 @@ select {
   background-color: #fcedeb; }
   .is-invalid-input:not(:focus)::-webkit-input-placeholder {
     color: #ec5840; }
-  .is-invalid-input:not(:focus)::-moz-placeholder {
-    color: #ec5840; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
     color: #ec5840; }
   .is-invalid-input:not(:focus)::placeholder {
@@ -1832,39 +1845,39 @@ select {
   .button.disabled, .ipe-form input.disabled[data-drupal-selector="edit-preview"], .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-submit"], .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled], .ipe-form input[disabled][data-drupal-selector="edit-preview"], .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-submit"], .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
     opacity: 0.25;
     cursor: not-allowed; }
-    .button.disabled:hover, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled:focus, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled]:hover, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled]:focus, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+    .button.disabled, .ipe-form input.disabled[data-drupal-selector="edit-preview"], .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled[data-drupal-selector="edit-submit"], .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled:hover, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled:focus, .ipe-form input.disabled[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled], .ipe-form input[disabled][data-drupal-selector="edit-preview"], .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled][data-drupal-selector="edit-submit"], .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled]:hover, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled]:focus, .ipe-form input[disabled][data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled][data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
       background-color: #2199e8;
       color: #fff; }
     .button.disabled.primary, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].primary, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.primary:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.primary:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].primary:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].primary:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.primary, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled.primary:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.primary:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].primary, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].primary:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].primary:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #2199e8;
-        color: #fff; }
+        color: #000; }
     .button.disabled.secondary, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].secondary, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.secondary:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.secondary:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].secondary:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].secondary:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.secondary, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"], .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled.secondary:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.secondary:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].secondary, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"], .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].secondary:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].secondary:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #777;
-        color: #fff; }
+        color: #000; }
     .button.disabled.success, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-submit"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].success, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-submit"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.success:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.success:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].success:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].success:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.success, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.success[data-drupal-selector="edit-submit"], .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled.success:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.success:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].success, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].success[data-drupal-selector="edit-submit"], .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].success:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].success:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #3adb76;
-        color: #fff; }
+        color: #000; }
     .button.disabled.warning, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].warning, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.warning:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.warning:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].warning:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].warning:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.warning, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"], .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled.warning:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.warning:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].warning, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"], .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].warning:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].warning:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #ffae00;
-        color: #fff; }
+        color: #000; }
     .button.disabled.alert, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].alert, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.alert:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.alert:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].alert:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].alert:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
+      .button.disabled.alert, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"], .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button.disabled.alert:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button.disabled.alert:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input.disabled.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus, .button[disabled].alert, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"], .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .button[disabled].alert:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:hover, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:hover, .button[disabled].alert:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-preview"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-submit"]:focus, .ipe-form input[disabled].alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]:focus {
         background-color: #ec5840;
-        color: #fff; }
+        color: #000; }
   .button.dropdown::after, .ipe-form input.dropdown[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
     display: block;
     width: 0;
@@ -1916,7 +1929,7 @@ select {
     margin-top: -0.5rem;
     content: '+'; }
   .is-active > .accordion-title::before {
-    content: '–'; }
+    content: '\2013'; }
 
 .accordion-content {
   display: none;
@@ -2292,10 +2305,16 @@ select {
             align-items: flex-start; } }
   .menu.simple li {
     display: inline-block;
-    margin-right: 1rem;
+    vertical-align: top;
     line-height: 1; }
   .menu.simple a {
     padding: 0; }
+  .menu.simple li {
+    margin-left: 0;
+    margin-right: 1rem; }
+  .menu.simple.align-right li {
+    margin-right: 0;
+    margin-left: 1rem; }
   .menu.align-right {
     -ms-flex-pack: end;
         justify-content: flex-end; }
@@ -2335,7 +2354,8 @@ select {
 .menu-centered {
   text-align: center; }
   .menu-centered > .menu {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
 
 .no-js [data-responsive-menu] ul {
   display: none; }
@@ -2697,7 +2717,8 @@ select {
   .is-dropdown-submenu.js-dropdown-active {
     display: block; }
 
-.responsive-embed, .flex-video {
+.responsive-embed,
+.flex-video {
   position: relative;
   height: 0;
   margin-bottom: 1rem;
@@ -2706,7 +2727,8 @@ select {
   .responsive-embed iframe,
   .responsive-embed object,
   .responsive-embed embed,
-  .responsive-embed video, .flex-video iframe,
+  .responsive-embed video,
+  .flex-video iframe,
   .flex-video object,
   .flex-video embed,
   .flex-video video {
@@ -2715,7 +2737,8 @@ select {
     left: 0;
     width: 100%;
     height: 100%; }
-  .responsive-embed.widescreen, .flex-video.widescreen {
+  .responsive-embed.widescreen,
+  .flex-video.widescreen {
     padding-bottom: 56.25%; }
 
 .label, label {
@@ -10576,6 +10599,20 @@ a[data-block-type="url"]:before {
   /*50% {transform: rotate(180deg);}*/
   100% {
     transform: rotate(360deg); } }
+
+.moderation-sidebar-button-wrapper {
+  position: relative; }
+  .moderation-sidebar-button-wrapper i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    pointer-events: none;
+    z-index: 1; }
+  .moderation-sidebar-button-wrapper input {
+    transition: .2s;
+    filter: brightness(100%); }
+  .moderation-sidebar-button-wrapper input:hover {
+    filter: brightness(110%); }
 
 @media screen and (min-width: 40em) {
   #top-bar-sticky-container {

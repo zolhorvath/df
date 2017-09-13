@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - node
+    - type_style_moderation
     - user
 id: content
 label: Content
@@ -732,6 +733,57 @@ display:
         relationships: false
         fields: false
       fields:
+        moderation_state_type_style_color:
+          id: moderation_state_type_style_color
+          table: node_field_revision
+          field: moderation_state_type_style_color
+          relationship: latest_revision__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          type_style_name: ''
+          entity_type: node
+          plugin_id: type_style_moderation
         nid:
           id: nid
           table: node_field_data
@@ -925,7 +977,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if moderation_state != render_var(\"Published\" | t) %}\n  <div class=\"chip light-blue darken-1\"><a class=\"white-text\" href=\"/node/{{ nid }}/latest\">{{ moderation_state }}</a></div>\n{% endif %}\n{{ title }}"
+            text: "{% if moderation_state != render_var(\"Published\" | t) %}\n  <div class=\"chip\" data-type-style-background-color><a class=\"white-text\" href=\"/node/{{ nid }}/latest\">{{ moderation_state }}</a></div>\n{% endif %}\n{{ title }}"
             make_link: false
             path: ''
             absolute: false

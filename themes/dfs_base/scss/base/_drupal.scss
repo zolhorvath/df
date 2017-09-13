@@ -817,3 +817,23 @@ a[data-block-type="url"] {
     transform: rotate(360deg);
   }
 }
+
+// Moderation Sidebar styles.
+
+.moderation-sidebar-button-wrapper {
+  position: relative;
+  i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  input {
+    transition: .2s;
+    filter: brightness(100%);
+  }
+  input:hover {
+    filter: brightness(110%);
+  }
+}

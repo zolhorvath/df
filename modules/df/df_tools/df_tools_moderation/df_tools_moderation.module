@@ -8,6 +8,8 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
+use Drupal\Core\Render\Element;
+use Drupal\workbench_moderation\Entity\ModerationStateTransition;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -117,5 +119,32 @@ function df_tools_moderation_tokens($type, $tokens, array $data, array $options,
 function df_tools_moderation_library_info_alter(&$libraries, $extension) {
   if ($extension === 'moderation_note') {
     unset($libraries['main']['dependencies']);
+  }
+}
+
+/**
+ * Implements hook_moderation_sidebar_alter().
+ */
+function df_tools_moderation_moderation_sidebar_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity) {
+  if (isset($build['actions']['quick_draft_form'])) {
+    $transition_ids = Element::getVisibleChildren($build['actions']['quick_draft_form']);
+    foreach ($transition_ids as $id) {
+      if ($transition = ModerationStateTransition::load($id)) {
+        $styles = type_style_get_styles($transition);
+        if (!empty($styles)) {
+          $build['actions']['quick_draft_form'][$id]['#attributes']['style'] = 'background-color: ' . $styles['color'];
+          $build['actions']['quick_draft_form'][$id] = [
+            '#type' => 'container',
+            $build['actions']['quick_draft_form'][$id],
+            [
+              '#markup' => '<i class="material-icons">' . $styles['icon'] . '</i>'
+            ],
+            '#attributes' => [
+              'class' => ['moderation-sidebar-button-wrapper'],
+            ],
+          ];
+        }
+      }
+    }
   }
 }

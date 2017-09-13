@@ -1,0 +1,4 @@
+third_party_settings:
+  type_style:
+    color: '#00897b'
+    icon: archive
