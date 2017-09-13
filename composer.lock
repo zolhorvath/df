@@ -1898,7 +1898,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/better_formats"
             },
-            "time": "2016-09-23 18:53:21"
+            "time": "2016-09-23T18:53:21+00:00"
         },
         {
             "name": "drupal/block_class",
@@ -2213,7 +2213,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/config_sync"
             },
-            "time": "2016-10-09 22:03:36"
+            "time": "2016-10-09T22:03:36+00:00"
         },
         {
             "name": "drupal/config_tools",
@@ -2270,7 +2270,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/config_tools"
             },
-            "time": "2017-05-24 23:57:18"
+            "time": "2017-05-24T23:57:18+00:00"
         },
         {
             "name": "drupal/config_update",
@@ -3485,7 +3485,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_gallery"
             },
-            "time": "2017-04-10 19:04:29"
+            "time": "2017-04-10T19:04:29+00:00"
         },
         {
             "name": "drupal/facets",
@@ -4056,7 +4056,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2017-09-10 22:30:29"
+            "time": "2017-09-10T22:30:29+00:00"
         },
         {
             "name": "drupal/geophp",
@@ -4106,7 +4106,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geophp"
             },
-            "time": "2016-05-12 20:20:11"
+            "time": "2016-05-12T20:20:11+00:00"
         },
         {
             "name": "drupal/google_analytics",
@@ -4551,7 +4551,7 @@
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
             },
-            "time": "2017-01-25 20:55:54"
+            "time": "2017-01-25T20:55:54+00:00"
         },
         {
             "name": "drupal/libraries",
@@ -4607,7 +4607,7 @@
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-03-15 17:04:08"
+            "time": "2017-03-15T17:04:08+00:00"
         },
         {
             "name": "drupal/link_class",
@@ -4810,7 +4810,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/material_admin"
             },
-            "time": "2017-09-12 13:52:33"
+            "time": "2017-09-12T13:52:33+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -5628,7 +5628,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_dashboard"
             },
-            "time": "2017-07-25 19:08:07"
+            "time": "2017-07-25T19:08:07+00:00"
         },
         {
             "name": "drupal/moderation_note",
@@ -6313,7 +6313,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate"
             },
-            "time": "2017-05-10 23:56:24"
+            "time": "2017-05-10T23:56:24+00:00"
         },
         {
             "name": "drupal/replicate_ui",
@@ -6372,7 +6372,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate_ui"
             },
-            "time": "2017-08-14 09:58:47"
+            "time": "2017-08-14T09:58:47+00:00"
         },
         {
             "name": "drupal/responsive_preview",
@@ -6644,7 +6644,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/scenarios"
             },
-            "time": "2017-05-11 23:03:39"
+            "time": "2017-05-11T23:03:39+00:00"
         },
         {
             "name": "drupal/scheduled_updates",
@@ -7273,10 +7273,13 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/type_style",
-                "reference": "1a2371cb12be794339718a1690e4be44e1fa024c"
+                "reference": "0e4bc101a49b353e61e03e76345c51a5639763ea"
             },
             "require": {
                 "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/workbench_moderation": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -7285,7 +7288,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1503444544",
+                    "datestamp": "1503523445",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -7307,7 +7310,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/type_style"
             },
-            "time": "2017-08-23 21:22:38"
+            "time": "2017-09-13T21:59:41+00:00"
         },
         {
             "name": "drupal/typed_data",
@@ -7416,7 +7419,7 @@
                 "issues": "https://www.drupal.org/project/issues/url_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
             },
-            "time": "2017-04-19 19:17:34"
+            "time": "2017-04-19T19:17:34+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -7810,7 +7813,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/zurb_foundation"
             },
-            "time": "2017-07-28 15:23:56"
+            "time": "2017-07-28T15:23:56+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -8656,7 +8659,7 @@
                 "reference": "a7df5c6b685385713e8aaf2df3f44c82e3bf823a"
             },
             "type": "drupal-library",
-            "time": "2016-05-03 15:08:47"
+            "time": "2016-05-03T15:08:47+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -8884,7 +8887,7 @@
             ],
             "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
             "homepage": "https://github.com/phayes/geoPHP",
-            "time": "2016-03-04 05:42:29"
+            "time": "2016-03-04T05:42:29+00:00"
         },
         {
             "name": "psr/http-message",
@@ -10529,16 +10532,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "1d23172f9dc1687a97c195a777b0199f14f7b26e"
+                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/1d23172f9dc1687a97c195a777b0199f14f7b26e",
-                "reference": "1d23172f9dc1687a97c195a777b0199f14f7b26e",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/2faa791b66bac33ca40031d8bce03b7dc8143490",
+                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490",
                 "shasum": ""
             },
             "require": {
@@ -10557,8 +10560,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev",
-                    "dev-develop": "1.6-dev"
+                    "dev-master": "1.6-dev",
+                    "dev-develop": "1.7-dev"
                 }
             },
             "autoload": {
@@ -10577,7 +10580,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-08-22T20:38:56+00:00"
+            "time": "2017-09-13T14:47:08+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
