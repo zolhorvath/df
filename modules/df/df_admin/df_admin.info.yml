@@ -4,6 +4,7 @@ description: Set up and administrate Demo Framework.
 core: 8.x
 package: Demo Framework
 dependencies:
+  - admin_login_path
   - admin_toolbar
   - admin_toolbar_tools
   - adminimal_admin_toolbar
