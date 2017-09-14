@@ -8,6 +8,7 @@ dependencies:
     - media_entity.bundle.document
     - media_entity.bundle.image
     - media_entity.bundle.instagram
+    - media_entity.bundle.local_video
     - media_entity.bundle.tweet
     - media_entity.bundle.video
 id: block_content.media.field_media
@@ -27,6 +28,7 @@ settings:
       document: document
       image: image
       instagram: instagram
+      local_video: local_video
       tweet: tweet
       video: video
     sort:
