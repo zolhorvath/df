@@ -229,4 +229,15 @@ class UtilityContext extends DrupalSubContextBase {
       ->postValue(['value' => [$text]]);
   }
 
+  /**
+   * Asserts that the current page is an admin page.
+   *
+   * @Then The page should be an admin page
+   */
+  public function assertAdminPage() {
+    /** @var \Drupal\Core\Routing\AdminContext $admin_context */
+    $admin_context = \Drupal::service('router.admin_context');
+    return $admin_context->isAdminRoute();
+  }
+
 }
