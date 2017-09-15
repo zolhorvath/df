@@ -25,3 +25,13 @@ Feature: Demo Framework
     Given I am logged in as a user with the "administrator" role
     And I am on "/admin/modules"
     Then the "Update Manager" checkbox should not be checked
+
+  @0e983e34
+  Scenario: Ensure that the admin theme is used on user pages
+    Given I am an anonymous user
+    When I am on "/user"
+    Then The page should be an admin page
+    When I am on "/user/login"
+    Then The page should be an admin page
+    When I am on "/user/password"
+    Then The page should be an admin page
