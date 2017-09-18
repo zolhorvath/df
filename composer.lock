@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0b479aa9533771443993cb41b03aeea",
+    "content-hash": "40174482fbd307ab78f9e1f4ce5c87fc",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2274,17 +2274,17 @@
         },
         {
             "name": "drupal/config_update",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_update",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "4fc57add91c090ea3c9ed4848579b450253b1eed"
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "0de82ba4aa7caf054711ab16ad038765215a489d"
             },
             "require": {
                 "drupal/core": "*"
@@ -2295,8 +2295,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1484770683",
+                    "version": "8.x-1.4",
+                    "datestamp": "1505755744",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4018,7 +4018,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "7bd91ed45e7539bcdea6343510780f13b7576a00"
+                "reference": "39eee0100306062a18b6ff69a6be4554f96f59bf"
             },
             "require": {
                 "drupal/core": "*"
@@ -4029,8 +4029,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10+46-dev",
-                    "datestamp": "1505054644",
+                    "version": "8.x-1.11+0-dev",
+                    "datestamp": "1505645344",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4056,7 +4056,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2017-09-10T22:30:29+00:00"
+            "time": "2017-09-17T10:45:24+00:00"
         },
         {
             "name": "drupal/geophp",
@@ -4426,17 +4426,17 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "8c41dfd1aa6569e55d11f5ade5867e36168c493a"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "cd3df010a305097e8fee08a2d1777bd6ad58c64a"
             },
             "require": {
                 "drupal/core": "^8.2"
@@ -4450,8 +4450,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1504763044",
+                    "version": "8.x-1.3",
+                    "datestamp": "1505680144",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4773,7 +4773,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin",
-                "reference": "99c906aeb87657e3e15df99b83ca3bffede3c24b"
+                "reference": "b5a4a8254c3a4858af67af51dcdcf140248fbb5d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4785,7 +4785,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1504812839",
+                    "datestamp": "1505425444",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4810,7 +4810,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/material_admin"
             },
-            "time": "2017-09-12T13:52:33+00:00"
+            "time": "2017-09-15T12:50:10+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -7038,7 +7038,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1498580642",
+                    "datestamp": "1505488144",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7765,7 +7765,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/zurb-foundation",
-                "reference": "0f377b119580bc119b4ddc4a9b1df98292ff38fe"
+                "reference": "82414a6c05314986afd49dce90b1cdec9e6d645e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -7813,7 +7813,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/zurb_foundation"
             },
-            "time": "2017-07-28T15:23:56+00:00"
+            "time": "2017-09-14T14:53:19+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -11469,16 +11469,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.4.13",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "abb685e42c83d0b698b4e22059e5d505588f7d3c"
+                "reference": "e325349acaebc2ba39a8e77143c17a5881a44d8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/abb685e42c83d0b698b4e22059e5d505588f7d3c",
-                "reference": "abb685e42c83d0b698b4e22059e5d505588f7d3c",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/e325349acaebc2ba39a8e77143c17a5881a44d8f",
+                "reference": "e325349acaebc2ba39a8e77143c17a5881a44d8f",
                 "shasum": ""
             },
             "require": {
@@ -11517,7 +11517,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2017-08-28T20:16:37+00:00"
+            "time": "2017-09-18T03:20:24+00:00"
         },
         {
             "name": "consolidation/output-formatters",
