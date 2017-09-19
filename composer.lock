@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "40174482fbd307ab78f9e1f4ce5c87fc",
+    "content-hash": "39fafa5133466fc2345da2e081ba84cb",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1689,6 +1689,62 @@
             }
         },
         {
+            "name": "drupal/admin_login_path",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_login_path",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_login_path-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "06c58c0076d77baaaea30d93caeb0ddc25c298c2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1505498944",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Wald",
+                    "homepage": "https://www.drupal.org/u/bcwald"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/u/devin-carlson"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/2894919/committers"
+                }
+            ],
+            "description": "A simple module that routes the login pages to use the admin (theme) path.",
+            "homepage": "https://www.drupal.org/project/admin_login_path",
+            "support": {
+                "source": "http://git.drupal.org/project/admin_login_path.git",
+                "issues": "https://www.drupal.org/project/issues/admin_login_path"
+            }
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "1.19.0",
             "source": {
@@ -3314,7 +3370,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1502200443",
+                    "datestamp": "1505808844",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4773,7 +4829,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin",
-                "reference": "b5a4a8254c3a4858af67af51dcdcf140248fbb5d"
+                "reference": "99274004ee5a50561faddcc1b752c11c6ceb873e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4785,7 +4841,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1505425444",
+                    "datestamp": "1505480043",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4810,7 +4866,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/material_admin"
             },
-            "time": "2017-09-15T12:50:10+00:00"
+            "time": "2017-09-18T19:35:41+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -11469,16 +11525,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.5.1",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "e325349acaebc2ba39a8e77143c17a5881a44d8f"
+                "reference": "7a634471471b913e63888b64b626b544799db282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/e325349acaebc2ba39a8e77143c17a5881a44d8f",
-                "reference": "e325349acaebc2ba39a8e77143c17a5881a44d8f",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/7a634471471b913e63888b64b626b544799db282",
+                "reference": "7a634471471b913e63888b64b626b544799db282",
                 "shasum": ""
             },
             "require": {
@@ -11517,7 +11573,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2017-09-18T03:20:24+00:00"
+            "time": "2017-09-18T21:45:28+00:00"
         },
         {
             "name": "consolidation/output-formatters",
