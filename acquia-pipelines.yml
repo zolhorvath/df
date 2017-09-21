@@ -2,9 +2,11 @@
 # Demo Framework and runs its functional tests. Upon success, an artifact is
 # deployed to the demoframeworktests (adef0efb-9742-4158-9a17-3554db4c5e7c) sub
 # on Acquia cloud.
-version: 1.0.0
+version: 1.1.0
 services:
   - mysql
+  - php:
+    version: 7.1
 
 variables:
   global:
@@ -40,6 +42,8 @@ events:
       - cleanup:
           type: script
           script:
+            # Remove drush so our version doesn't interfere with cloud commands.
+            - composer remove drush/drush --dev
             # Setup settings file and codebase with minimum required for cloud.
             - cd $SOURCE_DIR
             - phing cloud-settings
