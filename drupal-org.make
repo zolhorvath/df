@@ -77,7 +77,6 @@ projects[entity_browser][type] = module
 projects[entity_browser][patch][] = https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch
 projects[entity_browser][patch][] = https://www.drupal.org/files/issues/2845037-4.patch
 projects[entity_browser][patch][] = https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch
-projects[entity_browser][patch][] = https://www.drupal.org/files/issues/entity-browser-use-ajax-2902831-24.patch
 projects[entity_browser][patch][] = https://www.drupal.org/files/issues/entity-browser-view-context-2865928-14.patch
 projects[entity_browser][version] = 1.3
 projects[entity_embed][type] = module

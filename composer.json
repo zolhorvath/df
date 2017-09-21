@@ -146,9 +146,7 @@
                 "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037":
                 "https://www.drupal.org/files/issues/2845037-4.patch",
                 "Quick edit compatibility | https://www.drupal.org/node/2733605":
-                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
-                "Entity browser views [...] are broken with 8.3.7 | https://www.drupal.org/node/2902831":
-                "https://www.drupal.org/files/issues/entity-browser-use-ajax-2902831-24.patch"
+                "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch"
             },
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
