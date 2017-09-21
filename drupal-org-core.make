@@ -1,7 +1,6 @@
-api = 2
 core = 8.x
+api = 2
 projects[drupal][type] = core
-projects[drupal][version] = 8.3.7
 projects[drupal][patch][] = https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2635712-14.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch
@@ -18,3 +17,5 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2880374-remove-e
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2904798-7.patch
+projects[drupal][version] = 8.3.7

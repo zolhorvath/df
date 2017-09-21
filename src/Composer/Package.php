@@ -2,16 +2,42 @@
 
 namespace Acquia\DF\Composer;
 
-use Acquia\DF\IniEncoder;
-use Composer\Package\PackageInterface;
+use Acquia\Lightning\IniEncoder;
+use Composer\Package\Locker;
+use Composer\Package\RootPackageInterface;
 use Composer\Script\Event;
-use Composer\Util\ProcessExecutor;
-use Symfony\Component\Yaml\Yaml;
 
 /**
  * Generates Drush make files for drupal.org's ancient packaging system.
  */
 class Package {
+
+  /**
+   * The root Composer package (i.e., this composer.json).
+   *
+   * @var \Composer\Package\RootPackageInterface
+   */
+  protected $rootPackage;
+
+  /**
+   * The locker.
+   *
+   * @var \Composer\Package\Locker
+   */
+  protected $locker;
+
+  /**
+   * Package constructor.
+   *
+   * @param \Composer\Package\RootPackageInterface $root_package
+   *   The root package (i.e., this composer.json).
+   * @param \Composer\Package\Locker $locker
+   *   The locker.
+   */
+  public function __construct(RootPackageInterface $root_package, Locker $locker) {
+    $this->rootPackage = $root_package;
+    $this->locker = $locker;
+  }
 
   /**
    * Script entry point.
@@ -21,80 +47,124 @@ class Package {
    */
   public static function execute(Event $event) {
     $composer = $event->getComposer();
+
+    $handler = new static(
+      $composer->getPackage(),
+      $composer->getLocker()
+    );
+
     $encoder = new IniEncoder();
 
-    // Convert the lock file to a make file using Drush's make-convert command.
-    $bin_dir = $composer->getConfig()->get('bin-dir');
-    $make = NULL;
-    $executor = new ProcessExecutor();
-    $executor->execute($bin_dir . '/drush make-convert composer.lock', $make);
-    $make = Yaml::parse($make);
+    $make = $handler->make();
+    $handler->makeFix($make);
+    $core = $handler->makeCore($make);
+    file_put_contents('drupal-org-core.make', $encoder->encode($core));
+    file_put_contents('drupal-org.make', $encoder->encode($make));
+  }
 
-    // Include any drupal-library packages in the make file.
-    $libraries = $composer
-      ->getRepositoryManager()
-      ->getLocalRepository()
-      ->getPackages();
+  /**
+   * Extracts a core-only make file from a complete make file.
+   *
+   * @param array $make
+   *   The complete make file.
+   *
+   * @return array
+   *   The core-only make file structure.
+   */
+  protected function makeCore(array &$make) {
+    $project = $make['projects']['drupal'];
+    unset($make['projects']['drupal']);
 
-    // Retrieve a list of all libraries.
-    $libraries = array_filter($libraries, function (PackageInterface $package) {
-      return in_array($package->getType(), array('drupal-library', 'bower-asset', 'npm-asset'));
-    });
+    return [
+      'core' => $make['core'],
+      'api' => $make['api'],
+      'projects' => [
+        'drupal' => $project,
+      ],
+    ];
+  }
 
+  /**
+   * Generates a complete make file structure from the root package.
+   *
+   * @return array
+   *   The complete make file structure.
+   */
+  protected function make() {
+    $info = [
+      'core' => '8.x',
+      'api' => 2,
+      'defaults' => [
+        'projects' => [
+          'subdir' => 'contrib',
+        ],
+      ],
+      'projects' => [],
+      'libraries' => [],
+    ];
+    $lock = $this->locker->getLockData();
+
+    foreach ($lock['packages'] as $package) {
+      list(, $name) = explode('/', $package['name'], 2);
+
+      if ($this->isDrupalPackage($package)) {
+        if ($package['type'] == 'drupal-core') {
+          $name = 'drupal';
+        }
+
+        $info['projects'][$name] = $this->buildProject($package);
+      }
+      elseif ($this->isLightning($package)) {
+        $info['projects'][$name] = $this->buildProject($package);
+
+        // The Lightning project uses semantic versioning.
+        $sem_ver = explode('.', $package['version']);
+        list($major, $minor, $patch) = $sem_ver;
+        $info['projects'][$name]['version'] = "$major.$minor$patch";
+
+        // Override the default 'contrib' subdirectory set above in order to
+        // prevent the profile from being placed in a 'contrib' folder.
+        $info['projects'][$name]['subdir'] = '""';
+      }
+      // Include any non-drupal libraries that exist in both .lock and .json.
+      elseif ($this->isLibrary($package)) {
+        $info['libraries'][$name] = $this->buildLibrary($package);
+      }
+    }
+
+    return $info;
+  }
+
+  /**
+   * 'Fixes' a make file by manually adjusting known package inaccuracies.
+   *
+   * @param array $make
+   *   The complete make file.
+   */
+  protected function makeFix(array &$make) {
     // Build a whitelist of libraries which are approved for distribution via
     // drupal.org.
     // Composer supports adding libraries from anywhere, while drupal.org only
     // allows distributions to include libraries that have been specifically
     // approved. See the Packaging Whitelist for a list of approved libraries
     // (https://www.drupal.org/packaging-whitelist).
-    $whitelist = ['dropzone', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick', 'lightbox2', 'cropper'];
+    $whitelist = ['dropzone', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick-carousel', 'lightbox2', 'cropper'];
 
-    foreach ($libraries as $library) {
-      // Libraries definitions converted from composer.lock are in the form of
-      // 'vendor/library-name'. The vendor name must be removed in order to
-      // support drush make.
-      $old_key = $library->getName();
+    foreach ($make['libraries'] as $name => $info) {
+      // Libraries must be located in the root 'libraries' folder.
+      $make['libraries'][$name]['destination'] = "../../libraries";
 
-      // Drush make-convert doesn't currently include dependencies of libraries
-      // that are automatically detected and downloaded by Composer via
-      // asset-packagist in $make. However, these packages *are* detected by
-      // Composer and included in $libraries.
-      // Since we don't care about or want to process dependencies, we check to
-      // see if they are in $make and otherwise ignore them.
-      if (isset($make['libraries'][$old_key])) {
-        $new_key = basename($old_key);
-        $make['libraries'][$new_key] = $make['libraries'][$old_key];
-        unset($make['libraries'][$old_key]);
-
-        // Libraries must be located in the root 'libraries' folder.
-        $make['libraries'][$new_key]['destination'] = "../../libraries";
-
-        // Remove any libraries that are not specifically whitelisted above.
-        // Users will need to download these libraries manually.
-        if (!in_array($new_key, $whitelist)) {
-          unset($make['libraries'][$new_key]);
-        }
+      // Remove any libraries that are not specifically whitelisted above.
+      // Users will need to download these libraries manually.
+      if (!in_array($name, $whitelist)) {
+        unset($make['libraries'][$name]);
       }
-    }
-
-    // The doctrine/inflector library is included with Drupal core and does not
-    // need to be added to the make file. It is pinned to a specific version for
-    // Composer-based workflows in order to support PHP < 7 which is still used
-    // in the development, testing and deployment of DF.
-    if (isset($make['libraries']['doctrine/inflector'])) {
-      unset($make['libraries']['doctrine/inflector']);
     }
 
     // The ckeditor-track-changes library is designed to be renamed, after
     // download, to 'lite'.
     if (isset($make['libraries']['ckeditor-track-changes'])) {
       $make['libraries']['ckeditor-track-changes']['directory_name'] = 'lite';
-    }
-
-    // The slick library is designed to be renamed, after download, to
-    // 'slick-carousel'.
-    if (isset($make['libraries']['slick'])) {
-      $make['libraries']['slick']['directory_name'] = 'slick-carousel';
     }
 
     // The Zurb Foundation theme had its shortname changed from
@@ -105,86 +175,167 @@ class Package {
       $make['projects']['zurb-foundation'] = $make['projects']['zurb_foundation'];
       unset($make['projects']['zurb_foundation']);
     }
+  }
 
-    // Set default settings for projects and libraries.
-    $make['defaults']['projects']['subdir'] = 'contrib';
+  /**
+   * Builds a make structure for a library (i.e., not a Drupal project).
+   *
+   * @param array $package
+   *   The Composer package definition.
+   *
+   * @return array
+   *   The generated make structure.
+   */
+  protected function buildLibrary(array $package) {
+    $info = [
+      'type' => 'library',
+    ];
+    return $info + $this->buildPackage($package);
+  }
 
-    if (isset($make['projects']['drupal'])) {
-      // Always use drupal.org's core repository, or patches will not apply.
-      $make['projects']['drupal']['download']['url'] = 'https://git.drupal.org/project/drupal.git';
+  /**
+   * Builds a make structure for a Drupal module, theme, profile, or core.
+   *
+   * @param array $package
+   *   The Composer package definition.
+   *
+   * @return array
+   *   The generated make structure.
+   */
+  protected function buildProject(array $package) {
+    $info = [];
 
-      $core = [
-        'api' => 2,
-        'core' => '8.x',
-        'projects' => [
-          'drupal' => [
-            'type' => 'core',
-            'version' => $make['projects']['drupal']['download']['tag'],
-          ],
-        ],
-      ];
+    switch ($package['type']) {
+      case 'drupal-core':
+      case 'drupal-profile':
+      case 'drupal-theme':
+      case 'drupal-module':
+        $info['type'] = substr($package['type'], 7);
+        break;
+    }
+    $info += $this->buildPackage($package);
 
-      if (isset($make['projects']['drupal']['patch'])) {
-        $core['projects']['drupal']['patch'] = $make['projects']['drupal']['patch'];
+    // Dev versions should use git branch + revision, otherwise a tag is used.
+    if (strstr($package['version'], 'dev')) {
+      // 'dev-' prefix indicates a branch-alias. Stripping the dev prefix from
+      // the branch name is sufficient.
+      // @see https://getcomposer.org/doc/articles/aliases.md
+      if (strpos($package['version'], 'dev-') === 0) {
+        $info['download']['branch'] = substr($package['version'], 4);
       }
-
-      file_put_contents('drupal-org-core.make', $encoder->encode($core));
-      unset($make['projects']['drupal']);
-    }
-
-    // The Lightning profile is a unique project that has a number of
-    // non-standard properties such as its library name, version number and
-    // project type. These need to be altered or set manually.
-    if (isset($make['libraries']['acquia/lightning'])) {
-      // The Lightning profile is automatically detected as a library during
-      // conversion from composer.lock and receives the wrong name.
-      // Copy the library into a project which uses the correct name.
-      $make['projects']['lightning'] = $make['libraries']['acquia/lightning'];
-
-      // Identify the project as a 'profile'.
-      $make['projects']['lightning']['type'] = 'profile';
-
-      // Override the default 'contrib' subdirectory set above in order to
-      // prevent the profile from being placed in a 'contrib' folder.
-      $make['projects']['lightning']['subdir'] = '""';
-
-      // Fix the download tag which is incorrectly set to the download branch.
-      $make['projects']['lightning']['download']['tag'] = $make['projects']['lightning']['download']['branch'];
-      unset($make['projects']['lightning']['download']['branch']);
-
-      // Remove the 'acquia/lightning' library.
-      unset($make['libraries']['acquia/lightning']);
-    }
-
-    foreach ($make['projects'] as $key => &$project) {
-      if ($project['download']['type'] == 'git') {
-        if (isset($project['download']['tag'])) {
-          $tag = $project['download']['tag'];
-
-          // The Lightning project uses semantic versioning.
-          if ($key == 'lightning') {
-            $sem_ver = explode('.', $tag);
-
-            list($major, $minor, $patch) = $sem_ver;
-
-            $tag = "$major.$minor$patch";
-          }
-          else {
-            preg_match('/\d+\.x-\d+\.0/', $tag, $match);
-            $tag = str_replace($match, str_replace('x-', NULL, $match), $tag);
-            preg_match('/\d+\.\d+\.0/', $tag, $match);
-            $tag = str_replace($match, substr($match[0], 0, -2), $tag);
-          }
-
-          // Set the project version to the altered tag and remove the download
-          // information.
-          $project['version'] = $tag;
-          unset($project['download']);
-        }
+      // Otherwise, leave as is. Version may already use '-dev' suffix.
+      else {
+        $info['download']['branch'] = $package['version'];
       }
+      $info['download']['revision'] = $package['source']['reference'];
+    }
+    else {
+      if ($package['type'] == 'drupal-core') {
+        $version = $package['version'];
+      }
+      else {
+        // Make tag versioning Drupal-friendly. 8.1.0-alpha1 => 8.x-1.0-alpha1.
+        $version = sprintf(
+          '%d.x-%s',
+          $package['version']{0},
+          substr($package['version'], 2)
+        );
+      }
+      // Make the version Drush make-compatible: 1.x-13.0-beta2 --> 1.13-beta2
+      $info['version'] = preg_replace(
+        '/^([0-9]+)\.x-([0-9]+)\.[0-9]+(-.+)?/',
+        '$1.$2$3',
+        $version
+      );
+      unset($info['download']);
     }
 
-    file_put_contents('drupal-org.make', $encoder->encode($make));
+    return $info;
+  }
+
+  /**
+   * Builds a make structure for any kind of package.
+   *
+   * @param array $package
+   *   The Composer package definition.
+   *
+   * @return array
+   *   The generated make structure.
+   */
+  protected function buildPackage(array $package) {
+    $info = [
+      'download' => [
+        'type' => 'git',
+        'url' => $package['source']['url'],
+        'branch' => $package['version'],
+        'revision' => $package['source']['reference'],
+      ],
+    ];
+
+    if (isset($package['extra']['patches_applied'])) {
+      $info['patch'] = array_values($package['extra']['patches_applied']);
+    }
+    return $info;
+  }
+
+  /**
+   * Determines if a package is a Drupal core, module, theme, or profile.
+   *
+   * @param array $package
+   *   The package info.
+   *
+   * @return bool
+   *   TRUE if the package is a Drupal core, module, theme, or profile;
+   *   otherwise FALSE.
+   */
+  protected function isDrupalPackage(array $package) {
+    $package_types = [
+      'drupal-core',
+      'drupal-module',
+      'drupal-theme',
+      'drupal-profile',
+    ];
+
+    return (
+      strpos($package['name'], 'drupal/') === 0 &&
+      in_array($package['type'], $package_types)
+    );
+  }
+
+  /**
+   * Determines if a package is the Lightning profile.
+   *
+   * @param array $package
+   *   The package info.
+   *
+   * @return bool
+   *   TRUE if the package is Lightning; otherwise FALSE.
+   */
+  protected function isLightning(array $package) {
+    return (
+      $package['name'] == 'acquia/lightning' &&
+      $package['type'] == 'drupal-profile'
+    );
+  }
+
+  /**
+   * Determines if a package is an asset library.
+   *
+   * @param array $package
+   *   The package info.
+   *
+   * @return bool
+   *   TRUE if the package is an asset library, otherwise FALSE.
+   */
+  protected function isLibrary(array $package) {
+    $package_types = [
+      'drupal-library',
+      'bower-asset',
+      'npm-asset',
+    ];
+    return (
+    in_array($package['type'], $package_types)
+    );
   }
 
 }
