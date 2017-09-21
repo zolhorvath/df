@@ -210,7 +210,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.1.7",
+        "acquia/lightning": "2.1.8",
         "doctrine/inflector": "1.1.0",
         "drupal/address": "1.1.0",
         "drupal/addtoany": "1.8.0",
