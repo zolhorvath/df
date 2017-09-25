@@ -93,10 +93,6 @@ install:
   # Build the DF code base.
   - composer install
 
-  # Download and install Drupal.org drush.
-  - drush dl -y drupalorg_drush-7.x-1.x-dev --destination=$HOME/.drush
-  - drush cc drush
-
   # Install DF cleanly so that settings.php will be created properly.
   - phing install -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1 -Durl=http://127.0.0.1:8080
 
@@ -114,7 +110,6 @@ before_script:
   - sleep 5
 
 script:
-  - if [[ "$LIGHTNING" != HEAD ]]; then drush verify-makefile ../drupal-org.make; fi
   - if [[ "$LIGHTNING" != HEAD ]]; then composer validate ../composer.json --no-check-all --ansi --no-interaction; fi
   - cd ..
   - if [[ "$SCENARIO" != none ]]; then bin/robo test:behat -- --tags=df; fi
