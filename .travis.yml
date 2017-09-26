@@ -75,9 +75,12 @@ install:
   # Create the MySQL database and add a user for testing.
   - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'df'@'localhost' IDENTIFIED BY 'df'; GRANT ALL ON drupal.* TO 'df'@'localhost';"
 
-  # Install the PECL YAML extension for strict parsing. yes is used to
-  # acknowledge all prompts.
-  - yes '' | pecl install yaml
+  # Install the PECL YAML extension for strict parsing.
+  # Retrieve the extension from pecl.php.net manually in order to avoid timeouts
+  # and issues retrieving release information from PECL.
+  # 'yes' is used to acknowledge all prompts.
+  - wget http://pecl.php.net/get/yaml-2.0.2.tgz
+  - yes '' | pecl install yaml-2.0.2.tgz
   # Tweak PHP configuration.
   - echo 'max_execution_time = 120' >> drupal.php.ini;
   - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
