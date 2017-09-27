@@ -2,31 +2,17 @@
 
 namespace Acquia\DFExtension\Context;
 
+use Acquia\LightningExtension\AwaitTrait;
 use Acquia\LightningExtension\Context\PanelsInPlaceContext;
 use Acquia\LightningExtension\Context\UtilityContext;
 use Drupal\DrupalExtension\Context\DrupalSubContextBase;
-use Drupal\DrupalExtension\Context\MinkContext;
 
 /**
  * A context with miscellaneous helpers.
  */
 class MiscellaneousContext extends DrupalSubContextBase {
 
-  /**
-   * The Mink context.
-   *
-   * @var MinkContext
-   */
-  protected $minkContext;
-
-  /**
-   * Gathers required contexts.
-   *
-   * @BeforeScenario
-   */
-  public function gatherContexts() {
-    $this->minkContext = $this->getContext(MinkContext::class);
-  }
+  use AwaitTrait;
 
   /**
    * Opens the moderation sidebar.
@@ -46,7 +32,7 @@ class MiscellaneousContext extends DrupalSubContextBase {
     // ...but only open it if not already active.
     if ($link->hasClass('sidebar-open') == FALSE) {
       $link->click();
-      $this->minkContext->iWaitForAjaxToFinish();
+      $this->awaitAjax();
     }
   }
 
@@ -71,7 +57,9 @@ class MiscellaneousContext extends DrupalSubContextBase {
 
     /** @var \Acquia\LightningExtension\Context\UtilityContext $utility */
     $utility = $this->getContext(UtilityContext::class);
-    $utility->acceptAlerts([$this->minkContext, 'iWaitForAjaxToFinish']);
+    $utility->acceptAlerts(function () {
+      $this->awaitAjax();
+    });
   }
 
   /**
