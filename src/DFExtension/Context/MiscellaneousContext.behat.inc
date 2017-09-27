@@ -2,6 +2,8 @@
 
 namespace Acquia\DFExtension\Context;
 
+use Acquia\LightningExtension\Context\PanelsInPlaceContext;
+use Acquia\LightningExtension\Context\UtilityContext;
 use Drupal\DrupalExtension\Context\DrupalSubContextBase;
 use Drupal\DrupalExtension\Context\MinkContext;
 
@@ -56,11 +58,13 @@ class MiscellaneousContext extends DrupalSubContextBase {
   public function closeEditor() {
     $assert = $this->assertSession();
 
+    $panelsinplace = $this->getContext(PanelsInPlaceContext::class);
+
     // Assert that the tab exists...
     $link = $assert->elementExists(
       'named',
       ['link', 'Cancel'],
-      $assert->elementExists('css', '.ipe-tabs', $this->assertTray())
+      $assert->elementExists('css', '.ipe-tabs', $panelsinplace->assertTray())
     );
 
     $link->click();
