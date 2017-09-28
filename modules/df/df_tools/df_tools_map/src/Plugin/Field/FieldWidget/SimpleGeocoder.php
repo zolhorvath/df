@@ -99,7 +99,7 @@ class SimpleGeocoder extends WidgetBase {
       ];
     }
 
-    return $element;
+    return ['value' => $element];
   }
 
   /**
