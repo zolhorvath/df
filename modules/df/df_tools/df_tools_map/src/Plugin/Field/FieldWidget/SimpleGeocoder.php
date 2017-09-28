@@ -2,9 +2,15 @@
 
 namespace Drupal\df_tools_map\Plugin\Field\FieldWidget;
 
+use Drupal\Core\Entity\EntityFieldManagerInterface;
+use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\geocoder\GeocoderInterface;
+use Drupal\geofield\WktGeneratorInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Plugin implementation of the 'df_tools_map_simple_geocoder' widget.
@@ -17,7 +23,54 @@ use Drupal\Core\Form\FormStateInterface;
  *   },
  * )
  */
-class SimpleGeocoder extends WidgetBase {
+class SimpleGeocoder extends WidgetBase implements ContainerFactoryPluginInterface {
+
+  /**
+   * The entity field manager.
+   *
+   * @var \Drupal\Core\Entity\EntityFieldManagerInterface
+   */
+  protected $entityFieldManager;
+
+  /**
+   * The geocoder.
+   *
+   * @var \Drupal\geocoder\GeocoderInterface
+   */
+  protected $geocoder;
+
+  /**
+   * The WKT generator.
+   *
+   * @var \Drupal\geofield\WktGeneratorInterface
+   */
+  protected $wktGenerator;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, array $third_party_settings, EntityFieldManagerInterface $entity_field_manager, GeocoderInterface $geocoder, WktGeneratorInterface $wkt_generator) {
+    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $third_party_settings);
+    $this->entityFieldManager = $entity_field_manager;
+    $this->geocoder = $geocoder;
+    $this->wktGenerator = $wkt_generator;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $plugin_id,
+      $plugin_definition,
+      $configuration['field_definition'],
+      $configuration['settings'],
+      $configuration['third_party_settings'],
+      $container->get('entity_field.manager'),
+      $container->get('geocoder'),
+      $container->get('geofield.wkt_generator')
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -35,9 +88,7 @@ class SimpleGeocoder extends WidgetBase {
   public function settingsForm(array $form, FormStateInterface $form_state) {
     $elements = parent::settingsForm($form, $form_state);
 
-    /** @var \Drupal\Core\Entity\EntityFieldManagerInterface $entity_field_manager */
-    $entity_field_manager = \Drupal::service('entity_field.manager');
-    $entity_field_definitions = $entity_field_manager->getFieldDefinitions($this->fieldDefinition->getTargetEntityTypeId(), $this->fieldDefinition->getTargetBundle());
+    $entity_field_definitions = $this->entityFieldManager->getFieldDefinitions($this->fieldDefinition->getTargetEntityTypeId(), $this->fieldDefinition->getTargetBundle());
 
     $options = [];
     foreach ($entity_field_definitions as $id => $definition) {
@@ -132,12 +183,12 @@ class SimpleGeocoder extends WidgetBase {
         }
 
         // Geocode the source field's value.
-        if (isset($value['value']) && $collection = \Drupal::service('geocoder')->geocode($value['value'], ['googlemaps'])) {
+        if (isset($value['value']) && $collection = $this->geocoder->geocode($value['value'], ['googlemaps'])) {
           // Set our value in a similar way to Geofield's LatLon Widget.
           // @see \Drupal\geofield\Plugin\Field\FieldWidget\GeofieldLatLonWidget::massageFormValues()
           $coordinates = $collection->first()->getCoordinates();
           $point = [$coordinates->getLongitude(),  $coordinates->getLatitude()];
-          $values[$delta]['value'] = \Drupal::service('geofield.wkt_generator')->WktBuildPoint($point);
+          $values[$delta]['value'] = $this->wktGenerator->WktBuildPoint($point);
         }
       }
     }
