@@ -138,21 +138,17 @@ class SimpleGeocoder extends WidgetBase implements ContainerFactoryPluginInterfa
    * {@inheritdoc}
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
-    // The user has the option of hiding the current coordinates from view.
-    if ($this->getSetting('show_coordinates')) {
-      $element += [
-        '#type' => 'textfield',
-        '#disabled' => TRUE,
-        '#placeholder' => t('Latitude: @lat, Longitude: @lon', ['@lat' => $items[$delta]->lat, '@lon' => $items[$delta]->lon]),
-        '#suffix' => t('These values are set dynamically on submit from the @field field.', ['@field' => $this->getSetting('source_field')]),
-      ];
-    }
-    else {
-      // We set this field dynamically, no need to have more than the minimum.
-      $element += [
-        '#type' => 'hidden',
-        '#value' => ''
-      ];
+    $element += [
+      '#type' => 'item',
+      '#title' => $this->t('Coordinates'),
+      '#markup' => t('Latitude: @lat, Longitude: @lon', ['@lat' => $items[$delta]->lat, '@lon' => $items[$delta]->lon]),
+      '#description' => t('These values are set dynamically on submit from the @field field.', ['@field' => $this->getSetting('source_field')]),
+    ];
+
+    // Hide the coordinates if none are available or the associated setting is
+    // disabled.
+    if (empty($items[$delta]->lat) && empty($items[$delta]->lon) || !$this->getSetting('show_coordinates')) {
+      $element['#access'] = FALSE;
     }
 
     return ['value' => $element];
