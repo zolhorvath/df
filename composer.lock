@@ -4894,7 +4894,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin",
-                "reference": "1443f9f03cf622fdbdd909727b7b07ac91cb859f"
+                "reference": "4d797804cb572f5ef041c8085d00da78a2fdad2d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4906,7 +4906,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1506271444",
+                    "datestamp": "1506709443",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4931,7 +4931,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/material_admin"
             },
-            "time": "2017-09-29T13:47:25+00:00"
+            "time": "2017-09-29T18:41:38+00:00"
         },
         {
             "name": "drupal/media_entity",
