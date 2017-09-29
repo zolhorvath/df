@@ -158,39 +158,44 @@ class SimpleGeocoder extends WidgetBase implements ContainerFactoryPluginInterfa
    * {@inheritdoc}
    */
   public function massageFormValues(array $values, array $form, FormStateInterface $form_state) {
+    // Retrieve the name of the source 'text' or 'address' field.
     $source_field = $this->getSetting('source_field');
 
-    // Check that the source field has been set.
-    if (!empty($source_field)) {
-      // Get the value of our source field.
-      $field_value = $form_state->getValue($source_field, []);
+    // Only proceed if a source field is available.
+    if (empty($source_field)) {
+      return $values;
+    }
 
-      // For each value, geocode the address and set our coordinates.
-      foreach ($field_value as $delta => $value) {
-        // The address module changed its structure, at some point.
-        if (isset($value['address'])) {
-          $value = $value['address'];
-        }
+    // Get the values of the source field. Otherwise, return an empty array so
+    // that we can loop through it.
+    $source_field_values = $form_state->getValue($source_field, []);
 
-        // Check if this field is an Address field.
-        if (isset($value['address_line1'])) {
-          $address_line2 = !empty($value['address_line2']) ? $value['address_line2'] . "\n" : '';
-          $value['value'] = $value['address_line1'] . "\n" .
-            $address_line2 .
-            $value['locality'] . ', ' .
-            str_replace('US-', '', $value['administrative_area']) . ' ' .
-            $value['postal_code'] . "\n" .
-            $value['country_code'];
-        }
+    // For each source field value, geocode the address and set our coordinates.
+    foreach ($source_field_values as $delta => $value) {
+      // The address information is located in an 'address' key.
+      $address = $value['address'];
 
-        // Geocode the source field's value.
-        if (isset($value['value']) && $collection = $this->geocoder->geocode($value['value'], ['googlemaps'])) {
-          // Set our value in a similar way to Geofield's LatLon Widget.
-          // @see \Drupal\geofield\Plugin\Field\FieldWidget\GeofieldLatLonWidget::massageFormValues()
-          $coordinates = $collection->first()->getCoordinates();
-          $point = [$coordinates->getLongitude(),  $coordinates->getLatitude()];
-          $values[$delta]['value'] = $this->wktGenerator->WktBuildPoint($point);
-        }
+      // Create an empty string to store address information.
+      $string = '';
+
+      // Check if this field is an Address field.
+      if (isset($address['address_line1'])) {
+        // Format the address as a single string.
+        $string .= $address['address_line1'] . "\n";
+        $string .= !empty($address['address_line2']) ? $address['address_line2'] . "\n" : '';
+        $string .= $address['locality'] . ', ';
+        $string .= str_replace('US-', '', $address['administrative_area']) . ' ';
+        $string .= $address['postal_code'] . "\n";
+        $string .= $address['country_code'];
+      }
+
+      // Geocode the source field's value using Google Maps.
+      if (!empty($string) && $collection = $this->geocoder->geocode($string, ['googlemaps'])) {
+        // Set our value in a similar way to Geofield's LatLon Widget.
+        // @see \Drupal\geofield\Plugin\Field\FieldWidget\GeofieldLatLonWidget::massageFormValues()
+        $coordinates = $collection->first()->getCoordinates();
+        $point = [$coordinates->getLongitude(), $coordinates->getLatitude()];
+        $values[]['value'] = $this->wktGenerator->WktBuildPoint($point);
       }
     }
 
