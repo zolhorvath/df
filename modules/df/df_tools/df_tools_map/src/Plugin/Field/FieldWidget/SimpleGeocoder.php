@@ -121,10 +121,15 @@ class SimpleGeocoder extends WidgetBase implements ContainerFactoryPluginInterfa
    */
   public function settingsSummary() {
     $summary = [];
-
     $summary[] = $this->t('Source Field: @source', ['@source' => $this->getSetting('source_field')]);
-    $coordinates = $this->getSetting('show_coordinates') ? 'shown' : 'hidden';
-    $summary[] = $this->t('Coordinates are ' . $coordinates);
+
+    $coordinates = $this->getSetting('show_coordinates');
+    if ($coordinates) {
+      $summary[] = $this->t('Coordinates are shown');
+    }
+    else {
+      $summary[] = $this->t('Coordinates are hidden');
+    }
 
     return $summary;
   }
