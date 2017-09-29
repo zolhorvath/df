@@ -236,7 +236,7 @@
         "drupal/geofield": "1.0.0-alpha4",
         "drupal/geophp": "1.x-dev",
         "drupal/geolocation": "1.x-dev",
-        "drupal/google_analytics": "2.1.0",
+        "drupal/google_analytics": "2.2.0",
         "drupal/image_effects": "1.0.0",
         "drupal/image_widget_crop": "2.0.0",
         "drupal/import": "2.0.0-beta2",
