@@ -211,7 +211,7 @@
     "require": {
         "acquia/lightning": "2.1.8",
         "doctrine/inflector": "1.1.0",
-        "drupal/address": "1.1.0",
+        "drupal/address": "1.2.0",
         "drupal/addtoany": "1.8.0",
         "drupal/admin_login_path": "1.0.0",
         "drupal/admin_toolbar": "1.19.0",
