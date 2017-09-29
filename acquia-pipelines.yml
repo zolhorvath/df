@@ -10,7 +10,7 @@ services:
 
 variables:
   global:
-    SCENARIO: none
+    SCENARIO: dfs_tec
 
 events:
   build:
@@ -29,7 +29,8 @@ events:
             - cd $SOURCE_DIR
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
             - phing install -Ddb.password=root -Ddb.database=drupal -Durl=http://127.0.0.1:8080
-            - if [[ "$SCENARIO" != none ]]; then cd docroot; ../bin/drush cache-rebuild; ../bin/drush es $SCENARIO; cd ..; fi
+            - cd $SOURCE_DIR/docroot
+            - if [[ "$SCENARIO" != none ]]; then ../bin/drush cache-rebuild; ../bin/drush es $SCENARIO; fi
       - test:
           type: script
           script:
@@ -42,8 +43,26 @@ events:
       - cleanup:
           type: script
           script:
-            # Remove drush so our version doesn't interfere with cloud commands.
-            - composer remove drush/drush --dev
-            # Setup settings file and codebase with minimum required for cloud.
             - cd $SOURCE_DIR
+            # Setup settings file and codebase with minimum required for cloud.
             - phing cloud-settings
+      - deploy:
+          type: script
+          script:
+            # Deploy the build artifact to a Cloud on-demand environment.
+            - pipelines-deploy
+  # When a GitHub pull request is merged, this deletes the corresponding ODE.
+  pr-merged:
+    steps:
+      - deploy:
+          type: script
+          script:
+            - pipelines-deploy
+
+  # When a GitHub pull request is closed, this deletes the corresponding ODE.
+  pr-closed:
+    steps:
+      - deploy:
+          type: script
+          script:
+            - pipelines-deploy
