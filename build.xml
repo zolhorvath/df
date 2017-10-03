@@ -27,6 +27,7 @@
   <property name="version" value="HEAD" />
   <property name="fixture" value="${project.basedir}/tests/fixtures/${version}.sql" />
   <property name="cloud.subscription" value="demoframeworktests" />
+  <property name="scenario" value="none" />
 
   <!-- Finds required binaries. -->
   <target name="env">
@@ -98,6 +99,9 @@
     <exec command="${drush} site-install df --yes --account-pass=admin --db-url=${db.url}" dir="${docroot}" passthru="true" />
     <chmod file="${site}" mode="0755" />
 
+    <!-- Enable scenario. -->
+    <phingcall target="scenario" />
+
     <!-- Prepare PHPUnit. -->
     <mkdir dir="${docroot}/modules" />
     <mkdir dir="${docroot}/themes" />
@@ -121,6 +125,18 @@
       <isset property="www.group" />
       <then>
         <chown file="${site}/files" user="${env.USER}" group="${www.group}" />
+      </then>
+    </if>
+  </target>
+
+  <!-- Enables a scenario. -->
+  <target name="scenario" depends="env">
+    <if>
+      <not>
+        <equals arg1="${scenario}" arg2="none" />
+      </not>
+      <then>
+        <exec command="${drush} enable-scenario ${scenario}" dir="${docroot}" />
       </then>
     </if>
   </target>

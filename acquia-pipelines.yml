@@ -28,9 +28,7 @@ events:
           script:
             - cd $SOURCE_DIR
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
-            - phing install -Ddb.password=root -Ddb.database=drupal -Durl=http://127.0.0.1:8080
-            - cd $SOURCE_DIR/docroot
-            - if [[ "$SCENARIO" != none ]]; then ../bin/drush cache-rebuild; ../bin/drush es $SCENARIO; fi
+            - phing install -Ddb.password=root -Ddb.database=drupal -Durl=http://127.0.0.1:8080 -Dscenario=$SCENARIO
       - test:
           type: script
           script:
