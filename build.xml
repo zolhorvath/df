@@ -121,6 +121,14 @@
     <exec command="${project.basedir}/bin/drupal behat:init ${url} --merge=${project.basedir}/docroot/profiles/df/tests/behat.yml" dir="${docroot}" />
     <exec command="${project.basedir}/bin/drupal behat:include ${project.basedir}/docroot/profiles/df/tests/features --with-subcontexts=${project.basedir}/docroot/profiles/df/tests/features/bootstrap --with-subcontexts=${project.basedir}/docroot/profiles/df/src/DFExtension/Context --with-subcontexts=${project.basedir}/docroot/profiles/lightning/src/LightningExtension/Context" dir="${docroot}" />
 
+    <!-- Export configuration for archaeological purposes. -->
+    <property name="config_fixture" value="${project.basedir}/tests/config/${scenario}" />
+    <exec command="${project.basedir}/bin/drupal config:export --directory=${project.basedir}/tests/config/${scenario} --remove-uuid --remove-config-hash" dir="${docroot}" />
+    <!-- Change config values that might, or will, change on every install. -->
+    <exec command="${yaml-cli} unset:key ${config_fixture}/embed.button.media_browser.yml dependencies.content" />
+    <exec command="${yaml-cli} update:value ${config_fixture}/embed.button.media_browser.yml icon_uuid ''" />
+    <exec command="${yaml-cli} update:value ${config_fixture}/system.date.yml timezone.default UTC" />
+
     <if>
       <isset property="www.group" />
       <then>
