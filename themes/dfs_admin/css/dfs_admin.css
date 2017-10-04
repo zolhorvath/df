@@ -7,3 +7,7 @@
 .content-browser-card .card-image .field__item:not(:first-child) {
   display: none;
 }
+
+.node-form .form-actions .button {
+  margin-bottom: 10px;
+}
