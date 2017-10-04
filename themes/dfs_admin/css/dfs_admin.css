@@ -4,25 +4,6 @@
  *
  */
 
-.entities-list.ui-sortable {
-  overflow:auto;
-}
-
-@media screen and (max-width: 480px) {
-  .fixed-action-btn.horizontal {
-    padding: 15px 0 0 0;
-  }
-  .fixed-action-btn.horizontal ul {
-    text-align: center;
-    right: 0;
-    left: 0;
-    top: inherit;
-    transform: none;
-    width: inherit;
-    height: inherit;
-  }
-  .fixed-action-btn.horizontal ul li {
-    display: block;
-    margin: 0 0 15px 0;
-  }
+.content-browser-card .card-image .field__item:not(:first-child) {
+  display: none;
 }
