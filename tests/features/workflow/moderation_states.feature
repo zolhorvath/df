@@ -98,5 +98,6 @@ Feature: Workflow moderation states
       | not_moderated | Not Moderated |
     And I am logged in as a user with the "administer nodes,create not_moderated content" permissions
     When I visit "/node/add/not_moderated"
-    Then I should see the "Save and publish" button
-    And I should see the "Save as unpublished" button
+    Then I should see the "Save" button
+    And I should not see the "Save and publish" button
+    And I should not see the "Save as unpublished" button
