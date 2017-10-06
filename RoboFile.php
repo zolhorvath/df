@@ -10,6 +10,8 @@ class RoboFile extends \Robo\Tasks {
 
     return parent::taskBehat($behat)
       ->config('docroot/sites/default/files/behat.yml')
+      ->format('pretty')
+      ->option('colors')
       ->option('stop-on-failure')
       ->option('strict');
   }
