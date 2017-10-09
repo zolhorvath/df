@@ -11,3 +11,7 @@
 .node-form .form-actions .button {
   margin-bottom: 10px;
 }
+
+.node-form .form-actions dropbutton-wrapper {
+  vertical-align: top;
+}
