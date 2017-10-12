@@ -79,8 +79,12 @@ function df_tools_moderation_tokens($type, $tokens, array $data, array $options,
     $node = $data['node'];
     /** @var \Drupal\workbench_moderation\ModerationInformation $moderation_information */
     $moderation_information = \Drupal::service('workbench_moderation.moderation_information');
+
     /** @var \Drupal\node\NodeInterface $latest */
-    $latest = $moderation_information->getLatestRevision('node', $node->id());
+    if (!($latest = $moderation_information->getLatestRevision('node', $node->id()))) {
+      $latest = $node;
+    }
+
     if ($langcode) {
       $latest = $latest->getTranslation($langcode);
     }
