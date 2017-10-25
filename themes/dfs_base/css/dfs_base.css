@@ -539,9 +539,6 @@ pre {
       margin-left: 0; }
   .row.expanded {
     max-width: none; }
-    .row.expanded .row {
-      margin-right: auto;
-      margin-left: auto; }
   .row:not(.expanded) .row {
     max-width: none; }
   .row.collapse > .column, .row.collapse > .columns {
@@ -1503,9 +1500,7 @@ kbd {
     widows: 3; }
   h2,
   h3 {
-    page-break-after: avoid; }
-  .print-break-inside {
-    page-break-inside: auto; } }
+    page-break-after: avoid; } }
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],
 textarea {
@@ -1891,18 +1886,6 @@ select {
     display: inline-block;
     float: right;
     margin-left: 1em; }
-  .button.dropdown.hollow::after, .ipe-form input.dropdown.hollow[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #2199e8; }
-  .button.dropdown.hollow.primary::after, .ipe-form input.dropdown.hollow.primary[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow.primary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.primary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.primary[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow.primary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #2199e8; }
-  .button.dropdown.hollow.secondary::after, .ipe-form input.dropdown.hollow.secondary[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow.secondary[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.secondary[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.secondary[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow.secondary[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #777; }
-  .button.dropdown.hollow.success::after, .ipe-form input.dropdown.hollow.success[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow.success[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.success[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.success[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow.success[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #3adb76; }
-  .button.dropdown.hollow.warning::after, .ipe-form input.dropdown.hollow.warning[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow.warning[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.warning[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.warning[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow.warning[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #ffae00; }
-  .button.dropdown.hollow.alert::after, .ipe-form input.dropdown.hollow.alert[data-drupal-selector="edit-preview"]::after, .ipe-form input.dropdown.hollow.alert[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.alert[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.dropdown.hollow.alert[data-drupal-selector="edit-submit"]::after, .ipe-form input.dropdown.hollow.alert[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
-    border-top-color: #ec5840; }
   .button.arrow-only::after, .ipe-form input.arrow-only[data-drupal-selector="edit-preview"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-content-entity-browser-open-modal"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-submit"]::after, .ipe-form input.arrow-only[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"]::after {
     top: -0.1em;
     float: none;
@@ -2365,10 +2348,8 @@ select {
 .menu-centered {
   text-align: center; }
   .menu-centered > .menu {
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: start;
-        align-items: flex-start; }
+    display: inline-block;
+    vertical-align: top; }
 
 .no-js [data-responsive-menu] ul {
   display: none; }
@@ -3296,7 +3277,6 @@ html.is-reveal-open,
 html.is-reveal-open body {
   min-height: 100%;
   overflow: hidden;
-  position: fixed;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3332,7 +3312,8 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal {
       min-height: 0; } }
-  .reveal .column, .reveal .columns {
+  .reveal .column, .reveal .columns,
+  .reveal .columns {
     min-width: 0; }
   .reveal > :last-child {
     margin-bottom: 0; }
@@ -3971,14 +3952,6 @@ a.thumbnail {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch; }
-
-.align-center-middle {
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center; }
 
 .small-order-1 {
   -ms-flex-order: 1;
@@ -10576,6 +10549,9 @@ a[data-block-type="url"]:before {
 .contextual-toolbar-tab {
   max-width: 0;
   overflow: hidden; }
+
+.settings-trayblock-configure {
+  display: none; }
 
 .adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
   float: left; }
