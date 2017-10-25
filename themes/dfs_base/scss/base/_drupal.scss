@@ -762,8 +762,9 @@ a[data-block-type="url"] {
 }
 
 // Hide Outside In elements that interfere with normal demo flow.
-.toolbar-icon-edit, .outside-inblock-configure {
-  display: none;
+.contextual-toolbar-tab {
+  max-width: 0;
+  overflow: hidden;
 }
 
 .adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
