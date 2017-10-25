@@ -27,6 +27,7 @@
   <property name="version" value="HEAD" />
   <property name="fixture" value="${project.basedir}/tests/fixtures/${version}.sql" />
   <property name="cloud.subscription" value="demoframeworktests" />
+  <property name="scenario" value="none" />
 
   <!-- Finds required binaries. -->
   <target name="env">
@@ -98,6 +99,9 @@
     <exec command="${drush} site-install df --yes --account-pass=admin --db-url=${db.url}" dir="${docroot}" passthru="true" />
     <chmod file="${site}" mode="0755" />
 
+    <!-- Enable scenario. -->
+    <phingcall target="scenario" />
+
     <!-- Prepare PHPUnit. -->
     <mkdir dir="${docroot}/modules" />
     <mkdir dir="${docroot}/themes" />
@@ -117,10 +121,30 @@
     <exec command="${project.basedir}/bin/drupal behat:init ${url} --merge=${project.basedir}/docroot/profiles/df/tests/behat.yml" dir="${docroot}" />
     <exec command="${project.basedir}/bin/drupal behat:include ${project.basedir}/docroot/profiles/df/tests/features --with-subcontexts=${project.basedir}/docroot/profiles/df/tests/features/bootstrap --with-subcontexts=${project.basedir}/docroot/profiles/df/src/DFExtension/Context --with-subcontexts=${project.basedir}/docroot/profiles/lightning/src/LightningExtension/Context" dir="${docroot}" />
 
+    <!-- Export configuration for archaeological purposes. -->
+    <property name="config_fixture" value="${project.basedir}/tests/config/${scenario}" />
+    <exec command="${project.basedir}/bin/drupal config:export --directory=${project.basedir}/tests/config/${scenario} --remove-uuid --remove-config-hash" dir="${docroot}" />
+    <!-- Change config values that might, or will, change on every install. -->
+    <exec command="${yaml-cli} unset:key ${config_fixture}/embed.button.media_browser.yml dependencies.content" />
+    <exec command="${yaml-cli} update:value ${config_fixture}/embed.button.media_browser.yml icon_uuid ''" />
+    <exec command="${yaml-cli} update:value ${config_fixture}/system.date.yml timezone.default UTC" />
+
     <if>
       <isset property="www.group" />
       <then>
         <chown file="${site}/files" user="${env.USER}" group="${www.group}" />
+      </then>
+    </if>
+  </target>
+
+  <!-- Enables a scenario. -->
+  <target name="scenario" depends="env">
+    <if>
+      <not>
+        <equals arg1="${scenario}" arg2="none" />
+      </not>
+      <then>
+        <exec command="${drush} enable-scenario ${scenario}" dir="${docroot}" />
       </then>
     </if>
   </target>
