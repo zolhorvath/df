@@ -5,12 +5,12 @@ dependencies:
   config:
     - block_content.type.media
     - field.storage.block_content.field_media
-    - media_entity.bundle.document
-    - media_entity.bundle.image
-    - media_entity.bundle.instagram
-    - media_entity.bundle.local_video
-    - media_entity.bundle.tweet
-    - media_entity.bundle.video
+    - media.type.document
+    - media.type.image
+    - media.type.instagram
+    - media.type.local_video
+    - media.type.tweet
+    - media.type.video
 id: block_content.media.field_media
 field_name: field_media
 entity_type: block_content

@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.media.local_video.field_media_in_library
     - field.field.media.local_video.field_media_video_local_file
-    - media_entity.bundle.local_video
+    - media.type.local_video
   module:
     - file
     - workbench_moderation

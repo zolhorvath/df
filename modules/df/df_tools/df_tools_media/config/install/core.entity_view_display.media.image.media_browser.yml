@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.image.field_tags
     - field.field.media.image.image
     - image.style.card_narrow
-    - media_entity.bundle.image
+    - media.type.image
   module:
     - image
 id: media.image.media_browser

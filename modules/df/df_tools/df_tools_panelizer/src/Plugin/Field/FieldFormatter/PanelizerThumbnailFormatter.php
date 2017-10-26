@@ -15,7 +15,7 @@ use Drupal\Core\Image\ImageFactory;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\ctools_block\Plugin\Block\EntityField;
 use Drupal\file\FileInterface;
-use Drupal\media_entity\MediaInterface;
+use Drupal\media\MediaInterface;
 use Drupal\panelizer\PanelizerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

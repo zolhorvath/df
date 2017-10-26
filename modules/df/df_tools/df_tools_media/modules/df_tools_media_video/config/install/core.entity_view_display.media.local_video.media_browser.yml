@@ -7,7 +7,7 @@ dependencies:
     - field.field.media.local_video.field_media_in_library
     - field.field.media.local_video.field_media_video_local_file
     - image.style.card_narrow
-    - media_entity.bundle.local_video
+    - media.type.local_video
   module:
     - image
 id: media.local_video.media_browser

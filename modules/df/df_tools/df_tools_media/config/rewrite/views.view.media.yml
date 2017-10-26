@@ -6,13 +6,13 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_browser
     - image.style.thumbnail
-    - media_entity.bundle.image
+    - media.type.image
     - taxonomy.vocabulary.media_tags
   module:
     - entity_browser
     - file
     - image
-    - media_entity
+    - media
     - taxonomy
     - user
     - views_infinite_scroll
@@ -1264,7 +1264,7 @@ display:
             format: default_summary
           specify_validation: true
           validate:
-            type: 'entity:media_bundle'
+            type: 'entity:media_type'
             fail: ignore
           validate_options:
             operation: view

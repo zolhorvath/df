@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_media_video_local_file
-    - media_entity.bundle.local_video
+    - media.type.local_video
   module:
     - file
 id: media.local_video.field_media_video_local_file

@@ -5,7 +5,7 @@ namespace Drupal\df_tools_frontend\Controller;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Render\Element\StatusMessages;
 use Drupal\image\Controller\QuickEditImageController;
-use Drupal\media_entity\Entity\Media;
+use Drupal\media\Entity\Media;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

@@ -7,10 +7,10 @@ dependencies:
 id: local_video
 label: 'Local Video'
 description: 'Locally hosted videos.'
-type: video
+source: video
 queue_thumbnail_downloads: false
 new_revision: false
-type_configuration:
+source_configuration:
   source_field: field_media_video_local_file
 field_map: {  }
 third_party_settings:

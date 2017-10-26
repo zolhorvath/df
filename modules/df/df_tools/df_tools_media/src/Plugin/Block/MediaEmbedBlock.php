@@ -5,7 +5,7 @@ namespace Drupal\df_tools_media\Plugin\Block;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\media_entity\Entity\Media;
+use Drupal\media\Entity\Media;
 
 /**
  * Provides the "Media Embed" block.
@@ -133,7 +133,7 @@ class MediaEmbedBlock extends BlockBase {
     $bundle_info = \Drupal::service('entity_type.bundle.info')->getBundleInfo('media');
 
     foreach ($mids as $mid) {
-      /** @var \Drupal\media_entity\Entity\Media $media */
+      /** @var \Drupal\media\Entity\Media $media */
       $media = Media::load($mid);
 
       $selection['table'][$mid] = [
@@ -201,7 +201,7 @@ class MediaEmbedBlock extends BlockBase {
     $view_builder = \Drupal::entityTypeManager()->getViewBuilder('media');
 
     foreach ($this->getDefaultMIDs() as $mid) {
-      /** @var \Drupal\media_entity\Entity\Media $media */
+      /** @var \Drupal\media\Entity\Media $media */
       $media = Media::load($mid);
       if ($media && $media->access('view')) {
         if (isset(static::$recursiveRenderDepth[$mid])) {
