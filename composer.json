@@ -148,12 +148,6 @@
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
                 "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
             },
-            "drupal/media_entity": {
-                "Remove version constraints. | http://drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/remove-media-entity-version-constraints.patch",
-                "The getRevisionUserId and setRevisionUserId methods do not work | https://www.drupal.org/node/2873448":
-                "https://www.drupal.org/files/issues/media-entity-revision-id-api-broken.patch"
-            },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
@@ -201,7 +195,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "2.2.0",
+        "acquia/lightning": "2.2.1",
         "doctrine/inflector": "1.1.0",
         "drupal/address": "1.2.0",
         "drupal/addtoany": "1.8.0",
