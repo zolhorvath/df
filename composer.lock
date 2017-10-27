@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "646cd38768dd5ef53897e7843f4100cd",
+    "content-hash": "8900275b69f82f7ed7ed0c571a965d72",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5830,11 +5830,17 @@
         },
         {
             "name": "drupal/moderation_note",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "003d273675f26a9e009f081336a7cd4d5fba3a44"
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_note-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "9e0c48fbc63b286c051e9d7707d72a780ecde988"
             },
             "require": {
                 "drupal/core": "*"
@@ -5848,8 +5854,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+1-dev",
-                    "datestamp": "1499806142",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1509143585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5870,16 +5876,21 @@
             "homepage": "https://www.drupal.org/project/moderation_note",
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_note"
-            },
-            "time": "2017-09-26T23:52:25+00:00"
+            }
         },
         {
             "name": "drupal/moderation_sidebar",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "595f1d36b2745f0d0d262fd5cf5458f6e25bcf16"
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "eb804c26f4dcf76b60d141fb269d09121dc54212"
             },
             "require": {
                 "drupal/core": "*"
@@ -5893,8 +5904,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+4-dev",
-                    "datestamp": "1506470044",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1509143585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5915,8 +5926,7 @@
             "homepage": "https://www.drupal.org/project/moderation_sidebar",
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_sidebar"
-            },
-            "time": "2017-10-10T17:49:40+00:00"
+            }
         },
         {
             "name": "drupal/oauth",
@@ -15702,8 +15712,6 @@
         "drupal/material_admin": 20,
         "drupal/material_admin_support": 20,
         "drupal/moderation_dashboard": 20,
-        "drupal/moderation_note": 20,
-        "drupal/moderation_sidebar": 20,
         "drupal/replicate": 20,
         "drupal/replicate_ui": 20,
         "drupal/scenarios": 20,
