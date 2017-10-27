@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "298537499d23140242af3f19aeee8642",
+    "content-hash": "646cd38768dd5ef53897e7843f4100cd",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4920,7 +4920,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1508508244",
+                    "datestamp": "1508601545",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4971,6 +4971,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Switch from Media Entity to the core Media module. | https://www.drupal.org/node/2919354": "https://www.drupal.org/files/issues/core-media-adoption-2919354-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
