@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a9c8a52a1d736c8e86a6cbb0f54ffcc",
+    "content-hash": "6aebb39ab337e15414e86fe0bedc8601",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7127,6 +7127,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Only set search_api.index.*.has_reindexed state if necessary | https://www.drupal.org/node/2919884": "https://www.drupal.org/files/issues/search-api-avoid-state-set.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

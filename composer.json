@@ -162,6 +162,10 @@
                 "Data processors do not check type before performing type-specific operations | https://www.drupal.org/node/2849810":
                 "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
             },
+            "drupal/search_api": {
+              "Only set search_api.index.*.has_reindexed state if necessary | https://www.drupal.org/node/2919884":
+              "https://www.drupal.org/files/issues/search-api-avoid-state-set.patch"
+            },
             "drupal/token": {
                 "Remove deprecated method of hiding token field | https://www.drupal.org/node/2879283":
                 "https://www.drupal.org/files/issues/token-deprecated-calls.patch"
