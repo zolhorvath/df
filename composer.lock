@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8900275b69f82f7ed7ed0c571a965d72",
+    "content-hash": "6a9c8a52a1d736c8e86a6cbb0f54ffcc",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -4920,7 +4920,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1508601545",
+                    "datestamp": "1509366184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4953,7 +4953,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin_support",
-                "reference": "2695df2ed5c3c209054962102a1c4a7d135deea3"
+                "reference": "841748a33e4ec0029c18ed2b7082e39130292e91"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4966,14 +4966,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1508424844",
+                    "datestamp": "1509035643",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": {
-                    "Switch from Media Entity to the core Media module. | https://www.drupal.org/node/2919354": "https://www.drupal.org/files/issues/core-media-adoption-2919354-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4999,7 +4996,7 @@
                 "source": "http://cgit.drupalcode.org/material_admin_support",
                 "issues": "https://www.drupal.org/project/issues/material_admin_support"
             },
-            "time": "2017-10-26T16:34:05+00:00"
+            "time": "2017-10-30T11:52:11+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -12084,14 +12081,8 @@
             "version": "8.2.12",
             "source": {
                 "type": "git",
-                "url": "https://github.com/klausi/coder.git",
+                "url": "https://git.drupal.org/project/coder.git",
                 "reference": "984c54a7b1e8f27ff1c32348df69712afd86b17f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/klausi/coder/zipball/984c54a7b1e8f27ff1c32348df69712afd86b17f",
-                "reference": "984c54a7b1e8f27ff1c32348df69712afd86b17f",
-                "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",

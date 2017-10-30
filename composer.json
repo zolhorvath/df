@@ -148,10 +148,6 @@
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091":
                 "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
             },
-            "drupal/material_admin_support": {
-                "Switch from Media Entity to the core Media module. | https://www.drupal.org/node/2919354":
-                "https://www.drupal.org/files/issues/core-media-adoption-2919354-2.patch"
-            },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992":
                 "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
