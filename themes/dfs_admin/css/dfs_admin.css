@@ -15,3 +15,20 @@
 .node-form .form-actions .dropbutton-wrapper {
   vertical-align: top;
 }
+
+
+.toolbar-horizontal .toolbar-tray .menu-item + .menu-item {
+  border-left: inherit;
+}
+
+.toolbar-horizontal .toolbar-tray {
+  border-bottom: inherit;
+}
+
+.toolbar-horizontal .toolbar-tray .menu-item:last-child {
+  border-right: inherit;
+}
+
+.adminimal-admin-toolbar .toolbar .toolbar-tray {
+  box-shadow: inherit;
+}
