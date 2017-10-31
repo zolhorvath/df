@@ -16,7 +16,7 @@ Feature: Scheduled updates to content
       | Foobar | /foobar | needs_review     |
     When I visit "/foobar"
     And I open the moderation sidebar
-    And I click "Edit draft"
+    And I select the "Edit draft" moderation sidebar link
     And I schedule the node to be published at "1984-09-19 08:57:00"
     And I press "Save"
     And I visit "/admin/config/workflow/schedule-updates/run"

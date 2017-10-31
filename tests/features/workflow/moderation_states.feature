@@ -27,8 +27,8 @@ Feature: Workflow moderation states
       | title             | path   | moderation_state |
       | Moderation Test 3 | /moderation-test-3 | needs_review     |
     And I visit "/moderation-test-3"
-    And I click "Tasks"
-    And I click "Edit draft"
+    And I open the moderation sidebar
+    And I select the "Edit draft" moderation sidebar link
     And I select "Published" from "Moderation state"
     And I press "Save"
     And I visit "/user/logout"
@@ -42,8 +42,8 @@ Feature: Workflow moderation states
       | title             | path   | moderation_state |
       | Moderation Test 4 | /moderation-test-4 | published        |
     And I visit "/moderation-test-4"
-    And I click "Tasks"
-    And I press the "Archive" button
+    And I open the moderation sidebar
+    And I select the "Archive" moderation sidebar button
     And I visit "/user/logout"
     And I go to "/moderation-test-4"
     Then the response status code should be 403
@@ -75,7 +75,7 @@ Feature: Workflow moderation states
       | Squid | Squid. | published        | /squid |
     When I visit "/squid"
     And I open the moderation sidebar
-    And I press the "Create New Draft" button
+    And I select the "Create New Draft" moderation sidebar button
     And I wait for AJAX to finish
     Then I should see a "system_main_block" block with a "quickedit" contextual link
 
@@ -91,6 +91,21 @@ Feature: Workflow moderation states
     When I visit "admin/content"
     Then I should see "Lazy Lummox"
 
+  @084ca18d
+  Scenario: Content types do not display the Published checkbox once they are moderated
+    Given node_type entities:
+      | type   | name   |
+      | foobar | Foobar |
+    And I am logged in as a user with the administrator role
+    When I visit "/admin/structure/types/manage/foobar/moderation"
+    And I check the box "Enable moderation states."
+    And I press "Save"
+    And I visit "/node/add/foobar"
+    Then I should see the "Save" button
+    But I should not see a "status[value]" field
+    And I should not see the "Save and publish" button
+    And I should not see the "Save as unpublished" button
+
   @d0f9aaa8
   Scenario: Unmoderated content types have normal submit buttons
     Given node_type entities:
@@ -99,5 +114,34 @@ Feature: Workflow moderation states
     And I am logged in as a user with the "administer nodes,create not_moderated content" permissions
     When I visit "/node/add/not_moderated"
     Then I should see the "Save" button
+    And the "Published" checkbox should be checked
     And I should not see the "Save and publish" button
     And I should not see the "Save as unpublished" button
+
+  @14ddcc9d
+  Scenario Outline: Moderated content types do not show the Published checkbox
+    Given I am logged in as a user with the <role> role
+    When I visit "/node/add/<node_type>"
+    Then I should see the "Save" button
+    But I should not see a "status[value]" field
+    And I should not see the "Save and publish" button
+    And I should not see the "Save as unpublished" button
+
+    Examples:
+      | node_type    | role                 |
+      | page         | administrator        |
+      | landing_page | administrator        |
+
+  @7cef449b
+  Scenario: Unmoderated content types have the "Create new revision" Checkbox
+    Given node_type entities:
+      | type          | name          |
+      | not_moderated | Not Moderated |
+    And not_moderated content:
+      | title       | path       |
+      | Deft Zebra  | /deft-zebra |
+    And I am logged in as a user with the administrator role
+    When I visit "/deft-zebra"
+    And I open the moderation sidebar
+    And I select the "Edit" moderation sidebar link
+    Then I should see "Create new revision"
