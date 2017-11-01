@@ -110,7 +110,9 @@
                 "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
                 "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                 "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219":
-                "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch"
+                "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
+                "Make media name available on manage display | https://www.drupal.org/node/2912298":
+                "https://www.drupal.org/files/issues/core-media-add-name-to-display-2912298-25.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670":

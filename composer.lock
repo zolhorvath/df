@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2fe128184ebb5d8e4681dc2b30d8e9b",
+    "content-hash": "eceef22eb9de7f554ae2915cf5497618",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2801,6 +2801,7 @@
                     "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850": "https://www.drupal.org/files/issues/2652850-17.patch",
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
+                    "Make media name available on manage display | https://www.drupal.org/node/2912298": "https://www.drupal.org/files/issues/core-media-add-name-to-display-2912298-25.patch",
                     "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-360.patch",
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                     "2880445 - Config sync should not throw a warning when not being writable": "https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch",
@@ -4925,7 +4926,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1509484986",
+                    "datestamp": "1509543785",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4958,7 +4959,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin_support",
-                "reference": "841748a33e4ec0029c18ed2b7082e39130292e91"
+                "reference": "472c509619ecc0303508ce698dcbfd7dacdd50ec"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4971,7 +4972,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1509035643",
+                    "datestamp": "1509364384",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5001,7 +5002,7 @@
                 "source": "http://cgit.drupalcode.org/material_admin_support",
                 "issues": "https://www.drupal.org/project/issues/material_admin_support"
             },
-            "time": "2017-10-30T11:52:11+00:00"
+            "time": "2017-11-01T16:59:10+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -7247,7 +7248,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1505488645",
+                    "datestamp": "1509541985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
