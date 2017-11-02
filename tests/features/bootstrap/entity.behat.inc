@@ -5,6 +5,7 @@
  * Contains \EntitySubContext.
  */
 
+use Acquia\DFExtension\Context\ModerationSidebarContext;
 use Behat\Gherkin\Node\TableNode;
 use Behat\Mink\Exception\ExpectationException;
 use Drupal\Core\Entity\EntityInterface;
@@ -247,7 +248,17 @@ class EntitySubContext extends DrupalSubContextBase {
    * @When I visit the current revision
    */
   public function visitCurrentNodeRevision() {
-    $this->minkContext->clickLink('Revisions');
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->openModerationSidebar();
+
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->selectModerationSidebarLink('Revisions');
+
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->selectModerationSidebarLink('View all revisions');
 
     $session = $this->getSession();
 
@@ -310,7 +321,18 @@ class EntitySubContext extends DrupalSubContextBase {
    * @When /^I visit the (\d+)(?:st|nd|rd|th) revision$/
    */
   public function visitNthRevision($n) {
-    $this->minkContext->clickLink('Revisions');
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->openModerationSidebar();
+
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->selectModerationSidebarLink('Revisions');
+
+    $this
+      ->getContext(ModerationSidebarContext::class)
+      ->selectModerationSidebarLink('View all revisions');
+
     $this->df->clickElementBySelector('main table tr:nth-child(' . $n . ') td:first-child a');
   }
 
