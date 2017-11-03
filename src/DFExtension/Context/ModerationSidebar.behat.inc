@@ -3,8 +3,7 @@
 namespace Acquia\DFExtension\Context;
 
 use Acquia\LightningExtension\AwaitTrait;
-use Acquia\LightningExtension\Context\PanelsInPlaceContext;
-use Acquia\LightningExtension\Context\UtilityContext;
+
 use Drupal\DrupalExtension\Context\DrupalSubContextBase;
 
 /**
@@ -73,7 +72,7 @@ class ModerationSidebarContext extends DrupalSubContextBase {
     $link = $assert->elementExists(
       'named',
       ['button', $item],
-      $assert->elementExists('css', '.moderation-sidebar-actions')
+      $assert->elementExists('css', '.moderation-sidebar-container')
     );
 
     $link->click();
@@ -95,7 +94,7 @@ class ModerationSidebarContext extends DrupalSubContextBase {
     $link = $assert->elementExists(
       'named',
       ['link', $item],
-      $assert->elementExists('css', '.moderation-sidebar-actions')
+      $assert->elementExists('css', '.moderation-sidebar-container')
     );
 
     $link->click();
