@@ -32,3 +32,7 @@
 .adminimal-admin-toolbar .toolbar .toolbar-tray {
   box-shadow: inherit;
 }
+
+.adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
+  float: left;
+}
