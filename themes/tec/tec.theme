@@ -6,6 +6,8 @@
  */
 
 use Drupal\Component\Utility\Html;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_preprocess_menu().
@@ -94,12 +96,23 @@ function tec_preprocess_node(&$variables) {
  * Implements hook_preprocess_page().
  */
 function tec_preprocess_page(&$variables) {
-  // Add an extra helper variable so we can target pages for certain node types
+  // Add an extra helper variable so we can target pages for certain node types.
   if (isset($variables['node'])) {
-    $variables['content_wrap_classes'] = 'node-' . $variables['node']->getType();
+    $node = $variables['node'];
+
+    // When viewing a revision $node will be numeric.
+    // @see https://www.drupal.org/node/2495703
+    if (is_numeric($node)) {
+      $node = Node::load($node);
+    }
+    if ($node instanceof NodeInterface) {
+      $variables['content_wrap_classes'] = 'node-' . $node->getType();
+    }
+
     // We already display the title in node--full.html.twig
     unset($variables['page']['content']['pagetitle']);
   }
+
   // Wrap tabs so we can float them above our hero images.
   if (isset($variables['page']['content']['tabs'] )) {
     $variables['page']['content']['tabs'] = [
