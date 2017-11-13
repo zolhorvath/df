@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "287f40eceeb514f15771921ab1282e58",
-    "content-hash": "8592778bf1c4bfdb977114dd4d3e38c4",
+    "hash": "11e05a1e3b4774f14036cf3d434cb1e9",
+    "content-hash": "2f849027915b5c4024ce962a748f62c2",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2200,17 +2200,11 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "1.0.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_rewrite",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "2b3aaf47a7ac501e9fb213ce785b75feb25bab03"
+                "reference": "0e7331a0b2e5c3e184338a968e8db890e34c0bbc"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2221,14 +2215,16 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1495478283",
+                    "version": "8.x-1.0+1-dev",
+                    "datestamp": "1495477983",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Stop creating config during rewrites of optional or non existing config": "https://www.drupal.org/files/issues/allow_optional_config-2903629-8.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -2244,7 +2240,8 @@
             "homepage": "https://www.drupal.org/project/config_rewrite",
             "support": {
                 "source": "http://cgit.drupalcode.org/config_rewrite"
-            }
+            },
+            "time": "2017-05-22 18:29:12"
         },
         {
             "name": "drupal/config_sync",
@@ -15708,6 +15705,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/better_formats": 20,
+        "drupal/config_rewrite": 20,
         "drupal/config_sync": 20,
         "drupal/config_tools": 20,
         "drupal/entity_gallery": 20,
