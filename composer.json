@@ -123,8 +123,8 @@
                 "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
             "drupal/config_rewrite": {
-                "Stop creating config during rewrites of optional or non existing config":
-                "https://www.drupal.org/files/issues/allow_optional_config-2903629-8.patch"
+                "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629":
+                "https://www.drupal.org/files/issues/allow_optional_config-2903629-12.patch"
             },
             "drupal/contact_storage": {
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490":
