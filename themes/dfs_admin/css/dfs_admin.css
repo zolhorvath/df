@@ -36,3 +36,7 @@
 .adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
   float: left;
 }
+
+.toolbar .toolbar-bar .toolbar-tab.contextual-toolbar-tab {
+  display: none;
+}
