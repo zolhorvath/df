@@ -112,7 +112,9 @@
                 "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219":
                 "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
                 "Make media name available on manage display | https://www.drupal.org/node/2912298":
-                "https://www.drupal.org/files/issues/core-media-add-name-to-display-2912298-25.patch"
+                "https://www.drupal.org/files/issues/core-media-add-name-to-display-2912298-25.patch",
+                "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549":
+                "https://www.drupal.org/files/issues/core-post-site-install-hook.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670":
@@ -124,7 +126,7 @@
             },
             "drupal/config_rewrite": {
                 "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629":
-                "https://www.drupal.org/files/issues/allow_optional_config-2903629-12.patch"
+                "https://www.drupal.org/files/issues/allow_optional_config-2903629-14.patch"
             },
             "drupal/contact_storage": {
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490":

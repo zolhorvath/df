@@ -10,6 +10,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2652850-17.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/core-media-add-name-to-display-2912298-25.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-install-hook.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/1356276-408--8.4.x.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch
