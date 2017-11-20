@@ -13,6 +13,9 @@
             // Make the modal full width.
             $modal.dialog({
               resizable: false,
+              modal: true,
+              closeOnEscape: true,
+              draggable:false,
               height: fHeight,
               width: fWidth,
               position: {
@@ -20,14 +23,10 @@
               at: 'center center',
               of: window,
               collision: 'none'
-              },
-              close: function (event,ui) {
-                $('body').removeClass('full-width-modal-open').css('overflow','auto');
-              },
+              }
             });
-              $modal.parent().addClass('ui-dialog-full-width');
+              $modal.parent().addClass('ui-dialog-full-width').css('z-index','10000');
               $child.css('height', $modal.innerHeight());
-              $('body').addClass('full-width-modal-open');
           }
         }
       }
