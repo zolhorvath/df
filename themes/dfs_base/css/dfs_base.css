@@ -10612,6 +10612,9 @@ a[data-block-type="url"]:before {
   .moderation-sidebar-button-wrapper input:hover {
     filter: brightness(110%); }
 
+#drupal-off-canvas .button, #drupal-off-canvas .ipe-form input[data-drupal-selector="edit-preview"], .ipe-form #drupal-off-canvas input[data-drupal-selector="edit-preview"], #drupal-off-canvas .ipe-form input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], .ipe-form #drupal-off-canvas input[data-drupal-selector="edit-field-hero-image-entity-browser-open-modal"], #drupal-off-canvas .ipe-form input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], .ipe-form #drupal-off-canvas input[data-drupal-selector="edit-field-content-entity-browser-open-modal"], #drupal-off-canvas .ipe-form input[data-drupal-selector="edit-submit"], .ipe-form #drupal-off-canvas input[data-drupal-selector="edit-submit"], #drupal-off-canvas .ipe-form input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"], .ipe-form #drupal-off-canvas input[data-drupal-selector="edit-field-block-form-actions-ief-reference-save"] {
+  letter-spacing: normal !important; }
+
 @media screen and (min-width: 40em) {
   #top-bar-sticky-container {
     height: 100px;
