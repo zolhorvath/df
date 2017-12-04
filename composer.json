@@ -38,6 +38,10 @@
             "url": "https://asset-packagist.org"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/DevinCarlson/composer-patches"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "loopindex/ckeditor-track-changes",
