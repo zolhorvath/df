@@ -966,12 +966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevinCarlson/composer-patches.git",
-                "reference": "4a43a0688baa5f72f3d26627dfb3ef41d8e1b742"
+                "reference": "a6ad83024d689dd0a53f78b48369e8ac68cb6ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevinCarlson/composer-patches/zipball/4a43a0688baa5f72f3d26627dfb3ef41d8e1b742",
-                "reference": "4a43a0688baa5f72f3d26627dfb3ef41d8e1b742",
+                "url": "https://api.github.com/repos/DevinCarlson/composer-patches/zipball/a6ad83024d689dd0a53f78b48369e8ac68cb6ab8",
+                "reference": "a6ad83024d689dd0a53f78b48369e8ac68cb6ab8",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1014,7 @@
             "support": {
                 "source": "https://github.com/DevinCarlson/composer-patches/tree/1.9.0"
             },
-            "time": "2017-12-04T21:34:53+00:00"
+            "time": "2017-12-06T15:23:53+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -5033,7 +5033,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin_support",
-                "reference": "d76e2b04dbc14be40d03339a6b33dc50b7f5ec43"
+                "reference": "642eccea5d8554bedd181f566eb20830daa6cb9c"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5046,7 +5046,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1511812685",
+                    "datestamp": "1512076084",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5076,7 +5076,7 @@
                 "source": "http://cgit.drupalcode.org/material_admin_support",
                 "issues": "https://www.drupal.org/project/issues/material_admin_support"
             },
-            "time": "2017-11-30T21:03:01+00:00"
+            "time": "2017-12-05T21:29:16+00:00"
         },
         {
             "name": "drupal/media_entity",
@@ -11363,16 +11363,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.20.0",
+            "version": "1.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "492e511a8284607ed9c2321d30596c7bfdb28b93"
+                "reference": "c195b2e8174f99303b3bbf22d1349a53ccd06179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/492e511a8284607ed9c2321d30596c7bfdb28b93",
-                "reference": "492e511a8284607ed9c2321d30596c7bfdb28b93",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/c195b2e8174f99303b3bbf22d1349a53ccd06179",
+                "reference": "c195b2e8174f99303b3bbf22d1349a53ccd06179",
                 "shasum": ""
             },
             "require": {
@@ -11398,7 +11398,7 @@
                 "GPL2"
             ],
             "description": "Drupal code generator",
-            "time": "2017-10-22T14:18:04+00:00"
+            "time": "2017-12-06T09:31:07+00:00"
         },
         {
             "name": "composer/ca-bundle",
