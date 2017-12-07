@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "40216e07b8720f8cc531391ef6d5facf",
+    "content-hash": "1303963158a782f88f7044a03f2978f2",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7874,17 +7874,17 @@
         },
         {
             "name": "drupal/workbench_email",
-            "version": "1.0.0-alpha6",
+            "version": "1.0.0-alpha7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/workbench_email",
-                "reference": "8.x-1.0-alpha6"
+                "reference": "8.x-1.0-alpha7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/workbench_email-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "2493c6a368d322545705cfdb7a12ee39df0ecbc4"
+                "url": "https://ftp.drupal.org/files/projects/workbench_email-8.x-1.0-alpha7.zip",
+                "reference": "8.x-1.0-alpha7",
+                "shasum": "b107a8f4480329cd178d6fd449e8492c935496d4"
             },
             "require": {
                 "drupal/core": "*",
@@ -7896,7 +7896,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6",
+                    "version": "8.x-1.0-alpha7",
                     "datestamp": "1511932986",
                     "security-coverage": {
                         "status": "not-covered",
