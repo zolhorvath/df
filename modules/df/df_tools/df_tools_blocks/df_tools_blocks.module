@@ -8,6 +8,30 @@ use Drupal\Component\Utility\Html;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_modules_installed().
+ */
+function df_tools_blocks_modules_installed(array $modules) {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Add support for Acquia DAM Asset media entities to the Media field if the
+  // df_tools_media_acquiadam module is installed.
+  if (in_array('df_tools_media_acquiadam', $modules)) {
+    // Retrieve the block's 'media' field.
+    $instance = FieldConfig::loadByName('block_content', 'media', 'field_media');
+
+    // Add 'acquia_dam_asset' to the list of allowed target bundles.
+    $settings = $instance->getSetting('handler_settings');
+    $settings['target_bundles'][] = 'acquia_dam_asset';
+    $instance->setSetting('handler_settings', $settings);
+    $instance->save();
+  }
+}
 
 /**
  * Implements hook_ENTITY_TYPE_view_alter().
