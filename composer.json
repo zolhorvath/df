@@ -67,7 +67,8 @@
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "package": "Acquia\\DF\\Composer\\Package::execute",
-        "verify-patched-constraints": "Acquia\\DF\\Composer\\PatchedConstraint::execute"
+        "verify-patched-constraints": "Acquia\\DF\\Composer\\PatchedConstraint::execute",
+        "nuke": "rm -r -f bin docroot vendor"
     },
     "extra": {
         "packagist.drupal-composer.org": {
