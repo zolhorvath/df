@@ -6,6 +6,36 @@
  */
 
 /**
+ * Implements hook_modules_installed().
+ */
+function df_tools_scheduled_updates_modules_installed(array $modules) {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Grant 'Reviewers' the ability to schedule content updates.
+  if (in_array('df_tools_user', $modules)) {
+    $reviewer_permissions = [
+      'view scheduled update entities',
+      'create multiple_node_embargo scheduled updates',
+      'delete any multiple_node_embargo scheduled updates',
+      'delete own multiple_node_embargo scheduled updates',
+      'edit any multiple_node_embargo scheduled updates',
+      'edit own multiple_node_embargo scheduled updates',
+      'create node_embargo scheduled updates',
+      'delete any node_embargo scheduled updates',
+      'delete own node_embargo scheduled updates',
+      'edit any node_embargo scheduled updates',
+      'edit own node_embargo scheduled updates',
+      'schedule publishing of nodes',
+      'view scheduled content',
+    ];
+    user_role_grant_permissions('reviewer', $reviewer_permissions);
+  }
+}
+
+/**
  * Implements hook_form_alter().
  */
 function df_tools_scheduled_updates_form_alter(array &$form) {
