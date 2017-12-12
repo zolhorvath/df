@@ -15,7 +15,6 @@ dependencies:
     - entity_browser
     - inline_entity_form
     - path
-    - scheduler
     - text
     - workbench_moderation
 id: node.article.default
@@ -146,4 +145,3 @@ content:
     region: content
 hidden:
   panelizer: true
-  scheduler_settings: true

@@ -24,7 +24,6 @@ dependencies:
   - pathauto
   - panelizer
   - replicate_ui
-  - scheduler
   - text
   - taxonomy
   - type_style

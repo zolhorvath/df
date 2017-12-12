@@ -11,7 +11,6 @@ dependencies:
     - entity_browser
     - link_class
     - path
-    - scheduler
     - text
     - workbench_moderation
 id: node.cta.default

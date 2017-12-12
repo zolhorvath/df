@@ -275,7 +275,6 @@
         "drupal/search_api_autocomplete": "1.0.0-alpha2",
         "drupal/search_api_solr": "1.1.0",
         "drupal/scenarios": "2.x-dev",
-        "drupal/scheduler": "1.0.0-rc2",
         "drupal/swiftmailer": "1.0.0-beta1",
         "drupal/type_style": "1.x-dev",
         "drupal/url_embed": "1.x-dev",
