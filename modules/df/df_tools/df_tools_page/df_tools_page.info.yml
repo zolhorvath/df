@@ -6,4 +6,5 @@ package: Demo Framework Tools
 dependencies:
   - df_core
   - df_tools_layout
+  - df_tools_translation
   - lightning_page
