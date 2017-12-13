@@ -4,17 +4,10 @@ dependencies:
   module:
     - editor
     - entity_embed
-    - url_embed
 name: 'Full HTML'
 format: full_html
 weight: 5
 filters:
-  url_embed:
-    id: url_embed
-    provider: url_embed
-    status: true
-    weight: -49
-    settings: {  }
   entity_embed:
     id: entity_embed
     provider: entity_embed

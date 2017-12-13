@@ -7,13 +7,11 @@ dependencies:
   - addtoany
   - better_formats
   - comment
-  - config_rewrite
   - datetime
+  - df_core
   - df_tools_blocks
   - df_tools_layout
-  - df_tools_scheduled_updates
   - df_tools_translation
-  - df_tools_workflow
   - content_browser
   - image
   - link
@@ -24,9 +22,7 @@ dependencies:
   - pathauto
   - panelizer
   - replicate_ui
-  - scheduler
   - text
   - taxonomy
   - type_style
   - user
-  - workbench_moderation

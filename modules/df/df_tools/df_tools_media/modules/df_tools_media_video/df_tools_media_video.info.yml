@@ -4,6 +4,7 @@ description: Extends the Lightning Media module to provide support for local vid
 core: 8.x
 package: Demo Framework Tools
 dependencies:
+  - df_core
   - df_tools_media
   - file_entity
   - media_entity_video

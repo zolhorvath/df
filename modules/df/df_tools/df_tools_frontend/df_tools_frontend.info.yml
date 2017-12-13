@@ -4,5 +4,6 @@ type: module
 core: 8.x
 package: Demo Framework Tools
 dependencies:
+  - df_core
   - quickedit
   - image

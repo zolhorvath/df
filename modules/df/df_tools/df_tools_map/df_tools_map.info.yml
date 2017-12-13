@@ -6,6 +6,7 @@ package: Demo Framework Tools
 dependencies:
   - address
   - block_content
+  - df_core
   - df_tools_migration
   - df_tools_translation
   - geocoder

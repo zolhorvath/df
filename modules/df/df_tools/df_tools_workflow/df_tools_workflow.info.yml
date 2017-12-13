@@ -4,4 +4,5 @@ description: Extends the Lightning Workflow module to provide content workflow c
 core: 8.x
 package: Demo Framework Tools
 dependencies:
+  - df_core
   - lightning_workflow

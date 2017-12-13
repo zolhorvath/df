@@ -4,6 +4,6 @@ description: Provides customizations and defaults for Lite.
 core: 8.x
 package: Demo Framework Tools
 dependencies:
-  - config_rewrite
+  - df_core
   - libraries
   - lite
