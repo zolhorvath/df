@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - field.field.node.article.panelizer
-    - field.field.node.article.scheduled_update
     - node.type.article
     - image.style.article
   module:
@@ -177,14 +176,6 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
-    region: content
-  scheduled_update:
-    weight: 101
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   workbench_moderation_control:
     weight: -20
