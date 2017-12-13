@@ -5,8 +5,6 @@ core: 8.x
 package: Demo Framework Tools
 dependencies:
   - df_core
-  - df_tools_articles
-  - df_tools_user
   - moderation_dashboard
   - moderation_sidebar
   - revision_log_default
