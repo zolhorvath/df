@@ -15,7 +15,6 @@ dependencies:
     - inline_entity_form
     - path
     - text
-    - workbench_moderation
 id: node.article.default
 targetEntityType: node
 bundle: article
