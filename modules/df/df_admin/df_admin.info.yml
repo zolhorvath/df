@@ -40,6 +40,7 @@ dependencies:
   - import
   - libraries
   - lightning_core
+  - material_admin_support
   - menu_link_content
   - menu_ui
   - migrate_plus
