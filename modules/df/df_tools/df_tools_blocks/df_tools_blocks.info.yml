@@ -8,6 +8,7 @@ dependencies:
   - entity_block
   - entity_browser_block
   - df_admin
+  - df_core
   - df_tools_icons
   - df_tools_media
   - df_tools_media_video

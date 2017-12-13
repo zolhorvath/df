@@ -7,8 +7,8 @@ dependencies:
   - addtoany
   - better_formats
   - comment
-  - config_rewrite
   - datetime
+  - df_core
   - df_tools_blocks
   - df_tools_layout
   - df_tools_translation

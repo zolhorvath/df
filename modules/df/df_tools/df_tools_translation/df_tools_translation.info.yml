@@ -4,6 +4,7 @@ description: Contains configuration neccessary to enable entity translation.
 core: 8.x
 package: Demo Framework Tools
 dependencies:
+  - df_core
   - df_tools_articles
   - df_tools_blocks
   - df_tools_page
