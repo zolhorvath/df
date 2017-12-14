@@ -29,12 +29,13 @@ content:
     weight: 5
     settings:
       entity_browser: media_browser_in_modal
-      field_widget_display: label
+      field_widget_display: rendered_entity
       field_widget_remove: true
       selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: teaser
       field_widget_edit: false
       open: false
-      field_widget_display_settings: {  }
     third_party_settings: {  }
     region: content
   field_tags:
