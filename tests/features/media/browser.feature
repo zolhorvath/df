@@ -51,6 +51,8 @@ Feature: An entity browser for media assets
     Given I am logged in as a user with the "administrator" role
     When I visit "/node/add/page"
     And I open the media browser
+    And I wait 5 seconds
+    And I click the ".views-exposed-form a.btn" element
     Then I should see "Type"
 
   @6b941640
