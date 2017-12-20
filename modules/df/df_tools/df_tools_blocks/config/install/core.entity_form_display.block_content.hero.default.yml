@@ -59,11 +59,11 @@ content:
     weight: 4
     settings:
       entity_browser: image_browser
-      field_widget_edit: false
       field_widget_remove: true
       open: true
       selection_mode: selection_append
-      view_mode: gallery_item
+      view_mode: card
+      field_widget_edit: false
       preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
@@ -119,12 +119,13 @@ content:
   langcode:
     type: language_select
     weight: 2
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
     region: content
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
