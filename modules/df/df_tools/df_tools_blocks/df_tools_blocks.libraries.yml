@@ -12,6 +12,12 @@ hero:
     theme:
       css/hero.css: {}
 
+video_hero:
+  version: VERSION
+  css:
+    theme:
+      css/video_hero.css: {}
+
 magellan:
   version: VERSION
   js:
