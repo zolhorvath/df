@@ -146,6 +146,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
     }
     $build['wrapper'] = $wrapper;
     $build['#attributes']['class'][] = 'video-hero-block';
+    $build['#attributes']['class'][] = 'full-width-row';
     $build['#attached']['library'][] = 'df_tools_blocks/video_hero';
   }
 }
