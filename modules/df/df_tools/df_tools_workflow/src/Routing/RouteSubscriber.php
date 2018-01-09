@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\df_tools_moderation\Routing;
+namespace Drupal\df_tools_workflow\Routing;
 
 use Drupal\Core\Routing\RouteSubscriberBase;
 use Drupal\Core\Routing\RoutingEvents;
@@ -9,7 +9,7 @@ use Symfony\Component\Routing\RouteCollection;
 /**
  * Class RouteSubscriber.
  *
- * @package Drupal\df_tools_moderation\Routing
+ * @package Drupal\df_tools_workflow\Routing
  * Listens to the dynamic route events.
  */
 class RouteSubscriber extends RouteSubscriberBase {

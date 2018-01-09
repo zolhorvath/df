@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\df_tools_moderation\EventSubscriber;
+namespace Drupal\df_tools_workflow\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\Event;
@@ -14,7 +14,7 @@ use Drupal\Core\Theme\ThemeManager;
 /**
  * Class LatestCheckSubscriber.
  *
- * @package Drupal\df_tools_moderation
+ * @package Drupal\df_tools_workflow
  */
 class LatestCheckSubscriber implements EventSubscriberInterface {
 
