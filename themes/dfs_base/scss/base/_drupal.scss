@@ -166,6 +166,10 @@ nav {
 .panels-ipe-category-picker-top-open {
   overflow: hidden;
   position: fixed!important;
+  #panels-ipe-tray {
+    overflow-y:auto;
+    max-height:100%;
+  }
 }
 
 // Hide those crazy gray bars that Quick Edit has flying all over the page.

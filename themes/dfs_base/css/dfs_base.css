@@ -10137,6 +10137,9 @@ nav .contextual {
 .panels-ipe-category-picker-top-open {
   overflow: hidden;
   position: fixed !important; }
+  .panels-ipe-category-picker-top-open #panels-ipe-tray {
+    overflow-y: auto;
+    max-height: 100%; }
 
 .quickedit-toolbar-container {
   transition: ease-out .5s; }
