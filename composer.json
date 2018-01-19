@@ -227,7 +227,7 @@
     "drupal/entity_browser_block": "1.x-dev",
     "drupal/core": "8.4.2",
     "drupal/entity_gallery": "1.x-dev",
-    "drupal/facets": "1.0-beta1",
+    "drupal/facets": "1.0.0-alpha11",
     "drupal/field_formatter_class": "1.0.0",
     "drupal/field_group": "1.0.0-rc6",
     "drupal/geocoder": "2.0.0-alpha5",
