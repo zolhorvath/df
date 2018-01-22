@@ -60,6 +60,12 @@ libraries/*
 
 If you do not do so, you will see an error in the installation referring to missing modules. 
   
+## Acquia Cloud
+
+If you are using Demo Framework's dev branch and wish to deploy to Acquia Cloud, you must change the drush version ot 8.1.15 -- we will update/remove this requirement whenever possible.
+
+  ``composer require "drush/drush 8.1.15"`` 
+
 ### Using the Zurb Foundation Sub Theme
 
 To motify the CSS/JS you must use the scss files. You will find various different SCSS files in SCSS directory that root. There are specifc ones for the theme in base & layout. All the variables are set in _settings.scss, you will also be able to override variables there.
