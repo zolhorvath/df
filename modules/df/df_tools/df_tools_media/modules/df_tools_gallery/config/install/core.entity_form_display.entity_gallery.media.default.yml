@@ -10,7 +10,6 @@ dependencies:
   module:
     - entity_browser
     - path
-    - workbench_moderation
 _core:
   default_config_hash: i6NixYXdxOaeNhbC_WM4OEC9MburFqVb5jMN-tSoB_w
 id: entity_gallery.media.default
