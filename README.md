@@ -44,6 +44,21 @@ You may now login to your site.
 You may also reset the content of a DF Scenario if it is enabled.
 
   ``drush rs dfs_tec``
+
+## Deploying Demo Framework using version control
+
+If you are using version control to deploy the Demo Framework to a server (such as Acquia Cloud), note that you must edit the file `/profiles/df/.gitignore` and remove the following lines:
+
+```
+# Contrib
+modules/contrib/*
+themes/contrib/*
+
+# Libraries
+libraries/*
+```
+
+If you do not do so, you will see an error in the installation referring to missing modules. 
   
 ### Using the Zurb Foundation Sub Theme
 
