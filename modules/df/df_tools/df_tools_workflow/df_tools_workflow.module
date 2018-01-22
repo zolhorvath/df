@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains df_tools_moderation.module.
+ * Contains df_tools_workflow.module.
  */
 
 use Drupal\Core\Form\FormStateInterface;
@@ -14,7 +14,7 @@ use Drupal\workbench_moderation\Entity\ModerationStateTransition;
 /**
  * Implements hook_modules_installed().
  */
-function df_tools_moderation_modules_installed(array $modules) {
+function df_tools_workflow_modules_installed(array $modules) {
   // Don't do anything during config sync.
   if (\Drupal::isConfigSyncing()) {
     return;
@@ -62,14 +62,14 @@ function df_tools_moderation_modules_installed(array $modules) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function df_tools_moderation_form_workbench_moderation_entity_moderation_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $form['#submit'][] = 'df_tools_moderation_workbench_moderation_entity_moderation_form_submit';
+function df_tools_workflow_form_workbench_moderation_entity_moderation_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#submit'][] = 'df_tools_workflow_workbench_moderation_entity_moderation_form_submit';
 }
 
 /**
  * Form submission callback for workbench_moderation_entity_moderation_form.
  */
-function df_tools_moderation_workbench_moderation_entity_moderation_form_submit($form, FormStateInterface $form_state) {
+function df_tools_workflow_workbench_moderation_entity_moderation_form_submit($form, FormStateInterface $form_state) {
   /** @var ContentEntityInterface $entity */
   $entity = $form_state->get('entity');
 
@@ -85,7 +85,7 @@ function df_tools_moderation_workbench_moderation_entity_moderation_form_submit(
 /**
  * Implements hook_menu_local_tasks_alter();
  */
-function df_tools_moderation_menu_local_tasks_alter(&$data, $route_name) {
+function df_tools_workflow_menu_local_tasks_alter(&$data, $route_name) {
   // Runs when cache tag config:block.block.[ActiveTheme]_local_actions is invalidated.
   if (isset($data['tabs'][0]['moderation_state.entities:node.latest_version_tab'])) {
     $url = $data['tabs'][0]['moderation_state.entities:node.latest_version_tab']['#link']['url'];
@@ -110,7 +110,7 @@ function df_tools_moderation_menu_local_tasks_alter(&$data, $route_name) {
 /**
  * Implements hook_tokens().
  */
-function df_tools_moderation_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
+function df_tools_workflow_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
   $replacements = [];
 
   if ($type == 'node' && !empty($data['node'])) {
@@ -168,7 +168,7 @@ function df_tools_moderation_tokens($type, $tokens, array $data, array $options,
 /**
  * Implements hook_library_info_alter().
  */
-function df_tools_moderation_library_info_alter(&$libraries, $extension) {
+function df_tools_workflow_library_info_alter(&$libraries, $extension) {
   if ($extension === 'moderation_note') {
     unset($libraries['main']['dependencies']);
   }
@@ -177,7 +177,7 @@ function df_tools_moderation_library_info_alter(&$libraries, $extension) {
 /**
  * Implements hook_moderation_sidebar_alter().
  */
-function df_tools_moderation_moderation_sidebar_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity) {
+function df_tools_workflow_moderation_sidebar_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity) {
   if (isset($build['actions']['quick_draft_form'])) {
     $transition_ids = Element::getVisibleChildren($build['actions']['quick_draft_form']);
     foreach ($transition_ids as $id) {

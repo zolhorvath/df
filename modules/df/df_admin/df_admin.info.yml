@@ -32,7 +32,6 @@ dependencies:
   - field_group
   - field_ui
   - file
-  - file_entity
   - google_analytics
   - help
   - history
@@ -48,6 +47,7 @@ dependencies:
   - node
   - options
   - page_manager
+  - page_manager_ui
   - panelizer
   - panels_ipe
   - path

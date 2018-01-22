@@ -32,13 +32,19 @@ trait AuthorMigrationTrait {
    * @param null $uid
    * @param string $roles
    */
-  protected function setUidProperty(Row $row, $uid = null, $roles = 'administrator') {
-    if ($uid == null) {
+  protected function setUidProperty(Row $row, $uid = NULL, $roles = 'administrator') {
+    if ($uid == NULL) {
       $request_users = \Drupal::entityTypeManager()
         ->getStorage('user')
-        ->loadByProperties(['roles' => $roles]);
-      $uid = array_rand($request_users);
+        ->loadByProperties([
+          'roles' => $roles,
+        ]);
+
+      if ($request_users) {
+        $uid = array_rand($request_users);
+      }
     }
+
     $row->setSourceProperty('UID', $uid);
   }
 
