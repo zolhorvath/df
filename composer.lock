@@ -245,7 +245,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -283,7 +283,7 @@
             "version": "v5.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/enyo/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "7d0792d1346d83a8b0c0d2919121bdd2b8e7fee4"
             },
             "dist": {
@@ -527,16 +527,16 @@
         },
         {
             "name": "caxy/php-htmldiff",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caxy/php-htmldiff.git",
-                "reference": "d7540c9938c860f2cb7083f72ba24c45f51d57bc"
+                "reference": "231250a7a5358cbe9af5e2379a7f23d5c5bba2a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/d7540c9938c860f2cb7083f72ba24c45f51d57bc",
-                "reference": "d7540c9938c860f2cb7083f72ba24c45f51d57bc",
+                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/231250a7a5358cbe9af5e2379a7f23d5c5bba2a2",
+                "reference": "231250a7a5358cbe9af5e2379a7f23d5c5bba2a2",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +579,7 @@
                 "diff",
                 "html"
             ],
-            "time": "2017-06-12T17:35:44+00:00"
+            "time": "2018-01-06T17:58:46+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -2338,8 +2338,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6+1-dev",
-                    "datestamp": "1513271285",
+                    "version": "8.x-1.0-alpha6+2-dev",
+                    "datestamp": "1513615684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2502,17 +2502,17 @@
         },
         {
             "name": "drupal/consumers",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/consumers",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/consumers-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "87e5472fde6c7cc60ed7dda2af350997ae4767d8"
+                "url": "https://ftp.drupal.org/files/projects/consumers-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "d16c2a65c5ee39bce25f8a5991e18c9240d89005"
             },
             "require": {
                 "drupal/core": "*"
@@ -2523,11 +2523,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1505249045",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1515768484",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2924,23 +2924,20 @@
         },
         {
             "name": "drupal/crop",
-            "version": "1.3.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/crop",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "8075371124c0fd3c70e17c071ac09e9c8d5cf1ed"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
             },
             "require": {
                 "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/media_entity": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2948,8 +2945,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1509015245",
+                    "version": "8.x-1.5",
+                    "datestamp": "1516357085",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4228,7 +4225,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
-                    "datestamp": "1496311442",
+                    "datestamp": "1515888783",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -4259,16 +4256,8 @@
                     "homepage": "https://www.drupal.org/user/254857"
                 },
                 {
-                    "name": "dtarc",
-                    "homepage": "https://www.drupal.org/user/114087"
-                },
-                {
-                    "name": "jherencia",
-                    "homepage": "https://www.drupal.org/user/360690"
-                },
-                {
-                    "name": "nikhiltri",
-                    "homepage": "https://www.drupal.org/user/270223"
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
                 },
                 {
                     "name": "phayes",
@@ -4297,7 +4286,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "f7059efb7fe884643d921b4ea998d1cdc6316802"
+                "reference": "c09f848136c84b716525a2e4d1d585c99ce24ad4"
             },
             "require": {
                 "drupal/core": "*"
@@ -4308,8 +4297,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11+15-dev",
-                    "datestamp": "1513265884",
+                    "version": "8.x-1.11+19-dev",
+                    "datestamp": "1515597784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4335,7 +4324,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2017-12-14T15:37:41+00:00"
+            "time": "2018-01-10T15:23:37+00:00"
         },
         {
             "name": "drupal/geophp",
@@ -4771,7 +4760,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "da0386d50987b63199937163bfe438807e7affcd"
+                "reference": "3679e800d4da7ba4fd546233095279d6b2cfa36f"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4782,8 +4771,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+4-dev",
-                    "datestamp": "1485377885",
+                    "version": "8.x-1.0-beta1+10-dev",
+                    "datestamp": "1516064585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4798,6 +4787,11 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Italo Mairo",
+                    "homepage": "https://www.drupal.org/u/itamair",
+                    "role": "Maintainer"
+                },
                 {
                     "name": "Peter Vanhee (pvhee)",
                     "homepage": "https://www.drupal.org/u/pvhee",
@@ -4830,7 +4824,7 @@
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
             },
-            "time": "2017-01-25T20:55:54+00:00"
+            "time": "2018-01-16T01:04:29+00:00"
         },
         {
             "name": "drupal/libraries",
@@ -5048,17 +5042,17 @@
         },
         {
             "name": "drupal/material_admin",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/material_admin",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/material_admin-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "e61bf98360cddb3bf9aec13670259871531d47d8"
+                "url": "https://ftp.drupal.org/files/projects/material_admin-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "1b4ca3ee1ad3af3b90aedf59f5b18cf9806ec1e4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5069,8 +5063,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1514567285",
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1516375085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -6673,7 +6667,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/replicate_ui",
-                "reference": "13b50bac971d78ee34377fe6e9d62709b83731a8"
+                "reference": "12c704044ca58b68e65d38600e5ae2338479a1cc"
             },
             "require": {
                 "drupal/core": "*",
@@ -6686,7 +6680,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1502703244",
+                    "datestamp": "1503585844",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6724,7 +6718,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate_ui"
             },
-            "time": "2017-08-14T09:58:47+00:00"
+            "time": "2018-01-17T22:34:42+00:00"
         },
         {
             "name": "drupal/responsive_preview",
@@ -7375,17 +7369,17 @@
         },
         {
             "name": "drupal/simple_oauth",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/simple_oauth",
-                "reference": "8.x-3.3"
+                "reference": "8.x-3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "08f6c732da67715e86e5fb76a95c77f55cb88e97"
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "cf3f1d4c25cb083c355299cb2006c712f8f15711"
             },
             "require": {
                 "drupal/consumers": "*",
@@ -7398,8 +7392,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1511538185",
+                    "version": "8.x-3.4",
+                    "datestamp": "1515660185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7892,7 +7886,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1483529942",
+                    "datestamp": "1516322885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11244,16 +11238,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.21.3",
+            "version": "1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "a3373cbd4504d1257f4f82abcefc02450f99d2bc"
+                "reference": "c7e3018ebcbdb5befcfe928c792146078c8c2d05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/a3373cbd4504d1257f4f82abcefc02450f99d2bc",
-                "reference": "a3373cbd4504d1257f4f82abcefc02450f99d2bc",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/c7e3018ebcbdb5befcfe928c792146078c8c2d05",
+                "reference": "c7e3018ebcbdb5befcfe928c792146078c8c2d05",
                 "shasum": ""
             },
             "require": {
@@ -11279,7 +11273,7 @@
                 "GPL2"
             ],
             "description": "Drupal code generator",
-            "time": "2017-12-07T05:38:11+00:00"
+            "time": "2018-01-06T15:54:30+00:00"
         },
         {
             "name": "composer/ca-bundle",
