@@ -26,6 +26,7 @@ dependencies:
   - help
   - history
   - image
+  - language
   - libraries
   - material_admin_support
   - menu_link_content
