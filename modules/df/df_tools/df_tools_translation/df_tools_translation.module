@@ -97,7 +97,6 @@ function df_tools_translation_scenarios_migration_finished(Migration $migration)
         $entity = $storage->load($id);
         if (!$entity->hasTranslation($langcode)) {
           $entity_values = $entity->toArray();
-          $entity_values['path'] = [];
           $translation = $entity->addTranslation($langcode, $entity_values);
         }
         else {
