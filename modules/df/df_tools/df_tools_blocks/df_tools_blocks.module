@@ -257,6 +257,11 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
       }
       $excluded_modes = [
         'media_browser',
+        'product_slideshow_thumbnail',
+        'hero_thin',
+        'hero_product',
+        'embedded',
+        'token'
       ];
       foreach ($excluded_modes as $view_mode) {
         if (isset($form['flipper']['front']['settings']['view_mode']['#options'][$view_mode])) {
@@ -362,7 +367,9 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
     'Lists (Views)' => 'Lists',
     'Listes (Views)' => 'Lists',
     'Listas (Views)' => 'Lists',
+    'Views' => 'Lists',
     'AddToAny' => 'Social',
+    'Product hero' => 'Hero',
     'Workbench moderation' => 'Hidden',
     'User' => 'Hidden',
     'Utilisateur' => 'Hidden',
@@ -373,6 +380,10 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
     'System' => 'Hidden',
     'Moderation Dashboard' => 'Hidden',
     'Entity Browser' => 'Hidden',
+    'Facets' => 'Hidden',
+    'Facets summary (Experimental)' => 'Hidden',
+    'Responsive Preview' => 'Hidden',
+    'DF Tools Blocks' => 'Hidden'
   ];
 
   $label_map = [
