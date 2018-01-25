@@ -10134,10 +10134,10 @@ nav .contextual {
     min-width: 92%;
     max-width: 92%; } }
 
-.panels-ipe-category-picker-top-open {
+.panels-ipe-category-picker-top-open, .panels-ipe-tabs-open {
   overflow: hidden;
   position: fixed !important; }
-  .panels-ipe-category-picker-top-open #panels-ipe-tray {
+  .panels-ipe-category-picker-top-open #panels-ipe-tray, .panels-ipe-tabs-open #panels-ipe-tray {
     overflow-y: auto;
     max-height: 100%; }
 

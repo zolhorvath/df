@@ -163,7 +163,7 @@ nav {
 }
 
 // Don't let the background scroll when the category picker is open.
-.panels-ipe-category-picker-top-open {
+.panels-ipe-category-picker-top-open, .panels-ipe-tabs-open {
   overflow: hidden;
   position: fixed!important;
   #panels-ipe-tray {
