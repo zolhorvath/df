@@ -87,7 +87,7 @@ function dfs_base_preprocess_field(&$variables) {
  * Adds additional classes
  */
 function dfs_base_preprocess_html(&$variables) {
-	$variables['html_attributes'] .= ' class="no-js"';
+	$variables['html_attributes']->addClass('no-js');
 }
 
 /**
