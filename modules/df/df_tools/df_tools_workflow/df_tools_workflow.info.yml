@@ -6,4 +6,7 @@ package: Demo Framework Tools
 dependencies:
   - df_core
   - lightning_workflow
+  - moderation_dashboard
   - moderation_sidebar
+  - revision_log_default
+  - workbench_email

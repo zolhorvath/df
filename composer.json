@@ -121,7 +121,8 @@
         "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
         "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
         "Error when calling ModerationStateFieldItemList::updateModeratedEntity() if the entity doesn't have workflow | https://www.drupal.org/node/2932551": "https://www.drupal.org/files/issues/error-entity-without-workflow-2932551-2.patch",
-        "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599": "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch"
+        "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599": "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch",
+        "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch"
       },
       "drupal/adminimal_admin_toolbar":
       {
@@ -175,6 +176,10 @@
       {
         "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685": "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
         "Data processors do not check type before performing type-specific operations | https://www.drupal.org/node/2849810": "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
+      },
+      "drupal/workbench_email":
+      {
+        "Support the core Content Moderation module | https://www.drupal.org/node/2931097": "https://www.drupal.org/files/issues/workbench-email-core-2931097-4.patch"
       },
       "drupal/zurb_foundation":
       {
