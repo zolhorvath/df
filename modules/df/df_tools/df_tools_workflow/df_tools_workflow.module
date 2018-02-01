@@ -7,6 +7,7 @@
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
 
@@ -166,5 +167,68 @@ function df_tools_workflow_tokens($type, $tokens, array $data, array $options, \
 function df_tools_workflow_library_info_alter(&$libraries, $extension) {
   if ($extension === 'moderation_note') {
     unset($libraries['main']['dependencies']);
+  }
+}
+
+/**
+ * Implements hook_moderation_sidebar_alter().
+ *
+ * Integrate the Type Style Moderation and Moderation Sidebar modules.
+ *
+ * Display type style colors and icons associated with content moderation
+ * transitions on their moderation sidebar buttons.
+ */
+function df_tools_workflow_moderation_sidebar_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity) {
+  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_info */
+  $moderation_info = \Drupal::service('content_moderation.moderation_information');
+
+  // Verify that the moderation sidebar is being displayed on a content entity
+  // and that it has an associated workflow.
+  if ($entity instanceof ContentEntityInterface && $workflow = $moderation_info->getWorkflowForEntity($entity)) {
+    // Ensure that the sidebar's quick draft form is available.
+    if (isset($build['actions']['quick_draft_form'])) {
+      // Each of the quick draft form's buttons represents a moderation state
+      // transition for the current workflow, such as 'create_new_draft' or
+      // 'archive.'
+      // Retrieve these buttons to build an array of transitions.
+      $transition_ids = Element::getVisibleChildren($build['actions']['quick_draft_form']);
+
+      // Only proceed if one or more transitions is available.
+      if (count($transition_ids)) {
+        // Type style colors and icons are stored as configuration on the
+        // workflow.
+        $type_plugin = $workflow->getTypePlugin();
+        $config = $type_plugin->getConfiguration();
+
+        // Loop through each of the available transitions, altering the markup
+        // of each moderation sidebar button to add an icon and change its
+        // background color where necessary.
+        foreach ($transition_ids as $id) {
+          // Retrieve the Type Style settings for the current transition.
+          $settings = isset($config['transitions'][$id]['type_style']) ? $config['transitions'][$id]['type_style'] : [];
+
+          if (!empty($settings)) {
+            // Use the Type Style color as the button's background color.
+            if (!empty($settings['color'])) {
+              $build['actions']['quick_draft_form'][$id]['#attributes']['style'] = 'background-color: ' . $settings['color'];
+            }
+
+            // Add the Type Style icon to the button.
+            if (!empty($settings['icon'])) {
+              $build['actions']['quick_draft_form'][$id] = [
+                '#type' => 'container',
+                $build['actions']['quick_draft_form'][$id],
+                [
+                  '#markup' => '<i class="material-icons">' . $settings['icon'] . '</i>'
+                ],
+                '#attributes' => [
+                  'class' => ['moderation-sidebar-button-wrapper'],
+                ],
+              ];
+            }
+          }
+        }
+      }
+    }
   }
 }
