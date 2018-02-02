@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains df_tools_scheduler.module.
+ */
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function df_tools_scheduler_module_implements_alter(&$implementations, $hook) {
+  // Remove the Lightning Scheduler module's implementation of
+  // hook_field_widget_form_alter() in order to disable its publication
+  // information customizations which are incompatible with the Material Admin
+  // theme.
+  if ($hook === 'field_widget_form_alter' && isset($implementations['lightning_scheduler'])) {
+    unset($implementations['lightning_scheduler']);
+  }
+}

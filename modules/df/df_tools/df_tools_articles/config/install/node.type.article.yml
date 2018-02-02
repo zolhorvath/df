@@ -13,8 +13,6 @@ third_party_settings:
     parent: 'main:'
   lightning_workflow:
     workflow: editorial
-  lightning_scheduled_updates:
-    embargo: true
   type_style:
     color: '#039BE5'
     icon: book
