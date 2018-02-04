@@ -10,7 +10,7 @@
 }
 
 .df-tools-magellan-block .sticky {
-  max-width:100%!important;
+  max-width: 100% !important;
 }
 
 .df-tools-magellan-block .menu > li > a {
@@ -28,6 +28,6 @@ body.toolbar-fixed .df-tools-magellan-block .sticky.is-stuck.is-at-top {
   margin-top: 39px !important;
 }
 
-body.toolbar-tray-open .df-tools-magellan-block .sticky.is-stuck.is-at-top {
+body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .df-tools-magellan-block .sticky.is-stuck.is-at-top {
   margin-top: 79px !important;
 }

@@ -18,6 +18,12 @@ video_hero:
     theme:
       css/video_hero.css: {}
 
+magellan-light:
+  js:
+    js/magellan-light.js: {}
+  dependencies:
+    - core/jquery
+
 magellan:
   version: VERSION
   js:
@@ -26,6 +32,5 @@ magellan:
     theme:
       css/magellan.css: {}
   dependencies:
-    - core/jquery
+    - df_tools_blocks/magellan-light
     - core/jquery.once
-    - core/jquery.ui

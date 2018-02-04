@@ -1,13 +1,19 @@
 <?php
 
+/**
+ * @file
+ * Contains df_tools_blocks.module.
+ */
+
 use Drupal\block_content\Entity\BlockContent;
 use Drupal\block_content\Entity\BlockContentType;
-use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Component\Utility\Html;
-use Drupal\Core\Render\Element;
-use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\field\Entity\FieldConfig;
 
 /**
@@ -37,10 +43,10 @@ function df_tools_blocks_modules_installed(array $modules) {
  * Implements hook_ENTITY_TYPE_view_alter().
  */
 function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
-  if ($entity->bundle() == 'basic') {
+  if ($entity->bundle() === 'basic') {
     $wrapper = [
-      '#prefix' =>'<div class="full-width-inner">',
-      '#suffix' =>'</div>',
+      '#prefix' => '<div class="full-width-inner">',
+      '#suffix' => '</div>',
       '#type' => 'container',
       '#weight' => -1,
       '#attributes' => [
@@ -51,10 +57,10 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
     $build['#prefix'] = '<div class="basic-block">';
     $build['#suffix'] = '</div>';
   }
-  if ($entity->bundle() == 'hero') {
+  if ($entity->bundle() === 'hero') {
     $wrapper = [
-      '#prefix' =>'<div class="full-width-inner">',
-      '#suffix' =>'</div>',
+      '#prefix' => '<div class="full-width-inner">',
+      '#suffix' => '</div>',
       '#type' => 'container',
       '#weight' => -1,
       '#attributes' => [
@@ -63,7 +69,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
       '#children' => [],
     ];
     foreach (Element::getVisibleChildren($build) as $field_name) {
-      if ($field_name == 'field_icon' && isset($build[$field_name]['#object'])) {
+      if ($field_name === 'field_icon' && isset($build[$field_name]['#object'])) {
         $icon = $build[$field_name]['#object']->field_icon->getString();
         if (!empty($icon)) {
           $wrapper['#children'][$field_name] = [
@@ -73,7 +79,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
         }
         unset($build[$field_name]);
       }
-      else if ($field_name != 'field_hero_image') {
+      elseif ($field_name !== 'field_hero_image') {
         $wrapper['#children'][$field_name] = $build[$field_name];
         unset($build[$field_name]);
       }
@@ -95,9 +101,11 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
         case 'left':
           $direction = 'to right';
           break;
+
         case 'right':
           $direction = 'to left';
           break;
+
         default:
           $direction = 'to bottom';
           break;
@@ -108,9 +116,9 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
     if (preg_match($color_regex, $callout_color)) {
       $style = 'background-color: ' . $callout_color . ';';
       $hex = trim($callout_color, '#');
-      $r = hexdec(substr($hex,0,2));
-      $g = hexdec(substr($hex,2,2));
-      $b = hexdec(substr($hex,4,2));
+      $r = hexdec(substr($hex, 0, 2));
+      $g = hexdec(substr($hex, 2, 2));
+      $b = hexdec(substr($hex, 4, 2));
       if ($r + $g + $b > 382) {
         $wrapper['#children']['field_hero_link'][0]['#attributes']['class'][] = 'hero-link-light-bg';
         $style .= 'border-color:black;color:black;';
@@ -139,7 +147,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
       if ($field_name === 'field_hero_link') {
         $build[$field_name]['#attributes']['class'][] = 'button';
       }
-      if ($field_name != 'field_media') {
+      if ($field_name !== 'field_media') {
         $wrapper['#children'][$field_name] = $build[$field_name];
         unset($build[$field_name]);
       }
@@ -155,7 +163,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 function df_tools_blocks_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-  // Add block--block-content--bundle.html.twig suggestions
+  // Add block--block-content--bundle.html.twig suggestions.
   if (isset($variables['elements']['content']) && isset($variables['elements']['content']['#block_content'])) {
     /** @var \Drupal\block_content\Entity\BlockContent $entity */
     $entity = $variables['elements']['content']['#block_content'];
@@ -191,7 +199,7 @@ function df_tools_blocks_form_alter(&$form, FormStateInterface $form_state, $for
       '#type' => 'submit',
       '#value' => t('Copy'),
       '#submit' => ['df_tools_blocks_block_content_replicate'],
-      '#weight' => 9
+      '#weight' => 9,
     ];
   }
 }
@@ -223,7 +231,7 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
 
   // Add special logic for the Entity Browser block plugins.
   if (isset($form['plugin_id'])) {
-    if ($form['plugin_id']['#value'] == 'content_embed') {
+    if ($form['plugin_id']['#value'] === 'content_embed') {
       // Only auto-open the Content Embed block if it is empty.
       if (empty(Element::getVisibleChildren($form['flipper']['front']['settings']['selection']['table'])) && !$form_state->isProcessingInput()) {
         $form['#attached']['library'][] = 'df_tools_blocks/auto_open';
@@ -242,7 +250,7 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
         'search_result',
         'token',
         'full',
-        'df'
+        'df',
       ];
       foreach ($excluded_modes as $view_mode) {
         if (isset($form['flipper']['front']['settings']['view_mode']['#options'][$view_mode])) {
@@ -250,7 +258,7 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
         }
       }
     }
-    else if ($form['plugin_id']['#value'] == 'media_embed') {
+    elseif ($form['plugin_id']['#value'] === 'media_embed') {
       if (empty(Element::getVisibleChildren($form['flipper']['front']['settings']['selection']['table'])) && !$form_state->isProcessingInput()) {
         $form['#attached']['library'][] = 'df_tools_blocks/auto_open';
         $form['#attributes']['data-df-tools-blocks-auto-open'] = 'settings_selection_mids_entity_browser';
@@ -261,7 +269,7 @@ function df_tools_blocks_form_panels_ipe_block_plugin_form_alter(&$form, FormSta
         'hero_thin',
         'hero_product',
         'embedded',
-        'token'
+        'token',
       ];
       foreach ($excluded_modes as $view_mode) {
         if (isset($form['flipper']['front']['settings']['view_mode']['#options'][$view_mode])) {
@@ -328,7 +336,7 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
  * @return array
  *   The possibly modified form render array.
  */
-function _df_tools_blocks_hero_browser_button($element) {
+function _df_tools_blocks_hero_browser_button(array $element) {
   $element['entity_browser']['open_modal']['#value'] = t('Select background');
   if (isset($element['entity_browser']['open_modal']['#ajax'])) {
     /** @var \Drupal\entity_browser\DisplayInterface $display */
@@ -358,37 +366,37 @@ function df_tools_blocks_migration_plugins_alter(&$definitions) {
  * @param array &$block_info
  *   An array of block plugin definitions.
  */
-function df_tools_blocks_alter_block_categories(&$block_info) {
+function df_tools_blocks_alter_block_categories(array &$block_info) {
   // Create an associative array which maps default => custom block categories.
   $category_map = [
-    'Embed' => 'Existing Content',
-    'Entity Block' => 'Existing Content',
-    'Commerce' => 'Forms',
-    'Lists (Views)' => 'Lists',
-    'Listes (Views)' => 'Lists',
-    'Listas (Views)' => 'Lists',
-    'Views' => 'Lists',
-    'AddToAny' => 'Social',
-    'Product hero' => 'Hero',
-    'Workbench moderation' => 'Hidden',
-    'User' => 'Hidden',
-    'Utilisateur' => 'Hidden',
-    'Usuario' => 'Hidden',
-    'Chaos tools' => 'Hidden',
-    'Help' => 'Hidden',
-    'core' => 'Hidden',
-    'System' => 'Hidden',
-    'Moderation Dashboard' => 'Hidden',
-    'Entity Browser' => 'Hidden',
-    'Facets' => 'Hidden',
-    'Facets summary (Experimental)' => 'Hidden',
-    'Responsive Preview' => 'Hidden',
-    'DF Tools Blocks' => 'Hidden'
+    'Embed' => t('Existing Content'),
+    'Entity Block' => t('Existing Content'),
+    'Commerce' => t('Forms'),
+    'Lists (Views)' => t('Lists'),
+    'Listes (Views)' => t('Lists'),
+    'Listas (Views)' => t('Lists'),
+    'Views' => t('Lists'),
+    'AddToAny' => t('Social'),
+    'Product hero' => t('Hero'),
+    'Workbench moderation' => t('Hidden'),
+    'User' => t('Hidden'),
+    'Utilisateur' => t('Hidden'),
+    'Usuario' => t('Hidden'),
+    'Chaos tools' => t('Hidden'),
+    'Help' => t('Hidden'),
+    'core' => t('Hidden'),
+    'System' => t('Hidden'),
+    'Moderation Dashboard' => t('Hidden'),
+    'Entity Browser' => t('Hidden'),
+    'Facets' => t('Hidden'),
+    'Facets summary (Experimental)' => t('Hidden'),
+    'Responsive Preview' => t('Hidden'),
+    'DF Tools Blocks' => t('Hidden'),
   ];
 
   $label_map = [
-    'Content Embed' => 'Content',
-    'Media Embed' => 'Media',
+    'Content Embed' => t('Content'),
+    'Media Embed' => t('Media'),
   ];
 
   foreach ($block_info as $key => $info) {
@@ -397,44 +405,49 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
     $label = $info['label'];
 
     // Retrieve the untranslated name of the category if it has been translated.
-    if ($category instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+    if ($category instanceof TranslatableMarkup) {
       $category = $category->getUntranslatedString();
     }
-    if ($label instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+    if ($label instanceof TranslatableMarkup) {
       $label = $label->getUntranslatedString();
     }
 
     // Move all fields of the currently panelized entity into a
     // 'Current @Entity_Type' category. If the block is not a field on the
     // current entity, allow its category to be remapped.
-    if ($category == '@entity') {
+    if ($category === '@entity') {
       $block_info[$key]['category'] = $info['category']->render() . ' Fields';
     }
     // Place Block Content entities into categories based on their type.
-    else if ($category == 'Custom') {
+    elseif ($category === 'Custom') {
       list($type, $uuid) = explode(':', $block_info[$key]['plugin_id']);
+      unset($type);
       $ids = \Drupal::entityQuery('block_content')
         ->condition('uuid', $uuid, '=')
         ->execute();
       if ($block = BlockContent::load(reset($ids))) {
         if ($bundle = BlockContentType::load($block->bundle())) {
-          $block_info[$key]['category'] = t($bundle->label());
+          $block_info[$key]['category'] = $bundle->label();
         }
       }
     }
 
     if (isset($block_info[$key])) {
       if (isset($category_map[$category])) {
-        $block_info[$key]['category'] = t($category_map[$category]);
+        // Already translated.
+        $block_info[$key]['category'] = $category_map[$category];
       }
-      else if (is_string($block_info[$key]['category'])) {
-        $block_info[$key]['category'] = t($block_info[$key]['category']);
+      elseif (is_string($block_info[$key]['category'])) {
+        // Already translated.
+        $block_info[$key]['category'] = $block_info[$key]['category'];
       }
       if (isset($label_map[$label])) {
+        // Already translated.
         $block_info[$key]['label'] = $label_map[$label];
       }
-      else if (is_string($block_info[$key]['label'])) {
-        $block_info[$key]['label'] = t($block_info[$key]['label']);
+      elseif (is_string($block_info[$key]['label'])) {
+        // Already translated.
+        $block_info[$key]['label'] = $block_info[$key]['label'];
       }
     }
 
@@ -442,18 +455,9 @@ function df_tools_blocks_alter_block_categories(&$block_info) {
       $block_info[$key]['category'] = t('Hidden');
     }
 
-    if ($label === 'Product' && $category === 'Entity Block') {
-      $block_info[$key]['category'] = t('Hidden');
-    }
-
     if ($label === 'Entity Gallery Browser') {
       $block_info[$key]['category'] = t('Existing Content');
       $block_info[$key]['label'] = t('Gallery');
-    }
-
-    if ($label === 'Product browser') {
-      $block_info[$key]['category'] = t('Existing Content');
-      $block_info[$key]['label'] = t('Product');
     }
   }
 }
@@ -475,7 +479,8 @@ function df_tools_blocks_panels_ipe_blocks_alter(&$block_info) {
     if ($entity = $entity_type_manager->getStorage($entity_type)->load($id)) {
       foreach ($block_info as $key => $info) {
         if ($info['id'] === 'entity_field') {
-          list($block_id,$block_entity_type,$field_name) = explode(':', $info['plugin_id']);
+          list($block_id, $block_entity_type, $field_name) = explode(':', $info['plugin_id']);
+          unset($block_id);
           if ($block_entity_type !== $entity_type || ($entity instanceof FieldableEntityInterface && !$entity->hasField($field_name))) {
             unset($block_info[$key]);
           }
@@ -486,6 +491,9 @@ function df_tools_blocks_panels_ipe_blocks_alter(&$block_info) {
   $block_info = array_values($block_info);
 }
 
+/**
+ * Form submission handler for df_tools_blocks_form_alter().
+ */
 function df_tools_blocks_block_content_replicate($form, FormStateInterface $form_state) {
   // Retrieve block content entity from form_state.
   $entity = $form_state->getFormObject()->getEntity();
@@ -501,6 +509,9 @@ function df_tools_blocks_block_content_replicate($form, FormStateInterface $form
   // Redirect to block list comes free!
 }
 
+/**
+ * Implements hook_theme().
+ */
 function df_tools_blocks_theme($existing, $type, $theme, $path) {
   return [
     'code_block' => [
