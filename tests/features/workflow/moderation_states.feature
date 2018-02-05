@@ -90,8 +90,8 @@ Feature: Workflow moderation states
   Scenario: Quick edit a forward revision
     Given I am logged in as a user with the administrator role
     And page content:
-      | title | moderation_state | path   |
-      | Squid | published        | /squid |
+      | title | body                                                                             | moderation_state | path   |
+      | Squid | Squid are cephalopods of the order Teuthida, which comprises around 304 species. | published        | /squid |
     When I visit "/squid"
     And I open the moderation sidebar
     And I select the "Create New Draft" moderation sidebar button
