@@ -11,13 +11,29 @@
    */
   Drupal.behaviors.DFToolsBlocksMagellan = {
     attach: function (context) {
-      $('.df-tools-magellan-block', context).once('magellan').each(function () {
-        if (Drupal.panels_ipe && Drupal.panels_ipe.app && Drupal.panels_ipe.app.get('active')) {
-          $(this).find('[data-sticky]').attr('style', '');
-          $(this).find('[data-sticky]').removeClass('sticky');
-          return;
-        }
+      $(context).find('.df-tools-magellan-block').once('magellan').each(function () {
         var _self = Drupal.behaviors.DFToolsBlocksMagellan;
+        var $magellanSticky = $(this).find('[data-sticky-light]');
+        if (typeof jQuery.fn.stick === 'function') {
+          $magellanSticky.once('magellanStickyLight').stick({
+            stickTo: $(this).closest('.df-tools-magellan-block'),
+            pauseCallback: function () {
+              if ($magellanSticky && $magellanSticky.length && $magellanSticky.closest('.panels-ipe-active').length) {
+                return true;
+              }
+              return false;
+            },
+            offsetCallback: function() {
+              var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
+                $('#toolbar-bar:visible').outerHeight() : 0;
+              var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
+              return (heightToolbar + heightToolbarTray);
+            }
+          }).on('offset:reset', function () {
+            $(this).data('stickylight').reset();
+          });
+        }
+
         var $scrollParent = $('body');
         var $magellan = $(this).find('[data-magellan-light]').uniqueId();
         var $blocks_after = $(this).closest('.block-plugin-id-magellan').nextAll();
@@ -35,20 +51,29 @@
           });
         });
 
-        // Prepare parent element.
-        $scrollParent.css('position', 'relative');
+        // Prepare parent element and fire handler.
+        $scrollParent.once('magellanLight').css('position', 'relative').magellanize({
+          magellans: '#' + $magellan.attr('id') + ' a[href^="#"]',
+          offsetCallback: function () {
+            var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
+              $('#toolbar-bar:visible').outerHeight() : 0;
+            var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
+            var stickyHeight = $('[data-sticky-light]:visible').length ?
+              $('[data-sticky-light]:visible').outerHeight() : 0;
 
-        // Fire handler.
-        $scrollParent.magellanize({
-          magellans: '#' + $magellan.attr('id') + ' a[href^="#"]'
+            return heightToolbar + heightToolbarTray + stickyHeight;
+          }
         });
 
         // Binding dimension helper functions.
         $blocks_after.find('.js-magellan-light-anchor').each(function () {
           $(this).trigger('offset:reset');
         });
-        $(document).once('magellanLightViewPort').on('drupalViewportOffsetChange', function () {
+        $(document).once('magellanLightViewPort').on('drupalViewportOffsetChange drupalToolbarOrientationChange drupalToolbarTrayChange drupalToolbarTrabChange', function () {
           $('.js-magellan-light-anchor').trigger('offset:reset');
+          if ($magellanSticky) {
+            $magellanSticky.trigger('offset:reset');
+          }
         });
       });
     },
@@ -61,11 +86,11 @@
             var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
               $('#toolbar-bar:visible').outerHeight() : 0;
             var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
-            var stickyHeight = $('[data-sticky]:visible').length ?
-              $('[data-sticky]:visible').outerHeight() : 0;
+            var stickyHeight = $('[data-sticky-light]:visible').length ?
+              $('[data-sticky-light]:visible').outerHeight() : 0;
 
             var offSetTop = heightToolbar + heightToolbarTray + stickyHeight;
-            $(this).attr('style', 'position: relative; top: -' + offSetTop + 'px');
+            $(this).attr('style', 'position: relative; top: -' + offSetTop + 'px;');
           }
         }
       });

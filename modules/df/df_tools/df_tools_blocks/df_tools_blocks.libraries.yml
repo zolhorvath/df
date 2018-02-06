@@ -24,6 +24,12 @@ magellan-light:
   dependencies:
     - core/jquery
 
+sticky-light:
+  js:
+    js/sticky-light.js: {}
+  dependencies:
+    - core/jquery
+
 magellan:
   version: VERSION
   js:
@@ -32,5 +38,6 @@ magellan:
     theme:
       css/magellan.css: {}
   dependencies:
+    - df_tools_blocks/sticky-light
     - df_tools_blocks/magellan-light
     - core/jquery.once
