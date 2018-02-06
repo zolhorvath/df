@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5059345baaf482349b8f03300317ba31",
+    "content-hash": "4ca56d6036519651c0c782a5acea74e9",
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "2.2.6",
+            "version": "2.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "eab197f1b624aa3260a2b51dc45fd9d8c79cc540"
+                "reference": "d6d861838085c28707c24fc69594ecd24bad862f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/eab197f1b624aa3260a2b51dc45fd9d8c79cc540",
-                "reference": "eab197f1b624aa3260a2b51dc45fd9d8c79cc540",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/d6d861838085c28707c24fc69594ecd24bad862f",
+                "reference": "d6d861838085c28707c24fc69594ecd24bad862f",
                 "shasum": ""
             },
             "require": {
@@ -28,7 +28,7 @@
                 "drupal/acquia_connector": "^1.1",
                 "drupal/config_update": "^1.5.0",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.4.3",
+                "drupal/core": "~8.4.4",
                 "drupal/crop": "2.0.0-beta1",
                 "drupal/ctools": "^3.0",
                 "drupal/diff": "^1.0",
@@ -40,7 +40,7 @@
                 "drupal/features": "^3.0",
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0",
-                "drupal/jsonapi": "^1.4.0",
+                "drupal/jsonapi": "1.4.0",
                 "drupal/media_entity": "2.0.0-alpha2",
                 "drupal/media_entity_document": "1.x-dev",
                 "drupal/media_entity_image": "1.x-dev",
@@ -113,9 +113,8 @@
                         "2749503 - Add basic support for Quick Edit": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
                     },
                     "drupal/core": {
-                        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.3.patch",
+                        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.4.patch",
                         "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
-                        "2880445 - Config sync should not throw a warning when not being writable": "https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch",
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                         "2883813 - Move File/Image media type into Standard once Media is stable": "https://www.drupal.org/files/issues/2883813-27.patch",
@@ -169,7 +168,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2017-12-20T19:49:05+00:00"
+            "time": "2018-01-04T20:51:50+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2739,16 +2738,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.4.3",
+            "version": "8.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "793cb14c54624b4be160b78f742af44a01cc7b4e"
+                "reference": "c6585ffaea5df4ed529e2bdf4371850f8fc3b88c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/793cb14c54624b4be160b78f742af44a01cc7b4e",
-                "reference": "793cb14c54624b4be160b78f742af44a01cc7b4e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c6585ffaea5df4ed529e2bdf4371850f8fc3b88c",
+                "reference": "c6585ffaea5df4ed529e2bdf4371850f8fc3b88c",
                 "shasum": ""
             },
             "require": {
@@ -2904,9 +2903,8 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.3.patch",
+                    "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-408--8.4.4.patch",
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
-                    "2880445 - Config sync should not throw a warning when not being writable": "https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2883813 - Move File/Image media type into Standard once Media is stable": "https://www.drupal.org/files/issues/2883813-27.patch",
@@ -2922,7 +2920,6 @@
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
                     "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
-                    "Error when calling ModerationStateFieldItemList::updateModeratedEntity() if the entity doesn't have workflow | https://www.drupal.org/node/2932551": "https://www.drupal.org/files/issues/error-entity-without-workflow-2932551-2.patch",
                     "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599": "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch",
                     "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch"
                 }
@@ -2948,7 +2945,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-12-06T22:45:30+00:00"
+            "time": "2018-01-03T19:27:53+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4632,24 +4629,22 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.7.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "550b1ffcbe3dbf57452b48aa58385db191e9487f"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ba38178daaecac2e6b88a5180fccb3edecd00b67"
             },
             "require": {
-                "drupal/core": "^8.3"
+                "drupal/core": "^8.2"
             },
             "require-dev": {
-                "drupal/schemata": "1.x-dev#8325d172e1d6880aa24073f8f751ef089282cf9a",
-                "drupal/schemata_json_schema": "*",
                 "justinrainbow/json-schema": "^4.1"
             },
             "type": "drupal-module",
@@ -4658,8 +4653,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1514646784",
+                    "version": "8.x-1.4",
+                    "datestamp": "1514013485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4700,7 +4695,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "771e64e4f86a4bddafdf63012234dde941cd2947"
+                "reference": "f036aca33d048fc3da2e708bd9b13d953b35c6ff"
             },
             "require": {
                 "drupal/core": "*",
@@ -4712,8 +4707,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+21-dev",
-                    "datestamp": "1517820184",
+                    "version": "8.x-1.0-beta2+0-dev",
+                    "datestamp": "1517951880",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4765,7 +4760,7 @@
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
             },
-            "time": "2018-02-06T08:32:01+00:00"
+            "time": "2018-02-06T21:44:53+00:00"
         },
         {
             "name": "drupal/libraries",
