@@ -20,17 +20,15 @@ class MagellanBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $anchor_id = Html::getUniqueId('df-tools-anchor');
     $build = [
       '#markup' =>
-        '<div id="' . $anchor_id . '"></div>' .
-        '<div data-sticky-container class="df-tools-magellan-block hide-for-small-only full-width-row">' .
-        '  <div class="sticky" data-sticky data-top-anchor="' . $anchor_id . '" data-margin-top="0">' .
-        '    <nav data-magellan data-active-class="active">' .
-        '      <ul class="horizontal menu expanded"></ul>' .
+        '<div class="df-tools-magellan-block hide-for-small-only full-width-row sticky-container">' .
+        '  <div data-sticky-light>' .
+        '    <nav data-magellan-light>' .
+        '      <ul class="horizontal menu nav expanded"></ul>' .
         '    </nav>' .
         '  </div>' .
-        '</div>'
+        '</div>',
     ];
 
     $build['#attached']['library'][] = 'df_tools_blocks/magellan';

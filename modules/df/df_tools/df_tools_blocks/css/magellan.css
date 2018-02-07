@@ -1,16 +1,25 @@
 /**
- * @file magellan.css
+ * @file
+ * magellan.css
  */
 
-.df-tools-magellan-block [data-sticky] {
+.df-tools-magellan-block [data-sticky-light] {
   display: block;
   min-height: 40px;
   text-align: center;
   background: black;
 }
 
+.df-tools-magellan-block .is-stucked {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+
 .df-tools-magellan-block .sticky {
-  max-width:100%!important;
+  max-width: 100% !important;
 }
 
 .df-tools-magellan-block .menu > li > a {
@@ -22,12 +31,4 @@
 .df-tools-magellan-block .menu > li > a:hover,
 .df-tools-magellan-block .menu > li > a.active {
   background-color: #3366cc;
-}
-
-body.toolbar-fixed .df-tools-magellan-block .sticky.is-stuck.is-at-top {
-  margin-top: 39px !important;
-}
-
-body.toolbar-tray-open .df-tools-magellan-block .sticky.is-stuck.is-at-top {
-  margin-top: 79px !important;
 }

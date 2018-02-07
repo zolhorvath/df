@@ -10,4 +10,3 @@ entity.df_tools_block.add:
   route_name: block_content.add_page
   title: 'Add custom block'
   parent: entity.df_tools_blocks.block_content.collection
-
