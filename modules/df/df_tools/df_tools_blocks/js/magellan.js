@@ -24,9 +24,9 @@
               return false;
             },
             offsetCallback: function() {
-              var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
-                $('#toolbar-bar:visible').outerHeight() : 0;
-              var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
+              var heightToolbar = $('body').hasClass('toolbar-fixed') && $('.toolbar-bar:visible').length ?
+                $('.toolbar-bar:visible').outerHeight() : 0;
+              var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('.toolbar-tray.is-active:visible').length ? $('.toolbar-tray.is-active:visible').outerHeight() : 0;
               return (heightToolbar + heightToolbarTray);
             }
           }).on('offset:reset', function () {
@@ -55,9 +55,9 @@
         $scrollParent.once('magellanLight').css('position', 'relative').magellanize({
           magellans: '#' + $magellan.attr('id') + ' a[href^="#"]',
           offsetCallback: function () {
-            var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
-              $('#toolbar-bar:visible').outerHeight() : 0;
-            var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
+            var heightToolbar = $('body').hasClass('toolbar-fixed') && $('.toolbar-bar:visible').length ?
+              $('.toolbar-bar:visible').outerHeight() : 0;
+            var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('.toolbar-tray.is-active:visible').length ? $('.toolbar-tray.is-active:visible').outerHeight() : 0;
             var stickyHeight = $('[data-sticky-light]:visible').length ?
               $('[data-sticky-light]:visible').outerHeight() : 0;
 
@@ -83,9 +83,9 @@
         id: anchorId,
         on: {
           'offset:reset': function (event) {
-            var heightToolbar = $('body').hasClass('toolbar-fixed') && $('#toolbar-bar:visible').length ?
-              $('#toolbar-bar:visible').outerHeight() : 0;
-            var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('#toolbar-item-administration-tray:visible').length ? $('#toolbar-item-administration-tray:visible').outerHeight() : 0;
+            var heightToolbar = $('body').hasClass('toolbar-fixed') && $('.toolbar-bar:visible').length ?
+              $('.toolbar-bar:visible').outerHeight() : 0;
+            var heightToolbarTray = $('body').hasClass('toolbar-fixed') && $('body').hasClass('toolbar-horizontal') && $('.toolbar-tray.is-active:visible').length ? $('.toolbar-tray.is-active:visible').outerHeight() : 0;
             var stickyHeight = $('[data-sticky-light]:visible').length ?
               $('[data-sticky-light]:visible').outerHeight() : 0;
 
@@ -104,9 +104,6 @@
             event.preventDefault();
             var $target = $(event.target.hash);
             if ($target.length) {
-              var offset = $('body').hasClass('toolbar-fixed') ?
-                $('#toolbar-bar:visible').outerHeight() + $('#toolbar-item-administration-tray:visible').outerHeight() :
-                0;
               var targetPos = $target.offset().top;
               var docScrollPos = $('html, body').scrollTop();
               var rawSpeed = Math.abs(docScrollPos - targetPos) / 3;

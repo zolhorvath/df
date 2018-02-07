@@ -53,7 +53,7 @@
   }
 
   StickyLight.prototype.getScrollHeight = function () {
-    return this.scrollObj.height();
+    return this.scrollObj[0].document.body.clientHeight;
   };
 
   StickyLight.prototype.recalculateDimensions = function () {
