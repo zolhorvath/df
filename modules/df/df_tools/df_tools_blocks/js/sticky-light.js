@@ -45,7 +45,7 @@
     this.offset = 0;
     this.offsetCallback = this.options.offsetCallback;
     this.scrollHeight = 0;
-    this.placeholderObj = null;
+    this.placeholderObj = this.elementObj.closest('.' + this.options.placeholderClass);
     this.scrollObj = $(window)
       .on('scroll.stickylight', $.proxy(this.process, this));
     this.reset();
@@ -60,18 +60,19 @@
     this.offset = this.offsetCallback();
     this.scrollHeight = this.getScrollHeight();
     this.stickPoint = this.stickToObj.offset().top;
+    this.placeholderObj.attr('style', 'height: ' + this.elementObj.outerHeight() + 'px;')
   }
 
   StickyLight.prototype.reset = function () {
     var originalOffset = this.offset;
     this.recalculateDimensions();
-    this.placeholderObj = this.elementObj.closest('.' + this.options.placeholderClass);
 
     // Massage placeholder.
-    if (this.placeholderObj.length === 0) {
+    if (!(this.placeholderObj) || this.placeholderObj.length === 0) {
       this.elementObj.wrap($('<div/>', {
         class: this.options.placeholderClass
       }));
+      this.placeholderObj = this.elementObj.closest('.' + this.options.placeholderClass);
     }
 
     this.placeholderObj.attr('style', 'height: ' + this.elementObj.outerHeight() + 'px;');

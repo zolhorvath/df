@@ -31,7 +31,7 @@
   }
 
   MagellanLight.prototype.getScrollHeight = function () {
-    return this.scrollObj[0].scrollHeight;
+    return this.scrollObj[0].document.body.clientHeight;
   };
 
   MagellanLight.prototype.recalculateDimensions = function () {
