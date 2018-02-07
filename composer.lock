@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "022cc4bf306b6f3dee8a0ef64421e8c8",
+    "content-hash": "dda13a5b458bdc70ad4964f60473c1f9",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3958,17 +3958,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.0.0-alpha5",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "8.x-2.0-alpha5"
+                "reference": "8.x-2.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha5.zip",
-                "reference": "8.x-2.0-alpha5",
-                "shasum": "1cbac01cc6217e17fd53dd8be68d4ad8f018c004"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-beta2.zip",
+                "reference": "8.x-2.0-beta2",
+                "shasum": "c85caef52ea3cbd56c6df4b3c205b1a88a0f634e"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3976,8 +3976,13 @@
             },
             "require-dev": {
                 "drupal/address": "*",
+                "drupal/coder": "^8.2",
                 "drupal/geocoder_field": "*",
-                "drupal/geofield": "*"
+                "drupal/geofield": "*",
+                "phpro/grumphp": "^0.12.1",
+                "phpunit/phpunit": "^5.7|^6.5",
+                "sensiolabs/security-checker": "^4.1",
+                "squizlabs/php_codesniffer": "^2.7"
             },
             "type": "drupal-module",
             "extra": {
@@ -3985,11 +3990,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha5",
-                    "datestamp": "1513598885",
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1516738685",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4004,8 +4009,9 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Dean Reilly",
-                    "homepage": "https://www.drupal.org/user/336031"
+                    "name": "Italo Mairo (@itamair)",
+                    "homepage": "https://www.drupal.org/u/itamair",
+                    "role": "Co-maintainer"
                 },
                 {
                     "name": "GJdan",
@@ -4040,7 +4046,7 @@
                     "homepage": "https://www.drupal.org/user/585764"
                 }
             ],
-            "description": "An API to geocode and reverse geocode data into other GIS data types.",
+            "description": "A Drupal module and a services based API to perform Geocode & Reverse Geocode operations among GIS data and addresses types & formats.",
             "homepage": "https://drupal.org/project/geocoder",
             "support": {
                 "source": "https://cgit.drupalcode.org/geocoder",
