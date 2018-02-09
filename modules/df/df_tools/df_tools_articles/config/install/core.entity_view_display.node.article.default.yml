@@ -134,7 +134,6 @@ third_party_settings:
         storage_id: 'node:article:default:default'
         builder: ipe
         pattern: panelizer
-        static_context: {  }
 id: node.article.default
 targetEntityType: node
 bundle: article
