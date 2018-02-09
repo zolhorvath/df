@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dda13a5b458bdc70ad4964f60473c1f9",
+    "content-hash": "686e28116b4a07bc73fbd8cb5ae22d0e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -233,7 +233,7 @@
             "version": "v2.0.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/metafizzy/fizzy-ui-utils.git",
+                "url": "git@github.com:metafizzy/fizzy-ui-utils.git",
                 "reference": "72feb9fc3d6de25696291941121bb3ec2db8221e"
             },
             "dist": {
@@ -324,6 +324,51 @@
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-ui-slider-pips",
+            "version": "v1.11.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simeydotme/jQuery-ui-Slider-Pips.git",
+                "reference": "ab698b476aa8275b8b34fb7422fbb80c45bc69fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simeydotme/jQuery-ui-Slider-Pips/zipball/ab698b476aa8275b8b34fb7422fbb80c45bc69fc",
+                "reference": "ab698b476aa8275b8b34fb7422fbb80c45bc69fc",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.10.2",
+                "bower-asset/jquery-ui": ">=1.9.2"
             },
             "type": "bower-asset",
             "license": [
@@ -2832,7 +2877,8 @@
                     "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
                     "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
                     "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599": "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch",
-                    "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch"
+                    "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch",
+                    "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch"
                 }
             },
             "autoload": {
@@ -3735,6 +3781,14 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Performance improvement for getQueryTypesForFacet | https://www.drupal.org/node/2897654": "https://www.drupal.org/files/issues/facets-query-types-performace-2897654-2.patch",
+                    "Use EntityDeleteForm for entity deletion | https://www.drupal.org/node/2861541": "https://www.drupal.org/files/issues/2861541-15.patch",
+                    "Add testcoverage for range + slider widgets/processors | https://www.drupal.org/node/2894637": "https://www.drupal.org/files/issues/add_testcoverage_for-2894637-16.patch",
+                    "The slider UI element only shows for a single facet using the 'Range slider' widget | https://www.drupal.org/node/2897689": "https://www.drupal.org/files/issues/the_slider_ui_element-2897689-6.patch",
+                    "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
+                    "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/project/facets/issues/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4079,7 +4133,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha6",
-                    "datestamp": "1517176686",
+                    "datestamp": "1518040980",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -4612,7 +4666,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "f036aca33d048fc3da2e708bd9b13d953b35c6ff"
+                "reference": "eb060801a5aff7878fe5fd1efda95ae7cd415b66"
             },
             "require": {
                 "drupal/core": "*",
@@ -4624,8 +4678,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+0-dev",
-                    "datestamp": "1517951880",
+                    "version": "8.x-1.0-beta2+1-dev",
+                    "datestamp": "1517953680",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4677,7 +4731,7 @@
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
             },
-            "time": "2018-02-06T21:44:53+00:00"
+            "time": "2018-02-07T22:33:32+00:00"
         },
         {
             "name": "drupal/libraries",
