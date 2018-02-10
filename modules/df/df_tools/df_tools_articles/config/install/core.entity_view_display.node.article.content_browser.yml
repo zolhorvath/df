@@ -124,6 +124,7 @@ third_party_settings:
         page_title: '[node:title]'
         storage_type: panelizer_default
         storage_id: 'node:article:full:default'
+        pattern: panelizer
         builder: ipe
 id: node.article.content_browser
 targetEntityType: node

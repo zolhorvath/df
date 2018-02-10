@@ -33,4 +33,5 @@ third_party_settings:
         page_title: '[node:title]'
         storage_type: panelizer_default
         storage_id: 'node:page:full:default'
+        pattern: panelizer
         builder: ipe
