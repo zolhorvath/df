@@ -9,6 +9,9 @@
  * Implements hook_install().
  */
 function dfs_tec_install() {
+  // Enable the dfs_tec scenario.
+  \Drupal::service('scenarios_handler')->scenarioEnable('dfs_tec', 'modules');
+
   // Enable translation for all of our entities/bundles.
   $entities = [
     'node' => ['employee', 'service']
@@ -16,13 +19,5 @@ function dfs_tec_install() {
   df_tools_translation_enable_translation($entities);
 
   // Import our custom .po files
-  df_tools_translation_import_translations('module', 'dfs_tec');
-}
-
-/**
- * Implements hook_uninstall().
- */
-function dfs_tec_uninstall() {
-  // Set front page to "welcome".
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/welcome')->save();
+  df_tools_translation_import_translations('profile', 'dfs_tec');
 }
