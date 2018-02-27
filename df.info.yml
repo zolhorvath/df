@@ -14,7 +14,6 @@ base profile:
     - seven
 dependencies:
   - contact
-  - dblog
   - df_admin
   - df_core
 themes:
