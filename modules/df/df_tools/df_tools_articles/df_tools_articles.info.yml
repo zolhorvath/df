@@ -6,10 +6,10 @@ package: Demo Framework Tools
 dependencies:
   - addtoany
   - better_formats
-  - comment
   - datetime
   - df_core
   - df_tools_blocks
+  - df_tools_comment
   - df_tools_layout
   - df_tools_translation
   - content_browser

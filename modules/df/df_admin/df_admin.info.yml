@@ -9,7 +9,6 @@ dependencies:
   - admin_toolbar_tools
   - adminimal_admin_toolbar
   - block_class
-  - comment
   - config_update
   - content_browser
   - df_core
