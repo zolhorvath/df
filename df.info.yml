@@ -23,6 +23,7 @@ dependencies:
     - df_core
     - google_analytics
     - material_admin_support
+    - panels_ipe
     - pathauto
     - scenarios
     - tour

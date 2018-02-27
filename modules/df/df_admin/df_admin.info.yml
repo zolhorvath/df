@@ -9,7 +9,3 @@ dependencies:
   - df_core
   - image
   - language
-  - page_manager
-  - page_manager_ui
-  - panelizer
-  - panels_ipe

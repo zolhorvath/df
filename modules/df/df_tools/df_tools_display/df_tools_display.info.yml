@@ -6,3 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - df_core
   - page_manager
+  - page_manager_ui
