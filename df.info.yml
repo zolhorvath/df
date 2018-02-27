@@ -13,9 +13,19 @@ base profile:
     - bartik
     - seven
 dependencies:
-  - contact
-  - df_admin
-  - df_core
+    - admin_login_path
+    - admin_toolbar
+    - admin_toolbar_tools
+    - adminimal_admin_toolbar
+    - contact
+    - config_update
+    - df_admin
+    - df_core
+    - google_analytics
+    - material_admin_support
+    - pathauto
+    - scenarios
+    - tour
 themes:
   - dfs_base
   - dfs_admin
