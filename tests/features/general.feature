@@ -20,12 +20,6 @@ Feature: Demo Framework
     And I am on "/admin/reports/dblog"
     Then I should see "Recent log messages"
 
-  @9c257690
-  Scenario: Ensure that the update module is disabled by default.
-    Given I am logged in as a user with the "administrator" role
-    And I am on "/admin/modules"
-    Then the "Update Manager" checkbox should not be checked
-
   @0e983e34
   Scenario: Ensure that the admin theme is used on user pages
     Given I am an anonymous user

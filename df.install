@@ -25,33 +25,3 @@ function df_install() {
   // those modules are already installed.
   \Drupal::service('entity.definition_update_manager')->applyUpdates();
 }
-
-/**
- * Implements hook_install_tasks().
- */
-function df_install_tasks(&$install_state) {
-  $tasks = [
-    // Define an invisible install task that runs at the end of the installer.
-    'df_install_finished' => [
-    ],
-  ];
-
-  return $tasks;
-}
-
-/**
- * Callback function: An invisible install task that makes various setup tweaks.
- *
- * @param $install_state
- *   An array of information about the current installation state.
- *
- * @see df_install_tasks()
- */
-function df_install_finished(&$install_state) {
-  // Don't enable update.module by default.
-  $module_data = system_rebuild_module_data();
-
-  if (isset($module_data['update'])) {
-    \Drupal::service('module_installer')->uninstall(['update']);
-  }
-}
