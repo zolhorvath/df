@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\df_admin\EventSubscriber;
+namespace Drupal\df_core\EventSubscriber;
 
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
@@ -40,4 +40,3 @@ class MenuRouterRebuildSubscriber implements EventSubscriberInterface {
   }
 
 }
-
