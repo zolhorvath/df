@@ -2,13 +2,8 @@ uuid: 28a57471-146d-4a01-a305-7e8632889188
 langcode: en
 status: true
 dependencies:
-  module:
-    - block_class
   theme:
     - dfs_base
-third_party_settings:
-  block_class:
-    classes: ''
 id: pagetitle
 theme: dfs_base
 region: content

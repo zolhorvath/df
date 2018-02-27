@@ -5,13 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:8b162d62-670e-4857-9b02-2c9191e39585'
   module:
-    - block_class
     - block_content
   theme:
     - tec
-third_party_settings:
-  block_class:
-    classes: ''
 id: servicestext
 theme: tec
 region: '-1'
