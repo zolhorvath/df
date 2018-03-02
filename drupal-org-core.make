@@ -21,4 +21,4 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-i
 projects[drupal][patch][] = https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2873287-33.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
-projects[drupal][version] = 8.4.4
+projects[drupal][version] = 8.4.5
