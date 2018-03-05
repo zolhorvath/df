@@ -29,7 +29,9 @@ events:
             - cd $SOURCE_DIR
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
             - lightning install 'mysql\://root:root@localhost/drupal' df 'http://127.0.0.1:8080' --no-dev
+            - cd $SOURCE_DIR/docroot
             - if [[ "$SCENARIO" != none ]]; then drush es $SCENARIO; fi
+            - echo $SCENARIO > scenario.txt;
       - test:
           type: script
           script:

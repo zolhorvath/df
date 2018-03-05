@@ -113,7 +113,7 @@
   <!-- Installs Demo Framework and sets it up for development. -->
   <target name="install" depends="env">
     <!-- Use passthru() when executing drush site-install so that we'll know if errors occur. -->
-    <exec command="${drupal} site:install lightning --db-type=${db.type} --db-host=${db.host} --db-name=${db.database} --db-user=${db.user} --db-pass=${db.password} --no-interaction --force" passthru="true" />
+    <exec command="${drupal} site:install df --db-type=${db.type} --db-host=${db.host} --db-name=${db.database} --db-user=${db.user} --db-pass=${db.password} --no-interaction --force" passthru="true" />
     <chmod file="${site}" mode="0755" />
 
     <!-- Enable scenario. -->
@@ -180,7 +180,6 @@
     <exec command="${composer} require j7mbo/twitter-api-php league/oauth2-server:~6.0" dir="${docroot}" />
     <!-- Place Demo Framework inside the docroot/profiles dir -->
     <phingcall target="push" />
-
   </target>
 
   <!-- Generates a tarball of current docroot and saves it to the current user's
@@ -222,14 +221,6 @@
     <exec command="${bzip2} --force ${fixture}" />
   </target>
 
-  <!-- Generates a database snapshot from the current code base. -->
-  <target name="memorize" depends="env">
-    <phingcall target="reset-db" />
-    <phingcall target="install" />
-    <exec command="${drush} sql-dump" dir="${docroot}" output="${fixture}" />
-    <exec command="${bzip2} --force ${fixture}" />
-  </target>
-
   <!-- Empties the database by dropping and recreating it. -->
   <target name="reset-db">
     <!-- pdosqlexec requires an SQL file to execute. -->
@@ -242,8 +233,9 @@
   <target name="cloud-settings">
     <delete file="${docroot}/sites/default/settings.php" />
     <copy file="${docroot}/sites/default/default.settings.php" tofile="${docroot}/sites/default/settings.php" />
-    <append destFile="${docroot}/sites/default/settings.php" text="${line.separator}if (file_exists('/var/www/site-php')) {${line.separator}  require '/var/www/site-php/${cloud.subscription}/${cloud.subscription}-settings.inc';${line.separator}}${line.separator}" />
-    <append destFile="${docroot}/sites/default/settings.php" text="$settings['install_profile'] = 'lightning';${line.separator}" />
+    <append destFile="${docroot}/sites/default/settings.php" text="${line.separator}ini_set('memory_limit', '1024M');${line.separator}" />
+    <append destFile="${docroot}/sites/default/settings.php" text="${line.separator}require DRUPAL_ROOT . '/profiles/df/settings/df.settings.php';${line.separator}" />
+    <append destFile="${docroot}/sites/default/settings.php" text="$settings['install_profile'] = 'df';${line.separator}" />
     <mkdir dir="config/default" />
     <touch file="config/default/.gitkeep" />
   </target>
