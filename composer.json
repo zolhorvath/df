@@ -11,9 +11,6 @@
         "drupal/media_entity_generic": "1.x-dev",
         "acquia/lightning_dev": "dev-8.x-1.x"
     },
-    "bin": [
-        "lightning-subprofile"
-    ],
     "repositories": {
         "0": {
             "type": "composer",
