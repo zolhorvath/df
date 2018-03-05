@@ -22,7 +22,7 @@ class MiscellaneousContext extends DrupalSubContextBase {
   public function closeEditor() {
     $assert = $this->assertSession();
 
-    $panelsinplace = $this->getContext(PanelsInPlaceContext::class);
+    $panelsinplace = $this->getContext('PanelsIPEContext');
 
     // Assert that the tab exists...
     $link = $assert->elementExists(
@@ -32,12 +32,6 @@ class MiscellaneousContext extends DrupalSubContextBase {
     );
 
     $link->click();
-
-    /** @var \Acquia\LightningExtension\Context\UtilityContext $utility */
-    $utility = $this->getContext(UtilityContext::class);
-    $utility->acceptAlerts(function () {
-      $this->awaitAjax();
-    });
   }
 
   /**

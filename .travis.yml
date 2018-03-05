@@ -12,18 +12,11 @@ cache:
 
 php:
   - 7.1.8
-
 env:
   matrix:
-    - SCENARIO=none LIGHTNING=HEAD
-    - SCENARIO=none LIGHTNING=STABLE
-    - SCENARIO=dfs_dev LIGHTNING=STABLE
-    - SCENARIO=dfs_tec LIGHTNING=STABLE
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - env: SCENARIO=none LIGHTNING=HEAD
+    - SCENARIO=none
+    - SCENARIO=dfs_dev
+    - SCENARIO=dfs_tec
 
 addons:
   apt:
@@ -67,7 +60,7 @@ before_install:
 install:
   # Add Composer's local bin directory to the PATH so that we will be running
   # our installed versions of Drush, PHPCS, Behat, PhantomJS, etc.
-  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/bin:$PATH"
+  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/vendor/bin:$PATH"
 
   # Composer install should fail on bad patches.
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
@@ -87,29 +80,34 @@ install:
   - phpenv config-add drupal.php.ini
   - phpenv rehash
 
-  # Test Lightning HEAD
-  - if [[ "$LIGHTNING" == HEAD ]]; then composer require "drupal/lightning:dev-2.x" --no-update; fi
-
-  # We need Phing to execute our build steps.
-  - composer global require phing/phing
-
   # Build the DF code base.
   - composer install
 
-  # Install DF cleanly so that settings.php will be created properly.
-  - phing install -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1 -Durl=http://127.0.0.1:8080 -Dscenario=$SCENARIO
+  # Install Demo Framework cleanly so that settings.php will be created properly.
+  - lightning install 'mysql\://df:df@127.0.0.1/drupal' df 'http://127.0.0.1:8080' --no-dev
+  - lightning configure:behat 'http://127.0.0.1:8080'
 
-  # Import the fixture, if it exists.
-  - phing recall -Dversion=$VERSION -Ddb.database=drupal -Ddb.user=df -Ddb.password=df -Ddb.host=127.0.0.1
+  # If a scenario was specified, enable it.
   - cd docroot
+  - if [[ "$SCENARIO" != none ]]; then drush es $SCENARIO; fi
+  - cd ..
 
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
   - jdk_switcher use oraclejdk8
   - sleep 5
+  - selenium-server-standalone -port 4444 -log selenium.log &
 
 script:
-  - if [[ "$LIGHTNING" != HEAD ]]; then composer validate ../composer.json --no-check-all --ansi --no-interaction; fi
+  - cd docroot
+  - composer validate ../composer.json --no-check-all --ansi --no-interaction
   - cd ..
-  - if [[ "$SCENARIO" != none ]]; then bin/robo test:behat -- --tags=df; fi
-  - if [[ "$SCENARIO" != none ]]; then bin/robo test:behat -- --tags=$SCENARIO; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=df; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=$SCENARIO; fi
+
+after_failure:
+  - cd docroot
+  - drush watchdog:show --count=100 --severity=Error --extended
+
+matrix:
+  fast_finish: true

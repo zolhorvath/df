@@ -6,14 +6,24 @@ class RoboFile extends \Robo\Tasks {
    * {@inheritdoc}
    */
   protected function taskBehat($behat = NULL) {
-    $behat = $behat ?: 'bin/behat';
-
-    return parent::taskBehat($behat)
+    return parent::taskBehat($behat ?: 'vendor/bin/behat')
       ->config('docroot/sites/default/files/behat.yml')
       ->format('pretty')
       ->option('colors')
       ->option('stop-on-failure')
       ->option('strict');
+  }
+
+  protected function taskDrupal($command, $console = NULL) {
+    return $this->taskExec($console ?: '../vendor/bin/drupal')
+      ->rawArg($command)
+      ->dir('docroot');
+  }
+
+  protected function taskDrush($command, $drush = NULL) {
+    return $this->taskExec($drush ?: '../vendor/bin/drush')
+      ->rawArg($command)
+      ->dir('docroot');
   }
 
   /**
@@ -22,17 +32,17 @@ class RoboFile extends \Robo\Tasks {
    * To run all tests, simply run 'test:behat'. To run a specific feature, you
    * can pass its path, relative to the tests/features directory:
    *
-   * test:behat -- media/image.feature
+   * test:behat media/image.feature
    *
    * You can omit the .feature extension. This example runs
    * tests/features/workflow/diff.feature:
    *
-   * test:behat -- workflow/diff
+   * test:behat workflow/diff
    *
    * This also works with a directory of features. This example runs everything
    * in tests/features/media:
    *
-   * test:behat -- media
+   * test:behat media
    *
    * Any command-line options after the initial -- will be passed unmodified to
    * Behat. So you can filter tests by tags, like normal:
@@ -44,7 +54,7 @@ class RoboFile extends \Robo\Tasks {
    */
   public function testBehat(array $arguments) {
     $this
-      ->taskExec('bin/selenium-server-standalone')
+      ->taskExec('vendor/bin/selenium-server-standalone')
       ->rawArg('-port 4444')
       ->rawArg('-log selenium.log')
       ->background()

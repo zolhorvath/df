@@ -5,89 +5,71 @@
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require-dev":
-  {
-    "behat/mink": "~1.7",
-    "behat/mink-goutte-driver": "~1.2",
-    "jcalderonzumba/gastonjs": "~1.0.2",
-    "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-    "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": "~4.8",
-    "symfony/css-selector": "~2.8",
-    "drush/drush": "9.0.0-beta4",
-    "drupal/drupal-extension": "~3.3.0",
-    "behat/behat": "^3.0",
-    "drupal/coder": "~8.2.0",
-    "phing/phing": "^2.14",
-    "drupal/devel": "^1.0",
-    "squizlabs/php_codesniffer": "2.*",
-    "se/selenium-server-standalone": "^2.53",
-    "drupal/console": "1.0.1",
-    "jakoch/phantomjs-installer": "1.9.8",
-    "composer/composer": "^1.4",
+  "require-dev": {
+    "drupal/console": "^1.0.0",
     "grasmash/yaml-cli": "^1.0",
-    "consolidation/robo": "^1.1"
+    "drupal/media_entity_generic": "1.x-dev",
+    "acquia/lightning_dev": "dev-8.x-1.x"
   },
-  "config":
-  {
-    "bin-dir": "bin/"
-  },
-  "repositories": [
-  {
-    "type": "composer",
-    "url": "https://packages.drupal.org/8"
-  },
-  {
-    "type": "composer",
-    "url": "https://asset-packagist.org"
-  },
-  {
-    "type": "vcs",
-    "url": "https://github.com/DevinCarlson/composer-patches"
-  },
-  {
-    "type": "package",
-    "package":
-    {
-      "name": "loopindex/ckeditor-track-changes",
-      "version": "dev-master",
-      "type": "drupal-library",
-      "source":
-      {
-        "url": "https://github.com/loopindex/ckeditor-track-changes.git",
-        "type": "git",
-        "reference": "dev-master"
+  "bin": [
+    "lightning-subprofile"
+  ],
+  "repositories": {
+    "0": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "1": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    "dev": {
+      "type": "vcs",
+      "url": "https://github.com/acquia/lightning-dev"
+    },
+    "patch": {
+      "type": "vcs",
+      "url": "https://github.com/DevinCarlson/composer-patches"
+    },
+    "lite": {
+      "type": "package",
+      "package": {
+        "name": "loopindex/ckeditor-track-changes",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/loopindex/ckeditor-track-changes.git",
+          "type": "git",
+          "reference": "dev-master"
+        }
       }
     }
-  }],
-  "scripts":
-  {
+  },
+  "scripts": {
     "post-install-cmd": [
       "PhantomInstaller\\Installer::installPhantomJS",
       "@composer drupal-scaffold",
-      "./bin/phing push"
+      "@composer push"
     ],
     "post-update-cmd": [
-      "./bin/phing push",
+      "@composer push",
       "@composer package"
     ],
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
     "package": "Acquia\\DF\\Composer\\Package::execute",
+    "release-version": "Acquia\\Lightning\\Composer\\ReleaseVersion::execute",
     "verify-patched-constraints": "Acquia\\DF\\Composer\\PatchedConstraint::execute",
-    "nuke": "rm -r -f bin docroot vendor"
+    "enable-asset-packagist": "Acquia\\Lightning\\Composer\\AssetPackagist::execute",
+    "nuke": "rm -r -f docroot vendor",
+    "pull": "Acquia\\Lightning\\Commands\\FileCommands::pull",
+    "push": "Acquia\\Lightning\\Commands\\FileCommands::push"
   },
-  "extra":
-  {
-    "packagist.drupal-composer.org":
-    {
-      "discover-make-files": false
-    },
+  "extra": {
     "installer-types": [
       "bower-asset",
       "npm-asset"
     ],
-    "installer-paths":
-    {
+    "installer-paths": {
       "docroot/core": [
         "type:drupal-core"
       ],
@@ -107,10 +89,8 @@
       ]
     },
     "enable-patching": true,
-    "patches":
-    {
-      "drupal/core":
-      {
+    "patches": {
+      "drupal/core": {
         "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
         "Quickedit cant edit images | https://www.drupal.org/node/2635712": "https://www.drupal.org/files/issues/2635712-14.patch",
         "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
@@ -124,42 +104,33 @@
         "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch",
         "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch"
       },
-      "drupal/adminimal_admin_toolbar":
-      {
+      "drupal/adminimal_admin_toolbar": {
         "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
       },
-      "drupal/block_class":
-      {
+      "drupal/block_class": {
         "Add support for page manager. | http://drupal.org/node/2509142": "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
       },
-      "drupal/config_rewrite":
-      {
+      "drupal/config_rewrite": {
         "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629": "https://www.drupal.org/files/issues/allow_optional_config-2903629-14.patch"
       },
-      "drupal/contact_storage":
-      {
+      "drupal/contact_storage": {
         "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
       },
-      "drupal/content_browser":
-      {
+      "drupal/content_browser": {
         "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch"
       },
-      "drupal/ctools":
-      {
+      "drupal/ctools": {
         "Avoid unserialization of blockPluginCollection in BlockDisplayVariant. | https://www.drupal.org/node/2831521": "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
       },
-      "drupal/entity_block":
-      {
+      "drupal/entity_block": {
         "Add UUID support. | http://drupal.org/node/2834377": "https://www.drupal.org/files/issues/add-uuid-support-2834377-2.patch"
       },
-      "drupal/entity_browser":
-      {
+      "drupal/entity_browser": {
         "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555": "https://www.drupal.org/files/issues/entity-browser-file-widget-single.patch",
         "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037": "https://www.drupal.org/files/issues/2845037-4.patch",
         "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch"
       },
-      "drupal/facets":
-      {
+      "drupal/facets": {
         "Performance improvement for getQueryTypesForFacet | https://www.drupal.org/node/2897654": "https://www.drupal.org/files/issues/facets-query-types-performace-2897654-2.patch",
         "Use EntityDeleteForm for entity deletion | https://www.drupal.org/node/2861541": "https://www.drupal.org/files/issues/2861541-15.patch",
         "Add testcoverage for range + slider widgets/processors | https://www.drupal.org/node/2894637": "https://www.drupal.org/files/issues/add_testcoverage_for-2894637-16.patch",
@@ -167,58 +138,45 @@
         "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
         "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/project/facets/issues/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
       },
-      "drupal/field_group":
-      {
+      "drupal/field_group": {
         "WSOD on display and form display pages with PHP 7.1.8. | http://drupal.org/node/2921878": "https://www.drupal.org/files/issues/amalgamate-include-files.patch"
       },
-      "drupal/leaflet":
-      {
+      "drupal/leaflet": {
         "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091": "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
       },
-      "drupal/panels":
-      {
+      "drupal/panels": {
         "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
         "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
         "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch"
       },
-      "drupal/rules":
-      {
+      "drupal/rules": {
         "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685": "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
         "Data processors do not check type before performing type-specific operations | https://www.drupal.org/node/2849810": "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
       },
-      "drupal/workbench_email":
-      {
+      "drupal/workbench_email": {
         "Support the core Content Moderation module | https://www.drupal.org/node/2931097": "https://www.drupal.org/files/issues/workbench-email-core-2931097-4.patch"
       },
-      "drupal/zurb_foundation":
-      {
+      "drupal/zurb_foundation": {
         "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479": "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
       },
-      "lite":
-      {
+      "lite": {
         "CKLite interferes with content insertion | http://drupal.org/node/2482879": "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
       }
     },
-    "patches-ignore":
-    {
-      "drupal/lightning_layout":
-      {
-        "drupal/entity_block":
-        {
+    "patches-ignore": {
+      "drupal/lightning_layout": {
+        "drupal/entity_block": {
           "This patch conflicts with the patch to add UUID support": "https://www.drupal.org/files/issues/2846004-2.patch"
         }
       },
-      "drupal/lightning_media":
-      {
-        "drupal/entity_browser":
-        {
+      "drupal/lightning_media": {
+        "drupal/entity_browser": {
           "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-17.patch"
         }
       }
     }
   },
-  "require":
-  {
+  "require": {
     "acquia/lightning": "3.0.3",
     "bower-asset/fontawesome-iconpicker": "1.3.0",
     "bower-asset/imagesloaded": "v4.1.1",
@@ -282,6 +240,7 @@
     "drupal/restui": "1.15.0",
     "drupal/revision_log_default": "1.0.0",
     "drupal/rules": "3.0.0-alpha3",
+    "drupal/search_api": "1.6.0",
     "drupal/search_api_autocomplete": "1.0.0-alpha2",
     "drupal/search_api_solr": "1.1.0",
     "drupal/scenarios": "2.x-dev",
@@ -290,12 +249,12 @@
     "drupal/view_modes_display": "1.0.0",
     "drupal/workbench_email": "1.0-alpha7",
     "drupal/zurb_foundation": "6.x-dev",
-    "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a"
+    "drupal-composer/drupal-scaffold": "^2.0.0",
+    "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
+    "oomphinc/composer-installers-extender": "^1.1"
   },
-  "autoload":
-  {
-    "psr-4":
-    {
+  "autoload": {
+    "psr-4": {
       "Acquia\\DF\\": "src",
       "Acquia\\DFExtension\\": "src/DFExtension"
     }

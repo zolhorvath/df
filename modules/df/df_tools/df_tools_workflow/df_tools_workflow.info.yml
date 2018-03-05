@@ -8,6 +8,5 @@ dependencies:
   - lightning_workflow
   - moderation_dashboard
   - moderation_sidebar
-  - revision_log_default
   - type_style_moderation
   - workbench_email
