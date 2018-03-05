@@ -5,7 +5,6 @@ global:
       css/dfs_base.css: {}
   js:
     js/dfs_base.js: {}
-    js/safari-shim.js: {}
   dependencies:
     - core/jquery
     - core/drupal
