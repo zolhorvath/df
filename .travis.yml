@@ -14,7 +14,7 @@ php:
   - 7.1.8
 env:
   matrix:
-    - SCENARIO=none
+    - SCENARIO=df
     - SCENARIO=dfs_dev
     - SCENARIO=dfs_tec
 
@@ -84,13 +84,8 @@ install:
   - composer install
 
   # Install Demo Framework cleanly so that settings.php will be created properly.
-  - lightning install 'mysql\://df:df@127.0.0.1/drupal' df 'http://127.0.0.1:8080' --no-dev
+  - lightning install 'mysql\://df:df@127.0.0.1/drupal' $SCENARIO 'http://127.0.0.1:8080' --no-dev
   - lightning configure:behat 'http://127.0.0.1:8080'
-
-  # If a scenario was specified, enable it.
-  - cd docroot
-  - if [[ "$SCENARIO" != none ]]; then drush es $SCENARIO; fi
-  - cd ..
 
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
@@ -102,8 +97,8 @@ script:
   - cd docroot
   - composer validate ../composer.json --no-check-all --ansi --no-interaction
   - cd ..
-  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=df; fi
-  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=$SCENARIO; fi
+  - if [[ "$SCENARIO" != df ]]; then behat --config .behat.yml --stop-on-failure --tags=df; fi
+  - if [[ "$SCENARIO" != df ]]; then behat --config .behat.yml --stop-on-failure --tags=$SCENARIO; fi
 
 after_failure:
   - cd docroot

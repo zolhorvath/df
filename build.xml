@@ -29,7 +29,7 @@
   <property name="version" value="HEAD" />
   <property name="fixture" value="${project.basedir}/tests/fixtures/${version}.sql" />
   <property name="cloud.subscription" value="demoframeworktests" />
-  <property name="scenario" value="none" />
+  <property name="scenario" value="df" />
 
   <!-- Attempts to find global Drush install and determine if it's 8.1.15 -->
   <target name="find-drush8" depends="env">
@@ -113,11 +113,8 @@
   <!-- Installs Demo Framework and sets it up for development. -->
   <target name="install" depends="env">
     <!-- Use passthru() when executing drush site-install so that we'll know if errors occur. -->
-    <exec command="${drupal} site:install df --db-type=${db.type} --db-host=${db.host} --db-name=${db.database} --db-user=${db.user} --db-pass=${db.password} --no-interaction --force" passthru="true" />
+    <exec command="${drupal} site:install ${scenario} --db-type=${db.type} --db-host=${db.host} --db-name=${db.database} --db-user=${db.user} --db-pass=${db.password} --no-interaction --force" passthru="true" />
     <chmod file="${site}" mode="0755" />
-
-    <!-- Enable scenario. -->
-    <phingcall target="scenario" />
 
     <!-- Prepare PHPUnit. -->
     <mkdir dir="${docroot}/modules" />

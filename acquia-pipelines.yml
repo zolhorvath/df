@@ -10,7 +10,7 @@ services:
 
 variables:
   global:
-    SCENARIO: dfs_tec
+    SCENARIO: df
 
 events:
   build:
@@ -28,9 +28,9 @@ events:
           script:
             - cd $SOURCE_DIR
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
-            - lightning install 'mysql\://root:root@localhost/drupal' df 'http://127.0.0.1:8080' --no-dev
+            - lightning install 'mysql\://root:root@localhost/drupal' $SCENARIO 'http://127.0.0.1:8080' --no-dev
             - cd $SOURCE_DIR/docroot
-            - if [[ "$SCENARIO" != none ]]; then drush es $SCENARIO; fi
+            - if [[ "$SCENARIO" != df ]]; then drush es $SCENARIO; fi
             - echo $SCENARIO > scenario.txt;
       - test:
           type: script
@@ -41,7 +41,7 @@ events:
             - sleep 10
             - cd $SOURCE_DIR
             - behat --stop-on-failure --config .behat.yml --tags="df&&~javascript"
-            - if [[ "$SCENARIO" != none ]]; then behat --stop-on-failure --config .behat.yml --tags="$SCENARIO&&~javascript"; fi
+            - if [[ "$SCENARIO" != df ]]; then behat --stop-on-failure --config .behat.yml --tags="$SCENARIO&&~javascript"; fi
       - cleanup:
           type: script
           script:
