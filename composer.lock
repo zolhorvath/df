@@ -4658,7 +4658,7 @@
                     "datestamp": "1519756680",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 },
                 "installer-types": [
@@ -9746,7 +9746,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -10966,12 +10966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "f17c0f2ce39657a9138293ced7f19043b34d4229"
+                "reference": "608ee0ff88a96469d4c13e438c0d38ade086df21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/f17c0f2ce39657a9138293ced7f19043b34d4229",
-                "reference": "f17c0f2ce39657a9138293ced7f19043b34d4229",
+                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/608ee0ff88a96469d4c13e438c0d38ade086df21",
+                "reference": "608ee0ff88a96469d4c13e438c0d38ade086df21",
                 "shasum": ""
             },
             "require": {
@@ -11060,7 +11060,7 @@
                 "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
                 "issues": "https://github.com/acquia/lightning-dev/issues"
             },
-            "time": "2018-03-01T14:00:14+00:00"
+            "time": "2018-03-06T14:19:14+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -14812,7 +14812,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -14925,7 +14925,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.8.35",
+            "version": "v2.8.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -14978,7 +14978,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -15034,7 +15034,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -15083,16 +15083,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "6a615613745cef820d807443f32076bb9f5d0a38"
+                "reference": "a479817ce0a9e4adfd7d39c6407c95d97c254625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/6a615613745cef820d807443f32076bb9f5d0a38",
-                "reference": "6a615613745cef820d807443f32076bb9f5d0a38",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a479817ce0a9e4adfd7d39c6407c95d97c254625",
+                "reference": "a479817ce0a9e4adfd7d39c6407c95d97c254625",
                 "shasum": ""
             },
             "require": {
@@ -15128,11 +15128,11 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-11T17:15:12+00:00"
+            "time": "2018-03-05T18:28:11+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
