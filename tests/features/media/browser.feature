@@ -49,6 +49,7 @@ Feature: An entity browser for media assets
   Scenario: Bundle filter is present when no contextual filter is given.
     When I visit "/node/add/page"
     And I open the media browser
+    And I wait 5 seconds
     And I click the ".views-exposed-form a.btn" element
     Then I should see a "Type" field
 
