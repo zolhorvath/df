@@ -7,3 +7,4 @@ dependencies:
   - config_rewrite
   - contact
   - lightning_core
+  - metatag
