@@ -2,24 +2,14 @@
 
 /**
  * @file
- * Scenarios hooks implemented by the DFS Dev module.
+ * Scenarios hooks implemented by the DFS Dev profile.
  */
 
 /**
  * Implements hook_scenario_import().
  */
 function dfs_dev_scenario_import() {
-  $migrations = [];
-  $migrations['dfs_dev'] = array(
-    'import_block_basic',
-    'import_block_hero',
-    'import_block_map',
-    'import_term_tags',
-    'import_node_page',
-    'import_node_article',
-    'import_block_slideshow',
-    'import_gallery_image',
-    'import_media_image',
-  );
-  return (array) $migrations;
+  return [
+    'dfs_dev' => _dfs_dev_migrations(),
+  ];
 }

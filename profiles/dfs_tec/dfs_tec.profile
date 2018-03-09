@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains dfs_tec.module.
+ * Contains dfs_tec.profile.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -33,9 +33,29 @@ function dfs_tec_module_implements_alter(&$implementations, $hook) {
  * Implements hook_migration_plugins_alter().
  */
 function dfs_tec_migration_plugins_alter(&$definitions) {
-  // Update source references in scenario migrations.
-  $import = dfs_tec_scenario_import();
-  foreach ($import['dfs_tec'] as $id) {
+  // Update source references in migrations.
+  $import = _dfs_tec_migrations();
+  foreach ($import as $id) {
     $definitions[$id]['source']['path'] = str_replace('..', dirname(__FILE__), $definitions[$id]['source']['path']);
   }
+}
+
+/**
+ * Helper function to return a list of migrations.
+ *
+ * @return array
+ *   An array of migrations for dfs_tec.
+ */
+function _dfs_tec_migrations() {
+  return [
+    'import_dfs_tec_tags',
+    'import_dfs_tec_article',
+    'import_dfs_tec_basic',
+    'import_dfs_tec_employee',
+    'import_dfs_tec_image',
+    'import_dfs_tec_page',
+    'import_dfs_tec_service',
+    'import_dfs_tec_hero',
+    'import_dfs_tec_slideshow',
+  ];
 }
