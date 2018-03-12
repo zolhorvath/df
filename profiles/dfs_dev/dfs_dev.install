@@ -10,6 +10,6 @@
  */
 function dfs_dev_install() {
   // Enable the dfs_dev scenario.
-  \Drupal::service('scenarios_handler')->scenarioEnable('dfs_dev', 'modules');
+  \Drupal::service('scenarios_handler')->scenarioEnable('dfs_dev');
 }
 

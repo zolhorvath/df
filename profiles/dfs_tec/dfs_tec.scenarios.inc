@@ -6,10 +6,14 @@
  */
 
 /**
- * Implements hook_scenario_import().
+ * Implements hook_scenarios_info().
  */
-function dfs_tec_scenario_import() {
+function dfs_tec_scenarios_info() {
   return [
-    'dfs_tec' => _dfs_tec_migrations(),
+    'dfs_tec' => [
+      'label' => t('DFS TEC'),
+      'description' => t('Demo Framework Scenario for Technology Websites.'),
+      'migrations' => _dfs_tec_migrations(),
+    ],
   ];
 }

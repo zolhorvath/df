@@ -5,8 +5,6 @@
  * Contains dfs_tec.profile.
  */
 
-use Drupal\Core\Routing\RouteMatchInterface;
-
 /**
  * Implements hook_module_implements_alter().
  */

@@ -6,10 +6,14 @@
  */
 
 /**
- * Implements hook_scenario_import().
+ * Implements hook_scenarios_info().
  */
-function dfs_dev_scenario_import() {
+function dfs_dev_scenarios_info() {
   return [
-    'dfs_dev' => _dfs_dev_migrations(),
+    'dfs_dev' => [
+      'label' => t('DFS DEV'),
+      'description' => t('Demo Framework Scenario for Development Testing.'),
+      'migrations' => _dfs_dev_migrations(),
+    ],
   ];
 }
