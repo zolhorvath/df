@@ -68,5 +68,4 @@ Feature: Panelizer
     Then I should see "Region: left"
     And I should see "Region: right"
     And I should not see "Region: middle"
-    And I close the editor
-    And I accept the alert
+    And I save the layout
