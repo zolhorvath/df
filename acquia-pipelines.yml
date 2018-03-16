@@ -20,7 +20,7 @@ events:
           script:
             # Add Composer's local bin directory to the PATH so that we will be
             # running our installed versions of Drush, PHPCS, Behat, etc.
-            - export PATH="$HOME/.composer/vendor/bin:$SOURCE_DIR/bin:$PATH"
+            - export PATH="$HOME/.composer/vendor/bin:$SOURCE_DIR/vendor/bin:$PATH"
             - composer validate --no-check-all --ansi --no-interaction
             - composer install
       - install:
@@ -30,7 +30,6 @@ events:
             - mysql -u root -proot -e 'CREATE DATABASE drupal;'
             - lightning install 'mysql\://root:root@localhost/drupal' $SCENARIO 'http://127.0.0.1:8080' --no-dev
             - cd $SOURCE_DIR/docroot
-            - if [[ "$SCENARIO" != df ]]; then drush es $SCENARIO; fi
             - echo $SCENARIO > scenario.txt;
       - test:
           type: script
