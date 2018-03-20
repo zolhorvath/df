@@ -120,7 +120,14 @@ class Package {
         // The Lightning project uses semantic versioning.
         $sem_ver = explode('.', $package['version']);
         list($major, $minor, $patch) = $sem_ver;
-        $info['projects'][$name]['version'] = "$major.$minor$patch";
+
+        // drupal.org doesn't currently support semantic versioning, so
+        // Lightning uses a custom release naming convention where 'patch' is
+        // padded with leading zeros to two digits.
+        // For example, version '3.0.3' becomes '3.003'.
+        $padded_patch = str_pad($patch, 2, "0", STR_PAD_LEFT);
+
+        $info['projects'][$name]['version'] = "$major.$minor$padded_patch";
 
         // Override the default 'contrib' subdirectory set above in order to
         // prevent the profile from being placed in a 'contrib' folder.
