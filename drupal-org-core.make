@@ -1,6 +1,10 @@
 core = 8.x
 api = 2
 projects[drupal][type] = core
+projects[drupal][download][type] = git
+projects[drupal][download][url] = https://git.drupal.org/project/drupal.git
+projects[drupal][download][branch] = 8.5.x
+projects[drupal][download][revision] = 8.5.0
 projects[drupal][patch][] = https://www.drupal.org/files/issues/1356278-408--8.5.x-real.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
@@ -20,4 +24,3 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-i
 projects[drupal][patch][] = https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2873287-33.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
-projects[drupal][version] = 8.5.0
