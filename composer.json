@@ -55,7 +55,7 @@
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "package": "Acquia\\DF\\Composer\\Package::execute",
         "release-version": "Acquia\\Lightning\\Composer\\ReleaseVersion::execute",
-        "verify-patched-constraints": "Acquia\\DF\\Composer\\PatchedConstraint::execute",
+        "verify-patched-constraints": "Acquia\\Lightning\\Composer\\PatchedConstraint::execute",
         "enable-asset-packagist": "Acquia\\Lightning\\Composer\\AssetPackagist::execute",
         "nuke": "rm -r -f docroot vendor",
         "pull": "Acquia\\Lightning\\Commands\\FileCommands::pull",
