@@ -128,10 +128,7 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch"
             },
             "drupal/facets": {
-                "Performance improvement for getQueryTypesForFacet | https://www.drupal.org/node/2897654": "https://www.drupal.org/files/issues/facets-query-types-performace-2897654-2.patch",
-                "Use EntityDeleteForm for entity deletion | https://www.drupal.org/node/2861541": "https://www.drupal.org/files/issues/2861541-15.patch",
-                "Add testcoverage for range + slider widgets/processors | https://www.drupal.org/node/2894637": "https://www.drupal.org/files/issues/add_testcoverage_for-2894637-16.patch",
-                "The slider UI element only shows for a single facet using the 'Range slider' widget | https://www.drupal.org/node/2897689": "https://www.drupal.org/files/issues/the_slider_ui_element-2897689-6.patch",
+                "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
                 "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
                 "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/project/facets/issues/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
             },
@@ -199,7 +196,7 @@
         "drupal/entity_browser": "2.0.0-alpha2",
         "drupal/entity_browser_block": "1.x-dev",
         "drupal/entity_gallery": "1.x-dev",
-        "drupal/facets": "1.0.0-alpha11",
+        "drupal/facets": "1.0.0-beta2",
         "drupal/field_formatter_class": "1.0.0",
         "drupal/field_group": "1.0.0-rc6",
         "drupal/geocoder": "2.0.0-beta3",
