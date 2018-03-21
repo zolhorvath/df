@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "148b442feea3718b600900ae56f31d09",
+    "content-hash": "ab9c0cdd7b10fd0d8f0e446f1f16c218",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3688,23 +3688,23 @@
         },
         {
             "name": "drupal/facets",
-            "version": "1.0.0-alpha11",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/facets",
-                "reference": "8.x-1.0-alpha11"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.0-alpha11.zip",
-                "reference": "8.x-1.0-alpha11",
-                "shasum": "7b53517e7049048a4379a5e30a2ca4a243ca1fe9"
+                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "3dfeb0a353039ee8a6554bad9f6d02ec7cadee24"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
             "require-dev": {
-                "drupal/search_api": "*"
+                "drupal/search_api": "~1.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -3712,18 +3712,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha11",
-                    "datestamp": "1512228488",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1516352268",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
                 },
                 "patches_applied": {
-                    "Performance improvement for getQueryTypesForFacet | https://www.drupal.org/node/2897654": "https://www.drupal.org/files/issues/facets-query-types-performace-2897654-2.patch",
-                    "Use EntityDeleteForm for entity deletion | https://www.drupal.org/node/2861541": "https://www.drupal.org/files/issues/2861541-15.patch",
-                    "Add testcoverage for range + slider widgets/processors | https://www.drupal.org/node/2894637": "https://www.drupal.org/files/issues/add_testcoverage_for-2894637-16.patch",
-                    "The slider UI element only shows for a single facet using the 'Range slider' widget | https://www.drupal.org/node/2897689": "https://www.drupal.org/files/issues/the_slider_ui_element-2897689-6.patch",
+                    "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
                     "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
                     "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/project/facets/issues/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
                 }
@@ -8280,7 +8277,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/zurb-foundation",
-                "reference": "c2f59433ff61560b8c4dfcb68e9629ee8e368e28"
+                "reference": "78de260a24e601c3b1d8e504af84109f01029929"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -8291,8 +8288,8 @@
                     "dev-6.x": "6.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-6.0-alpha3+11-dev",
-                    "datestamp": "1519663080",
+                    "version": "8.x-6.0-alpha4+1-dev",
+                    "datestamp": "1521643080",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8335,7 +8332,7 @@
                 "source": "http://cgit.drupalcode.org/zurb_foundation",
                 "issues": "http://drupal.org/project/issues/zurb_foundation"
             },
-            "time": "2018-02-26T16:37:11+00:00"
+            "time": "2018-03-21T14:37:07+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
