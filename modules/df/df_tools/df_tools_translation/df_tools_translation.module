@@ -73,10 +73,14 @@ function df_tools_translation_enable_translation($entity_info) {
  * Updates the current site's translations via a batch process.
  */
 function df_tools_translation_update_config_translation() {
-  // Pull in translations for the all available languages/projects.
-  \Drupal::moduleHandler()->loadInclude('locale', 'fetch.inc');
+  // The Locale module splits its translation functions into separate include
+  // files, based on utility.
+  // To ensure that each function we require is available, load its respective
+  // include file.
   \Drupal::moduleHandler()->loadInclude('locale', 'bulk.inc');
   \Drupal::moduleHandler()->loadInclude('locale', 'compare.inc');
+  \Drupal::moduleHandler()->loadInclude('locale', 'fetch.inc');
+  \Drupal::moduleHandler()->loadInclude('locale', 'translation.inc');
 
   // Get a list of all currently installed languages as langcodes.
   $languageManager = \Drupal::languageManager();

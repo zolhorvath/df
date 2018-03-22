@@ -20,6 +20,12 @@ use Drupal\migrate_tools\DrushLogMigrateMessage;
  * @todo Can we refactor this to use derived migration plugins?
  */
 function df_tools_translation_scenarios_migration_finished(Migration $migration) {
+  // The Locale module splits its translation functions into separate include
+  // files, based on utility.
+  // To ensure that each function we require is available, load its respective
+  // include file.
+  \Drupal::moduleHandler()->loadInclude('locale', 'bulk.inc');
+
   // Initialize variables required to parse migration.
   /** @var Drupal\migrate_source_csv\Plugin\migrate\source\CSV $source */
   $source = $migration->getSourcePlugin();
