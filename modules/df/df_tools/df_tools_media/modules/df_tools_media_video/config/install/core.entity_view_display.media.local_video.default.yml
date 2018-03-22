@@ -7,47 +7,26 @@ dependencies:
     - media.type.local_video
   module:
     - media_entity_video
-    - user
 id: media.local_video.default
 targetEntityType: media
 bundle: local_video
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 2
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   field_media_video_local_file:
     type: video_player_html5
-    weight: 3
+    weight: 0
     region: content
     label: hidden
     settings:
       video_attributes: 'controls controlsList="nodownload"'
       provide_download_link: 0
     third_party_settings: {  }
-  name:
-    label: hidden
-    type: string
-    weight: 0
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  addtoany: true
+  created: true
   field_media_in_library: true
   langcode: true
+  name: true
+  scheduled_publication: true
   thumbnail: true
+  uid: true
