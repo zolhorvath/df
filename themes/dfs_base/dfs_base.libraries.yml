@@ -12,14 +12,3 @@ global:
     - core/drupalSettings
     - zurb_foundation/global
 
-leaflet-sleep:
-  remote: http://cliffcloud.github.io/Leaflet.Sleep/
-  version: 0.5.1
-  license:
-    name: MIT
-    url: https://github.com/CliffCloud/Leaflet.Sleep/blob/v0.5.1/LICENSE
-    gpl-compatible: true
-  js:
-    /libraries/leaflet-sleep/Leaflet.Sleep.js: {}
-  dependencies:
-    - leaflet/leaflet
