@@ -20,7 +20,7 @@ fi
 if [ -d docroot/sites ]; then
   chmod -R 777 docroot/sites
 fi
-rm -rf bin composer.lock docroot vendor
+rm -rf bin docroot vendor
 
 # Use Composer to attempt to install dependencies.
 composer clear-cache
