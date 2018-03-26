@@ -124,7 +124,8 @@
             },
             "drupal/entity_browser": {
                 "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037": "https://www.drupal.org/files/issues/2845037-4.patch",
-                "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch"
+                "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
+                "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555": "https://www.drupal.org/files/issues/2018-03-26/2825555-8-alt-3.patch"
             },
             "drupal/facets": {
                 "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
