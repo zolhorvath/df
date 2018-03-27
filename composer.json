@@ -24,10 +24,6 @@
             "type": "vcs",
             "url": "https://github.com/acquia/lightning-dev"
         },
-        "patch": {
-            "type": "vcs",
-            "url": "https://github.com/DevinCarlson/composer-patches"
-        },
         "lite": {
             "type": "package",
             "package": {
@@ -125,7 +121,7 @@
             "drupal/entity_browser": {
                 "Fixed the issue of Call to a member function getConfigDependencyKey() on null | https://www.drupal.org/node/2845037": "https://www.drupal.org/files/issues/2845037-4.patch",
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
-                "Improve Field Widget UX for single-cardinality File/Image fields | https://www.drupal.org/node/2825555": "https://www.drupal.org/files/issues/2018-03-26/2825555-8-alt-3.patch"
+                "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-03-27/2877751-17_2825555-8_combined_2.patch"
             },
             "drupal/facets": {
                 "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
@@ -158,6 +154,13 @@
             },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879": "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
+            }
+        },
+        "patches-ignore": {
+            "drupal/lightning_media": {
+                "drupal/entity_browser": {
+                    "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-17.patch"
+                }
             }
         }
     },
