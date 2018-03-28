@@ -214,13 +214,9 @@
       $('img').one('error', function () {
         var image = this;
         var thisSrc = this.src;
-        var matchSitesDefault = thisSrc.match(/\/sites\/(.*)\/files\/styles\//);
         var width = $(image).attr('width');
         var height = $(image).attr('height');
 
-        if (matchSitesDefault) {
-          console.log('ATTENTION: The image on this page may be broken because a Dev Desktop bug, please go to /admin/appearance/ and save the form');
-        }
         // If both elements are undefined, just hide them.
         if (!height && !width) {
           $(image).hide();
@@ -239,12 +235,5 @@
       });
     }
   };
-
-  Drupal.behaviors.DFSBaseLeafletSleepCleanup = {
-    attach: function (context, settings) {
-      // Remove duplicate leaflet sleep messages.
-      $('.sleep-note:not(:last-child)').remove();
-    }
-  }
 
 })(jQuery, Drupal, drupalSettings);
