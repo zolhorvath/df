@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9b1d9c4434d752d72006fd71b3b01d1",
+    "content-hash": "900bb78fc5351b2b6e84a128ec660ed9",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3668,6 +3668,84 @@
             "time": "2017-04-10T19:04:29+00:00"
         },
         {
+            "name": "drupal/eu_cookie_compliance",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/eu-cookie-compliance",
+                "reference": "dd5c8c9ae1c99ab2c3d1d73970fbf11bb10a48be"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1522141085",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Pajdzik",
+                    "homepage": "https://www.drupal.org/user/160555"
+                },
+                {
+                    "name": "achton",
+                    "homepage": "https://www.drupal.org/user/712454"
+                },
+                {
+                    "name": "blairski",
+                    "homepage": "https://www.drupal.org/user/120835"
+                },
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/97634"
+                },
+                {
+                    "name": "grzegorz.bartman",
+                    "homepage": "https://www.drupal.org/user/363120"
+                },
+                {
+                    "name": "id.tornado",
+                    "homepage": "https://www.drupal.org/user/2754049"
+                },
+                {
+                    "name": "killua99",
+                    "homepage": "https://www.drupal.org/user/699418"
+                },
+                {
+                    "name": "mibfire",
+                    "homepage": "https://www.drupal.org/user/155136"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
+                }
+            ],
+            "description": "This module aims at making the website compliant with the new EU cookie regulation",
+            "homepage": "https://www.drupal.org/project/eu_cookie_compliance",
+            "support": {
+                "source": "http://cgit.drupalcode.org/eu_cookie_compliance"
+            },
+            "time": "2018-03-27T10:45:52+00:00"
+        },
+        {
             "name": "drupal/facets",
             "version": "1.0.0-beta2",
             "source": {
@@ -4443,6 +4521,53 @@
             }
         },
         {
+            "name": "drupal/ip_anon",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ip_anon",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ip_anon-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "89256c2fd686d12a80b43d6306690fb14e4d9d21"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1487056984",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                }
+            ],
+            "description": "Implements an IP address retention policy.",
+            "homepage": "https://www.drupal.org/project/ip_anon",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ip_anon"
+            }
+        },
+        {
             "name": "drupal/jsonapi",
             "version": "1.14.0",
             "source": {
@@ -5146,24 +5271,24 @@
         },
         {
             "name": "drupal/lightning_workflow",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_workflow",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "68090ce898e824214d001f32d712ad3ba83b4b20"
+                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "8a19c28e7c5afa7ae55b9785765ccdc203c51f32"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "*",
                 "drupal/diff": "^1.0",
-                "drupal/lightning_core": "^1.0 || ^2.1",
+                "drupal/lightning_core": "^1.0 || ^2.0",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
@@ -5175,8 +5300,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1520445484",
+                    "version": "8.x-1.2",
+                    "datestamp": "1522167780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7271,20 +7396,26 @@
         },
         {
             "name": "drupal/schemata",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/schemata",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schemata-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "25c350188a7fff372582d468d6fed41425a933d1"
+                "url": "https://ftp.drupal.org/files/projects/schemata-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "e4253ed7bc185d5dba57524835debfd551e0bcaa"
             },
             "require": {
                 "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.2",
+                "jakub-onderka/php-parallel-lint": "^0.9.2",
+                "league/json-guard": "^1.0",
+                "league/json-reference": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -7292,8 +7423,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1498495443",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1521868984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7301,13 +7432,29 @@
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "phpcs": [
+                    "phpcs --standard=tests/phpcs.xml"
+                ],
+                "phpcbf": [
+                    "phpcbf --standard=tests/phpcs.xml"
+                ],
+                "lint": [
+                    "parallel-lint -e php,module,install,profile,theme,inc --exclude vendor/ --blame ."
+                ],
+                "quality": [
+                    "@lint",
+                    "@phpcs"
+                ]
+            },
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Grayside",
-                    "homepage": "https://www.drupal.org/user/346868"
+                    "name": "Adam Ross",
+                    "homepage": "https://www.drupal.org/user/346868",
+                    "email": "grayside@gmail.com"
                 },
                 {
                     "name": "HalfChem",
@@ -7334,15 +7481,21 @@
                     "homepage": "https://www.drupal.org/user/640024"
                 }
             ],
-            "description": "Provide schema definitions of Drupal entities for type validation, code generation, and documentation.",
-            "homepage": "https://www.drupal.org/project/schemata",
+            "description": "Facilitate generation of schema definitions of Drupal 8 data models.",
+            "homepage": "https://drupal.org/project/schemata",
+            "keywords": [
+                "Drupal",
+                "json",
+                "schema"
+            ],
             "support": {
-                "source": "http://cgit.drupalcode.org/schemata"
+                "source": "https://cgit.drupalcode.org/schemata",
+                "issues": "https://drupal.org/project/issues/schemata"
             }
         },
         {
             "name": "drupal/schemata_json_schema",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/schemata": "self.version"
@@ -7353,8 +7506,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1498495443",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1521868984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -8557,16 +8710,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.0",
+            "version": "6.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
@@ -8576,7 +8729,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -8585,7 +8738,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "6.3-dev"
                 }
             },
             "autoload": {
@@ -8618,7 +8771,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22T18:50:49+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -11343,12 +11496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "608ee0ff88a96469d4c13e438c0d38ade086df21"
+                "reference": "95a8c801348245a4bb4dbf8ede600e2ec550eb31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/608ee0ff88a96469d4c13e438c0d38ade086df21",
-                "reference": "608ee0ff88a96469d4c13e438c0d38ade086df21",
+                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/95a8c801348245a4bb4dbf8ede600e2ec550eb31",
+                "reference": "95a8c801348245a4bb4dbf8ede600e2ec550eb31",
                 "shasum": ""
             },
             "require": {
@@ -11358,6 +11511,7 @@
                 "consolidation/robo": "^1.2",
                 "drupal/coder": "~8.2.0",
                 "drupal/config_installer": "^1.6",
+                "drupal/console": "^1.0.0",
                 "drupal/devel": "^1.0",
                 "drupal/drupal-extension": "~3.3.0",
                 "drush/drush": "^9",
@@ -11437,7 +11591,7 @@
                 "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
                 "issues": "https://github.com/acquia/lightning-dev/issues"
             },
-            "time": "2018-03-06T14:19:14+00:00"
+            "time": "2018-03-27T17:17:38+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -15481,6 +15635,7 @@
         "drupal/config_tools": 20,
         "drupal/entity_browser_block": 20,
         "drupal/entity_gallery": 20,
+        "drupal/eu_cookie_compliance": 20,
         "drupal/geophp": 20,
         "drupal/geolocation": 20,
         "drupal/leaflet": 20,
