@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4a989e21975bab9959e48ea0fa8bc79",
+    "content-hash": "1c46f5981c7b318a8648ef84881324e1",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2627,12 +2627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "90838dbbe305c2d986c7b9774605777588feab4d"
+                "reference": "a40a65012dd8f2b3b7aed8cc1c7a37e855d4e0b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/90838dbbe305c2d986c7b9774605777588feab4d",
-                "reference": "90838dbbe305c2d986c7b9774605777588feab4d",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a40a65012dd8f2b3b7aed8cc1c7a37e855d4e0b5",
+                "reference": "a40a65012dd8f2b3b7aed8cc1c7a37e855d4e0b5",
                 "shasum": ""
             },
             "require": {
@@ -2875,7 +2875,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-21T20:05:44+00:00"
+            "time": "2018-03-27T09:58:43+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6086,23 +6086,20 @@
         },
         {
             "name": "drupal/moderation_note",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_note",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderation_note-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "9e0c48fbc63b286c051e9d7707d72a780ecde988"
+                "url": "https://ftp.drupal.org/files/projects/moderation_note-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "4dd3c62e18c06c101514f6eba0c9ed14f2b800a2"
             },
             "require": {
-                "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/workbench_moderation": "*"
+                "drupal/core": "^8.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -6110,7 +6107,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
+                    "version": "8.x-1.0-beta1",
                     "datestamp": "1520436784",
                     "security-coverage": {
                         "status": "not-covered",
@@ -6136,23 +6133,20 @@
         },
         {
             "name": "drupal/moderation_sidebar",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_sidebar",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "eb804c26f4dcf76b60d141fb269d09121dc54212"
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "2724417e272e27c379c8e614165dbb58a6d02731"
             },
             "require": {
-                "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/workbench_moderation": "*"
+                "drupal/core": "^8.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -6160,11 +6154,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
+                    "version": "8.x-1.0-beta1",
                     "datestamp": "1520437980",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
