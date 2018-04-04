@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d4ce7df3bf283ba77b3052174f94d0b",
+    "content-hash": "9a4bb34112d1a80819a6c74bef00dde8",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7140,6 +7140,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

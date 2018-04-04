@@ -235,6 +235,7 @@ projects[replicate_ui][download][url] = https://git.drupal.org/project/replicate
 projects[replicate_ui][download][branch] = 1.x
 projects[replicate_ui][download][revision] = ed027e849b6bd7abe7975c009f046bdbd232ee09
 projects[responsive_preview][type] = module
+projects[responsive_preview][patch][] = https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch
 projects[responsive_preview][version] = 1.0-alpha7
 projects[restui][type] = module
 projects[restui][version] = 1.15
