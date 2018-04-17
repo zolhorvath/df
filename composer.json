@@ -134,9 +134,6 @@
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091": "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
             },
-            "drupal/page_manager": {
-                "Update 'page_manager.variant_route_filter' service according to core changes | https://www.drupal.org/node/2918564": "https://www.drupal.org/files/issues/2918564-22.patch"
-            },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
@@ -223,7 +220,7 @@
         "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "4.0.0-beta3",
         "drupal/oauth": "2.1.0",
-        "drupal/page_manager": "^4.0",
+        "drupal/page_manager": "^4.3",
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
         "drupal/replicate_ui": "1.x-dev",
