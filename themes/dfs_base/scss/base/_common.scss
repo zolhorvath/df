@@ -290,3 +290,9 @@ ul.checklist {
 label.responsive-preview-device-label {
     background:transparent
 }
+
+//make videos responsive when editing with Panels IPE
+.video-embed-field-responsive-video iframe {
+    width: 100%;
+    height: 100%;
+}
