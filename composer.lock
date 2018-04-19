@@ -4,29 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd2f0ed05a8e846a0180537b996d39d1",
+    "content-hash": "3dae4d09d6e5ac9159c87020d160abcb",
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "dev-8.x-3.x",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "6aa57babb362c36eeb611f8dee1fc61f7b06be1e"
+                "reference": "59be129040b620a3f7d5692a293106eef482c601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/6aa57babb362c36eeb611f8dee1fc61f7b06be1e",
-                "reference": "6aa57babb362c36eeb611f8dee1fc61f7b06be1e",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/59be129040b620a3f7d5692a293106eef482c601",
+                "reference": "59be129040b620a3f7d5692a293106eef482c601",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/lightning_api": "2.x-dev",
-                "drupal/lightning_core": "2.x-dev",
-                "drupal/lightning_layout": "1.x-dev",
-                "drupal/lightning_media": "2.x-dev",
+                "drupal/lightning_api": "^2.1",
+                "drupal/lightning_core": "^2.4",
+                "drupal/lightning_layout": "^1.1",
+                "drupal/lightning_media": "2.1",
                 "drupal/lightning_workflow": "^1.2",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
@@ -75,7 +75,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2018-04-05T16:53:35+00:00"
+            "time": "2018-04-19T01:58:28+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2621,16 +2621,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "url": "https://api.github.com/repos/drupal/core/zipball/bc21760d4be4ad117851809183c8d18880ab275a",
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a",
                 "shasum": ""
             },
             "require": {
@@ -2847,7 +2847,7 @@
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2815221-87.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-04-18/2815221-87-8.5.2.patch",
                     "2877383 - Add action support to Media module": "https://www.drupal.org/files/issues/2877383-56.patch",
                     "2670730 - Provide a delete action for each content entity type": "https://www.drupal.org/files/issues/2670730-81-89-8.5.0-rc1.patch"
                 }
@@ -2873,7 +2873,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-27T09:58:42+00:00"
+            "time": "2018-04-18T17:00:56+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4764,18 +4764,24 @@
         },
         {
             "name": "drupal/lightning_api",
-            "version": "dev-2.x",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_api",
-                "reference": "d3bfa5f0220c60b3c6c735c45be61b6d284ea542"
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "f4c4e60aae0f36f2b0a5538de6ce09739c7b0bc9"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "~8.0",
                 "drupal/jsonapi": "1.14",
-                "drupal/lightning_core": "2.x-dev",
+                "drupal/lightning_core": "^2.1",
                 "drupal/openapi": "1.0-alpha1",
                 "drupal/openapi_redoc": "*",
                 "drupal/simple_oauth": "3.5.0",
@@ -4792,11 +4798,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1+1-dev",
+                    "version": "8.x-2.1",
                     "datestamp": "1521661384",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -4871,23 +4877,28 @@
             "homepage": "https://www.drupal.org/project/lightning_api",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_api"
-            },
-            "time": "2018-04-02T16:22:03+00:00"
+            }
         },
         {
             "name": "drupal/lightning_core",
-            "version": "dev-2.x",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_core",
-                "reference": "a9f48ee4d7fe273671f360bb7d0af506cc89596b"
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "296b1360f6158ad339684f259e6c32c43be31b3d"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^1.1",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.5.1",
+                "drupal/core": "~8.5.2",
                 "drupal/metatag": "^1.0",
                 "drupal/pathauto": "^1.0",
                 "drupal/search_api": "^1.0",
@@ -4910,11 +4921,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.3+0-dev",
-                    "datestamp": "1523980080",
+                    "version": "8.x-2.4",
+                    "datestamp": "1524084480",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -4946,7 +4957,7 @@
                         "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2815221-87.patch"
+                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-04-18/2815221-87-8.5.2.patch"
                     }
                 },
                 "drush": {
@@ -5001,16 +5012,21 @@
             "homepage": "https://www.drupal.org/project/lightning_core",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_core"
-            },
-            "time": "2018-04-17T15:44:32+00:00"
+            }
         },
         {
             "name": "drupal/lightning_layout",
-            "version": "dev-1.x",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_layout",
-                "reference": "3e6f660126a85714674b3e29dbd10186e7d5681d"
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "7492b3d4de9e6230806fecfd7220d1219046fe44"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -5018,7 +5034,7 @@
                 "drupal/core": "~8.0",
                 "drupal/ctools": "^3.0",
                 "drupal/entity_block": "^1.0",
-                "drupal/lightning_core": "1.x-dev || 2.x-dev",
+                "drupal/lightning_core": "^1.0 || ^2.1",
                 "drupal/panelizer": "4.0.0",
                 "drupal/panelizer_quickedit": "*",
                 "drupal/panels": "4.2.0",
@@ -5033,11 +5049,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1+2-dev",
-                    "datestamp": "1522329780",
+                    "version": "8.x-1.1",
+                    "datestamp": "1520444284",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -5118,16 +5134,21 @@
             "homepage": "https://www.drupal.org/project/lightning_layout",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_layout"
-            },
-            "time": "2018-04-02T17:00:25+00:00"
+            }
         },
         {
             "name": "drupal/lightning_media",
-            "version": "dev-2.x",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_media",
-                "reference": "169e9afff93742efd6ba80d3e2c0cc4ff7a150a2"
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "8c55f51cab85ffbda18b74cb2456b4e5cf74d5b6"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -5142,7 +5163,7 @@
                 "drupal/entity_embed": "1.0.0-beta2",
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0",
-                "drupal/lightning_core": "2.x-dev",
+                "drupal/lightning_core": "^2.1",
                 "drupal/media": "*",
                 "drupal/media_entity_instagram": "2.0.0-alpha1",
                 "drupal/media_entity_twitter": "2.0.0-alpha2",
@@ -5163,11 +5184,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1+1-dev",
-                    "datestamp": "1521730685",
+                    "version": "8.x-2.1",
+                    "datestamp": "1520446680",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -5251,8 +5272,7 @@
             "homepage": "https://www.drupal.org/project/lightning_media",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_media"
-            },
-            "time": "2018-03-07T18:22:46+00:00"
+            }
         },
         {
             "name": "drupal/lightning_workflow",
@@ -11470,12 +11490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "4ccdf6bd672a73c208b4aef27b8d4fd9be0c7a7f"
+                "reference": "bd52bbee7c15e5fffad2f7d5a87c887aa4ffab78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/4ccdf6bd672a73c208b4aef27b8d4fd9be0c7a7f",
-                "reference": "4ccdf6bd672a73c208b4aef27b8d4fd9be0c7a7f",
+                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/bd52bbee7c15e5fffad2f7d5a87c887aa4ffab78",
+                "reference": "bd52bbee7c15e5fffad2f7d5a87c887aa4ffab78",
                 "shasum": ""
             },
             "require": {
@@ -11565,7 +11585,7 @@
                 "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
                 "issues": "https://github.com/acquia/lightning-dev/issues"
             },
-            "time": "2018-03-29T14:59:15+00:00"
+            "time": "2018-04-19T16:13:27+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -14088,23 +14108,23 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.7.5",
+            "version": "1.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401"
+                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/dfd6be44111a7c41c2e884a336cc4f461b3b2401",
-                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
+                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
                 "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
-                "sebastian/comparator": "^1.1|^2.0",
+                "sebastian/comparator": "^1.1|^2.0|^3.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
             "require-dev": {
@@ -14147,7 +14167,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-02-19T10:16:54+00:00"
+            "time": "2018-04-18T13:57:24+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -14527,16 +14547,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.2",
+            "version": "v0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "4d542c66d93a4ac47e006ad25fb1f058a73b9b10"
+                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4d542c66d93a4ac47e006ad25fb1f058a73b9b10",
-                "reference": "4d542c66d93a4ac47e006ad25fb1f058a73b9b10",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/79c280013cf0b30fa23f3ba8bd3649218075adf4",
+                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4",
                 "shasum": ""
             },
             "require": {
@@ -14595,7 +14615,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-04-17T13:27:48+00:00"
+            "time": "2018-04-18T12:32:50+00:00"
         },
         {
             "name": "se/selenium-server-standalone",
@@ -15614,7 +15634,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "acquia/lightning": 20,
         "drupal/better_formats": 20,
         "drupal/config_rewrite": 20,
         "drupal/config_sync": 20,

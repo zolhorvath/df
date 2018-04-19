@@ -53,7 +53,7 @@
         "release-version": "Acquia\\Lightning\\Composer\\ReleaseVersion::execute",
         "verify-patched-constraints": "Acquia\\Lightning\\Composer\\PatchedConstraint::execute",
         "enable-asset-packagist": "Acquia\\Lightning\\Composer\\AssetPackagist::execute",
-        "nuke": "rm -r -f docroot vendor",
+        "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib",
         "pull": "Acquia\\Lightning\\Commands\\FileCommands::pull",
         "push": "Acquia\\Lightning\\Commands\\FileCommands::push"
     },
@@ -165,7 +165,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "dev-8.x-3.x",
+        "acquia/lightning": "^3.1.2",
         "bower-asset/fontawesome-iconpicker": "1.3.0",
         "bower-asset/imagesloaded": "v4.1.1",
         "bower-asset/jquery-ui-slider-pips": "v1.11.3",
