@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e237f9cc7443269d24da9f8d921b80b7",
+    "content-hash": "d85637294a65e93aba3c7d89774ffd2d",
     "packages": [
         {
             "name": "acquia/lightning",
