@@ -46,7 +46,6 @@
             "./vendor/bin/phing push"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-drupal-scaffold-cmd": "cat robots-replace.txt > docroot/robots.txt",
         "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib"
     },
     "extra": {
