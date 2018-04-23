@@ -296,3 +296,9 @@ label.responsive-preview-device-label {
     width: 100%;
     height: 100%;
 }
+
+//set ipe tray higher than leaflet-map 
+//map is 399, zoom is 999
+#panels-ipe-tray {
+  z-index: 1000;
+}

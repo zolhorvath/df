@@ -6071,6 +6071,9 @@ label.responsive-preview-device-label {
   width: 100%;
   height: 100%; }
 
+#panels-ipe-tray {
+  z-index: 1000; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
