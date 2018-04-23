@@ -6,10 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drupal/console": "^1.0.0",
-        "grasmash/yaml-cli": "^1.0",
-        "drupal/media_entity_generic": "1.x-dev",
-        "acquia/lightning_dev": "dev-8.x-1.x"
+        "drupal/console": "^1.0.0"
     },
     "repositories": {
         "0": {
@@ -42,20 +39,14 @@
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "@composer drupal-scaffold",
-            "@composer push"
+            "./vendor/bin/phing push"
         ],
         "post-update-cmd": [
-            "@composer push",
-            "@composer package"
+            "./vendor/bin/phing push"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "package": "Acquia\\DF\\Composer\\Package::execute",
-        "release-version": "Acquia\\Lightning\\Composer\\ReleaseVersion::execute",
-        "verify-patched-constraints": "Acquia\\Lightning\\Composer\\PatchedConstraint::execute",
-        "enable-asset-packagist": "Acquia\\Lightning\\Composer\\AssetPackagist::execute",
-        "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib",
-        "pull": "Acquia\\Lightning\\Commands\\FileCommands::pull",
-        "push": "Acquia\\Lightning\\Commands\\FileCommands::push"
+        "post-drupal-scaffold-cmd": "cat robots-replace.txt > docroot/robots.txt",
+        "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib"
     },
     "extra": {
         "installer-types": [
@@ -238,7 +229,8 @@
         "drupal/zurb_foundation": "6.x-dev",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
-        "oomphinc/composer-installers-extender": "^1.1"
+        "oomphinc/composer-installers-extender": "^1.1",
+        "phing/phing": "^2.14"
     },
     "autoload": {
         "psr-4": {
