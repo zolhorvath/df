@@ -44,8 +44,10 @@
             "./vendor/bin/phing push"
         ],
         "post-update-cmd": [
+            "@composer package",
             "./vendor/bin/phing push"
         ],
+        "package": "Acquia\\DF\\Composer\\Package::execute",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib"
     },
