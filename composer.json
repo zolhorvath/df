@@ -126,6 +126,9 @@
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091": "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
             },
+            "drupal/message_notify": {
+                "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
+            },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
