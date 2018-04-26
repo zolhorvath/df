@@ -11612,7 +11612,7 @@ nav .contextual {
 .ipe-block-plugin-info p, .ipe-block-content-type-info p, #js-form-item-settings-admin-label, .js-form-item-settings-admin-label {
   display: none; }
 
-.ipe-icons-ion, a[data-block-type="basic"]:before, a[data-block-type="content"]:before, a[data-block-type="hero"]:before, a[data-block-type="slideshow"]:before, a[data-block-type="map"]:before, a[data-block-type="media"]:before, a[data-block-type="url"]:before {
+.ipe-icons-ion, a[data-block-type="basic"]:before, a[data-block-type="content"]:before, a[data-block-type="hero"]:before, a[data-block-type="slideshow"]:before, a[data-block-type="map"]:before, a[data-block-type="media"]:before, a[data-block-type="video_hero"]:before, a[data-block-type="url"]:before {
   font-family: "Ionicons";
   display: inline-block;
   float: left;
@@ -11633,7 +11633,7 @@ nav .contextual {
   text-align: center;
   height: 60px; }
 
-.ipe-create-styles, a[data-block-type="basic"], a[data-block-type="content"], a[data-block-type="hero"], a[data-block-type="slideshow"], a[data-block-type="map"], a[data-block-type="media"], a[data-block-type="url"] {
+.ipe-create-styles, a[data-block-type="basic"], a[data-block-type="content"], a[data-block-type="hero"], a[data-block-type="slideshow"], a[data-block-type="map"], a[data-block-type="media"], a[data-block-type="video_hero"], a[data-block-type="url"] {
   width: 100%; }
 
 a[data-block-type="basic"]:before {
@@ -11652,6 +11652,9 @@ a[data-block-type="map"]:before {
   content: "\f456"; }
 
 a[data-block-type="media"]:before {
+  content: "\f42b"; }
+
+a[data-block-type="video_hero"]:before {
   content: "\f42b"; }
 
 a[data-block-type="url"]:before {
