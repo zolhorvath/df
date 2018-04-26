@@ -455,6 +455,14 @@ a[data-block-type="media"] {
   }
 }
 
+a[data-block-type="video_hero"] {
+  @extend .ipe-create-styles;
+  &:before {
+    content: "\f42b";
+    @extend .ipe-icons-ion;
+  }
+}
+
 a[data-block-type="url"] {
   @extend .ipe-create-styles;
   &:before {
