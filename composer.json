@@ -120,13 +120,16 @@
             "drupal/facets": {
                 "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
                 "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
-                "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/project/facets/issues/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
+                "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/node/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
             },
             "drupal/field_group": {
                 "WSOD on display and form display pages with PHP 7.1.8. | http://drupal.org/node/2921878": "https://www.drupal.org/files/issues/amalgamate-include-files.patch"
             },
             "drupal/leaflet": {
                 "Leaflet not always working with AJAX. | https://www.drupal.org/node/2858091": "https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch"
+            },
+            "drupal/lightning_layout": {
+                "Update logic to check for the null value in PanelizerWidget | https://www.drupal.org/node/2966924": "https://www.drupal.org/files/issues/2018-04-27/lightning_layout-null-value-check-view_mode-0.patch"
             },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
