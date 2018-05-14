@@ -143,9 +143,7 @@ content:
 hidden:
   body: true
   comment: true
-  field_publish_on: true
   field_tags: true
-  field_unpublish_on: true
   langcode: true
   links: true
   content_moderation_control: true
