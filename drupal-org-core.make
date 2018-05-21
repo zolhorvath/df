@@ -24,3 +24,4 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2815221-87.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2877383-56.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2670730-81-89-8.5.0-rc1.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2241865-50.patch
