@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f523ed115901b0f751e44a17b991a5b3",
+    "content-hash": "d0f44135a62bbce59167c0654103fbd7",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -115,7 +115,7 @@
             "homepage": "https://github.com/acquia/lift-sdk-php",
             "support": {
                 "issues": "https://github.com/acquia/lift-sdk-php/issues",
-                "source": "https://github.com/acquia/lift-sdk-php/tree/master"
+                "source": "https://github.com/acquia/lift-sdk-php/tree/0.9.0"
             },
             "time": "2018-05-31T05:58:40+00:00"
         },
@@ -1501,16 +1501,16 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "76342f9cd22a673b0b87b5e8774613f8ee287fbc"
+                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/76342f9cd22a673b0b87b5e8774613f8ee287fbc",
-                "reference": "76342f9cd22a673b0b87b5e8774613f8ee287fbc",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
+                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
                 "shasum": ""
             },
             "require": {
@@ -1539,7 +1539,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2018-04-18T16:14:55+00:00"
+            "time": "2018-06-06T20:36:41+00:00"
         },
         {
             "name": "drupal/acquia_connector",
@@ -3150,16 +3150,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.3",
+            "version": "8.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129"
+                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/b012f0ae51504880e920f2c6efdbdf03b6fe2129",
-                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129",
+                "url": "https://api.github.com/repos/drupal/core/zipball/6b4dc1cf3347761f63152a31786b4680b8ac7781",
+                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781",
                 "shasum": ""
             },
             "require": {
@@ -3376,7 +3376,7 @@
                     "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2815221-87.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-06-07/2815221-102.patch",
                     "2877383 - Add action support to Media module": "https://www.drupal.org/files/issues/2877383-56.patch",
                     "2670730 - Provide a delete action for each content entity type": "https://www.drupal.org/files/issues/2670730-81-89-8.5.0-rc1.patch",
                     "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
@@ -3403,7 +3403,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-04-25T15:39:01+00:00"
+            "time": "2018-06-06T21:02:51+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4823,7 +4823,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "ed2000cf79ae132dd2d1bbc9435c28422f0de592"
+                "reference": "e191b912203e55bdf40ae1d9a8c0be5da26e6620"
             },
             "require": {
                 "drupal/core": "*"
@@ -4834,8 +4834,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11+26-dev",
-                    "datestamp": "1527538684",
+                    "version": "8.x-1.11+28-dev",
+                    "datestamp": "1528380484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4861,7 +4861,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2018-05-28T20:17:39+00:00"
+            "time": "2018-06-07T14:05:47+00:00"
         },
         {
             "name": "drupal/geophp",
@@ -5247,7 +5247,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1487056984",
+                    "datestamp": "1528244580",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5581,24 +5581,24 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_core",
-                "reference": "8.x-2.6"
+                "reference": "8.x-2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "151db4517c3a7ba64355d64f15f514ab87b945f5"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "cdad9b2444462411217e8d8aa9343a5054fd7d69"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^1.1",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.5.3",
+                "drupal/core": "~8.5.4",
                 "drupal/metatag": "^1.0",
                 "drupal/pathauto": "^1.0",
                 "drupal/search_api": "^1.0",
@@ -5621,8 +5621,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1525871884",
+                    "version": "8.x-2.7",
+                    "datestamp": "1528377484",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5657,7 +5657,7 @@
                         "2880374 - Experimental modules should not have warnings after being installed": "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2815221-87.patch"
+                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-06-07/2815221-102.patch"
                     }
                 },
                 "drush": {
@@ -6343,17 +6343,17 @@
         },
         {
             "name": "drupal/media_acquiadam",
-            "version": "1.31.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/media_acquiadam",
-                "reference": "8.x-1.31"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.31.zip",
-                "reference": "8.x-1.31",
-                "shasum": "4e4485894a8419c469c56ab314fd2efa71d9b9db"
+                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "0b7f70ec80a5ca838f384561e627c2a6c9c7bc0e"
             },
             "require": {
                 "cweagans/php-webdam-client": "dev-master",
@@ -6361,7 +6361,6 @@
                 "drupal/fallback_formatter": "*"
             },
             "require-dev": {
-                "drupal/entity_usage": "*",
                 "drupal/fallback_formatter": "*"
             },
             "type": "drupal-module",
@@ -6370,8 +6369,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.31",
-                    "datestamp": "1524004084",
+                    "version": "8.x-1.2",
+                    "datestamp": "1523762584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -6381,9 +6380,6 @@
                     "drupal/core": {
                         "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
                     }
-                },
-                "patches_applied": {
-                    "WSOD when installing module | https://www.drupal.org/node/2973201": "https://www.drupal.org/files/issues/2018-05-15/media_acquiadam-xmp-auth-check-2973201-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10293,16 +10289,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.12",
+            "version": "v2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb"
+                "reference": "f6ce7dd93628088e1017fb5dd73b0b9fec7df9e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f6ce7dd93628088e1017fb5dd73b0b9fec7df9e5",
+                "reference": "f6ce7dd93628088e1017fb5dd73b0b9fec7df9e5",
                 "shasum": ""
             },
             "require": {
@@ -10334,10 +10330,11 @@
             "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
             "keywords": [
                 "csprng",
+                "polyfill",
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-04-04T21:24:14+00:00"
+            "time": "2018-06-06T17:40:22+00:00"
         },
         {
             "name": "phayes/geophp",
@@ -13855,16 +13852,16 @@
         },
         {
             "name": "dmore/chrome-mink-driver",
-            "version": "2.6.2",
+            "version": "2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/DMore/chrome-mink-driver.git",
-                "reference": "42c5e61d570e3089eca08915d2e2720d81a3fe1b"
+                "reference": "a70e6dbf1c17bc7190fc05e2f392e25aa4b7cb2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/DMore%2Fchrome-mink-driver/repository/archive.zip?sha=42c5e61d570e3089eca08915d2e2720d81a3fe1b",
-                "reference": "42c5e61d570e3089eca08915d2e2720d81a3fe1b",
+                "url": "https://gitlab.com/api/v4/projects/DMore%2Fchrome-mink-driver/repository/archive.zip?sha=a70e6dbf1c17bc7190fc05e2f392e25aa4b7cb2a",
+                "reference": "a70e6dbf1c17bc7190fc05e2f392e25aa4b7cb2a",
                 "shasum": ""
             },
             "require": {
@@ -13898,7 +13895,7 @@
                 }
             ],
             "description": "Mink driver for controlling chrome without selenium",
-            "time": "2018-01-31T21:51:21+00:00"
+            "time": "2018-06-07T17:28:52+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
