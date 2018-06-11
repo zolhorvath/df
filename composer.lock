@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6326ed95440e7cb3bfed1ad63ad2530c",
+    "content-hash": "d0f44135a62bbce59167c0654103fbd7",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -3150,16 +3150,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.x-dev",
+            "version": "8.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "ff6da3e987faf63f8bee679b6418065687d2266a"
+                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/ff6da3e987faf63f8bee679b6418065687d2266a",
-                "reference": "ff6da3e987faf63f8bee679b6418065687d2266a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/6b4dc1cf3347761f63152a31786b4680b8ac7781",
+                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781",
                 "shasum": ""
             },
             "require": {
@@ -3403,7 +3403,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-06-09T10:39:01+00:00"
+            "time": "2018-06-06T21:02:51+00:00"
         },
         {
             "name": "drupal/crop",
@@ -5581,18 +5581,24 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "dev-2.x",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_core",
-                "reference": "01b27e727e0955bc09119c1df2e9d36607744fb1"
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "cdad9b2444462411217e8d8aa9343a5054fd7d69"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^1.1",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "8.5.x-dev",
+                "drupal/core": "~8.5.4",
                 "drupal/metatag": "^1.0",
                 "drupal/pathauto": "^1.0",
                 "drupal/search_api": "^1.0",
@@ -5615,11 +5621,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.7+1-dev",
-                    "datestamp": "1528379584",
+                    "version": "8.x-2.7",
+                    "datestamp": "1528377484",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -5706,8 +5712,7 @@
             "homepage": "https://www.drupal.org/project/lightning_core",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_core"
-            },
-            "time": "2018-06-08T18:40:46+00:00"
+            }
         },
         {
             "name": "drupal/lightning_layout",
@@ -5967,18 +5972,24 @@
         },
         {
             "name": "drupal/lightning_workflow",
-            "version": "dev-2.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_workflow",
-                "reference": "d882176193a75312459975ee5adccd51d1fd9bad"
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "354bfc2432ba1ed104a9b383667fd71bf6bf6995"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "*",
                 "drupal/diff": "^1.0",
-                "drupal/lightning_core": "2.x-dev",
+                "drupal/lightning_core": "^2.7",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
@@ -5992,11 +6003,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-rc2+2-dev",
-                    "datestamp": "1525980780",
+                    "version": "8.x-2.0",
+                    "datestamp": "1528747680",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-types": [
@@ -6064,8 +6075,7 @@
             "homepage": "https://www.drupal.org/project/lightning_workflow",
             "support": {
                 "source": "http://cgit.drupalcode.org/lightning_workflow"
-            },
-            "time": "2018-05-11T14:08:46+00:00"
+            }
         },
         {
             "name": "drupal/link_class",
@@ -17220,12 +17230,6 @@
     ],
     "aliases": [
         {
-            "alias": "2.0.0-rc2",
-            "alias_normalized": "2.0.0.0-RC2",
-            "version": "2.9999999.9999999.9999999-dev",
-            "package": "drupal/lightning_workflow"
-        },
-        {
             "alias": "1.6.5",
             "alias_normalized": "1.6.5.0",
             "version": "1.9999999.9999999.9999999-dev",
@@ -17244,7 +17248,6 @@
         "drupal/eu_cookie_compliance": 20,
         "drupal/geophp": 20,
         "drupal/geolocation": 20,
-        "drupal/lightning_workflow": 20,
         "drupal/leaflet": 20,
         "drupal/libraries": 20,
         "drupal/material_admin_support": 20,
