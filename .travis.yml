@@ -70,6 +70,7 @@ install:
 
   # Install Demo Framework cleanly so that settings.php will be created properly.
   - lightning install 'mysql\://df:df@127.0.0.1/drupal' $SCENARIO 'http://127.0.0.1:8080' --no-dev
+  - lightning configure:behat 'http://127.0.0.1:8080'
 
 before_script:
   - drush config:set system.date timezone.default $TZ --yes
