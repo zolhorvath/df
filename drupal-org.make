@@ -153,7 +153,6 @@ projects[leaflet][download][type] = git
 projects[leaflet][download][url] = https://git.drupal.org/project/leaflet
 projects[leaflet][download][branch] = 1.x
 projects[leaflet][download][revision] = f8205538099a6e2d01f99bd62cc91094a2c6adc5
-projects[leaflet][patch][] = https://www.drupal.org/files/issues/leaflet-2858091-3-alternative.patch
 projects[libraries][type] = module
 projects[libraries][download][type] = git
 projects[libraries][download][url] = https://git.drupal.org/project/libraries
