@@ -61,3 +61,5 @@
   max-height: 50px;
   overflow: hidden;
 }
+/* Fix*/
+div.scheduled-transition select {display:block}
