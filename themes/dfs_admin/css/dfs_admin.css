@@ -61,5 +61,39 @@
   max-height: 50px;
   overflow: hidden;
 }
-/* Fix*/
-div.scheduled-transition select {display:block}
+/* Fix for Lightning Scheduler component*/
+div.scheduled-transition {
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  margin-bottom:0.5rem;
+ }
+
+div.scheduled-transition select {
+  display:block;
+  font-size:1rem;
+}
+
+div.scheduled-transition > span {
+  display:inline-block;
+}
+
+div.scheduled-transition a {
+  color:#f77;
+  float:right;
+}
+
+div.scheduled-transition span a {
+  float:none;
+}
+
+div.scheduled-transition button {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #999;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+  padding:0.25rem 0.5rem;
+  border-radius: 4px
+}
