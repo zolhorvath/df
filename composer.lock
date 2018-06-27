@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d96e8829b474ce9be12662bbcede6481",
+    "content-hash": "b20fb17773d3118f8af9688d486a67d2",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -473,16 +473,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "2.2.4",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/9e8ec3d10fad04748176144f108d7355662ae75e",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -552,28 +552,6 @@
             "type": "bower-asset",
             "license": [
                 "BSD-2-Clause"
-            ]
-        },
-        {
-            "name": "bower-asset/lightbox2",
-            "version": "v2.9.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lokesh/lightbox2.git",
-                "reference": "3c792b46c0e5dd6923f9d71db8cad611beef8050"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lokesh/lightbox2/zipball/3c792b46c0e5dd6923f9d71db8cad611beef8050",
-                "reference": "3c792b46c0e5dd6923f9d71db8cad611beef8050",
-                "shasum": null
-            },
-            "require": {
-                "bower-asset/jquery": "~2"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
             ]
         },
         {
@@ -12470,16 +12448,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "741e7a571836f038de731105f4742ca8a164e43a"
+                "reference": "11c9c1835e60eef6f9234377a480fcec096ebd9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/741e7a571836f038de731105f4742ca8a164e43a",
-                "reference": "741e7a571836f038de731105f4742ca8a164e43a",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/11c9c1835e60eef6f9234377a480fcec096ebd9e",
+                "reference": "11c9c1835e60eef6f9234377a480fcec096ebd9e",
                 "shasum": ""
             },
             "require": {
@@ -12498,12 +12476,22 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev",
-                    "dev-develop": "1.8.x-dev",
+                    "dev-master": "1.8.x-dev",
+                    "dev-develop": "1.9.x-dev",
                     "dev-release-2.0": "2.0.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
                 "psr-4": {
                     "Zend\\Diactoros\\": "src/"
                 }
@@ -12519,7 +12507,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-05-29T16:53:08+00:00"
+            "time": "2018-06-27T18:52:43+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
