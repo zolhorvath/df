@@ -55,15 +55,3 @@ function df_requirements($phase) {
     return $requirements;
   }
 }
-
-/**
- * If PHP version is not met, show message and exit.
- */
-
-function check_php() {
-  if (phpversion() < '7.1') {
-    echo 'Your PHP installation is too old. This build requires your cloud env to run PHP7.1+';
-    exit;
-  }
-}
-check_php();
