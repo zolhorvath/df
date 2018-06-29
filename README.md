@@ -1,5 +1,5 @@
 # Demo Framework (DF)
-[![Travis build status](https://api.travis-ci.org/acquia/df.svg?branch=8.x-2.x)](https://travis-ci.org/acquia/df) [![Scrutinizer code quality](https://scrutinizer-ci.com/g/acquia/df/badges/quality-score.png?b=8.x-2.x)](https://scrutinizer-ci.com/g/acquia/df)
+[![Travis build status](https://api.travis-ci.org/acquia/df.svg?branch=8.x-2.x)](https://travis-ci.org/acquia/df) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/acquia/df/badges/quality-score.png?b=8.x-3.x)](https://scrutinizer-ci.com/g/acquia/df/?branch=8.x-3.x)
 
 Demo Framework is a distribution consisting of modules, themes and libraries. It highlights powerful features created by the Drupal community. It is intended to be used as a starterkit for promoting enterprise-ready solutions.
 
