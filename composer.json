@@ -237,7 +237,7 @@
         "drupal/type_style": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
         "drupal/workbench_email": "1.0-alpha7",
-        "drupal/zurb_foundation": "dev-6.x#78de260a24e601c3b1d8e504af84109f01029929",
+        "drupal/zurb_foundation": "6.0.0-alpha4",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.x-dev as 1.6.5",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
