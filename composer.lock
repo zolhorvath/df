@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc8d43fc4a378afe75d8eb163b9c670",
+    "content-hash": "fb8b501ca034feaff379217f304c4a9c",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -4528,11 +4528,17 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "dev-1.x",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/eu-cookie-compliance",
-                "reference": "dd5c8c9ae1c99ab2c3d1d73970fbf11bb10a48be"
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "8e9f2a6c2d5abaa02b58b4b48e0626ed7c3518ad"
             },
             "require": {
                 "drupal/core": "*"
@@ -4543,11 +4549,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+0-dev",
-                    "datestamp": "1531428821",
+                    "version": "8.x-1.2",
+                    "datestamp": "1531429121",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4613,8 +4619,7 @@
                 "forum": "https://drupal.stackexchange.com/search?q=eu+cookie+compliance",
                 "issues": "https://www.drupal.org/project/issues/eu_cookie_compliance?version=8.x",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2018-03-27T10:45:52+00:00"
+            }
         },
         {
             "name": "drupal/externalauth",
@@ -17553,7 +17558,6 @@
         "drupal/config_tools": 20,
         "drupal/entity_browser_block": 20,
         "drupal/entity_gallery": 20,
-        "drupal/eu_cookie_compliance": 20,
         "drupal/geophp": 20,
         "drupal/geolocation": 20,
         "drupal/leaflet": 20,
