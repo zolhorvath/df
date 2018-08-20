@@ -25,7 +25,7 @@
               collision: 'none'
               }
             });
-              $modal.parent().addClass('ui-dialog-full-width').css('z-index','10000');
+              $modal.parent().addClass('ui-dialog-full-width').css('z-index','10001');
               $child.css('height', $modal.innerHeight());
           }
         }

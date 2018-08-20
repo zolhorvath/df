@@ -126,16 +126,14 @@
                 "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
                 "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/node/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
             },
-            "drupal/lightning_layout": {
-                "Update logic to check for the null value in PanelizerWidget | https://www.drupal.org/node/2966924": "https://www.drupal.org/files/issues/2018-04-27/lightning_layout-null-value-check-view_mode-0.patch"
-            },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
             },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
-                "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch"
+                "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch",
+                "Search inside IPE no longer works and splits out Uncaught TypeError: Cannot read property 'toLowerCase' | https://www.drupal.org/project/panels/issues/2824508": "https://www.drupal.org/files/issues/panels-ipe-search-2824508-8.patch"
             },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch"
@@ -170,17 +168,16 @@
         "bower-asset/imagesloaded": "v4.1.1",
         "bower-asset/jquery-ui-slider-pips": "v1.11.3",
         "bower-asset/leaflet": "v1.0.3",
-        "bower-asset/lightbox2": "v2.9.0",
         "bower-asset/masonry": "v4.2.0",
         "bower-asset/slick-carousel": "1.7.1",
-        "drupal/acquia_contenthub": "1.26.0",
+        "drupal/acquia_contenthub": "1.29.0",
         "drupal/acquia_lift": "3.6.0",
         "drupal/acsf": "1.45.0",
         "drupal/address": "1.4.0",
-        "drupal/addtoany": "1.9.0",
+        "drupal/addtoany": "1.10.0",
         "drupal/admin_login_path": "1.0.0",
-        "drupal/admin_toolbar": "1.23.0",
-        "drupal/adminimal_admin_toolbar": "1.5.0",
+        "drupal/admin_toolbar": "1.24.0",
+        "drupal/adminimal_admin_toolbar": "1.8.0",
         "drupal/adminimal_theme": "1.3.0",
         "drupal/asset_injector": "2.2.0",
         "drupal/better_formats": "1.x-dev",
@@ -195,7 +192,7 @@
         "drupal/entity_browser_block": "1.x-dev",
         "drupal/entity_gallery": "1.x-dev",
         "drupal/entity_usage": "2.0.0-alpha2",
-        "drupal/eu_cookie_compliance": "1.x-dev#dd5c8c9ae1c99ab2c3d1d73970fbf11bb10a48be",
+        "drupal/eu_cookie_compliance": "1.2.0",
         "drupal/facets": "1.0.0-beta2",
         "drupal/field_formatter_class": "1.1.0",
         "drupal/field_group": "3.0-beta1",
@@ -203,7 +200,7 @@
         "drupal/geofield": "1.0.0-beta4",
         "drupal/geophp": "1.x-dev#cb7b8c6b8465e3af41f8f6f8b43c7057c4ca9128",
         "drupal/geolocation": "1.x-dev#e4639b9da6c963d9fb802b822bbdeebaa0853b4d",
-        "drupal/google_analytics": "2.2.0",
+        "drupal/google_analytics": "2.3.0",
         "drupal/image_effects": "1.1.0",
         "drupal/import": "2.0.0-beta2",
         "drupal/leaflet": "1.x-dev#f8205538099a6e2d01f99bd62cc91094a2c6adc5",
@@ -220,7 +217,7 @@
         "drupal/message_notify": "1.0.0-beta1",
         "drupal/moderation_dashboard": "1.x-dev",
         "drupal/moderation_note": "1.0-beta1",
-        "drupal/moderation_sidebar": "1.0-beta1",
+        "drupal/moderation_sidebar": "1.0",
         "drupal/migrate_plus": "4.0.0-beta3",
         "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "4.0.0-beta3",
@@ -241,7 +238,7 @@
         "drupal/type_style": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
         "drupal/workbench_email": "1.0-alpha7",
-        "drupal/zurb_foundation": "6.x-dev",
+        "drupal/zurb_foundation": "6.0.0-alpha4",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.x-dev as 1.6.5",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
