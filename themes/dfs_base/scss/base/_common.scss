@@ -317,3 +317,8 @@ label.responsive-preview-device-label {
 #panels-ipe-tray {
   z-index: 1000;
 }
+
+//Fixes autocomplete for hero CTA not displaying
+ul.ui-widget.ui-autocomplete {
+  z-index: 1001;
+}
