@@ -8,7 +8,7 @@ dependencies:
     - media.type.document
     - media.type.image
     - media.type.instagram
-    - media.type.local_video
+    - media.type.video_file
     - media.type.tweet
     - media.type.video
 id: block_content.media.field_media
@@ -28,7 +28,7 @@ settings:
       document: document
       image: image
       instagram: instagram
-      local_video: local_video
+      video_file: video_file
       tweet: tweet
       video: video
     sort:
