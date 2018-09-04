@@ -190,13 +190,3 @@ function df_tools_translation_preprocess_page(&$variables) {
   }
 }
 
-/**
- * Implements hook_site_install_finished().
- */
-function df_tools_translation_site_install_finished($install_state) {
-  // After a scenario profile install, import UI translations from the .po files.
-  if (isset($install_state['profile']) && $info = scenarios_info($install_state['profile'])) {
-    df_tools_translation_import_translations('profile', $install_state['profile']);
-  }
-}
-

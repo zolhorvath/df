@@ -14,4 +14,7 @@ function dfs_tec_install() {
     'node' => ['employee', 'service']
   ];
   df_tools_translation_enable_translation($entities);
+
+  // Import our custom .po files	
+  df_tools_translation_import_translations('profile', 'dfs_tec');
 }
