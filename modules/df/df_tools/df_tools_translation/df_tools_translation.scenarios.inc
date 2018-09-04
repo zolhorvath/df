@@ -166,3 +166,14 @@ function df_tools_translation_scenarios_migration_finished(Migration $migration)
 
   locale_translate_delete_translation_files();
 }
+
+/**
+ * After a scenario has been enabled, import UI translations from the .po files.
+ * Implements hook_scenarios_post_enable().
+ */
+function df_tools_translation_scenarios_post_enable($scenario) {
+  $profile = \Drupal::installProfile();
+  $extension_type = ($profile == $scenario ? 'profile' : 'module');
+  df_tools_translation_import_translations($extension_type, $scenario);
+}
+
