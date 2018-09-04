@@ -17,6 +17,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-i
 projects[drupal][patch][] = https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2873287-33.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/1356278-408--8.5.x-real.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
