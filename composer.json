@@ -8,7 +8,7 @@
     "require-dev": {
         "drush/drush": "^9.0",
         "drupal/console": "^1.7.0",
-        "acquia/lightning_dev": "dev-8.x-1.x"
+        "acquia/lightning_dev": "dev-8.x-1.x#dec22c2d10d5bdbbb1f4b8b885edac3cc72368e2"
     },
     "repositories": [
         {
@@ -45,13 +45,14 @@
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "@composer drupal-scaffold",
-            "./vendor/bin/phing push"
+            "@composer push"
         ],
         "post-update-cmd": [
             "@composer package",
-            "./vendor/bin/phing push"
+            "@composer push"
         ],
         "package": "Acquia\\DF\\Composer\\Package::execute",
+        "push": "./vendor/bin/phing push",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib"
     },
@@ -162,7 +163,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "3.1.6",
+        "acquia/lightning": "3.1.7",
         "acquia/content-hub-php": "1.2.1",
         "acquia/lift-sdk-php": "dev-master",
         "bower-asset/fontawesome-iconpicker": "1.3.0",

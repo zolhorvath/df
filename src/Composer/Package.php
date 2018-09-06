@@ -239,10 +239,26 @@ class Package {
     // Core should always use git branch + revision, or patches won't apply
     // correctly.
     elseif ($package['type'] == 'drupal-core') {
+      // Composer downloads core from its subtree split on GitHub, but the
+      // packaging system will choke on that.
       $info['download']['url'] = 'https://git.drupal.org/project/drupal.git';
-      // 8.4.2 --> 8.4.x
-      $info['download']['branch'] = preg_replace('/\.\d$/', '.x', $package['version']);
-      $info['download']['revision'] = $package['version'];
+      // Derive the branch from the version string.
+      $info['download']['branch'] = preg_replace(
+        // 8.4.2 --> 8.4.x
+        // 8.6.0-beta2 --> 8.6.x
+        ['/\.\d(-\w+\d+)?$/', '/-dev$/'],
+        // 8.5.x-dev --> 8.5.x
+        ['.x', NULL],
+        $package['version']
+      );
+      // We never want to specify a commit hash, regardless of whether this is
+      // a dev branch or tagged release.
+      unset($info['download']['revision']);
+      // But, if it is a tagged release (i.e., there's no -dev suffix in the
+      // version), we do want to specify that tag.
+      if (strpos($package['version'], '-dev') === FALSE) {
+        $info['download']['tag'] = $package['version'];
+      }
     }
     // Any other type of package can use a standard Drupal version number.
     else {
@@ -260,7 +276,6 @@ class Package {
       );
       unset($info['download']);
     }
-
     return $info;
   }
 
@@ -277,7 +292,7 @@ class Package {
     $info = [
       'download' => [
         'type' => 'git',
-        'url' => $package['source']['url'],
+        'url' => str_replace('git@github.com:', 'https://github.com/', $package['source']['url']),
         'branch' => $package['version'],
         'revision' => $package['source']['reference'],
       ],
@@ -339,14 +354,7 @@ class Package {
    *   TRUE if the package is an asset library, otherwise FALSE.
    */
   protected function isLibrary(array $package) {
-    $package_types = [
-      'drupal-library',
-      'bower-asset',
-      'npm-asset',
-    ];
-    return (
-    in_array($package['type'], $package_types)
-    );
+    return in_array($package['type'], ['drupal-library', 'bower-asset', 'npm-asset'], TRUE);
   }
 
 }
