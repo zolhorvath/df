@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62c6f8127032a015e9333e4374ed1e92",
+    "content-hash": "7bf87f1426f5c776be6411bf62d2d02d",
     "packages": [
         {
             "name": "acquia/content-hub-php",
