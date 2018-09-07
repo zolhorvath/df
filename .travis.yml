@@ -86,5 +86,9 @@ after_failure:
   - cd docroot
   - drush watchdog:show --count=100 --severity=Error --extended
 
+after_success:
+  - cd docroot
+  - drush ev "drush_print('Build has finished successfully!', 20);" --druplicon
+
 matrix:
   fast_finish: true
