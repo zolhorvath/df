@@ -160,7 +160,6 @@ class Package {
     foreach ($make['libraries'] as $name => $info) {
       // Libraries must be located in the root 'libraries' folder.
       $make['libraries'][$name]['destination'] = "../../libraries";
-
       // Remove any libraries that are not specifically whitelisted above.
       // Users will need to download these libraries manually.
       if (!in_array($name, $whitelist)) {
@@ -289,14 +288,21 @@ class Package {
    *   The generated make structure.
    */
   protected function buildPackage(array $package) {
-    $info = [
-      'download' => [
+    if ($package['type'] == 'npm-asset') {
+      $download = [
+        'type' => 'get',
+        'url' => $package['dist']['url'],
+      ];
+    }
+    else {
+      $download = [
         'type' => 'git',
         'url' => str_replace('git@github.com:', 'https://github.com/', $package['source']['url']),
         'branch' => $package['version'],
         'revision' => $package['source']['reference'],
-      ],
-    ];
+      ];
+    }
+    $info = ['download' => $download];
 
     if (isset($package['extra']['patches_applied'])) {
       $info['patch'] = array_values($package['extra']['patches_applied']);
