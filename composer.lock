@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c88536a9be5a45b9fad889cfef7a374",
+    "content-hash": "31d800621402846e5ea041453a28c1ad",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -3167,17 +3167,17 @@
         },
         {
             "name": "drupal/consumers",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/consumers",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/consumers-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "a2a14e0f8e45fb513680b66e13bea829f755776a"
+                "url": "https://ftp.drupal.org/files/projects/consumers-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "3bbb84d2558d9d153a6db543c8d41ce5b8ca58f8"
             },
             "require": {
                 "drupal/core": "*"
@@ -3188,8 +3188,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1535460780",
+                    "version": "8.x-1.2",
+                    "datestamp": "1536851884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8177,7 +8177,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/replicate_ui",
-                "reference": "d56b27f68241bc65920c9e0e7571b06958647d6d"
+                "reference": "e8c6346c4d1a14e0cb3c8399d70ea44be0d40016"
             },
             "require": {
                 "drupal/core": "*",
@@ -8228,7 +8228,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate_ui"
             },
-            "time": "2018-05-16T09:54:20+00:00"
+            "time": "2018-09-13T07:08:05+00:00"
         },
         {
             "name": "drupal/responsive_preview",
@@ -8948,17 +8948,17 @@
         },
         {
             "name": "drupal/simple_oauth",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/simple_oauth",
-                "reference": "8.x-3.9"
+                "reference": "8.x-3.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.9.zip",
-                "reference": "8.x-3.9",
-                "shasum": "cb15eeb5b07b754434396badf284ef3422ec3cd6"
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.10.zip",
+                "reference": "8.x-3.10",
+                "shasum": "04fcea46ba6cc9db883043b6ac4c5d3d4d04d4a5"
             },
             "require": {
                 "drupal/consumers": "^1.0.0-beta3",
@@ -8971,8 +8971,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.9",
-                    "datestamp": "1536790380",
+                    "version": "8.x-3.10",
+                    "datestamp": "1536851884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9002,7 +9002,7 @@
         },
         {
             "name": "drupal/simple_oauth_extras",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/simple_oauth": "self.version"
@@ -9013,8 +9013,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.9",
-                    "datestamp": "1536790380",
+                    "version": "8.x-3.10",
+                    "datestamp": "1536851884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
