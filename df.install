@@ -24,4 +24,10 @@ function df_install() {
   // example, Path module adds a base field to nodes and taxonomy terms after
   // those modules are already installed.
   \Drupal::service('entity.definition_update_manager')->applyUpdates();
+
+  // Ensure Material Admin is installed correctly when using the base profile df
+  // opposed to Scenario profiles (e.g. dfs_dev) that run this via Scenarios API.
+  module_load_include('install', 'material_admin_support');
+  material_admin_support_install();
 }
+
