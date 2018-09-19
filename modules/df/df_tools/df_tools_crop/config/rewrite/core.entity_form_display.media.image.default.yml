@@ -1,5 +1,6 @@
 dependencies:
   module:
+    - focal_point
     - image_widget_crop
     - content_moderation
 content:
@@ -13,8 +14,8 @@ content:
       crop_preview_image_style: crop_thumbnail
       progress_indicator: throbber
       crop_list:
-        - square
-        - hero
+        - focal_point
+        - freeform
       show_crop_area: false
     third_party_settings: {  }
     region: content
