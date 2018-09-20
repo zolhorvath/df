@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee9392391e7b741dedf5eaccdbe5e6fe",
+    "content-hash": "967f795701609bfc62886a7a7bc8d1d0",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -6559,6 +6559,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6609,6 +6612,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -13924,16 +13930,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "851c6b7f490262748586e05bcb6fc69686519233"
+                "reference": "4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/851c6b7f490262748586e05bcb6fc69686519233",
-                "reference": "851c6b7f490262748586e05bcb6fc69686519233",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac",
+                "reference": "4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac",
                 "shasum": ""
             },
             "require": {
@@ -13972,7 +13978,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2018-09-19T03:49:30+00:00"
+            "time": "2018-09-19T17:47:18+00:00"
         },
         {
             "name": "consolidation/config",

@@ -128,6 +128,12 @@
                 "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
                 "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/node/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
             },
+            "drupal/material_admin": {
+                "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch"
+            },
+            "drupal/material_admin_support": {
+                "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch"
+            },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
             },
