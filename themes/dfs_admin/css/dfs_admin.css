@@ -138,7 +138,15 @@ div.scheduled-transition button {
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-tabsactive.form-item-palette-tabsactive.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-breadcrumbbg.form-item-palette-breadcrumbbg.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-breadcrumb.form-item-palette-breadcrumb.form-has-label.input-field,
-.js-form-type-textfield.form-type-textfield.js-form-item-palette-breadcrumbtitle.form-item-palette-breadcrumbtitle.form-has-label.input-field {
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-breadcrumbtitle.form-item-palette-breadcrumbtitle.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-button.form-item-palette-button.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttontext.form-item-palette-buttontext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonhover.form-item-palette-buttonhover.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonhovertext.form-item-palette-buttonhovertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonaction.form-item-palette-buttonaction.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactiontext.form-item-palette-buttonactiontext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhover.form-item-palette-buttonactionhover.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhovertext.form-item-palette-buttonactionhovertext.form-has-label.input-field {
   margin: 0 0 5px; 0;
 }
 
