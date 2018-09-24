@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Overrides used for the Color module.
+ *
+ */
+
+header.header-wrapper {
+  background: #__header-bg__;
+}
+
+header.header-wrapper h1.page-title {
+  color: #__page-title__;
+}
+
+.highlighted-wrapper,
+.layout-container > main {
+  background: #__body-bg__;
+}
+
+body {
+  color: #__body-color__;
+}
+
+a {
+  color: #__primary__;
+}
+
+.breadcrumb-section-wrapper {
+  background: #__breadcrumb-bg__;
+}
+
+.breadcrumb-nav ol li a, .breadcrumb-nav ol li::before {
+  color: #__breadcrumb__;
+}
+
+.breadcrumb-nav ol li span {
+  color: #__breadcrumb-title__;
+}
+
+.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active {
+  color: #__tabs-active__;
+}
+
+.tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover {
+  color: #__tabs__;
+}
+
+.tabs.tabs-transparent .indicator {
+  background: #__tabs-active__;
+}
