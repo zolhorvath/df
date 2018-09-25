@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3253bdcfaf92fa4a39822cbd652d664",
+    "content-hash": "3ce5c750d25e432e4c4ea8a1da6cf852",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -1927,17 +1927,17 @@
         },
         {
             "name": "drupal/acquia_lift",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_lift",
-                "reference": "8.x-3.7"
+                "reference": "8.x-3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.7.zip",
-                "reference": "8.x-3.7",
-                "shasum": "b5cd387209d3bf0a9bd13f3b554b2d8feacff549"
+                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.8.zip",
+                "reference": "8.x-3.8",
+                "shasum": "0134db104552ec9a0dcd0dee780b0192e21a5252"
             },
             "require": {
                 "drupal/core": "*"
@@ -1948,7 +1948,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.7",
+                    "version": "8.x-3.8",
                     "datestamp": "1537567680",
                     "security-coverage": {
                         "status": "covered",
@@ -7358,7 +7358,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_dashboard",
-                "reference": "a0b37f6d682d563e695302030915d177689d51a9"
+                "reference": "3ae41225dbabcdccfd00397b6fafa64b786ce872"
             },
             "require": {
                 "drupal/core": "*",
@@ -7372,7 +7372,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1537291680",
+                    "datestamp": "1537898880",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -7394,7 +7394,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_dashboard"
             },
-            "time": "2018-09-21T21:24:32+00:00"
+            "time": "2018-09-25T18:05:18+00:00"
         },
         {
             "name": "drupal/moderation_note",
