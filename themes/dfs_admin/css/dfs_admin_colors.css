@@ -94,4 +94,8 @@ a {
   color: #__button-action__;
 }
 
+.pagination li.active {
+  background-color: #__primary__;
+}
+
 

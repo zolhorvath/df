@@ -98,19 +98,15 @@ div.scheduled-transition button {
   border-radius: 4px
 }
 
-.ma-logo {
-  width: 100%;
-}
-.ma-logo img {
-  width: 200px;
-}
-
-#notification-wrapper {
-  margin-top: 0;
+@media only screen and (max-width: 992px) {
+    body.logo #notification-wrapper {
+        top: 0;
+        bottom: unset;
+        margin-top: 1.5em;
+    }
 }
 
 /* Color module integration*/
-
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-base.form-item-palette-base.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-text.form-item-palette-text.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-link.form-item-palette-link.form-has-label.input-field,
@@ -150,6 +146,7 @@ div.scheduled-transition button {
   margin: 0 0 5px; 0;
 }
 
+/* Default colors needs set for Color module integration*/
 header.header-wrapper {
   background: #0e68a7;
 }
@@ -193,4 +190,8 @@ a {
 
 .tabs.tabs-transparent .indicator {
   background: #ffffff;
+}
+
+.pagination li.active {
+  background-color: #168ec4;
 }
