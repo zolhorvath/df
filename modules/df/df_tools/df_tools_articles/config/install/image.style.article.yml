@@ -10,7 +10,7 @@ label: article
 effects:
   f7e41119-8838-46d1-9947-2f7ac8f521b0:
     uuid: f7e41119-8838-46d1-9947-2f7ac8f521b0
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 840

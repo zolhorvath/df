@@ -10,7 +10,7 @@ label: 'Card narrow (612x336)'
 effects:
   f9eedc18-9cff-44cf-a576-cbdb377694d7:
     uuid: f9eedc18-9cff-44cf-a576-cbdb377694d7
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 612

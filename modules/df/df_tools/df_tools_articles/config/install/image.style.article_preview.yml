@@ -10,7 +10,7 @@ label: 'article preview'
 effects:
   9acc25df-bbbf-4b8d-bab6-d2004b3eb949:
     uuid: 9acc25df-bbbf-4b8d-bab6-d2004b3eb949
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 840

@@ -10,7 +10,7 @@ label: 'Vertical Hero (540x600)'
 effects:
   2d64b2c0-dda4-4973-9a1b-14f9bd0f92cb:
     uuid: 2d64b2c0-dda4-4973-9a1b-14f9bd0f92cb
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 540

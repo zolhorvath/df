@@ -10,7 +10,7 @@ label: 'Vertical Hero Small (270x300)'
 effects:
   275c1112-d143-442d-9d02-e0500f947b27:
     uuid: 275c1112-d143-442d-9d02-e0500f947b27
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 270

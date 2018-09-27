@@ -10,7 +10,7 @@ label: 'Hero mobile'
 effects:
   650ac8cd-dfa8-484f-a827-39b79954683d:
     uuid: 650ac8cd-dfa8-484f-a827-39b79954683d
-    id: focal_point_image_scale_and_crop
+    id: focal_point_scale_and_crop
     weight: 1
     data:
       width: 600
