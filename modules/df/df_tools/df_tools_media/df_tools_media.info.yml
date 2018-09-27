@@ -6,6 +6,7 @@ package: Demo Framework Tools
 dependencies:
   - df_core
   - df_tools_crop
+  - focal_point
   - entity_browser
   - lightning_media
   - lightning_media_document
