@@ -7,6 +7,7 @@ projects[lightning][subdir] = ""
 projects[acquia_connector][type] = module
 projects[acquia_connector][version] = 1.14
 projects[acquia_contenthub][type] = module
+projects[acquia_contenthub][patch][] = https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch
 projects[acquia_contenthub][version] = 1.23
 projects[acquia_lift][type] = module
 projects[acquia_lift][version] = 3.8
