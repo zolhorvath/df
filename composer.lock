@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32e3444f281eb7fef39dc9f6d6536b4d",
+    "content-hash": "e3db0220b652ecff742e23f529ceb1c0",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -1930,17 +1930,17 @@
         },
         {
             "name": "drupal/acquia_lift",
-            "version": "3.8.0",
+            "version": "3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_lift",
-                "reference": "8.x-3.8"
+                "reference": "8.x-3.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.8.zip",
-                "reference": "8.x-3.8",
-                "shasum": "0134db104552ec9a0dcd0dee780b0192e21a5252"
+                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.9.zip",
+                "reference": "8.x-3.9",
+                "shasum": "3cef21548a0da3f28740ed8020b06a3d29ded4a3"
             },
             "require": {
                 "drupal/core": "*"
@@ -1951,7 +1951,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.8",
+                    "version": "8.x-3.9",
                     "datestamp": "1538084880",
                     "security-coverage": {
                         "status": "covered",
