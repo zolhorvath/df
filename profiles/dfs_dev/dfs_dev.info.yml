@@ -1,10 +1,9 @@
-name: DFS DEV
+name: 'DFS DEV'
 type: profile
-description: Demo Framework Scenario for Development Testing.
+description: 'Demo Framework Scenario for Development Testing.'
 core: 8.x
-package: Demo Framework Scenarios
-base profile:
-  name: df
+package: 'Demo Framework Scenarios'
+'base profile': df
 dependencies:
   - df_tools_articles
   - df_tools_blocks
