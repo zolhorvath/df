@@ -1,10 +1,9 @@
-name: DFS TEC
+name: 'DFS TEC'
 type: profile
-description: Demo Framework Scenario for Technology Websites.
+description: 'Demo Framework Scenario for Technology Websites.'
 core: 8.x
-package: Demo Framework Scenarios
-base profile:
-  name: df
+package: 'Demo Framework Scenarios'
+'base profile': df
 dependencies:
   - block_class
   - df_tools_articles

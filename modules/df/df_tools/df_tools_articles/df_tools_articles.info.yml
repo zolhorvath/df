@@ -19,7 +19,7 @@ dependencies:
   - inline_entity_form
   - menu_ui
   - node
-  - path
+  - pathauto
   - panelizer
   - replicate_ui
   - text
