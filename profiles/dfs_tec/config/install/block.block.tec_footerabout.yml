@@ -12,7 +12,7 @@ dependencies:
 third_party_settings:
   block_class:
     classes: footer-about
-id: footerabout
+id: tec_footerabout
 theme: tec
 region: footer
 weight: 1

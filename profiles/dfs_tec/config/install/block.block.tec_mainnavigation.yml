@@ -8,7 +8,7 @@ dependencies:
     - system
   theme:
     - tec
-id: mainnavigation
+id: tec_mainnavigation
 theme: tec
 region: header
 weight: -1

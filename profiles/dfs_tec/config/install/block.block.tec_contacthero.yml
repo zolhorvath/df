@@ -13,7 +13,7 @@ dependencies:
 third_party_settings:
   block_class:
     classes: 'full-width contact-hero'
-id: contacthero
+id: tec_contacthero
 theme: tec
 region: header
 weight: 1
