@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f35249e83183c0ffadeb293e243b5197",
+    "content-hash": "af2af03a15f2988ddc9b5ca00696f066",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -4339,6 +4339,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Data-align center does not work | https://www.drupal.org/node/2645458": "https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch",
                     "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                 }
             },
@@ -8233,7 +8234,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/replicate",
-                "reference": "2857dba3ee2edd9afef85f1555823a0673aeed8a"
+                "reference": "dc877a3347d00666596dafaea3965803e8bacd9e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -8244,8 +8245,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+0-dev",
-                    "datestamp": "1538242080",
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1538242380",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8279,7 +8280,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate"
             },
-            "time": "2018-09-29T17:29:14+00:00"
+            "time": "2018-10-05T15:02:51+00:00"
         },
         {
             "name": "drupal/replicate_ui",
@@ -15266,16 +15267,16 @@
         },
         {
             "name": "enm1989/chromedriver",
-            "version": "2.41",
+            "version": "2.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ENM1989/chromedriver.git",
-                "reference": "f5ba7325e1952248c5b7db406fbab75f2289a740"
+                "reference": "56909a7452adc4eaaf4a334f1f9da47e94492440"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ENM1989/chromedriver/zipball/f5ba7325e1952248c5b7db406fbab75f2289a740",
-                "reference": "f5ba7325e1952248c5b7db406fbab75f2289a740",
+                "url": "https://api.github.com/repos/ENM1989/chromedriver/zipball/56909a7452adc4eaaf4a334f1f9da47e94492440",
+                "reference": "56909a7452adc4eaaf4a334f1f9da47e94492440",
                 "shasum": ""
             },
             "bin": [
@@ -15300,7 +15301,7 @@
                 "selenium",
                 "webdriver"
             ],
-            "time": "2018-08-08T19:01:47+00:00"
+            "time": "2018-10-06T10:53:56+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -18001,12 +18002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71"
+                "reference": "82bf5059908f9073b3468cb7313960da72176d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71",
-                "reference": "ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=82bf5059908f9073b3468cb7313960da72176d9a",
+                "reference": "82bf5059908f9073b3468cb7313960da72176d9a",
                 "shasum": ""
             },
             "require": {
@@ -18056,7 +18057,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2018-09-06T17:26:17+00:00"
+            "time": "2018-10-03T02:38:33+00:00"
         }
     ],
     "aliases": [
