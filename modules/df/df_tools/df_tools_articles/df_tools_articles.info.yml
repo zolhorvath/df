@@ -18,6 +18,7 @@ dependencies:
   - link
   - inline_entity_form
   - menu_ui
+  - metatag
   - node
   - pathauto
   - panelizer
