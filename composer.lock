@@ -2028,7 +2028,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2063,6 +2063,10 @@
                     "homepage": "https://www.drupal.org/user/762986"
                 },
                 {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
+                },
+                {
                     "name": "nagba",
                     "homepage": "https://www.drupal.org/user/21231"
                 },
@@ -2095,7 +2099,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2122,6 +2126,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -2157,7 +2165,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2184,6 +2192,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -2218,7 +2230,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2245,6 +2257,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -8233,7 +8249,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/replicate",
-                "reference": "2857dba3ee2edd9afef85f1555823a0673aeed8a"
+                "reference": "dc877a3347d00666596dafaea3965803e8bacd9e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -8244,8 +8260,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+0-dev",
-                    "datestamp": "1538242080",
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1538242380",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8279,7 +8295,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/replicate"
             },
-            "time": "2018-09-29T17:29:14+00:00"
+            "time": "2018-10-05T15:02:51+00:00"
         },
         {
             "name": "drupal/replicate_ui",
@@ -11400,16 +11416,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.19.2",
+            "version": "v3.19.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "c949483dac6857d4f3a2d28cf2fa79eef2c982d5"
+                "reference": "94b1355700599ace6f0e96f3e07c94592a0e34e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/c949483dac6857d4f3a2d28cf2fa79eef2c982d5",
-                "reference": "c949483dac6857d4f3a2d28cf2fa79eef2c982d5",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/94b1355700599ace6f0e96f3e07c94592a0e34e0",
+                "reference": "94b1355700599ace6f0e96f3e07c94592a0e34e0",
                 "shasum": ""
             },
             "type": "library",
@@ -11453,7 +11469,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2018-10-02T01:39:39+00:00"
+            "time": "2018-10-08T19:42:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -13680,12 +13696,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d"
+                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
-                "reference": "391cf14385d09570e9f6a7d34e4b5e1a7ebac83d",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8684ee4e634db7abda9039ea53545f86fc1e105a",
+                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a",
                 "shasum": ""
             },
             "require": {
@@ -13733,7 +13749,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-03T14:49:03+00:00"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -13841,19 +13857,20 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.26.3",
+            "version": "1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "8e9782fb77a34a7b976e0d94f71841647558e598"
+                "reference": "a839bc89d385087d8a7a96a9c1c4bd470ffb627e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/8e9782fb77a34a7b976e0d94f71841647558e598",
-                "reference": "8e9782fb77a34a7b976e0d94f71841647558e598",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/a839bc89d385087d8a7a96a9c1c4bd470ffb627e",
+                "reference": "a839bc89d385087d8a7a96a9c1c4bd470ffb627e",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=5.5.9",
                 "symfony/console": "~2.7|^3",
                 "symfony/filesystem": "~2.7|^3",
@@ -13881,7 +13898,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2018-09-30T11:28:38+00:00"
+            "time": "2018-10-11T08:05:59+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -15266,16 +15283,16 @@
         },
         {
             "name": "enm1989/chromedriver",
-            "version": "2.41",
+            "version": "2.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ENM1989/chromedriver.git",
-                "reference": "f5ba7325e1952248c5b7db406fbab75f2289a740"
+                "reference": "56909a7452adc4eaaf4a334f1f9da47e94492440"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ENM1989/chromedriver/zipball/f5ba7325e1952248c5b7db406fbab75f2289a740",
-                "reference": "f5ba7325e1952248c5b7db406fbab75f2289a740",
+                "url": "https://api.github.com/repos/ENM1989/chromedriver/zipball/56909a7452adc4eaaf4a334f1f9da47e94492440",
+                "reference": "56909a7452adc4eaaf4a334f1f9da47e94492440",
                 "shasum": ""
             },
             "bin": [
@@ -15300,7 +15317,7 @@
                 "selenium",
                 "webdriver"
             ],
-            "time": "2018-08-08T19:01:47+00:00"
+            "time": "2018-10-06T10:53:56+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -15906,16 +15923,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.4",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
                 "shasum": ""
             },
             "require": {
@@ -15931,7 +15948,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -15953,7 +15970,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-09-18T07:03:24+00:00"
+            "time": "2018-10-10T09:24:14+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -18001,12 +18018,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71"
+                "reference": "82bf5059908f9073b3468cb7313960da72176d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71",
-                "reference": "ecad9ffc9f65cc54681ed4d2346ce8dacbeb8f71",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=82bf5059908f9073b3468cb7313960da72176d9a",
+                "reference": "82bf5059908f9073b3468cb7313960da72176d9a",
                 "shasum": ""
             },
             "require": {
@@ -18056,7 +18073,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2018-09-06T17:26:17+00:00"
+            "time": "2018-10-03T02:38:33+00:00"
         }
     ],
     "aliases": [
