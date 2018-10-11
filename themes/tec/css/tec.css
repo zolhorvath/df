@@ -2715,8 +2715,8 @@ a.button:hover, .landing-display-dfs-tec-home .df-tools-slideshow .field-name-fi
     outline: 0; }
   .menu a,
   .menu .button,
-  .menu .landing-display-dfs-tec-home .df-tools-slideshow .field-name-field-hero-link a, .landing-display-dfs-tec-home .df-tools-slideshow .field-name-field-hero-link
-  .menu a {
+  .menu .landing-display-dfs-tec-home .df-tools-slideshow .field-name-field-hero-link a,
+  .landing-display-dfs-tec-home .df-tools-slideshow .field-name-field-hero-link .menu a {
     line-height: 1;
     text-decoration: none;
     display: block;
@@ -4325,7 +4325,9 @@ table {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0; }
-  thead, tbody, tfoot {
+  thead,
+  tbody,
+  tfoot {
     border: 1px solid #f1f1f1;
     background-color: #fefefe; }
   caption {
@@ -4337,13 +4339,18 @@ table {
   tfoot {
     background: #f1f1f1;
     color: #606060; }
-  thead tr, tfoot tr {
+  thead tr,
+  tfoot tr {
     background: transparent; }
-  thead th, thead td, tfoot th, tfoot td {
+  thead th,
+  thead td,
+  tfoot th,
+  tfoot td {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold;
     text-align: left; }
-  tbody th, tbody td {
+  tbody th,
+  tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
   tbody tr:nth-child(even) {
     border-bottom: 0;
@@ -5282,12 +5289,12 @@ a.thumbnail {
     .block-region-primary {
       margin-top: inherit; } }
 
-#block-pagetitle {
+#block-tec-pagetitle {
   text-align: center; }
-  #block-pagetitle h1 {
+  #block-tec-pagetitle h1 {
     text-transform: capitalize;
     font-family: 'Merriweather', serif; }
-  #block-pagetitle .block-title {
+  #block-tec-pagetitle .block-title {
     margin: 0; }
 
 .field-name-field-hero-image img {
@@ -5336,43 +5343,43 @@ blockquote {
 /* Theme for the header region */
 .header-wrap {
   background-color: rgba(255, 255, 255, 0.7); }
-  .header-wrap #block-mainnavigation .menu-wrap ul {
+  .header-wrap #block-tec-mainnavigation .menu-wrap ul {
     text-align: center;
     padding-top: 1.875rem; }
-    .header-wrap #block-mainnavigation .menu-wrap ul li {
+    .header-wrap #block-tec-mainnavigation .menu-wrap ul li {
       display: inline-block;
       padding-right: 2.5rem; }
-      .header-wrap #block-mainnavigation .menu-wrap ul li.main-menu-logo a:hover {
+      .header-wrap #block-tec-mainnavigation .menu-wrap ul li.main-menu-logo a:hover {
         border-bottom: none;
         color: transparent; }
       @media screen and (min-width: 40em) and (max-width: 56.1875em), screen and (max-width: 39.9375em) {
-        .header-wrap #block-mainnavigation .menu-wrap ul li {
+        .header-wrap #block-tec-mainnavigation .menu-wrap ul li {
           padding-right: 0.625rem; } }
-      .header-wrap #block-mainnavigation .menu-wrap ul li a {
+      .header-wrap #block-tec-mainnavigation .menu-wrap ul li a {
         text-transform: uppercase;
         color: #0a0a0a; }
-        .header-wrap #block-mainnavigation .menu-wrap ul li a.is-active, .header-wrap #block-mainnavigation .menu-wrap ul li a:hover {
+        .header-wrap #block-tec-mainnavigation .menu-wrap ul li a.is-active, .header-wrap #block-tec-mainnavigation .menu-wrap ul li a:hover {
           color: #7eb5b9;
           border-bottom: 1px solid #7eb5b9; }
       @media screen and (min-width: 40em) and (max-width: 56.1875em), screen and (max-width: 39.9375em) {
-        .header-wrap #block-mainnavigation .menu-wrap ul li.main-menu-logo {
+        .header-wrap #block-tec-mainnavigation .menu-wrap ul li.main-menu-logo {
           float: left;
           padding-bottom: 1.25rem; } }
-      .header-wrap #block-mainnavigation .menu-wrap ul li.menu-item {
+      .header-wrap #block-tec-mainnavigation .menu-wrap ul li.menu-item {
         padding-top: 1.25rem; }
         @media screen and (max-width: 39.9375em) {
-          .header-wrap #block-mainnavigation .menu-wrap ul li.menu-item {
+          .header-wrap #block-tec-mainnavigation .menu-wrap ul li.menu-item {
             display: none; } }
-        .header-wrap #block-mainnavigation .menu-wrap ul li.menu-item:hover {
+        .header-wrap #block-tec-mainnavigation .menu-wrap ul li.menu-item:hover {
           background-color: transparent; }
-  .header-wrap #block-mainnavigation .menu-mobile-wrap {
+  .header-wrap #block-tec-mainnavigation .menu-mobile-wrap {
     display: none; }
     @media screen and (max-width: 39.9375em) {
-      .header-wrap #block-mainnavigation .menu-mobile-wrap {
+      .header-wrap #block-tec-mainnavigation .menu-mobile-wrap {
         display: block; } }
-    .header-wrap #block-mainnavigation .menu-mobile-wrap .main-menu-logo {
+    .header-wrap #block-tec-mainnavigation .menu-mobile-wrap .main-menu-logo {
       display: none; }
-    .header-wrap #block-mainnavigation .menu-mobile-wrap .menu-icon {
+    .header-wrap #block-tec-mainnavigation .menu-mobile-wrap .menu-icon {
       color: black;
       font-size: 1.25rem; }
 

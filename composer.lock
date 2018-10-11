@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f35249e83183c0ffadeb293e243b5197",
+    "content-hash": "af2af03a15f2988ddc9b5ca00696f066",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -4355,6 +4355,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Data-align center does not work | https://www.drupal.org/node/2645458": "https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch",
                     "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                 }
             },

@@ -94,6 +94,7 @@ projects[entity_browser_block][download][url] = https://git.drupal.org/project/e
 projects[entity_browser_block][download][branch] = 1.x
 projects[entity_browser_block][download][revision] = d92b20a01be71a11f2b91eb091dc4700086c3d5a
 projects[entity_embed][type] = module
+projects[entity_embed][patch][] = https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch
 projects[entity_embed][patch][] = https://www.drupal.org/files/issues/2832504-2.patch
 projects[entity_embed][version] = 1.0-beta2
 projects[entity_gallery][type] = module
