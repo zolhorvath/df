@@ -32,3 +32,10 @@ dependencies:
   - dfs_tec_search
 themes:
   - tec
+exclude:
+  - lightning_api
+  - lightning_contact_form
+  - lightning_preview
+  - lightning_roles
+  - bartik
+  - seven
