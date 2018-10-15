@@ -24,3 +24,4 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-07-09/28152
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2241865-50.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2246725-24.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2863986-2-49.patch
