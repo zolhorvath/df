@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e0b1319750fc3cddef5ae89e7a0b15d",
+    "content-hash": "ddcf23b53b1f26522b7d7544663e05e2",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -3399,16 +3399,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.1",
+            "version": "8.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970"
+                "reference": "356292934802bb1aecc478e88a3cba77442d7c62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
-                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
+                "url": "https://api.github.com/repos/drupal/core/zipball/356292934802bb1aecc478e88a3cba77442d7c62",
+                "reference": "356292934802bb1aecc478e88a3cba77442d7c62",
                 "shasum": ""
             },
             "require": {
@@ -3627,11 +3627,10 @@
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-05/1356276-515.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-07-09/2815221-105.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-10-17/2815221-reroll-8.6.1.patch",
                     "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
                     "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch",
-                    "Test runs can throw exceptions due to missing .htkey file (https://www.drupal.org/project/drupal/issues/2246725#comment-12160940)": "https://www.drupal.org/files/issues/2246725-24.patch",
-                    "Allow updating modules with new service dependencies https://www.drupal.org/project/drupal/issues/2863986": "https://www.drupal.org/files/issues/2863986-2-49.patch"
+                    "Test runs can throw exceptions due to missing .htkey file (https://www.drupal.org/project/drupal/issues/2246725#comment-12160940)": "https://www.drupal.org/files/issues/2246725-24.patch"
                 }
             },
             "autoload": {
@@ -3655,7 +3654,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-09-10T11:50:07+00:00"
+            "time": "2018-10-17T22:19:50+00:00"
         },
         {
             "name": "drupal/crop",
@@ -3884,6 +3883,53 @@
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
+            }
+        },
+        {
+            "name": "drupal/custom_body_class",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/custom_body_class",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_body_class-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "b1d983e81a74f4c66bf73e708d1dddc9ce8c3f23"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1522390385",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "harshita29",
+                    "homepage": "https://www.drupal.org/user/3445135"
+                }
+            ],
+            "description": "Adds custom class/es",
+            "homepage": "https://www.drupal.org/project/custom_body_class",
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_body_class"
             }
         },
         {
@@ -5950,26 +5996,26 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning_core",
-                "reference": "8.x-3.1"
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "57901bf40b822f80fa7b53b98dd582d6d8a44863"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "f818791a68e72112d5af06db8311f49108ad06df"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^1.1",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.6.1",
+                "drupal/core": "~8.6.2",
                 "drupal/metatag": "^1.0",
-                "drupal/pathauto": "^1.0",
+                "drupal/pathauto": "^1.3",
                 "drupal/search_api": "^1.0",
                 "drupal/token": "^1.0",
                 "oomphinc/composer-installers-extender": "^1.1",
@@ -5991,8 +6037,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1536624180",
+                    "version": "8.x-3.2",
+                    "datestamp": "1539817084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6025,8 +6071,8 @@
                     "drupal/core": {
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-07-09/2815221-105.patch",
-                        "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-07-12/1356276-473.patch",
+                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-10-17/2815221-reroll-8.6.1.patch",
+                        "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-05/1356276-515.patch",
                         "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                     }
                 },
@@ -7370,7 +7416,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/moderation_dashboard",
-                "reference": "b5755a652ad5a5abbcbe84814346c66b5ce34735"
+                "reference": "7e69bf7934aa3491deaaaba4cc2e454b1aa01bf4"
             },
             "require": {
                 "drupal/core": "*",
@@ -7383,8 +7429,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1537898880",
+                    "version": "8.x-1.0-alpha1+1-dev",
+                    "datestamp": "1539350881",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7406,7 +7452,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/moderation_dashboard"
             },
-            "time": "2018-10-12T13:25:13+00:00"
+            "time": "2018-10-18T19:09:34+00:00"
         },
         {
             "name": "drupal/moderation_note",
@@ -14161,19 +14207,20 @@
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "3.2.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "d78ef59aea19d3e2e5a23f90a055155ee78a0ad5"
+                "reference": "8f4a5696632cc1d3c8cfdea8e9b3c8cea38afda6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/d78ef59aea19d3e2e5a23f90a055155ee78a0ad5",
-                "reference": "d78ef59aea19d3e2e5a23f90a055155ee78a0ad5",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/8f4a5696632cc1d3c8cfdea8e9b3c8cea38afda6",
+                "reference": "8f4a5696632cc1d3c8cfdea8e9b3c8cea38afda6",
                 "shasum": ""
             },
             "require": {
+                "dflydev/dot-access-data": "^1.1.0",
                 "php": ">=5.4.0",
                 "symfony/console": "^2.8|^3|^4",
                 "symfony/finder": "^2.5|^3|^4"
@@ -14212,7 +14259,7 @@
                 }
             ],
             "description": "Format text by applying transformations provided by plug-in formatters.",
-            "time": "2018-05-25T18:02:34+00:00"
+            "time": "2018-10-18T22:19:33+00:00"
         },
         {
             "name": "consolidation/robo",
@@ -15285,16 +15332,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "9.5.0",
+            "version": "9.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "f386fb7acf48f76bced421da3dde1e5f6429c59b"
+                "reference": "17f0106706391675a281c6d212850853bdbe90f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/f386fb7acf48f76bced421da3dde1e5f6429c59b",
-                "reference": "f386fb7acf48f76bced421da3dde1e5f6429c59b",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/17f0106706391675a281c6d212850853bdbe90f9",
+                "reference": "17f0106706391675a281c6d212850853bdbe90f9",
                 "shasum": ""
             },
             "require": {
@@ -15365,11 +15412,6 @@
                         "type:drupal-drush"
                     ]
                 },
-                "patches": {
-                    "drupal/core": {
-                        "Allow updating modules with new service dependencies https://www.drupal.org/project/drupal/issues/2863986": "https://www.drupal.org/files/issues/2863986-2-49.patch"
-                    }
-                },
                 "branch-alias": {
                     "dev-master": "9.x-dev"
                 }
@@ -15421,7 +15463,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2018-10-15T15:00:19+00:00"
+            "time": "2018-10-17T18:37:53+00:00"
         },
         {
             "name": "enm1989/chromedriver",
