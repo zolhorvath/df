@@ -8,7 +8,15 @@
 
   Drupal.behaviors.DFSAdmin = {
     attach: function (context, settings) {
-      // Add custom logic here.
+      // Turn color preview h2 into a button
+      $('.color-form').find('h2').replaceWith(function() {
+        return '<a class="btn color-preview-preview">' + $(this).text() + '</a>';
+      });
+
+      // Toggle color preview display
+      $('a.btn.color-preview-preview').click(function() {
+         $('.color-preview').toggle();
+      });
     }
   }
 

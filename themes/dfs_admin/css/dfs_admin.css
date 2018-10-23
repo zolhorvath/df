@@ -195,3 +195,14 @@ a {
 .pagination li.active {
   background-color: #168ec4;
 }
+
+.btn.color-preview-preview {
+  margin: 10px 0;
+}
+
+.btn.color-preview-preview:hover {
+  text-decoration: none;
+}
+.color-preview {
+  display: none;
+}
