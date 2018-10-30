@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c43de6d15f630457ced8038617f08e43",
+    "content-hash": "057628b1bf4cc30f7d1a92067f279acc",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -921,12 +921,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "02ae1efb43a49708f59e3baf9c4ac16f46ad007e"
+                "reference": "1d89dcc730e7f42426c434b88261fcfb3bce651e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/02ae1efb43a49708f59e3baf9c4ac16f46ad007e",
-                "reference": "02ae1efb43a49708f59e3baf9c4ac16f46ad007e",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/1d89dcc730e7f42426c434b88261fcfb3bce651e",
+                "reference": "1d89dcc730e7f42426c434b88261fcfb3bce651e",
                 "shasum": ""
             },
             "require": {
@@ -957,7 +957,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2018-07-20T15:48:52+00:00"
+            "time": "2018-10-24T15:51:16+00:00"
         },
         {
             "name": "cweagans/php-webdam-client",
@@ -2659,7 +2659,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.2",
-                    "datestamp": "1523307484",
+                    "datestamp": "1540492680",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9614,17 +9614,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-rc22",
+            "version": "5.0.0-rc24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-rc22"
+                "reference": "8.x-5.0-rc24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc22.zip",
-                "reference": "8.x-5.0-rc22",
-                "shasum": "1027a7444bafc779b6b8a114915ccb4403db51b0"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc24.zip",
+                "reference": "8.x-5.0-rc24",
+                "shasum": "9dda44bef5e497cbf0ed6dfc443d70ef51b1bc49"
             },
             "require": {
                 "drupal/core": "*"
@@ -9644,8 +9644,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc22",
-                    "datestamp": "1540052580",
+                    "version": "8.x-5.0-rc24",
+                    "datestamp": "1540255380",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -9712,6 +9712,62 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_views",
+            "version": "5.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_views",
+                "reference": "8.x-5.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_views-8.x-5.0-alpha5.zip",
+                "reference": "8.x-5.0-alpha5",
+                "shasum": "0ff531e528878722caa1b2e98856d3b77690e698"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-5.0-alpha5",
+                    "datestamp": "1540871280",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "ws.agency",
+                    "homepage": "https://www.drupal.org/user/2851415"
+                }
+            ],
+            "description": "Webform integration with views.",
+            "homepage": "https://www.drupal.org/project/webform_views",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_views"
             }
         },
         {
@@ -13306,12 +13362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "aa9c180b0eb6475eb1fb6499e6feb5c8fe29271c"
+                "reference": "88bf9f2ba5c4f504a48aa97441a75c06658e35b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/aa9c180b0eb6475eb1fb6499e6feb5c8fe29271c",
-                "reference": "aa9c180b0eb6475eb1fb6499e6feb5c8fe29271c",
+                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/88bf9f2ba5c4f504a48aa97441a75c06658e35b4",
+                "reference": "88bf9f2ba5c4f504a48aa97441a75c06658e35b4",
                 "shasum": ""
             },
             "require": {
@@ -13409,7 +13465,7 @@
                 "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
                 "issues": "https://github.com/acquia/lightning-dev/issues"
             },
-            "time": "2018-10-02T13:40:07+00:00"
+            "time": "2018-10-26T16:18:32+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -14105,16 +14161,16 @@
         },
         {
             "name": "consolidation/config",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/config.git",
-                "reference": "c9fc25e9088a708637e18a256321addc0670e578"
+                "reference": "925231dfff32f05b787e1fddb265e789b939cf4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/config/zipball/c9fc25e9088a708637e18a256321addc0670e578",
-                "reference": "c9fc25e9088a708637e18a256321addc0670e578",
+                "url": "https://api.github.com/repos/consolidation/config/zipball/925231dfff32f05b787e1fddb265e789b939cf4c",
+                "reference": "925231dfff32f05b787e1fddb265e789b939cf4c",
                 "shasum": ""
             },
             "require": {
@@ -14155,7 +14211,7 @@
                 }
             ],
             "description": "Provide configuration services for a commandline tool.",
-            "time": "2018-08-07T22:57:00+00:00"
+            "time": "2018-10-24T17:55:35+00:00"
         },
         {
             "name": "consolidation/log",
@@ -14345,16 +14401,16 @@
         },
         {
             "name": "consolidation/self-update",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "4422e52d3fabeca9129ecb1780f198f202debdce"
+                "reference": "a1c273b14ce334789825a09d06d4c87c0a02ad54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/4422e52d3fabeca9129ecb1780f198f202debdce",
-                "reference": "4422e52d3fabeca9129ecb1780f198f202debdce",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/a1c273b14ce334789825a09d06d4c87c0a02ad54",
+                "reference": "a1c273b14ce334789825a09d06d4c87c0a02ad54",
                 "shasum": ""
             },
             "require": {
@@ -14391,20 +14447,20 @@
                 }
             ],
             "description": "Provides a self:update command for Symfony Console applications.",
-            "time": "2018-10-21T20:17:55+00:00"
+            "time": "2018-10-28T01:52:03+00:00"
         },
         {
             "name": "consolidation/site-alias",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "247f3e52604b9d76a075e6c06d5d1dd73bbae892"
+                "reference": "eb062894c4c0e617cd6549e0ad4d2554e81885f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/247f3e52604b9d76a075e6c06d5d1dd73bbae892",
-                "reference": "247f3e52604b9d76a075e6c06d5d1dd73bbae892",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/eb062894c4c0e617cd6549e0ad4d2554e81885f2",
+                "reference": "eb062894c4c0e617cd6549e0ad4d2554e81885f2",
                 "shasum": ""
             },
             "require": {
@@ -14447,7 +14503,7 @@
                 }
             ],
             "description": "Template project for PHP libraries.",
-            "time": "2018-09-22T04:11:38+00:00"
+            "time": "2018-10-28T00:37:34+00:00"
         },
         {
             "name": "container-interop/container-interop",
