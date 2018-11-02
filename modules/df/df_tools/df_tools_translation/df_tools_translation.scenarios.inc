@@ -166,3 +166,4 @@ function df_tools_translation_scenarios_migration_finished(Migration $migration)
 
   locale_translate_delete_translation_files();
 }
+

@@ -21,10 +21,6 @@ type_settings:
       type_style:
         color: '#00897b'
         icon: archive
-    archived_draft:
-      type_style:
-        color: '#ef6c00'
-        icon: edit
     archived_published:
       type_style:
         color: '#7cb342'

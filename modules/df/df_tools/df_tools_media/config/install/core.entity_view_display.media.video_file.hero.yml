@@ -4,17 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.hero
-    - field.field.media.local_video.field_media_in_library
-    - field.field.media.local_video.field_media_video_local_file
-    - media.type.local_video
+    - field.field.media.video_file.field_media_in_library
+    - field.field.media.video_file.field_media_video_file
+    - media.type.video_file
   module:
     - media_entity_video
-id: media.local_video.hero
+id: media.video_file.hero
 targetEntityType: media
-bundle: local_video
+bundle: video_file
 mode: hero
 content:
-  field_media_video_local_file:
+  field_media_video_file:
     type: video_player_html5
     weight: 0
     region: content

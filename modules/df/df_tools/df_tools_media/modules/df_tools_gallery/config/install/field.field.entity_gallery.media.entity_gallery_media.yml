@@ -7,7 +7,7 @@ dependencies:
     - field.storage.entity_gallery.entity_gallery_media
     - media.type.image
     - media.type.instagram
-    - media.type.local_video
+    - media.type.video_file
     - media.type.tweet
     - media.type.video
 id: entity_gallery.media.entity_gallery_media
@@ -25,7 +25,7 @@ settings:
     target_bundles:
       image: image
       instagram: instagram
-      local_video: local_video
+      video_file: video_file
       tweet: tweet
       video: video
   handler: 'default:media'

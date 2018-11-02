@@ -6,7 +6,7 @@ dependencies:
     - system
   theme:
     - tec
-id: mainpagecontent
+id: tec_mainpagecontent
 theme: tec
 region: content
 weight: -2

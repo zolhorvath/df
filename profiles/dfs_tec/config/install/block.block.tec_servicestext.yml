@@ -8,7 +8,7 @@ dependencies:
     - block_content
   theme:
     - tec
-id: servicestext
+id: tec_servicestext
 theme: tec
 region: '-1'
 weight: null

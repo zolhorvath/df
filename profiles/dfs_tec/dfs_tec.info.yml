@@ -1,10 +1,9 @@
-name: DFS TEC
+name: 'DFS TEC'
 type: profile
-description: Demo Framework Scenario for Technology Websites.
+description: 'Demo Framework Scenario for Technology Websites.'
 core: 8.x
-package: Demo Framework Scenarios
-base profile:
-  name: df
+package: 'Demo Framework Scenarios'
+'base profile': df
 dependencies:
   - block_class
   - df_tools_articles
@@ -20,7 +19,6 @@ dependencies:
   - df_tools_layout
   - df_tools_map
   - df_tools_media
-  - df_tools_media_video
   - df_tools_migration
   - df_tools_page
   - df_tools_panelizer
@@ -34,3 +32,10 @@ dependencies:
   - dfs_tec_search
 themes:
   - tec
+exclude:
+  - lightning_api
+  - lightning_contact_form
+  - lightning_preview
+  - lightning_roles
+  - bartik
+  - seven

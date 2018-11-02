@@ -12,7 +12,7 @@ dependencies:
 third_party_settings:
   block_class:
     classes: footer-contact
-id: footercontact
+id: tec_footercontact
 theme: tec
 region: footer
 weight: 0

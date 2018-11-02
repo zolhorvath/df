@@ -20,7 +20,7 @@ gallery_type: media
 gallery_type_bundles:
   image: image
   instagram: instagram
-  local_video: local_video
+  video_file: video_file
   tweet: tweet
   video: video
   document: '0'

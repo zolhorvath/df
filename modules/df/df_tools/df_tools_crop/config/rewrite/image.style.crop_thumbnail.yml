@@ -5,6 +5,6 @@ effects:
     weight: 1
     data:
       width: null
-      height: 800
+      height: 300
       upscale: false
 

@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.video_hero
     - field.storage.block_content.field_media
-    - media.type.local_video
+    - media.type.video_file
     - media.type.video
 id: block_content.video_hero.field_media
 field_name: field_media
@@ -21,10 +21,10 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      local_video: local_video
+      video_file: video_file
       video: video
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: local_video
+    auto_create_bundle: video_file
 field_type: entity_reference

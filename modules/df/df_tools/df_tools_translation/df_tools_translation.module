@@ -189,3 +189,4 @@ function df_tools_translation_preprocess_page(&$variables) {
     $variables['language_links'] = $links;
   }
 }
+

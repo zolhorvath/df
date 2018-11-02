@@ -9,15 +9,15 @@
  * Implements hook_install().
  */
 function dfs_tec_install() {
-  // Enable the dfs_tec scenario.
-  \Drupal::service('scenarios_handler')->scenarioEnable('dfs_tec');
-
   // Enable translation for all of our entities/bundles.
   $entities = [
     'node' => ['employee', 'service']
   ];
   df_tools_translation_enable_translation($entities);
 
-  // Import our custom .po files
+  // Import our custom .po files	
   df_tools_translation_import_translations('profile', 'dfs_tec');
+
+  // Create path for the contact form.
+  \Drupal::service('path.alias_storage')->save('/contact/contact_form', '/contact');
 }

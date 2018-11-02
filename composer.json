@@ -8,7 +8,7 @@
     "require-dev": {
         "drush/drush": "^9.0",
         "drupal/console": "^1.7.0",
-        "acquia/lightning_dev": "dev-8.x-1.x"
+        "acquia/lightning_dev": "dev-8.x-1.x#dec22c2d10d5bdbbb1f4b8b885edac3cc72368e2"
     },
     "repositories": [
         {
@@ -45,13 +45,14 @@
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "@composer drupal-scaffold",
-            "./vendor/bin/phing push"
+            "@composer push"
         ],
         "post-update-cmd": [
             "@composer package",
-            "./vendor/bin/phing push"
+            "@composer push"
         ],
         "package": "Acquia\\DF\\Composer\\Package::execute",
+        "push": "./vendor/bin/phing push",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": "rm -r -f docroot vendor modules/contrib themes/contrib"
     },
@@ -72,28 +73,45 @@
                 "type:bower-asset",
                 "type:npm-asset"
             ],
-            "modules/contrib/{$name}": [
+            "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "themes/contrib/{$name}": [
+            "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
         },
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
-                "Quickedit cant edit images | https://www.drupal.org/node/2635712": "https://www.drupal.org/files/issues/2635712-14.patch",
-                "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
-                "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235": "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
-                "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
-                "form elements use '#markup' and are not escaped | https://www.drupal.org/node/2652850": "https://www.drupal.org/files/issues/2652850-17.patch",
-                "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
-                "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
-                "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
-                "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599": "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch",
-                "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2873287-33.patch",
-                "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch"
+                "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
+                "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
+                "Quickedit cant edit images | https://www.drupal.org/node/2635712":
+                "https://www.drupal.org/files/issues/2635712-14.patch",
+                "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
+                "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
+                "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
+                "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
+                "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
+                "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
+                "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332":
+                "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
+                "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219":
+                "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
+                "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549":
+                "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
+                "Unable to save a translation if the path alias changes | https://www.drupal.org/node/2930599":
+                "https://www.drupal.org/files/issues/content_moderation-path_alias-2930599-09.patch",
+                "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287":
+                "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
+                "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247":
+                "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
+                "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691":
+                "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
+                "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
+                "https://www.drupal.org/files/issues/2018-10-05/1356276-515.patch"
+            },
+            "drupal/acquia_contenthub": {
+                "Page title missing from admin page | https://www.drupal.org/node/3002886": "https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
@@ -121,10 +139,21 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-03-27/2877751-17_2825555-8_combined_2.patch"
             },
+            "drupal/entity_embed": {
+                "Data-align center does not work | https://www.drupal.org/node/2645458": "https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch"
+            },
             "drupal/facets": {
                 "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
                 "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
                 "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/node/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
+            },
+            "drupal/material_admin": {
+                "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch",
+                "Add Site name and logo | https://www.drupal.org/node/3001961": "https://www.drupal.org/files/issues/2018-09-24/add-sitename-and-logo-3001961-4.patch"
+
+            },
+            "drupal/material_admin_support": {
+                "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch"
             },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
@@ -133,7 +162,8 @@
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
                 "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
                 "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch",
-                "Search inside IPE no longer works and splits out Uncaught TypeError: Cannot read property 'toLowerCase' | https://www.drupal.org/project/panels/issues/2824508": "https://www.drupal.org/files/issues/panels-ipe-search-2824508-8.patch"
+                "Search inside IPE no longer works and splits out Uncaught TypeError: Cannot read property 'toLowerCase' | https://www.drupal.org/project/panels/issues/2824508": "https://www.drupal.org/files/issues/panels-ipe-search-2824508-8.patch",
+                "Custom attributes in panels blocks and variants | https://www.drupal.org/node/2849867": "https://www.drupal.org/files/issues/2018-10-20/panels_custom_attributes_in_panels_blocks-2849867-46.patch"
             },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch"
@@ -141,9 +171,6 @@
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685": "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
                 "Data processors do not check type before performing type-specific operations | https://www.drupal.org/node/2849810": "https://www.drupal.org/files/issues/rules-data-processor-type-checking.patch"
-            },
-            "drupal/workbench_email": {
-                "Support the core Content Moderation module | https://www.drupal.org/node/2931097": "https://www.drupal.org/files/issues/workbench-email-core-2931097-4.patch"
             },
             "drupal/zurb_foundation": {
                 "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479": "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
@@ -157,22 +184,28 @@
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
                 }
+            },
+            "drupal/lightning_core": {
+                "drupal/core": {
+                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
+                    "https://www.drupal.org/files/issues/2018-07-12/1356276-473.patch"
+                }
             }
         }
     },
     "require": {
-        "acquia/lightning": "3.1.4",
+        "acquia/lightning": "3.2.0",
         "acquia/content-hub-php": "1.3.1",
         "acquia/lift-sdk-php": "dev-master",
-        "bower-asset/fontawesome-iconpicker": "1.3.0",
-        "bower-asset/imagesloaded": "v4.1.1",
-        "bower-asset/jquery-ui-slider-pips": "v1.11.3",
-        "bower-asset/leaflet": "v1.0.3",
-        "bower-asset/masonry": "v4.2.0",
+        "bower-asset/jquery-ui-slider-pips": "1.11.3",
+        "bower-asset/leaflet": "1.0.3",
+        "bower-asset/masonry": "4.2.0",
         "bower-asset/slick-carousel": "1.7.1",
-        "drupal/acquia_contenthub": "1.29.0",
-        "drupal/acquia_lift": "3.6.0",
-        "drupal/acsf": "1.45.0",
+        "npm-asset/fontawesome-iconpicker": "1.3.0",
+        "npm-asset/imagesloaded": "4.1.1",
+        "drupal/acquia_contenthub": "1.31.0",
+        "drupal/acquia_lift": "3.9.0",
+        "drupal/acsf": "1.48.0",
         "drupal/address": "1.4.0",
         "drupal/addtoany": "1.10.0",
         "drupal/admin_login_path": "1.0.0",
@@ -188,6 +221,7 @@
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha4",
+        "drupal/custom_body_class": "1.2.0",
         "drupal/entity_browser": "2.0.0-alpha2",
         "drupal/entity_browser_block": "1.x-dev",
         "drupal/entity_gallery": "1.x-dev",
@@ -196,6 +230,8 @@
         "drupal/facets": "1.0.0-beta2",
         "drupal/field_formatter_class": "1.1.0",
         "drupal/field_group": "3.0-beta1",
+        "drupal/fontyourface": "3.2",
+        "drupal/focal_point": "1.0-beta6",
         "drupal/geocoder": "2.0.0-beta3",
         "drupal/geofield": "1.0.0-beta4",
         "drupal/geophp": "1.x-dev#cb7b8c6b8465e3af41f8f6f8b43c7057c4ca9128",
@@ -217,7 +253,6 @@
         "drupal/message_notify": "1.0.0-beta1",
         "drupal/moderation_dashboard": "1.x-dev",
         "drupal/moderation_note": "1.0-beta1",
-        "drupal/moderation_sidebar": "1.0",
         "drupal/migrate_plus": "4.0.0-beta3",
         "drupal/migrate_source_csv": "2.0.0",
         "drupal/migrate_tools": "4.0.0-beta3",
@@ -237,7 +272,8 @@
         "drupal/swiftmailer": "1.0.0-beta1",
         "drupal/type_style": "1.x-dev",
         "drupal/view_modes_display": "1.0.0",
-        "drupal/workbench_email": "1.0-alpha7",
+        "drupal/webform": "5.0.0-rc22",
+        "drupal/workbench_email": "1.0-rc2",
         "drupal/zurb_foundation": "6.0.0-alpha4",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.x-dev as 1.6.5",
