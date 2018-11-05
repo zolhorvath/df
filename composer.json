@@ -166,7 +166,9 @@
                 "Custom attributes in panels blocks and variants | https://www.drupal.org/node/2849867": "https://www.drupal.org/files/issues/2018-10-20/panels_custom_attributes_in_panels_blocks-2849867-46.patch"
             },
             "drupal/responsive_preview": {
-              "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch"
+              "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
+              "Add latest devices into config | https://www.drupal.org/node/2929331": "https://www.drupal.org/files/issues/2018-11-05/add-latest-devices-2833029-5.patch"
+
             },
             "drupal/rules": {
                 "PHP Fatal error when adding an action and address is installed | http://drupal.org/node/2694685": "https://www.drupal.org/files/issues/rules-Fix_type_definition_error-2694685-30.patch",
