@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a3ec1d954d75653be70cbfb6b2cdd33",
+    "content-hash": "9f4a5770b23a15fd8f18c4d92d39787c",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -8386,7 +8386,7 @@
                 },
                 "patches_applied": {
                     "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
-                    "Add latest devices into config | https://www.drupal.org/node/2929331": "https://www.drupal.org/files/issues/2018-11-05/add-latest-devices-2833029-5.patch"
+                    "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -18150,12 +18150,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "82bf5059908f9073b3468cb7313960da72176d9a"
+                "reference": "e55746679e47b01e378e4baf25141094d005406b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=82bf5059908f9073b3468cb7313960da72176d9a",
-                "reference": "82bf5059908f9073b3468cb7313960da72176d9a",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=e55746679e47b01e378e4baf25141094d005406b",
+                "reference": "e55746679e47b01e378e4baf25141094d005406b",
                 "shasum": ""
             },
             "require": {
@@ -18205,7 +18205,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2018-10-03T02:38:33+00:00"
+            "time": "2018-10-17T03:04:56+00:00"
         }
     ],
     "aliases": [
