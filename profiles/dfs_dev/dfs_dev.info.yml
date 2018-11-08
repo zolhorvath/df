@@ -7,7 +7,7 @@ package: 'Demo Framework Scenarios'
 dependencies:
   - df_tools_articles
   - df_tools_blocks
-  = df_tools_card
+  - df_tools_card
   - df_tools_cache
   - df_tools_config
   - df_tools_display
