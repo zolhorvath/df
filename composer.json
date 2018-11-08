@@ -82,11 +82,13 @@
         },
         "enable-patching": true,
         "patches": {
+            "acquia/lightning": {
+                "Move common configuration from profile into lightning_common module | https://drupal.org/node/3012138":
+                "https://www.drupal.org/files/issues/2018-11-07/lightning-common-config-remove-0.patch"
+            },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
                 "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
-                "Quickedit cant edit images | https://www.drupal.org/node/2635712":
-                "https://www.drupal.org/files/issues/2635712-14.patch",
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
@@ -107,8 +109,12 @@
                 "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
                 "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691":
                 "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
-                "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
-                "https://www.drupal.org/files/issues/2018-10-05/1356276-515.patch"
+                "Add quickedit to the latest-revision route | https://drupal.org/node/2815221":
+                "https://www.drupal.org/files/issues/2018-09-25/2815221-111.patch",
+                "Allow profiles to define a base/parent profile and load them in the correct order | https://drupal.org/node/1356276":
+                "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch",
+                "Allow profiles to exclude dependencies of their parent | https://drupal.org/node/2914389":
+                "https://www.drupal.org/files/issues/2018-11-07/2914389-11-do-not-test.patch"
             },
             "drupal/acquia_contenthub": {
                 "Page title missing from admin page | https://www.drupal.org/node/3002886": "https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch"
@@ -143,9 +149,7 @@
                 "Data-align center does not work | https://www.drupal.org/node/2645458": "https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch"
             },
             "drupal/facets": {
-                "Fatal error after upgrade to beta-2 | https://www.drupal.org/node/2938089": "https://www.drupal.org/files/issues/2938089-1.patch",
-                "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch",
-                "Update jquery.ui.slider.pips JS/CSS paths | https://www.drupal.org/node/2943636": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
+                "facets_range_widget: 'TypeError: r.toFixed() is not a function' | https://www.drupal.org/project/facets/issues/2922151": "https://www.drupal.org/files/issues/facets_range_widget_js_error_toFixed_is_not_a_function-2922151-2.patch"
             },
             "drupal/material_admin": {
                 "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch",
@@ -167,7 +171,7 @@
             },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
-              "Add latest devices into config | https://www.drupal.org/node/2929331": "https://www.drupal.org/files/issues/2018-11-05/add-latest-devices-2833029-5.patch"
+              "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
 
             },
             "drupal/rules": {
@@ -189,8 +193,9 @@
             },
             "drupal/lightning_core": {
                 "drupal/core": {
-                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
-                    "https://www.drupal.org/files/issues/2018-07-12/1356276-473.patch"
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-09-24/2815221-109.patch",
+                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
+                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                 }
             }
         }
@@ -214,7 +219,7 @@
         "drupal/admin_toolbar": "1.24.0",
         "drupal/adminimal_admin_toolbar": "1.8.0",
         "drupal/adminimal_theme": "1.3.0",
-        "drupal/asset_injector": "2.2.0",
+        "drupal/asset_injector": "2.4.0",
         "drupal/better_formats": "1.x-dev",
         "drupal/block_class": "1.0.0-alpha1",
         "drupal/contact_message_rest": "1.0.0-alpha1",
@@ -229,7 +234,7 @@
         "drupal/entity_gallery": "1.x-dev",
         "drupal/entity_usage": "2.0.0-alpha2",
         "drupal/eu_cookie_compliance": "1.2.0",
-        "drupal/facets": "1.0.0-beta2",
+        "drupal/facets": "1.1.0",
         "drupal/field_formatter_class": "1.1.0",
         "drupal/field_group": "3.0-beta1",
         "drupal/fontyourface": "3.2",
@@ -255,9 +260,9 @@
         "drupal/message_notify": "1.0.0-beta1",
         "drupal/moderation_dashboard": "1.x-dev",
         "drupal/moderation_note": "1.0-beta1",
-        "drupal/migrate_plus": "4.0.0-beta3",
+        "drupal/migrate_plus": "4.0.0",
         "drupal/migrate_source_csv": "2.0.0",
-        "drupal/migrate_tools": "4.0.0-beta3",
+        "drupal/migrate_tools": "4.0.0",
         "drupal/oauth": "2.1.0",
         "drupal/page_manager": "^4.3",
         "drupal/refreshless": "1.0.0-alpha3",
