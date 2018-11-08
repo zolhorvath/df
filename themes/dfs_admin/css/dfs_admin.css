@@ -206,3 +206,29 @@ a {
 .color-preview {
   display: none;
 }
+
+/* Fixes for Font Your Face*/
+body.fontyourface .fontyourface-header h4 {
+  font-size: 1.154em;
+}
+
+body.fontyourface .fontyourface-header h5 {
+  font-size: 1.077em;
+}
+
+body.fontyourface .fontyourface-operations a {
+  border: 0;
+  left: 1px;
+  height: 30px;
+  bottom: -19px;
+}
+
+body.fontyourface .view-fontyourface-font-manager .fontyourface-font-manager-item {
+  margin: 0 10px 35px;
+}
+
+body.fontyourface #edit-imports .button {
+  margin: 5px;
+  padding: 0 2em;
+  height: 100%;
+}
