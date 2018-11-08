@@ -8,5 +8,6 @@ dependencies:
   - df_tools_blocks
   - df_tools_crop
   - df_tools_gallery
+  - df_tools_layout
   - df_tools_page
   - df_tools_panelizer
