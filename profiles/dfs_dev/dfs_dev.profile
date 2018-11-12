@@ -13,6 +13,8 @@
  */
 function _dfs_dev_migrations() {
   return [
+    'import_file_demo_user_pictures',
+    'import_user_demo_users',
     'import_block_basic',
     'import_block_hero',
     'import_block_map',

@@ -46,6 +46,8 @@ function dfs_tec_migration_plugins_alter(&$definitions) {
  */
 function _dfs_tec_migrations() {
   return [
+    'import_file_demo_user_pictures',
+    'import_user_demo_users',
     'import_dfs_tec_tags',
     'import_dfs_tec_article',
     'import_dfs_tec_basic',
