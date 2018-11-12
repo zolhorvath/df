@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7c08ca6535c40190a3e2f192f9ac1ab",
+    "content-hash": "48b77b525bc457cf7d94e54df8604ac8",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -1798,17 +1798,17 @@
         },
         {
             "name": "drupal/acquia_contenthub",
-            "version": "1.31.0",
+            "version": "1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_contenthub",
-                "reference": "8.x-1.31"
+                "reference": "8.x-1.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_contenthub-8.x-1.31.zip",
-                "reference": "8.x-1.31",
-                "shasum": "18ecb8952af4555fb2787f16b707ccc7093139d2"
+                "url": "https://ftp.drupal.org/files/projects/acquia_contenthub-8.x-1.32.zip",
+                "reference": "8.x-1.32",
+                "shasum": "11d36dc167ee75433ccdab1fdc45f1837b041667"
             },
             "require": {
                 "acquia/content-hub-php": "1.3.1",
@@ -1832,7 +1832,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.31",
+                    "version": "8.x-1.32",
                     "datestamp": "1541748484",
                     "security-coverage": {
                         "status": "covered",
@@ -1881,17 +1881,17 @@
         },
         {
             "name": "drupal/acquia_lift",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acquia_lift",
-                "reference": "8.x-3.9"
+                "reference": "8.x-3.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.9.zip",
-                "reference": "8.x-3.9",
-                "shasum": "3cef21548a0da3f28740ed8020b06a3d29ded4a3"
+                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.10.zip",
+                "reference": "8.x-3.10",
+                "shasum": "a7e6afdc7ab7cc58a3fa661663e60ba066b03f74"
             },
             "require": {
                 "drupal/core": "*"
@@ -1902,7 +1902,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.9",
+                    "version": "8.x-3.10",
                     "datestamp": "1541763480",
                     "security-coverage": {
                         "status": "covered",
