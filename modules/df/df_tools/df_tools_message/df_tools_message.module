@@ -129,5 +129,5 @@ function df_tools_message_form_rules_reaction_rule_edit_form_alter(&$form, FormS
  * Form submit callback for all Rules actions.
  */
 function df_tools_message_reaction_rule_edit_form_submit(&$form, FormStateInterface $form_state) {
-  \Drupal::service('rules.cache')->invalidateAll();
+  \Drupal::cache('rules')->invalidateAll();
 }
