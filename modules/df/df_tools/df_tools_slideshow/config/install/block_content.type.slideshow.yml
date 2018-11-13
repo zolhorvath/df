@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: slideshow
-label: Slideshow
+label: Block Slideshow
 revision: 1
 description: 'Displays other blocks as a slideshow.'

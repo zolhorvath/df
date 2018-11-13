@@ -439,6 +439,14 @@ a[data-block-type="slideshow"] {
   }
 }
 
+a[data-block-type="media_slideshow"] {
+  @extend .ipe-create-styles;
+  &:before {
+    content: "\f3ca";
+    @extend .ipe-icons-ion;
+  }
+}
+
 a[data-block-type="map"] {
   @extend .ipe-create-styles;
   &:before {
