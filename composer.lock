@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "165740a9271bed86e09e8a3a0feae99a",
+    "content-hash": "544f5d457525d0c9589f32942ecfd62e",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -305,16 +305,16 @@
         },
         {
             "name": "bower-asset/ev-emitter",
-            "version": "v1.1.1",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/metafizzy/ev-emitter.git",
-                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
+                "reference": "1c67f55ea625b87857c2846e9505aee43f45bc6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/metafizzy/ev-emitter/zipball/1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
-                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
+                "url": "https://api.github.com/repos/metafizzy/ev-emitter/zipball/1c67f55ea625b87857c2846e9505aee43f45bc6c",
+                "reference": "1c67f55ea625b87857c2846e9505aee43f45bc6c",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -357,6 +357,28 @@
                 "url": "https://api.github.com/repos/desandro/get-size/zipball/6879e7f15b4b6e19ca392b6955edfa8d4aa6f787",
                 "reference": "6879e7f15b4b6e19ca392b6955edfa8d4aa6f787",
                 "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/imagesloaded",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/desandro/imagesloaded.git",
+                "reference": "72b5d600a435803ab1dd2c549b8cba2941ab79ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desandro/imagesloaded/zipball/72b5d600a435803ab1dd2c549b8cba2941ab79ba",
+                "reference": "72b5d600a435803ab1dd2c549b8cba2941ab79ba",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/ev-emitter": "~1.0.0"
             },
             "type": "bower-asset",
             "license": [
@@ -10972,20 +10994,6 @@
             "time": "2016-09-05T13:11:54+00:00"
         },
         {
-            "name": "npm-asset/ev-emitter",
-            "version": "1.0.3",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/ev-emitter/-/ev-emitter-1.0.3.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/fontawesome-iconpicker",
             "version": "1.3.0",
             "dist": {
@@ -10995,23 +11003,6 @@
                 "shasum": null
             },
             "type": "npm-asset"
-        },
-        {
-            "name": "npm-asset/imagesloaded",
-            "version": "4.1.1",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-4.1.1.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "npm-asset/ev-emitter": "~1.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
         },
         {
             "name": "onelogin/php-saml",

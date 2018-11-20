@@ -154,7 +154,7 @@ class Package {
     // allows distributions to include libraries that have been specifically
     // approved. See the Packaging Whitelist for a list of approved libraries
     // (https://www.drupal.org/packaging-whitelist).
-    $whitelist = ['dropzone', 'masonry', 'ckeditor-track-changes', 'slick-carousel', 'lightbox2', 'cropper'];
+    $whitelist = ['dropzone', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick-carousel', 'lightbox2', 'cropper'];
 
     foreach ($make['libraries'] as $name => $info) {
       // Libraries must be located in the root 'libraries' folder.
