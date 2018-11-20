@@ -111,7 +111,6 @@ class Package {
         if ($package['type'] == 'drupal-core') {
           $name = 'drupal';
         }
-        echo "$name \r\n";
         $info['projects'][$name] = $this->buildProject($package);
       }
       elseif ($this->isLightning($package)) {
