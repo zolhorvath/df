@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48b77b525bc457cf7d94e54df8604ac8",
+    "content-hash": "165740a9271bed86e09e8a3a0feae99a",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -368,7 +368,7 @@
             "version": "3.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
             },
             "dist": {
@@ -5734,7 +5734,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.23",
-                    "datestamp": "1532084496",
+                    "datestamp": "1542081972",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6769,7 +6769,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch"
+                    "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch",
+                    "Support Media Library | https://www.drupal.org/node/3015073": "https://www.drupal.org/files/issues/2018-11-20/support-media-library-0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8962,17 +8963,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search_api",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "1c1d038310a079f8e8154545f743ff7a506c4b8e"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "d2bf92afa2ee760977dde1fadcb5bb64a4c2d7c1"
             },
             "require": {
                 "drupal/core": "^8.5"
@@ -8992,8 +8993,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1537175280",
+                    "version": "8.x-1.11",
+                    "datestamp": "1542564480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9172,17 +9173,17 @@
         },
         {
             "name": "drupal/simple_oauth",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/simple_oauth",
-                "reference": "8.x-3.10"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "04fcea46ba6cc9db883043b6ac4c5d3d4d04d4a5"
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "be8af4281de14256fc12d65ec2d996732af701b5"
             },
             "require": {
                 "drupal/consumers": "^1.0.0-beta3",
@@ -9195,8 +9196,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1536851884",
+                    "version": "8.x-3.11",
+                    "datestamp": "1542151980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9226,7 +9227,7 @@
         },
         {
             "name": "drupal/simple_oauth_extras",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/simple_oauth": "self.version"
@@ -9237,8 +9238,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1536851884",
+                    "version": "8.x-3.11",
+                    "datestamp": "1542151980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10805,19 +10806,21 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.3.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "33f8d475d28741398be26cdff7a10a63003324a3"
+                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/33f8d475d28741398be26cdff7a10a63003324a3",
-                "reference": "33f8d475d28741398be26cdff7a10a63003324a3",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
+                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
                 "ext-libxml": "*",
                 "php": ">=5.3.0"
             },
@@ -10866,7 +10869,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2018-10-22T16:58:34+00:00"
+            "time": "2018-11-17T20:24:36+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11782,16 +11785,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.19.5",
+            "version": "v3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "30f3f10bf52ec22bf5278b2e4a3719c2371209ed"
+                "reference": "db9e24541f65bd5d19506277b0869d098f3f704c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/30f3f10bf52ec22bf5278b2e4a3719c2371209ed",
-                "reference": "30f3f10bf52ec22bf5278b2e4a3719c2371209ed",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/db9e24541f65bd5d19506277b0869d098f3f704c",
+                "reference": "db9e24541f65bd5d19506277b0869d098f3f704c",
                 "shasum": ""
             },
             "type": "library",
@@ -11835,7 +11838,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2018-11-05T05:26:25+00:00"
+            "time": "2018-11-17T01:13:28+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -13540,12 +13543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "a592c4c357d50031b3cb91c8ba63872539489acf"
+                "reference": "bf37658fa37234a69b3f9626f84877c0e98dc10c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/a592c4c357d50031b3cb91c8ba63872539489acf",
-                "reference": "a592c4c357d50031b3cb91c8ba63872539489acf",
+                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/bf37658fa37234a69b3f9626f84877c0e98dc10c",
+                "reference": "bf37658fa37234a69b3f9626f84877c0e98dc10c",
                 "shasum": ""
             },
             "require": {
@@ -13643,7 +13646,7 @@
                 "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
                 "issues": "https://github.com/acquia/lightning-dev/issues"
             },
-            "time": "2018-11-01T18:38:10+00:00"
+            "time": "2018-11-19T18:32:59+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -14287,20 +14290,20 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.9.1",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac"
+                "reference": "8e7d1a05230dc1159c751809e98b74f2b7f71873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac",
-                "reference": "4bdbb8fa149e1cc1511bd77b0bc4729fd66bccac",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/8e7d1a05230dc1159c751809e98b74f2b7f71873",
+                "reference": "8e7d1a05230dc1159c751809e98b74f2b7f71873",
                 "shasum": ""
             },
             "require": {
-                "consolidation/output-formatters": "^3.1.12",
+                "consolidation/output-formatters": "^3.4",
                 "php": ">=5.4.0",
                 "psr/log": "^1",
                 "symfony/console": "^2.8|^3|^4",
@@ -14335,7 +14338,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2018-09-19T17:47:18+00:00"
+            "time": "2018-11-15T01:46:18+00:00"
         },
         {
             "name": "consolidation/config",
