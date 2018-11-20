@@ -111,7 +111,7 @@ class Package {
         if ($package['type'] == 'drupal-core') {
           $name = 'drupal';
         }
-
+        echo "$name \r\n";
         $info['projects'][$name] = $this->buildProject($package);
       }
       elseif ($this->isLightning($package)) {
@@ -155,7 +155,7 @@ class Package {
     // allows distributions to include libraries that have been specifically
     // approved. See the Packaging Whitelist for a list of approved libraries
     // (https://www.drupal.org/packaging-whitelist).
-    $whitelist = ['dropzone', 'masonry', 'imagesloaded', 'ckeditor-track-changes', 'slick-carousel', 'lightbox2', 'cropper'];
+    $whitelist = ['dropzone', 'masonry', 'ckeditor-track-changes', 'slick-carousel', 'lightbox2', 'cropper'];
 
     foreach ($make['libraries'] as $name => $info) {
       // Libraries must be located in the root 'libraries' folder.
@@ -171,15 +171,6 @@ class Package {
     // download, to 'lite'.
     if (isset($make['libraries']['ckeditor-track-changes'])) {
       $make['libraries']['ckeditor-track-changes']['directory_name'] = 'lite';
-    }
-
-    // The Zurb Foundation theme had its shortname changed from
-    // 'zurb-foundation' to 'zurb_foundation' on drupal.org. Unfortunately,
-    // drupal.org requires the old shortname to be used when retrieving the
-    // theme using drush make.
-    if (isset($make['projects']['zurb_foundation'])) {
-      $make['projects']['zurb-foundation'] = $make['projects']['zurb_foundation'];
-      unset($make['projects']['zurb_foundation']);
     }
   }
 
@@ -303,7 +294,6 @@ class Package {
       ];
     }
     $info = ['download' => $download];
-
     if (isset($package['extra']['patches_applied'])) {
       $info['patch'] = array_values($package['extra']['patches_applied']);
     }
