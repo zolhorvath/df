@@ -395,8 +395,10 @@ section[rel~="schema:comment"] {
 
 /* Contact page styles */
 
-.contact-hero {
-  img {
+
+.block-tec-contacthero {
+    @extend .full-width;
+    img {
     width: 100%;
   }
 }

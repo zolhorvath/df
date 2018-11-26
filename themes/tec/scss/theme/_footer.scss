@@ -2,7 +2,7 @@
 
 footer {
     margin-top: rem-calc(50px);
-    .footer-contact {
+    .block-tec-footercontact {
         background-image: url('../images/pattern_1.png');
         min-height: rem-calc(150px);
         position: relative;
@@ -42,7 +42,7 @@ footer {
             }
         }
     }
-    .footer-about {
+    .block-tec-footerabout {
         background-color: $primary-color;
         color: $white;
         border-color: $white;

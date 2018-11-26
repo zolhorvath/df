@@ -42,7 +42,7 @@ variant_settings:
       weight: '-10'
       cache:
         max_age: '-1'
-      classes: 'full-width homepage-articles'
+      css_classes: 'full-width homepage-articles'
       uuid: e699c5bd-4ff2-4fcf-8b00-a59fdebacfd0
       context_mapping: {  }
     d8c76763-7282-4edf-ae13-193445587e54:
@@ -57,7 +57,7 @@ variant_settings:
       weight: '0'
       cache:
         max_age: '-1'
-      classes: homepage-service-promo
+      css_classes: homepage-service-promo
       uuid: d8c76763-7282-4edf-ae13-193445587e54
       context_mapping: {  }
   id: landing_display

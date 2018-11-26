@@ -116,9 +116,6 @@
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
             },
-            "drupal/block_class": {
-                "Add support for page manager. | http://drupal.org/node/2509142": "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
-            },
             "drupal/config_rewrite": {
                 "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629": "https://www.drupal.org/files/issues/allow_optional_config-2903629-14.patch"
             },
@@ -158,6 +155,9 @@
             },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
+            },
+            "drupal/page_manager": {
+              "Custom attributes in blocks | https://www.drupal.org/node/2710169": "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
             },
             "drupal/panels": {
                 "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
