@@ -5,7 +5,6 @@ core: 8.x
 package: 'Demo Framework Scenarios'
 'base profile': df
 dependencies:
-  - block_class
   - df_tools_articles
   - df_tools_blocks
   - df_tools_cache
