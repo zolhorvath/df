@@ -530,47 +530,47 @@ textarea {
 .is-hidden {
   display: none !important; }
 
-.row, footer .footer-contact > div, footer .footer-about > div {
+.row, footer .block-tec-footercontact > div, footer .block-tec-footerabout > div {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
-  .row::before, footer .footer-contact > div::before, footer .footer-about > div::before, .row::after, footer .footer-contact > div::after, footer .footer-about > div::after {
+  .row::before, footer .block-tec-footercontact > div::before, footer .block-tec-footerabout > div::before, .row::after, footer .block-tec-footercontact > div::after, footer .block-tec-footerabout > div::after {
     display: table;
     content: ' '; }
-  .row::after, footer .footer-contact > div::after, footer .footer-about > div::after {
+  .row::after, footer .block-tec-footercontact > div::after, footer .block-tec-footerabout > div::after {
     clear: both; }
-  .row.collapse > .column, footer .footer-contact > div.collapse > .column, footer .footer-about > div.collapse > .column, .row.collapse > .columns, footer .footer-contact > div.collapse > .columns, footer .footer-about > div.collapse > .columns {
+  .row.collapse > .column, footer .block-tec-footercontact > div.collapse > .column, footer .block-tec-footerabout > div.collapse > .column, .row.collapse > .columns, footer .block-tec-footercontact > div.collapse > .columns, footer .block-tec-footerabout > div.collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .row .row, footer .footer-contact > div .row, footer .footer-about > div .row, .row footer .footer-contact > div, footer .row .footer-contact > div, footer .footer-contact > div .footer-contact > div, footer .footer-about > div .footer-contact > div, .row footer .footer-about > div, footer .row .footer-about > div, footer .footer-contact > div .footer-about > div, footer .footer-about > div .footer-about > div {
+  .row .row, footer .block-tec-footercontact > div .row, footer .block-tec-footerabout > div .row, .row footer .block-tec-footercontact > div, footer .row .block-tec-footercontact > div, footer .block-tec-footercontact > div .block-tec-footercontact > div, footer .block-tec-footerabout > div .block-tec-footercontact > div, .row footer .block-tec-footerabout > div, footer .row .block-tec-footerabout > div, footer .block-tec-footercontact > div .block-tec-footerabout > div, footer .block-tec-footerabout > div .block-tec-footerabout > div {
     margin-right: -0.625rem;
     margin-left: -0.625rem; }
     @media print, screen and (min-width: 40em) {
-      .row .row, footer .footer-contact > div .row, footer .footer-about > div .row, .row footer .footer-contact > div, footer .row .footer-contact > div, footer .footer-contact > div .footer-contact > div, footer .footer-about > div .footer-contact > div, .row footer .footer-about > div, footer .row .footer-about > div, footer .footer-contact > div .footer-about > div, footer .footer-about > div .footer-about > div {
+      .row .row, footer .block-tec-footercontact > div .row, footer .block-tec-footerabout > div .row, .row footer .block-tec-footercontact > div, footer .row .block-tec-footercontact > div, footer .block-tec-footercontact > div .block-tec-footercontact > div, footer .block-tec-footerabout > div .block-tec-footercontact > div, .row footer .block-tec-footerabout > div, footer .row .block-tec-footerabout > div, footer .block-tec-footercontact > div .block-tec-footerabout > div, footer .block-tec-footerabout > div .block-tec-footerabout > div {
         margin-right: -0.9375rem;
         margin-left: -0.9375rem; } }
     @media print, screen and (min-width: 56.25em) {
-      .row .row, footer .footer-contact > div .row, footer .footer-about > div .row, .row footer .footer-contact > div, footer .row .footer-contact > div, footer .footer-contact > div .footer-contact > div, footer .footer-about > div .footer-contact > div, .row footer .footer-about > div, footer .row .footer-about > div, footer .footer-contact > div .footer-about > div, footer .footer-about > div .footer-about > div {
+      .row .row, footer .block-tec-footercontact > div .row, footer .block-tec-footerabout > div .row, .row footer .block-tec-footercontact > div, footer .row .block-tec-footercontact > div, footer .block-tec-footercontact > div .block-tec-footercontact > div, footer .block-tec-footerabout > div .block-tec-footercontact > div, .row footer .block-tec-footerabout > div, footer .row .block-tec-footerabout > div, footer .block-tec-footercontact > div .block-tec-footerabout > div, footer .block-tec-footerabout > div .block-tec-footerabout > div {
         margin-right: -0.9375rem;
         margin-left: -0.9375rem; } }
     @media screen and (min-width: 75em) {
-      .row .row, footer .footer-contact > div .row, footer .footer-about > div .row, .row footer .footer-contact > div, footer .row .footer-contact > div, footer .footer-contact > div .footer-contact > div, footer .footer-about > div .footer-contact > div, .row footer .footer-about > div, footer .row .footer-about > div, footer .footer-contact > div .footer-about > div, footer .footer-about > div .footer-about > div {
+      .row .row, footer .block-tec-footercontact > div .row, footer .block-tec-footerabout > div .row, .row footer .block-tec-footercontact > div, footer .row .block-tec-footercontact > div, footer .block-tec-footercontact > div .block-tec-footercontact > div, footer .block-tec-footerabout > div .block-tec-footercontact > div, .row footer .block-tec-footerabout > div, footer .row .block-tec-footerabout > div, footer .block-tec-footercontact > div .block-tec-footerabout > div, footer .block-tec-footerabout > div .block-tec-footerabout > div {
         margin-right: -0.9375rem;
         margin-left: -0.9375rem; } }
-    .row .row.collapse, footer .footer-contact > div .row.collapse, footer .footer-about > div .row.collapse, .row footer .footer-contact > div.collapse, footer .row .footer-contact > div.collapse, footer .footer-contact > div .footer-contact > div.collapse, footer .footer-about > div .footer-contact > div.collapse, .row footer .footer-about > div.collapse, footer .row .footer-about > div.collapse, footer .footer-contact > div .footer-about > div.collapse, footer .footer-about > div .footer-about > div.collapse {
+    .row .row.collapse, footer .block-tec-footercontact > div .row.collapse, footer .block-tec-footerabout > div .row.collapse, .row footer .block-tec-footercontact > div.collapse, footer .row .block-tec-footercontact > div.collapse, footer .block-tec-footercontact > div .block-tec-footercontact > div.collapse, footer .block-tec-footerabout > div .block-tec-footercontact > div.collapse, .row footer .block-tec-footerabout > div.collapse, footer .row .block-tec-footerabout > div.collapse, footer .block-tec-footercontact > div .block-tec-footerabout > div.collapse, footer .block-tec-footerabout > div .block-tec-footerabout > div.collapse {
       margin-right: 0;
       margin-left: 0; }
-  .row.expanded, footer .footer-contact > div.expanded, footer .footer-about > div.expanded {
+  .row.expanded, footer .block-tec-footercontact > div.expanded, footer .block-tec-footerabout > div.expanded {
     max-width: none; }
-    .row.expanded .row, footer .footer-contact > div.expanded .row, footer .footer-about > div.expanded .row, .row.expanded footer .footer-contact > div, footer .row.expanded .footer-contact > div, footer .footer-contact > div.expanded .footer-contact > div, footer .footer-about > div.expanded .footer-contact > div, .row.expanded footer .footer-about > div, footer .row.expanded .footer-about > div, footer .footer-contact > div.expanded .footer-about > div, footer .footer-about > div.expanded .footer-about > div {
+    .row.expanded .row, footer .block-tec-footercontact > div.expanded .row, footer .block-tec-footerabout > div.expanded .row, .row.expanded footer .block-tec-footercontact > div, footer .row.expanded .block-tec-footercontact > div, footer .block-tec-footercontact > div.expanded .block-tec-footercontact > div, footer .block-tec-footerabout > div.expanded .block-tec-footercontact > div, .row.expanded footer .block-tec-footerabout > div, footer .row.expanded .block-tec-footerabout > div, footer .block-tec-footercontact > div.expanded .block-tec-footerabout > div, footer .block-tec-footerabout > div.expanded .block-tec-footerabout > div {
       margin-right: auto;
       margin-left: auto; }
-  .row:not(.expanded) .row, footer .footer-contact > div:not(.expanded) .row, footer .footer-about > div:not(.expanded) .row, .row:not(.expanded) footer .footer-contact > div, footer .row:not(.expanded) .footer-contact > div, footer .footer-contact > div:not(.expanded) .footer-contact > div, footer .footer-about > div:not(.expanded) .footer-contact > div, .row:not(.expanded) footer .footer-about > div, footer .row:not(.expanded) .footer-about > div, footer .footer-contact > div:not(.expanded) .footer-about > div, footer .footer-about > div:not(.expanded) .footer-about > div {
+  .row:not(.expanded) .row, footer .block-tec-footercontact > div:not(.expanded) .row, footer .block-tec-footerabout > div:not(.expanded) .row, .row:not(.expanded) footer .block-tec-footercontact > div, footer .row:not(.expanded) .block-tec-footercontact > div, footer .block-tec-footercontact > div:not(.expanded) .block-tec-footercontact > div, footer .block-tec-footerabout > div:not(.expanded) .block-tec-footercontact > div, .row:not(.expanded) footer .block-tec-footerabout > div, footer .row:not(.expanded) .block-tec-footerabout > div, footer .block-tec-footercontact > div:not(.expanded) .block-tec-footerabout > div, footer .block-tec-footerabout > div:not(.expanded) .block-tec-footerabout > div {
     max-width: none; }
-  .row.gutter-small > .column, footer .footer-contact > div.gutter-small > .column, footer .footer-about > div.gutter-small > .column, .row.gutter-small > .columns, footer .footer-contact > div.gutter-small > .columns, footer .footer-about > div.gutter-small > .columns {
+  .row.gutter-small > .column, footer .block-tec-footercontact > div.gutter-small > .column, footer .block-tec-footerabout > div.gutter-small > .column, .row.gutter-small > .columns, footer .block-tec-footercontact > div.gutter-small > .columns, footer .block-tec-footerabout > div.gutter-small > .columns {
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
-  .row.gutter-medium > .column, footer .footer-contact > div.gutter-medium > .column, footer .footer-about > div.gutter-medium > .column, .row.gutter-medium > .columns, footer .footer-contact > div.gutter-medium > .columns, footer .footer-about > div.gutter-medium > .columns {
+  .row.gutter-medium > .column, footer .block-tec-footercontact > div.gutter-medium > .column, footer .block-tec-footerabout > div.gutter-medium > .column, .row.gutter-medium > .columns, footer .block-tec-footercontact > div.gutter-medium > .columns, footer .block-tec-footerabout > div.gutter-medium > .columns {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; }
 
@@ -588,10 +588,10 @@ textarea {
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
     float: left; }
 
-.column.row.row, .row.row.columns, footer .footer-contact > div.columns, footer .footer-about > div.columns, footer .footer-contact > div.column, footer .footer-about > div.column {
+.column.row.row, .row.row.columns, footer .block-tec-footercontact > div.columns, footer .block-tec-footerabout > div.columns, footer .block-tec-footercontact > div.column, footer .block-tec-footerabout > div.column {
   float: none; }
 
-.row .column.row.row, footer .footer-contact > div .column.row.row, footer .footer-about > div .column.row.row, .row .row.row.columns, footer .footer-contact > div .row.row.columns, footer .footer-about > div .row.row.columns, .row footer .footer-contact > div.columns, footer .row .footer-contact > div.columns, footer .footer-contact > div .footer-contact > div.columns, footer .footer-about > div .footer-contact > div.columns, .row footer .footer-about > div.columns, footer .row .footer-about > div.columns, footer .footer-contact > div .footer-about > div.columns, footer .footer-about > div .footer-about > div.columns, .row footer .footer-contact > div.column, footer .row .footer-contact > div.column, footer .footer-contact > div .footer-contact > div.column, footer .footer-about > div .footer-contact > div.column, .row footer .footer-about > div.column, footer .row .footer-about > div.column, footer .footer-contact > div .footer-about > div.column, footer .footer-about > div .footer-about > div.column {
+.row .column.row.row, footer .block-tec-footercontact > div .column.row.row, footer .block-tec-footerabout > div .column.row.row, .row .row.row.columns, footer .block-tec-footercontact > div .row.row.columns, footer .block-tec-footerabout > div .row.row.columns, .row footer .block-tec-footercontact > div.columns, footer .row .block-tec-footercontact > div.columns, footer .block-tec-footercontact > div .block-tec-footercontact > div.columns, footer .block-tec-footerabout > div .block-tec-footercontact > div.columns, .row footer .block-tec-footerabout > div.columns, footer .row .block-tec-footerabout > div.columns, footer .block-tec-footercontact > div .block-tec-footerabout > div.columns, footer .block-tec-footerabout > div .block-tec-footerabout > div.columns, .row footer .block-tec-footercontact > div.column, footer .row .block-tec-footercontact > div.column, footer .block-tec-footercontact > div .block-tec-footercontact > div.column, footer .block-tec-footerabout > div .block-tec-footercontact > div.column, .row footer .block-tec-footerabout > div.column, footer .row .block-tec-footerabout > div.column, footer .block-tec-footercontact > div .block-tec-footerabout > div.column, footer .block-tec-footerabout > div .block-tec-footerabout > div.column {
   margin-right: 0;
   margin-left: 0;
   padding-right: 0;
@@ -841,11 +841,11 @@ textarea {
   padding-right: 0;
   padding-left: 0; }
 
-.small-collapse .row, .small-collapse footer .footer-contact > div, footer .small-collapse .footer-contact > div, .small-collapse footer .footer-about > div, footer .small-collapse .footer-about > div {
+.small-collapse .row, .small-collapse footer .block-tec-footercontact > div, footer .small-collapse .block-tec-footercontact > div, .small-collapse footer .block-tec-footerabout > div, footer .small-collapse .block-tec-footerabout > div {
   margin-right: 0;
   margin-left: 0; }
 
-.expanded.row .small-collapse.row, footer .footer-contact > div.expanded .small-collapse.row, footer .footer-about > div.expanded .small-collapse.row, .expanded.row footer .footer-contact > div.small-collapse, footer .expanded.row .footer-contact > div.small-collapse, footer .footer-contact > div.expanded .footer-contact > div.small-collapse, footer .footer-about > div.expanded .footer-contact > div.small-collapse, .expanded.row footer .footer-about > div.small-collapse, footer .expanded.row .footer-about > div.small-collapse, footer .footer-contact > div.expanded .footer-about > div.small-collapse, footer .footer-about > div.expanded .footer-about > div.small-collapse {
+.expanded.row .small-collapse.row, footer .block-tec-footercontact > div.expanded .small-collapse.row, footer .block-tec-footerabout > div.expanded .small-collapse.row, .expanded.row footer .block-tec-footercontact > div.small-collapse, footer .expanded.row .block-tec-footercontact > div.small-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footercontact > div.small-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footercontact > div.small-collapse, .expanded.row footer .block-tec-footerabout > div.small-collapse, footer .expanded.row .block-tec-footerabout > div.small-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footerabout > div.small-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footerabout > div.small-collapse {
   margin-right: 0;
   margin-left: 0; }
 
@@ -1058,10 +1058,10 @@ textarea {
   .medium-collapse > .column, .medium-collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .medium-collapse .row, .medium-collapse footer .footer-contact > div, footer .medium-collapse .footer-contact > div, .medium-collapse footer .footer-about > div, footer .medium-collapse .footer-about > div {
+  .medium-collapse .row, .medium-collapse footer .block-tec-footercontact > div, footer .medium-collapse .block-tec-footercontact > div, .medium-collapse footer .block-tec-footerabout > div, footer .medium-collapse .block-tec-footerabout > div {
     margin-right: 0;
     margin-left: 0; }
-  .expanded.row .medium-collapse.row, footer .footer-contact > div.expanded .medium-collapse.row, footer .footer-about > div.expanded .medium-collapse.row, .expanded.row footer .footer-contact > div.medium-collapse, footer .expanded.row .footer-contact > div.medium-collapse, footer .footer-contact > div.expanded .footer-contact > div.medium-collapse, footer .footer-about > div.expanded .footer-contact > div.medium-collapse, .expanded.row footer .footer-about > div.medium-collapse, footer .expanded.row .footer-about > div.medium-collapse, footer .footer-contact > div.expanded .footer-about > div.medium-collapse, footer .footer-about > div.expanded .footer-about > div.medium-collapse {
+  .expanded.row .medium-collapse.row, footer .block-tec-footercontact > div.expanded .medium-collapse.row, footer .block-tec-footerabout > div.expanded .medium-collapse.row, .expanded.row footer .block-tec-footercontact > div.medium-collapse, footer .expanded.row .block-tec-footercontact > div.medium-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footercontact > div.medium-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footercontact > div.medium-collapse, .expanded.row footer .block-tec-footerabout > div.medium-collapse, footer .expanded.row .block-tec-footerabout > div.medium-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footerabout > div.medium-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footerabout > div.medium-collapse {
     margin-right: 0;
     margin-left: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
@@ -1271,10 +1271,10 @@ textarea {
   .large-collapse > .column, .large-collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .large-collapse .row, .large-collapse footer .footer-contact > div, footer .large-collapse .footer-contact > div, .large-collapse footer .footer-about > div, footer .large-collapse .footer-about > div {
+  .large-collapse .row, .large-collapse footer .block-tec-footercontact > div, footer .large-collapse .block-tec-footercontact > div, .large-collapse footer .block-tec-footerabout > div, footer .large-collapse .block-tec-footerabout > div {
     margin-right: 0;
     margin-left: 0; }
-  .expanded.row .large-collapse.row, footer .footer-contact > div.expanded .large-collapse.row, footer .footer-about > div.expanded .large-collapse.row, .expanded.row footer .footer-contact > div.large-collapse, footer .expanded.row .footer-contact > div.large-collapse, footer .footer-contact > div.expanded .footer-contact > div.large-collapse, footer .footer-about > div.expanded .footer-contact > div.large-collapse, .expanded.row footer .footer-about > div.large-collapse, footer .expanded.row .footer-about > div.large-collapse, footer .footer-contact > div.expanded .footer-about > div.large-collapse, footer .footer-about > div.expanded .footer-about > div.large-collapse {
+  .expanded.row .large-collapse.row, footer .block-tec-footercontact > div.expanded .large-collapse.row, footer .block-tec-footerabout > div.expanded .large-collapse.row, .expanded.row footer .block-tec-footercontact > div.large-collapse, footer .expanded.row .block-tec-footercontact > div.large-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footercontact > div.large-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footercontact > div.large-collapse, .expanded.row footer .block-tec-footerabout > div.large-collapse, footer .expanded.row .block-tec-footerabout > div.large-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footerabout > div.large-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footerabout > div.large-collapse {
     margin-right: 0;
     margin-left: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
@@ -1484,10 +1484,10 @@ textarea {
   .xlarge-collapse > .column, .xlarge-collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .xlarge-collapse .row, .xlarge-collapse footer .footer-contact > div, footer .xlarge-collapse .footer-contact > div, .xlarge-collapse footer .footer-about > div, footer .xlarge-collapse .footer-about > div {
+  .xlarge-collapse .row, .xlarge-collapse footer .block-tec-footercontact > div, footer .xlarge-collapse .block-tec-footercontact > div, .xlarge-collapse footer .block-tec-footerabout > div, footer .xlarge-collapse .block-tec-footerabout > div {
     margin-right: 0;
     margin-left: 0; }
-  .expanded.row .xlarge-collapse.row, footer .footer-contact > div.expanded .xlarge-collapse.row, footer .footer-about > div.expanded .xlarge-collapse.row, .expanded.row footer .footer-contact > div.xlarge-collapse, footer .expanded.row .footer-contact > div.xlarge-collapse, footer .footer-contact > div.expanded .footer-contact > div.xlarge-collapse, footer .footer-about > div.expanded .footer-contact > div.xlarge-collapse, .expanded.row footer .footer-about > div.xlarge-collapse, footer .expanded.row .footer-about > div.xlarge-collapse, footer .footer-contact > div.expanded .footer-about > div.xlarge-collapse, footer .footer-about > div.expanded .footer-about > div.xlarge-collapse {
+  .expanded.row .xlarge-collapse.row, footer .block-tec-footercontact > div.expanded .xlarge-collapse.row, footer .block-tec-footerabout > div.expanded .xlarge-collapse.row, .expanded.row footer .block-tec-footercontact > div.xlarge-collapse, footer .expanded.row .block-tec-footercontact > div.xlarge-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footercontact > div.xlarge-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footercontact > div.xlarge-collapse, .expanded.row footer .block-tec-footerabout > div.xlarge-collapse, footer .expanded.row .block-tec-footerabout > div.xlarge-collapse, footer .block-tec-footercontact > div.expanded .block-tec-footerabout > div.xlarge-collapse, footer .block-tec-footerabout > div.expanded .block-tec-footerabout > div.xlarge-collapse {
     margin-right: 0;
     margin-left: 0; }
   .xlarge-uncollapse > .column, .xlarge-uncollapse > .columns {
@@ -5272,7 +5272,7 @@ a.thumbnail {
 .full-width, .node-article .field-name-field-image,
 .node-article .field-name-field-hero-image,
 .node-service .field-name-field-image,
-.node-service .field-name-field-hero-image, .block-region-top {
+.node-service .field-name-field-hero-image, .block-tec-contacthero, .block-region-top {
   width: 100vw;
   left: calc(-50vw + 50%);
   position: relative;
@@ -5498,7 +5498,7 @@ blockquote {
         padding-left: 0; }
   .landing-display-dfs-tec-home .homepage-articles {
     /* Format the title */ }
-    .landing-display-dfs-tec-home .homepage-articles .row, .landing-display-dfs-tec-home .homepage-articles footer .footer-contact > div, footer .landing-display-dfs-tec-home .homepage-articles .footer-contact > div, .landing-display-dfs-tec-home .homepage-articles footer .footer-about > div, footer .landing-display-dfs-tec-home .homepage-articles .footer-about > div {
+    .landing-display-dfs-tec-home .homepage-articles .row, .landing-display-dfs-tec-home .homepage-articles footer .block-tec-footercontact > div, footer .landing-display-dfs-tec-home .homepage-articles .block-tec-footercontact > div, .landing-display-dfs-tec-home .homepage-articles footer .block-tec-footerabout > div, footer .landing-display-dfs-tec-home .homepage-articles .block-tec-footerabout > div {
       margin: 0 auto; }
     .landing-display-dfs-tec-home .homepage-articles .block-title {
       text-align: center;
@@ -5720,7 +5720,7 @@ section[rel~="schema:comment"] .field-items {
       color: #fefefe; }
 
 /* Contact page styles */
-.contact-hero img {
+.block-tec-contacthero img {
   width: 100%; }
 
 #user-logout-wrapper.dropdown-pane {
@@ -5765,56 +5765,56 @@ section[rel~="schema:comment"] .field-items {
 /* Theme for the footer region */
 footer {
   margin-top: 3.125rem; }
-  footer .footer-contact {
+  footer .block-tec-footercontact {
     background-image: url("../images/pattern_1.png");
     min-height: 9.375rem;
     position: relative; }
     @media screen and (min-width: 40em) and (max-width: 56.1875em), screen and (max-width: 39.9375em) {
-      footer .footer-contact {
+      footer .block-tec-footercontact {
         padding: 0.9375rem; } }
-    footer .footer-contact > div {
+    footer .block-tec-footercontact > div {
       /* We have to do this as classes don't work in imports (yet) */ }
     @media screen and (min-width: 56.25em) {
-      footer .footer-contact .field-name-body {
+      footer .block-tec-footercontact .field-name-body {
         position: absolute;
         top: 40%; } }
-    footer .footer-contact .field-item ul {
+    footer .block-tec-footercontact .field-item ul {
       display: inline-block;
       list-style: none;
       margin-right: 1.25rem;
       margin-left: 0; }
-      footer .footer-contact .field-item ul:last-child {
+      footer .block-tec-footercontact .field-item ul:last-child {
         margin-right: 0; }
-      footer .footer-contact .field-item ul li {
+      footer .block-tec-footercontact .field-item ul li {
         display: inline-block;
         text-transform: uppercase;
         color: #224660;
         font-weight: 500; }
-        footer .footer-contact .field-item ul li:last-child {
+        footer .block-tec-footercontact .field-item ul li:last-child {
           padding-left: 1.25rem;
           margin-left: 0.625rem;
           background: transparent url("../images/contact_dot.png") no-repeat left center; }
-  footer .footer-about {
+  footer .block-tec-footerabout {
     background-color: #224660;
     color: #fefefe;
     border-color: #fefefe;
     position: relative;
     /* We have to do this as classes don't work in imports (yet) */ }
-    footer .footer-about section {
+    footer .block-tec-footerabout section {
       display: inline-block;
       max-width: 25rem;
       vertical-align: top;
       margin: 2.5rem; }
-      footer .footer-about section h4 {
+      footer .block-tec-footerabout section h4 {
         color: #fefefe;
         text-transform: uppercase;
         font-size: 1rem;
         border-bottom: 0.1875rem solid;
         padding: 0 1.25rem 0.625rem 0;
         display: inline-block; }
-      footer .footer-about section b {
+      footer .block-tec-footerabout section b {
         text-transform: uppercase; }
-      footer .footer-about section br {
+      footer .block-tec-footerabout section br {
         padding-bottom: 1.25rem; }
 
 /* Theme for the static bottom/copyright area */
@@ -5824,7 +5824,7 @@ footer {
   text-transform: uppercase; }
   .bottom-bar .columns {
     padding: 0; }
-  .bottom-bar .row, .bottom-bar footer .footer-contact > div, footer .bottom-bar .footer-contact > div, .bottom-bar footer .footer-about > div, footer .bottom-bar .footer-about > div {
+  .bottom-bar .row, .bottom-bar footer .block-tec-footercontact > div, footer .bottom-bar .block-tec-footercontact > div, .bottom-bar footer .block-tec-footerabout > div, footer .bottom-bar .block-tec-footerabout > div {
     margin: 1.5625rem auto 1.5625rem auto; }
   .bottom-bar .bottom-copyright {
     vertical-align: middle;

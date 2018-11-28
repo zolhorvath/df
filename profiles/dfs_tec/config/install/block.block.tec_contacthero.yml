@@ -5,14 +5,10 @@ dependencies:
   content:
     - 'block_content:basic:dae3d171-0009-4e45-ad00-feba17b0ccfe'
   module:
-    - block_class
     - block_content
     - system
   theme:
     - tec
-third_party_settings:
-  block_class:
-    classes: 'full-width contact-hero'
 id: tec_contacthero
 theme: tec
 region: header

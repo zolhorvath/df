@@ -27,7 +27,7 @@ variant_settings:
         max_age: '-1'
       region: secondary
       weight: '-9'
-      classes: services-view
+      css_classes: services-view
       uuid: 1c54b14b-2113-4fa5-a300-d6039706b2e0
       context_mapping: {  }
     40e281d4-b882-4b4a-9a01-1e624a39949e:
@@ -42,7 +42,7 @@ variant_settings:
         max_age: '-1'
       region: secondary
       weight: '-10'
-      classes: ''
+      css_classes: ''
       uuid: 40e281d4-b882-4b4a-9a01-1e624a39949e
       context_mapping: {  }
   id: landing_display

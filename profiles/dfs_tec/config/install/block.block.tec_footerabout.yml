@@ -5,13 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:b0627432-8487-4844-9434-52c35d3dcbc0'
   module:
-    - block_class
     - block_content
   theme:
     - tec
-third_party_settings:
-  block_class:
-    classes: footer-about
 id: tec_footerabout
 theme: tec
 region: footer
