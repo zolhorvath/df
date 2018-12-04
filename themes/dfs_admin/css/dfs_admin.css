@@ -196,6 +196,7 @@ a {
   background-color: #168ec4;
 }
 
+/* Color Preview*/
 .btn.color-preview-preview {
   margin: 10px 0;
 }
@@ -203,8 +204,13 @@ a {
 .btn.color-preview-preview:hover {
   text-decoration: none;
 }
-.color-preview {
-  display: none;
+
+.color-preview.ui-dialog-content {
+  padding: 0;
+}
+
+.color-preview a:focus {
+  outline: none;
 }
 
 /* Fixes for Font Your Face*/

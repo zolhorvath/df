@@ -235,7 +235,7 @@
         "drupal/ip_anon": "1.2",
         "drupal/lite": "1.4.0",
         "drupal/mailsystem": "4.1.0",
-        "drupal/material_admin": "^1.0",
+        "drupal/material_admin": "1.0.0-alpha6",
         "drupal/material_admin_support": "1.x-dev",
         "drupal/media_acquiadam": "1.32.0",
         "drupal/media_entity_video": "2.0.0-alpha1",
