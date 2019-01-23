@@ -2075,7 +2075,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.51",
-                    "datestamp": "1544619185",
+                    "datestamp": "1548245280",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2146,7 +2146,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.51",
-                    "datestamp": "1544619185",
+                    "datestamp": "1548245280",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2212,7 +2212,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.51",
-                    "datestamp": "1544619185",
+                    "datestamp": "1548245280",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2277,7 +2277,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.51",
-                    "datestamp": "1544619185",
+                    "datestamp": "1548245280",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5816,7 +5816,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta21",
-                    "datestamp": "1545528484",
+                    "datestamp": "1548201484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6222,7 +6222,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.6",
-                    "datestamp": "1547668680",
+                    "datestamp": "1547669623",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18507,12 +18507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "5a5c157159845202f941985b076cb4b1444a4d0a"
+                "reference": "96515b7f6b62029b0c8e1049884a6ab59eb43290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=5a5c157159845202f941985b076cb4b1444a4d0a",
-                "reference": "5a5c157159845202f941985b076cb4b1444a4d0a",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=96515b7f6b62029b0c8e1049884a6ab59eb43290",
+                "reference": "96515b7f6b62029b0c8e1049884a6ab59eb43290",
                 "shasum": ""
             },
             "require": {
@@ -18563,7 +18563,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2019-01-21T18:20:13+00:00"
+            "time": "2019-01-22T19:37:58+00:00"
         }
     ],
     "aliases": [
