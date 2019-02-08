@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cebbdd095ff017f5428431574ec7db72",
+    "content-hash": "d9814fdef36fe2f82412aeda439095bd",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -3012,6 +3012,77 @@
                 "source": "https://cgit.drupalcode.org/block_class",
                 "issues": "https://www.drupal.org/project/issues/block_class",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/cog",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/cog",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "3eaa27fc8e4aa9cf1249f49d941ee34d8dc75e1a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1516296784",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aellison",
+                    "homepage": "https://www.drupal.org/user/277818"
+                },
+                {
+                    "name": "elm45",
+                    "homepage": "https://www.drupal.org/user/805178"
+                },
+                {
+                    "name": "grasmash",
+                    "homepage": "https://www.drupal.org/user/455714"
+                },
+                {
+                    "name": "jenter",
+                    "homepage": "https://www.drupal.org/user/186584"
+                },
+                {
+                    "name": "littlekope0903",
+                    "homepage": "https://www.drupal.org/user/2867321"
+                },
+                {
+                    "name": "sarahjean",
+                    "homepage": "https://www.drupal.org/user/553728"
+                }
+            ],
+            "description": "Acquia maintained starter theme.",
+            "homepage": "https://github.com/acquia-pso/cog",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/acquia-pso/cog",
+                "issues": "https://github.com/acquia-pso/cog/issues"
             }
         },
         {
@@ -8111,11 +8182,17 @@
         },
         {
             "name": "drupal/page_manager",
-            "version": "dev-4.x",
+            "version": "4.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/page_manager",
-                "reference": "d99c1507907cda8940accd33fd016ef496e49876"
+                "reference": "8.x-4.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-4.0-beta3.zip",
+                "reference": "8.x-4.0-beta3",
+                "shasum": "d4776dd32ca34f647bf7f2cfb1acf4800646e231"
             },
             "require": {
                 "drupal/core": "^8.0.5",
@@ -8127,15 +8204,12 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3+0-dev",
+                    "version": "8.x-4.0-beta3",
                     "datestamp": "1523670484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": {
-                    "Custom attributes in blocks | https://www.drupal.org/node/2710169": "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8167,8 +8241,7 @@
                 "source": "https://git.drupal.org/project/page_manager.git",
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2018-04-14T01:41:41+00:00"
+            }
         },
         {
             "name": "drupal/panels",
@@ -8203,13 +8276,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Remove hard-coded 'Custom' category from AppView.js | https://www.drupal.org/node/2839992": "https://www.drupal.org/files/issues/panels-ipe-remove-activeclick.patch",
-                    "Panels IPE won't animate the \"Toggle Preview\" effect if additional form classes are added by a theme | https://www.drupal.org/node/2847503": "https://www.drupal.org/files/issues/panels-ipe-improve-flipper-logic.patch",
-                    "Complex Block Plugin forms lead to incorrect temp store IDs in PanelsIPEBlockPluginForm | https://www.drupal.org/node/2875425": "https://www.drupal.org/files/issues/panels-ipe-cache-temp-store-id.patch",
-                    "Search inside IPE no longer works and splits out Uncaught TypeError: Cannot read property 'toLowerCase' | https://www.drupal.org/project/panels/issues/2824508": "https://www.drupal.org/files/issues/panels-ipe-search-2824508-8.patch",
-                    "Custom attributes in panels blocks and variants | https://www.drupal.org/node/2849867": "https://www.drupal.org/files/issues/2018-10-20/panels_custom_attributes_in_panels_blocks-2849867-46.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10102,74 +10168,6 @@
             "homepage": "https://www.drupal.org/project/workbench_email",
             "support": {
                 "source": "http://cgit.drupalcode.org/workbench_email"
-            }
-        },
-        {
-            "name": "drupal/zurb_foundation",
-            "version": "6.0.0-alpha4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/zurb-foundation",
-                "reference": "8.x-6.0-alpha4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/zurb_foundation-8.x-6.0-alpha4.zip",
-                "reference": "8.x-6.0-alpha4",
-                "shasum": "1b28e6ae277f0e9bc2022891aa277c5fcad425e4"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-6.x": "6.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-6.0-alpha4",
-                    "datestamp": "1521471833",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                },
-                "patches_applied": {
-                    "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479": "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Quillen (kevinquillen)",
-                    "homepage": "https://www.drupal.org/u/kevinquillen",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Samuel Mortensen (samuelmortenson)",
-                    "homepage": "https://www.drupal.org/u/samuelmortenson",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "HongPong",
-                    "homepage": "https://www.drupal.org/user/60005"
-                },
-                {
-                    "name": "kevinquillen",
-                    "homepage": "https://www.drupal.org/user/317279"
-                }
-            ],
-            "description": "Base Drupal theme based on Zurb Foundation 6.x.",
-            "homepage": "http://drupal.org/project/zurb_foundation",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/zurb_foundation",
-                "issues": "http://drupal.org/project/issues/zurb_foundation"
             }
         },
         {
