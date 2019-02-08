@@ -13,14 +13,13 @@ dependencies:
   - df_core
   - google_analytics
   - material_admin_support
-  - panels_ipe
   - pathauto
   - scenarios
   - syslog
   - tour
 themes:
-  - dfs_base
   - dfs_admin
+  - dfs_one
 exclude:
   - lightning_api
   - lightning_contact_form
