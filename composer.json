@@ -169,9 +169,6 @@
               "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
 
             },
-            "drupal/zurb_foundation": {
-                "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479": "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
-            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879": "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
@@ -259,7 +256,6 @@
         "drupal/webform": "5.1.0",
         "drupal/webform_views": "5.0.0-alpha6",
         "drupal/workbench_email": "1.0",
-        "drupal/zurb_foundation": "6.0.0-alpha4",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.x-dev as 1.6.5",
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
