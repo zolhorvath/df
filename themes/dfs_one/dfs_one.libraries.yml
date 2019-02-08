@@ -1,0 +1,21 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/dfs_one-main.css: {}
+      css/dfs_one-colors.css: {}
+
+pickadate:
+  version: VERSION
+  css:
+    theme:
+      css/datepicker/default.css: {}
+      css/datepicker/default.date.css: {}
+      css/datepicker/default.time.css: {}
+  js:
+    js/datepicker/picker.js: {}
+    js/datepicker/picker.date.js: {}
+    js/datepicker/picker.time.js: {}
+    js/datepicker/picker.init.js: {}
+  dependencies:
+    - core/jquery

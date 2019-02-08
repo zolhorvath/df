@@ -1,0 +1,14 @@
+name: DFS One - Demo Framework Scenairo
+description: "Acquia - Demo Framework Scenario Theme for DFS One"
+core: 8.x
+type: theme
+base theme: cog
+
+# Image appears on admin/appearance
+screenshot: images/screenshot.jpg
+
+libraries:
+ - dfs_one/global
+
+ckeditor_stylesheets:
+ - dfs_one/dfs_one-main.css
