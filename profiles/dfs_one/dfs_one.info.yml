@@ -1,0 +1,15 @@
+name: 'DFS One'
+type: profile
+description: 'Demo Framework Scenario for One.'
+core: 8.x
+package: 'Demo Framework Scenarios'
+'base profile': df
+themes:
+  - dfs_one
+exclude:
+  - lightning_api
+  - lightning_contact_form
+  - lightning_preview
+  - lightning_roles
+  - bartik
+  - seven
