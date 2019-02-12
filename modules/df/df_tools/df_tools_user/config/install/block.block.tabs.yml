@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - zurb_foundation
+    - dfs_one
 id: tabs
-theme: zurb_foundation
-region: content
-weight: -4
+theme: dfs_one
+region: sidebar_first
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
