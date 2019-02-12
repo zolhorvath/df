@@ -1,42 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.layout_builder__layout
+    - field.field.node.landing_page.layout_selection
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - metatag
+    - user
 third_party_settings:
-  panelizer:
-    enable: true
-    custom: true
-    ipe_always_custom: true
-    displays:
-      default:
-        blocks:
-          bc396094-60e7-49da-8b05-5fa3d0eb4083:
-            id: 'entity_field:node:title'
-            label: Title
-            provider: ctools_block
-            label_display: '0'
-            formatter:
-              label: hidden
-              type: string
-              settings:
-                link_to_entity: false
-              third_party_settings: {  }
-              weight: 0
-            context_mapping:
-              entity: '@panelizer.entity_context:entity'
-            region: middle
-            uuid: bc396094-60e7-49da-8b05-5fa3d0eb4083
-            weight: 1
-        id: panels_variant
-        uuid: 66454ba9-dca2-4264-bd09-9beeb133bd80
-        label: ''
-        weight: 0
-        layout: foundation_1col
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
         layout_settings: {  }
-        page_title: '[node:title]'
-        storage_type: panelizer_default
-        storage_id: 'node:landing_page:full:default'
-        pattern: panelizer
-        builder: ipe
+        components:
+          e7257fd8-9a0a-4977-bf82-9d0f14b3c64e:
+            uuid: e7257fd8-9a0a-4977-bf82-9d0f14b3c64e
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
 content:
-  content_moderation_control:
-    weight: -20
+  field_meta_tags:
+    type: metatag_empty_formatter
+    region: content
+    weight: 1
+    label: above
     settings: {  }
     third_party_settings: {  }
-    region: content
+hidden:
+  addtoany: true
+  body: true
+  content_moderation_control: true
+  langcode: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true

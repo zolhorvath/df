@@ -14,6 +14,7 @@ dependencies:
   - df_tools_layout
   - df_tools_translation
   - content_browser
+  - field_layout
   - image
   - link
   - inline_entity_form
@@ -21,7 +22,6 @@ dependencies:
   - metatag
   - node
   - pathauto
-  - panelizer
   - replicate_ui
   - text
   - taxonomy

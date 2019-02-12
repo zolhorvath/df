@@ -1,22 +1,21 @@
-uuid: e12bccd0-689d-46c2-8b41-2dd941a54471
+uuid: 051dfb89-31a5-45b8-9c7d-294ac9aa53b9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.panelizer
+    - field.storage.node.layout_builder__layout
     - node.type.article
   module:
-    - panelizer
-id: node.article.panelizer
-field_name: panelizer
+    - layout_builder
+id: node.article.layout_builder__layout
+field_name: layout_builder__layout
 entity_type: node
 bundle: article
-label: Panelizer
+label: Layout
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: panelizer
-
+field_type: layout_section
