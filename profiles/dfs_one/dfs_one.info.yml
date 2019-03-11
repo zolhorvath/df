@@ -10,6 +10,7 @@ dependencies:
   - df_tools_card
   - df_tools_cache
   - df_tools_config
+  - df_tools_content
   - df_tools_display
   - df_tools_editor
   - df_tools_frontend
