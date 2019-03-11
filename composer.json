@@ -106,7 +106,9 @@
                 "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247":
                 "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
                 "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691":
-                "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch"
+                "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
+                "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975":
+                "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
