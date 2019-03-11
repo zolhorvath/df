@@ -127,6 +127,9 @@
             "drupal/ctools": {
                 "Avoid unserialization of blockPluginCollection in BlockDisplayVariant. | https://www.drupal.org/node/2831521": "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
             },
+            "drupal/default_content_deploy": {
+                "Set content directory from the UI. | https://www.drupal.org/node/303830": "https://www.drupal.org/files/issues/2019-03-07/set-content-directory-from-the-ui-3038303-2-dcd-1.0-alpha6.patch"
+            },
             "drupal/entity_block": {
                 "Add UUID support. | http://drupal.org/node/2834377": "https://www.drupal.org/files/issues/2018-03-12/add-uuid-support-2834377-3.patch"
             },
