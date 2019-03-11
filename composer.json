@@ -82,10 +82,6 @@
         },
         "enable-patching": true,
         "patches": {
-            "acquia/lightning": {
-                "Move common configuration from profile into lightning_common module | https://drupal.org/node/3012138":
-                "https://www.drupal.org/files/issues/2018-11-07/lightning-common-config-remove-0.patch"
-            },
             "drupal/core": {
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
                 "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
@@ -171,8 +167,10 @@
             }
         },
         "patches-ignore": {
-            "drupal/core": {
-                "2986394 - Backport Layout Builder to 8.6.x": "https://www.drupal.org/files/issues/2019-02-14/2986394-15-layout_builder--8.6.9--with-3008431-and-3016458-and-2955065.patch"
+            "drupal/lightning_layout": {
+              "drupal/core": {
+                  "2986394 - Backport Layout Builder to 8.6.x": "https://www.drupal.org/files/issues/2019-02-14/2986394-15-layout_builder--8.6.9--with-3008431-and-3016458-and-2955065.patch"
+              }
             },
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
