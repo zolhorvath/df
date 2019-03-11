@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Set up the One Scenario.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function dfs_one_install() {
+    // Set front page to "home".
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/home')->save(TRUE);
+}
