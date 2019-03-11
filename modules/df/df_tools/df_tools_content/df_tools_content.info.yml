@@ -1,0 +1,11 @@
+name: DF Tools Content
+type: module
+description: Provides content for Demo Framework.
+core: 8.x
+package: Demo Framework Tools
+dependencies:
+  - better_normalizers
+  - default_content
+  - default_content_deploy
+  - hal
+  - serialization
