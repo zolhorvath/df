@@ -207,6 +207,8 @@
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha4",
         "drupal/custom_body_class": "1.2.0",
+        "drupal/default_content": "1.0.0-alpha7",
+        "drupal/default_content_deploy": "1.0.0-alpha6",
         "drupal/entity_gallery": "1.x-dev",
         "drupal/entity_usage": "2.0.0-alpha2",
         "drupal/eu_cookie_compliance": "1.2.0",
