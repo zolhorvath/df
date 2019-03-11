@@ -1,0 +1,94 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/tags\/demo?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f34edd9c-a11f-46cb-bcc0-edfbca1af9d5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "tags"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "demo",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "value": "A Drupal demo.",
+            "format": null,
+            "processed": "<p>A Drupal demo.<\/p>\n",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/tags\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2019-03-08T18:59:35+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "demo | Drush Site-Install",
+                "canonical_url": "http:\/\/default\/tags\/demo",
+                "description": "A Drupal demo."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/tags\/demo",
+            "pid": 2,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/home?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "84d1d49f-1716-404b-ab31-e871bb910857"
+        }
+    ],
+    "vid": [
+        {
+            "value": 14
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "landing_page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-03-11T15:33:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Used the Moderation Sidebar to change the state to \"Published\"."
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Home",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-11T12:27:09+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-03-11T15:33:46+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published",
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Home | Drush Site-Install",
+                "canonical_url": "http:\/\/default\/home"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/home",
+            "pid": 1,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "layout_builder__layout": [
+        {
+            "section": {
+                "layout_id": "layout_onecol",
+                "layout_settings": [],
+                "components": {
+                    "2bc3eaae-8648-40cf-b2ab-4fca411da649": {
+                        "uuid": "2bc3eaae-8648-40cf-b2ab-4fca411da649",
+                        "region": "content",
+                        "configuration": {
+                            "id": "inline_block:media_slideshow",
+                            "label": "Example Slideshow",
+                            "provider": "layout_builder",
+                            "label_display": 0,
+                            "view_mode": "full",
+                            "block_revision_id": "7",
+                            "block_serialized": null,
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    }
+                }
+            },
+            "lang": "en"
+        },
+        {
+            "section": {
+                "layout_id": "layout_twocol_section",
+                "layout_settings": {
+                    "column_widths": "50-50"
+                },
+                "components": {
+                    "9928490b-2c72-4ea1-9b2f-88326d15328c": {
+                        "uuid": "9928490b-2c72-4ea1-9b2f-88326d15328c",
+                        "region": "first",
+                        "configuration": {
+                            "id": "inline_block:map",
+                            "label": "Colosseum",
+                            "provider": "layout_builder",
+                            "label_display": 0,
+                            "view_mode": "full",
+                            "block_revision_id": "8",
+                            "block_serialized": null,
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    },
+                    "1b2d68af-9867-4f18-bfc4-394e8c011dbd": {
+                        "uuid": "1b2d68af-9867-4f18-bfc4-394e8c011dbd",
+                        "region": "second",
+                        "configuration": {
+                            "id": "inline_block:basic",
+                            "label": "Happy Text",
+                            "provider": "layout_builder",
+                            "label_display": "visible",
+                            "view_mode": "full",
+                            "block_revision_id": "12",
+                            "block_serialized": null,
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    }
+                }
+            },
+            "lang": "en"
+        }
+    ]
+}
