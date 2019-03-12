@@ -1,10 +1,10 @@
 default:
   suites:
     default:
+      contexts:
+        - '\Drupal\DrupalExtension\Context\DrupalContext'
+        - '\Drupal\DrupalExtension\Context\MinkContext'
+        - '\Drupal\DrupalExtension\Context\MessageContext'
+        - '\Drupal\Tests\lightning_core\FixtureContext'
       paths:
         - '%paths.base%/features'
-  extensions:
-    'Drupal\DrupalExtension':
-      subcontexts:
-        paths:
-          - '%paths.base%/features/bootstrap'
