@@ -1,5 +1,0 @@
-services:
-  df_tools_panelizer.commands:
-    class: \Drupal\df_tools_panelizer\Commands\DfToolsPanelizerCommands
-    tags:
-      - { name: drush.command }
