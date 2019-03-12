@@ -12,12 +12,10 @@ Feature: Content creator user
   Scenario: Content creators should be able to view lists of site content
     Given I am logged in as a user with the "creator" role
     When I visit "/admin/content"
-    And I should see the page title "Content"
     Then the response status code should be 200
 
   @360d4f13
   Scenario: Content creators should be able to view lists of site media
     Given I am logged in as a user with the "creator" role
     When I visit "/admin/content/media"
-    And I should see the page title "Media"
     Then the response status code should be 200
