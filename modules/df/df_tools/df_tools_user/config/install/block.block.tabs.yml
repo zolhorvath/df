@@ -4,10 +4,10 @@ dependencies:
   module:
     - system
   theme:
-    - dfs_one
+    - one
 id: tabs
-theme: dfs_one
-region: sidebar_first
+theme: one
+region: content
 weight: 0
 provider: null
 plugin: local_tasks_block

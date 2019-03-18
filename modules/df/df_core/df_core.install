@@ -13,7 +13,7 @@ function df_core_install() {
   // This makes the theme a hard requirement, however, modules are unable to
   // specify a theme as a dependency. All DF modules rely on df_core so enabling
   // it here guarantees it is available.
-  \Drupal::service('theme_installer')->install(array('dfs_one'), TRUE);
+  \Drupal::service('theme_installer')->install(array('one'), TRUE);
 
   // Create the rebuild.dat file to trigger a menu router rebuild on first use.
   $rebuild_path = 'public:///rebuild.dat';

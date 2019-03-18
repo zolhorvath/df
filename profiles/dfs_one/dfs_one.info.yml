@@ -28,7 +28,7 @@ dependencies:
   - df_tools_user
   - df_tools_workflow
 themes:
-  - dfs_one
+  - one
 exclude:
   - lightning_api
   - lightning_contact_form

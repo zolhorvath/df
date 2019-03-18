@@ -8,6 +8,7 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - adminimal_admin_toolbar
+  - components
   - contact
   - config_update
   - df_core
@@ -19,7 +20,7 @@ dependencies:
   - tour
 themes:
   - dfs_admin
-  - dfs_one
+  - one
 exclude:
   - lightning_api
   - lightning_contact_form
