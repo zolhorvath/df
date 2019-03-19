@@ -1,0 +1,12 @@
+/*
+ * @file
+ * Provides the layout styles for df_tools_layouts.
+ */
+
+.df-layout {
+  overflow: hidden;
+}
+.df-layout .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
