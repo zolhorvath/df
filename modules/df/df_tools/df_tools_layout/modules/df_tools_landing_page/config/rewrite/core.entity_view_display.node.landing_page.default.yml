@@ -1,3 +1,4 @@
+config_rewrite: replace
 langcode: en
 status: true
 dependencies:
@@ -39,6 +40,17 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+  layout_library:
+    enable: true
+  layout_builder_restrictions:
+    allowed_blocks: {  }
+    allowed_layouts:
+      - layouts_12
+      - layouts_6_6
+      - layouts_4_8
+      - layouts_8_4
+      - layouts_3_6_3
+      - layouts_3-3-3-3
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
