@@ -19,7 +19,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_image": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/magic_0_3.png",
+                "href": "http:\/\/default\/sites\/default\/files\/magic_0.png",
                 "lang": "en"
             }
         ],
@@ -79,7 +79,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                        "value": "dceda62c-f725-405a-847b-7136a14ef0ef"
                     }
                 ]
             }
@@ -96,7 +96,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                        "value": "dceda62c-f725-405a-847b-7136a14ef0ef"
                     }
                 ],
                 "lang": "en"
@@ -106,7 +106,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/magic_0_3.png"
+                        "href": "http:\/\/default\/sites\/default\/files\/magic_0.png"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"

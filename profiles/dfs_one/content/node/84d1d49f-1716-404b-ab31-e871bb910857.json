@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 14
+            "value": 16
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2019-03-11T15:33:46+00:00",
+            "value": "2019-03-19T14:32:01+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                        "value": "dceda62c-f725-405a-847b-7136a14ef0ef"
                     }
                 ]
             }
@@ -80,18 +80,13 @@
                 },
                 "uuid": [
                     {
-                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
+                        "value": "dceda62c-f725-405a-847b-7136a14ef0ef"
                     }
                 ],
                 "lang": "en"
             }
         ]
     },
-    "revision_log": [
-        {
-            "value": "Used the Moderation Sidebar to change the state to \"Published\"."
-        }
-    ],
     "status": [
         {
             "value": true,
@@ -113,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2019-03-11T15:33:46+00:00",
+            "value": "2019-03-19T14:32:01+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -136,12 +131,6 @@
             "lang": "en"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
     "moderation_state": [
         {
             "value": "published",
@@ -151,7 +140,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Home | Drush Site-Install",
+                "title": "Home | One",
                 "canonical_url": "http:\/\/default\/home"
             }
         }
@@ -179,8 +168,11 @@
     "layout_builder__layout": [
         {
             "section": {
-                "layout_id": "layout_onecol",
-                "layout_settings": [],
+                "layout_id": "layouts_12",
+                "layout_settings": {
+                    "class": "",
+                    "full_width": 1
+                },
                 "components": {
                     "2bc3eaae-8648-40cf-b2ab-4fca411da649": {
                         "uuid": "2bc3eaae-8648-40cf-b2ab-4fca411da649",
@@ -204,9 +196,10 @@
         },
         {
             "section": {
-                "layout_id": "layout_twocol_section",
+                "layout_id": "layouts_6_6",
                 "layout_settings": {
-                    "column_widths": "50-50"
+                    "class": "",
+                    "full_width": 0
                 },
                 "components": {
                     "9928490b-2c72-4ea1-9b2f-88326d15328c": {
