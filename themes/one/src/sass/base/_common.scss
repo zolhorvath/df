@@ -1,0 +1,14 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+// %font-FONTNAME   {}
+// %font-sans-serif { font-family: sans-serif; }
+// %font-serif      { font-family: serif; }
+
+.img-thumbnail {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
