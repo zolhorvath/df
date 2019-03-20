@@ -57,14 +57,31 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
     $build['#prefix'] = '<div class="basic-block">';
     $build['#suffix'] = '</div>';
   }
+
   if ($entity->bundle() === 'hero') {
+
+    $hero_alignment = $entity->get('field_hero_alignment')->getString();
+    if (preg_match('/^[a-z_]+$/i', $hero_alignment)) {
+      switch ($hero_alignment) {
+        case 'center':
+          $hero_alignment = 'justify-content-center';
+          break;
+        case 'right':
+          $hero_alignment = 'justify-content-end';
+          break;
+        default:
+          $hero_alignment = 'justify-content-start';
+          break;
+      }
+    }
+
     $wrapper = [
-      '#prefix' => '<div class="full-width-inner">',
-      '#suffix' => '</div>',
+      '#prefix' => '<div class="container"><div class="row ' . $hero_alignment . '">',
+      '#suffix' => '</div></div>',
       '#type' => 'container',
       '#weight' => -1,
       '#attributes' => [
-        'class' => ['hero-block-fields'],
+        'class' => ['hero-block-fields', 'col-md-7', 'col-lg-5'],
       ],
       '#children' => [],
     ];
