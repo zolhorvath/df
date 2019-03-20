@@ -15,6 +15,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-i
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
