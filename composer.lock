@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "146b35f1b6f8acbef0daca13c6e86490",
+    "content-hash": "5efbcaea966d0ecc8f2202366482f13e",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -5359,17 +5359,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "d21bb4a5a497e74d8e9ad7aea28e33ccf67d6533"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "a24c54cd16002a8aa9c81b9693b1990019ec933e"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5391,7 +5391,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
+                    "version": "8.x-2.1",
                     "datestamp": "1549484580",
                     "security-coverage": {
                         "status": "covered",
@@ -5968,17 +5968,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.1.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "d42ce9a1f2bfe4ecfd6f5a0ebdc9c1ec1492c282"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "70ae22535b67a2f0370ec1ad0d7285a4c0528650"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5990,8 +5990,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1550157184",
+                    "version": "8.x-1.4",
+                    "datestamp": "1551757985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
