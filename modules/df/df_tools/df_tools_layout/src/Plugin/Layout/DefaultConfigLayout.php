@@ -13,8 +13,9 @@ class DefaultConfigLayout extends LayoutDefault implements PluginFormInterface {
    */
   public function defaultConfiguration() {
     return [
-      'class' => '',
+      'gap' => 'gap-md',
       'full_width' => FALSE,
+      'class' => '',
     ];
   }
 
@@ -30,15 +31,29 @@ class DefaultConfigLayout extends LayoutDefault implements PluginFormInterface {
    * {@inheritdoc}
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
-    $form['class'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('Extra Classes'),
-      '#default_value' => $this->configuration['class'],
+    $form['gap'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Space between rows'),
+      '#options' => [
+        'gap-0' => $this->t('Zero'),
+        'gap-sm' => $this->t('Small'),
+        'gap-md' => $this->t('Medium'),
+        'gap-lg' => $this->t('Large'),
+        'gap-xl' => $this->t('X-Large'),
+      ],
+      '#default_value' => $this->configuration['gap'],
     ];
+
     $form['full_width'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Full width'),
       '#default_value' => $this->configuration['full_width'],
+    ];
+
+    $form['class'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Extra Classes'),
+      '#default_value' => $this->configuration['class'],
     ];
     return $form;
   }
@@ -47,14 +62,19 @@ class DefaultConfigLayout extends LayoutDefault implements PluginFormInterface {
    * {@inheritdoc}
    */
   public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
+    $class = $form_state->getValue('class');
+    if (!preg_match("/^[a-zA-Z0-9-_]*$/", $class)) {
+      $form_state->setErrorByName('class', $this->t('The class you have provided is invalid.'));
+    }
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
-    $this->configuration['class'] = $form_state->getValue('class');
+    $this->configuration['gap'] = $form_state->getValue('gap');
     $this->configuration['full_width'] = $form_state->getValue('full_width');
+    $this->configuration['class'] = $form_state->getValue('class');
   }
 
 }

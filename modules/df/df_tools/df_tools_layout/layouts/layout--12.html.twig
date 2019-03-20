@@ -14,16 +14,18 @@
 set classes = [
 'df-layout',
 'df-layout--12',
+settings.gap
 ]
 %}
 {% if content %}
     <div{{ attributes.addClass(classes) }}>
         {% if settings.full_width %}
         <div class="container-fluid">
+            <div class="row no-gutters">
         {% else %}
         <div class="container">
-        {% endif %}
             <div class="row">
+        {% endif %}
             {% if content.content %}
                 <div {{ region_attributes.content.addClass('col-sm', 'layout__region', 'layout__region--content') }}>
                     {{ content.content }}
