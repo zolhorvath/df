@@ -52,7 +52,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-03-11T12:28:42+00:00",
+            "value": "2019-03-19T20:41:23+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -103,7 +103,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7399c5bd-ec87-473f-bbc2-4ab64c0f8ef7"
+                        "value": "535ad3a1-8e83-4a68-977a-63279a87f997"
                     }
                 ],
                 "lang": "en"
@@ -160,15 +160,15 @@
     "metatag": [
         {
             "value": {
-                "title": "User | Drush Site-Install",
-                "canonical_url": "http:\/\/default\/user\/login"
+                "title": "| One",
+                "canonical_url": "http:\/\/default\/home"
             }
         }
     ],
     "path": [
         {
             "alias": "\/media\/image\/3",
-            "pid": 8,
+            "pid": 5,
             "langcode": "en",
             "lang": "en"
         }

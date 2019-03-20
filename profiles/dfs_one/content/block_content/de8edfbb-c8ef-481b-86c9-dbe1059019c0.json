@@ -6,12 +6,6 @@
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/media_slideshow"
         },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/field_slideshow_items": [
             {
                 "href": "http:\/\/default\/media\/image\/2?_format=hal_json"
@@ -95,7 +89,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| Drush Site-Install",
+                "title": "| One",
                 "canonical_url": "http:\/\/default\/home"
             }
         }
@@ -112,25 +106,14 @@
             "lang": "en"
         }
     ],
+    "content_translation_created": [
+        {
+            "value": "2019-03-11T12:34:03+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "0ea8e6cc-63be-496e-bc7c-6425a9ddb228"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/field_slideshow_items": [
             {
                 "_links": {
@@ -178,12 +161,5 @@
                 ]
             }
         ]
-    },
-    "content_translation_created": [
-        {
-            "value": "2019-03-11T12:34:03+00:00",
-            "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ]
+    }
 }
