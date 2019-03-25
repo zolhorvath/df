@@ -157,9 +157,6 @@
             "drupal/page_manager": {
               "Custom attributes in blocks | https://www.drupal.org/node/2710169": "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
             },
-            "drupal/radix": {
-              "Update Bootstrap to 4.3.1 | https://www.drupal.org/node/3042502": "https://www.drupal.org/files/issues/2019-03-22/update-bootstrap-to-4.3.1-3042502-2.patch"
-            },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
               "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
@@ -247,7 +244,7 @@
         "drupal/migrate_tools": "4.1.0",
         "drupal/oauth": "2.1.0",
         "drupal/page_manager": "^4.3",
-        "drupal/radix": "4.x-dev",
+        "drupal/radix": "~4.1.0",
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
         "drupal/replicate_ui": "1.x-dev",

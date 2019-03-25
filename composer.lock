@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51d06069717643015380bd0252303513",
+    "content-hash": "92c5770926253739a755804bdfbfe8d1",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -8677,11 +8677,17 @@
         },
         {
             "name": "drupal/radix",
-            "version": "dev-4.x",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/radix",
-                "reference": "93508461a1475a1b73e88ddb101754771a053182"
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "0aeb56e9b9a6c7728b405520744c5c3f65a559db"
             },
             "require": {
                 "drupal/components": "^1.0",
@@ -8693,14 +8699,13 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.1+0-dev",
+                    "version": "8.x-4.1",
                     "datestamp": "1553516884",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -8723,8 +8728,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/radix",
                 "issues": "https://www.drupal.org/project/issues/radix"
-            },
-            "time": "2019-03-25T12:26:34+00:00"
+            }
         },
         {
             "name": "drupal/refreshless",
@@ -19371,7 +19375,6 @@
         "drupal/config_tools": 20,
         "drupal/entity_gallery": 20,
         "drupal/material_admin_support": 20,
-        "drupal/radix": 20,
         "drupal/replicate": 20,
         "drupal/replicate_ui": 20,
         "drupal/scenarios": 20,
