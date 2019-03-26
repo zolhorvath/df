@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/sites\/default\/files\/2019-03\/reginar-103694-unsplash_0.jpg"
+            "href": "http:\/\/default\/sites\/default\/files\/2019-03\/reginar-103694-unsplash.jpg"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -14,12 +14,12 @@
     },
     "fid": [
         {
-            "value": 19
+            "value": 11
         }
     ],
     "uuid": [
         {
-            "value": "009e6a1b-599b-4b41-bd75-44100312cc45"
+            "value": "8333dd12-0717-4d28-bb25-61742119f0c4"
         }
     ],
     "langcode": [
@@ -40,7 +40,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "535ad3a1-8e83-4a68-977a-63279a87f997"
+                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
                     }
                 ]
             }
@@ -53,8 +53,8 @@
     ],
     "uri": [
         {
-            "value": "public:\/\/2019-03\/reginar-103694-unsplash_0.jpg",
-            "url": "\/sites\/default\/files\/2019-03\/reginar-103694-unsplash_0.jpg"
+            "value": "public:\/\/2019-03\/reginar-103694-unsplash.jpg",
+            "url": "\/sites\/default\/files\/2019-03\/reginar-103694-unsplash.jpg"
         }
     ],
     "filemime": [
@@ -74,13 +74,13 @@
     ],
     "created": [
         {
-            "value": "2019-03-11T12:28:42+00:00",
+            "value": "2019-03-25T14:53:55+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-11T12:28:49+00:00",
+            "value": "2019-03-25T14:54:13+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],

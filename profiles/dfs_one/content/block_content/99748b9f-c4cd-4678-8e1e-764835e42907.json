@@ -1,17 +1,11 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/10?_format=hal_json"
+            "href": "http:\/\/default\/block\/1?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero"
         },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
             {
                 "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg",
@@ -21,17 +15,17 @@
     },
     "id": [
         {
-            "value": 10
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "cd9128f7-8d94-4be7-b482-be413330fc7c"
+            "value": "99748b9f-c4cd-4678-8e1e-764835e42907"
         }
     ],
     "revision_id": [
         {
-            "value": 13
+            "value": 4
         }
     ],
     "langcode": [
@@ -47,7 +41,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-03-19T20:47:34+00:00",
+            "value": "2019-03-25T13:18:50+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -59,20 +53,20 @@
     ],
     "info": [
         {
-            "value": "Hero Example",
+            "value": "Colosseum Hero",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-19T20:47:34+00:00",
+            "value": "2019-03-25T13:18:50+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "reusable": [
         {
-            "value": false
+            "value": true
         }
     ],
     "default_langcode": [
@@ -99,51 +93,9 @@
             "lang": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "535ad3a1-8e83-4a68-977a-63279a87f997"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "7897035f-350c-4ca7-815e-49448ff3137b"
-                    }
-                ],
-                "lang": "en",
-                "alt": "",
-                "title": "",
-                "width": "1920",
-                "height": "600"
-            }
-        ]
-    },
     "content_translation_created": [
         {
-            "value": "2019-03-19T20:47:34+00:00",
+            "value": "2019-03-25T13:17:57+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -172,6 +124,30 @@
             "lang": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8adb9ad3-5c6c-49fb-bf37-3e43f2e05c95"
+                    }
+                ],
+                "lang": "en",
+                "alt": "",
+                "title": "",
+                "width": "1920",
+                "height": "600"
+            }
+        ]
+    },
     "field_hero_link": [
         {
             "uri": "internal:\/",

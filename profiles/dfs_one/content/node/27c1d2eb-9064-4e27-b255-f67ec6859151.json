@@ -20,17 +20,17 @@
     },
     "nid": [
         {
-            "value": 5
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "84d1d49f-1716-404b-ab31-e871bb910857"
+            "value": "27c1d2eb-9064-4e27-b255-f67ec6859151"
         }
     ],
     "vid": [
         {
-            "value": 26
+            "value": 2
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2019-03-20T15:13:45+00:00",
+            "value": "2019-03-25T13:27:01+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d8123dd-a546-4eb1-8ac2-059c985810df"
+                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d8123dd-a546-4eb1-8ac2-059c985810df"
+                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
                     }
                 ],
                 "lang": "en"
@@ -101,14 +101,14 @@
     ],
     "created": [
         {
-            "value": "2019-03-11T12:27:09+00:00",
+            "value": "2019-03-25T13:25:21+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-20T15:13:45+00:00",
+            "value": "2019-03-25T13:27:01+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -131,6 +131,12 @@
             "lang": "en"
         }
     ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "moderation_state": [
         {
             "value": "published",
@@ -148,7 +154,7 @@
     "path": [
         {
             "alias": "\/home",
-            "pid": 1,
+            "pid": 5,
             "langcode": "en",
             "lang": "en"
         }
@@ -170,22 +176,22 @@
             "section": {
                 "layout_id": "layouts_12",
                 "layout_settings": {
-                    "class": "",
+                    "gap": "gap-0",
                     "full_width": 1,
-                    "gap": "gap-0"
+                    "class": ""
                 },
                 "components": {
-                    "40129d9c-2ade-4f28-ad9b-9c476df0fcd7": {
-                        "uuid": "40129d9c-2ade-4f28-ad9b-9c476df0fcd7",
+                    "f57016c6-6055-44f3-85d7-29c81b884856": {
+                        "uuid": "f57016c6-6055-44f3-85d7-29c81b884856",
                         "region": "content",
                         "configuration": {
-                            "id": "inline_block:hero",
-                            "label": "Hero Example",
-                            "provider": "layout_builder",
+                            "id": "block_content:99748b9f-c4cd-4678-8e1e-764835e42907",
+                            "label": "Colosseum Hero",
+                            "provider": "block_content",
                             "label_display": 0,
+                            "status": true,
+                            "info": "",
                             "view_mode": "default",
-                            "block_revision_id": "13",
-                            "block_serialized": null,
                             "context_mapping": []
                         },
                         "additional": [],
@@ -204,33 +210,33 @@
                     "class": ""
                 },
                 "components": {
-                    "9928490b-2c72-4ea1-9b2f-88326d15328c": {
-                        "uuid": "9928490b-2c72-4ea1-9b2f-88326d15328c",
+                    "8ae08648-e9fe-4d4d-9aad-3124ba29d7db": {
+                        "uuid": "8ae08648-e9fe-4d4d-9aad-3124ba29d7db",
                         "region": "first",
                         "configuration": {
-                            "id": "inline_block:map",
-                            "label": "Colosseum",
-                            "provider": "layout_builder",
+                            "id": "block_content:98af15c2-cab7-4dc0-8180-2455ed24a852",
+                            "label": "Colosseum Map",
+                            "provider": "block_content",
                             "label_display": 0,
+                            "status": true,
+                            "info": "",
                             "view_mode": "full",
-                            "block_revision_id": "8",
-                            "block_serialized": null,
                             "context_mapping": []
                         },
                         "additional": [],
                         "weight": 0
                     },
-                    "1b2d68af-9867-4f18-bfc4-394e8c011dbd": {
-                        "uuid": "1b2d68af-9867-4f18-bfc4-394e8c011dbd",
+                    "1ba788e6-e8fe-42d6-8516-e4adee4cb432": {
+                        "uuid": "1ba788e6-e8fe-42d6-8516-e4adee4cb432",
                         "region": "second",
                         "configuration": {
-                            "id": "inline_block:basic",
-                            "label": "Happy Text",
-                            "provider": "layout_builder",
-                            "label_display": "visible",
+                            "id": "block_content:7dbc2f80-3327-4a0a-8f35-fabdacd2829a",
+                            "label": "Colosseum Text",
+                            "provider": "block_content",
+                            "label_display": 0,
+                            "status": true,
+                            "info": "",
                             "view_mode": "full",
-                            "block_revision_id": "12",
-                            "block_serialized": null,
                             "context_mapping": []
                         },
                         "additional": [],
@@ -249,17 +255,17 @@
                     "class": ""
                 },
                 "components": {
-                    "2bc3eaae-8648-40cf-b2ab-4fca411da649": {
-                        "uuid": "2bc3eaae-8648-40cf-b2ab-4fca411da649",
+                    "bf77e634-13de-4d87-81ea-71a090cdb945": {
+                        "uuid": "bf77e634-13de-4d87-81ea-71a090cdb945",
                         "region": "content",
                         "configuration": {
-                            "id": "inline_block:media_slideshow",
-                            "label": "Example Slideshow",
-                            "provider": "layout_builder",
+                            "id": "block_content:4c45dbcc-014a-4d3f-91c4-6384faec2b63",
+                            "label": "Travel Slideshow",
+                            "provider": "block_content",
                             "label_display": 0,
+                            "status": true,
+                            "info": "",
                             "view_mode": "full",
-                            "block_revision_id": "7",
-                            "block_serialized": null,
                             "context_mapping": []
                         },
                         "additional": [],

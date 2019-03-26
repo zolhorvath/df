@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/media\/image\/5?_format=hal_json"
+            "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -26,17 +26,17 @@
     },
     "mid": [
         {
-            "value": 5
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "8d9a2409-8160-40a5-add3-3c334649c7dc"
+            "value": "6e0cf96d-85d6-47f9-8da9-c6ed34ca3298"
         }
     ],
     "vid": [
         {
-            "value": 5
+            "value": 3
         }
     ],
     "langcode": [
@@ -52,7 +52,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-03-19T20:41:23+00:00",
+            "value": "2019-03-25T13:42:55+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7897035f-350c-4ca7-815e-49448ff3137b"
+                        "value": "8adb9ad3-5c6c-49fb-bf37-3e43f2e05c95"
                     }
                 ],
                 "lang": "en",
@@ -103,7 +103,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "535ad3a1-8e83-4a68-977a-63279a87f997"
+                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
                     }
                 ],
                 "lang": "en"
@@ -121,7 +121,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7897035f-350c-4ca7-815e-49448ff3137b"
+                        "value": "8adb9ad3-5c6c-49fb-bf37-3e43f2e05c95"
                     }
                 ],
                 "alt": "thimo-van-leeuwen-1413414-unsplash",
@@ -133,14 +133,14 @@
     },
     "created": [
         {
-            "value": "2019-03-11T12:33:55+00:00",
+            "value": "2019-03-25T13:18:08+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-11T12:33:55+00:00",
+            "value": "2019-03-25T13:18:08+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -167,8 +167,8 @@
     ],
     "path": [
         {
-            "alias": "\/media\/image\/5",
-            "pid": 7,
+            "alias": "\/media\/image\/1",
+            "pid": 3,
             "langcode": "en",
             "lang": "en"
         }

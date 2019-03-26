@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/sites\/default\/files\/2019-03\/rawpixel-191102-unsplash_0.jpg"
+            "href": "http:\/\/default\/sites\/default\/files\/2019-03\/rawpixel-191102-unsplash.jpg"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -14,12 +14,12 @@
     },
     "fid": [
         {
-            "value": 18
+            "value": 6
         }
     ],
     "uuid": [
         {
-            "value": "63e4e9a2-5d0a-4740-88ad-0741223359bf"
+            "value": "80c01c24-56f5-4d62-8770-aec6a5d44191"
         }
     ],
     "langcode": [
@@ -40,7 +40,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "535ad3a1-8e83-4a68-977a-63279a87f997"
+                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
                     }
                 ]
             }
@@ -53,8 +53,8 @@
     ],
     "uri": [
         {
-            "value": "public:\/\/2019-03\/rawpixel-191102-unsplash_0.jpg",
-            "url": "\/sites\/default\/files\/2019-03\/rawpixel-191102-unsplash_0.jpg"
+            "value": "public:\/\/2019-03\/rawpixel-191102-unsplash.jpg",
+            "url": "\/sites\/default\/files\/2019-03\/rawpixel-191102-unsplash.jpg"
         }
     ],
     "filemime": [
@@ -74,13 +74,13 @@
     ],
     "created": [
         {
-            "value": "2019-03-11T12:28:00+00:00",
+            "value": "2019-03-25T13:22:33+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-11T12:28:24+00:00",
+            "value": "2019-03-25T13:22:44+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],

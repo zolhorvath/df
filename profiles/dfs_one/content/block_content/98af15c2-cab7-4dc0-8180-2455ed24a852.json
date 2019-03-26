@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/7?_format=hal_json"
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/map"
@@ -9,17 +9,17 @@
     },
     "id": [
         {
-            "value": 7
+            "value": 2
         }
     ],
     "uuid": [
         {
-            "value": "0352cb00-b29f-469f-b225-f3eee8312d94"
+            "value": "98af15c2-cab7-4dc0-8180-2455ed24a852"
         }
     ],
     "revision_id": [
         {
-            "value": 8
+            "value": 1
         }
     ],
     "langcode": [
@@ -35,7 +35,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-03-11T12:36:46+00:00",
+            "value": "2019-03-25T13:20:11+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -47,20 +47,20 @@
     ],
     "info": [
         {
-            "value": "Colosseum",
+            "value": "Colosseum Map",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-11T12:36:46+00:00",
+            "value": "2019-03-25T13:20:11+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "reusable": [
         {
-            "value": false
+            "value": true
         }
     ],
     "default_langcode": [
@@ -89,7 +89,7 @@
     ],
     "content_translation_created": [
         {
-            "value": "2019-03-11T12:36:46+00:00",
+            "value": "2019-03-25T13:19:45+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
