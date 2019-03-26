@@ -117,6 +117,9 @@
             "drupal/contact_storage": {
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
+            "drupal/default_content": {
+                "Do not reimport existing entities | https://www.drupal.org/node/2698425": "https://www.drupal.org/files/issues/2018-12-11/default_content-dont-reimport-2698425-109.patch"
+            },
             "drupal/content_browser": {
                 "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch"
             },

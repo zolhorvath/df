@@ -83,6 +83,7 @@ projects[ctools][version] = 3.2
 projects[custom_body_class][type] = module
 projects[custom_body_class][version] = 1.2
 projects[default_content][type] = module
+projects[default_content][patch][] = https://www.drupal.org/files/issues/2018-12-11/default_content-dont-reimport-2698425-109.patch
 projects[default_content][version] = 1.0-alpha7
 projects[default_content_deploy][type] = module
 projects[default_content_deploy][patch][] = https://www.drupal.org/files/issues/2019-03-07/set-content-directory-from-the-ui-3038303-2-dcd-1.0-alpha6.patch
