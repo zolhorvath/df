@@ -167,9 +167,6 @@
             },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879": "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
-            },
-            "drupal/acquia_contenthub": {
-                "Page title missing from admin page | https://www.drupal.org/node/3002886": "https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch"
             }
         },
         "patches-ignore": {
