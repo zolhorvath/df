@@ -5,6 +5,7 @@ core: 8.x
 package: 'Demo Framework Scenarios'
 'base profile': df
 dependencies:
+  - color
   - df_tools_articles
   - df_tools_blocks
   - df_tools_card
