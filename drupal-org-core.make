@@ -17,6 +17,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-15/2986394-backport-layout-builder-to-8.6-x-2.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f7724b19714d38056949e81d5042e87",
+    "content-hash": "51da38b4d66f37614004bde56aaf66ed",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -3826,6 +3826,7 @@
                     "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691": "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
                     "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975": "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
                     "DF - Backport Layout Builder to 8.6.x | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-03-15/2986394-backport-layout-builder-to-8.6-x-2.patch",
+                    "Add scssphp support | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch",
                     "2998335 - [regression] \\Drupal\\user\\ContextProvider\\CurrentUserContext broken for anonymous users": "https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch",
                     "3032548 - ContentModerationRouteSubscriber assumes all parameters in an entity form route contain a 'type' key": "https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
@@ -9129,7 +9130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "bac105d9630b828830dddb39fe79af531be4c251"
+                "reference": "d578cc35770c5bf948fa5bcb0b3a60c75a358a0a"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9146,7 +9147,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1554306185",
+                    "datestamp": "1554310381",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9183,7 +9184,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-03T16:49:56+00:00"
+            "time": "2019-04-03T18:14:18+00:00"
         },
         {
             "name": "drupal/schemata",
