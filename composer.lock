@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c112d50b31b67d5b3707ab8ee4d6011",
+    "content-hash": "d079ad2e356f3ecec82b2c4e4f1dd68d",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -9221,24 +9221,28 @@
         },
         {
             "name": "drupal/scenarios",
-            "version": "dev-3.x",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "8cf261a51b2ca1dd25bb63b5f4a3261ec12135ed"
+                "reference": "d4df0537075f89846c0d8bab74363693df165f62"
             },
             "require": {
                 "drupal/core": "~8.0",
+                "drupal/default_content_deploy": "*",
                 "drupal/migrate_tools": "^4.0"
+            },
+            "require-dev": {
+                "drupal/acquia_contenthub_publisher": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1535754480",
+                    "version": "8.x-4.x-dev",
+                    "datestamp": "1554240485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9275,7 +9279,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2018-08-31T22:27:40+00:00"
+            "time": "2019-04-03T15:39:38+00:00"
         },
         {
             "name": "drupal/schemata",
