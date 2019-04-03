@@ -42,9 +42,11 @@
 @import "base/helpers";
 @import "base/elements";
 @import "base/common";
+@import "base/colors";
 
 // Layout
 // -----------------------------------------------------------------------------
+@import "layout/page.navbar";
 @import "layout/page.header";
 @import "layout/page.content";
 @import "layout/page.footer";
