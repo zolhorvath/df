@@ -1925,83 +1925,6 @@
             "time": "2019-03-29T16:34:25+00:00"
         },
         {
-            "name": "drupal/acquia_contenthub_publisher",
-            "version": "dev-2.x",
-            "require": {
-                "drupal/acquia_contenthub": "self.version",
-                "drupal/core": "~8.0"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0+0-dev",
-                    "datestamp": "1553879887",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "EclipseGc",
-                    "homepage": "https://www.drupal.org/user/61203"
-                },
-                {
-                    "name": "Jabb",
-                    "homepage": "https://www.drupal.org/user/584658"
-                },
-                {
-                    "name": "abarrios",
-                    "homepage": "https://www.drupal.org/user/109765"
-                },
-                {
-                    "name": "attilatilman",
-                    "homepage": "https://www.drupal.org/user/3528404"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "looking4justice",
-                    "homepage": "https://www.drupal.org/user/3607847"
-                },
-                {
-                    "name": "m.yudin",
-                    "homepage": "https://www.drupal.org/user/2358036"
-                },
-                {
-                    "name": "mpcm",
-                    "homepage": "https://www.drupal.org/user/1539366"
-                },
-                {
-                    "name": "pajor",
-                    "homepage": "https://www.drupal.org/user/3528384"
-                },
-                {
-                    "name": "scor",
-                    "homepage": "https://www.drupal.org/user/52142"
-                },
-                {
-                    "name": "ynx",
-                    "homepage": "https://www.drupal.org/user/3161427"
-                }
-            ],
-            "description": "Provides publisher controls and tools for Acquia ContentHub.",
-            "homepage": "https://www.drupal.org/project/acquia_contenthub",
-            "support": {
-                "source": "https://git.drupalcode.org/project/acquia_contenthub"
-            }
-        },
-        {
             "name": "drupal/acsf",
             "version": "1.51.0",
             "source": {
@@ -9206,13 +9129,15 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "baa2a7b340091cb0c4f0a1caa44f9c13ca5a28f3"
+                "reference": "d4df0537075f89846c0d8bab74363693df165f62"
             },
             "require": {
-                "drupal/acquia_contenthub_publisher": "*",
                 "drupal/core": "~8.0",
                 "drupal/default_content_deploy": "*",
                 "drupal/migrate_tools": "^4.0"
+            },
+            "require-dev": {
+                "drupal/acquia_contenthub_publisher": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -9221,7 +9146,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1554231485",
+                    "datestamp": "1554240485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9258,7 +9183,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-02T21:23:13+00:00"
+            "time": "2019-04-03T15:39:38+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -16422,16 +16347,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "9.6.1",
+            "version": "9.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "bf389ee33baa2eeedde942cdf7044baaf634b0a1"
+                "reference": "65d36cf542308d0b88f77c80f818a978d2844b80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/bf389ee33baa2eeedde942cdf7044baaf634b0a1",
-                "reference": "bf389ee33baa2eeedde942cdf7044baaf634b0a1",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/65d36cf542308d0b88f77c80f818a978d2844b80",
+                "reference": "65d36cf542308d0b88f77c80f818a978d2844b80",
                 "shasum": ""
             },
             "require": {
@@ -16443,7 +16368,7 @@
                 "consolidation/output-formatters": "^3.3.1",
                 "consolidation/robo": "^1.4.6",
                 "consolidation/site-alias": "^3.0.0@stable",
-                "consolidation/site-process": "^2.0.0@stable",
+                "consolidation/site-process": "^2.0.1",
                 "ext-dom": "*",
                 "grasmash/yaml-expander": "^1.1.1",
                 "league/container": "~2",
@@ -16562,7 +16487,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2019-03-26T09:35:48+00:00"
+            "time": "2019-04-03T11:17:00+00:00"
         },
         {
             "name": "enm1989/chromedriver",
