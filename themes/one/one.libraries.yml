@@ -3,6 +3,7 @@ style:
   css:
     theme:
       assets/css/one.style.css: {}
+      assets/css/one.color-placeholders.css: {}
   js:
     assets/js/one.script.js: {}
   dependencies:
