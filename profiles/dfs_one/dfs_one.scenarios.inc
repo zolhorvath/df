@@ -13,8 +13,8 @@ function dfs_one_scenarios_info() {
     'dfs_one' => [
       'label' => t('DFS ONE'),
       'description' => t('Demo Framework Scenario for One.'),
-      'imports' => ['/content'],
-      //'cdf' => ['/cdf'],
+      //'imports' => ['/content'],
+      'cdf' => ['/cdf'],
     ],
   ];
 }
