@@ -4,34 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d079ad2e356f3ecec82b2c4e4f1dd68d",
+    "content-hash": "3f7724b19714d38056949e81d5042e87",
     "packages": [
         {
             "name": "acquia/content-hub-php",
-            "version": "1.3.2",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "3bd2d5cc0c2ddba71dbcc3f2b8b1804e3940137b"
+                "reference": "4ab0753948b07ea8c00af4c258e9e01c7f70c0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/3bd2d5cc0c2ddba71dbcc3f2b8b1804e3940137b",
-                "reference": "3bd2d5cc0c2ddba71dbcc3f2b8b1804e3940137b",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/4ab0753948b07ea8c00af4c258e9e01c7f70c0f9",
+                "reference": "4ab0753948b07ea8c00af4c258e9e01c7f70c0f9",
                 "shasum": ""
             },
             "require": {
+                "acquia/http-hmac-php": "~3.4|~4.0",
                 "guzzlehttp/guzzle": "~6.0",
                 "php": ">=5.6",
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.7|^3.2",
                 "symfony/http-foundation": "~2.7|^3.2",
                 "symfony/serializer": "~2.7|^3.2"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.0",
                 "pdepend/pdepend": "~1.0",
                 "phploc/phploc": "~2.0",
                 "phpmd/phpmd": "~1.0",
-                "phpunit/phpunit": ">=4.8.35 <5",
+                "phpunit/phpunit": "^7",
                 "scrutinizer/ocular": "~1.0",
                 "sebastian/phpcpd": "~2.0"
             },
@@ -56,50 +58,46 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2018-10-11T19:55:19+00:00"
+            "time": "2019-03-29T05:43:36+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
-            "version": "3.4.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/http-hmac-php.git",
-                "reference": "ee04f68a1c8e749b70bc2bb6da52da0db20d0009"
+                "reference": "da3ad88dc10ded01a666e520b56f5e7517590a37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/http-hmac-php/zipball/ee04f68a1c8e749b70bc2bb6da52da0db20d0009",
-                "reference": "ee04f68a1c8e749b70bc2bb6da52da0db20d0009",
+                "url": "https://api.github.com/repos/acquia/http-hmac-php/zipball/da3ad88dc10ded01a666e520b56f5e7517590a37",
+                "reference": "da3ad88dc10ded01a666e520b56f5e7517590a37",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0",
-                "psr/http-message": "~1.0.0",
-                "sarciszewski/php-future": "~0.4.2"
+                "php": "~5.6 || ~7.0",
+                "psr/http-message": "~1.0.0"
             },
             "replace": {
                 "acquia/hmac-request": "self.version"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11",
                 "guzzlehttp/guzzle": "~6.0",
-                "pdepend/pdepend": "~1.0",
-                "phploc/phploc": "~2.0",
-                "phpmd/phpmd": "~1.0",
-                "phpunit/phpunit": "^4.8",
-                "scrutinizer/ocular": "~1.0",
-                "sebastian/phpcpd": "~2.0",
-                "silex/silex": "~1.3.0",
-                "squizlabs/php_codesniffer": "^2.3",
-                "symfony/psr-http-message-bridge": "~0.1.0",
-                "symfony/security": "~3.0.0",
-                "zendframework/zend-diactoros": "~1.3.5"
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "^2.0",
+                "phpunit/phpunit": "~5.7",
+                "sebastian/phpcpd": "^2.0",
+                "symfony/psr-http-message-bridge": "^1.0",
+                "symfony/security": "^3.0 | ^4.0",
+                "symfony/security-bundle": "^3.0 | ^4.0",
+                "zendframework/zend-diactoros": "^1.3"
             },
             "suggest": {
                 "guzzlehttp/guzzle": "~6.0",
-                "silex/silex": "~1.3.0",
-                "symfony/psr-http-message-bridge": "~0.1.0",
-                "symfony/security": "~3.0.0",
-                "zendframework/zend-diactoros": "~1.3.5"
+                "symfony/psr-http-message-bridge": "^1.0",
+                "symfony/security": "^3.0 | ^4.0",
+                "zendframework/zend-diactoros": "^1.3"
             },
             "type": "library",
             "autoload": {
@@ -119,68 +117,7 @@
             ],
             "description": "An implementation of the HTTP HMAC Spec in PHP that integrates with popular libraries such as Symfony and Guzzle.",
             "homepage": "https://github.com/acquia/http-hmac-php",
-            "time": "2018-03-19T19:13:26+00:00"
-        },
-        {
-            "name": "acquia/lift-sdk-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acquia/lift-sdk-php.git",
-                "reference": "ad10640efc4b8d8c2e8d65c3b47cc1cc7e8b958e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lift-sdk-php/zipball/ad10640efc4b8d8c2e8d65c3b47cc1cc7e8b958e",
-                "reference": "ad10640efc4b8d8c2e8d65c3b47cc1cc7e8b958e",
-                "shasum": ""
-            },
-            "require": {
-                "acquia/http-hmac-php": "~3.1",
-                "guzzlehttp/guzzle": "~6.0",
-                "php": ">=5.5.0",
-                "symfony/http-foundation": "~2.7|^3.2",
-                "symfony/serializer": "~2.7|^3.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~1.0",
-                "pdepend/pdepend": "~1.0",
-                "phploc/phploc": "~2.0",
-                "phpmd/phpmd": "~1.0",
-                "phpunit/phpunit": ">=4.8.35 <5",
-                "scrutinizer/ocular": "~1.0",
-                "sebastian/phpcpd": "~2.0"
-            },
-            "suggest": {
-                "ramsey/uuid": "A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID)"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Acquia\\LiftClient\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Acquia\\LiftClient\\Test\\": "test/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "See Contributors",
-                    "homepage": "https://github.com/acquia/lift-sdk-php/graphs/contributors"
-                }
-            ],
-            "description": "A PHP Client library to consume the Acquia Lift API.",
-            "homepage": "https://github.com/acquia/lift-sdk-php",
-            "support": {
-                "issues": "https://github.com/acquia/lift-sdk-php/issues",
-                "source": "https://github.com/acquia/lift-sdk-php/tree/0.9.1"
-            },
-            "time": "2018-12-20T18:44:40+00:00"
+            "time": "2018-03-23T16:51:53+00:00"
         },
         {
             "name": "acquia/lightning",
@@ -1903,41 +1840,31 @@
         },
         {
             "name": "drupal/acquia_contenthub",
-            "version": "1.37.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_contenthub.git",
-                "reference": "8.x-1.37"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_contenthub-8.x-1.37.zip",
-                "reference": "8.x-1.37",
-                "shasum": "aab804eb589f8cf5b5ea5fc3cce772d2060b9d61"
+                "reference": "506d56775152ca1208102421b6c88c077298dec5"
             },
             "require": {
-                "acquia/content-hub-php": "^1.3.2",
-                "drupal/core": "^8.4",
-                "drupal/diff": "^1.0"
-            },
-            "require-dev": {
-                "drupal/acquia_contenthub_subscriber": "*"
+                "acquia/content-hub-php": "^2.0.0-beta1",
+                "drupal/core": "^8.5",
+                "drupal/depcalc": "^1.0",
+                "symfony/psr-http-message-bridge": "^1.0",
+                "zendframework/zend-diactoros": "^1.8"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.37",
-                    "datestamp": "1552586880",
+                    "version": "8.x-2.1+0-dev",
+                    "datestamp": "1554311585",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Page title missing from admin page | https://www.drupal.org/node/3002886": "https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1994,78 +1921,8 @@
             "homepage": "https://www.drupal.org/project/acquia_contenthub",
             "support": {
                 "source": "https://git.drupalcode.org/project/acquia_contenthub"
-            }
-        },
-        {
-            "name": "drupal/acquia_lift",
-            "version": "3.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/acquia_lift.git",
-                "reference": "8.x-3.10"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_lift-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "a7e6afdc7ab7cc58a3fa661663e60ba066b03f74"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1541763480",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Dave.Ingram",
-                    "homepage": "https://www.drupal.org/user/352282"
-                },
-                {
-                    "name": "JakeWilund",
-                    "homepage": "https://www.drupal.org/user/1448388"
-                },
-                {
-                    "name": "abarrios",
-                    "homepage": "https://www.drupal.org/user/109765"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "scor",
-                    "homepage": "https://www.drupal.org/user/52142"
-                },
-                {
-                    "name": "tottey",
-                    "homepage": "https://www.drupal.org/user/3234583"
-                },
-                {
-                    "name": "ynx",
-                    "homepage": "https://www.drupal.org/user/3161427"
-                }
-            ],
-            "description": "Provides integration to the Acquia Lift service for personalization and visitor data collection.",
-            "homepage": "https://www.drupal.org/project/acquia_lift",
-            "support": {
-                "source": "https://git.drupalcode.org/project/acquia_lift"
-            }
+            "time": "2019-04-03T05:40:56+00:00"
         },
         {
             "name": "drupal/acsf",
@@ -4340,6 +4197,53 @@
             "homepage": "https://www.drupal.org/project/default_content_deploy",
             "support": {
                 "source": "https://git.drupalcode.org/project/default_content_deploy"
+            }
+        },
+        {
+            "name": "drupal/depcalc",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/depcalc.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/depcalc-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "585aa0c024b0b83bf765ebcf4fdc139f6293ae5a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1551932584",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "EclipseGc",
+                    "homepage": "https://www.drupal.org/user/61203"
+                }
+            ],
+            "description": "Calculates recursive dependencies of any entity.",
+            "homepage": "https://www.drupal.org/project/depcalc",
+            "support": {
+                "source": "https://git.drupalcode.org/project/depcalc"
             }
         },
         {
@@ -9225,7 +9129,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "d4df0537075f89846c0d8bab74363693df165f62"
+                "reference": "bac105d9630b828830dddb39fe79af531be4c251"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9242,7 +9146,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1554240485",
+                    "datestamp": "1554306185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9279,7 +9183,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-03T15:39:38+00:00"
+            "time": "2019-04-03T16:49:56+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -12154,50 +12058,6 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
-        },
-        {
-            "name": "sarciszewski/php-future",
-            "version": "0.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sarciszewski/php-future.git",
-                "reference": "8bcc414eecfe68bb4600ab9b179ef6e8454b8ca0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sarciszewski/php-future/zipball/8bcc414eecfe68bb4600ab9b179ef6e8454b8ca0",
-                "reference": "8bcc414eecfe68bb4600ab9b179ef6e8454b8ca0",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.5.*"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "autoload.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Arciszewski",
-                    "email": "scott@paragonie.com",
-                    "homepage": "https://appsec.solutions",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Polyfill new (5.6+) features into old (5.4+) versions of PHP",
-            "keywords": [
-                "compatibility",
-                "future",
-                "hash_equals",
-                "security"
-            ],
-            "time": "2015-09-28T20:04:00+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -19399,7 +19259,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "acquia/lift-sdk-php": 20,
+        "acquia/content-hub-php": 20,
+        "drupal/acquia_contenthub": 20,
         "drupal/better_formats": 20,
         "drupal/config_rewrite": 20,
         "drupal/config_sync": 20,
