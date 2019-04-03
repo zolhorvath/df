@@ -1,0 +1,69 @@
+//
+// Main colors.
+//
+.page__content {
+  background: #FFFFFF;
+  color: #0a0a0a;
+}
+
+// Simple links.
+a {
+  color: #007bff;
+
+  &:focus,
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+.navbar .navbar-brand {
+  color: #0056b3;
+}
+
+//
+// Header color scheme.
+//
+.navbar {
+  background-color: #f6fbfb;
+  @include media-breakpoint-up(lg) {
+    background: #f6fbfb linear-gradient(to left, #007bff 50%, #f6fbfb 50%);
+
+    .navbar-collapse {
+      background-color: #f6fbfb;
+    }
+    .navbar-left {
+      background-color: #f6fbfb;
+
+      a {
+        color: #353535;
+
+        &:focus,
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+    .navbar-right {
+      background-color: #007bff;
+
+      a {
+        color: #FFFFFF;
+
+        &:focus,
+        &:hover {
+          color: #bbdefb;
+        }
+      }
+    }
+  }
+}
+
+.slick-arrow::before,
+.slick-arrow::after {
+  color: #007bff;
+}
+
+.slick-arrow:hover::before,
+.slick-arrow:hover::after {
+  color: #0056b3;
+}
