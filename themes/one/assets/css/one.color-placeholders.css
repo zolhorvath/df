@@ -1,0 +1,72 @@
+.page__content {
+  background: #__body-bg__;
+  color: #__body-color__;
+}
+
+a {
+  color: #__link-color__;
+}
+
+a:focus,
+a:hover {
+  color: #__link-color-hover__;
+}
+
+.navbar .navbar-brand {
+  color: #__logocolor__;
+}
+
+.navbar {
+  background-color: #__header-bg-left__;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background: #__header-bg-left__ linear-gradient(to left, #__header-bg-right__ 50%, #__header-bg-left__ 50%);
+  }
+
+  .navbar a {
+    color: #__header-link-left__;
+  }
+
+  .navbar .navbar-collapse {
+    background-color: #__header-bg-left__;
+  }
+
+  .navbar .navbar-left {
+    background-color: #__header-bg-left__;
+  }
+
+  .navbar .navbar-left a {
+    color: #__header-link-left__;
+  }
+
+  .navbar .navbar-left a:focus,
+  .navbar .navbar-left a:hover {
+    color: #__header-link-hover-left__;
+  }
+
+  .navbar .navbar-right {
+    background-color: #__header-bg-right__;
+  }
+
+  .navbar .navbar-right a {
+    color: #__header-link-right__;
+  }
+
+  .navbar .navbar-right a:focus,
+  .navbar .navbar-right a:hover {
+    color: #__header-link-hover-right__;
+  }
+}
+
+.slick-arrow::before,
+.slick-arrow::after {
+  color: #__link-color__;
+}
+
+.slick-arrow:hover::before,
+.slick-arrow:hover::after {
+  color: #__link-color-hover__;
+}
+
