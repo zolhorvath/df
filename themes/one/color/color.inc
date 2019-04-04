@@ -5,9 +5,9 @@
  * Lists available colors and color schemes for the One theme.
  */
 
-$info = array(
+$info = [
   // Available colors and color labels used in theme.
-  'fields' => array(
+  'fields' => [
     'base' => t('Body background (base)'),
     'text' => t('Body foreground (text)'),
     'link' => t('Primary link text'),
@@ -19,7 +19,11 @@ $info = array(
     'headerbgright' => t('Header background (right side)'),
     'headerlinkright' => t('Header link (right side)'),
     'headerlinkhoverright' => t('Header link hover (right side)'),
-  ),
+    'footerbg' => t('Footer background'),
+    'footertext' => t('Footer text'),
+    'footerlink' => t('Footer link'),
+    'footerlinkhover' => t('Footer link hover'),
+  ],
   // Define "color_placeholders" key if you would use color placeholders instead
   // of explicitly defined colors.
   //
@@ -52,6 +56,10 @@ $info = array(
     'headerbgright' => 'header-bg-right',
     'headerlinkright' => 'header-link-right',
     'headerlinkhoverright' => 'header-link-hover-right',
+    'footerbg' => 'footer-background',
+    'footertext' => 'footer-text',
+    'footerlink' => 'footer-link',
+    'footerlinkhover' => 'footer-link-hover',
   ],
   // Pre-defined color schemes.
   //
@@ -69,34 +77,118 @@ $info = array(
   //
   // Because of this behavior, color_placeholders used in the CSS file always
   // have to be defined.
-  'schemes' => array(
-    'default' => array(
+  'schemes' => [
+    'default' => [
       'title' => t('Blue (default)'),
-      'colors' => array(
+      'colors' => [
         'base' => '#ffffff',
-        'text' => '#0a0a0a',
-        'link' => '#007bff',
-        'linkhover' => '#0056b3',
-        'headerbgleft' => '#f6fbfb',
-        'logocolor' => '#0056b3',
-        'headerlinkleft' => '#353535',
-        'headerlinkhoverleft' => '#007bff',
-        'headerbgright' => '#007bff',
+        'text' => '#292929',
+        'link' => '#1d84c3',
+        'linkhover' => '#0071b3',
+        'headerbgleft' => '#ffffff',
+        'logocolor' => '#0071b3',
+        'headerlinkleft' => '#292929',
+        'headerlinkhoverleft' => '#1d84c3',
+        'headerbgright' => '#0071b3',
         'headerlinkright' => '#ffffff',
-        'headerlinkhoverright' => '#bbdefb',
-      ),
-    ),
-  ),
+        'headerlinkhoverright' => '#d4d4d4',
+        'footerbg' => '#292929',
+        'footertext' => '#ffffff',
+        'footerlink' => '#d4d4d4',
+        'footerlinkhover' => '#ffffff',
+      ],
+    ],
+    'green' => [
+      'title' => t('Green'),
+      'colors' => [
+        'base' => '#ffffff',
+        'text' => '#292929',
+        'link' => '#00af66',
+        'linkhover' => '#009255',
+        'headerbgleft' => '#ffffff',
+        'logocolor' => '#009255',
+        'headerlinkleft' => '#292929',
+        'headerlinkhoverleft' => '#00af66',
+        'headerbgright' => '#009255',
+        'headerlinkright' => '#ffffff',
+        'headerlinkhoverright' => '#d4d4d4',
+        'footerbg' => '#292929',
+        'footertext' => '#ffffff',
+        'footerlink' => '#d4d4d4',
+        'footerlinkhover' => '#ffffff',
+      ],
+    ],
+    'purple' => [
+      'title' => t('Purple'),
+      'colors' => [
+        'base' => '#ffffff',
+        'text' => '#292929',
+        'link' => '#9d408d',
+        'linkhover' => '#593662',
+        'headerbgleft' => '#ffffff',
+        'logocolor' => '#593662',
+        'headerlinkleft' => '#292929',
+        'headerlinkhoverleft' => '#593662',
+        'headerbgright' => '#9d408d',
+        'headerlinkright' => '#ffffff',
+        'headerlinkhoverright' => '#d4d4d4',
+        'footerbg' => '#292929',
+        'footertext' => '#ffffff',
+        'footerlink' => '#d4d4d4',
+        'footerlinkhover' => '#ffffff',
+      ],
+    ],
+    'red' => [
+      'title' => t('Red'),
+      'colors' => [
+        'base' => '#ffffff',
+        'text' => '#292929',
+        'link' => '#d6121f',
+        'linkhover' => '#d64e4e',
+        'headerbgleft' => '#ffffff',
+        'logocolor' => '#d64e4e',
+        'headerlinkleft' => '#292929',
+        'headerlinkhoverleft' => '#d64e4e',
+        'headerbgright' => '#d6121f',
+        'headerlinkright' => '#ffffff',
+        'headerlinkhoverright' => '#d4d4d4',
+        'footerbg' => '#292929',
+        'footertext' => '#ffffff',
+        'footerlink' => '#d4d4d4',
+        'footerlinkhover' => '#ffffff',
+      ],
+    ],
+    'slate' => [
+      'title' => t('Slate'),
+      'colors' => [
+        'base' => '#ffffff',
+        'text' => '#292929',
+        'link' => '#0073b6',
+        'linkhover' => '#4e4e4e',
+        'headerbgleft' => '#ffffff',
+        'logocolor' => '#4e4e4e',
+        'headerlinkleft' => '#292929',
+        'headerlinkhoverleft' => '#4e4e4e',
+        'headerbgright' => '#4e4e4e',
+        'headerlinkright' => '#ffffff',
+        'headerlinkhoverright' => '#d4d4d4',
+        'footerbg' => '#292929',
+        'footertext' => '#ffffff',
+        'footerlink' => '#d4d4d4',
+        'footerlinkhover' => '#ffffff',
+      ],
+    ],
+  ],
 
   // CSS files (excluding CSS @imports) to rewrite with new color scheme.
-  'css' => array(
+  'css' => [
     'assets/css/one.color-placeholders.css',
-  ),
+  ],
 
   // Files to copy.
-  'copy' => array(
+  'copy' => [
     'logo.svg',
-  ),
+  ],
 
   // //Preview files.
   'preview_library' => 'one/color.preview',
@@ -111,4 +203,4 @@ $info = array(
       ],
     ],
   ],
-);
+];

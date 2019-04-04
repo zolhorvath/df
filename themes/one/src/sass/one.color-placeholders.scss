@@ -1,14 +1,15 @@
-//
 // Color Module Styles Placeholder
-//
-
 
 //
 // Main colors.
 //
-.page__content {
+.page {
   background: #__body-bg__;
   color: #__body-color__;
+}
+
+body {
+  background-color: #__footer-background__;
 }
 
 // Simple links.
@@ -67,13 +68,23 @@ a {
   }
 }
 
-.slick-arrow::before,
-.slick-arrow::after {
-  color: #__link-color__;
-}
+//
+// Footer color scheme.
+//
 
-.slick-arrow:hover::before,
-.slick-arrow:hover::after {
-  color: #__link-color-hover__;
-}
+.page__footer {
+  background-color: #__footer-background__;
+  color: #__footer-text__;
 
+  a {
+    color: #__footer-link__;
+    border-bottom: 1px solid #__footer-link__;
+
+    &:focus,
+    &:hover {
+      color: #__footer-link-hover__;
+      border-bottom: 1px solid #__footer-link-hover__;
+      text-decoration: none;
+    }
+  }
+}
