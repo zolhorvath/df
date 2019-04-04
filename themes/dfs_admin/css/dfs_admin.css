@@ -142,7 +142,16 @@ div.scheduled-transition button {
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonaction.form-item-palette-buttonaction.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactiontext.form-item-palette-buttonactiontext.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhover.form-item-palette-buttonactionhover.form-has-label.input-field,
-.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhovertext.form-item-palette-buttonactionhovertext.form-has-label.input-field {
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhovertext.form-item-palette-buttonactionhovertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerbgleft.form-item-palette-headerbgleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkleft.form-item-palette-headerlinkleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkhoverleft.form-item-palette-headerlinkhoverleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerbgright.form-item-palette-headerbgright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkright.form-item-palette-headerlinkright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkhoverright.form-item-palette-headerlinkhoverright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footertext.form-item-palette-footertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlink.form-item-palette-footerlink.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlinkhover.form-item-palette-footerlinkhover.form-has-label.input-field {
   margin: 0 0 5px; 0;
 }
 
