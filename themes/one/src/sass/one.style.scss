@@ -51,6 +51,10 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
+// Modules
+// -----------------------------------------------------------------------------
+@import "modules/moderation_dashboard";
+
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
