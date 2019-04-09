@@ -5,6 +5,15 @@
  */
 #}
 <div class="page">
+
+  {% if page.meta_header %}
+  <div class="page__meta_header">
+      <div class="{{ meta_header_width }}">
+        {{ page.meta_header }}
+      </div>
+    </div>
+  {% endif %}
+
   {% embed '@one/navbar/navbar.twig' with {
     placement: 'sticky-top',
     container: 'fixed',
@@ -35,15 +44,15 @@
     {% endblock %}
   {% endembed %}
 
-  <main class="main">
-    {% if page.header %}
-      <header class="page__header mb-3">
-        <div class="container">
-          {{ page.header }}
-        </div>
-      </header>
-    {% endif %}
+  {% if page.header %}
+    <header class="page__header">
+      <div class="{{ header_width }}">
+        {{ page.header }}
+      </div>
+    </header>
+  {% endif %}
 
+  <main class="main">
     {% if page.content %}
       <div class="page__content">
           {{ page.content }}
@@ -53,8 +62,8 @@
 
   {% if page.footer %}
     <footer class="page__footer">
-      <div class="container">
-        <div class="d-flex justify-content-md-between align-items-md-center">
+      <div class="{{ footer_width }}">
+        <div class="d-flex justify-content-md-between align-items-md-center row">
           {{ page.footer }}
         </div>
       </div>
