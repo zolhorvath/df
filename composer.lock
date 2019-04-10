@@ -4,20 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f7724b19714d38056949e81d5042e87",
+    "content-hash": "1bd38b393f5d29035e5fa91315c0f737",
     "packages": [
+        {
+            "name": "acquia/acf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/acf.git",
+                "reference": "master"
+            },
+            "type": "drupal-library",
+            "time": "2019-04-10T07:19:05+00:00"
+        },
         {
             "name": "acquia/content-hub-php",
             "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "4ab0753948b07ea8c00af4c258e9e01c7f70c0f9"
+                "reference": "5e96b6d6711f65d02419028f6f32d8c02a77f93b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/4ab0753948b07ea8c00af4c258e9e01c7f70c0f9",
-                "reference": "4ab0753948b07ea8c00af4c258e9e01c7f70c0f9",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/5e96b6d6711f65d02419028f6f32d8c02a77f93b",
+                "reference": "5e96b6d6711f65d02419028f6f32d8c02a77f93b",
                 "shasum": ""
             },
             "require": {
@@ -58,7 +69,7 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2019-03-29T05:43:36+00:00"
+            "time": "2019-04-10T18:13:20+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
@@ -2256,7 +2267,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1527081784",
+                    "datestamp": "1554332581",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2279,6 +2290,10 @@
                 {
                     "name": "googletorp",
                     "homepage": "https://www.drupal.org/user/386230"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 },
                 {
                     "name": "rszrama",
@@ -3600,16 +3615,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.13",
+            "version": "8.6.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "8d5b80030ac3f13df2d66aeef0ea388fd9a90632"
+                "reference": "7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/8d5b80030ac3f13df2d66aeef0ea388fd9a90632",
-                "reference": "8d5b80030ac3f13df2d66aeef0ea388fd9a90632",
+                "url": "https://api.github.com/repos/drupal/core/zipball/7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5",
+                "reference": "7f5f0369ffe08478aa0f26bd48dc95bcc9cde4b5",
                 "shasum": ""
             },
             "require": {
@@ -3859,7 +3874,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-03-20T06:01:19+00:00"
+            "time": "2019-04-08T01:37:34+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6397,17 +6412,17 @@
         },
         {
             "name": "drupal/lightning_api",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_api.git",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "5dde8f4709af8cc4c5fc409e2e549870496438f1"
+                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "8672bed93c7c5aec4d437051975df6bc516f0d3c"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -6415,7 +6430,7 @@
                 "drupal/consumers": "^1.9",
                 "drupal/core": "~8.0",
                 "drupal/jsonapi": "^2.3",
-                "drupal/lightning_core": "^2.14 || ^3.8 || ^4.0-alpha1",
+                "drupal/lightning_core": "^2.15 || ^3.9 || ^4.0-beta1",
                 "drupal/openapi": "^1.0-beta2",
                 "drupal/openapi_ui_redoc": "^1.0",
                 "drupal/openapi_ui_swagger": "^1.0",
@@ -6435,8 +6450,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1552672085",
+                    "version": "8.x-3.6",
+                    "datestamp": "1554740881",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6949,24 +6964,24 @@
         },
         {
             "name": "drupal/lightning_workflow",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_workflow.git",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "5d290862b9bde85a60b1388a069c75bba01a5ebc"
+                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "cb2d4e7116cb209ce811f6820af95c7dc20ea5c4"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "*",
                 "drupal/diff": "^1.0",
-                "drupal/lightning_core": "^3.8 || ^4.0-alpha1",
+                "drupal/lightning_core": "^3.9 || ^4.0-beta1",
                 "drupal/moderation_dashboard": "^1.0",
                 "drupal/moderation_sidebar": "^1.0",
                 "oomphinc/composer-installers-extender": "^1.1"
@@ -6985,8 +7000,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1552917185",
+                    "version": "8.x-3.6",
+                    "datestamp": "1554389281",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8517,6 +8532,10 @@
                     "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -8527,10 +8546,6 @@
                 {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
-                },
-                {
-                    "name": "sdboyer",
-                    "homepage": "https://www.drupal.org/user/146719"
                 },
                 {
                     "name": "tim.plunkett",
@@ -8631,7 +8646,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.1",
-                    "datestamp": "1553516884",
+                    "datestamp": "1554551581",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9129,7 +9144,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "bac105d9630b828830dddb39fe79af531be4c251"
+                "reference": "d578cc35770c5bf948fa5bcb0b3a60c75a358a0a"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9146,7 +9161,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1554306185",
+                    "datestamp": "1554310381",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9183,7 +9198,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-03T16:49:56+00:00"
+            "time": "2019-04-03T18:14:18+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -9997,26 +10012,20 @@
         },
         {
             "name": "drupal/typed_data",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/typed_data.git",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "a4e5f9fe5ad5842c335414ae2cbfb2aed69ef0fe"
+                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "962d53659f73de8dfa43f291ef40ec26e1b7a07f"
             },
             "require": {
                 "drupal/core": "~8.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "drupal/coder": "8.2.*",
-                "squizlabs/php_codesniffer": "2.9.*",
-                "symfony/yaml": "3.*"
             },
             "type": "drupal-module",
             "extra": {
@@ -10024,8 +10033,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1536437580",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1554612486",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -13738,7 +13747,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -15390,16 +15399,16 @@
         },
         {
             "name": "consolidation/site-process",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "d923bbf8843f4b273733db5912198b7dba0f236d"
+                "reference": "8957b9b3f4d48c183b7b11a29089d52875442e2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/d923bbf8843f4b273733db5912198b7dba0f236d",
-                "reference": "d923bbf8843f4b273733db5912198b7dba0f236d",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/8957b9b3f4d48c183b7b11a29089d52875442e2f",
+                "reference": "8957b9b3f4d48c183b7b11a29089d52875442e2f",
                 "shasum": ""
             },
             "require": {
@@ -15458,7 +15467,7 @@
                 }
             ],
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
-            "time": "2019-04-02T18:47:44+00:00"
+            "time": "2019-04-05T20:16:00+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -17006,16 +17015,16 @@
         },
         {
             "name": "mikey179/vfsStream",
-            "version": "v1.6.5",
+            "version": "v1.6.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
-                "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
+                "url": "https://github.com/bovigo/vfsStream.git",
+                "reference": "095238a0711c974ae5b4ebf4c4534a23f3f6c99d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
-                "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/095238a0711c974ae5b4ebf4c4534a23f3f6c99d",
+                "reference": "095238a0711c974ae5b4ebf4c4534a23f3f6c99d",
                 "shasum": ""
             },
             "require": {
@@ -17048,20 +17057,20 @@
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2017-08-01T08:02:14+00:00"
+            "time": "2019-04-08T13:54:32+00:00"
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.1",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
+                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
+                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
                 "shasum": ""
             },
             "require": {
@@ -17096,7 +17105,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-06-11T23:09:50+00:00"
+            "time": "2019-04-07T13:18:21+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -19069,16 +19078,16 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
                 "shasum": ""
             },
             "require": {
@@ -19105,7 +19114,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2019-04-04T09:56:43+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -19196,12 +19205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "00ed2afa0f3bb06d5f63922aff00f6d4a1246f5c"
+                "reference": "7a876637c5ece82f1f8e33cf2c9a615b914d6c72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=00ed2afa0f3bb06d5f63922aff00f6d4a1246f5c",
-                "reference": "00ed2afa0f3bb06d5f63922aff00f6d4a1246f5c",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=7a876637c5ece82f1f8e33cf2c9a615b914d6c72",
+                "reference": "7a876637c5ece82f1f8e33cf2c9a615b914d6c72",
                 "shasum": ""
             },
             "require": {
@@ -19246,7 +19255,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2019-03-15T10:43:19+00:00"
+            "time": "2019-04-09T13:17:25+00:00"
         }
     ],
     "aliases": [
@@ -19273,6 +19282,7 @@
         "drupal/type_style": 20,
         "cweagans/composer-patches": 20,
         "loopindex/ckeditor-track-changes": 20,
+        "acquia/acf": 20,
         "acquia/lightning_dev": 20
     },
     "prefer-stable": true,
