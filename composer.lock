@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d24152c0dc4f6ccc3561a61dc388cc9",
+    "content-hash": "c99adf7e8be3917dfc9787d027d6129d",
     "packages": [
         {
             "name": "acquia/acf",
@@ -14,7 +14,7 @@
                 "url": "https://github.com/acquia/acf.git",
                 "reference": "master"
             },
-            "type": "drupal-library",
+            "type": "drupal-module",
             "time": "2019-04-10T07:19:05+00:00"
         },
         {

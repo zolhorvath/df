@@ -24,7 +24,7 @@
             "package": {
                 "name": "acquia/acf",
                 "version": "dev-master",
-                "type": "drupal-library",
+                "type": "drupal-module",
                 "source": {
                     "url": "https://github.com/acquia/acf.git",
                     "type": "git",
