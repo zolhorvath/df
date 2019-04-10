@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bd38b393f5d29035e5fa91315c0f737",
+    "content-hash": "2d24152c0dc4f6ccc3561a61dc388cc9",
     "packages": [
         {
             "name": "acquia/acf",
@@ -2654,6 +2654,48 @@
             }
         },
         {
+            "name": "drupal/basic_data",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/basic_data.git",
+                "reference": "801d8f00ca34e9419147ee853e05a5f1a5622352"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1549909981",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "brantwynn",
+                    "homepage": "https://www.drupal.org/user/252788"
+                }
+            ],
+            "description": "A basic entity type that stores data blobs.",
+            "homepage": "https://www.drupal.org/project/basic_data",
+            "support": {
+                "source": "https://git.drupalcode.org/project/basic_data"
+            },
+            "time": "2019-02-11T16:27:52+00:00"
+        },
+        {
             "name": "drupal/better_formats",
             "version": "dev-1.x",
             "source": {
@@ -3399,6 +3441,52 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/config_update"
             }
+        },
+        {
+            "name": "drupal/connection",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/connection.git",
+                "reference": "0c8ef1bf0c863413aba57c4952fb7104db49e0fa"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1550011384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "brantwynn",
+                    "homepage": "https://www.drupal.org/user/252788"
+                }
+            ],
+            "description": "Provides an API Connection plugin type that can be extended.",
+            "homepage": "https://www.drupal.org/project/connection",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/connection",
+                "issues": "https://www.drupal.org/project/issues/connection"
+            },
+            "time": "2019-02-12T22:38:39+00:00"
         },
         {
             "name": "drupal/consumers",
@@ -19283,6 +19371,8 @@
         "cweagans/composer-patches": 20,
         "loopindex/ckeditor-track-changes": 20,
         "acquia/acf": 20,
+        "drupal/basic_data": 20,
+        "drupal/connection": 20,
         "acquia/lightning_dev": 20
     },
     "prefer-stable": true,

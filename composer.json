@@ -279,7 +279,9 @@
         "onelogin/php-saml": "2.13.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "phing/phing": "^2.14",
-        "acquia/acf": "dev-master"
+        "acquia/acf": "dev-master",
+        "drupal/basic_data": "1.x-dev",
+        "drupal/connection": "1.x-dev"
     },
     "autoload": {
         "psr-4": {
