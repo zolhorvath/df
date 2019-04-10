@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c99adf7e8be3917dfc9787d027d6129d",
+    "content-hash": "87cded4a98c209597a2d39e95e24c072",
     "packages": [
         {
             "name": "acquia/acf",
@@ -8710,6 +8710,53 @@
             }
         },
         {
+            "name": "drupal/pdb",
+            "version": "1.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pdb.git",
+                "reference": "8.x-1.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pdb-8.x-1.0-alpha6.zip",
+                "reference": "8.x-1.0-alpha6",
+                "shasum": "19721bdd7f61b48150c6ba451174bc1af9683e5a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1479388440",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mrjmd",
+                    "homepage": "https://www.drupal.org/user/1800446"
+                }
+            ],
+            "description": "Progressively Decoupled Blocks (PDB). Build stuff with javascript frameworks as blocks.",
+            "homepage": "https://www.drupal.org/project/pdb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/pdb"
+            }
+        },
+        {
             "name": "drupal/radix",
             "version": "4.1.0",
             "source": {
@@ -8762,6 +8809,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/radix",
                 "issues": "https://www.drupal.org/project/issues/radix"
+            }
+        },
+        {
+            "name": "drupal/react_block",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/react_block.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/react_block-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "1f0e8616edcd8fa220d5216d44438bc3c6f99b4a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/pdb": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1550449381",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rlnorthcutt",
+                    "homepage": "https://www.drupal.org/user/116893"
+                }
+            ],
+            "description": "Create blocks for React components.",
+            "homepage": "https://www.drupal.org/project/react_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/react_block"
             }
         },
         {
@@ -9665,6 +9760,48 @@
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
+        },
+        {
+            "name": "drupal/simple_api",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_api.git",
+                "reference": "d22eb3113410296c05c02409bd33b4257b52e8de"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1505960404",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rlnorthcutt",
+                    "homepage": "https://www.drupal.org/user/116893"
+                }
+            ],
+            "description": "This module provides a simple RESTful API in Drupal 8 that is populated by JSON files.",
+            "homepage": "https://www.drupal.org/project/simple_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_api"
+            },
+            "time": "2017-09-21T02:14:25+00:00"
         },
         {
             "name": "drupal/simple_gmap",
@@ -19373,6 +19510,8 @@
         "acquia/acf": 20,
         "drupal/basic_data": 20,
         "drupal/connection": 20,
+        "drupal/react_block": 15,
+        "drupal/simple_api": 20,
         "acquia/lightning_dev": 20
     },
     "prefer-stable": true,
