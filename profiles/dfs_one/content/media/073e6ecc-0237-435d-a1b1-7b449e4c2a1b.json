@@ -1,14 +1,14 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/media\/image\/3?_format=hal_json"
+            "href": "http:\/\/default\/media\/image\/6?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
         },
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/2019-03\/nils-nedel-386683-unsplash.jpg",
+                "href": "http:\/\/default\/sites\/default\/files\/2019-04\/benjamin-davies-484913-unsplash.jpg",
                 "lang": "en"
             }
         ],
@@ -20,23 +20,23 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/2019-03\/nils-nedel-386683-unsplash.jpg"
+                "href": "http:\/\/default\/sites\/default\/files\/2019-04\/benjamin-davies-484913-unsplash.jpg"
             }
         ]
     },
     "mid": [
         {
-            "value": 3
+            "value": 6
         }
     ],
     "uuid": [
         {
-            "value": "e5b57881-d725-42d2-a1e3-f165ce16ee34"
+            "value": "073e6ecc-0237-435d-a1b1-7b449e4c2a1b"
         }
     ],
     "vid": [
         {
-            "value": 3
+            "value": 6
         }
     ],
     "langcode": [
@@ -52,7 +52,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-04-10T12:39:03+00:00",
+            "value": "2019-04-10T12:48:33+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -64,7 +64,7 @@
     ],
     "name": [
         {
-            "value": "nils-nedel-386683-unsplash",
+            "value": "benjamin-davies-484913-unsplash",
             "lang": "en"
         }
     ],
@@ -73,7 +73,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/nils-nedel-386683-unsplash.jpg"
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-04\/benjamin-davies-484913-unsplash.jpg"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -81,14 +81,14 @@
                 },
                 "uuid": [
                     {
-                        "value": "9063444a-190e-462f-ba05-3552c551daf7"
+                        "value": "6ff76070-5488-4ab3-a39a-960355062587"
                     }
                 ],
                 "lang": "en",
-                "alt": "nils-nedel-386683-unsplash",
+                "alt": "benjamin-davies-484913-unsplash",
                 "title": null,
-                "width": "1920",
-                "height": "600"
+                "width": "1200",
+                "height": "800"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/uid": [
@@ -113,7 +113,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/nils-nedel-386683-unsplash.jpg"
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-04\/benjamin-davies-484913-unsplash.jpg"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -121,26 +121,26 @@
                 },
                 "uuid": [
                     {
-                        "value": "9063444a-190e-462f-ba05-3552c551daf7"
+                        "value": "6ff76070-5488-4ab3-a39a-960355062587"
                     }
                 ],
-                "alt": "nils-nedel-386683-unsplash",
+                "alt": "benjamin-davies-484913-unsplash",
                 "title": "",
-                "width": "1920",
-                "height": "600"
+                "width": "1200",
+                "height": "800"
             }
         ]
     },
     "created": [
         {
-            "value": "2019-03-25T13:23:01+00:00",
+            "value": "2019-04-10T12:48:33+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-25T13:23:01+00:00",
+            "value": "2019-04-10T12:48:33+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -167,8 +167,8 @@
     ],
     "path": [
         {
-            "alias": "\/media\/image\/3",
-            "pid": 4,
+            "alias": "\/media\/image\/6",
+            "pid": 7,
             "langcode": "en",
             "lang": "en"
         }

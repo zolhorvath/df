@@ -1,0 +1,205 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/mega-menu"
+        }
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5548af3e-d548-43ed-b479-43a37e1dff46"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "mega-menu"
+        }
+    ],
+    "enabled": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "Mega Menu",
+            "lang": "en"
+        }
+    ],
+    "menu_name": [
+        {
+            "value": "mega-menu"
+        }
+    ],
+    "link": [
+        {
+            "uri": "internal:#",
+            "title": "",
+            "options": []
+        }
+    ],
+    "external": [
+        {
+            "value": false
+        }
+    ],
+    "rediscover": [
+        {
+            "value": true
+        }
+    ],
+    "weight": [
+        {
+            "value": 3
+        }
+    ],
+    "expanded": [
+        {
+            "value": true
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-04-10T23:02:37+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "view_mode": [
+        {
+            "value": "default",
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| One",
+                "canonical_url": "http:\/\/default\/home"
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_created": [
+        {
+            "value": "2019-04-10T12:56:51+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "layout_builder__layout": [
+        {
+            "section": {
+                "layout_id": "layouts_3-3-3-3",
+                "layout_settings": {
+                    "gap": "gap-sm",
+                    "full_width": 0,
+                    "class": ""
+                },
+                "components": {
+                    "7e5013a7-8d9c-4fe6-b810-e25820599572": {
+                        "uuid": "7e5013a7-8d9c-4fe6-b810-e25820599572",
+                        "region": "first",
+                        "configuration": {
+                            "id": "block_content:94ca4ad6-9fb1-48c6-8cf7-1fe1363efead",
+                            "label": "Belgium",
+                            "provider": "block_content",
+                            "label_display": "visible",
+                            "status": true,
+                            "info": "",
+                            "view_mode": "full",
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    },
+                    "b40de824-38a1-4d78-8cec-e7047ba7e9ee": {
+                        "uuid": "b40de824-38a1-4d78-8cec-e7047ba7e9ee",
+                        "region": "second",
+                        "configuration": {
+                            "id": "block_content:b6c08796-0971-40bd-a650-c2a8df3f899a",
+                            "label": "England",
+                            "provider": "block_content",
+                            "label_display": "visible",
+                            "status": true,
+                            "info": "",
+                            "view_mode": "full",
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    },
+                    "6bc81979-73b8-41a4-b101-fe84865393b2": {
+                        "uuid": "6bc81979-73b8-41a4-b101-fe84865393b2",
+                        "region": "third",
+                        "configuration": {
+                            "id": "block_content:9773f9f0-6aca-45c5-9e9f-6b6a9f3b6794",
+                            "label": "Ireland",
+                            "provider": "block_content",
+                            "label_display": "visible",
+                            "status": true,
+                            "info": "",
+                            "view_mode": "full",
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    },
+                    "e933af14-3bf9-4526-a97d-3ad1567ae7cd": {
+                        "uuid": "e933af14-3bf9-4526-a97d-3ad1567ae7cd",
+                        "region": "fourth",
+                        "configuration": {
+                            "id": "block_content:304fba3b-5537-4bc9-9c4e-588c274143f7",
+                            "label": "Italy",
+                            "provider": "block_content",
+                            "label_display": "visible",
+                            "status": true,
+                            "info": "",
+                            "view_mode": "full",
+                            "context_mapping": []
+                        },
+                        "additional": [],
+                        "weight": 0
+                    }
+                }
+            },
+            "lang": "en"
+        }
+    ]
+}

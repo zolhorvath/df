@@ -8,7 +8,7 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/reginar-103694-unsplash.jpg",
+                "href": "http:\/\/default\/sites\/default\/files\/2019-03\/reginar-103694-unsplash.jpg",
                 "lang": "en"
             }
         ],
@@ -52,7 +52,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-03-25T14:53:55+00:00",
+            "value": "2019-04-10T12:39:03+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -73,7 +73,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/reginar-103694-unsplash.jpg"
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/reginar-103694-unsplash.jpg"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "b548f93d-30a3-427a-ad99-365ef2f90841"
+                        "value": "8333dd12-0717-4d28-bb25-61742119f0c4"
                     }
                 ],
                 "lang": "en",
@@ -103,7 +103,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
+                        "value": "f0ab072a-1b26-4c94-ac7f-27bb25b7fd7b"
                     }
                 ],
                 "lang": "en"
@@ -168,7 +168,7 @@
     "path": [
         {
             "alias": "\/media\/image\/4",
-            "pid": 6,
+            "pid": 5,
             "langcode": "en",
             "lang": "en"
         }

@@ -1,12 +1,12 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/2?_format=hal_json"
+            "href": "http:\/\/default\/block\/6?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/map"
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
         },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
@@ -15,17 +15,17 @@
     },
     "id": [
         {
-            "value": 2
+            "value": 6
         }
     ],
     "uuid": [
         {
-            "value": "98af15c2-cab7-4dc0-8180-2455ed24a852"
+            "value": "b6c08796-0971-40bd-a650-c2a8df3f899a"
         }
     ],
     "revision_id": [
         {
-            "value": 2
+            "value": 6
         }
     ],
     "langcode": [
@@ -36,12 +36,12 @@
     ],
     "type": [
         {
-            "target_id": "map"
+            "target_id": "basic"
         }
     ],
     "revision_created": [
         {
-            "value": "2019-03-25T13:20:11+00:00",
+            "value": "2019-04-10T12:49:03+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -53,13 +53,13 @@
     ],
     "info": [
         {
-            "value": "Colosseum Map",
+            "value": "England Mega Menu Block",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-25T13:20:11+00:00",
+            "value": "2019-04-10T13:05:28+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -94,7 +94,7 @@
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
             {
                 "_links": {
                     "self": {
@@ -115,41 +115,17 @@
     },
     "content_translation_created": [
         {
-            "value": "2019-03-25T13:19:45+00:00",
+            "value": "2019-04-10T12:49:03+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "field_map_address": [
+    "body": [
         {
-            "langcode": "",
-            "country_code": "IT",
-            "administrative_area": "RM",
-            "locality": "Roma",
-            "dependent_locality": null,
-            "postal_code": "00184",
-            "sorting_code": null,
-            "address_line1": "Piazza del Colosseo",
-            "address_line2": "",
-            "organization": null,
-            "given_name": null,
-            "additional_name": null,
-            "family_name": null,
-            "lang": "en"
-        }
-    ],
-    "field_map_geofield": [
-        {
-            "value": "POINT(12.494144 41.890411)",
-            "geo_type": "Point",
-            "lat": 41.890411,
-            "lon": 12.494144,
-            "left": 12.494144,
-            "top": 41.890411,
-            "right": 12.494144,
-            "bottom": 41.890411,
-            "geohash": "sr2yk3cvqdt5",
-            "latlon": "41.890411,12.494144",
+            "value": "<drupal-entity data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-embed-display-settings=\"{&quot;image_style&quot;:&quot;article_preview&quot;,&quot;image_link&quot;:&quot;&quot;}\" data-entity-type=\"media\" data-entity-uuid=\"073e6ecc-0237-435d-a1b1-7b449e4c2a1b\"><\/drupal-entity>\r\n\r\n<ul>\r\n\t<li><a href=\"#\">Bath<\/a><\/li>\r\n\t<li><a href=\"#\">London<\/a><\/li>\r\n\t<li><a href=\"#\">Oxford<\/a><\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text",
+            "processed": "<article class=\"embedded-entity\">  \n<img src=\"\/sites\/default\/files\/styles\/article_preview\/public\/2019-04\/benjamin-davies-484913-unsplash.jpg?itok=5hCpKW3b\" width=\"840\" height=\"260\" title=\"benjamin-davies-484913-unsplash\" typeof=\"foaf:Image\" class=\"img-thumbnail\" alt=\"benjamin-davies-484913-unsplash\" \/>\n\n\n<\/article>\n\n\n<ul>\n\t<li><a href=\"#\">Bath<\/a><\/li>\n\t<li><a href=\"#\">London<\/a><\/li>\n\t<li><a href=\"#\">Oxford<\/a><\/li>\n<\/ul>",
+            "summary": "",
             "lang": "en"
         }
     ]

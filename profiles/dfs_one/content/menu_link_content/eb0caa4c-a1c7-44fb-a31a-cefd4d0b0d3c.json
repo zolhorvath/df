@@ -1,31 +1,31 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/3\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/6\/edit?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
+            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/mega-menu"
         },
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/mega-menu\/content_translation_uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/menu_link_content_parent_entity": [
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/mega-menu\/menu_link_content_parent_entity": [
             {
-                "href": "http:\/\/default\/admin\/structure\/menu\/item\/2\/edit?_format=hal_json"
+                "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
             }
         ]
     },
     "id": [
         {
-            "value": 3
+            "value": 6
         }
     ],
     "uuid": [
         {
-            "value": "1c9f24ed-f09c-4506-9a72-70f80967ad38"
+            "value": "eb0caa4c-a1c7-44fb-a31a-cefd4d0b0d3c"
         }
     ],
     "langcode": [
@@ -36,7 +36,7 @@
     ],
     "bundle": [
         {
-            "value": "menu_link_content"
+            "target_id": "mega-menu"
         }
     ],
     "enabled": [
@@ -46,13 +46,13 @@
     ],
     "title": [
         {
-            "value": "Dropdown Menu Item",
+            "value": "Mega Menu Item",
             "lang": "en"
         }
     ],
     "menu_name": [
         {
-            "value": "main"
+            "value": "mega-menu"
         }
     ],
     "link": [
@@ -74,7 +74,7 @@
     ],
     "weight": [
         {
-            "value": 1
+            "value": 3
         }
     ],
     "expanded": [
@@ -84,12 +84,12 @@
     ],
     "parent": [
         {
-            "value": "menu_link_content:676ced5c-d40f-4e60-8ace-878de04b3b29"
+            "value": "menu_link_content:5548af3e-d548-43ed-b479-43a37e1dff46"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-18T19:28:12+00:00",
+            "value": "2019-04-11T14:16:13+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -98,6 +98,20 @@
         {
             "value": true,
             "lang": "en"
+        }
+    ],
+    "view_mode": [
+        {
+            "value": "default",
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| One",
+                "canonical_url": "http:\/\/default\/home"
+            }
         }
     ],
     "content_translation_source": [
@@ -113,7 +127,7 @@
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/mega-menu\/content_translation_uid": [
             {
                 "_links": {
                     "self": {
@@ -125,25 +139,25 @@
                 },
                 "uuid": [
                     {
-                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
+                        "value": "81867e0b-a91d-4f5d-86b7-8db1ca2ea52f"
                     }
                 ],
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/menu_link_content_parent_entity": [
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/mega-menu\/menu_link_content_parent_entity": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/admin\/structure\/menu\/item\/2\/edit?_format=hal_json"
+                        "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
                     },
                     "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
+                        "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/mega-menu"
                     }
                 },
                 "uuid": [
                     {
-                        "value": "676ced5c-d40f-4e60-8ace-878de04b3b29"
+                        "value": "5548af3e-d548-43ed-b479-43a37e1dff46"
                     }
                 ]
             }
@@ -157,7 +171,7 @@
     ],
     "content_translation_created": [
         {
-            "value": "2019-03-18T19:27:51+00:00",
+            "value": "2019-04-10T20:15:43+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }

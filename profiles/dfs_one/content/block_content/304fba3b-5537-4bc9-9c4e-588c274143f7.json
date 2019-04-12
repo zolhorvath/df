@@ -1,12 +1,12 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/2?_format=hal_json"
+            "href": "http:\/\/default\/block\/8?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/map"
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
         },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
@@ -15,17 +15,17 @@
     },
     "id": [
         {
-            "value": 2
+            "value": 8
         }
     ],
     "uuid": [
         {
-            "value": "98af15c2-cab7-4dc0-8180-2455ed24a852"
+            "value": "304fba3b-5537-4bc9-9c4e-588c274143f7"
         }
     ],
     "revision_id": [
         {
-            "value": 2
+            "value": 8
         }
     ],
     "langcode": [
@@ -36,12 +36,12 @@
     ],
     "type": [
         {
-            "target_id": "map"
+            "target_id": "basic"
         }
     ],
     "revision_created": [
         {
-            "value": "2019-03-25T13:20:11+00:00",
+            "value": "2019-04-10T12:53:17+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -53,13 +53,13 @@
     ],
     "info": [
         {
-            "value": "Colosseum Map",
+            "value": "Italy Mega Menu Block",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2019-03-25T13:20:11+00:00",
+            "value": "2019-04-10T13:06:21+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -94,7 +94,7 @@
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
             {
                 "_links": {
                     "self": {
@@ -115,41 +115,17 @@
     },
     "content_translation_created": [
         {
-            "value": "2019-03-25T13:19:45+00:00",
+            "value": "2019-04-10T12:53:17+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "field_map_address": [
+    "body": [
         {
-            "langcode": "",
-            "country_code": "IT",
-            "administrative_area": "RM",
-            "locality": "Roma",
-            "dependent_locality": null,
-            "postal_code": "00184",
-            "sorting_code": null,
-            "address_line1": "Piazza del Colosseo",
-            "address_line2": "",
-            "organization": null,
-            "given_name": null,
-            "additional_name": null,
-            "family_name": null,
-            "lang": "en"
-        }
-    ],
-    "field_map_geofield": [
-        {
-            "value": "POINT(12.494144 41.890411)",
-            "geo_type": "Point",
-            "lat": 41.890411,
-            "lon": 12.494144,
-            "left": 12.494144,
-            "top": 41.890411,
-            "right": 12.494144,
-            "bottom": 41.890411,
-            "geohash": "sr2yk3cvqdt5",
-            "latlon": "41.890411,12.494144",
+            "value": "<drupal-entity data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-embed-display-settings=\"{&quot;image_style&quot;:&quot;article_preview&quot;,&quot;image_link&quot;:&quot;&quot;}\" data-entity-type=\"media\" data-entity-uuid=\"ebde7484-b094-41a9-a75e-9f4b8ebb3a88\"><\/drupal-entity>\r\n<ul>\r\n\t<li><a href=\"#\">Florence<\/a><\/li>\r\n\t<li><a href=\"#\">Rome<\/a><\/li>\r\n\t<li><a href=\"#\">Venice<\/a><\/li>\r\n<\/ul>",
+            "format": "rich_text",
+            "processed": "<article class=\"embedded-entity\">  \n<img src=\"\/sites\/default\/files\/styles\/article_preview\/public\/2019-04\/dan-novac-583320-unsplash.jpg?h=38054ac8&amp;itok=KiYzyCcx\" width=\"840\" height=\"260\" title=\"dan-novac-583320-unsplash\" typeof=\"foaf:Image\" class=\"img-thumbnail\" alt=\"dan-novac-583320-unsplash\" \/>\n\n\n<\/article>\n\n<ul>\n\t<li><a href=\"#\">Florence<\/a><\/li>\n\t<li><a href=\"#\">Rome<\/a><\/li>\n\t<li><a href=\"#\">Venice<\/a><\/li>\n<\/ul>",
+            "summary": "",
             "lang": "en"
         }
     ]

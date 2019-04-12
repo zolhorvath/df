@@ -31,6 +31,11 @@ a {
 //
 .navbar {
   background-color:#__header-bg-left__;
+
+  .dropdown-menu.mega-menu {
+    background-color: #__header-bg-left__;
+  }
+
   @media (min-width: 992px) {
     background: #__header-bg-left__ linear-gradient(to left, #__header-bg-right__ 50%, #__header-bg-left__ 50%);
 

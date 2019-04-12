@@ -5,7 +5,13 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
     },
     "id": [
         {
@@ -19,7 +25,7 @@
     ],
     "revision_id": [
         {
-            "value": 2
+            "value": 1
         }
     ],
     "langcode": [
@@ -87,6 +93,26 @@
             "lang": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f0ab072a-1b26-4c94-ac7f-27bb25b7fd7b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
     "content_translation_created": [
         {
             "value": "2019-03-25T13:21:17+00:00",

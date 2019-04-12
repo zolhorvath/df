@@ -6,6 +6,12 @@
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/media_slideshow"
         },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/field_slideshow_items": [
             {
                 "href": "http:\/\/default\/media\/image\/2?_format=hal_json"
@@ -30,7 +36,7 @@
     ],
     "revision_id": [
         {
-            "value": 3
+            "value": 4
         }
     ],
     "langcode": [
@@ -106,14 +112,25 @@
             "lang": "en"
         }
     ],
-    "content_translation_created": [
-        {
-            "value": "2019-03-25T13:22:44+00:00",
-            "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ],
     "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f0ab072a-1b26-4c94-ac7f-27bb25b7fd7b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/media_slideshow\/field_slideshow_items": [
             {
                 "_links": {
@@ -161,5 +178,12 @@
                 ]
             }
         ]
-    }
+    },
+    "content_translation_created": [
+        {
+            "value": "2019-03-25T13:22:44+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
 }

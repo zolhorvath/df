@@ -6,6 +6,12 @@
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero"
         },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
             {
                 "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg",
@@ -25,7 +31,7 @@
     ],
     "revision_id": [
         {
-            "value": 4
+            "value": 3
         }
     ],
     "langcode": [
@@ -93,6 +99,48 @@
             "lang": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f0ab072a-1b26-4c94-ac7f-27bb25b7fd7b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8adb9ad3-5c6c-49fb-bf37-3e43f2e05c95"
+                    }
+                ],
+                "lang": "en",
+                "alt": "",
+                "title": "",
+                "width": "1920",
+                "height": "600"
+            }
+        ]
+    },
     "content_translation_created": [
         {
             "value": "2019-03-25T13:17:57+00:00",
@@ -124,30 +172,6 @@
             "lang": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-03\/thimo-van-leeuwen-1413414-unsplash.jpg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "8adb9ad3-5c6c-49fb-bf37-3e43f2e05c95"
-                    }
-                ],
-                "lang": "en",
-                "alt": "",
-                "title": "",
-                "width": "1920",
-                "height": "600"
-            }
-        ]
-    },
     "field_hero_link": [
         {
             "uri": "internal:\/",
