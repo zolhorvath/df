@@ -1,10 +1,11 @@
-// Common abstract classes to extend or parametrics are stored here.
+/* @file
+ * Common low level styles
+ *
+ */
 
-// Example parametrics.
-// ------------------------------------------------------
-// %font-FONTNAME   {}
-// %font-sans-serif { font-family: sans-serif; }
-// %font-serif      { font-family: serif; }
+.alert {
+  margin-top: $alert-margin-bottom;
+}
 
 .img-thumbnail {
   padding: 0;
