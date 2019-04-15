@@ -21,30 +21,34 @@
 {% set placement = placement ?? '' %}
 {% set color = color ?? 'light' %}
 
-<nav class="navbar navbar-expand-lg justify-content-between {{ placement }} {{ utility_classes|join(' ') }}">
-  {% if container %}
-    <div class="{{ navbar_width }}">
-  {% endif %}
+<div class="page__navbar">
+  <nav class="navbar navbar-expand-lg justify-content-between {{ placement }} {{ utility_classes|join(' ') }}">
+    {% if container %}
+      <div class="{{ navbar_width }}">
+    {% endif %}
 
-  {% block branding %}
-    {{ branding }}
-  {% endblock %}
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse">
-    {% block left %}
-      {{ left }}
+    {% block branding %}
+      {{ branding }}
     {% endblock %}
 
-    {% block right %}
-      {{ right }}
-    {% endblock %}
-  </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse.main" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        {% include active_theme_path() ~ '/images/hamburger.svg' %}
+      </span>
+    </button>
 
-  {% if container %}
+    <div class="collapse navbar-collapse main">
+      {% block left %}
+        {{ left }}
+      {% endblock %}
+
+      {% block right %}
+        {{ right }}
+      {% endblock %}
     </div>
-  {% endif %}
-</nav>
+
+    {% if container %}
+      </div>
+    {% endif %}
+  </nav>
+</div>

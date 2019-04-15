@@ -149,6 +149,11 @@ div.scheduled-transition button {
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-headerbgright.form-item-palette-headerbgright.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkright.form-item-palette-headerlinkright.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkhoverright.form-item-palette-headerlinkhoverright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderbg.form-item-palette-metaheaderbg.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheadertext.form-item-palette-metaheadertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderlink.form-item-palette-metaheaderlink.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderlinkhover.form-item-palette-metaheaderlinkhover.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerbg.form-item-palette-footerbg.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footertext.form-item-palette-footertext.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlink.form-item-palette-footerlink.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlinkhover.form-item-palette-footerlinkhover.form-has-label.input-field {
