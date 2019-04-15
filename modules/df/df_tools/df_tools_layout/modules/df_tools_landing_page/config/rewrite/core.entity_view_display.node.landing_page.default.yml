@@ -9,8 +9,10 @@ dependencies:
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
   module:
+    - df_tools_layout
     - layout_builder
-    - layout_discovery
+    - layout_builder_restrictions
+    - layout_library
     - metatag
     - user
 third_party_settings:
@@ -19,8 +21,11 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
-        layout_settings: {  }
+        layout_id: layouts_12
+        layout_settings:
+          gap: gap-md
+          full_width: 0
+          class: ''
         components:
           e7257fd8-9a0a-4977-bf82-9d0f14b3c64e:
             uuid: e7257fd8-9a0a-4977-bf82-9d0f14b3c64e
@@ -39,7 +44,7 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 1
+            weight: 0
   layout_library:
     enable: true
   layout_builder_restrictions:
