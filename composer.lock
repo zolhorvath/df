@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d4b25c617924e5398ebca004063e9e3",
+    "content-hash": "4beae421e48349dc7d39a08fd047c51c",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -2078,17 +2078,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.51"
+                "reference": "8.x-1.53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.51.zip",
-                "reference": "8.x-1.51",
-                "shasum": "f8d26898f46b9ef4939646aadcaa1d661aa3c21f"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.53.zip",
+                "reference": "8.x-1.53",
+                "shasum": "54d299f42a27d7939758b0979fc47f41b709fd20"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -2110,8 +2110,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1553688485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2174,7 +2174,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2185,8 +2185,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1553688485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2243,7 +2243,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -2255,8 +2255,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1553688485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2313,7 +2313,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2324,8 +2324,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1553688485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2382,24 +2382,24 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.4.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "143e426be73418c719c6bddd5fb81c610604e860"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "e27d2f8dac799a166b8ee040ceb608f2eff57cee"
             },
             "require": {
                 "commerceguys/addressing": "^1.0.0",
-                "drupal/core": "*"
+                "drupal/core": "^8.6"
             },
             "require-dev": {
-                "drupal/token": "*"
+                "drupal/token": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -2407,8 +2407,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1554332581",
+                    "version": "8.x-1.6",
+                    "datestamp": "1554334685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2449,17 +2449,17 @@
         },
         {
             "name": "drupal/addtoany",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/addtoany.git",
-                "reference": "8.x-1.11"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "02ccadd8c35ffaf1b326732c9f9e7f18af4a9de3"
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "f66b3cb0a95b500e4802e8ff9c29af04554327d8"
             },
             "require": {
                 "drupal/core": "*"
@@ -2470,7 +2470,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11",
+                    "version": "8.x-1.12",
                     "datestamp": "1554702781",
                     "security-coverage": {
                         "status": "covered",
