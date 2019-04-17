@@ -274,7 +274,12 @@
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
         "onelogin/php-saml": "2.13.0",
         "oomphinc/composer-installers-extender": "^1.1",
-        "phing/phing": "^2.14"
+        "phing/phing": "^2.14",
+        "acquia/acf": "dev-master",
+        "drupal/basic_data": "1.x-dev",
+        "drupal/connection": "1.x-dev",
+        "drupal/react_block": "^1.0@alpha",
+        "drupal/simple_api": "1.x-dev"
     },
     "autoload": {
         "psr-4": {
