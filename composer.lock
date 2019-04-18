@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e5ee04c3b5cd7245ba85d61e4d4f5a8",
+    "content-hash": "bfa38bbf562776a26d71ed1cc7403f85",
     "packages": [
         {
             "name": "acquia/acf",
@@ -2100,17 +2100,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.51"
+                "reference": "8.x-1.53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.51.zip",
-                "reference": "8.x-1.51",
-                "shasum": "f8d26898f46b9ef4939646aadcaa1d661aa3c21f"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.53.zip",
+                "reference": "8.x-1.53",
+                "shasum": "54d299f42a27d7939758b0979fc47f41b709fd20"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -2132,8 +2132,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1555501690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2200,7 +2200,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2211,8 +2211,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1555501690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2273,7 +2273,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -2285,8 +2285,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1555501690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2347,7 +2347,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.51.0",
+            "version": "1.53.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2358,8 +2358,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.51",
-                    "datestamp": "1548245280",
+                    "version": "8.x-1.53",
+                    "datestamp": "1555501690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2420,24 +2420,24 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.4.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "143e426be73418c719c6bddd5fb81c610604e860"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "e27d2f8dac799a166b8ee040ceb608f2eff57cee"
             },
             "require": {
                 "commerceguys/addressing": "^1.0.0",
-                "drupal/core": "*"
+                "drupal/core": "^8.6"
             },
             "require-dev": {
-                "drupal/token": "*"
+                "drupal/token": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -2445,8 +2445,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1554332581",
+                    "version": "8.x-1.6",
+                    "datestamp": "1554334685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2487,17 +2487,17 @@
         },
         {
             "name": "drupal/addtoany",
-            "version": "1.10.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/addtoany.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "ebf4a3191537002a39211a9c7d0d80e83955411f"
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "f66b3cb0a95b500e4802e8ff9c29af04554327d8"
             },
             "require": {
                 "drupal/core": "*"
@@ -2508,8 +2508,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1553225548",
+                    "version": "8.x-1.12",
+                    "datestamp": "1554702781",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4867,17 +4867,17 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "8e9f2a6c2d5abaa02b58b4b48e0626ed7c3518ad"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "3161d3f15d634c603a065ac5d731131c2be6714a"
             },
             "require": {
                 "drupal/core": "*"
@@ -4888,8 +4888,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1551898937",
+                    "version": "8.x-1.5",
+                    "datestamp": "1552173780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6010,17 +6010,17 @@
         },
         {
             "name": "drupal/ip_anon",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ip_anon.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ip_anon-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "89256c2fd686d12a80b43d6306690fb14e4d9d21"
+                "url": "https://ftp.drupal.org/files/projects/ip_anon-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "d6029f04da783091d339134dda646bd06185cd8b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -6031,8 +6031,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1528244580",
+                    "version": "8.x-1.5",
+                    "datestamp": "1542485880",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9163,31 +9163,31 @@
         },
         {
             "name": "drupal/samlauth",
-            "version": "2.0.0-alpha1",
+            "version": "3.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/samlauth.git",
-                "reference": "8.x-2.0-alpha1"
+                "reference": "8.x-3.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-2.0-alpha1.zip",
-                "reference": "8.x-2.0-alpha1",
-                "shasum": "c113add0083cf1411b99672ddb83dd11f53418a7"
+                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "78598d884d84c006f16331ae0bb0304d0a7d8555"
             },
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/externalauth": "*",
-                "onelogin/php-saml": "~2.5"
+                "drupal/externalauth": "^1.1",
+                "onelogin/php-saml": "^3"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1",
-                    "datestamp": "1488462483",
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1549404780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -11561,43 +11561,40 @@
         },
         {
             "name": "onelogin/php-saml",
-            "version": "v2.13.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onelogin/php-saml.git",
-                "reference": "28e7ccc949592e78f7f4648dcfb492893aecc360"
+                "reference": "c9026b26395a65184550055d9a01bdf9dbd30861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/28e7ccc949592e78f7f4648dcfb492893aecc360",
-                "reference": "28e7ccc949592e78f7f4648dcfb492893aecc360",
+                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/c9026b26395a65184550055d9a01bdf9dbd30861",
+                "reference": "c9026b26395a65184550055d9a01bdf9dbd30861",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "ext-mcrypt": "*",
-                "ext-openssl": "*",
-                "php": ">=5.3.2"
+                "php": ">=5.4",
+                "robrichards/xmlseclibs": ">=3.0.3"
             },
             "require-dev": {
-                "pdepend/pdepend": "1.1.0",
-                "phploc/phploc": "*",
-                "phpunit/phpunit": "4.8",
-                "satooshi/php-coveralls": "1.0.1",
-                "sebastian/phpcpd": "*",
-                "squizlabs/php_codesniffer": "2.9.0"
+                "pdepend/pdepend": "^2.5.0",
+                "php-coveralls/php-coveralls": "^1.0.2 || ^2.0",
+                "phploc/phploc": "^2.1 || ^3.0 || ^4.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1",
+                "sebastian/phpcpd": "^2.0 || ^3.0 || ^4.0",
+                "squizlabs/php_codesniffer": "^3.1.1"
             },
             "suggest": {
-                "ext-gettext": "Install gettext and php5-gettext libs to handle translations"
+                "ext-curl": "Install curl lib to be able to use the IdPMetadataParser for parsing remote XMLs",
+                "ext-gettext": "Install gettext and php5-gettext libs to handle translations",
+                "ext-openssl": "Install openssl lib in order to handle with x509 certs (require to support sign and encryption)"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "extlib/xmlseclibs",
-                    "lib/Saml",
-                    "lib/Saml2"
-                ]
+                "psr-4": {
+                    "OneLogin\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11610,7 +11607,7 @@
                 "onelogin",
                 "saml"
             ],
-            "time": "2018-03-05T15:43:24+00:00"
+            "time": "2019-03-11T09:41:32+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -12206,6 +12203,44 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
+        },
+        {
+            "name": "robrichards/xmlseclibs",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robrichards/xmlseclibs.git",
+                "reference": "406c68ac9124db033d079284b719958b829cb830"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/406c68ac9124db033d079284b719958b829cb830",
+                "reference": "406c68ac9124db033d079284b719958b829cb830",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">= 5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RobRichards\\XMLSecLibs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A PHP library for XML Security",
+            "homepage": "https://github.com/robrichards/xmlseclibs",
+            "keywords": [
+                "security",
+                "signature",
+                "xml",
+                "xmldsig"
+            ],
+            "time": "2018-11-15T11:59:02+00:00"
         },
         {
             "name": "sarciszewski/php-future",
