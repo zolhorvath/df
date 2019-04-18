@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36a6e8a2719576bd88c71929a965d042",
+    "content-hash": "0d963846a90b8d38e4a507e2b380d3fe",
     "packages": [
         {
             "name": "acquia/content-hub-php",
@@ -4757,17 +4757,17 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "8e9f2a6c2d5abaa02b58b4b48e0626ed7c3518ad"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "3161d3f15d634c603a065ac5d731131c2be6714a"
             },
             "require": {
                 "drupal/core": "*"
@@ -4778,8 +4778,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1551898937",
+                    "version": "8.x-1.5",
+                    "datestamp": "1552173780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5900,17 +5900,17 @@
         },
         {
             "name": "drupal/ip_anon",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ip_anon.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ip_anon-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "89256c2fd686d12a80b43d6306690fb14e4d9d21"
+                "url": "https://ftp.drupal.org/files/projects/ip_anon-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "d6029f04da783091d339134dda646bd06185cd8b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5921,8 +5921,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1528244580",
+                    "version": "8.x-1.5",
+                    "datestamp": "1542485880",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
