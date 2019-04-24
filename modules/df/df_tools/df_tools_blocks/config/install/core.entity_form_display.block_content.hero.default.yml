@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.hero
-    - entity_browser.browser.image_browser
+    - entity_browser.browser.media_browser_in_modal
     - field.field.block_content.hero.field_callout_color
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_gradient_color
@@ -15,8 +15,15 @@ dependencies:
     - field.field.block_content.hero.field_second_line
     - field.field.block_content.hero.field_text_color
   module:
+    - content_moderation
     - entity_browser
+    - field_layout
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -53,16 +60,18 @@ content:
     type: options_select
     region: content
   field_hero_image:
-    type: entity_browser_file
+    type: entity_browser_entity_reference
     weight: 2
     settings:
-      entity_browser: image_browser
+      entity_browser: media_browser_in_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
       field_widget_remove: true
       open: true
       selection_mode: selection_append
-      view_mode: card
-      field_widget_edit: false
-      preview_image_style: thumbnail
+      field_widget_display_settings:
+        view_mode: thumbnail
+      field_widget_replace: false
     third_party_settings: {  }
     region: content
   field_hero_link:
@@ -104,6 +113,12 @@ content:
       include_locked: true
     third_party_settings: {  }
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   translation:
     weight: 6
     region: content

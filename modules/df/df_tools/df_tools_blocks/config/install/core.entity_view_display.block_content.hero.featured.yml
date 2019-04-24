@@ -1,4 +1,3 @@
-uuid: a2471a71-47a2-4d3d-8072-ae3aaeebd4ea
 langcode: en
 status: true
 dependencies:
@@ -15,11 +14,10 @@ dependencies:
     - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
     - field.field.block_content.hero.field_text_color
-    - responsive_image.styles.responsive_vertical_hero
   module:
     - field_group
+    - layout_builder
     - link
-    - responsive_image
 third_party_settings:
   field_group:
     group_hero_inner_content:
@@ -38,6 +36,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Inner content'
+      region: hidden
     group_hero_content:
       children:
         - group_hero_inner_content
@@ -54,6 +53,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Hero content'
+      region: hidden
     group_hero_image:
       children:
         - field_hero_image
@@ -71,6 +71,7 @@ third_party_settings:
         id: ''
         classes: 'l-over-each__item l-over-each__nested-img l-over-each__nested-img--hero'
       label: 'Hero image'
+      region: hidden
     group_hero:
       children:
         - group_hero_image
@@ -89,6 +90,7 @@ third_party_settings:
         id: ''
         classes: l-over-each
       label: Hero
+      region: hidden
     group_hero_content_spanned:
       children:
         - field_icon
@@ -109,10 +111,11 @@ third_party_settings:
         id: ''
         classes: 'hero-content text-center'
       label: 'Spanned content'
+      region: hidden
     group_hero_column:
       children:
-        - group_hero_content_spanned
         - field_nested_block
+        - group_hero_content_spanned
       parent_name: group_hero_inner_content
       weight: 20
       format_type: html_element
@@ -127,6 +130,11 @@ third_party_settings:
         id: ''
         classes: 'medium-8 large-8 column'
       label: Column
+      region: hidden
+  layout_builder:
+    sections: {  }
+_core:
+  default_config_hash: yV08-C5uWmKgaD_dCub4GMVhWb-SoKvtsLIJcHQkwiQ
 id: block_content.hero.featured
 targetEntityType: block_content
 bundle: hero
@@ -141,11 +149,11 @@ content:
     label: hidden
     region: content
   field_hero_image:
-    type: responsive_image
+    type: entity_reference_entity_view
     weight: 21
     settings:
-      responsive_image_style: responsive_vertical_hero
-      image_link: ''
+      view_mode: hero
+      link: false
     third_party_settings: {  }
     label: hidden
     region: content
