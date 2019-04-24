@@ -25,7 +25,7 @@
     ],
     "revision_id": [
         {
-            "value": 8
+            "value": 3
         }
     ],
     "langcode": [
@@ -106,7 +106,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "f0ab072a-1b26-4c94-ac7f-27bb25b7fd7b"
+                        "value": "6ab0f404-9792-4de1-987a-c04d1709413c"
                     }
                 ],
                 "lang": "en"
@@ -124,7 +124,7 @@
         {
             "value": "<drupal-entity data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-embed-display-settings=\"{&quot;image_style&quot;:&quot;article_preview&quot;,&quot;image_link&quot;:&quot;&quot;}\" data-entity-type=\"media\" data-entity-uuid=\"ebde7484-b094-41a9-a75e-9f4b8ebb3a88\"><\/drupal-entity>\r\n<ul>\r\n\t<li><a href=\"#\">Florence<\/a><\/li>\r\n\t<li><a href=\"#\">Rome<\/a><\/li>\r\n\t<li><a href=\"#\">Venice<\/a><\/li>\r\n<\/ul>",
             "format": "rich_text",
-            "processed": "<article class=\"embedded-entity\">  \n<img src=\"\/sites\/default\/files\/styles\/article_preview\/public\/2019-04\/dan-novac-583320-unsplash.jpg?h=38054ac8&amp;itok=KiYzyCcx\" width=\"840\" height=\"260\" title=\"dan-novac-583320-unsplash\" typeof=\"foaf:Image\" class=\"img-thumbnail\" alt=\"dan-novac-583320-unsplash\" \/>\n\n\n<\/article>\n\n<ul>\n\t<li><a href=\"#\">Florence<\/a><\/li>\n\t<li><a href=\"#\">Rome<\/a><\/li>\n\t<li><a href=\"#\">Venice<\/a><\/li>\n<\/ul>",
+            "processed": "<article class=\"embedded-entity\">  \n<img src=\"\/sites\/default\/files\/styles\/article_preview\/public\/2019-04\/dan-novac-583320-unsplash.jpg?itok=Rh8GmMxq\" width=\"840\" height=\"260\" title=\"dan-novac-583320-unsplash\" typeof=\"foaf:Image\" class=\"img-thumbnail\" alt=\"dan-novac-583320-unsplash\" \/>\n\n\n<\/article>\n\n<ul>\n\t<li><a href=\"#\">Florence<\/a><\/li>\n\t<li><a href=\"#\">Rome<\/a><\/li>\n\t<li><a href=\"#\">Venice<\/a><\/li>\n<\/ul>",
             "summary": "",
             "lang": "en"
         }
