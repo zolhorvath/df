@@ -14,9 +14,9 @@ php:
   - 7.2.4
 env:
   matrix:
-    - SCENARIO=df
-    - SCENARIO=dfs_dev
     - SCENARIO=dfs_tec
+    - SCENARIO=dfs_dev
+    - SCENARIO=df
 
 addons:
   apt:
