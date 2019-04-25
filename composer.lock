@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/acf.git",
-                "reference": "2cb345c2937d70e4b8a4385c26e3495731f20b5e"
+                "reference": "f9772ec6183fcf9a55591cd51e00196dc35e6504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/acf/zipball/2cb345c2937d70e4b8a4385c26e3495731f20b5e",
-                "reference": "2cb345c2937d70e4b8a4385c26e3495731f20b5e",
+                "url": "https://api.github.com/repos/acquia/acf/zipball/f9772ec6183fcf9a55591cd51e00196dc35e6504",
+                "reference": "f9772ec6183fcf9a55591cd51e00196dc35e6504",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -33,7 +33,7 @@
                 }
             ],
             "description": "a lightweight framework for headless e-commerce with Drupal. Starter connectors for major e-commerce engines",
-            "time": "2019-04-24T21:17:09+00:00"
+            "time": "2019-04-25T15:54:29+00:00"
         },
         {
             "name": "acquia/content-hub-php",
@@ -8244,10 +8244,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/page_manager.git",
-                "reference": "cc2dfaa80ad015cc71dead1c2deadce79c776c58"
+                "reference": "41e9e0886d9860ff8ba69fbcfd45f98cec473db0"
             },
             "require": {
-                "drupal/core": "^8.0.5",
+                "drupal/core": "~8.5",
                 "drupal/ctools": "~3"
             },
             "type": "drupal-module",
@@ -8256,8 +8256,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3+0-dev",
-                    "datestamp": "1523670484",
+                    "version": "8.x-4.0-beta3+2-dev",
+                    "datestamp": "1556200085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8284,6 +8284,10 @@
                 {
                     "name": "japerry",
                     "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "manuel.adan",
+                    "homepage": "https://www.drupal.org/user/516420"
                 }
             ],
             "description": "Provides a way to place blocks on a custom page.",
@@ -8293,7 +8297,7 @@
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-12T16:58:46+00:00"
+            "time": "2019-04-25T14:35:56+00:00"
         },
         {
             "name": "drupal/panelizer",
