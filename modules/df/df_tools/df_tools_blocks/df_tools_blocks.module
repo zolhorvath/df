@@ -96,7 +96,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
         }
         unset($build[$field_name]);
       }
-      elseif ($field_name !== 'field_hero_image') {
+      elseif ($field_name !== 'field_hero_background') {
         $wrapper['#children'][$field_name] = $build[$field_name];
         unset($build[$field_name]);
       }
@@ -127,7 +127,7 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
           $direction = 'to bottom';
           break;
       }
-      $build['field_hero_image']['#attributes']['style'] = "background-image: linear-gradient($direction, $gradient_color, transparent)";
+      $build['field_hero_background']['#attributes']['style'] = "background-image: linear-gradient($direction, $gradient_color, transparent)";
     }
     $callout_color = $entity->get('field_callout_color')->getString();
     if (preg_match($color_regex, $callout_color)) {
@@ -309,8 +309,8 @@ function df_tools_blocks_form_block_content_hero_edit_form_alter(&$form, FormSta
  */
 function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Move the hero image out of the details element and set a better label.
-  $form['field_hero_image']['widget']['#type'] = 'container';
-  $form['field_hero_image']['widget']['entity_browser']['#process'][] = '_df_tools_blocks_hero_browser_button';
+  $form['field_hero_background']['widget']['#type'] = 'container';
+  $form['field_hero_background']['widget']['entity_browser']['#process'][] = '_df_tools_blocks_hero_browser_button';
   // Remove the link fieldset and put the URI and title side-by-side.
   $form['field_hero_link']['widget'][0]['#type'] = 'container';
   $form['field_hero_link']['widget'][0]['#attributes']['class'][] = 'row';
@@ -359,7 +359,7 @@ function _df_tools_blocks_hero_browser_button(array $element) {
     /** @var \Drupal\entity_browser\DisplayInterface $display */
     $display = $element['entity_browser']['open_modal']['#ajax']['callback'][0];
     $configuration = $display->getConfiguration();
-    $configuration['link_text'] = t('Background image');
+    $configuration['link_text'] = t('Background media');
     $display->setConfiguration($configuration);
   }
   return $element;

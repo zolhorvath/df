@@ -17,7 +17,7 @@
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
             {
                 "href": "http:\/\/default\/media\/image\/1?_format=hal_json",
                 "lang": "en"
@@ -92,7 +92,7 @@
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_image": [
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
             {
                 "_links": {
                     "self": {

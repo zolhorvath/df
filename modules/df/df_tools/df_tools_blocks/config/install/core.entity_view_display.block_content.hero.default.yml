@@ -7,7 +7,7 @@ dependencies:
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
-    - field.field.block_content.hero.field_hero_image
+    - field.field.block_content.hero.field_hero_background
     - field.field.block_content.hero.field_hero_link
     - field.field.block_content.hero.field_icon
     - field.field.block_content.hero.field_nested_block
@@ -32,7 +32,7 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
-  field_hero_image:
+  field_hero_background:
     type: entity_reference_entity_view
     weight: 0
     settings:

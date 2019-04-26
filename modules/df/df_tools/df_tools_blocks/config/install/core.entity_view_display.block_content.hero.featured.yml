@@ -8,7 +8,7 @@ dependencies:
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
-    - field.field.block_content.hero.field_hero_image
+    - field.field.block_content.hero.field_hero_background
     - field.field.block_content.hero.field_hero_link
     - field.field.block_content.hero.field_icon
     - field.field.block_content.hero.field_nested_block
@@ -54,14 +54,14 @@ third_party_settings:
         speed: fast
       label: 'Hero content'
       region: hidden
-    group_hero_image:
+    group_hero_background:
       children:
-        - field_hero_image
+        - field_hero_background
       parent_name: group_hero
       weight: 20
       format_type: html_element
       format_settings:
-        label: 'Hero image'
+        label: 'Hero Background'
         element: div
         show_label: false
         label_element: h3
@@ -70,11 +70,11 @@ third_party_settings:
         speed: fast
         id: ''
         classes: 'l-over-each__item l-over-each__nested-img l-over-each__nested-img--hero'
-      label: 'Hero image'
+      label: 'Hero Background'
       region: hidden
     group_hero:
       children:
-        - group_hero_image
+        - group_hero_background
         - group_hero_content
       parent_name: ''
       weight: 20
@@ -133,8 +133,6 @@ third_party_settings:
       region: hidden
   layout_builder:
     sections: {  }
-_core:
-  default_config_hash: yV08-C5uWmKgaD_dCub4GMVhWb-SoKvtsLIJcHQkwiQ
 id: block_content.hero.featured
 targetEntityType: block_content
 bundle: hero
@@ -148,7 +146,7 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
-  field_hero_image:
+  field_hero_background:
     type: entity_reference_entity_view
     weight: 21
     settings:
