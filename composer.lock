@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca27a0aaa36959996e58e3a5cf920a8f",
+    "content-hash": "80f50439fc2c7ac5f9a18fbe8912cf25",
     "packages": [
         {
             "name": "acquia/acf",
@@ -12,21 +12,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/acf.git",
-                "reference": "4030b61765507b4b92654be0e53f6c68eff263ac"
+                "reference": "f9772ec6183fcf9a55591cd51e00196dc35e6504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/acf/zipball/4030b61765507b4b92654be0e53f6c68eff263ac",
-                "reference": "4030b61765507b4b92654be0e53f6c68eff263ac",
+                "url": "https://api.github.com/repos/acquia/acf/zipball/f9772ec6183fcf9a55591cd51e00196dc35e6504",
+                "reference": "f9772ec6183fcf9a55591cd51e00196dc35e6504",
                 "shasum": ""
             },
-            "type": "project",
+            "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia Engineering",
+                    "homepage": "https://www.acquia.com",
+                    "role": "Maintainer"
+                }
             ],
             "description": "a lightweight framework for headless e-commerce with Drupal. Starter connectors for major e-commerce engines",
-            "time": "2019-04-17T16:45:10+00:00"
+            "time": "2019-04-25T15:54:29+00:00"
         },
         {
             "name": "acquia/content-hub-php",
@@ -34,12 +41,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "a4e660a23964a2534f344c86340c12fda9e8f89a"
+                "reference": "108242726e4109f51ecab92ded1c690ef6ff7d40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/a4e660a23964a2534f344c86340c12fda9e8f89a",
-                "reference": "a4e660a23964a2534f344c86340c12fda9e8f89a",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/108242726e4109f51ecab92ded1c690ef6ff7d40",
+                "reference": "108242726e4109f51ecab92ded1c690ef6ff7d40",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +87,7 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2019-04-12T20:04:25+00:00"
+            "time": "2019-04-25T14:13:01+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
@@ -1866,7 +1873,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_contenthub.git",
-                "reference": "506d56775152ca1208102421b6c88c077298dec5"
+                "reference": "5b2593c953d441c8379fe16621eaa505f2ac9ae5"
             },
             "require": {
                 "acquia/content-hub-php": "^2.0.0-beta1",
@@ -1881,8 +1888,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1+0-dev",
-                    "datestamp": "1554311585",
+                    "version": "8.x-2.2+0-dev",
+                    "datestamp": "1556127181",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1944,7 +1951,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/acquia_contenthub"
             },
-            "time": "2019-04-03T05:40:56+00:00"
+            "time": "2019-04-24T02:00:48+00:00"
         },
         {
             "name": "drupal/acsf",
@@ -4333,17 +4340,17 @@
         },
         {
             "name": "drupal/depcalc",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/depcalc.git",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/depcalc-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "585aa0c024b0b83bf765ebcf4fdc139f6293ae5a"
+                "url": "https://ftp.drupal.org/files/projects/depcalc-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "ec037def3ba82cd1a71d6ab6b63d8ab63667926b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4354,8 +4361,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1551932584",
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1556126885",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8596,10 +8603,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/page_manager.git",
-                "reference": "cc2dfaa80ad015cc71dead1c2deadce79c776c58"
+                "reference": "41e9e0886d9860ff8ba69fbcfd45f98cec473db0"
             },
             "require": {
-                "drupal/core": "^8.0.5",
+                "drupal/core": "~8.5",
                 "drupal/ctools": "~3"
             },
             "type": "drupal-module",
@@ -8608,8 +8615,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3+0-dev",
-                    "datestamp": "1523670484",
+                    "version": "8.x-4.0-beta3+2-dev",
+                    "datestamp": "1556200085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8636,6 +8643,10 @@
                 {
                     "name": "japerry",
                     "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "manuel.adan",
+                    "homepage": "https://www.drupal.org/user/516420"
                 }
             ],
             "description": "Provides a way to place blocks on a custom page.",
@@ -8645,7 +8656,7 @@
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-12T16:58:46+00:00"
+            "time": "2019-04-25T14:35:56+00:00"
         },
         {
             "name": "drupal/panels",
@@ -10408,6 +10419,9 @@
                         "message": "Covered by Drupal's security advisory policy"
                     },
                     "package": "Field types"
+                },
+                "patches_applied": {
+                    "Youtube looping | https://www.drupal.org/node/2866001": "https://www.drupal.org/files/issues/2019-04-26/video_embed_field-youtube_loop-2866001-12.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -15042,16 +15056,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.29.0",
+            "version": "1.29.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "79768f0c9a50337ecce81de1fdfa48d837b9b341"
+                "reference": "f1da0370113ee246cd8f6d744d4835e8d53ea61c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/79768f0c9a50337ecce81de1fdfa48d837b9b341",
-                "reference": "79768f0c9a50337ecce81de1fdfa48d837b9b341",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/f1da0370113ee246cd8f6d744d4835e8d53ea61c",
+                "reference": "f1da0370113ee246cd8f6d744d4835e8d53ea61c",
                 "shasum": ""
             },
             "require": {
@@ -15083,7 +15097,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2019-04-13T14:36:40+00:00"
+            "time": "2019-04-26T08:30:10+00:00"
         },
         {
             "name": "consolidation/annotated-command",

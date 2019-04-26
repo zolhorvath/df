@@ -160,6 +160,9 @@
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
               "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
             },
+            "drupal/video_embed_field": {
+              "Youtube looping | https://www.drupal.org/node/2866001": "https://www.drupal.org/files/issues/2019-04-26/video_embed_field-youtube_loop-2866001-12.patch"
+            },
             "lite": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879": "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
