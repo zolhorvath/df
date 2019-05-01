@@ -20,7 +20,6 @@ dependencies:
 - df_tools_icons
 - df_tools_image
 - df_tools_layout
-- df_tools_lite
 - df_tools_map
 - df_tools_media
 - df_tools_message
