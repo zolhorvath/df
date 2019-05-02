@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f143fd610289b744a6da0429e8d59efe",
+    "content-hash": "9eeae4973ac2289be436c694747e3f08",
     "packages": [
         {
             "name": "acquia/acf",
