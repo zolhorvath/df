@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c792cff7e4df9d314d24c81febf39407",
+    "content-hash": "79e6f3f458a9f4af19e4c887875d85e8",
     "packages": [
         {
             "name": "acquia/acf",
@@ -213,26 +213,26 @@
         },
         {
             "name": "acquia/lightning",
-            "version": "3.2.7",
+            "version": "3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "5cec672efe4005912a01044ab3e1e6843cd2b74c"
+                "reference": "48d27b5668a2fcc541e0c590c65a6aaaa6620379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/5cec672efe4005912a01044ab3e1e6843cd2b74c",
-                "reference": "5cec672efe4005912a01044ab3e1e6843cd2b74c",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/48d27b5668a2fcc541e0c590c65a6aaaa6620379",
+                "reference": "48d27b5668a2fcc541e0c590c65a6aaaa6620379",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/lightning_api": "^3.5",
-                "drupal/lightning_core": "^3.9",
+                "drupal/lightning_api": "^3.6",
+                "drupal/lightning_core": "^3.10",
                 "drupal/lightning_layout": "^1.7",
                 "drupal/lightning_media": "^3.8",
-                "drupal/lightning_workflow": "^3.5",
+                "drupal/lightning_workflow": "^3.6",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
@@ -291,7 +291,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2019-03-20T18:46:52+00:00"
+            "time": "2019-04-17T22:28:57+00:00"
         },
         {
             "name": "asm89/stack-cors",
