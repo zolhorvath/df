@@ -1,0 +1,132 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9773f9f0-6aca-45c5-9e9f-6b6a9f3b6794"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 5
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-04-10T12:51:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "Ireland Mega Menu Block",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-04-10T13:04:11+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ab0f404-9792-4de1-987a-c04d1709413c"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "content_translation_created": [
+        {
+            "value": "2019-04-10T12:51:33+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "body": [
+        {
+            "value": "<drupal-entity data-embed-button=\"media_browser\" data-entity-embed-display=\"media_image\" data-entity-embed-display-settings=\"{&quot;image_style&quot;:&quot;article_preview&quot;,&quot;image_link&quot;:&quot;&quot;}\" data-entity-type=\"media\" data-entity-uuid=\"873c3c43-e3d5-4144-8eab-935524c305b8\"><\/drupal-entity>\r\n\r\n<ul>\r\n\t<li><a href=\"#\">Cork<\/a><\/li>\r\n\t<li><a href=\"#\">Dublin<\/a><\/li>\r\n\t<li><a href=\"#\">Galway<\/a><\/li>\r\n<\/ul>\r\n",
+            "format": "rich_text",
+            "processed": "<article class=\"embedded-entity\">  \n<img src=\"\/sites\/default\/files\/styles\/article_preview\/public\/2019-04\/diogo-palhais-549749-unsplash.jpg?itok=dTkWxffP\" width=\"840\" height=\"260\" title=\"diogo-palhais-549749-unsplash\" typeof=\"foaf:Image\" class=\"img-thumbnail\" alt=\"diogo-palhais-549749-unsplash\" \/>\n\n\n<\/article>\n\n\n<ul>\n\t<li><a href=\"#\">Cork<\/a><\/li>\n\t<li><a href=\"#\">Dublin<\/a><\/li>\n\t<li><a href=\"#\">Galway<\/a><\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

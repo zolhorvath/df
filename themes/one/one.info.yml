@@ -9,6 +9,7 @@ base theme: radix
 
 
 regions:
+  meta_header: Meta Header
   navbar_branding: Navbar branding
   navbar_left:  Navbar left
   navbar_right: Navbar right

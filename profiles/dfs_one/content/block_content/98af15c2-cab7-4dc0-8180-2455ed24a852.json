@@ -5,7 +5,13 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/map"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
     },
     "id": [
         {
@@ -87,6 +93,26 @@
             "lang": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/map\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ab0f404-9792-4de1-987a-c04d1709413c"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
     "content_translation_created": [
         {
             "value": "2019-03-25T13:19:45+00:00",

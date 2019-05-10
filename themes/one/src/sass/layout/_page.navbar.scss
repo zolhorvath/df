@@ -1,0 +1,33 @@
+// Page: Navbar
+// -----------------------------------------------------------------------------
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu.mega-menu {
+  width: 100%;
+  top: 95%;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-left,
+.navbar-right {
+  padding: $navbar-padding-y $navbar-padding-x;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar {
+    padding: 0;
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+
+

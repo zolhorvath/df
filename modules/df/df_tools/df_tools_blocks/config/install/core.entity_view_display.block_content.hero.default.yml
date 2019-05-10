@@ -7,16 +7,18 @@ dependencies:
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
-    - field.field.block_content.hero.field_hero_image
+    - field.field.block_content.hero.field_hero_background
     - field.field.block_content.hero.field_hero_link
     - field.field.block_content.hero.field_icon
     - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
     - field.field.block_content.hero.field_text_color
-    - responsive_image.styles.responsive_hero
   module:
+    - layout_builder
     - link
-    - responsive_image
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -30,12 +32,12 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
-  field_hero_image:
-    type: responsive_image
+  field_hero_background:
+    type: entity_reference_entity_view
     weight: 0
     settings:
-      responsive_image_style: responsive_hero
-      image_link: ''
+      view_mode: hero
+      link: false
     third_party_settings: {  }
     label: hidden
     region: content

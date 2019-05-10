@@ -14,16 +14,19 @@ dependencies:
   module:
     - comment
     - content_moderation
+    - df_tools_layout
     - entity_browser
     - field_layout
-    - layout_discovery
     - metatag
     - path
     - text
 third_party_settings:
   field_layout:
-    id: layout_onecol
-    settings: {  }
+    id: layouts_12
+    settings:
+      gap: gap-md
+      full_width: 0
+      class: ''
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -66,6 +69,7 @@ content:
       view_mode: thumbnail
       open: false
       preview_image_style: thumbnail
+      field_widget_replace: false
     third_party_settings: {  }
     region: content
   field_meta_tags:

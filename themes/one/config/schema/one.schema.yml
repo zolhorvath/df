@@ -3,3 +3,12 @@
 one.settings:
   type: theme_settings
   label: 'One settings'
+  mapping:
+    meta_header_full_width:
+      type: boolean
+    navbar_full_width:
+      type: boolean
+    header_full_width:
+      type: boolean
+    footer_full_width:
+      type: boolean

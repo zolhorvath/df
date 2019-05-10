@@ -1,26 +1,25 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/3\/edit?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
+            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/main"
         },
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/content_translation_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/main\/menu_link_content_parent_entity": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
+                "href": "http:\/\/default\/admin\/structure\/menu\/item\/2\/edit?_format=hal_json"
             }
         ]
     },
     "id": [
         {
-            "value": 1
+            "value": 3
         }
     ],
     "uuid": [
         {
-            "value": "a21cf183-ce03-4fad-b8b4-d9e9a7cc247e"
+            "value": "151f4e66-1462-46c0-bdfb-5463f018ff9f"
         }
     ],
     "langcode": [
@@ -31,7 +30,7 @@
     ],
     "bundle": [
         {
-            "value": "menu_link_content"
+            "target_id": "main"
         }
     ],
     "enabled": [
@@ -41,7 +40,7 @@
     ],
     "title": [
         {
-            "value": "Menu Item",
+            "value": "Dropdown Menu Item",
             "lang": "en"
         }
     ],
@@ -77,9 +76,14 @@
             "value": false
         }
     ],
+    "parent": [
+        {
+            "value": "menu_link_content:bc6c9a98-a8ee-428e-ac2e-d0f52f9bc870"
+        }
+    ],
     "changed": [
         {
-            "value": "2019-03-18T19:26:47+00:00",
+            "value": "2019-04-10T13:14:38+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -88,6 +92,20 @@
         {
             "value": true,
             "lang": "en"
+        }
+    ],
+    "view_mode": [
+        {
+            "value": "default",
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| One",
+                "canonical_url": "http:\/\/default\/home"
+            }
         }
     ],
     "content_translation_source": [
@@ -102,26 +120,6 @@
             "lang": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/menu_link_content\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "aaf224cd-ca7e-4506-b153-82e4683c08e7"
-                    }
-                ],
-                "lang": "en"
-            }
-        ]
-    },
     "content_translation_status": [
         {
             "value": true,
@@ -130,9 +128,28 @@
     ],
     "content_translation_created": [
         {
-            "value": "2019-03-18T19:26:47+00:00",
+            "value": "2019-04-10T13:14:38+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
-    ]
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/menu_link_content\/main\/menu_link_content_parent_entity": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/admin\/structure\/menu\/item\/2\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/main"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bc6c9a98-a8ee-428e-ac2e-d0f52f9bc870"
+                    }
+                ]
+            }
+        ]
+    }
 }

@@ -2,6 +2,7 @@
 // -----------------------------------------------------------------------------
 @import "~bootstrap/scss/functions";
 @import "base/variables";
+@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/print";
 @import "~bootstrap/scss/reboot";
@@ -42,13 +43,20 @@
 @import "base/helpers";
 @import "base/elements";
 @import "base/common";
+@import "base/colors";
 
 // Layout
 // -----------------------------------------------------------------------------
+@import "layout/page.navbar";
 @import "layout/page.header";
 @import "layout/page.content";
 @import "layout/page.footer";
+@import "layout/page.meta-header";
 
+// Modules
+// -----------------------------------------------------------------------------
+@import "modules/layout_builder";
+@import "modules/moderation_dashboard";
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
