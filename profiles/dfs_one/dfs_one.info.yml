@@ -29,6 +29,7 @@ dependencies:
   - df_tools_translation
   - df_tools_user
   - df_tools_workflow
+  - scenarios_contenthub
 themes:
   - one
 exclude:
