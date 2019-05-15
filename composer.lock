@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83c82f7faed56b5c710e6a4fd649af09",
+    "content-hash": "ef9ad94b1e094258707373d2882bc873",
     "packages": [
         {
             "name": "acquia/acf",
@@ -8574,7 +8574,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/page_manager.git",
-                "reference": "687a801086bdfe615408f0ad8950a776c09daaed"
+                "reference": "b2c5d9a5905e45d348c1109424eb3630034f761d"
             },
             "require": {
                 "drupal/core": "~8.5",
@@ -8586,8 +8586,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3+7-dev",
-                    "datestamp": "1557948481",
+                    "version": "8.x-4.0-beta3+8-dev",
+                    "datestamp": "1557949081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8627,7 +8627,7 @@
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-05-15T19:36:54+00:00"
+            "time": "2019-05-15T21:40:37+00:00"
         },
         {
             "name": "drupal/panels",
@@ -14319,13 +14319,13 @@
             "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/acquia/lightning-dev.git",
-                "reference": "14175694c5076a205b113e71a58b88ce348a7827"
+                "url": "https://github.com/brantwynn/lightning-dev.git",
+                "reference": "85686cfa721b9780a66b414b98adb8d69ede9916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning-dev/zipball/14175694c5076a205b113e71a58b88ce348a7827",
-                "reference": "14175694c5076a205b113e71a58b88ce348a7827",
+                "url": "https://api.github.com/repos/brantwynn/lightning-dev/zipball/85686cfa721b9780a66b414b98adb8d69ede9916",
+                "reference": "85686cfa721b9780a66b414b98adb8d69ede9916",
                 "shasum": ""
             },
             "require": {
@@ -14420,10 +14420,9 @@
             ],
             "description": "Internal development tools for Acquia Lightning.",
             "support": {
-                "source": "https://github.com/acquia/lightning-dev/tree/8.x-1.x",
-                "issues": "https://github.com/acquia/lightning-dev/issues"
+                "source": "https://github.com/brantwynn/lightning-dev/tree/8.x-1.x"
             },
-            "time": "2019-04-12T01:45:28+00:00"
+            "time": "2019-05-15T22:17:33+00:00"
         },
         {
             "name": "alchemy/zippy",

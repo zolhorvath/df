@@ -1,4 +1,4 @@
-@dfs_dev @api
+@dfs_one @api
 Feature: DFS ONE: Homepage
   In order to prove that dfs_one was enabled correctly
   As a developer
