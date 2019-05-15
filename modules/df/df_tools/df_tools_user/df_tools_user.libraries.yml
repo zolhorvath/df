@@ -1,0 +1,5 @@
+user-dropdown:
+  version: 1.x
+  css:
+    layout:
+      css/user-dropdown.css: {}
