@@ -149,6 +149,9 @@
             },
             "drupal/video_embed_field": {
               "Youtube looping | https://www.drupal.org/node/2866001": "https://www.drupal.org/files/issues/2019-04-26/video_embed_field-youtube_loop-2866001-12.patch"
+            },
+            "drupal/lightning_core": {
+              "Tests using FixtureContext fail due to Content Hub 2.0 enabled | https://www.drupal.org/node/3055022": "https://www.drupal.org/files/issues/2019-05-15/lightning_core-ch-publisher-fixture-setup-0.patch"
             }
         },
         "patches-ignore": {

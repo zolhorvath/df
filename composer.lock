@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa329675997bff343d1c2a1934d97c7d",
+    "content-hash": "83c82f7faed56b5c710e6a4fd649af09",
     "packages": [
         {
             "name": "acquia/acf",
@@ -6756,6 +6756,9 @@
                         "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                         "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                     }
+                },
+                "patches_applied": {
+                    "Tests using FixtureContext fail due to Content Hub 2.0 enabled | https://www.drupal.org/node/3055022": "https://www.drupal.org/files/issues/2019-05-15/lightning_core-ch-publisher-fixture-setup-0.patch"
                 }
             },
             "autoload": {

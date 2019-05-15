@@ -177,6 +177,7 @@ projects[libraries][version] = 3.0-alpha1
 projects[lightning_api][type] = module
 projects[lightning_api][version] = 3.6
 projects[lightning_core][type] = module
+projects[lightning_core][patch][] = https://www.drupal.org/files/issues/2019-05-15/lightning_core-ch-publisher-fixture-setup-0.patch
 projects[lightning_core][version] = 3.11
 projects[lightning_layout][type] = module
 projects[lightning_layout][version] = 2.0-alpha10
