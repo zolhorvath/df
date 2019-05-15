@@ -83,6 +83,22 @@ a {
           color: #d4d4d4;
         }
       }
+      .dropdown-menu {
+        background-color: #f7f7f9;
+
+        a {
+          color: #292929;
+
+          &:focus,
+          &:hover {
+            color: #1d84c3;
+          }
+        }
+
+        label {
+          color: #292929;
+        }
+      }
     }
   }
 }
