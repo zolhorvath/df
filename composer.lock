@@ -41,12 +41,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "de8fbf9976174cec52bfeb5636ae75131f71ea8a"
+                "reference": "ad1f2311e5258e9cbf610c0c7c646fc809b64912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/de8fbf9976174cec52bfeb5636ae75131f71ea8a",
-                "reference": "de8fbf9976174cec52bfeb5636ae75131f71ea8a",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/ad1f2311e5258e9cbf610c0c7c646fc809b64912",
+                "reference": "ad1f2311e5258e9cbf610c0c7c646fc809b64912",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2019-05-08T20:40:52+00:00"
+            "time": "2019-05-15T01:16:25+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
@@ -1874,7 +1874,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_contenthub.git",
-                "reference": "5b2593c953d441c8379fe16621eaa505f2ac9ae5"
+                "reference": "533ab5f35256e10f229f7d055af45cd1c27e6e68"
             },
             "require": {
                 "acquia/content-hub-php": "^2.0.0-beta1",
@@ -1883,14 +1883,17 @@
                 "symfony/psr-http-message-bridge": "^1.0",
                 "zendframework/zend-diactoros": "^1.8"
             },
+            "require-dev": {
+                "drupal/acquia_contenthub_subscriber": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2+0-dev",
-                    "datestamp": "1556127181",
+                    "version": "8.x-2.3+0-dev",
+                    "datestamp": "1557941885",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1952,7 +1955,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/acquia_contenthub"
             },
-            "time": "2019-04-24T02:00:48+00:00"
+            "time": "2019-05-15T17:33:17+00:00"
         },
         {
             "name": "drupal/acsf",
@@ -8568,11 +8571,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/page_manager.git",
-                "reference": "93215f7760b4c3f95a0b4bac7e46c9673cb964f6"
+                "reference": "687a801086bdfe615408f0ad8950a776c09daaed"
             },
             "require": {
                 "drupal/core": "~8.5",
-                "drupal/ctools": "~3"
+                "drupal/ctools": "~3.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -8580,8 +8583,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3+4-dev",
-                    "datestamp": "1556370481",
+                    "version": "8.x-4.0-beta3+7-dev",
+                    "datestamp": "1557948481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8621,7 +8624,7 @@
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-27T20:30:55+00:00"
+            "time": "2019-05-15T19:36:54+00:00"
         },
         {
             "name": "drupal/panels",
@@ -9390,7 +9393,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "2f721da4bdfc76bbd17f8cc364dfccea72cb373b"
+                "reference": "2f653b58f4a53389ff115d27e842e744e8a202c2"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9407,7 +9410,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1554315485",
+                    "datestamp": "1557869285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9444,7 +9447,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-05-14T21:24:19+00:00"
+            "time": "2019-05-15T19:33:27+00:00"
         },
         {
             "name": "drupal/schemata",
