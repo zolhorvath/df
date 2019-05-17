@@ -92,8 +92,6 @@
                 "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
                 "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975":
                 "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
-                "DF - Backport Layout Builder to 8.6.x | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/2019-03-15/2986394-backport-layout-builder-to-8.6-x-2.patch",
                 "Add scssphp support | https://www.drupal.org/node/2770791":
                 "https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch"
             },
@@ -155,11 +153,6 @@
             }
         },
         "patches-ignore": {
-            "drupal/lightning_layout": {
-              "drupal/core": {
-                  "2986394 - Backport Layout Builder to 8.6.x": "https://www.drupal.org/files/issues/2019-02-14/2986394-15-layout_builder--8.6.9--with-3008431-and-3016458-and-2955065.patch"
-              }
-            },
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
