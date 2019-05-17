@@ -150,6 +150,11 @@
             }
         },
         "patches-ignore": {
+            "drupal/lightning_layout": {
+                "drupal/core": {
+                    "2955065 - Customized layout does not display for node with customizations enabled when using full content view mode": "https://www.drupal.org/files/issues/2019-03-25/2955065-25.patch"
+                }
+            },
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
