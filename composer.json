@@ -143,6 +143,9 @@
             "drupal/page_manager": {
               "Custom attributes in blocks | https://www.drupal.org/node/2710169": "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
             },
+            "drupal/radix": {
+              "Integrate with OffCanvas (Layout Builder) | https://www.drupal.org/node/3053579": "https://www.drupal.org/files/issues/2019-05-14/integrate-with-offcanvas-3053579-3.patch"
+            },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
               "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
