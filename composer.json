@@ -90,8 +90,7 @@
                 "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
                 "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975":
                 "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
-                "Add scssphp support | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch"
+                "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
@@ -154,6 +153,11 @@
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
+                }
+            },
+            "drupal/media_acquiadam": {
+                "drupal/core": {
+                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
                 }
             }
         }
