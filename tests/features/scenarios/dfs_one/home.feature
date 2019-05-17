@@ -24,4 +24,4 @@ Feature: DFS ONE: Homepage
   @5cb84acd
   Scenario: Block: User login
     Given I am on the homepage
-    Then I should see "Log in"
+    Then I should see "Login"
