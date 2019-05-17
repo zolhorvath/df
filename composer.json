@@ -70,8 +70,6 @@
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
-                "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
@@ -92,10 +90,7 @@
                 "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
                 "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975":
                 "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
-                "DF - Backport Layout Builder to 8.6.x | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/2019-03-15/2986394-backport-layout-builder-to-8.6-x-2.patch",
-                "Add scssphp support | https://www.drupal.org/node/2770791":
-                "https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch"
+                "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"
@@ -143,6 +138,9 @@
             "drupal/page_manager": {
               "Custom attributes in blocks | https://www.drupal.org/node/2710169": "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
             },
+            "drupal/radix": {
+              "Integrate with OffCanvas (Layout Builder) | https://www.drupal.org/node/3053579": "https://www.drupal.org/files/issues/2019-05-14/integrate-with-offcanvas-3053579-3.patch"
+            },
             "drupal/responsive_preview": {
               "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
               "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
@@ -156,19 +154,24 @@
         },
         "patches-ignore": {
             "drupal/lightning_layout": {
-              "drupal/core": {
-                  "2986394 - Backport Layout Builder to 8.6.x": "https://www.drupal.org/files/issues/2019-02-14/2986394-15-layout_builder--8.6.9--with-3008431-and-3016458-and-2955065.patch"
-              }
+                "drupal/core": {
+                    "2955065 - Customized layout does not display for node with customizations enabled when using full content view mode": "https://www.drupal.org/files/issues/2019-03-25/2955065-25.patch"
+                }
             },
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
                 }
+            },
+            "drupal/media_acquiadam": {
+                "drupal/core": {
+                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
+                }
             }
         }
     },
     "require": {
-        "acquia/lightning": "4.0.0-alpha6",
+        "acquia/lightning": "4.0.0",
         "acquia/content-hub-php": "2.x-dev",
         "bower-asset/imagesloaded": "4.1.1",
         "bower-asset/jquery-ui-slider-pips": "1.11.3",

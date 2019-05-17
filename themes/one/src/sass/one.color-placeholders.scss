@@ -81,6 +81,23 @@ a {
           color: #__header-link-hover-right__;
         }
       }
+
+     .dropdown-menu {
+        background-color: #__header-bg-left__;
+
+        a {
+          color: #__header-link-left__;
+
+          &:focus,
+          &:hover {
+            color: #__header-link-hover-left__;
+          }
+        }
+
+        label {
+          color: #__header-link-left__;
+        }
+      }
     }
   }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef9ad94b1e094258707373d2882bc873",
+    "content-hash": "197969dafff899cfff59949b007c7b30",
     "packages": [
         {
             "name": "acquia/acf",
@@ -41,12 +41,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "ad1f2311e5258e9cbf610c0c7c646fc809b64912"
+                "reference": "be88134d244b2924719279955eac134c10414a1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/ad1f2311e5258e9cbf610c0c7c646fc809b64912",
-                "reference": "ad1f2311e5258e9cbf610c0c7c646fc809b64912",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/be88134d244b2924719279955eac134c10414a1f",
+                "reference": "be88134d244b2924719279955eac134c10414a1f",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2019-05-15T01:16:25+00:00"
+            "time": "2019-05-17T00:57:37+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
@@ -151,26 +151,27 @@
         },
         {
             "name": "acquia/lightning",
-            "version": "4.0.0-alpha6",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "530749bc19d21dff17649d44f27096e996306704"
+                "reference": "1b91f77f6c95413ae473d13fabe01f0097e8d23d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/530749bc19d21dff17649d44f27096e996306704",
-                "reference": "530749bc19d21dff17649d44f27096e996306704",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/1b91f77f6c95413ae473d13fabe01f0097e8d23d",
+                "reference": "1b91f77f6c95413ae473d13fabe01f0097e8d23d",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/lightning_api": "^3.4",
-                "drupal/lightning_core": "^3.7",
-                "drupal/lightning_layout": "^2.0-alpha10",
-                "drupal/lightning_media": "^3.6",
-                "drupal/lightning_workflow": "^3.4",
+                "drupal/claro": "^1.0",
+                "drupal/lightning_api": "^4.1",
+                "drupal/lightning_core": "^4.1",
+                "drupal/lightning_layout": "^2.0@stable",
+                "drupal/lightning_media": "^3.8",
+                "drupal/lightning_workflow": "^3.6",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
@@ -210,11 +211,6 @@
                 ],
                 "patchLevel": {
                     "drupal/core": "-p2"
-                },
-                "patches": {
-                    "drupal/core": {
-                        "3032548 - ContentModerationRouteSubscriber assumes all parameters in an entity form route contain a 'type' key": "https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch"
-                    }
                 }
             },
             "autoload": {
@@ -228,7 +224,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2019-02-22T15:50:31+00:00"
+            "time": "2019-05-16T15:37:45+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -3070,6 +3066,71 @@
             }
         },
         {
+            "name": "drupal/claro",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/claro.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "39082eb73e6d8aad64c232c007d5f478f45cb73a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1558014957",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "balsama",
+                    "homepage": "https://www.drupal.org/user/223087"
+                },
+                {
+                    "name": "ckrina",
+                    "homepage": "https://www.drupal.org/user/1206650"
+                },
+                {
+                    "name": "huzooka",
+                    "homepage": "https://www.drupal.org/user/281301"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "saschaeggi",
+                    "homepage": "https://www.drupal.org/user/1999056"
+                }
+            ],
+            "description": "A clean, accessible and powerful Drupal administration theme.",
+            "homepage": "https://www.drupal.org/project/claro",
+            "support": {
+                "source": "https://git.drupalcode.org/project/claro",
+                "docs": "https://www.drupal.org/docs/8/modules/claro",
+                "issues": "https://www.drupal.org/project/issues/claro"
+            }
+        },
+        {
             "name": "drupal/components",
             "version": "1.0.0",
             "source": {
@@ -3623,17 +3684,17 @@
         },
         {
             "name": "drupal/contact_storage",
-            "version": "1.0.0-beta10",
+            "version": "1.0.0-beta9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/contact_storage.git",
-                "reference": "8.x-1.0-beta10"
+                "reference": "8.x-1.0-beta9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/contact_storage-8.x-1.0-beta10.zip",
-                "reference": "8.x-1.0-beta10",
-                "shasum": "3ca12e4fc4b92d8c90faa53dd62db30781e3d05a"
+                "url": "https://ftp.drupal.org/files/projects/contact_storage-8.x-1.0-beta9.zip",
+                "reference": "8.x-1.0-beta9",
+                "shasum": "42b12d6f755485617e949aaf1b2c9aae09eb0e3e"
             },
             "require": {
                 "drupal/core": "*",
@@ -3645,7 +3706,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta10",
+                    "version": "8.x-1.0-beta9",
                     "datestamp": "1556703480",
                     "security-coverage": {
                         "status": "not-covered",
@@ -3653,7 +3714,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
+                    "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch",
+                    "3038668 - Fix tests following a change in Drupal 8.7.0: #2976035": "https://www.drupal.org/files/issues/2019-03-10/3038668-25.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3742,16 +3804,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.16",
+            "version": "8.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539"
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a9c4c97c7da9ec1a38782912bb06784d28590539",
-                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539",
+                "url": "https://api.github.com/repos/drupal/core/zipball/969f24810fb31eac71dd624de593f551bd6dc2a3",
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3",
                 "shasum": ""
             },
             "require": {
@@ -3760,7 +3822,7 @@
                 "doctrine/annotations": "^1.2",
                 "doctrine/common": "^2.5",
                 "easyrdf/easyrdf": "^0.9",
-                "egulias/email-validator": "^1.2",
+                "egulias/email-validator": "^2.0",
                 "ext-date": "*",
                 "ext-dom": "*",
                 "ext-filter": "*",
@@ -3777,6 +3839,7 @@
                 "guzzlehttp/guzzle": "^6.2.1",
                 "masterminds/html5": "^2.1",
                 "paragonie/random_compat": "^1.0|^2.0",
+                "pear/archive_tar": "^1.4",
                 "php": "^5.5.9|>=7.0.8",
                 "stack/builder": "^1.0",
                 "symfony-cmf/routing": "^1.4",
@@ -3784,7 +3847,7 @@
                 "symfony/console": "~3.4.0",
                 "symfony/dependency-injection": "~3.4.26",
                 "symfony/event-dispatcher": "~3.4.0",
-                "symfony/http-foundation": "~3.4.26",
+                "symfony/http-foundation": "~3.4.27",
                 "symfony/http-kernel": "~3.4.14",
                 "symfony/polyfill-iconv": "^1.0",
                 "symfony/process": "~3.4.0",
@@ -3847,6 +3910,7 @@
                 "drupal/core-transliteration": "self.version",
                 "drupal/core-utility": "self.version",
                 "drupal/core-uuid": "self.version",
+                "drupal/core-version": "self.version",
                 "drupal/datetime": "self.version",
                 "drupal/datetime_range": "self.version",
                 "drupal/dblog": "self.version",
@@ -3864,6 +3928,7 @@
                 "drupal/history": "self.version",
                 "drupal/image": "self.version",
                 "drupal/inline_form_errors": "self.version",
+                "drupal/jsonapi": "self.version",
                 "drupal/language": "self.version",
                 "drupal/layout_builder": "self.version",
                 "drupal/layout_discovery": "self.version",
@@ -3914,9 +3979,10 @@
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
                 "behat/mink-selenium2-driver": "1.3.x-dev",
-                "drupal/coder": "^8.2.12",
+                "drupal/coder": "^8.3.1",
                 "jcalderonzumba/gastonjs": "^1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
+                "justinrainbow/json-schema": "^5.2",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.7",
                 "phpunit/phpunit": "^4.8.35 || ^6.5",
@@ -3949,14 +4015,14 @@
                         "core/lib/Drupal/Component/Serialization/composer.json",
                         "core/lib/Drupal/Component/Transliteration/composer.json",
                         "core/lib/Drupal/Component/Utility/composer.json",
-                        "core/lib/Drupal/Component/Uuid/composer.json"
+                        "core/lib/Drupal/Component/Uuid/composer.json",
+                        "core/lib/Drupal/Component/Version/composer.json"
                     ],
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669": "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
                     "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                     "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235": "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                     "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
@@ -3967,18 +4033,12 @@
                     "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
                     "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691": "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch",
                     "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975": "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
-                    "DF - Backport Layout Builder to 8.6.x | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-03-15/2986394-backport-layout-builder-to-8.6-x-2.patch",
-                    "Add scssphp support | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-04-03/color-add-scssphp-support.patch",
-                    "2998335 - [regression] \\Drupal\\user\\ContextProvider\\CurrentUserContext broken for anonymous users": "https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch",
-                    "3032548 - ContentModerationRouteSubscriber assumes all parameters in an entity form route contain a 'type' key": "https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch",
+                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-02-26/2815221-115-8.6.x.patch",
+                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                    "2952390 - Off-canvas styles override CKEditor's reset and theme": "https://www.drupal.org/files/issues/2018-08-16/2952390-53.patch",
-                    "2968110 - Layout Builder's ConfigureBlockFormBase forms do not display validation errors on submit": "https://www.drupal.org/files/issues/2018-05-03/2968110-3.patch",
-                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
+                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                 }
             },
             "autoload": {
@@ -4002,7 +4062,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-05-08T16:00:58+00:00"
+            "time": "2019-05-08T16:00:55+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4691,23 +4751,22 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "683a7a252c947433c7b78bb838d6d8973c13cf77"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "56cf190f3ea3fc0af71becbc44af5954a71f216b"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
             "require-dev": {
-                "drupal/ctools": "*",
                 "drupal/inline_entity_form": "*",
                 "drupal/paragraphs": "*",
                 "drupal/token": "*"
@@ -4719,8 +4778,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1550236984",
+                    "version": "8.x-2.1",
+                    "datestamp": "1550237365",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4788,17 +4847,17 @@
         },
         {
             "name": "drupal/entity_browser_block",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser_block.git",
-                "reference": "8.x-1.0-alpha1"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser_block-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "33c13057fe22b0189919869b1ef65cb09ab25cb4"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser_block-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "79e4eebb40605ab0bc1c4a7276cab4253c812e34"
             },
             "require": {
                 "drupal/core": "*",
@@ -4813,11 +4872,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
+                    "version": "8.x-1.0",
                     "datestamp": "1532037781",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -6216,70 +6275,6 @@
             }
         },
         {
-            "name": "drupal/jsonapi",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/jsonapi.git",
-                "reference": "8.x-2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "5f710c1c602378748fa3b21ceec0977de62359ed"
-            },
-            "require": {
-                "drupal/core": "^8.5.11"
-            },
-            "require-dev": {
-                "drupal/schemata": "1.x-dev#8325d172e1d6880aa24073f8f751ef089282cf9a",
-                "drupal/schemata_json_schema": "*",
-                "justinrainbow/json-schema": "^5.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1553554702",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
-                },
-                {
-                    "name": "gabesullice",
-                    "homepage": "https://www.drupal.org/user/2287430"
-                }
-            ],
-            "description": "Provides a JSON API standards-compliant API for accessing and manipulating Drupal content and configuration entities.",
-            "homepage": "https://www.drupal.org/project/jsonapi",
-            "support": {
-                "source": "https://git.drupalcode.org/project/jsonapi"
-            }
-        },
-        {
             "name": "drupal/layout_builder_restrictions",
             "version": "1.5.0",
             "source": {
@@ -6342,17 +6337,17 @@
         },
         {
             "name": "drupal/layout_library",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_library.git",
-                "reference": "8.x-1.0-alpha1"
+                "reference": "8.x-1.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_library-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "ea982e7aea65a0f7ce00ba8929d94837c12a10ea"
+                "url": "https://ftp.drupal.org/files/projects/layout_library-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "dbda8bdc75f798350f9dcad7649f905ed903c5db"
             },
             "require": {
                 "drupal/core": "*"
@@ -6363,15 +6358,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
+                    "version": "8.x-1.0-alpha2",
                     "datestamp": "1552574285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "3030541 - Layout Library should work without the need to enable layout overrides": "https://www.drupal.org/files/issues/2019-02-05/3030541-11-PASS.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6548,25 +6540,24 @@
         },
         {
             "name": "drupal/lightning_api",
-            "version": "3.6.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_api.git",
-                "reference": "8.x-3.6"
+                "reference": "8.x-4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "8672bed93c7c5aec4d437051975df6bc516f0d3c"
+                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "857787e05f5a886a7512e9230a1eb4a47a7ae722"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/consumers": "^1.9",
-                "drupal/core": "~8.0",
-                "drupal/jsonapi": "^2.3",
-                "drupal/lightning_core": "^2.15 || ^3.9 || ^4.0-beta1",
+                "drupal/core": "*",
+                "drupal/lightning_core": "^4.0",
                 "drupal/openapi": "^1.0-beta2",
                 "drupal/openapi_ui_redoc": "^1.0",
                 "drupal/openapi_ui_swagger": "^1.0",
@@ -6576,18 +6567,17 @@
             },
             "require-dev": {
                 "acquia/lightning_dev": "dev-8.x-1.x",
-                "drupal/lightning_core": "*",
                 "drupal/schema_metatag": "^1.3"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev",
-                    "dev-8.x-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev",
+                    "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.6",
-                    "datestamp": "1554740881",
+                    "version": "8.x-4.1",
+                    "datestamp": "1556765584",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6621,7 +6611,10 @@
             "autoload": {
                 "psr-4": {
                     "Drupal\\Tests\\lightning_api\\": "tests/src"
-                }
+                },
+                "classmap": [
+                    "src/LightningApiServiceProvider.php"
+                ]
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "scripts": {
@@ -6668,24 +6661,24 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "3.11.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_core.git",
-                "reference": "8.x-3.11"
+                "reference": "8.x-4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-3.11.zip",
-                "reference": "8.x-3.11",
-                "shasum": "5622d2160fb038d64d87dbdc6084de9f5fd3a578"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "8dd8f0df5ee2064e60ba0e4a28fc6aea9cc8895b"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^1.1",
-                "drupal/contact_storage": "^1.0",
-                "drupal/core": "~8.6.16",
+                "drupal/contact_storage": "1.0-beta9",
+                "drupal/core": "~8.7.1",
                 "drupal/metatag": "^1.8",
                 "drupal/pathauto": "^1.3",
                 "drupal/search_api": "^1.0",
@@ -6706,11 +6699,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev",
-                    "dev-8.x-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev",
+                    "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.11",
+                    "version": "8.x-4.1",
                     "datestamp": "1557341581",
                     "security-coverage": {
                         "status": "covered",
@@ -6747,12 +6740,13 @@
                     "npm-asset"
                 ],
                 "patches": {
+                    "drupal/contact_storage": {
+                        "3038668 - Fix tests following a change in Drupal 8.7.0: #2976035": "https://www.drupal.org/files/issues/2019-03-10/3038668-25.patch"
+                    },
                     "drupal/core": {
-                        "2998335 - [regression] \\Drupal\\user\\ContextProvider\\CurrentUserContext broken for anonymous users": "https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch",
-                        "3032548 - ContentModerationRouteSubscriber assumes all parameters in an entity form route contain a 'type' key": "https://www.drupal.org/files/issues/2019-02-13/3032548-2.patch",
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-02-26/2815221-115-8.6.x.patch",
+                        "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                         "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                         "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                     }
@@ -6766,7 +6760,7 @@
                     "Drupal\\Tests\\lightning_core\\": "tests/src"
                 },
                 "classmap": [
-                    "tests/contexts"
+                    "tests/contexts/AwaitTrait.inc"
                 ]
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6813,17 +6807,17 @@
         },
         {
             "name": "drupal/lightning_layout",
-            "version": "2.0.0-alpha10",
+            "version": "2.0.0-alpha12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_layout.git",
-                "reference": "8.x-2.0-alpha10"
+                "reference": "8.x-2.0-alpha12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.0-alpha10.zip",
-                "reference": "8.x-2.0-alpha10",
-                "shasum": "65a57dbcddbf910840df9b9e171a188e74a8d9c0"
+                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.0-alpha12.zip",
+                "reference": "8.x-2.0-alpha12",
+                "shasum": "90764f63a57b8e90dcf4fe75c4608d6fd5e02236"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -6831,10 +6825,10 @@
                 "drupal/bg_image_formatter": "^1.2",
                 "drupal/core": "*",
                 "drupal/entity_block": "^1.0",
-                "drupal/entity_browser_block": "1.0.0-alpha1",
-                "drupal/layout_builder_restrictions": "^1.4",
-                "drupal/layout_library": "1.0-alpha1",
-                "drupal/lightning_core": "^3.6",
+                "drupal/entity_browser_block": "^1.0",
+                "drupal/layout_builder_restrictions": "^1.5",
+                "drupal/layout_library": "1.0-alpha2",
+                "drupal/lightning_core": "^4.0-beta1",
                 "drupal/simple_gmap": "^1.4",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
@@ -6851,8 +6845,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha10",
-                    "datestamp": "1552658286",
+                    "version": "8.x-2.0-alpha12",
+                    "datestamp": "1555359781",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -6887,15 +6881,10 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "2952390 - Off-canvas styles override CKEditor's reset and theme": "https://www.drupal.org/files/issues/2018-08-16/2952390-53.patch",
-                        "2968110 - Layout Builder's ConfigureBlockFormBase forms do not display validation errors on submit": "https://www.drupal.org/files/issues/2018-05-03/2968110-3.patch",
-                        "2986394 - Backport Layout Builder to 8.6.x": "https://www.drupal.org/files/issues/2019-02-14/2986394-15-layout_builder--8.6.9--with-3008431-and-3016458-and-2955065.patch"
+                        "2955065 - Customized layout does not display for node with customizations enabled when using full content view mode": "https://www.drupal.org/files/issues/2019-03-25/2955065-25.patch"
                     },
                     "drupal/layout_builder_restrictions": {
                         "3032933 - Bad schema for allowed layouts": "https://www.drupal.org/files/issues/2019-02-14/3032933-2.patch"
-                    },
-                    "drupal/layout_library": {
-                        "3030541 - Layout Library should work without the need to enable layout overrides": "https://www.drupal.org/files/issues/2019-02-05/3030541-11-PASS.patch"
                     },
                     "drupal/panels": {
                         "3030976 - Panels should check if there is an icon map before setting the no preview icon": "https://www.drupal.org/files/issues/2019-02-06/initial.patch"
@@ -6939,7 +6928,7 @@
                 ]
             },
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6959,17 +6948,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.6.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.6"
+                "reference": "8.x-3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "687cab8e173e24256e03aca6f8204520c0199e80"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.8.zip",
+                "reference": "8.x-3.8",
+                "shasum": "a88509db6e4459bf54ed1e2886c104ed7bd80a11"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -6981,12 +6970,12 @@
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/dropzonejs": "2.0.0-alpha3",
                 "drupal/embed": "^1.0",
-                "drupal/entity_browser": "2.0.0",
+                "drupal/entity_browser": "2.1.0",
                 "drupal/entity_embed": "1.0.0-beta2",
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0",
                 "drupal/libraries": "3.0-alpha1",
-                "drupal/lightning_core": "^3.6",
+                "drupal/lightning_core": "^3.8 || ^4.0-alpha1",
                 "drupal/media_entity_instagram": "2.0.0-alpha2",
                 "drupal/media_entity_twitter": "2.0.0-alpha2",
                 "drupal/slick_entityreference": "^1.1",
@@ -7009,11 +6998,12 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-3.x": "3.x-dev",
+                    "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.6",
-                    "datestamp": "1551992285",
+                    "version": "8.x-3.8",
+                    "datestamp": "1552917185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8855,6 +8845,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate with OffCanvas (Layout Builder) | https://www.drupal.org/node/3053579": "https://www.drupal.org/files/issues/2019-05-14/integrate-with-offcanvas-3053579-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10902,24 +10895,29 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "1.2.15",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "758a77525bdaabd6c0f5669176bd4361cb2dda9e"
+                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/758a77525bdaabd6c0f5669176bd4361cb2dda9e",
-                "reference": "758a77525bdaabd6c0f5669176bd4361cb2dda9e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "^1.0.1",
-                "php": ">= 5.3.3"
+                "php": ">= 5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.24"
+                "dominicsayers/isemail": "dev-master",
+                "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
+                "satooshi/php-coveralls": "^1.0.1"
+            },
+            "suggest": {
+                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
             },
             "type": "library",
             "extra": {
@@ -10928,8 +10926,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Egulias\\": "src/"
+                "psr-4": {
+                    "Egulias\\EmailValidator\\": "EmailValidator"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10941,7 +10939,7 @@
                     "name": "Eduardo Gulias Davis"
                 }
             ],
-            "description": "A library for validating emails",
+            "description": "A library for validating emails against several RFCs",
             "homepage": "https://github.com/egulias/EmailValidator",
             "keywords": [
                 "email",
@@ -10950,7 +10948,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-09-25T20:59:41+00:00"
+            "time": "2018-12-04T22:38:24+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -11853,6 +11851,218 @@
                 "random"
             ],
             "time": "2019-01-03T20:59:08+00:00"
+        },
+        {
+            "name": "pear/archive_tar",
+            "version": "1.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Archive_Tar.git",
+                "reference": "7e48add6f8edc3027dd98ad15964b1a28fd0c845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/7e48add6f8edc3027dd98ad15964b1a28fd0c845",
+                "reference": "7e48add6f8edc3027dd98ad15964b1a28fd0c845",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "^1.10.0alpha2",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "ext-bz2": "Bz2 compression support.",
+                "ext-xz": "Lzma2 compression support.",
+                "ext-zlib": "Gzip compression support."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Archive_Tar": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Blavet",
+                    "email": "vincent@phpconcept.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "greg@chiaraquartet.net"
+                },
+                {
+                    "name": "Michiel Rook",
+                    "email": "mrook@php.net"
+                }
+            ],
+            "description": "Tar file management class with compression support (gzip, bzip2, lzma2)",
+            "homepage": "https://github.com/pear/Archive_Tar",
+            "keywords": [
+                "archive",
+                "tar"
+            ],
+            "time": "2019-04-08T13:15:55+00:00"
+        },
+        {
+            "name": "pear/console_getopt",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Getopt.git",
+                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/6c77aeb625b32bd752e89ee17972d103588b90c0",
+                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Console": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net",
+                    "role": "Helper"
+                },
+                {
+                    "name": "Andrei Zmievski",
+                    "email": "andrei@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Stig Bakken",
+                    "email": "stig@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "More info available on: http://pear.php.net/package/Console_Getopt",
+            "time": "2019-02-06T16:52:33+00:00"
+        },
+        {
+            "name": "pear/pear-core-minimal",
+            "version": "v1.10.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/pear-core-minimal.git",
+                "reference": "742be8dd68c746a01e4b0a422258e9c9cae1c37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/742be8dd68c746a01e4b0a422258e9c9cae1c37f",
+                "reference": "742be8dd68c746a01e4b0a422258e9c9cae1c37f",
+                "shasum": ""
+            },
+            "require": {
+                "pear/console_getopt": "~1.4",
+                "pear/pear_exception": "~1.0"
+            },
+            "replace": {
+                "rsky/pear-core-min": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "src/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@php.net",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Minimal set of PEAR core files to be used as composer dependency",
+            "time": "2019-03-13T18:15:44+00:00"
+        },
+        {
+            "name": "pear/pear_exception",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/PEAR_Exception.git",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "class",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PEAR": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Helgi Thormar",
+                    "email": "dufuz@php.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net"
+                }
+            ],
+            "description": "The PEAR Exception base class.",
+            "homepage": "https://github.com/pear/PEAR_Exception",
+            "keywords": [
+                "exception"
+            ],
+            "time": "2015-02-10T20:07:52+00:00"
         },
         {
             "name": "phayes/geophp",
