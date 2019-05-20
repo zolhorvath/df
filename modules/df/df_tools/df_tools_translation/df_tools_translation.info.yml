@@ -7,5 +7,5 @@ dependencies:
   - config_translation
   - content_translation
   - df_core
-  - df_tools_migration
   - menu_link_content
+  - migrate_source_csv

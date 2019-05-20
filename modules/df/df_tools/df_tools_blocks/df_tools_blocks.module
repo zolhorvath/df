@@ -366,18 +366,6 @@ function _df_tools_blocks_hero_browser_button(array $element) {
 }
 
 /**
- * Implements hook_migration_plugins_alter().
- */
-function df_tools_blocks_migration_plugins_alter(&$definitions) {
-  // Set up the correct pa$th for the CSV files in this module.
-  $types = ['hero', 'media'];
-  foreach ($types as $type) {
-    $id = 'import_block_' . $type;
-    $definitions[$id]['source']['path'] = str_replace('..', dirname(__FILE__), $definitions[$id]['source']['path']);
-  }
-}
-
-/**
  * Callback to re-sort blocks into categories.
  *
  * @param array &$block_info

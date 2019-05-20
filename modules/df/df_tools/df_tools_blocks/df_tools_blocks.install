@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Set up the DF Tools Blocks base migrations.
+ * Set up the DF Tools Blocks module.
  */
 
 use Drupal\shortcut\Entity\Shortcut;
