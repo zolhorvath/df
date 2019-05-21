@@ -1,0 +1,3 @@
+settings:
+  file_extensions: 'mp3 wav aac flac'
+  file_directory: 'audio'

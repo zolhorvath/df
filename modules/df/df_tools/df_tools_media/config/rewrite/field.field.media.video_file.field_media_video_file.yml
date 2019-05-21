@@ -1,0 +1,3 @@
+settings:
+  file_extensions: 'avi mov mp4'
+  file_directory: 'videos'
