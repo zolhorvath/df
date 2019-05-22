@@ -86,6 +86,7 @@ projects[ctools][type] = module
 projects[ctools][patch][] = https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch
 projects[ctools][version] = 3.0
 projects[custom_body_class][type] = module
+projects[custom_body_class][patch][] = https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch
 projects[custom_body_class][version] = 1.2
 projects[diff][type] = module
 projects[diff][version] = 1.0-rc2
