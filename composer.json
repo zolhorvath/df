@@ -256,7 +256,6 @@
         "drupal/connection": "1.x-dev",
         "drupal/react_block": "^1.0@alpha",
         "drupal/simple_api": "1.x-dev",
-        "drupal/remote_stream_wrapper": "^1.2",
         "drupal/redirect": "^1.3"
     },
     "autoload": {
