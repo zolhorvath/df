@@ -4,8 +4,12 @@ dependencies:
   config:
     - block_content.type.hero
     - entity_browser.browser.media_browser_in_modal
+    - field.field.block_content.hero.field_callout_background_color
+    - field.field.block_content.hero.field_callout_background_opacity
     - field.field.block_content.hero.field_callout_color
+    - field.field.block_content.hero.field_callout_width
     - field.field.block_content.hero.field_first_line
+    - field.field.block_content.hero.field_first_line_size
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
     - field.field.block_content.hero.field_hero_background
@@ -13,9 +17,9 @@ dependencies:
     - field.field.block_content.hero.field_icon
     - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
+    - field.field.block_content.hero.field_second_line_size
     - field.field.block_content.hero.field_text_color
   module:
-    - content_moderation
     - entity_browser
     - field_layout
     - layout_discovery
@@ -29,6 +33,20 @@ targetEntityType: block_content
 bundle: hero
 mode: default
 content:
+  field_callout_background_color:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_callout_background_opacity:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_callout_color:
     weight: 10
     settings:
@@ -37,6 +55,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_callout_width:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_first_line:
     type: string_textfield
     weight: 3
@@ -45,6 +69,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_first_line_size:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_gradient_color:
     weight: 9
     settings:
@@ -90,6 +120,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_second_line_size:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_text_color:
     weight: 8
     settings:

@@ -75,13 +75,47 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
       }
     }
 
+    $hero_callout_width = $entity->get('field_callout_width')->getString();
+    switch($hero_callout_width) {
+      case '03':
+        $hero_callout_width = 'col col-md-5 col-lg-3';
+        break;
+      case '04':
+        $hero_callout_width = 'col col-md-6 col-lg-4';
+        break;
+      case '05':
+        $hero_callout_width = 'col col-md-7 col-lg-5';
+        break;
+      case '06':
+        $hero_callout_width = 'col col-md-8 col-lg-6';
+        break;
+      case '07':
+        $hero_callout_width = 'col col-md-9 col-lg-7';
+        break;
+      case '08':
+        $hero_callout_width = 'col col-md-10 col-lg-8';
+        break;
+      case '09':
+        $hero_callout_width = 'col col-md-11 col-lg-9';
+        break;
+      case '10':
+        $hero_callout_width = 'col col-md-12 col-lg-10';
+        break;
+      case '11':
+        $hero_callout_width = 'col col-md-12 col-lg-11';
+        break;
+      case '12':
+        $hero_callout_width = 'col-12';
+        break;
+    }
+
     $wrapper = [
       '#prefix' => '<div class="container"><div class="row ' . $hero_alignment . '">',
       '#suffix' => '</div></div>',
       '#type' => 'container',
       '#weight' => -1,
       '#attributes' => [
-        'class' => ['hero-block-fields', 'col-md-7', 'col-lg-5'],
+        'class' => ['hero-block-fields', $hero_callout_width ],
       ],
       '#children' => [],
     ];
@@ -101,12 +135,27 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
         unset($build[$field_name]);
       }
     }
+
+    $hero_first_line_size = $entity->get('field_first_line_size')->getString();
+    $wrapper['#children']['field_first_line']['#attributes']['class'][] = 'size-' . $hero_first_line_size;
+
+    $hero_second_line_size = $entity->get('field_second_line_size')->getString();
+    $wrapper['#children']['field_second_line']['#attributes']['class'][] = 'size-' . $hero_second_line_size;
+
     // Attach styles.
     $alignment = $entity->get('field_hero_alignment')->getString();
     if (preg_match('/^[a-z_]+$/i', $alignment)) {
       $wrapper['#attributes']['class'][] = Html::cleanCssIdentifier('hero-block-align-' . $alignment);
     }
     $color_regex = '/^#[0-9a-f]{6}$/i';
+    $callout_background_color = $entity->get('field_callout_background_color')->getString();
+    $callout_background_opacity = $entity->get('field_callout_background_opacity')->getString();
+    $hex = trim($callout_background_color, '#');
+    $r = hexdec(substr($hex, 0, 2));
+    $g = hexdec(substr($hex, 2, 2));
+    $b = hexdec(substr($hex, 4, 2));
+    $callout_background_color = "background-color: rgba($r,$g,$b,$callout_background_opacity)";
+    $wrapper['#attributes']['style'] = $callout_background_color;
     $text_color = $entity->get('field_text_color')->getString();
     if (preg_match($color_regex, $text_color)) {
       $wrapper['#children']['field_first_line']['#attributes']['style'] = 'color: ' . $text_color;
@@ -219,6 +268,77 @@ function df_tools_blocks_form_alter(&$form, FormStateInterface $form_state, $for
       '#weight' => 9,
     ];
   }
+  // Add a callback to #process to the layout_builder_update_block and
+  // layout_builder_add_block. drupal.org/node/3028391
+  $form_ids = ['layout_builder_update_block', 'layout_builder_add_block'];
+  if (!in_array($form_id, $form_ids)) {
+    return;
+  }
+  $form['settings']['block_form']['#process'][] = '_layout_builder_block_form_alter';
+}
+
+/**
+ * Process callback for layout_builder block form.
+ *
+ */
+function _layout_builder_block_form_alter(array $element, FormStateInterface $form_state) {
+
+  if (isset($element['field_hero_background'])) {
+    // Move the hero image out of the details element and set a better label.
+    $element['field_hero_background']['widget']['#type'] = 'container';
+    $element['field_hero_background']['widget']['entity_browser']['#process'][] = '_df_tools_blocks_hero_browser_button';
+     // Remove the link fieldset and put the URI and title side-by-side.
+    $element['field_hero_link']['widget'][0]['#type'] = 'container';
+    $element['field_hero_link']['widget'][0]['#attributes']['class'][] = 'row';
+    unset($element['field_hero_link']['widget'][0]['uri']['#description']);
+    $element['field_hero_link']['widget'][0]['uri']['#title'] = t('Callout link');
+    $element['field_hero_link']['widget'][0]['title']['#title'] = t('Callout text');
+    if (\Drupal::moduleHandler()->moduleExists('layout_builder_modal')) {
+      $element['field_hero_link']['widget'][0]['uri']['#prefix'] = '<div class="col-6">';
+      $element['field_hero_link']['widget'][0]['uri']['#suffix'] = '</div>';
+      $element['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="col-6">';
+      $element['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
+    }
+    else {
+      $element['field_hero_link']['widget'][0]['uri']['#prefix'] = '<div class="col-12">';
+      $element['field_hero_link']['widget'][0]['uri']['#suffix'] = '</div>';
+      $element['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="col-12">';
+      $element['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
+    }
+
+    $style_fields = [
+      'field_text_color',
+      'field_first_line_size',
+      'field_second_line_size',
+      'field_gradient_color',
+      'field_callout_color',
+      'field_callout_width',
+      'field_callout_background_color',
+      'field_callout_background_opacity',
+      'field_hero_alignment',
+    ];
+    $element['style_fields'] = [
+      '#type' => 'details',
+      '#title' => t('Advanced settings'),
+      '#weight' => 2,
+    ];
+
+    foreach ($style_fields as $field) {
+      if ((strpos($field, 'color') !== FALSE) && isset($element[$field])) {
+          $element[$field]['widget'][0]['value']['#type'] = 'color';
+      }
+      if (\Drupal::moduleHandler()->moduleExists('layout_builder_modal')) {
+        $element[$field]['#attributes']['class'][] = 'col-4';
+      }
+      else {
+        $element[$field]['#attributes']['class'][] = 'col-6';
+      }
+      $element['style_fields'][] = $element[$field];
+      $element['style_fields']['#weight'] = $element[$field]['#weight'];
+      unset($element[$field]);
+    }
+  }
+  return $element;
 }
 
 /**
@@ -328,6 +448,7 @@ function df_tools_blocks_form_block_content_hero_panels_ipe_form_alter(&$form, F
     'field_text_color',
     'field_gradient_color',
     'field_callout_color',
+    'field_callout_background_color',
   ];
   $form['style_fields'] = [
     '#type' => 'container',

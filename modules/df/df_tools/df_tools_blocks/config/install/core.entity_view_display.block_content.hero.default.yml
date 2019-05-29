@@ -3,8 +3,12 @@ status: true
 dependencies:
   config:
     - block_content.type.hero
+    - field.field.block_content.hero.field_callout_background_color
+    - field.field.block_content.hero.field_callout_background_opacity
     - field.field.block_content.hero.field_callout_color
+    - field.field.block_content.hero.field_callout_width
     - field.field.block_content.hero.field_first_line
+    - field.field.block_content.hero.field_first_line_size
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
     - field.field.block_content.hero.field_hero_background
@@ -12,13 +16,10 @@ dependencies:
     - field.field.block_content.hero.field_icon
     - field.field.block_content.hero.field_nested_block
     - field.field.block_content.hero.field_second_line
+    - field.field.block_content.hero.field_second_line_size
     - field.field.block_content.hero.field_text_color
   module:
-    - layout_builder
     - link
-third_party_settings:
-  layout_builder:
-    sections: {  }
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
@@ -79,8 +80,13 @@ content:
     label: hidden
     region: content
 hidden:
+  field_callout_background_color: true
+  field_callout_background_opacity: true
   field_callout_color: true
+  field_callout_width: true
+  field_first_line_size: true
   field_gradient_color: true
   field_hero_alignment: true
+  field_second_line_size: true
   field_text_color: true
   langcode: true

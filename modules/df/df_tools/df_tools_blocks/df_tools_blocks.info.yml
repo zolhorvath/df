@@ -17,6 +17,7 @@ dependencies:
   - node
   - image
   - image_effects
+  - layout_builder_modal
   - link
   - inline_entity_form
   - text

@@ -8,7 +8,6 @@
 }
 
 .hero-block .hero-block-fields {
-  background-color: rgba(255,255,255,0.6);
   border: 2px solid #000;
   position: absolute;
   padding: 20px;
@@ -29,14 +28,21 @@
   text-align: center;
 }
 
-.hero-block .field--name-field-first-line {
-  font-size: 2rem;
-}
+.hero-block .field--name-field-first-line.size-h1 {font-size: 2.5rem;}
+.hero-block .field--name-field-first-line.size-h2 {font-size: 2rem;}
+.hero-block .field--name-field-first-line.size-h3 {font-size: 1.75rem;}
+.hero-block .field--name-field-first-line.size-h4 {font-size: 1.5rem;}
+.hero-block .field--name-field-first-line.size-h5 {font-size: 1.25rem;}
+.hero-block .field--name-field-first-line.size-h6 {font-size: 1rem;}
 
-.hero-block .field--name-field-second-line {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
+.hero-block .field--name-field-second-line {margin-bottom: 1.5rem;}
+
+.hero-block .field--name-field-second-line.size-h1 {font-size: 2.5rem;}
+.hero-block .field--name-field-second-line.size-h2 {font-size: 2rem;}
+.hero-block .field--name-field-second-line.size-h3 {font-size: 1.75rem;}
+.hero-block .field--name-field-second-line.size-h4 {font-size: 1.5rem;}
+.hero-block .field--name-field-second-line.size-h5 {font-size: 1.25rem;}
+.hero-block .field--name-field-second-line.size-h6 {font-size: 1rem;}
 
 .hero-block .field--name-field-hero-link a {
   padding: 10px;
