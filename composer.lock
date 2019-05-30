@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a8aeb19e281b707cba54f394c4c7019",
+    "content-hash": "5b40872a80ae0ce603d64c79844466ce",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4031,8 +4031,8 @@
                     "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
                     "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
                     "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
-                    "[PP-1] Add a DataType normalizer for layout_section | https://www.drupal.org/project/drupal/issues/2942975": "https://www.drupal.org/files/issues/2018-09-20/2942975-24.patch",
                     "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
+                    "#3053906: Undefined index: region": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
