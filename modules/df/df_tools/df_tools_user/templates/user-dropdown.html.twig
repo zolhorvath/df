@@ -9,24 +9,25 @@
  * - user_logout_url: The path to the log out.
  */
 #}
-
-{% if logged_in %}
-  <div class="dropdown user-dropdown">
-    <a class="dropdown-btn" data-toggle="dropdown">
-      <i class="fas fa-user"></i> {{ user.displayname }}
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-      <a class="dropdown-item" href="{{ user_page_url }}"><i class="fas fa-user"></i> {{ user.displayname }}</a>
-      <a class="dropdown-item" href="{{ user_logout_url }}"><i class="fas fa-sign-out-alt"></i> {{ 'Log Out'|t }}</a>
-    </div>
-  </div>
-{% else %}
-  <div class="dropdown user-dropdown">
-    <a class="dropdown-btn" data-toggle="dropdown">
-      <i class="fas fa-user"></i> {{ 'Login'|t }}
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-      <div class="dropdown-item"> {{ form }} </div>
-    </div>
-  </div>
-{% endif %}
+<ul class="nav navbar-nav">
+  {% if logged_in %}
+    <li class="nav-item dropdown user-dropdown">
+      <a class="dropdown-btn" data-toggle="dropdown">
+        <i class="fas fa-user"></i> {{ user.displayname }}
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="{{ user_page_url }}"><i class="fas fa-user"></i> {{ user.displayname }}</a>
+        <a class="dropdown-item" href="{{ user_logout_url }}"><i class="fas fa-sign-out-alt"></i> {{ 'Log Out'|t }}</a>
+      </div>
+    </li>
+  {% else %}
+    <li class="nav-item dropdown user-dropdown">
+      <a class="dropdown-btn" data-toggle="dropdown">
+        <i class="fas fa-user"></i> {{ 'Login'|t }}
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-item"> {{ form }} </div>
+      </div>
+    </li>
+  {% endif %}
+</ul>
