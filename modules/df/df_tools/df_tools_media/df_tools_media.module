@@ -8,6 +8,7 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\ViewEntityInterface;
 use Drupal\Core\Template\Attribute;
+use Drupal\media\MediaInterface;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -133,4 +134,27 @@ function df_tools_media_preprocess_media_video_file_formatter__df_tools_media_vi
   }
 
   $variables['extravalue'] = $attribute;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * @param $entity
+ */
+function df_tools_media_media_presave(MediaInterface $entity) {
+  $type = $entity->bundle();
+  $types = ['image'];
+  $unsplash_field = 'field_unsplash_image_id';
+  $image_field = 'image';
+  if (in_array($type, $types)
+      && $entity->hasField($unsplash_field)
+      && !$entity->get($unsplash_field)->isEmpty()
+      && $entity->hasField($image_field)
+  ) {
+    $id = $entity->get($unsplash_field)->value;
+    $raw_image = file_get_contents('unsplash://' . $id);
+    $filename = $id . '.jpg';
+    $file = file_save_data($raw_image, "public://images/$filename", FILE_EXISTS_REPLACE);
+    $entity->$image_field->setValue(['target_id' => $file->id()]);
+  }
 }

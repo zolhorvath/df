@@ -15,3 +15,4 @@ dependencies:
   - lightning_media_video
   - media_entity_video
   - type_style
+  - unsplash_stream
