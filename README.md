@@ -68,9 +68,9 @@ If you are using Demo Framework's dev branch and wish to deploy to Acquia Cloud,
 
 ## Using the [Radix](https://www.drupal.org/project/radix) Sub Theme
 
-To motify the CSS/JS you must use the scss files. You will find various different SCSS files in src/sass. You can override variables in src/sass/base/_variables.scss.
+To modify the CSS/JS you must use the scss files. You will find various different SCSS files in src/sass. You can override variables in src/sass/base/_variables.scss.
 
-To compile scss you will need NPM [IF you need to install](http://blog.npmjs.org/post/85484771375/how-to-install-npm) installed on your machine.
+To compile scss you will need NPM ([How To Install NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)) installed on your machine.
 
 When you have NPM installed on your machine, you will need to run ``npm install`` to install the NPM packages. Once they are installed, you can run ``npm run dev`` to compile the scss files or run ``npm run production`` to compile and minify the scss files.
 
