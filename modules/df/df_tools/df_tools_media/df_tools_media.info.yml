@@ -12,6 +12,7 @@ dependencies:
   - lightning_media_image
   - lightning_media_instagram
   - lightning_media_twitter
+  - lightning_media_slideshow
   - lightning_media_video
   - media_entity_video
   - type_style
