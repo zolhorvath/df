@@ -68,6 +68,9 @@
             ]
         },
         "enable-patching": true,
+        "patchLevel": {
+           "drupal/core": "-p2"
+        },
         "patches": {
             "drupal/core": {
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
@@ -254,7 +257,7 @@
         "drupal/webform_views": "5.0.0-alpha6",
         "drupal/workbench_email": "1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "cweagans/composer-patches": "1.x-dev as 1.6.5",
+        "cweagans/composer-patches": "1.6.6",
         "onelogin/php-saml": "3.1.1",
         "oomphinc/composer-installers-extender": "^1.1",
         "phing/phing": "^2.14",
