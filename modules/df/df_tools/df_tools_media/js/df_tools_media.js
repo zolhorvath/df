@@ -10,32 +10,42 @@
   // Standard behaviors fire on page load once.
   Drupal.behaviors.DFToolsMediaUnsplashFields = {
     attach: function (context) {
-      // Initial setup for when user is editing existing media.
-      image.after('<sub>Note: Image uploading is disabled when Unsplash Image ID is present.</sub>');
       // Attaches a function to the Unsplash Image ID field for our show/hide.
       unsplash.blur(function() {
         if ( $(this).val() ) {
-          image.hide();
-          loadUnsplashPreview($(this).val());
+          imageHide();
+          loadUnsplashPreview();
         }
         else {
-          image.show();
+          imageShow();
           removeUnsplashPreview();
         }
       });
-      // On load, check for Unsplash value and slide the image out.
+      // On load, check for Unsplash value and hide the image.
       if ( unsplash.val() ) {
-        image.slideUp(900);
+        imageHide();
+        loadUnsplashPreview();
       }
     }
   };
   // Hit the source.unsplash.com api and produce an image preview.
-  function loadUnsplashPreview(slug) {
+  function loadUnsplashPreview() {
     removeUnsplashPreview();
-    unsplash.after('<p class="unsplash-image-preview"><img src="http://source.unsplash.com/' + slug + '" width="300"/><p>');
+    unsplash.after('<p class="unsplash-image-preview"><img src="http://source.unsplash.com/' + unsplash.val() + '" width="300"/><p>');
   }
   // Removes the unsplash image preview from the DOM.
   function removeUnsplashPreview() {
     $('.unsplash-image-preview').remove();
+  }
+  // Removes the image file field because it gets overridden by Unsplash on entity pre-save.
+  function imageHide() {
+    imageShow();
+    image.hide();
+    unsplash.after('<sub class="unsplash-image-note">Note: Image uploading and editing is disabled if an Unsplash Image ID is present.</sub>');
+  }
+  // Returns the image file field when Unsplash is not being used.
+  function imageShow() {
+    image.show();
+    $('.unsplash-image-note').remove();
   }
 }(jQuery, Drupal));
