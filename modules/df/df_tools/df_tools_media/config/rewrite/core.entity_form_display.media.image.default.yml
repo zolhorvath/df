@@ -40,7 +40,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_unsplash_image_id:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -49,7 +49,7 @@ content:
     region: content
   image:
     type: image_focal_point
-    weight: 1
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: crop_thumbnail

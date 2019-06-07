@@ -158,3 +158,18 @@ function df_tools_media_media_presave(MediaInterface $entity) {
     $entity->$image_field->setValue(['target_id' => $file->id(), 'alt' => $entity->label()]);
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function df_tools_media_form_media_image_add_form_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attached']['library'][] = 'df_tools_media/main';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function df_tools_media_form_media_image_edit_form_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attached']['library'][] = 'df_tools_media/main';
+}
+
