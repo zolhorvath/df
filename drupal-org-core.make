@@ -5,7 +5,6 @@ projects[drupal][download][type] = git
 projects[drupal][download][url] = https://git.drupal.org/project/drupal.git
 projects[drupal][download][branch] = 8.7.x
 projects[drupal][download][tag] = 8.7.3
-projects[drupal][patch][] = https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/allow-2681947-20_0.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch

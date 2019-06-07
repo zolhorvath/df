@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1de6f71cda65808cb37c796f138980e",
+    "content-hash": "eaec199193d5688ff72a3d5629a877f3",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4051,7 +4051,6 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717": "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                     "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235": "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                     "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",

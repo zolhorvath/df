@@ -73,8 +73,6 @@
         },
         "patches": {
             "drupal/core": {
-                "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
-                "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
                 "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
