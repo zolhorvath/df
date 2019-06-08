@@ -1,0 +1,180 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.location.body
+    - field.field.node.location.field_location_address
+    - field.field.node.location.field_location_geofield
+    - field.field.node.location.field_location_hours
+    - field.field.node.location.field_location_media
+    - field.field.node.location.field_location_type
+    - field.field.node.location.layout_builder__layout
+    - node.type.location
+  module:
+    - address
+    - df_tools_layout
+    - geofield
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layouts_6_6
+        layout_settings:
+          gap: gap-sm
+          full_width: 0
+          class: ''
+        components:
+          fa9a1346-459d-4b11-a202-1fea4ef15712:
+            uuid: fa9a1346-459d-4b11-a202-1fea4ef15712
+            region: first
+            configuration:
+              id: 'field_block:node:location:field_location_address'
+              label: Address
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: address_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          a13bc430-b9a0-496d-8241-a32ffff227d2:
+            uuid: a13bc430-b9a0-496d-8241-a32ffff227d2
+            region: first
+            configuration:
+              id: 'field_block:node:location:field_location_type'
+              label: Type
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          44213272-e85f-42fe-a1ef-ad9fbc421c8b:
+            uuid: 44213272-e85f-42fe-a1ef-ad9fbc421c8b
+            region: second
+            configuration:
+              id: 'field_block:node:location:field_location_media'
+              label: Picture
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: card_narrow
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          06261ea9-7017-4aa4-bb11-9f41bbd36d40:
+            uuid: 06261ea9-7017-4aa4-bb11-9f41bbd36d40
+            region: first
+            configuration:
+              id: 'field_block:node:location:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    allowed_blocks: {  }
+    allowed_layouts:
+      - layouts_12
+      - layouts_6_6
+      - layouts_4_8
+      - layouts_8_4
+      - layouts_3_6_3
+      - layouts_3-3-3-3
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  body:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location_address:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_location_geofield:
+    weight: 106
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_location_hours:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location_media:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_location_type:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  content_moderation_control: true
+  langcode: true
+  layout_builder__layout: true

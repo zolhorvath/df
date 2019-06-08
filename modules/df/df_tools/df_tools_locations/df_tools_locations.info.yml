@@ -1,0 +1,9 @@
+name: 'DF Tools Locations'
+type: module
+description: 'Location content type and associated views.'
+core: 8.x
+package: Demo Framework Tools
+dependencies:
+  - df_tools_map
+  - df_tools_media
+  - leaflet_views

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Location Type'
+vid: location_type
+description: ''
+weight: 0
