@@ -29,3 +29,4 @@ libraries/*
 # Other
 private
 robots-replace.txt
+.behat.yml
