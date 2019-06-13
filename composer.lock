@@ -7048,17 +7048,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.9"
+                "reference": "8.x-3.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.9.zip",
-                "reference": "8.x-3.9",
-                "shasum": "0ec4773fe7807cba669f47f3f9ac557032da0acd"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.10.zip",
+                "reference": "8.x-3.10",
+                "shasum": "aba2102b9ddafafa762d7425d8833736280d4ce5"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -7101,8 +7101,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.9",
-                    "datestamp": "1559228288",
+                    "version": "8.x-3.10",
+                    "datestamp": "1560453487",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7144,9 +7144,7 @@
                         "2882709 - Misnamed interface causes \"Fatal error: Cannot declare interface Drupal\\libraries\\ExternalLibrary\\Utility\\LibraryAccessorIdInterface\"": "https://www.drupal.org/files/issues/2882709-2-interface-libraryidaccessorinterface-misnamed.patch"
                     }
                 },
-                "patches_applied": {
-                    "Auto Upload not working on file upload entity browser widget | https://www.drupal.org/node/3056908": "https://www.drupal.org/files/issues/2019-05-30/3056908-6.patch"
-                }
+                "patches_applied": []
             },
             "autoload": {
                 "psr-4": {
@@ -9563,7 +9561,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "2dcfbbbf99bca21acec862d51a13f22ec4211ebe"
+                "reference": "e14ed50ff20f463c196b9fffb3f4a45dd7a10681"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9580,7 +9578,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1558471081",
+                    "datestamp": "1560376685",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9617,7 +9615,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-06-12T21:53:05+00:00"
+            "time": "2019-06-13T20:49:34+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -17984,16 +17982,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
                 "shasum": ""
             },
             "require": {
@@ -18014,8 +18012,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -18043,7 +18041,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2019-06-13T12:50:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
