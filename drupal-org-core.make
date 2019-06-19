@@ -14,6 +14,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-08-15/28732
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch
