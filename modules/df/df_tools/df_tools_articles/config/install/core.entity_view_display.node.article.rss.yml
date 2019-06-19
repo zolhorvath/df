@@ -5,15 +5,17 @@ dependencies:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_article_subtitle
     - field.field.node.article.field_image
     - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
+    - field.field.node.article.field_type
     - field.field.node.article.layout_builder__layout
     - node.type.article
   module:
     - field_layout
     - layout_builder
+    - text
     - user
 third_party_settings:
   field_layout:
@@ -28,23 +30,35 @@ targetEntityType: node
 bundle: article
 mode: rss
 content:
-  content_moderation_control:
-    weight: -20
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
     third_party_settings: {  }
   links:
-    weight: 100
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
-  body: true
   comment: true
-  field_article_subtitle: true
-  field_image: true
+  content_moderation_control: true
   field_meta_tags: true
+  field_subtitle: true
   field_tags: true
+  field_type: true
   langcode: true
   layout_builder__layout: true

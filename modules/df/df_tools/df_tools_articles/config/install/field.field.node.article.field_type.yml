@@ -2,26 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - media.type.image
+    - field.storage.node.field_type
     - node.type.article
-id: node.article.field_image
-field_name: field_image
+    - taxonomy.vocabulary.article_type
+id: node.article.field_type
+field_name: field_type
 entity_type: node
 bundle: article
-label: Image
+label: Type
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      image: image
+      article_type: article_type
     sort:
-      field: _none
-    auto_create: true
+      field: name
+      direction: asc
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

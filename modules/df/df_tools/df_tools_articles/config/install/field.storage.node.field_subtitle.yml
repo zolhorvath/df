@@ -2,15 +2,17 @@ langcode: en
 status: true
 dependencies:
   module:
-    - layout_builder
     - node
-id: node.layout_builder__layout
-field_name: layout_builder__layout
+id: node.field_subtitle
+field_name: field_subtitle
 entity_type: node
-type: layout_section
-settings: {  }
-module: layout_builder
-locked: true
+type: string
+settings:
+  max_length: 1024
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
 cardinality: 1
 translatable: true
 indexes: {  }

@@ -3,14 +3,13 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_article_subtitle
-field_name: field_article_subtitle
+    - taxonomy
+id: node.field_type
+field_name: field_type
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 1024
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1
