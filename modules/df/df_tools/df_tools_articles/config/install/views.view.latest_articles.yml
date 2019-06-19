@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image
-    - image.style.hero_square
     - node.type.article
   module:
     - image
@@ -57,21 +57,16 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: html_list
+        type: default
         options:
-          grouping: {  }
           row_class: columns
           default_row_class: true
-          type: ul
-          wrapper_class: dfs-block-grid
-          class: 'row small-up-1 medium-up-2 large-up-3'
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       fields:
         field_image:
           id: field_image
@@ -316,6 +311,8 @@ display:
           text: 'Read Article'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
       filters:
         status:
           value: '1'
@@ -429,4 +426,3 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
-
