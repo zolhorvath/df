@@ -8,3 +8,4 @@ dependencies:
   - contact
   - lightning_core
   - metatag
+  - view_modes_display
