@@ -26,13 +26,13 @@ settings.gap
         {% endif %}
             <div class="row">
             {% if content.first %}
-                <div {{ region_attributes.first.addClass('col-sm-6', 'layout__region', 'layout__region--first') }}>
+                <div {{ region_attributes.first.addClass('col-md-6', 'layout__region', 'layout__region--first') }}>
                     {{ content.first }}
                 </div>
             {% endif %}
 
             {% if content.second %}
-                <div {{ region_attributes.second.addClass('col-sm-6', 'layout__region', 'layout__region--second') }}>
+                <div {{ region_attributes.second.addClass('col-md-6', 'layout__region', 'layout__region--second') }}>
                     {{ content.second }}
                 </div>
             {% endif %}
