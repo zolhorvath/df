@@ -1,0 +1,47 @@
+// Card view mode
+// -----------------------------------------------------------------------------
+.card {
+  max-width: 540px;
+  padding: 0;
+  margin-left: 5rem;
+}
+
+.card .col-sm {
+  padding:0;
+}
+
+.card .col-sm > div {
+  padding:0 0.5rem;
+}
+
+.card .col-sm > div.card-img-top {
+  padding:0;
+}
+
+
+// Content browser view mode
+// -----------------------------------------------------------------------------
+.content-browser-card {
+  max-width: 10rem;
+  border:0
+}
+
+.content-browser-card .card-content {
+  padding: 0.25rem 0.5rem;
+}
+
+.content-browser-card .card-content h1 {
+  font-size: 1rem;
+}
+
+
+// Featured view mode
+// -----------------------------------------------------------------------------
+.featured-overlay {
+  z-index: 1100;
+  background: #f7f7f9c9;
+  max-width: 20rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
