@@ -4,11 +4,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.location.body
+    - field.field.node.location.field_image
     - field.field.node.location.field_location_address
     - field.field.node.location.field_location_geofield
     - field.field.node.location.field_location_hours
-    - field.field.node.location.field_location_media
-    - field.field.node.location.field_location_type
+    - field.field.node.location.field_meta_tags
+    - field.field.node.location.field_tags
+    - field.field.node.location.field_type
     - field.field.node.location.layout_builder__layout
     - node.type.location
   module:
@@ -28,64 +30,10 @@ third_party_settings:
       -
         layout_id: layouts_6_6
         layout_settings:
-          gap: gap-sm
+          gap: gap-md
           full_width: 0
           class: ''
         components:
-          fa9a1346-459d-4b11-a202-1fea4ef15712:
-            uuid: fa9a1346-459d-4b11-a202-1fea4ef15712
-            region: first
-            configuration:
-              id: 'field_block:node:location:field_location_address'
-              label: Address
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: address_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 1
-          a13bc430-b9a0-496d-8241-a32ffff227d2:
-            uuid: a13bc430-b9a0-496d-8241-a32ffff227d2
-            region: first
-            configuration:
-              id: 'field_block:node:location:field_location_type'
-              label: Type
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 2
-          44213272-e85f-42fe-a1ef-ad9fbc421c8b:
-            uuid: 44213272-e85f-42fe-a1ef-ad9fbc421c8b
-            region: second
-            configuration:
-              id: 'field_block:node:location:field_location_media'
-              label: Picture
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: media_thumbnail
-                settings:
-                  image_style: card_narrow
-                  image_link: ''
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
           06261ea9-7017-4aa4-bb11-9f41bbd36d40:
             uuid: 06261ea9-7017-4aa4-bb11-9f41bbd36d40
             region: first
@@ -103,7 +51,87 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 0
+            weight: 1
+            third_party_settings:
+              block_class:
+                classes: h2
+          10a2e89d-31a3-40cf-b19e-3a89fc353e23:
+            uuid: 10a2e89d-31a3-40cf-b19e-3a89fc353e23
+            region: second
+            configuration:
+              id: 'field_block:node:location:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: card
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+            third_party_settings: {  }
+          bc2ab9ce-c0a5-475b-9da9-ed18767d1e3d:
+            uuid: bc2ab9ce-c0a5-475b-9da9-ed18767d1e3d
+            region: first
+            configuration:
+              id: 'field_block:node:location:body'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 300
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+            third_party_settings: {  }
+          fa9a1346-459d-4b11-a202-1fea4ef15712:
+            uuid: fa9a1346-459d-4b11-a202-1fea4ef15712
+            region: first
+            configuration:
+              id: 'field_block:node:location:field_location_address'
+              label: Address
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: address_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+            third_party_settings: {  }
+          aac1c1f6-8ec2-41e0-ba78-82ee80b73db4:
+            uuid: aac1c1f6-8ec2-41e0-ba78-82ee80b73db4
+            region: second
+            configuration:
+              id: 'field_block:node:location:field_type'
+              label: Type
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+            third_party_settings:
+              block_class:
+                classes: 'badge badge-primary w-100 mt-2 mb-2'
         third_party_settings: {  }
   layout_library:
     enable: false
@@ -151,23 +179,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_location_media:
-    type: entity_reference_entity_view
-    weight: 105
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_location_type:
-    weight: 107
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
     weight: 100
     settings: {  }
@@ -176,5 +187,9 @@ content:
 hidden:
   addtoany: true
   content_moderation_control: true
+  field_image: true
+  field_meta_tags: true
+  field_tags: true
+  field_type: true
   langcode: true
   layout_builder__layout: true

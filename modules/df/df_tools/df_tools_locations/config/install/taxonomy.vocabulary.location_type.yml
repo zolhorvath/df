@@ -7,7 +7,7 @@ third_party_settings:
   type_style:
     color: '#000000'
     icon: ''
-name: 'Location Type'
+name: 'Location type'
 vid: location_type
-description: ''
+description: 'Defines the type of locations that this site has.'
 weight: 0
