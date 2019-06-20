@@ -16,25 +16,25 @@
 
 // Card view mode
 // -----------------------------------------------------------------------------
-.card {
+article.node .card {
   max-width: 28rem;
   padding: 0;
   margin: 0 auto;
 }
 
-.card .col-sm {
+article.node .card .col-sm {
   padding:0;
 }
 
-.card .col-sm > div {
+article.node .card .col-sm > div {
   padding:0 0.5rem;
 }
 
-.card .col-sm > div.card-img-top {
+article.node .card .col-sm > div.card-img-top {
   padding:0;
 }
 
-.card .img-thumbnail {
+article.node .card .img-thumbnail {
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
@@ -58,6 +58,11 @@
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
+.content-browser-card .check-indicator {
+  position: absolute;
+  top: 0;
+}
+
 
 // Featured view mode
 // -----------------------------------------------------------------------------
@@ -73,4 +78,8 @@
 
 .featured-overlay .container {
   padding: 1rem;
+}
+
+.featured-background img {
+  width: 100%;
 }

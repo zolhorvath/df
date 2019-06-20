@@ -10681,25 +10681,50 @@ a:hover {
   opacity: 1;
 }
 
-.card {
-  max-width: 540px;
-  padding: 0;
-  margin-left: 5rem;
+.badge-primary {
+  color: #fff;
+  background-color: #0271b3;
 }
 
-.card .col-sm {
+.btn-primary {
+  color: #fff;
+  background-color: #0271b3;
+  border-color: #0271b3;
+}
+
+.nav li.nav-item {
+  margin-right: 2rem;
+}
+
+.nav li.nav-item a {
+  color: #ccc;
+}
+
+.nav li.nav-item a:hover {
+  color: #555;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+article.node .card {
+  max-width: 28rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+article.node .card .col-sm {
   padding: 0;
 }
 
-.card .col-sm > div {
+article.node .card .col-sm > div {
   padding: 0 0.5rem;
 }
 
-.card .col-sm > div.card-img-top {
+article.node .card .col-sm > div.card-img-top {
   padding: 0;
 }
 
-.card .img-thumbnail {
+article.node .card .img-thumbnail {
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
@@ -10720,6 +10745,11 @@ a:hover {
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
+.content-browser-card .check-indicator {
+  position: absolute;
+  top: 0;
+}
+
 .featured-overlay {
   z-index: 1100;
   background: #f7f7f7e5;
@@ -10727,11 +10757,19 @@ a:hover {
   position: absolute;
   bottom: 4rem;
   left: 4rem;
-  border-radius: 3px;
+  border-radius: 0.25rem;
 }
 
 .featured-overlay .container {
   padding: 1rem;
+}
+
+.featured-background img {
+  width: 100%;
+}
+
+.article--full .article__field-image img {
+  width: 100%;
 }
 
 .navbar-brand {
@@ -10876,6 +10914,8 @@ body.path-location #views-exposed-form-location-page-1 #edit-actions {
   padding-top: 30px;
 }
 
-.container-fluid .no-gutters .field--name-image img {
-  width: 100%;
+.block h1 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
 }
+
