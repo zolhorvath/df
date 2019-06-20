@@ -1,6 +1,6 @@
 .hero-block {
   position: relative;
-  height: 400px;
+  min-height: 20rem;
   overflow: hidden;
 }
 .hero-block .container {
@@ -8,12 +8,13 @@
 }
 
 .hero-block .hero-block-fields {
-  border: 2px solid #000;
+  border-radius: 0.15rem;
   position: absolute;
-  padding: 20px;
+  padding: 1.5rem;
   margin-top: 10%;
   width: 100%;
   z-index: 1;
+
 }
 
 .hero-block .hero-block-fields.hero-block-align-right {
@@ -45,7 +46,7 @@
 .hero-block .field--name-field-second-line.size-h6 {font-size: 1rem;}
 
 .hero-block .field--name-field-hero-link a {
-  padding: 10px;
+  padding: 0.75rem;
   filter: brightness(100%);
   transition: .2s filter;
 }

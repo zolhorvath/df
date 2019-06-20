@@ -10876,3 +10876,6 @@ body.path-location #views-exposed-form-location-page-1 #edit-actions {
   padding-top: 30px;
 }
 
+.container-fluid .no-gutters .field--name-image img {
+  width: 100%;
+}
