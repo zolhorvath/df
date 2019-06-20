@@ -32,8 +32,8 @@ third_party_settings:
         layout_id: layouts_12
         layout_settings:
           gap: gap-0
-          full_width: 0
-          class: ''
+          full_width: 1
+          class: featured-background
         components:
           509289a6-ed63-4484-ae40-a42e80c1624d:
             uuid: 509289a6-ed63-4484-ae40-a42e80c1624d
@@ -54,6 +54,14 @@ third_party_settings:
             additional: {  }
             weight: 0
             third_party_settings: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layouts_12
+        layout_settings:
+          gap: gap-0
+          full_width: 0
+          class: featured-overlay
+        components:
           ad22ed42-7371-4b0e-9628-e03ebacf17f2:
             uuid: ad22ed42-7371-4b0e-9628-e03ebacf17f2
             region: content
@@ -71,7 +79,7 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 1
+            weight: 0
             third_party_settings: {  }
           d96b1324-9bf4-417a-b321-4b7edf5db86e:
             uuid: d96b1324-9bf4-417a-b321-4b7edf5db86e
@@ -90,7 +98,7 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 2
+            weight: 1
             third_party_settings: {  }
         third_party_settings: {  }
   layout_library:
