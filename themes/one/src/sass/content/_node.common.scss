@@ -18,6 +18,10 @@
   padding:0;
 }
 
+.card .img-thumbnail {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
 
 // Content browser view mode
 // -----------------------------------------------------------------------------
@@ -34,14 +38,23 @@
   font-size: 1rem;
 }
 
+.content-browser-card .img-thumbnail {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
 
 // Featured view mode
 // -----------------------------------------------------------------------------
 .featured-overlay {
   z-index: 1100;
-  background: #f7f7f9c9;
+  background: #f7f7f7e5;
   max-width: 20rem;
   position: absolute;
   bottom: 4rem;
   left: 4rem;
+  border-radius: 3px;
+}
+
+.featured-overlay .container {
+  padding: 1rem;
 }
