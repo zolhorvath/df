@@ -6,3 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - asset_injector
   - custom_body_class
+  - block_class
