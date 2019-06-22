@@ -1,10 +1,11 @@
-uuid: 3f38d4b0-e1c3-447a-ab88-0d2916715ecc
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.card
     - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_tags
+    - field.field.media.image.field_unsplash_image_id
     - field.field.media.image.image
     - media.type.image
     - responsive_image.styles.card_wide
@@ -21,12 +22,15 @@ content:
     label: hidden
     settings:
       responsive_image_style: card_wide
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   created: true
   field_media_in_library: true
+  field_tags: true
+  field_unsplash_image_id: true
   langcode: true
   name: true
   thumbnail: true
