@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3262c27f46f3ba1935676bac5c36d780",
+    "content-hash": "77ce2c761460af2ae2eb55aafde6cafc",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4970,8 +4970,7 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -7066,11 +7065,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "dev-3.x",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "e0471bc0a91317fd63cae2733279697b1739cbdd"
+                "reference": "8.x-3.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "465826c3bd1700ee4c04cdaeb3588553fa9ce531"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -7113,11 +7118,11 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.10+1-dev",
-                    "datestamp": "1560962588",
+                    "version": "8.x-3.11",
+                    "datestamp": "1561478586",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "enable-patching": true,
@@ -7213,8 +7218,7 @@
             "homepage": "https://www.drupal.org/project/lightning_media",
             "support": {
                 "source": "https://git.drupalcode.org/project/lightning_media"
-            },
-            "time": "2019-06-24T20:14:15+00:00"
+            }
         },
         {
             "name": "drupal/lightning_workflow",
@@ -9583,7 +9587,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "31077d7315b7cb8d32867b2905dac958ca5611b3"
+                "reference": "78c518d8ffe57a790bbacf3028d337d852a2ec5c"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -9600,7 +9604,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1560465481",
+                    "datestamp": "1560466085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9637,7 +9641,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-06-13T22:43:28+00:00"
+            "time": "2019-06-25T16:09:41+00:00"
         },
         {
             "name": "drupal/schemata",

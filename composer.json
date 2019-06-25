@@ -129,9 +129,6 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-12-27/2877751-39_2825555-20_combined.patch"
             },
-            "drupal/entity_embed": {
-                "Data-align center does not work | https://www.drupal.org/node/2645458": "https://www.drupal.org/files/issues/2018-09-28/data-align-2645458-61_0.patch"
-            },
             "drupal/material_admin": {
                 "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch",
                 "Add Site name and logo | https://www.drupal.org/node/3001961": "https://www.drupal.org/files/issues/2018-09-24/add-sitename-and-logo-3001961-4.patch"
