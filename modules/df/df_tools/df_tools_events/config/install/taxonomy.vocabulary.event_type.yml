@@ -1,0 +1,15 @@
+uuid: f61bca53-7366-4ecb-936c-5010bcfcdf63
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Event type'
+vid: event_type
+description: 'Defines the type of events that this site has.'
+weight: 0
+
