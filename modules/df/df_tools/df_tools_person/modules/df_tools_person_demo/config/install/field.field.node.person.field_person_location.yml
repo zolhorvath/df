@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_location
-    - node.type.event
+    - node.type.person
     - node.type.location
-id: node.event.field_event_location
+id: node.person.field_person_location
 field_name: field_location
 entity_type: node
-bundle: event
-label: 'Event Location'
-description: 'The location of the event.'
+bundle: person
+label: 'Location'
+description: 'The home or office of the person.'
 required: false
 translatable: false
 default_value: {  }
