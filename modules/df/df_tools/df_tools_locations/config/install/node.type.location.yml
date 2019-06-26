@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - lightning_workflow
     - menu_ui
     - type_style
 third_party_settings:
