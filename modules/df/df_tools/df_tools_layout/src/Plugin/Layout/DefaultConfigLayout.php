@@ -63,7 +63,7 @@ class DefaultConfigLayout extends LayoutDefault implements PluginFormInterface {
    */
   public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
     $class = $form_state->getValue('class');
-    if (!preg_match("/^[a-zA-Z0-9-_]*$/", $class)) {
+    if (!preg_match("/^[a-zA-Z0-9- _]*$/", $class)) {
       $form_state->setErrorByName('class', $this->t('The class you have provided is invalid.'));
     }
   }
