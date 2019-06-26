@@ -1,0 +1,37 @@
+uuid: cd8f6201-d164-4e85-8dc3-c15b636b586c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_greeting
+field_name: field_greeting
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: mr
+      label: Mr.
+    -
+      value: ms
+      label: Ms.
+    -
+      value: mrs
+      label: Mrs.
+    -
+      value: mx
+      label: Mx.
+    -
+      value: dr
+      label: Dr.
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
+

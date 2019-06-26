@@ -1,0 +1,15 @@
+uuid: 1d0a0a47-2f40-471e-9de2-851216f61fa7
+langcode: en
+status: true
+dependencies:
+  module:
+    - type_style
+third_party_settings:
+  type_style:
+    color: '#000000'
+    icon: ''
+name: 'Person type'
+vid: person_type
+description: 'Defines the type of people that this site has.'
+weight: 0
+
