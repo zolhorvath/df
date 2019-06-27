@@ -1,6 +1,6 @@
-name: DF Tools Slideshow
+name: DF Tools Block Slideshow
 type: module
-description: Provides a Slideshow block type.
+description: Provides a Slideshow block that displays other blocks in a slideshow.
 core: 8.x
 package: Demo Framework Tools
 dependencies:
