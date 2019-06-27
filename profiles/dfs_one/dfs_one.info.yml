@@ -29,6 +29,7 @@ install:
 themes:
   - one
 exclude:
+  - image_widget_crop
   - lightning_api
   - lightning_contact_form
   - lightning_hero_block
