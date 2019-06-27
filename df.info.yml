@@ -1,6 +1,7 @@
 name: 'Demo Framework'
 type: profile
 description: 'Architects start here.'
+package: 'Demo Framework'
 core: 8.x
 base profile: lightning
 install:
