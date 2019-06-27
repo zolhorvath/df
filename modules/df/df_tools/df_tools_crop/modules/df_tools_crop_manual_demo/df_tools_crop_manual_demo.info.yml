@@ -1,8 +1,8 @@
-name: DF Tools Crop
+name: DF Tools Crop Manual Demo
 type: module
-description: Provides some basic cropping.
+description: Provides extra cropping via an optional Image widget.
 core: 8.x
-package: Demo Framework Tools
+package: Demo Framework Tools Demos
 dependencies:
   - df_tools_crop
   - image_widget_crop 
