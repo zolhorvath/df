@@ -6,9 +6,7 @@ dependencies:
     - image.style.hero_mobile
     - image.style.hero_square
   module:
-    - df_tools_blocks
-_core:
-  default_config_hash: LDOrAYPz7RMyao-sW6B8r-Pfbcz2feqPKKQ0J2EJlWQ
+    - df_tools_crop
 id: responsive_hero
 label: 'Responsive Hero'
 image_style_mappings:
@@ -42,5 +40,5 @@ image_style_mappings:
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: hero_mobile
-breakpoint_group: df_tools_blocks
+breakpoint_group: df_tools_crop
 fallback_image_style: hero_image

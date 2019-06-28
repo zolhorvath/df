@@ -6,7 +6,7 @@ dependencies:
     - image.style.vertical_hero
     - image.style.vertical_hero_small
   module:
-    - df_tools_blocks
+    - df_tools_crop
 id: responsive_vertical_hero
 label: 'Responsive Vertical Hero'
 image_style_mappings:
@@ -30,6 +30,6 @@ image_style_mappings:
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: vertical_hero_small
-breakpoint_group: df_tools_blocks
+breakpoint_group: df_tools_crop
 fallback_image_style: vertical_hero
 
