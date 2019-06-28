@@ -7,19 +7,20 @@ Feature: DFS ONE: Homepage
   @bf41f474
   Scenario: Block: Example Hero
     Given I am on the homepage
-    Then I should see "Colosseum"
-    And I should see "Built in 70–80 AD"
+    Then I should see "Take your place among the stars"
+    And I should see "Nexus Travel makes space tourism"
 
   @61ecc9b8
   Scenario: Block: Example Text
     Given I am on the homepage
-    Then I should see "Flavian Amphitheatre"
-    And I should see "hypogeum"
+    Then I should see "Latest articles"
+    And I should see "Top tips for your first space trip"
 
   @9a461c09
-  Scenario: Block: Example Map
+  Scenario: Block: Example Blocks
     Given I am on the homepage
-    Then I should see "00184 Roma RM"
+    Then I should see "Calling all astronauts"
+    Then I should see "Orbital photo shoots"
 
   @5cb84acd
   Scenario: Block: User login
