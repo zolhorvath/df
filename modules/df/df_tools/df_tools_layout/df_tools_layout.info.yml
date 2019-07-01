@@ -7,4 +7,3 @@ dependencies:
   - df_core
   - layout_discovery
   - lightning_layout
-  - lightning_page
