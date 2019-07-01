@@ -11,6 +11,10 @@ hero:
   css:
     theme:
       css/hero.css: {}
+  js:
+    js/hero.js: {}
+  dependencies:
+    - core/jquery
 
 video_hero:
   version: VERSION
