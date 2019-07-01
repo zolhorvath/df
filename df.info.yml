@@ -26,6 +26,7 @@ exclude:
   - image_widget_crop
   - lightning_api
   - lightning_contact_form
+  - lightning_page
   - lightning_preview
   - lightning_roles
   - bartik

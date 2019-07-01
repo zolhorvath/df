@@ -19,7 +19,6 @@ install:
   - df_tools_map
   - df_tools_media
   - df_tools_menu
-  - df_tools_page
   - df_tools_search
   - df_tools_theming
   - df_tools_translation
@@ -35,6 +34,7 @@ exclude:
   - lightning_contact_form
   - lightning_hero_block
   - lightning_map_block
+  - lightning_page
   - lightning_preview
   - lightning_roles
   - bartik
