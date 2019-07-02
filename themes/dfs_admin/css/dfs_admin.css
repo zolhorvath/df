@@ -276,6 +276,11 @@ body.fontyourface #edit-imports .button {
   padding: 0;
 }
 
+#block-dfs-admin-page-title .logo img {
+    max-width: 150px;
+    max-height: 80px;
+}
+
 body.logo #notification-wrapper {
   position: absolute;
   right: 20px;
