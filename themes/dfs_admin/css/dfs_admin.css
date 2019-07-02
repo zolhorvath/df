@@ -252,3 +252,40 @@ body.fontyourface #edit-imports .button {
   padding: 0 2em;
   height: 100%;
 }
+
+/* Site Name and logo*/
+.block-page-title-block .logo {
+  width: 100%;
+}
+
+.block-page-title-block .logoimg {
+  max-width: 150px;
+  max-height: 80px;
+}
+
+.ehb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-wrapper .row.material-container {
+  position: relative;
+}
+
+#block-dfs-admin-page-title .row {
+  padding: 0;
+}
+
+body.logo #notification-wrapper {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 993px) {
+  body.logo #toast-container {
+    top: 16%;
+    right: 3%;
+  }
+}
