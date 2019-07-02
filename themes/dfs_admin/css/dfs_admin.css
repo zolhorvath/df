@@ -142,7 +142,21 @@ div.scheduled-transition button {
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonaction.form-item-palette-buttonaction.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactiontext.form-item-palette-buttonactiontext.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhover.form-item-palette-buttonactionhover.form-has-label.input-field,
-.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhovertext.form-item-palette-buttonactionhovertext.form-has-label.input-field {
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-buttonactionhovertext.form-item-palette-buttonactionhovertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerbgleft.form-item-palette-headerbgleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkleft.form-item-palette-headerlinkleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkhoverleft.form-item-palette-headerlinkhoverleft.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerbgright.form-item-palette-headerbgright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkright.form-item-palette-headerlinkright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-headerlinkhoverright.form-item-palette-headerlinkhoverright.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderbg.form-item-palette-metaheaderbg.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheadertext.form-item-palette-metaheadertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderlink.form-item-palette-metaheaderlink.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-metaheaderlinkhover.form-item-palette-metaheaderlinkhover.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerbg.form-item-palette-footerbg.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footertext.form-item-palette-footertext.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlink.form-item-palette-footerlink.form-has-label.input-field,
+.js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlinkhover.form-item-palette-footerlinkhover.form-has-label.input-field {
   margin: 0 0 5px; 0;
 }
 
@@ -237,4 +251,41 @@ body.fontyourface #edit-imports .button {
   margin: 5px;
   padding: 0 2em;
   height: 100%;
+}
+
+/* Site Name and logo*/
+.block-page-title-block .logo {
+  width: 100%;
+}
+
+.block-page-title-block .logoimg {
+  max-width: 150px;
+  max-height: 80px;
+}
+
+.ehb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-wrapper .row.material-container {
+  position: relative;
+}
+
+#block-dfs-admin-page-title .row {
+  padding: 0;
+}
+
+body.logo #notification-wrapper {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 993px) {
+  body.logo #toast-container {
+    top: 16%;
+    right: 3%;
+  }
 }
