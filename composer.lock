@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cef0a7a3013ee5151786faa4c0b95933",
+    "content-hash": "427d2768c834e62dffb2140006b8342a",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4726,8 +4726,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
