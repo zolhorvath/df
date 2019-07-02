@@ -138,9 +138,7 @@
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-12-27/2877751-39_2825555-20_combined.patch"
             },
             "drupal/material_admin": {
-                "Add Color module integration | https://www.drupal.org/node/3000991": "https://www.drupal.org/files/issues/2018-09-19/add-color-module-3000991-2.patch",
-                "Add Site name and logo | https://www.drupal.org/node/3001961": "https://www.drupal.org/files/issues/2018-09-24/add-sitename-and-logo-3001961-4.patch"
-
+                "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-07-02/material_admin-3048894-6_plus_vbo.patch"
             },
             "drupal/material_admin_support": {
                 "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch",
@@ -226,7 +224,7 @@
         "drupal/ip_anon": "1.5",
         "drupal/lite": "1.4.0",
         "drupal/mailsystem": "4.1.0",
-        "drupal/material_admin": "1.0.0-alpha6",
+        "drupal/material_admin": "1.x-dev",
         "drupal/material_admin_support": "1.x-dev",
         "drupal/media_acquiadam": "1.32.0",
         "drupal/media_entity_video": "2.0.0-alpha1",
