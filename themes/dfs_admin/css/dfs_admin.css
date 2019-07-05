@@ -253,6 +253,12 @@ body.fontyourface #edit-imports .button {
   height: 100%;
 }
 
+/* Fixes for materialize library v1.0.0*/
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* Site Name and logo*/
 .block-page-title-block .logo {
   width: 100%;
