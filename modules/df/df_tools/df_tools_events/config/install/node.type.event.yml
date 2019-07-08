@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - menu_ui
-    - node_type_class
     - type_style
 third_party_settings:
   menu_ui:
@@ -13,8 +12,6 @@ third_party_settings:
   type_style:
     color: '#942192'
     icon: access_time
-  node_type_class:
-    classes: ''
 name: Event
 type: event
 description: 'A planned occasion with a set date, start time and location name.'
