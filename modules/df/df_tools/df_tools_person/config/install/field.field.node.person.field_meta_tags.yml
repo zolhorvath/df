@@ -1,4 +1,3 @@
-uuid: 39444a3e-00a9-4548-b4bb-f7c967d31e4b
 langcode: en
 status: true
 dependencies:
@@ -19,4 +18,3 @@ default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: metatag
-

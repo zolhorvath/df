@@ -1,4 +1,3 @@
-uuid: 3081a9b8-3862-44c0-83a1-24f022096c88
 langcode: en
 status: true
 dependencies:
@@ -19,4 +18,3 @@ default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: list_string
-

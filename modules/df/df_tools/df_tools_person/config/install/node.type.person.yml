@@ -1,9 +1,9 @@
-uuid: fa2d1ac4-1632-4233-b09a-d56f46685d9c
 langcode: en
 status: true
 dependencies:
   module:
     - menu_ui
+    - node_type_class
     - type_style
 third_party_settings:
   menu_ui:
@@ -22,4 +22,3 @@ help: ''
 new_revision: true
 preview_mode: 1
 display_submitted: true
-
