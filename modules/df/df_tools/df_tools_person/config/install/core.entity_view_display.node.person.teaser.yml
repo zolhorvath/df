@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.person.body
     - field.field.node.person.field_contact_info
     - field.field.node.person.field_first_name
@@ -16,7 +17,6 @@ dependencies:
   module:
     - df_tools_layout
     - layout_builder
-    - layout_builder_restrictions
     - layout_library
     - metatag
     - options
@@ -28,80 +28,14 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layouts_12
+        layout_id: layouts_6_6
         layout_settings:
-          gap: gap-0
-          full_width: 1
-          class: ''
-        components:
-          3b6175ad-7621-4211-8e21-ba34fd4ed6da:
-            uuid: 3b6175ad-7621-4211-8e21-ba34fd4ed6da
-            region: content
-            configuration:
-              id: 'field_block:node:person:field_image'
-              label: Image
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: hero
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-            third_party_settings: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layouts_8_4
-        layout_settings:
-          gap: gap-sm
+          gap: gap-md
           full_width: 0
           class: ''
         components:
-          b13bcec6-a8b6-4c1f-bbad-0406a688ed19:
-            uuid: b13bcec6-a8b6-4c1f-bbad-0406a688ed19
-            region: second
-            configuration:
-              id: 'field_block:node:person:field_contact_info'
-              label: 'Contact information'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-            third_party_settings: {  }
-          918530b0-75bf-458a-9e9a-901b70af2631:
-            uuid: 918530b0-75bf-458a-9e9a-901b70af2631
-            region: first
-            configuration:
-              id: 'field_block:node:person:title'
-              label: Title
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-            third_party_settings:
-              block_class:
-                classes: h2
-          bfadebca-cf7f-42e0-943b-bae7c2572c8a:
-            uuid: bfadebca-cf7f-42e0-943b-bae7c2572c8a
+          a1f551b0-cd44-44d9-ab9f-c68fbdee1ee0:
+            uuid: a1f551b0-cd44-44d9-ab9f-c68fbdee1ee0
             region: first
             configuration:
               id: 'field_block:node:person:field_job_title'
@@ -117,21 +51,32 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 1
+            weight: 0
             third_party_settings:
               block_class:
-                classes: 'h3 text-muted'
-        third_party_settings: {  }
-      -
-        layout_id: layouts_12
-        layout_settings:
-          gap: gap-md
-          full_width: 0
-          class: ''
-        components:
-          ca26cd8a-8db4-4718-b04e-52476fe312fb:
-            uuid: ca26cd8a-8db4-4718-b04e-52476fe312fb
-            region: content
+                classes: text-muted
+          1d62e33c-414d-41d1-a744-824f4db9c54b:
+            uuid: 1d62e33c-414d-41d1-a744-824f4db9c54b
+            region: first
+            configuration:
+              id: 'field_block:node:person:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+            third_party_settings: {  }
+          986a37f8-c9fe-410a-b36d-a3d01441f35a:
+            uuid: 986a37f8-c9fe-410a-b36d-a3d01441f35a
+            region: first
             configuration:
               id: 'field_block:node:person:body'
               label: Body
@@ -139,20 +84,34 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: text_default
-                settings: {  }
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 500
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 0
+            weight: 2
             third_party_settings: {  }
-          d97afa16-66f1-49f1-850d-0eb0ab37885a:
-            uuid: d97afa16-66f1-49f1-850d-0eb0ab37885a
-            region: content
+          d941ffbb-4a79-4c20-a186-593531021fff:
+            uuid: d941ffbb-4a79-4c20-a186-593531021fff
+            region: first
             configuration:
-              id: 'field_block:node:person:field_tags'
-              label: Tags
+              id: 'extra_field_block:node:person:links'
+              label: Links
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+            third_party_settings: {  }
+          b195da4d-53d6-487d-9591-055876c9b75f:
+            uuid: b195da4d-53d6-487d-9591-055876c9b75f
+            region: second
+            configuration:
+              id: 'field_block:node:person:field_type'
+              label: Type
               provider: layout_builder
               label_display: '0'
               formatter:
@@ -164,18 +123,36 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
+            weight: 0
+            third_party_settings:
+              block_class:
+                classes: 'badge badge-dark w-100 mt-2 mb-2'
+          b03c5c94-1bb5-4f39-bfcf-75c2b16aaa2a:
+            uuid: b03c5c94-1bb5-4f39-bfcf-75c2b16aaa2a
+            region: second
+            configuration:
+              id: 'field_block:node:person:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: card
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
             weight: 1
             third_party_settings: {  }
         third_party_settings: {  }
   layout_library:
     enable: false
-  layout_builder_restrictions:
-    allowed_blocks: {  }
-    allowed_layouts: {  }
-id: node.person.default
+id: node.person.teaser
 targetEntityType: node
 bundle: person
-mode: default
+mode: teaser
 content:
   body:
     label: hidden

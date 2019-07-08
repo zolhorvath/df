@@ -1,4 +1,3 @@
-uuid: fa2d1ac4-1632-4233-b09a-d56f46685d9c
 langcode: en
 status: true
 dependencies:
@@ -13,8 +12,6 @@ third_party_settings:
   type_style:
     color: '#314f78'
     icon: person_pin
-  node_type_class:
-    classes: ''
 name: Person
 type: person
 description: 'A content type that maps to an individual with images and text information related to them.'
@@ -22,4 +19,3 @@ help: ''
 new_revision: true
 preview_mode: 1
 display_submitted: true
-

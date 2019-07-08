@@ -1,4 +1,3 @@
-uuid: 54467e7c-41a1-4be3-87ae-f41b0a4b88ef
 langcode: en
 status: true
 dependencies:
@@ -13,8 +12,6 @@ third_party_settings:
   type_style:
     color: '#942192'
     icon: access_time
-  node_type_class:
-    classes: ''
 name: Event
 type: event
 description: 'A planned occasion with a set date, start time and location name.'
@@ -22,4 +19,3 @@ help: ''
 new_revision: true
 preview_mode: 1
 display_submitted: true
-
