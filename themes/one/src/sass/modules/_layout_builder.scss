@@ -41,6 +41,15 @@
   }
 }
 
+.entity-view-display-layout-builder-form {
+  margin: 15px;
+  .form-actions {
+    .button {
+      margin: 5px;
+    }
+  }
+}
+
 .layout-section .container-fluid .layout-builder--layout__region .block {
   padding: 0;
 }

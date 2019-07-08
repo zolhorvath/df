@@ -11,17 +11,10 @@ use Drupal\block\Entity\Block;
  */
 function one_preprocess_block(&$variables) {
   // Add the class container if layout builder is not used.
-  if (\Drupal::request()->attributes->get('node')) {
-    $nid = \Drupal::request()->attributes->get('node')->id();
-    $node = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
-    if (!$node->layout_builder__layout) {
+  if (!\Drupal::routeMatch()->getParameter('node') &&
+    !\Drupal::routeMatch()->getRouteObject()->hasOption('_layout_builder')) {
       $variables['attributes']['class'][] = 'container';
-    }
   }
-  else {
-    $variables['attributes']['class'][] = 'container';
-  }
-
 
   if (isset($variables['elements']['#id'])) {
     $region = Block::load($variables['elements']['#id'])->getRegion();
@@ -34,6 +27,3 @@ function one_preprocess_block(&$variables) {
     }
   }
 }
-
-
-

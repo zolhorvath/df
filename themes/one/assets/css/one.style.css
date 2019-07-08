@@ -11315,6 +11315,14 @@ article.node .card .img-thumbnail {
   margin-left: 0;
 }
 
+.entity-view-display-layout-builder-form {
+  margin: 15px;
+}
+
+.entity-view-display-layout-builder-form .form-actions .button {
+  margin: 5px;
+}
+
 .layout-section .container-fluid .layout-builder--layout__region .block {
   padding: 0;
 }
