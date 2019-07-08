@@ -1,4 +1,3 @@
-uuid: fcdf8435-6ca8-4798-8edc-37840d58764e
 langcode: en
 status: true
 dependencies:
@@ -20,4 +19,3 @@ default_value_callback: ''
 settings:
   display_summary: true
 field_type: text_with_summary
-

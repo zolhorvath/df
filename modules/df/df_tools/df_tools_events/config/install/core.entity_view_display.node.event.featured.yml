@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.featured
     - field.field.node.event.body
     - field.field.node.event.field_end_time
     - field.field.node.event.field_start_time
@@ -25,10 +26,10 @@ third_party_settings:
         layout_settings:
           gap: gap-0
           full_width: 1
-          class: ''
+          class: featured-background
         components:
-          1331a7c5-54e6-4ac0-b3b6-4f2a22fb266c:
-            uuid: 1331a7c5-54e6-4ac0-b3b6-4f2a22fb266c
+          96206e9f-47d4-4487-8907-8ce85d77234e:
+            uuid: 96206e9f-47d4-4487-8907-8ce85d77234e
             region: content
             configuration:
               id: 'field_block:node:event:field_image'
@@ -39,7 +40,7 @@ third_party_settings:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
-                  view_mode: hero
+                  view_mode: slideshow
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
@@ -52,10 +53,10 @@ third_party_settings:
         layout_settings:
           gap: gap-0
           full_width: 0
-          class: ''
+          class: featured-overlay
         components:
-          fc8521d1-1b4b-486c-a6a8-4ca9a671665c:
-            uuid: fc8521d1-1b4b-486c-a6a8-4ca9a671665c
+          90db5fff-edff-4a64-847d-8bedd29a59d9:
+            uuid: 90db5fff-edff-4a64-847d-8bedd29a59d9
             region: content
             configuration:
               id: 'field_block:node:event:title'
@@ -71,119 +72,57 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 2
-            third_party_settings:
-              block_class:
-                classes: h2
-          93fe9a87-d950-4b19-aa24-833c11da896a:
-            uuid: 93fe9a87-d950-4b19-aa24-833c11da896a
+            weight: 0
+            third_party_settings: {  }
+          cacb602d-3291-4a05-8a53-38c456be4221:
+            uuid: cacb602d-3291-4a05-8a53-38c456be4221
             region: content
             configuration:
-              id: 'field_block:node:event:field_type'
-              label: Type
+              id: 'field_block:node:event:field_start_time'
+              label: Start
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: hidden
-                type: entity_reference_label
+                label: inline
+                type: timestamp
                 settings:
-                  link: false
+                  date_format: long_12h
+                  custom_date_format: ''
+                  timezone: ''
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
-            third_party_settings:
-              block_class:
-                classes: 'badge badge-dark w-100 mb-1'
-        third_party_settings: {  }
-      -
-        layout_id: layouts_6_6
-        layout_settings:
-          gap: gap-sm
-          full_width: 0
-          class: ''
-        components:
-          9d26ffd2-0bf8-4749-998e-8bb03159c387:
-            uuid: 9d26ffd2-0bf8-4749-998e-8bb03159c387
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:field_start_time'
-              formatter:
-                label: above
-                settings:
-                  date_format: medium
-                  custom_date_format: ''
-                  timezone: ''
-                third_party_settings: {  }
-                type: timestamp
-            additional: {  }
-            weight: 0
             third_party_settings: {  }
-          0bc7a4f7-02ad-4cf9-9d72-626efa890e86:
-            uuid: 0bc7a4f7-02ad-4cf9-9d72-626efa890e86
-            region: second
+          77d88c8a-414c-43bf-a30f-dd0f62b228ac:
+            uuid: 77d88c8a-414c-43bf-a30f-dd0f62b228ac
+            region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:event:field_end_time'
+              label: 'End time'
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                label: above
+                label: inline
+                type: timestamp
                 settings:
-                  date_format: medium
+                  date_format: long_12h
                   custom_date_format: ''
                   timezone: ''
                 third_party_settings: {  }
-                type: timestamp
-            additional: {  }
-            weight: 0
-            third_party_settings: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layouts_12
-        layout_settings:
-          gap: gap-sm
-          full_width: 0
-          class: ''
-        components:
-          612e79f9-99f0-4fb9-a366-4359c97960fc:
-            uuid: 612e79f9-99f0-4fb9-a366-4359c97960fc
-            region: content
-            configuration:
-              label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:event:body'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
             additional: {  }
-            weight: 0
-            third_party_settings: {  }
-          f0ea9c5c-45c2-4319-9554-ba3ea42292cd:
-            uuid: f0ea9c5c-45c2-4319-9554-ba3ea42292cd
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:event:links'
-            additional: {  }
-            weight: 1
+            weight: 2
             third_party_settings: {  }
         third_party_settings: {  }
   layout_library:
     enable: false
-id: node.event.default
+id: node.event.featured
 targetEntityType: node
 bundle: event
-mode: default
+mode: featured
 content:
   body:
     label: hidden
@@ -238,9 +177,9 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   langcode: true

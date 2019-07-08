@@ -1,11 +1,10 @@
-uuid: 42e1c983-9c89-4bf1-86f1-58e7f3d28d1c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_event_end_time
-field_name: field_event_end_time
+id: node.field_end_time
+field_name: field_end_time
 entity_type: node
 type: timestamp
 settings: {  }
@@ -16,4 +15,3 @@ translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false
-
