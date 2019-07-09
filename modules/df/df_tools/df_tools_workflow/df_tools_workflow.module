@@ -217,13 +217,9 @@ function df_tools_workflow_moderation_sidebar_alter(array &$build, \Drupal\Core\
             if (!empty($settings['icon'])) {
               $build['actions']['quick_draft_form'][$id] = [
                 '#type' => 'container',
-                $build['actions']['quick_draft_form'][$id],
-                [
-                  '#markup' => '<i class="material-icons">' . $settings['icon'] . '</i>'
-                ],
-                '#attributes' => [
-                  'class' => ['moderation-sidebar-button-wrapper'],
-                ],
+                'child-icon' => ['#markup' => '<i class="material-icons testing">' . $settings['icon'] . '</i>'],
+                '#attributes' => ['class' => ['moderation-sidebar-button-wrapper']],
+                'child-action' => $build['actions']['quick_draft_form'][$id],
               ];
             }
           }
