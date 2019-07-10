@@ -259,6 +259,16 @@ body.fontyourface #edit-imports .button {
   margin-right: 0 !important;
 }
 
+.acquiadam-asset-browser .form-item.form-type-checkbox span {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.acquiadam-asset-browser .form-item.form-type-checkbox .acquiadam-asset-checkbox {
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
 /* Site Name and logo*/
 .block-page-title-block .logo {
   width: 100%;
