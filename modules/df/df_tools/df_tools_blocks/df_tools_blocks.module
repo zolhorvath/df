@@ -293,19 +293,10 @@ function _layout_builder_block_form_alter(array $element, FormStateInterface $fo
     unset($element['field_hero_link']['widget'][0]['uri']['#description']);
     $element['field_hero_link']['widget'][0]['uri']['#title'] = t('Callout link');
     $element['field_hero_link']['widget'][0]['title']['#title'] = t('Callout text');
-    if (\Drupal::moduleHandler()->moduleExists('layout_builder_modal')) {
-      $element['field_hero_link']['widget'][0]['uri']['#prefix'] = '<div class="col-6">';
-      $element['field_hero_link']['widget'][0]['uri']['#suffix'] = '</div>';
-      $element['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="col-6">';
-      $element['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
-    }
-    else {
-      $element['field_hero_link']['widget'][0]['uri']['#prefix'] = '<div class="col-12">';
-      $element['field_hero_link']['widget'][0]['uri']['#suffix'] = '</div>';
-      $element['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="col-12">';
-      $element['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
-    }
-
+    $element['field_hero_link']['widget'][0]['uri']['#prefix'] = '<div class="col-6">';
+    $element['field_hero_link']['widget'][0]['uri']['#suffix'] = '</div>';
+    $element['field_hero_link']['widget'][0]['title']['#prefix'] = '<div class="col-6">';
+    $element['field_hero_link']['widget'][0]['title']['#suffix'] = '</div>';
     $style_fields = [
       'field_text_color',
       'field_first_line_size',
@@ -327,12 +318,7 @@ function _layout_builder_block_form_alter(array $element, FormStateInterface $fo
       if ((strpos($field, 'color') !== FALSE) && isset($element[$field])) {
           $element[$field]['widget'][0]['value']['#type'] = 'color';
       }
-      if (\Drupal::moduleHandler()->moduleExists('layout_builder_modal')) {
-        $element[$field]['#attributes']['class'][] = 'col-4';
-      }
-      else {
-        $element[$field]['#attributes']['class'][] = 'col-6';
-      }
+      $element[$field]['#attributes']['class'][] = 'col-4';
       $element['style_fields'][] = $element[$field];
       $element['style_fields']['#weight'] = $element[$field]['#weight'];
       unset($element[$field]);
