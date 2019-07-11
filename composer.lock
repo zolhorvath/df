@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea823f7a5b0e7e6c435d6d881cc2b37e",
+    "content-hash": "2b498cc82187f5259e35471d0ce87161",
     "packages": [
         {
             "name": "acquia/acf",
@@ -3762,7 +3762,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch"
+                    "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch",
+                    "3042028 - Error when trying to place a new block": "https://www.drupal.org/files/issues/2019-03-21/runtime_exception_when_placing_block-3042028-2_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8008,17 +8009,17 @@
         },
         {
             "name": "drupal/moderation_sidebar",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/moderation_sidebar.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "36b03e9e10d920fe805cda7683ba44a3ad53fac8"
+                "url": "https://ftp.drupal.org/files/projects/moderation_sidebar-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "1d0e209d3e7196e5f489560edd34a60aee5c7ab5"
             },
             "require": {
                 "drupal/core": "^8.5"
@@ -8029,8 +8030,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1537222380",
+                    "version": "8.x-1.2",
+                    "datestamp": "1562866084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
