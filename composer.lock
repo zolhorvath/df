@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06374f118c6424a3444ad7578f781451",
+    "content-hash": "6a54361e386428b91a01704a43d81de5",
     "packages": [
         {
             "name": "acquia/acf",
@@ -7253,60 +7253,80 @@
         },
         {
             "name": "drupal/media_acquiadam",
-            "version": "1.32.0",
+            "version": "1.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_acquiadam.git",
-                "reference": "8.x-1.32"
+                "reference": "8.x-1.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.32.zip",
-                "reference": "8.x-1.32",
-                "shasum": "65a1b42a876fbdca88f0eaa8fb2f89d07a5e1fa1"
+                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "ee8128bc4446d2d8503cbddbf4fe7cbe6e89b2dd"
             },
             "require": {
                 "cweagans/php-webdam-client": "dev-master",
                 "drupal/core": "^8.4",
-                "drupal/fallback_formatter": "*"
+                "drupal/fallback_formatter": "^1.0"
             },
             "require-dev": {
+                "acquia/coding-standards": "*",
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
                 "drupal/entity_usage": "*",
-                "drupal/fallback_formatter": "*"
+                "drupal/fallback_formatter": "*",
+                "drupal/media": "*",
+                "drupal/media_acquiadam_example-media_acquiadam_example": "*",
+                "drupal/views-views": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.32",
-                    "datestamp": "1561365185",
+                    "version": "8.x-1.35",
+                    "datestamp": "1561365485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches": {
-                    "drupal/core": {
-                        "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2241865-50.patch"
-                    }
-                }
+                "hooks": {
+                    "pre-commit": "vendor/bin/phpcs",
+                    "pre-push": "vendor/bin/phpcs"
+                },
+                "phpcodesniffer-search-depth": 4
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "post-install-cmd": [
+                    "vendor/bin/cghooks add --ignore-lock"
+                ],
+                "post-update-cmd": [
+                    "vendor/bin/cghooks update"
+                ],
+                "cghooks": [
+                    "vendor/bin/cghooks"
+                ],
+                "phpcs": [
+                    "vendor/bin/phpcs"
+                ]
+            },
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Mobomo",
-                    "homepage": "https://www.mobomo.com",
-                    "email": "sales@mobomo.com"
+                    "name": "Acquia",
+                    "homepage": "https://acquia.com",
+                    "email": "sales@acquia.com"
                 },
                 {
-                    "name": "Cameron Eagans",
-                    "homepage": "https://www.cweagans.net",
-                    "email": "me@cweagans.net"
+                    "name": "cweagans",
+                    "homepage": "https://www.drupal.org/user/404732"
                 },
                 {
                     "name": "seanpclark",
@@ -7320,7 +7340,8 @@
             "description": "Integrates the Media module ecosystem with Acquia DAM.",
             "homepage": "https://www.drupal.org/project/media_acquiadam",
             "support": {
-                "source": "https://git.drupalcode.org/project/media_acquiadam"
+                "source": "https://cgit.drupalcode.org/media_acquiadam",
+                "issues": "https://drupal.org/project/issues/media_acquiadam"
             }
         },
         {
