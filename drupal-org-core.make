@@ -12,6 +12,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-fatal_error
 projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-install-hook.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-05-23/jsonapi_2996114.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch
