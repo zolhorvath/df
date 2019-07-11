@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4604cf83e3beccaa9a5efc57dfad5b1",
+    "content-hash": "d2fb0c2e137a1ada12db7f52d10dcaa5",
     "packages": [
         {
             "name": "acquia/acf",
@@ -41,12 +41,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/content-hub-php.git",
-                "reference": "03081e9d7954a52f20f2c36c5f4adc26641deb6d"
+                "reference": "d2699ec97c76b08e0bd301f32bcc69b1e4833102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/03081e9d7954a52f20f2c36c5f4adc26641deb6d",
-                "reference": "03081e9d7954a52f20f2c36c5f4adc26641deb6d",
+                "url": "https://api.github.com/repos/acquia/content-hub-php/zipball/d2699ec97c76b08e0bd301f32bcc69b1e4833102",
+                "reference": "d2699ec97c76b08e0bd301f32bcc69b1e4833102",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
             ],
             "description": "A PHP Client library to consume the Acquia Content Hub API.",
             "homepage": "https://github.com/acquia/content-hub-php",
-            "time": "2019-06-03T19:18:57+00:00"
+            "time": "2019-07-09T20:34:02+00:00"
         },
         {
             "name": "acquia/http-hmac-php",
@@ -3826,7 +3826,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch"
+                    "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch",
+                    "3042028 - Error when trying to place a new block": "https://www.drupal.org/files/issues/2019-03-21/runtime_exception_when_placing_block-3042028-2_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
