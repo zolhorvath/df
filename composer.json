@@ -87,10 +87,6 @@
                 "https://www.drupal.org/files/issues/2018-11-07/lightning-common-config-remove-0.patch"
             },
             "drupal/core": {
-                "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
-                "https://www.drupal.org/files/issues/node-migration-traits-database-exception-2703669-3.patch",
-                "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
-                "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch",
                 "Cached autoloader misses cause failures when missed class becomes available | https://www.drupal.org/node/2776235":
                 "https://www.drupal.org/files/issues/migrate-opcache-missing-class-2776235.patch",
                 "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947":
@@ -104,9 +100,7 @@
                 "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287":
                 "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
                 "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247":
-                "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
-                "Muted attribute not working for Video file | https://www.drupal.org/project/drupal/issues/2969691":
-                "https://www.drupal.org/files/issues/2018-07-07/drupal-fix-attributes-filemediaformatterbase-2969691-4.patch"
+                "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch"
             },
             "drupal/acquia_contenthub": {
                 "Page title missing from admin page | https://www.drupal.org/node/3002886": "https://www.drupal.org/files/issues/2018-09-27/page-title-missing-from-admin-page-3002886-2.patch"
@@ -178,7 +172,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "3.2.8",
+        "acquia/lightning": "3.3.1",
         "acquia/content-hub-php": "1.3.2",
         "acquia/lift-sdk-php": "dev-master",
         "bower-asset/imagesloaded": "4.1.1",
