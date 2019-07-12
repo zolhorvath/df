@@ -70,7 +70,6 @@ third_party_settings:
           - 'field_block:node:landing_page:body'
           - 'field_block:node:landing_page:title'
         'DF Tools Blocks': {  }
-        Embed: {  }
         'Entity Block': {  }
         'Entity Browser': {  }
         Help: {  }
@@ -102,3 +101,4 @@ hidden:
   layout_builder__translation: true
   layout_selection: true
   links: true
+
