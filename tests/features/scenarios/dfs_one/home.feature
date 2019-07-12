@@ -13,7 +13,7 @@ Feature: DFS ONE: Homepage
   @61ecc9b8
   Scenario: Block: Example Text
     Given I am on the homepage
-    Then I should see "Latest articles"
+    Then I should see "What's new"
     And I should see "Top tips for your first space trip"
 
   @9a461c09
