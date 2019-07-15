@@ -131,7 +131,7 @@
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-12-27/2877751-39_2825555-20_combined.patch"
             },
             "drupal/material_admin": {
-                "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-07-09/material_admin-update_materialize_library_to_v1-3048894-16.patch"
+                "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-07-11/material_admin-update_materialize_library_to_v1-3048894-18.patch"
             },
             "drupal/material_admin_support": {
                 "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch",
