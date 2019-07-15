@@ -135,7 +135,7 @@
             },
             "drupal/material_admin_support": {
                 "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch",
-                "Support Media Library | https://www.drupal.org/node/3015073": "https://www.drupal.org/files/issues/2018-11-20/support-media-library-0.patch"
+                "Support Media Library | https://www.drupal.org/node/3015073": "https://www.drupal.org/files/issues/2019-07-15/support-media-library-3015073-3.patch"
             },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
