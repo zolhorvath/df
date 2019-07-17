@@ -5,6 +5,11 @@
  */
 
 function one_preprocess_page(&$variables) {
+  // Add the class container if layout builder is not used.
+  if (!\Drupal::routeMatch()->getParameter('node') &&
+    !\Drupal::routeMatch()->getRouteObject()->hasOption('_layout_builder')) {
+      $variables['container_class'] = 'container';
+  }
 
   // Set container for Meta Header
   if (theme_get_setting('meta_header_full_width')) {
