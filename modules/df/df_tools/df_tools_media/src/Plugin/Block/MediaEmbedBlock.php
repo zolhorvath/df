@@ -79,6 +79,8 @@ class MediaEmbedBlock extends BlockBase {
     /** @var \Drupal\Core\Entity\EntityDisplayRepository $entity_display_repository */
     $entity_display_repository = \Drupal::service('entity_display.repository');
     $view_mode_options = $entity_display_repository->getViewModeOptions('media');
+    $remove = ['token', 'media_browser', 'media_library', 'full'];
+    $view_mode_options = array_diff_key($view_mode_options, array_flip($remove));
 
     $form['view_mode'] = [
       '#type' => 'select',
