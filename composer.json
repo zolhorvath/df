@@ -154,11 +154,6 @@
                 "Search inside IPE no longer works and splits out Uncaught TypeError: Cannot read property 'toLowerCase' | https://www.drupal.org/project/panels/issues/2824508": "https://www.drupal.org/files/issues/panels-ipe-search-2824508-8.patch",
                 "Custom attributes in panels blocks and variants | https://www.drupal.org/node/2849867": "https://www.drupal.org/files/issues/2018-10-20/panels_custom_attributes_in_panels_blocks-2849867-46.patch"
             },
-            "drupal/responsive_preview": {
-              "Preview url in js is relative path | https://www.drupal.org/project/responsive_preview/issues/2929331": "https://www.drupal.org/files/issues/2018-04-02/preview_path-2929331-6.patch",
-              "Update devices | https://www.drupal.org/node/3011828": "https://www.drupal.org/files/issues/2018-11-06/update-devices-3011828-2.patch"
-
-            },
             "drupal/zurb_foundation": {
                 "Upgrade from layout plugin to Layout API / Layout discovery | https://www.drupal.org/node/2871479": "https://www.drupal.org/files/issues/accommodate-layout-changes-2871479-3.patch"
             },
@@ -238,7 +233,7 @@
         "drupal/refreshless": "1.0.0-alpha3",
         "drupal/replicate": "1.x-dev",
         "drupal/replicate_ui": "1.x-dev",
-        "drupal/responsive_preview": "1.0.0-alpha7",
+        "drupal/responsive_preview": "1.0.0-beta1",
         "drupal/restui": "1.16.0",
         "drupal/revision_log_default": "1.0.0",
         "drupal/rules": "3.0.0-alpha4",
