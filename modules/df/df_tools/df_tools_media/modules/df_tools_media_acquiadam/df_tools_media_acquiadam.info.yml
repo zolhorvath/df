@@ -6,4 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - df_tools_media
   - media_acquiadam
-  - lightning_acquiadam
+  - media_acquiadam_example
