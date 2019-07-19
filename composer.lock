@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "285a15f941e11a0fdf83ba4cbeb5b089",
+    "content-hash": "874751b2e7d793402ae91b3fb8b0df73",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4073,6 +4073,7 @@
                     "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
                     "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
                     "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
+                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
                     "#3053906: Undefined index: region": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
                     "#3015152: Support third party settings for components within a section | https://www.drupal.org/node/2998114": "https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch",
                     "#3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch",

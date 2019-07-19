@@ -86,6 +86,8 @@
                 "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
                 "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247":
                 "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
+                "#2241865: Do not create a new file entity to overwrite an existing entity":
+                "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
                 "#3053906: Undefined index: region":
                 "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
                 "#3015152: Support third party settings for components within a section | https://www.drupal.org/node/2998114":
