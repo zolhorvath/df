@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "874751b2e7d793402ae91b3fb8b0df73",
+    "content-hash": "456cb1cc9134c0e9ace1ed746c03c086",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4077,6 +4077,7 @@
                     "#3053906: Undefined index: region": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
                     "#3015152: Support third party settings for components within a section | https://www.drupal.org/node/2998114": "https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch",
                     "#3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch",
+                    "#2977587: Improve block listing in Layout Builder... | https://drupal.org/node/2977587": "https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",

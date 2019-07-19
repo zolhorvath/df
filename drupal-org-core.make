@@ -16,6 +16,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-15/22418
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch
