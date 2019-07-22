@@ -240,7 +240,7 @@
         "drupal/revision_log_default": "1.0.0",
         "drupal/rules": "3.0.0-alpha4",
         "drupal/samlauth": "3.0.0-alpha1",
-        "drupal/search_api_autocomplete": "1.1.0",
+        "drupal/search_api_autocomplete": "1.2.0",
         "drupal/search_api_solr": "1.2.0",
         "drupal/scenarios": "4.x-dev",
         "drupal/swiftmailer": "1.0.0-beta2",
