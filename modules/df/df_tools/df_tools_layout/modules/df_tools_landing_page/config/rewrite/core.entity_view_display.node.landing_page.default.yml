@@ -62,7 +62,7 @@ third_party_settings:
     entity_view_mode_restriction:
       allowed_blocks:
         AddToAny: {  }
-        'Chaos tools': {  }
+        'Chaos Tools': {  }
         Content: {  }
         'Content fields':
           - 'field_block:node:landing_page:uid'
@@ -101,4 +101,3 @@ hidden:
   layout_builder__translation: true
   layout_selection: true
   links: true
-
