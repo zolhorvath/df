@@ -14,7 +14,6 @@ dependencies:
   - df_tools_layout
   - df_tools_translation
   - content_browser
-  - field_layout
   - image
   - link
   - inline_entity_form

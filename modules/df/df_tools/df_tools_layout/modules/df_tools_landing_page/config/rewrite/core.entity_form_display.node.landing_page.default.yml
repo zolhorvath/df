@@ -10,18 +10,9 @@ dependencies:
     - node.type.landing_page
   module:
     - content_moderation
-    - df_tools_layout
-    - field_layout
     - metatag
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layouts_12
-    settings:
-      gap: gap-md
-      full_width: 0
-      class: ''
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page

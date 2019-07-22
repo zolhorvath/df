@@ -17,17 +17,9 @@ dependencies:
     - content_moderation
     - df_tools_layout
     - entity_browser
-    - field_layout
     - metatag
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layouts_12
-    settings:
-      gap: gap-md
-      full_width: 0
-      class: ''
 id: node.article.default
 targetEntityType: node
 bundle: article

@@ -21,13 +21,7 @@ dependencies:
     - field.field.block_content.hero.field_text_color
   module:
     - entity_browser
-    - field_layout
-    - layout_discovery
     - link
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero

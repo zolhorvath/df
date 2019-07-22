@@ -18,16 +18,12 @@ dependencies:
     - addtoany
     - comment
     - df_tools_layout
-    - field_layout
     - layout_builder
     - taxonomy
     - text
     - user
     - views
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
