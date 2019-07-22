@@ -1,9 +1,8 @@
-uuid: 446afd91-1549-4621-b5f2-e356ecee525e
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
+    - entity_browser.browser.media_browser_in_modal
     - field.field.node.person.body
     - field.field.node.person.field_contact_info
     - field.field.node.person.field_first_name
@@ -19,17 +18,9 @@ dependencies:
   module:
     - content_moderation
     - entity_browser
-    - field_layout
-    - layout_discovery
     - metatag
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
-_core:
-  default_config_hash: 24ELTgNcfoyltrmVz19krJvQfKddXH_TP6rXJfVONyk
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -84,7 +75,7 @@ content:
     type: entity_browser_entity_reference
     weight: 6
     settings:
-      entity_browser: media_browser
+      entity_browser: media_browser_in_modal
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true

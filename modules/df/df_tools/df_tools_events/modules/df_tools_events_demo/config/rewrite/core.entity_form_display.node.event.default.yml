@@ -1,9 +1,8 @@
-uuid: 7d95fa30-b1ec-4a45-869a-f1f3cce890a1
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
+    - entity_browser.browser.media_browser_in_modal
     - field.field.node.event.body
     - field.field.node.event.field_event_end_time
     - field.field.node.event.field_event_start_time
@@ -15,16 +14,9 @@ dependencies:
   module:
     - content_moderation
     - entity_browser
-    - field_layout
     - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
-_core:
-  default_config_hash: VLZF3qHOOf8hhn24JMgGt0_VJgt1Nm2Mhiw-mK0-kNE
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -69,7 +61,7 @@ content:
     type: entity_browser_entity_reference
     weight: 12
     settings:
-      entity_browser: media_browser
+      entity_browser: media_browser_in_modal
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
