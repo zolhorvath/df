@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b94e4b5e89aac5c74276cdc60ad7f3c",
+    "content-hash": "864bfaa734de95a91767fe78e8e04deb",
     "packages": [
         {
             "name": "acquia/acf",
@@ -7615,7 +7615,7 @@
                     }
                 },
                 "patches_applied": {
-                    "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-07-11/material_admin-update_materialize_library_to_v1-3048894-18.patch"
+                    "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-07-22/material_admin-update_materialize_library_to_v1-3048894-19.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
