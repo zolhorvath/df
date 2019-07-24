@@ -10,3 +10,4 @@ dependencies:
   - df_tools_translation
   - df_tools_workflow
   - type_style
+  - auto_entitylabel
