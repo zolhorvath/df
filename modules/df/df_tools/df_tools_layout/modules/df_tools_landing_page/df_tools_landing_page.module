@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains df_tools_landing_page.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function df_tools_landing_page_form_node_landing_page_form_alter(array &$form, FormStateInterface $form_state) {
+  if (\Drupal::routeMatch()->getRouteName() == 'node.add') {
+    foreach (array_keys($form['actions']) as $action) {
+      if ($action != 'preview' && isset($form['actions'][$action]['#type']) && $form['actions'][$action]['#type'] === 'submit') {
+        $form['actions'][$action]['#submit'][] = '_df_tools_landing_page_init';
+      }
+    }
+  }
+}
+
+/**
+ * @param array $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function _df_tools_landing_page_init(array &$form, FormStateInterface $form_state) {
+  $routeParams = $form_state->getRedirect()->getRouteParameters();
+  $form_state->setRedirect('layout_builder.overrides.node.view', $routeParams);
+}
