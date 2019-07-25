@@ -13,7 +13,6 @@ dependencies:
   - df_tools_icons
   - df_tools_media
   - df_tools_translation
-  - field_group
   - node
   - image
   - layout_builder_modal
