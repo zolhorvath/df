@@ -43,20 +43,6 @@ function df_tools_blocks_modules_installed(array $modules) {
  * Implements hook_ENTITY_TYPE_view_alter().
  */
 function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
-  if ($entity->bundle() === 'basic') {
-    $wrapper = [
-      '#prefix' => '<div class="full-width-inner">',
-      '#suffix' => '</div>',
-      '#type' => 'container',
-      '#weight' => -1,
-      '#attributes' => [
-        'class' => ['basic-block-fields'],
-      ],
-    ];
-    $build['wrapper'] = $wrapper;
-    $build['#prefix'] = '<div class="basic-block">';
-    $build['#suffix'] = '</div>';
-  }
 
   if ($entity->bundle() === 'hero') {
 
