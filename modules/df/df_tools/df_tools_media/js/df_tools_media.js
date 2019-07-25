@@ -41,7 +41,7 @@
   function imageHide() {
     imageShow();
     image.hide();
-    unsplash.after('<sub class="unsplash-image-note">Note: Image uploading and editing is disabled if an Unsplash Image ID is present.</sub>');
+    unsplash.after('<sub class="unsplash-image-note">Note: Image uploading and editing is disabled if an Unsplash Image ID is present. Remove the Unsplash Image ID to set the Focal point.</sub>');
   }
   // Returns the image file field when Unsplash is not being used.
   function imageShow() {
