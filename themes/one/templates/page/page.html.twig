@@ -54,9 +54,13 @@
 
   <main class="main">
     {% if page.content %}
-      <div class="page__content {{ container_class }}">
-          {{ page.content }}
-      </div>
+      {% if page.sidebar_first or page.sidebar_second %}
+        {% include '@one/page/sidebar.html.twig' %}
+      {% else %}
+        <div class="page__content {{ container_class }}">
+            {{ page.content }}
+        </div>
+      {% endif %}
     {% endif %}
   </main>
 

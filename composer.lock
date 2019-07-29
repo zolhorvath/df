@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7dc9fc4a84495bc43c17efca91b50bee",
+    "content-hash": "fe3e4ffaaf0fafc3c2eb494bc7da3d5a",
     "packages": [
         {
             "name": "acquia/acf",
@@ -28,8 +28,8 @@
             "authors": [
                 {
                     "name": "Acquia Engineering",
-                    "homepage": "https://www.acquia.com",
-                    "role": "Maintainer"
+                    "role": "Maintainer",
+                    "homepage": "https://www.acquia.com"
                 }
             ],
             "description": "a lightweight framework for headless e-commerce with Drupal. Starter connectors for major e-commerce engines",
@@ -9329,17 +9329,17 @@
         },
         {
             "name": "drupal/radix",
-            "version": "4.3.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/radix.git",
-                "reference": "8.x-4.3"
+                "reference": "8.x-4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.3.zip",
-                "reference": "8.x-4.3",
-                "shasum": "7a649fb858548aa2831496e236af5cb145a21f9f"
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "9b8623381bbbec4e71c222f88af2d12564b8561b"
             },
             "require": {
                 "drupal/components": "^1.0",
@@ -9351,7 +9351,7 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.3",
+                    "version": "8.x-4.4",
                     "datestamp": "1563909487",
                     "security-coverage": {
                         "status": "covered",
