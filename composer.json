@@ -26,6 +26,19 @@
         {
             "type": "vcs",
             "url": "https://github.com/acquia/lift-sdk-php"
+        },
+        {
+            "type": "package",
+            "package": {
+              "name": "drupal/sfc",
+              "version": "8.0.0",
+              "type": "drupal-module",
+              "source": {
+                "url": "https://git.drupalcode.org/sandbox/samuel.mortenson-3070857.git",
+                "type": "git",
+                "reference": "refs/heads/8.x-1.x"
+              }
+            }
         }
     ],
     "scripts": {
@@ -263,7 +276,8 @@
         "drupal/simple_api": "1.x-dev",
         "drupal/redirect": "^1.3",
         "brantwynn/unsplash_stream": "dev-8.x-1.x",
-        "drupal/auto_entitylabel": "^3.0@beta"
+        "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/sfc": "^8.0"
     },
     "autoload": {
         "psr-4": {
