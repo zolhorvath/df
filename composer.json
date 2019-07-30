@@ -169,6 +169,11 @@
                 "drupal/entity_browser": {
                     "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
                 }
+            },
+            "drupal/jsonapi_schema": {
+               "drupal/core": {
+                 "3014277 - ResourceTypes should know about their fields": "https://www.drupal.org/files/issues/2019-06-06/3014277--resource-fields--36.patch"
+              }
             }
         }
     },
