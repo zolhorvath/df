@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e19318d2e389bd9ffcb903cd28eb80b0",
+    "content-hash": "cf719548648206f572e9a38d43d34a35",
     "packages": [
         {
             "name": "acquia/acf",
@@ -4150,6 +4150,7 @@
                     "#3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch",
                     "#2977587: Improve block listing in Layout Builder... | https://drupal.org/node/2977587": "https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch",
                     "#3069446: Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446": "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
+                    "#3014277: ResourceTypes should know about their fields | http://drupal.org/node/3014277": "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
