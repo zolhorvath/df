@@ -147,15 +147,28 @@ function df_tools_media_media_presave(MediaInterface $entity) {
   $unsplash_field = 'field_unsplash_image_id';
   $image_field = 'image';
   if (in_array($type, $types)
-      && $entity->hasField($unsplash_field)
-      && !$entity->get($unsplash_field)->isEmpty()
-      && $entity->hasField($image_field)
+    && $entity->hasField($unsplash_field)
+    && !$entity->get($unsplash_field)->isEmpty()
+    && $entity->hasField($image_field)
   ) {
     $id = $entity->get($unsplash_field)->value;
     $raw_image = file_get_contents('unsplash://' . $id);
     $filename = $id . '.jpg';
     $file = file_save_data($raw_image, "public://images/$filename", FILE_EXISTS_REPLACE);
     $entity->$image_field->setValue(['target_id' => $file->id(), 'alt' => $entity->label()]);
+  }
+  elseif (in_array($type, $types)
+    && $entity->hasField($image_field)
+    && !$entity->get($image_field)->isEmpty()
+    && $entity->hasField($unsplash_field)
+    && $entity->get($unsplash_field)->isEmpty()
+  ) {
+    $images_list = $entity->get($image_field)->getValue();
+    $image = reset($images_list);
+    if (empty($image['alt'])) {
+      $image['alt'] = $entity->label();
+    }
+    $entity->$image_field->setValue($image);
   }
 }
 
