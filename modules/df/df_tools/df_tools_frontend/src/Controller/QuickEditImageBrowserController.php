@@ -76,7 +76,8 @@ class QuickEditImageBrowserController extends QuickEditImageController {
         );
         // Return a JSON object containing the errors from Drupal and our
         // "main_error", which is displayed inside the dropzone area.
-        drupal_set_message(\Drupal::service('renderer')->renderPlain($message), 'error');
+        $error_message = \Drupal::service('renderer')->renderPlain($message);
+        \Drupal::messenger()->addMessage($error_message, 'error');
         $messages = StatusMessages::renderMessages('error');
         return new JsonResponse(['errors' => $this->renderer->render($messages), 'main_error' => $this->t('The requested image failed validation.')]);
       }
