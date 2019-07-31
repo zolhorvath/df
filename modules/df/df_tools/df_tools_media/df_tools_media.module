@@ -167,8 +167,8 @@ function df_tools_media_media_presave(MediaInterface $entity) {
     $image = reset($images_list);
     if (empty($image['alt'])) {
       $image['alt'] = $entity->label();
+      $entity->$image_field->setValue($image);
     }
-    $entity->$image_field->setValue($image);
   }
 }
 
