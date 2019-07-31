@@ -1,0 +1,9 @@
+name: DF Tools SEO
+type: module
+description: Addressing SEO requirements.
+core: 8.x
+package: Demo Framework Tools
+dependencies:
+  - seo_checklist
+  - simple_sitemap
+  - yoast_seo
