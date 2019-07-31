@@ -272,7 +272,10 @@
         "brantwynn/unsplash_stream": "dev-8.x-1.x",
         "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/jsonapi_explorer": "^1.0@beta",
-        "drupal/checklistapi": "^1.10"
+        "drupal/checklistapi": "^1.10",
+        "drupal/seo_checklist": "^4.1",
+        "drupal/yoast_seo": "^1.5",
+        "drupal/simple_sitemap": "^3.3"
     },
     "autoload": {
         "psr-4": {
