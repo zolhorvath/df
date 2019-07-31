@@ -24,6 +24,7 @@ install:
   - df_tools_translation
   - df_tools_user
   - df_tools_workflow
+  - responsive_preview
   - scenarios_contenthub
   - view_modes_display
 themes:
