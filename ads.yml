@@ -1,0 +1,17 @@
+version: 1
+# The commands section allows you to override ads commands.
+# This generated example will run composer install and git push when you run ads deploy.
+#commands:
+#  deploy:
+#    commands:
+#    - composer install --no-dev
+#    - git push
+#  test:
+#    commands:
+#    - phpunit
+#  "logs:tail":
+#    commands:
+#    - lando ssh -c "tail -f /var/log/dpkg.log"
+#    concurrent: true
+#    exitOnError: false
+#    verbose: true
