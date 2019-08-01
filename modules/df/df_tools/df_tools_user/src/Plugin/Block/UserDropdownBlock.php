@@ -70,6 +70,8 @@ class UserDropdownBlock extends BlockBase implements ContainerFactoryPluginInter
     $user_page_url = Url::fromRoute('user.page')->toString();
     $user_logout_url = Url::fromRoute('user.logout')->toString();
 
+    $current_user = \Drupal::currentUser();
+
     return [
       '#theme' => 'user_dropdown',
       '#form' => $form,
@@ -80,7 +82,10 @@ class UserDropdownBlock extends BlockBase implements ContainerFactoryPluginInter
           'df_tools_user/user-dropdown',
         ],
       ],
+      '#cache' => [
+        'context' => ['user'],
+        'tags' => \Drupal\user\Entity\User::load($current_user->id())->getCacheTags(),
+      ],
     ];
   }
-
 }
