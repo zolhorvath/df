@@ -52,6 +52,22 @@ function df_tools_workflow_modules_installed(array $modules) {
 }
 
 /**
+ * Implements hook_form_alter().
+ *
+ * We auto-populate and hide the Revision log message on node/add/* forms.
+ */
+function df_tools_workflow_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (\Drupal::routeMatch()->getRouteName() == 'node.add') {
+    $replace = [
+      '@user' => \Drupal::currentUser()->getDisplayName(),
+      '@date' => date("F jS, Y")
+    ];
+    $form['revision_log']['widget'][0]['value']['#default_value'] = t('Created by @user on @date.', $replace);
+    $form['revision_log']['widget']['#access'] = FALSE;
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter().
  *
  * Add a form submission handler to the content moderation module's entity
