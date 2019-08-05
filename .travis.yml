@@ -16,6 +16,7 @@ php:
 env:
   matrix:
     - SCENARIO=dfs_one
+    - SCENARIO=none
 
 addons:
   apt:
@@ -75,8 +76,9 @@ before_script:
 
 script:
   - composer validate composer.json --no-check-all --ansi --no-interaction
-  - behat --config .behat.yml --stop-on-failure --tags=df;
-  - behat --config .behat.yml --stop-on-failure --tags=$SCENARIO;
+  - if [[ "$SCENARIO" == none ]]; then drush en df_tools_test -y; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=df; fi
+  - if [[ "$SCENARIO" != none ]]; then behat --config .behat.yml --stop-on-failure --tags=$SCENARIO; fi
 
 after_failure:
   - cd docroot
