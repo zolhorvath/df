@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ca4be07f82239937e98760f52beb8c4",
+    "content-hash": "eb576ff21b0b4ed860661d29cb8447fa",
     "packages": [
         {
             "name": "acquia/acf",
@@ -7257,17 +7257,17 @@
         },
         {
             "name": "drupal/media_acquiadam",
-            "version": "1.35.0",
+            "version": "1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_acquiadam.git",
-                "reference": "8.x-1.35"
+                "reference": "8.x-1.36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.35.zip",
-                "reference": "8.x-1.35",
-                "shasum": "ee8128bc4446d2d8503cbddbf4fe7cbe6e89b2dd"
+                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.36.zip",
+                "reference": "8.x-1.36",
+                "shasum": "4335b72056bbad07814e2d5bfbbbcf5960bd4a10"
             },
             "require": {
                 "cweagans/php-webdam-client": "dev-master",
@@ -7281,8 +7281,9 @@
                 "drupal/entity_usage": "*",
                 "drupal/fallback_formatter": "*",
                 "drupal/media": "*",
-                "drupal/media_acquiadam_example-media_acquiadam_example": "*",
-                "drupal/views-views": "*"
+                "drupal/media_acquiadam_example": "*",
+                "drupal/views-views": "*",
+                "phpunit/phpunit": "^6.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -7291,8 +7292,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.35",
-                    "datestamp": "1561365485",
+                    "version": "8.x-1.36",
+                    "datestamp": "1564988286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7302,7 +7303,7 @@
                     "pre-commit": "vendor/bin/phpcs",
                     "pre-push": "vendor/bin/phpcs"
                 },
-                "phpcodesniffer-search-depth": 4
+                "phpcodesniffer-search-depth": 5
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "scripts": {
@@ -7317,6 +7318,13 @@
                 ],
                 "phpcs": [
                     "vendor/bin/phpcs"
+                ],
+                "phpunit": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-all": [
+                    "phpcs",
+                    "phpunit"
                 ]
             },
             "license": [
@@ -12775,16 +12783,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.23.3",
+            "version": "v3.23.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "fb47aa27d774068ac930d45a12d95e68da1b3fe8"
+                "reference": "551007fe473980427e8b08ff8796ddea5585210e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/fb47aa27d774068ac930d45a12d95e68da1b3fe8",
-                "reference": "fb47aa27d774068ac930d45a12d95e68da1b3fe8",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/551007fe473980427e8b08ff8796ddea5585210e",
+                "reference": "551007fe473980427e8b08ff8796ddea5585210e",
                 "shasum": ""
             },
             "type": "library",
@@ -12828,7 +12836,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2019-07-30T18:26:20+00:00"
+            "time": "2019-08-03T06:49:45+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
