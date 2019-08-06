@@ -20,7 +20,7 @@ function df_tools_locations_modules_installed(array $modules) {
   // df_tools_media_acquiadam module is installed.
   if (in_array('df_tools_media_acquiadam', $modules)) {
     // Retrieve the location's 'media' field.
-    $instance = FieldConfig::loadByName('node', 'location', 'field_location_media');
+    $instance = FieldConfig::loadByName('node', 'location', 'field_image');
 
     // Add 'acquia_dam_asset' to the list of allowed target bundles.
     $settings = $instance->getSetting('handler_settings');
