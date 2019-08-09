@@ -10944,6 +10944,45 @@ a.text-dark:focus {
   visibility: hidden !important;
 }
 
+.ui-widget-overlay {
+  background: #000;
+  opacity: 0.7;
+  z-index: 1200;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  border: 0;
+  border-radius: 0;
+  background: #444;
+  color: #fff;
+  cursor: move;
+  padding: 15px;
+}
+
+.ui-dialog-titlebar-close {
+  right: 15px;
+}
+
+.layout-builder-configure-block {
+  padding: 15px;
+}
+
+.ui-dialog [aria-expanded=false].card-header {
+  border-bottom: 0;
+  background-color: transparent;
+}
+
+.ui-dialog .card-body {
+  padding: 30px;
+}
+
 /* @file
  * Common low level styles
  *
