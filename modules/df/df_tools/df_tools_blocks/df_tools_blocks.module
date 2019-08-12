@@ -261,12 +261,6 @@ function df_tools_blocks_form_alter(&$form, FormStateInterface $form_state, $for
   if (in_array($form_id, $form_ids)) {
     $form['settings']['block_form']['#process'][] = '_layout_builder_block_form_alter';
   }
-
-  // Uncheck the checkbox for 'Display title' when adding blocks via LB.
-  if ($form_id == 'layout_builder_add_block') {
-    $form['settings']['label_display']['#default_value'] = false;
-  }
-
 }
 
 /**

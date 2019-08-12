@@ -95,7 +95,9 @@
                 "#3069446: Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446":
                 "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
                 "#3014277: ResourceTypes should know about their fields | http://drupal.org/node/3014277":
-                "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch"
+                "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
+                "#3074435: Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435":
+                "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch"
             },
             "drupal/adminimal_admin_toolbar": {
                 "Support Outside In navbar changes with new quickedit button styling | https://www.drupal.org/node/2826670": "https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch"

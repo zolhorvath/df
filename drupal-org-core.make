@@ -17,6 +17,7 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-06-10/30451
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch
+projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2885441-2.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch
