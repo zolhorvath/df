@@ -22634,7 +22634,7 @@ __webpack_require__.r(__webpack_exports__);
     attach: function attach() {
       $(document).ready(function () {
         $(window).once('updateLBM').on('dialog:aftercreate', function () {
-          if ($("#layout-builder-modal").length) {
+          if ($('#layout-builder-modal').length) {
             $('#layout-builder-modal').dialog({
               draggable: true
             });
@@ -22646,16 +22646,11 @@ __webpack_require__.r(__webpack_exports__);
   };
   Drupal.behaviors.closeLBM = {
     attach: function attach() {
-      $(document).click(function (e) {
-        var dialogLBM = $("#layout-builder-modal");
-        var containerLBM = $(".lbm");
-
-        if (dialogLBM.dialog("isOpen") === true) {
-          // if the target of the click isn't the container
-          // nor a descendant of the container
-          if (!containerLBM.is(e.target) && containerLBM.has(e.target).length === 0) {
-            dialogLBM.dialog("close");
-          }
+      $(document).ready(function () {
+        if ($('#layout-builder-modal').dialog('isOpen') === true) {
+          $('.ui-widget-overlay').bind('click', function () {
+            $('#layout-builder-modal').dialog('close');
+          });
         }
       });
     }
