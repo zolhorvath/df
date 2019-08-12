@@ -254,13 +254,19 @@ function df_tools_blocks_form_alter(&$form, FormStateInterface $form_state, $for
       '#weight' => 9,
     ];
   }
+
   // Add a callback to #process to the layout_builder_update_block and
   // layout_builder_add_block. drupal.org/node/3028391
   $form_ids = ['layout_builder_update_block', 'layout_builder_add_block'];
-  if (!in_array($form_id, $form_ids)) {
-    return;
+  if (in_array($form_id, $form_ids)) {
+    $form['settings']['block_form']['#process'][] = '_layout_builder_block_form_alter';
   }
-  $form['settings']['block_form']['#process'][] = '_layout_builder_block_form_alter';
+
+  // Uncheck the checkbox for 'Display title' when adding blocks via LB.
+  if ($form_id == 'layout_builder_add_block') {
+    $form['settings']['label_display']['#default_value'] = false;
+  }
+
 }
 
 /**
