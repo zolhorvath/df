@@ -10944,45 +10944,6 @@ a.text-dark:focus {
   visibility: hidden !important;
 }
 
-.ui-widget-overlay {
-  background: #000;
-  opacity: 0.7;
-  z-index: 1200;
-}
-
-.ui-widget.ui-widget-content {
-  border: 1px solid #c5c5c5;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.ui-dialog .ui-dialog-titlebar {
-  border: 0;
-  border-radius: 0;
-  background: #444;
-  color: #fff;
-  cursor: move;
-  padding: 15px;
-}
-
-.ui-dialog-titlebar-close {
-  right: 15px;
-}
-
-.layout-builder-configure-block {
-  padding: 15px;
-}
-
-.ui-dialog [aria-expanded=false].card-header {
-  border-bottom: 0;
-  background-color: transparent;
-}
-
-.ui-dialog .card-body {
-  padding: 30px;
-}
-
 /* @file
  * Common low level styles
  *
@@ -11305,6 +11266,221 @@ article.node .card .img-thumbnail {
 
 .page__meta_header .navbar .navbar-collapse {
   min-height: 50px;
+}
+
+.ui-widget-overlay {
+  background: #aaa;
+  opacity: 0.3;
+  z-index: 1200;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  border: 0;
+  border-radius: 0;
+  background: #444;
+  color: #fff;
+  padding: 15px;
+}
+
+.ui-dialog.lbm .ui-dialog-titlebar {
+  cursor: move;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 1em;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 0;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.51 13.925c.194.194.512.195.706.001l3.432-3.431c.194-.194.514-.194.708 0l3.432 3.431c.192.194.514.193.707-.001l1.405-1.417c.191-.195.189-.514-.002-.709l-3.397-3.4c-.192-.193-.192-.514-.002-.708l3.401-3.43c.189-.195.189-.515 0-.709l-1.407-1.418c-.195-.195-.513-.195-.707-.001l-3.43 3.431c-.195.194-.516.194-.708 0l-3.432-3.431c-.195-.195-.512-.194-.706.001l-1.407 1.417c-.194.195-.194.515 0 .71l3.403 3.429c.193.195.193.514-.001.708l-3.4 3.399c-.194.195-.195.516-.001.709l1.406 1.419z' fill='%23bebebe'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+  visibility: hidden;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.51 13.925c.194.194.512.195.706.001l3.432-3.431c.194-.194.514-.194.708 0l3.432 3.431c.192.194.514.193.707-.001l1.405-1.417c.191-.195.189-.514-.002-.709l-3.397-3.4c-.192-.193-.192-.514-.002-.708l3.401-3.43c.189-.195.189-.515 0-.709l-1.407-1.418c-.195-.195-.513-.195-.707-.001l-3.43 3.431c-.195.194-.516.194-.708 0l-3.432-3.431c-.195-.195-.512-.194-.706.001l-1.407 1.417c-.194.195-.194.515 0 .71l3.403 3.429c.193.195.193.514-.001.708l-3.4 3.399c-.194.195-.195.516-.001.709l1.406 1.419z' fill='%23ffffff'/%3E%3C/svg%3E");
+}
+
+#layout-builder-modal .layout-builder-configure-block {
+  padding: 15px;
+}
+
+#layout-builder-modal [aria-expanded=false].card-header {
+  border-bottom: 0;
+  background-color: transparent;
+}
+
+#layout-builder-modal .card-body {
+  padding: 30px;
+}
+
+#layout-builder-modal label {
+  color: #757575 !important;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+#layout-builder-modal .form-item-settings-admin-label label,
+#layout-builder-modal .js-form-type-checkbox label {
+  -webkit-transform: none;
+          transform: none;
+}
+
+#layout-builder-modal .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#layout-builder-modal .form-color.form-control,
+#layout-builder-modal .form-textarea.form-control {
+  border: 1px solid #9e9e9e;
+  border-radius: 0.25rem;
+}
+
+#layout-builder-modal .form-control:focus {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #009688;
+}
+
+#layout-builder-modal .form-color.form-control:focus,
+#layout-builder-modal .form-textarea.form-control:focus,
+#layout-builder-modal .custom-select:focus {
+  border-color: #009688;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 1px #009688;
+}
+
+#layout-builder-modal .form-wrapper.card .card-header:focus {
+  outline: 0;
+}
+
+#layout-builder-modal .form-item {
+  position: relative;
+}
+
+#layout-builder-modal .form-item .form-required::after {
+  color: #F44336;
+  content: " *";
+}
+
+#layout-builder-modal .form-item.form-has-label:not(.form-type-checkbox):not(.form-type-radio):not(.has-prefix):not(.has-prefix-and-suffix) {
+  margin: 45px 0 25px;
+}
+
+#layout-builder-modal .js-form-type-textfield.input-field > label,
+#layout-builder-modal .js-form-type-entity-autocomplete.input-field > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  line-height: 0.5;
+  cursor: text;
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  text-align: initial;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  padding-top: 15px;
+}
+
+#layout-builder-modal .js-form-type-textfield.input-field > label:not(.label-icon).active,
+#layout-builder-modal .js-form-type-entity-autocomplete.input-field > label:not(.label-icon).active {
+  -webkit-transform: translateY(-22px) scale(0.8);
+          transform: translateY(-22px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+#layout-builder-modal .form-item,
+#layout-builder-modal .field--name-field-hero-background {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+#layout-builder-modal .row {
+  padding-top: 15px;
+}
+
+#layout-builder-modal .form-item.card,
+#layout-builder-modal .form-item-settings-label-display {
+  padding-top: 0;
+}
+
+#layout-builder-modal .form-item-settings-block-form-field-hero-alignment,
+#layout-builder-modal .form-item-settings-block-form-field-text-color-0-value,
+#layout-builder-modal .form-item-settings-block-form-field-gradient-color-0-value,
+#layout-builder-modal .form-item-settings-block-form-field-callout-color-0-value,
+#layout-builder-modal .form-item-settings-block-form-field-callout-width,
+#layout-builder-modal .form-item-settings-block-form-field-first-line-size,
+#layout-builder-modal .form-item-settings-block-form-field-second-line-size,
+#layout-builder-modal .form-item-settings-block-form-field-callout-background-color-0-value,
+#layout-builder-modal .form-item-settings-block-form-field-callout-background-opacity,
+#layout-builder-modal fieldset.card {
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+#layout-builder-modal .field--name-field-hero-background,
+#layout-builder-modal .js-form-type-textarea,
+#layout-builder-modal .js-form-type-select {
+  margin-top: 0;
+}
+
+#layout-builder-modal .form-item-settings-admin-label {
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#layout-builder-modal .btn-primary {
+  background-color: #009688;
+  border-color: #009688;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+#layout-builder-modal .btn-primary:hover {
+  background-color: #00b09f;
+  border-color: #00b09f;
+}
+
+#layout-builder-modal .ui-state-active,
+#layout-builder-modal .ui-widget-content .ui-state-active {
+  border: 1px solid #00b09f;
+  background-color: #009688;
 }
 
 #drupal-off-canvas .inline-block-list.nav {
