@@ -22650,10 +22650,17 @@ __webpack_require__.r(__webpack_exports__);
         }
       });
       $(document).ready(function () {
-        // Close modal if clicked outside.
         if (lbm.dialog('isOpen') === true) {
+          // Add bootstrap class modal-open to prevent background scroll.
+          $('body').addClass('modal-open'); // Close modal if clicked outside and remove modal-open.
+
           $('.ui-widget-overlay').bind('click', function () {
             lbm.dialog('close');
+            $('body').removeClass('modal-open');
+          }); // Remove modal-open if using the X to close the modal.
+
+          $('.ui-dialog-titlebar-close').bind('click', function () {
+            $('body').removeClass('modal-open');
           });
         }
 
