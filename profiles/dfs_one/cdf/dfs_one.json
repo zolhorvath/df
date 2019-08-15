@@ -28761,7 +28761,6 @@
                     },
                     "module": [
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "user",
                         "file",
@@ -28975,7 +28974,6 @@
                 "dependencies": {
                     "module": [
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "node"
                     ]
@@ -29063,7 +29061,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "options",
@@ -29135,7 +29132,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29199,7 +29195,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "field"
@@ -29320,7 +29315,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29440,7 +29434,6 @@
                         "node",
                         "options",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29563,7 +29556,6 @@
                         "node",
                         "type_style",
                         "menu_ui",
-                        "node_type_class",
                         "field"
                     ]
                 },
@@ -29625,7 +29617,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29744,7 +29735,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29864,7 +29854,6 @@
                         "metatag",
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29929,7 +29918,6 @@
                         "node",
                         "taxonomy",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -29994,7 +29982,6 @@
                         "node",
                         "taxonomy",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -30137,7 +30124,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "options",
@@ -30233,7 +30219,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "options",
@@ -30309,7 +30294,6 @@
                         "lightning_workflow",
                         "menu_ui",
                         "type_style",
-                        "node_type_class",
                         "field"
                     ]
                 },
@@ -30451,7 +30435,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "options",
@@ -30546,7 +30529,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "better_formats",
                         "options",
@@ -30658,7 +30640,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "better_formats",
                         "options",
                         "metatag",
@@ -30857,7 +30838,6 @@
                     },
                     "module": [
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "user",
                         "file",
@@ -31197,7 +31177,6 @@
                     },
                     "module": [
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "user",
                         "file",
@@ -31398,7 +31377,6 @@
                 "dependencies": {
                     "module": [
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "node"
                     ]
@@ -31478,7 +31456,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "media",
                         "taxonomy",
@@ -31547,7 +31524,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -31610,7 +31586,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -31732,7 +31707,6 @@
                         "node",
                         "type_style",
                         "menu_ui",
-                        "node_type_class",
                         "field"
                     ]
                 },
@@ -31794,7 +31768,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -31915,7 +31888,6 @@
                         "node",
                         "taxonomy",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -31980,7 +31952,6 @@
                         "node",
                         "taxonomy",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "field"
                     ]
@@ -32115,7 +32086,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "media",
                         "taxonomy",
@@ -32199,7 +32169,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "media",
                         "taxonomy",
@@ -32269,7 +32238,6 @@
                     "module": [
                         "node",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "lightning_workflow",
                         "field"
@@ -32349,7 +32317,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "media",
                         "taxonomy",
@@ -32433,7 +32400,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "type_style",
                         "media",
                         "taxonomy",
@@ -32534,7 +32500,6 @@
                         "node",
                         "text",
                         "menu_ui",
-                        "node_type_class",
                         "taxonomy",
                         "lightning_workflow",
                         "content_moderation",
