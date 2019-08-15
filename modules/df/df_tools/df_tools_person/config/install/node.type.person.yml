@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - menu_ui
-    - node_type_class
     - type_style
 third_party_settings:
   menu_ui:
@@ -13,8 +12,6 @@ third_party_settings:
   type_style:
     color: '#314f78'
     icon: person_pin
-  node_type_class:
-    classes: ''
 name: Person
 type: person
 description: 'A content type that maps to an individual with images and text information related to them.'

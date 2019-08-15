@@ -12,6 +12,7 @@ install:
   - df_tools_color
   - df_tools_content
   - df_tools_editor
+  - df_tools_events_demo
   - df_tools_frontend
   - df_tools_landing_page
   - df_tools_layout
