@@ -4,6 +4,9 @@ description: Addressing GDPR requirements.
 core: 8.x
 package: Demo Framework Tools
 dependencies:
-  - eu_cookie_compliance
-  - ip_anon
+  - anonymizer
   - gdpr
+  - gdpr_consent
+  - gdpr_dump
+  - gdpr_fields
+  - gdpr_tasks
