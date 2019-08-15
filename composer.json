@@ -277,7 +277,8 @@
         "drupal/seo_checklist": "^4.1",
         "drupal/yoast_seo": "^1.5",
         "drupal/simple_sitemap": "^3.3",
-        "drupal/gdpr": "^2.0@alpha"
+        "drupal/gdpr": "^2.0@alpha",
+        "drupal/environment_indicator": "^3.6"
     },
     "autoload": {
         "psr-4": {
