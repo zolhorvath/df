@@ -22651,16 +22651,9 @@ __webpack_require__.r(__webpack_exports__);
       });
       $(document).ready(function () {
         if (lbm.dialog('isOpen') === true) {
-          // Add bootstrap class modal-open to prevent background scroll.
-          $('body').addClass('modal-open'); // Close modal if clicked outside and remove modal-open.
-
+          // Close modal if clicked outside.
           $('.ui-widget-overlay').bind('click', function () {
             lbm.dialog('close');
-            $('body').removeClass('modal-open');
-          }); // Remove modal-open if using the X to close the modal.
-
-          $('.ui-dialog-titlebar-close').bind('click', function () {
-            $('body').removeClass('modal-open');
           });
         }
       });
@@ -22713,9 +22706,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/kevin.funk/W/df/df/themes/one/src/js/one.script.js */"./src/js/one.script.js");
-__webpack_require__(/*! /Users/kevin.funk/W/df/df/themes/one/src/sass/one.style.scss */"./src/sass/one.style.scss");
-module.exports = __webpack_require__(/*! /Users/kevin.funk/W/df/df/themes/one/src/sass/one.color-placeholders.scss */"./src/sass/one.color-placeholders.scss");
+__webpack_require__(/*! /Users/kevin.funk/W/df-patch/df/themes/one/src/js/one.script.js */"./src/js/one.script.js");
+__webpack_require__(/*! /Users/kevin.funk/W/df-patch/df/themes/one/src/sass/one.style.scss */"./src/sass/one.style.scss");
+module.exports = __webpack_require__(/*! /Users/kevin.funk/W/df-patch/df/themes/one/src/sass/one.color-placeholders.scss */"./src/sass/one.color-placeholders.scss");
 
 
 /***/ })

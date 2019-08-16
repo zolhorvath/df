@@ -56,17 +56,10 @@ import '@fortawesome/fontawesome-free/js/all';
 
       $(document).ready(function () {
         if (lbm.dialog('isOpen') === true) {
-          // Add bootstrap class modal-open to prevent background scroll.
-          $('body').addClass( 'modal-open');
-          // Close modal if clicked outside and remove modal-open.
+          // Close modal if clicked outside.
           $('.ui-widget-overlay').bind('click', function () {
             lbm.dialog('close');
-            $('body').removeClass('modal-open');
           });
-          // Remove modal-open if using the X to close the modal.
-          $('.ui-dialog-titlebar-close').bind('click', function () {
-            $('body').removeClass('modal-open');
-          })
         }
       });
     }
