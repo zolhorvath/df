@@ -22663,13 +22663,18 @@ __webpack_require__.r(__webpack_exports__);
             $('body').removeClass('modal-open');
           });
         }
-
-        $(window).once('layoutBuilderModal').on('dialog:aftercreate', function () {
-          if (lbm.length) {
-            lbm.dialog({
+      });
+    }
+  };
+  Drupal.behaviors.updateLBM = {
+    attach: function attach() {
+      $(document).ready(function () {
+        $(window).once('updateLBM').on('dialog:aftercreate', function () {
+          if ($('#layout-builder-modal').length) {
+            $('#layout-builder-modal').dialog({
               draggable: true
             });
-            lbm.parent().addClass('lbm').css('z-index', '1201');
+            $('#layout-builder-modal').parent().addClass('lbm').css('z-index', '1201');
           }
         });
       });
