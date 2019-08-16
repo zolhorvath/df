@@ -11166,6 +11166,7 @@ article.node .card .col-sm > div.card-img-top {
 
 article.node .card .img-thumbnail {
   border-radius: 0.25rem 0.25rem 0 0;
+  width: 100%;
 }
 
 .content-browser-card {
