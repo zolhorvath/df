@@ -22,7 +22,6 @@ projects[admin_login_path][version] = 1.0
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.27
 projects[adminimal_admin_toolbar][type] = module
-projects[adminimal_admin_toolbar][patch][] = https://www.drupal.org/files/issues/2826670-adminimal-admin-toolbar-outside-in-styles.patch
 projects[adminimal_admin_toolbar][version] = 1.9
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.5
