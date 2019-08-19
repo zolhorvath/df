@@ -96,7 +96,6 @@ projects[content_browser][version] = 1.0-alpha4
 projects[crop][type] = module
 projects[crop][version] = 2.0-rc1
 projects[ctools][type] = module
-projects[ctools][patch][] = https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch
 projects[ctools][version] = 3.2
 projects[custom_body_class][type] = module
 projects[custom_body_class][patch][] = https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch
