@@ -11,6 +11,7 @@
 function dfs_one_scenarios_info() {
   return [
     'dfs_one' => [
+      'type' => 'profile',
       'label' => t('DFS ONE'),
       'description' => t('Demo Framework Scenario for One.'),
       //'files' => ['/files/images' => 'public://images'],
