@@ -100,6 +100,7 @@ projects[crop][version] = 2.0-rc1
 projects[ctools][type] = module
 projects[ctools][version] = 3.2
 projects[custom_body_class][type] = module
+projects[custom_body_class][patch][] = https://www.drupal.org/files/issues/2019-02-19/remove-dependency-from-node-type-class-3026806.patch
 projects[custom_body_class][patch][] = https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch
 projects[custom_body_class][version] = 1.2
 projects[default_content][type] = module

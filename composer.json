@@ -108,15 +108,16 @@
             "drupal/contact_storage": {
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
-            "drupal/default_content": {
-                "Do not reimport existing entities | https://www.drupal.org/node/2698425": "https://www.drupal.org/files/issues/2018-12-11/default_content-dont-reimport-2698425-109.patch"
+            "drupal/custom_body_class": {
+                "Remove node-type-class feature from module | http://drupal.org/node/3026806": "https://www.drupal.org/files/issues/2019-02-19/remove-dependency-from-node-type-class-3026806.patch",
+                "Get error when revert a node. | https://www.drupal.org/node/2997700": "https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch"
             },
             "drupal/content_browser": {
                 "Combined Content Browser patch | https://www.drupal.org/node/2851687": "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch",
                 "3042028 - Error when trying to place a new block": "https://www.drupal.org/files/issues/2019-03-21/runtime_exception_when_placing_block-3042028-2_0.patch"
             },
-            "drupal/custom_body_class": {
-                "Get error when revert a node. | https://www.drupal.org/node/2997700": "https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch"
+            "drupal/default_content": {
+                "Do not reimport existing entities | https://www.drupal.org/node/2698425": "https://www.drupal.org/files/issues/2018-12-11/default_content-dont-reimport-2698425-109.patch"
             },
             "drupal/default_content_deploy": {
                 "Set content directory from the UI. | https://www.drupal.org/node/303830": "https://www.drupal.org/files/issues/2019-03-07/set-content-directory-from-the-ui-3038303-2-dcd-1.0-alpha6.patch"

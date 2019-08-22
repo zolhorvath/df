@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "791383a6dfd0cf7f19fbdca5c52189e1",
+    "content-hash": "e221109cb93d64ffaf0c5e1b452a3111",
     "packages": [
         {
             "name": "acquia/acf",
@@ -5454,6 +5454,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Remove node-type-class feature from module | http://drupal.org/node/3026806": "https://www.drupal.org/files/issues/2019-02-19/remove-dependency-from-node-type-class-3026806.patch",
                     "Get error when revert a node. | https://www.drupal.org/node/2997700": "https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch"
                 }
             },
