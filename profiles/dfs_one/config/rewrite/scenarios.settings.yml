@@ -1,0 +1,20 @@
+types:
+  block_content:
+    - banner
+    - hero
+    - map
+    - media
+    - media_slideshow
+    - text
+  media:
+    - image
+  node:
+    - article
+    - event
+    - landing_page
+    - location
+    - person
+  user:
+    - user
+  menu_link_content:
+    - main
