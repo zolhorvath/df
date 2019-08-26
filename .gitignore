@@ -16,6 +16,9 @@ bin/
 docroot/
 vendor/
 
+# Drupal Console
+console/
+
 # Contrib
 modules/contrib/*
 themes/contrib/*
