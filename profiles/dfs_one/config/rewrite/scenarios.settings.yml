@@ -1,3 +1,7 @@
+config_rewrite: replace
+latest: dfs_one
+enabled:
+  dfs_one: dfs_one
 types:
   block_content:
     - banner
