@@ -11306,7 +11306,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "c2e3a58f08fc4bd07032caefcd914e9b501d644e"
+                "reference": "aa0dd0cc53642fb499f182053ce1af6ca746cb87"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -11323,7 +11323,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1566507185",
+                    "datestamp": "1566854581",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -11360,7 +11360,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-08-26T21:19:43+00:00"
+            "time": "2019-08-28T20:18:20+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -18081,18 +18081,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a"
+                "reference": "a38512485e905738321f793b3acd3e7411a85101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8684ee4e634db7abda9039ea53545f86fc1e105a",
-                "reference": "8684ee4e634db7abda9039ea53545f86fc1e105a",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/a38512485e905738321f793b3acd3e7411a85101",
+                "reference": "a38512485e905738321f793b3acd3e7411a85101",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "~1.7@dev",
                 "instaclick/php-webdriver": "~1.1",
-                "php": ">=5.3.1"
+                "php": ">=5.4"
             },
             "require-dev": {
                 "mink/driver-testsuite": "dev-master"
@@ -18114,14 +18114,14 @@
             ],
             "authors": [
                 {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
                     "name": "Pete Otaqui",
                     "email": "pete@otaqui.com",
                     "homepage": "https://github.com/pete-otaqui"
+                },
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
                 }
             ],
             "description": "Selenium2 (WebDriver) driver for Mink framework",
@@ -18134,7 +18134,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10T12:39:06+00:00"
+            "time": "2019-08-28T17:26:52+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -21028,12 +21028,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "ff7f4e5106412e79fb26367b63bef366205b3be8"
+                "reference": "09edfc309d35d69b1f8302f78f4da8f05f757dca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=ff7f4e5106412e79fb26367b63bef366205b3be8",
-                "reference": "ff7f4e5106412e79fb26367b63bef366205b3be8",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=09edfc309d35d69b1f8302f78f4da8f05f757dca",
+                "reference": "09edfc309d35d69b1f8302f78f4da8f05f757dca",
                 "shasum": ""
             },
             "require": {
@@ -21078,7 +21078,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2019-08-22T23:24:13+00:00"
+            "time": "2019-08-27T03:10:47+00:00"
         }
     ],
     "aliases": [],
