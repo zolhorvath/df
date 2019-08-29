@@ -2,6 +2,12 @@ config_rewrite: replace
 latest: dfs_one
 enabled:
   dfs_one: dfs_one
+safe:
+  - block_content
+  - media
+  - menu_link_content
+  - node
+  - user
 types:
   block_content:
     - banner
