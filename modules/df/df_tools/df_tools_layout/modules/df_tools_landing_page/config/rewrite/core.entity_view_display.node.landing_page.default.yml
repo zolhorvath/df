@@ -1,4 +1,4 @@
-config_rewrite: replace
+uuid: 534e9d11-1348-4b64-be9d-5782682ad211
 langcode: en
 status: true
 dependencies:
@@ -80,6 +80,8 @@ third_party_settings:
         'User fields': {  }
         core: {  }
       allowed_layouts: {  }
+_core:
+  default_config_hash: 5UN5kAHRgHTV9rnAtMyoW8FuNbs9zX705ijw5csX8YI
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -101,3 +103,5 @@ hidden:
   layout_builder__translation: true
   layout_selection: true
   links: true
+  search_api_excerpt: true
+
