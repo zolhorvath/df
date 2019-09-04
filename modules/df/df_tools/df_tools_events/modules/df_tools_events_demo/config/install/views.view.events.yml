@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.event
+    - system.menu.main
   module:
     - blazy
     - node
@@ -216,6 +217,15 @@ display:
         options:
           relationship: none
           view_mode: teaser
+      menu:
+        type: normal
+        title: Events
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 7
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

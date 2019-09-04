@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.person
+    - system.menu.main
   module:
     - blazy
     - node
@@ -184,6 +185,15 @@ display:
         options:
           relationship: none
           view_mode: teaser
+      menu:
+        type: normal
+        title: People
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 5
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
