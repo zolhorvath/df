@@ -21,8 +21,3 @@ Feature: DFS ONE: Homepage
     Given I am on the homepage
     Then I should see "Calling all astronauts"
     Then I should see "Orbital photo shoots"
-
-  @5cb84acd
-  Scenario: Block: User login
-    Given I am on the homepage
-    Then I should see "Login"
