@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b0c952f556a47f01f0373177e13b422",
+    "content-hash": "bd53f2ef865839429ba85f690c8eddf1",
     "packages": [
         {
             "name": "acquia/acf",
@@ -2816,17 +2816,18 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acquia_contenthub.git",
-                "reference": "d56cede69079aaf1c4576a58d99f029cb2e453ac"
+                "reference": "af30c75887c03ab294192082370f848549396416"
             },
             "require": {
                 "acquia/content-hub-php": "2.x-dev",
                 "drupal/core": "^8.5",
-                "drupal/depcalc": "^1.0",
+                "drupal/depcalc": "1.x-dev",
                 "symfony/psr-http-message-bridge": "^1.0",
                 "zendframework/zend-diactoros": "^1.8"
             },
             "require-dev": {
-                "drupal/acquia_contenthub_subscriber": "*"
+                "drupal/acquia_contenthub_subscriber": "*",
+                "drupal/paragraphs": "^1.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -2898,7 +2899,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/acquia_contenthub"
             },
-            "time": "2019-08-02T19:00:59+00:00"
+            "time": "2019-09-06T15:17:37+00:00"
         },
         {
             "name": "drupal/acsf",
@@ -4114,17 +4115,17 @@
         },
         {
             "name": "drupal/claro",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/claro.git",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "151906eaef0fa2ade0cbffb2248565066544055a"
+                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "32ac74df71df9d095d3d911a19a45788ccf701ba"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4135,8 +4136,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1564677185",
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1567786984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -7286,17 +7287,17 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "2.4.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/google_analytics.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "f2e78ec140024ddcd19e027704ba73c33731f656"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "18179854152cae44be2a5ed5de5550bc6e131c70"
             },
             "require": {
                 "drupal/core": "~8.5"
@@ -7308,10 +7309,10 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4",
+                    "version": "8.x-3.0",
                     "datestamp": "1548968580",
                     "security-coverage": {
                         "status": "covered",
@@ -7665,17 +7666,17 @@
         },
         {
             "name": "drupal/jsonapi_hypermedia",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/jsonapi_hypermedia.git",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi_hypermedia-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "b4eae7355bd2b82467765bcc39f42c61576e21a2"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_hypermedia-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "0ae279a9923fdcaaa39498f07cfcd96abc35d868"
             },
             "require": {
                 "drupal/core": "^8.7"
@@ -7686,8 +7687,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1565893684",
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1567727285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -8465,7 +8466,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_layout.git",
-                "reference": "bb9fe5b028ef5e73c4ff751a0910011db693ccba"
+                "reference": "6427b31d1cc922b6650aa8f88a678fec87dde5e6"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -8592,7 +8593,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/lightning_layout"
             },
-            "time": "2019-07-29T12:50:22+00:00"
+            "time": "2019-09-06T17:10:59+00:00"
         },
         {
             "name": "drupal/lightning_media",
@@ -8600,7 +8601,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "dbd30977c15038d3c569578240603ed3c6dbab11"
+                "reference": "341a8f359e0720d3fcf4e253096feebc2846da95"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -8645,8 +8646,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.12+7-dev",
-                    "datestamp": "1566498184",
+                    "version": "8.x-3.12+9-dev",
+                    "datestamp": "1567774085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8738,7 +8739,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/lightning_media"
             },
-            "time": "2019-08-23T16:32:43+00:00"
+            "time": "2019-09-06T14:48:32+00:00"
         },
         {
             "name": "drupal/lightning_workflow",
@@ -17014,19 +17015,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "role": "Lead Developer",
                     "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org"
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Twig Team",
-                    "role": "Contributors",
-                    "homepage": "https://twig.symfony.com/contributors"
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "role": "Project Founder",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -17361,16 +17362,16 @@
         },
         {
             "name": "zendframework/zend-escaper",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-escaper.git",
-                "reference": "31d8aafae982f9568287cb4dce987e6aff8fd074"
+                "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/31d8aafae982f9568287cb4dce987e6aff8fd074",
-                "reference": "31d8aafae982f9568287cb4dce987e6aff8fd074",
+                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
+                "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
                 "shasum": ""
             },
             "require": {
@@ -17402,7 +17403,7 @@
                 "escaper",
                 "zf"
             ],
-            "time": "2018-04-25T15:48:53+00:00"
+            "time": "2019-09-05T20:03:20+00:00"
         },
         {
             "name": "zendframework/zend-feed",
