@@ -14,28 +14,6 @@ class ModerationSidebarContext extends DrupalSubContextBase {
   use AwaitTrait;
 
   /**
-   * Opens the moderation sidebar.
-   *
-   * @When I open the moderation sidebar
-   */
-  public function openModerationSidebar() {
-    $assert = $this->assertSession();
-
-    // Assert that the tab exists...
-    $link = $assert->elementExists(
-      'named',
-      ['link', 'Tasks'],
-      $assert->elementExists('css', '.moderation-sidebar-toolbar-tab')
-    );
-
-    // ...but only open it if not already active.
-    if ($link->hasClass('sidebar-open') == FALSE) {
-      $link->click();
-      $this->awaitAjax();
-    }
-  }
-
-  /**
    * Closes the moderation sidebar.
    *
    * @When I close the moderation sidebar
