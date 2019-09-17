@@ -226,6 +226,7 @@
         "drupal/mailsystem": "4.1.0",
         "drupal/material_admin": "1.x-dev",
         "drupal/material_admin_support": "1.x-dev",
+        "drupal/mautic": "1.1.0",
         "drupal/media_acquiadam": "1.36.0",
         "drupal/media_entity_video": "2.0.0-alpha1",
         "drupal/menu_item_extras": "2.x-dev",
@@ -276,7 +277,8 @@
         "drupal/gdpr": "^2.0@alpha",
         "drupal/environment_indicator": "^3.6",
         "drupal/entity_reference_revisions": "^1.6",
-        "drupal/depcalc": "1.x-dev"
+        "drupal/depcalc": "1.x-dev",
+        "mautic/api-library": "^2.15"
     },
     "autoload": {
         "psr-4": {
