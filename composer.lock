@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f63036cf399c4703477ad9aab99f0fe3",
+    "content-hash": "9e99d28c4b1f74b3a3bff4284bd2b18a",
     "packages": [
         {
             "name": "acquia/acf",
@@ -12665,17 +12665,17 @@
         },
         {
             "name": "drupal/view_modes_display",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/view_modes_display.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/view_modes_display-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "4f383dd695302acbffc71de347f86c243b3a85c1"
+                "url": "https://ftp.drupal.org/files/projects/view_modes_display-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "7f5bdfd35231a6b510dc2f2c1dea5ac0594a73be"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -12683,11 +12683,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1567455488",
+                    "version": "8.x-2.0",
+                    "datestamp": "1568669885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
