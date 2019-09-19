@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80f6cb74f06bdd9a6d3235585096d140",
+    "content-hash": "9851c2a8403bd4916c35ac243b60d106",
     "packages": [
         {
             "name": "acquia/acf",
@@ -9051,17 +9051,17 @@
         },
         {
             "name": "drupal/link_class",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/link_class.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/link_class-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "ad18cf31ce84913c15593fc751fe883e54ddd9e0"
+                "url": "https://ftp.drupal.org/files/projects/link_class-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "21bd635a57620261b4959f98b83a26680fe32b22"
             },
             "require": {
                 "drupal/core": "*"
@@ -9072,7 +9072,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
+                    "version": "8.x-1.4",
                     "datestamp": "1564049892",
                     "security-coverage": {
                         "status": "covered",
@@ -11396,26 +11396,21 @@
         },
         {
             "name": "drupal/rules",
-            "version": "3.0.0-alpha4",
+            "version": "3.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "8.x-3.0-alpha4"
+                "reference": "8.x-3.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rules-8.x-3.0-alpha4.zip",
-                "reference": "8.x-3.0-alpha4",
-                "shasum": "d6f11a6bd867b3479504b00278b4465a5b138d3a"
+                "url": "https://ftp.drupal.org/files/projects/rules-8.x-3.0-alpha5.zip",
+                "reference": "8.x-3.0-alpha5",
+                "shasum": "7c88959b047986783aa9d4afc992093df08ce0ee"
             },
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/typed_data": "*"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "drupal/coder": "8.2.*",
-                "squizlabs/php_codesniffer": "2.9.*"
             },
             "type": "drupal-module",
             "extra": {
@@ -11423,7 +11418,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha4",
+                    "version": "8.x-3.0-alpha5",
                     "datestamp": "1566193991",
                     "security-coverage": {
                         "status": "not-covered",
@@ -12785,17 +12780,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.3.0",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.3"
+                "reference": "8.x-5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.3.zip",
-                "reference": "8.x-5.3",
-                "shasum": "0ac8066ed09c688d7900f35d961ea521c6da6e3a"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.4.zip",
+                "reference": "8.x-5.4",
+                "shasum": "367de6af2485d3838ec80f41c536f6ecc52a405f"
             },
             "require": {
                 "drupal/core": "*"
@@ -12826,7 +12821,7 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.3",
+                    "version": "8.x-5.4",
                     "datestamp": "1566209286",
                     "security-coverage": {
                         "status": "covered",
