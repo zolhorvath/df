@@ -137,9 +137,9 @@ function df_tools_media_preprocess_media_video_file_formatter__df_tools_media_vi
 }
 
 /**
- * Implements hook_ENTITY_TYPE_presave().
  *
- * @param $entity
+ *
+ * @param \Drupal\media\MediaInterface $entity
  */
 function df_tools_media_media_presave(MediaInterface $entity) {
   $type = $entity->bundle();
@@ -155,20 +155,19 @@ function df_tools_media_media_presave(MediaInterface $entity) {
     $raw_image = file_get_contents('unsplash://' . $id);
     $filename = $id . '.jpg';
     $file = file_save_data($raw_image, "public://images/$filename", FILE_EXISTS_REPLACE);
-    $entity->$image_field->setValue(['target_id' => $file->id(), 'alt' => $entity->label()]);
+    $x_y = \Drupal::config('focal_point.settings')->get('default_value');
+    $entity->$image_field->focal_point = $x_y;
+    $entity->$image_field->alt = $entity->label();
+    $entity->$image_field->target_id = $file->id();
   }
   elseif (in_array($type, $types)
     && $entity->hasField($image_field)
     && !$entity->get($image_field)->isEmpty()
     && $entity->hasField($unsplash_field)
     && $entity->get($unsplash_field)->isEmpty()
+    && empty($entity->$image_field->alt)
   ) {
-    $images_list = $entity->get($image_field)->getValue();
-    $image = reset($images_list);
-    if (empty($image['alt'])) {
-      $image['alt'] = $entity->label();
-      $entity->$image_field->setValue($image);
-    }
+    $entity->$image_field->alt = $entity->label();
   }
 }
 
