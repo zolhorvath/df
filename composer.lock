@@ -3753,10 +3753,10 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1549909981",
+                    "datestamp": "1568409784",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -11517,14 +11517,15 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "c9b68771c839ff50c1e2bc4c71e3c7b0d79d7477"
+                "reference": "547285357c8f10afc59eb53dd379698cc2515abd"
             },
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/migrate_tools": "^4.0"
             },
             "require-dev": {
-                "drupal/acquia_contenthub_publisher": "*"
+                "drupal/acquia_contenthub_publisher": "*",
+                "drupal/migrate_tools": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -11533,7 +11534,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1569266585",
+                    "datestamp": "1569268685",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -11570,7 +11571,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-09-23T19:55:19+00:00"
+            "time": "2019-09-23T21:17:45+00:00"
         },
         {
             "name": "drupal/schemata",
@@ -21272,12 +21273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/weitzman/drupal-test-traits.git",
-                "reference": "09edfc309d35d69b1f8302f78f4da8f05f757dca"
+                "reference": "92e25f42d0d8789048c14840dad70751631a7063"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=09edfc309d35d69b1f8302f78f4da8f05f757dca",
-                "reference": "09edfc309d35d69b1f8302f78f4da8f05f757dca",
+                "url": "https://gitlab.com/api/v4/projects/weitzman%2Fdrupal-test-traits/repository/archive.zip?sha=92e25f42d0d8789048c14840dad70751631a7063",
+                "reference": "92e25f42d0d8789048c14840dad70751631a7063",
                 "shasum": ""
             },
             "require": {
@@ -21322,7 +21323,7 @@
                 }
             ],
             "description": "Traits for testing Drupal sites that have user content (versus unpopulated sites).",
-            "time": "2019-08-27T03:10:47+00:00"
+            "time": "2019-09-23T20:52:51+00:00"
         }
     ],
     "aliases": [],

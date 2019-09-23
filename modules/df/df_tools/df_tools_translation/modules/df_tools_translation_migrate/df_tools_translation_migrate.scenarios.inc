@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Scenarios hooks implemented by the DF Tools Translation module.
+ * Scenarios hooks implemented by the DF Tools Translation Migrate module.
  */
 
 use Drupal\Core\Entity\RevisionLogInterface;
@@ -19,7 +19,7 @@ use Drupal\migrate_tools\DrushLogMigrateMessage;
  *
  * @todo Can we refactor this to use derived migration plugins?
  */
-function df_tools_translation_scenarios_migration_finished(Migration $migration) {
+function df_tools_translation_migrate_scenarios_migration_finished(Migration $migration) {
   // The Locale module splits its translation functions into separate include
   // files, based on utility.
   // To ensure that each function we require is available, load its respective

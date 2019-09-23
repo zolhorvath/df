@@ -8,4 +8,3 @@ dependencies:
   - content_translation
   - df_core
   - menu_link_content
-  - migrate_source_csv
