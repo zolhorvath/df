@@ -11,7 +11,8 @@ cache:
     - "$HOME/.npm"
 
 php:
-  - 7.2.4
+  - 7.3
+  - 7.2
 
 env:
   matrix:
@@ -47,20 +48,12 @@ install:
   # Create the MySQL database and add a user for testing.
   - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'df'@'localhost' IDENTIFIED BY 'df'; GRANT ALL ON drupal.* TO 'df'@'localhost';"
 
-  # Install the required PECL extensions.
-  # Retrieve the extension from pecl.php.net manually in order to avoid timeouts
-  # and issues retrieving release information from PECL.
-  # 'yes' is used to acknowledge all prompts.
-  - wget http://pecl.php.net/get/yaml-2.0.2.tgz
-  - wget http://pecl.php.net/get/mcrypt-1.0.1.tgz
-  - yes '' | pecl install yaml-2.0.2.tgz
-  - yes '' | pecl install mcrypt-1.0.1.tgz
   # Tweak PHP configuration.
   - echo 'memory_limit = -1' >> drupal.php.ini;
   - echo 'max_execution_time = 120' >> drupal.php.ini;
   - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
   - phpenv config-add drupal.php.ini
-  - phpenv rehash
+  - php -i | grep memory_limit
 
   # Build the DF code base.
   - composer install
