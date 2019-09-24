@@ -9,7 +9,6 @@ dependencies:
 - df_tools_card
 - df_tools_color
 - df_tools_comment
-- df_tools_content
 - df_tools_crop
 - df_tools_display
 - df_tools_editor
