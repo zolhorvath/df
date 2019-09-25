@@ -76,14 +76,14 @@
     height: 400px!important;
     min-height: 400px!important;
     position: relative;
-    background: url("/sites/default/files/styles/hero_image/public/2019-03/thimo-van-leeuwen-1413414-unsplash.jpg") center center no-repeat;
+    background: url("/sites/default/files/styles/hero_image/public/images/_4Ib-a8g9aA.jpg") center center no-repeat;
 }
 
 .color-preview .hero-content {
     padding: 1.8rem 2rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,1);
     border: 2px solid #000;
     text-align: center;
     line-height: 1.2;
