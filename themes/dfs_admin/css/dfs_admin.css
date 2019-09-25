@@ -157,7 +157,11 @@ div.scheduled-transition button {
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footertext.form-item-palette-footertext.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlink.form-item-palette-footerlink.form-has-label.input-field,
 .js-form-type-textfield.form-type-textfield.js-form-item-palette-footerlinkhover.form-item-palette-footerlinkhover.form-has-label.input-field {
-  margin: 0 0 5px; 0;
+  margin: 20px 0 5px 0;
+}
+
+.color-palette .form-item:not(.form-item-scheme) input {
+  margin-top: 5px;
 }
 
 /* Default colors needs set for Color module integration*/
