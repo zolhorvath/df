@@ -96,8 +96,8 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
     }
 
     $wrapper = [
-      '#prefix' => '<div class="container"><div class="row ' . $hero_alignment . '">',
-      '#suffix' => '</div></div>',
+      '#prefix' => '<div class="container"><div class="col-12"><div class="row ' . $hero_alignment . '">',
+      '#suffix' => '</div></div></div>',
       '#type' => 'container',
       '#weight' => -1,
       '#attributes' => [
