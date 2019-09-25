@@ -78,6 +78,24 @@ layouts_3_6_3:
     third:
       label: Third
 
+layouts_4_4_4:
+  label: 'Three column 4-4-4'
+  class: '\Drupal\df_tools_layout\Plugin\Layout\DefaultConfigLayout'
+  path: layouts
+  template: layout--4-4-4
+  library: df_tools_layout/layouts
+  category: 'Columns: 3'
+  default_region: first
+  icon_map:
+  - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
 layouts_3-3-3-3:
   label: 'Four column 3-3-3-3'
   class: '\Drupal\df_tools_layout\Plugin\Layout\DefaultConfigLayout'
