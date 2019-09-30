@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "924af8684abd0f7852cfe150908c5f03",
+    "content-hash": "acf4140b648a0b96ccf6559b5dccb04d",
     "packages": [
         {
             "name": "acquia/acf",
@@ -3138,17 +3138,17 @@
         },
         {
             "name": "drupal/claro",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/claro.git",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "151906eaef0fa2ade0cbffb2248565066544055a"
+                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "32ac74df71df9d095d3d911a19a45788ccf701ba"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3159,7 +3159,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
+                    "version": "8.x-1.0-alpha5",
                     "datestamp": "1567786984",
                     "security-coverage": {
                         "status": "not-covered",
@@ -20078,6 +20078,7 @@
     "stability-flags": {
         "acquia/lift-sdk-php": 20,
         "drupal/better_formats": 20,
+        "drupal/claro": 15,
         "drupal/config_rewrite": 20,
         "drupal/config_sync": 20,
         "drupal/config_tools": 20,
