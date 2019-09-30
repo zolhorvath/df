@@ -32,6 +32,7 @@ libraries/*
 # Other
 private
 robots-replace.txt
+.ddev
 
 # Behat
 .behat.yml
