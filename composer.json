@@ -213,7 +213,7 @@
         "drupal/google_analytics": "2.4.0",
         "drupal/image_effects": "2.3.0",
         "drupal/import": "2.0.0-beta2",
-        "drupal/leaflet": "1.8.0",
+        "drupal/leaflet": "1.22.0",
         "drupal/link_class": "1.3.0",
         "drupal/ip_anon": "1.5",
         "drupal/lite": "1.4.0",
