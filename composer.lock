@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1531f54a1fcb7d4ab66ce5275f086b61",
+    "content-hash": "3a2c1871c6b690ae72e734bb1b3ba6cc",
     "packages": [
         {
             "name": "acquia/acf",
@@ -1167,16 +1167,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc",
                 "shasum": ""
             },
             "require": {
@@ -1185,7 +1185,7 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5@dev"
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "extra": {
@@ -1231,7 +1231,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-08-08T18:11:40+00:00"
+            "time": "2019-10-01T18:55:10+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2155,7 +2155,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.61",
-                    "datestamp": "1567676586",
+                    "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2230,7 +2230,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.61",
-                    "datestamp": "1567676586",
+                    "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2300,7 +2300,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.61",
-                    "datestamp": "1567676586",
+                    "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2369,7 +2369,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.61",
-                    "datestamp": "1567676586",
+                    "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5219,17 +5219,17 @@
         },
         {
             "name": "drupal/facets",
-            "version": "1.4.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "ee2d584b8a225ab981e313f6050e13bc9c98e40b"
+                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "2ca517094a34112e8168746123d337a25da6a227"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -5243,7 +5243,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
+                    "version": "8.x-1.3",
                     "datestamp": "1556645881",
                     "security-coverage": {
                         "status": "covered",
