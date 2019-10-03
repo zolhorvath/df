@@ -8,6 +8,7 @@ dependencies:
   - df_tools_crop
   - entity_browser
   - lightning_media
+  - lightning_media_audio
   - lightning_media_document
   - lightning_media_image
   - lightning_media_instagram
