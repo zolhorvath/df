@@ -11226,6 +11226,12 @@ article.node .card .img-thumbnail {
           align-items: center;
 }
 
+.navbar-brand img {
+  max-width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .dropdown-menu.mega-menu {
   width: 100%;
   top: 95%;
