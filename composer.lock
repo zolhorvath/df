@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a2c1871c6b690ae72e734bb1b3ba6cc",
+    "content-hash": "9c2ae5d5dad09a51245c4d40b6eccff2",
     "packages": [
         {
             "name": "acquia/acf",
@@ -2121,17 +2121,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.61.0",
+            "version": "1.62.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.61"
+                "reference": "8.x-1.62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.61.zip",
-                "reference": "8.x-1.61",
-                "shasum": "6fcc39f5f39b2ceea3dd691bf8ae3d0416f90d18"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.62.zip",
+                "reference": "8.x-1.62",
+                "shasum": "75a274dcd0883fa720d6580fe5cac8957a7223d7"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -2141,20 +2141,20 @@
                 "ext-json": "*"
             },
             "require-dev": {
+                "acquia/coding-standards": "^0.4.0",
                 "drupal/acsf_variables": "*",
-                "drupal/coder": "8.3.1",
                 "drupal/samlauth": "^2.0.0-alpha1",
                 "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "^4.8|^5.7|^6.5",
-                "squizlabs/php_codesniffer": "^3.3"
+                "phpunit/phpunit": "^7.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.61",
+                    "version": "8.x-1.62",
                     "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
@@ -2218,7 +2218,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.61.0",
+            "version": "1.62.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2229,7 +2229,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.61",
+                    "version": "8.x-1.62",
                     "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
@@ -2287,7 +2287,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.61.0",
+            "version": "1.62.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -2299,7 +2299,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.61",
+                    "version": "8.x-1.62",
                     "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
@@ -2357,7 +2357,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.61.0",
+            "version": "1.62.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -2368,7 +2368,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.61",
+                    "version": "8.x-1.62",
                     "datestamp": "1570013286",
                     "security-coverage": {
                         "status": "covered",
