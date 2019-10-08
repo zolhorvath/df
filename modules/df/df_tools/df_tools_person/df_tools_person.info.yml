@@ -3,3 +3,5 @@ type: module
 description: 'Defines Person content type for use in demos.'
 core: 8.x
 package: 'Demo Framework Tools'
+dependencies:
+  - auto_entitylabel
