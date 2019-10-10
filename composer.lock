@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c6c204cb2f1a4698f5a73beccda49ca",
+    "content-hash": "394a8079f7e2efabec2c9c358ce05509",
     "packages": [
         {
             "name": "acquia/acf",
@@ -10895,17 +10895,17 @@
         },
         {
             "name": "drupal/radix",
-            "version": "4.5.0",
+            "version": "4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/radix.git",
-                "reference": "8.x-4.5"
+                "reference": "8.x-4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.5.zip",
-                "reference": "8.x-4.5",
-                "shasum": "0f850aebc0fb09a74ce96b23820bdbb7d920e1ab"
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-4.6.zip",
+                "reference": "8.x-4.6",
+                "shasum": "ba5b978bfc226ea4a86e330dc9c1b50f00c81b95"
             },
             "require": {
                 "drupal/components": "^1.0",
@@ -10917,7 +10917,7 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.5",
+                    "version": "8.x-4.6",
                     "datestamp": "1570446484",
                     "security-coverage": {
                         "status": "covered",
