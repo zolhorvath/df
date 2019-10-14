@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "394a8079f7e2efabec2c9c358ce05509",
+    "content-hash": "26a49d51d0503f40a18a6eff58b77028",
     "packages": [
         {
             "name": "acquia/acf",
@@ -5283,6 +5283,7 @@
                     "#3069446: Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446": "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
                     "#3014277: ResourceTypes should know about their fields | http://drupal.org/node/3014277": "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
                     "#3074435: Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435": "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch",
+                    "#2642122: Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122": "https://www.drupal.org/files/issues/2019-08-29/2642122-107.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",

@@ -97,7 +97,9 @@
                 "#3014277: ResourceTypes should know about their fields | http://drupal.org/node/3014277":
                 "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
                 "#3074435: Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435":
-                "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch"
+                "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch",
+                "#2642122: Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122":
+                "https://www.drupal.org/files/issues/2019-08-29/2642122-107.patch"
             },
             "drupal/block_class": {
                 "#2998114: Integration with Drupal core's new Layout Builder| https://www.drupal.org/node2998114": "https://www.drupal.org/files/issues/2019-06-28/block_class-support-layout-builder-2998114-45.patch"
