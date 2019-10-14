@@ -3669,17 +3669,17 @@
         },
         {
             "name": "drupal/auto_entitylabel",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/auto_entitylabel.git",
-                "reference": "8.x-3.0-beta1"
+                "reference": "8.x-3.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.0-beta1.zip",
-                "reference": "8.x-3.0-beta1",
-                "shasum": "9e58235519ff98d44687ef27e6c49af37b4ca533"
+                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.0-beta2.zip",
+                "reference": "8.x-3.0-beta2",
+                "shasum": "b1fcf53f57147bbe445d5ff97e42c5c1a2a2718a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3690,8 +3690,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1",
-                    "datestamp": "1563986592",
+                    "version": "8.x-3.0-beta2",
+                    "datestamp": "1570745586",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4155,6 +4155,10 @@
                 {
                     "name": "TravisCarden",
                     "homepage": "https://www.drupal.org/user/236758"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
                 }
             ],
             "description": "Provides an API for creating fillable, persistent checklists.",
@@ -4165,17 +4169,17 @@
         },
         {
             "name": "drupal/claro",
-            "version": "1.0.0-alpha5",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/claro.git",
-                "reference": "8.x-1.0-alpha5"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
-                "shasum": "32ac74df71df9d095d3d911a19a45788ccf701ba"
+                "url": "https://ftp.drupal.org/files/projects/claro-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "4037cdaabf47990ab6b0df009c62381e108483e0"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4186,11 +4190,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1567786984",
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1571034184",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4216,7 +4220,7 @@
                     "homepage": "https://www.drupal.org/user/1999056"
                 }
             ],
-            "description": "A clean, accessible and powerful Drupal administration theme.",
+            "description": "A clean, accessible, and powerful Drupal administration theme.",
             "homepage": "https://www.drupal.org/project/claro",
             "support": {
                 "source": "https://git.drupalcode.org/project/claro",
@@ -7852,17 +7856,17 @@
         },
         {
             "name": "drupal/jsonapi_schema",
-            "version": "1.0.0-alpha5",
+            "version": "1.0.0-alpha6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/jsonapi_schema.git",
-                "reference": "8.x-1.0-alpha5"
+                "reference": "8.x-1.0-alpha6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi_schema-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
-                "shasum": "bc34da1fa729e680d5b22ab42c82b0933f274ff8"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_schema-8.x-1.0-alpha6.zip",
+                "reference": "8.x-1.0-alpha6",
+                "shasum": "46147b31fba5f1aad6e0f8d27940db1edbc84263"
             },
             "require": {
                 "drupal/core": "*"
@@ -7873,17 +7877,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1570227184",
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1570809485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
-                    }
-                },
-                "patches": {
-                    "drupal/core": {
-                        "3014277 - ResourceTypes should know about their fields": "https://www.drupal.org/files/issues/2019-06-06/3014277--resource-fields--36.patch",
-                        "3061610 - Typed Data's EntityDeriver does not derive bundle-level data types when a bundle has the same name as its entity type (f.e. entity:comment:comment)": "https://www.drupal.org/files/issues/2019-06-14/3061610-12.patch"
                     }
                 }
             },
@@ -10787,20 +10785,20 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "ddfb047ae04ca2ddf475d65f6c09bceb44169e25"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "ae3c13f26d625e63da3b13dc64016888eca519c7"
             },
             "require": {
-                "drupal/core": "^8.5",
+                "drupal/core": "^8.6",
                 "drupal/ctools": "*",
                 "drupal/token": "*"
             },
@@ -10810,8 +10808,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1554239887",
+                    "version": "8.x-1.5",
+                    "datestamp": "1570828084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15663,16 +15661,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.23.11",
+            "version": "v3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "77f4651cbf5b3767f0d79c91fd337de82b6ddee6"
+                "reference": "7e5974c14f95559642ebad5c4dd397a9d54b3602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/77f4651cbf5b3767f0d79c91fd337de82b6ddee6",
-                "reference": "77f4651cbf5b3767f0d79c91fd337de82b6ddee6",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/7e5974c14f95559642ebad5c4dd397a9d54b3602",
+                "reference": "7e5974c14f95559642ebad5c4dd397a9d54b3602",
                 "shasum": ""
             },
             "type": "library",
@@ -15716,7 +15714,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2019-09-20T20:34:23+00:00"
+            "time": "2019-10-12T00:55:58+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
