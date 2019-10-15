@@ -367,6 +367,7 @@ projects[video_embed_field][type] = module
 projects[video_embed_field][patch][] = https://www.drupal.org/files/issues/2019-04-26/video_embed_field-youtube_loop-2866001-12.patch
 projects[video_embed_field][version] = 2.2
 projects[view_modes_display][type] = module
+projects[view_modes_display][patch][] = https://www.drupal.org/files/issues/2019-09-26/fix_php_notice-3084016-2.patch
 projects[view_modes_display][version] = 2.0
 projects[views_infinite_scroll][type] = module
 projects[views_infinite_scroll][version] = 1.6

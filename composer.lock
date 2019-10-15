@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26a49d51d0503f40a18a6eff58b77028",
+    "content-hash": "dc2ec079e996d7d110927a0ba6c0a4cb",
     "packages": [
         {
             "name": "acquia/acf",
@@ -12702,6 +12702,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "PHP notice: only variables should be passed by reference. | https://www.drupal.org/node/3084016": "https://www.drupal.org/files/issues/2019-09-26/fix_php_notice-3084016-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

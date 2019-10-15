@@ -152,6 +152,9 @@
             "drupal/search_api": {
               "Notice: Undefined index: total When we enable the module in the installation step | https://www.drupal.org/node/2931562": "https://www.drupal.org/files/issues/2931562-13--undefined_total_in_task_manager_batch_finish.patch"
             },
+            "drupal/view_modes_display": {
+              "PHP notice: only variables should be passed by reference. | https://www.drupal.org/node/3084016": "https://www.drupal.org/files/issues/2019-09-26/fix_php_notice-3084016-2.patch"
+            },
             "drupal/video_embed_field": {
               "Youtube looping | https://www.drupal.org/node/2866001": "https://www.drupal.org/files/issues/2019-04-26/video_embed_field-youtube_loop-2866001-12.patch"
             },
