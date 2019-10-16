@@ -104,9 +104,6 @@
             "drupal/block_class": {
                 "#2998114: Integration with Drupal core's new Layout Builder| https://www.drupal.org/node2998114": "https://www.drupal.org/files/issues/2019-06-28/block_class-support-layout-builder-2998114-45.patch"
             },
-            "drupal/config_rewrite": {
-                "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629": "https://www.drupal.org/files/issues/allow_optional_config-2903629-14.patch"
-            },
             "drupal/contact_storage": {
                 "Conflict with other modules implementing same action plugin | https://www.drupal.org/node/2834490": "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
@@ -170,7 +167,7 @@
             },
             "drupal/lightning_media": {
                 "drupal/entity_browser": {
-                    "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2018-06-28/2877751-39-8.x-2.x.patch"
+                    "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2877751-27-8.x-2.x.patch"
                 }
             },
             "drupal/jsonapi_schema": {
@@ -205,7 +202,7 @@
         "drupal/contact_message_rest": "1.0.0-alpha1",
         "drupal/config_devel": "1.0.0-alpha3",
         "drupal/config_inspector": "^1.0@beta",
-        "drupal/config_rewrite": "1.1",
+        "drupal/config_rewrite": "1.x-dev",
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha4",
