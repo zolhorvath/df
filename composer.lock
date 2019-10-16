@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c2ae5d5dad09a51245c4d40b6eccff2",
+    "content-hash": "20f7ec12b7ad558ca44b77038dfcf8c3",
     "packages": [
         {
             "name": "acquia/acf",
@@ -3333,11 +3333,17 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "dev-1.x",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_rewrite.git",
-                "reference": "4b7b0830069e0f56e28d65fdd5392ec5fbded0fa"
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "fc5f8b72fb59d51aa524a20173d037d4adee9997"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3348,14 +3354,16 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+1-dev",
-                    "datestamp": "1495477983",
+                    "version": "8.x-1.1",
+                    "datestamp": "1495478283",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Stop creating config during rewrites of optional or non existing config | https://www.drupal.org/node/2903629": "https://www.drupal.org/files/issues/allow_optional_config-2903629-14.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3367,12 +3375,11 @@
                     "homepage": "https://www.drupal.org/user/252788"
                 }
             ],
-            "description": "Rewrites existing configuration on module installation via using a \"rewrite\" folder in the config directory.",
+            "description": "Changes configuration YAML from config/install|optional with YAML from config/rewrite.",
             "homepage": "https://www.drupal.org/project/config_rewrite",
             "support": {
                 "source": "https://git.drupalcode.org/project/config_rewrite"
-            },
-            "time": "2019-10-16T12:58:39+00:00"
+            }
         },
         {
             "name": "drupal/config_sync",
@@ -20075,7 +20082,6 @@
         "acquia/lift-sdk-php": 20,
         "drupal/better_formats": 20,
         "drupal/claro": 15,
-        "drupal/config_rewrite": 20,
         "drupal/config_sync": 20,
         "drupal/config_tools": 20,
         "drupal/entity_browser_block": 20,
