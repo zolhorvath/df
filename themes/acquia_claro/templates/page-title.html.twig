@@ -14,24 +14,22 @@
 #}
 
 {% if logo_url %}
-  <div class="grid">
-    <div class="grid-cell content">
-      {{ title_prefix }}
+  <div class="page-title-grid">
+    <div class="grid-cell page-title">
       {% if title %}
-        <h1{{ title_attributes.addClass('page-title') }}>{{ title }}</h1>
+        <h1{{ title_attributes.addClass('page-title') }}>{{ title_prefix }} {{ title }}</h1>
       {% endif %}
       {{ title_suffix }}
     </div>
     <div class="grid-cell logo">
-      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo">
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="admin-logo">
         <img src="{{ logo_url }}" alt="{{ 'Home'|t }}" />
       </a>
     </div>
   </div>
 {% else %}
-  {{ title_prefix }}
   {% if title %}
-    <h1{{ title_attributes.addClass('page-title') }}>{{ title }}</h1>
+    <h1{{ title_attributes.addClass('page-title') }}>{{ title_prefix }} {{ title }}</h1>
   {% endif %}
   {{ title_suffix }}
 {% endif %}

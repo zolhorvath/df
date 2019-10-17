@@ -9,20 +9,20 @@
 }
 
 /* Header */
-.grid {
+.page-title-grid {
   display: flex;
   flex-wrap: wrap;
 }
 
-.grid-cell {
+.page-title-grid .grid-cell {
   flex: 1;
 }
 
-.grid-cell.content {
+.page-title-grid .grid-cell.page-title {
   flex: 5;
 }
 
-.grid-cell.logo {
+.page-title-grid .grid-cell.logo {
   text-align: right;
 }
 
@@ -32,7 +32,7 @@
   }
 }
 
-.site-logo img {
+.admin-logo img {
   max-width: 150px;
   max-height: 80px;
   padding-top: 10px;
