@@ -19,7 +19,7 @@ install:
   - syslog
   - tour
 themes:
-  - claro
+  - acquia_claro
   - one
 exclude:
   - image_widget_crop

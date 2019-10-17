@@ -16,7 +16,7 @@ function df_install() {
   \Drupal::configFactory()
     ->getEditable('system.theme')
     ->set('default', 'one')
-    ->set('admin', 'claro')
+    ->set('admin', 'acquia_claro')
     ->save(TRUE);
 
   // Now that all modules are installed, make sure the entity storage and other
