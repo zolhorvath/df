@@ -9,5 +9,4 @@ dependencies:
   - lightning_workflow
   - moderation_dashboard
   - moderation_sidebar
-  - type_style_moderation
   - workbench_email

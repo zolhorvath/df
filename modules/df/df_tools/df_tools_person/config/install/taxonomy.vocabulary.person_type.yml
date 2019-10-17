@@ -1,12 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  module:
-    - type_style
-third_party_settings:
-  type_style:
-    color: '#000000'
-    icon: ''
+dependencies: {  }
 name: 'Person type'
 vid: person_type
 description: 'Defines the type of people that this site has.'

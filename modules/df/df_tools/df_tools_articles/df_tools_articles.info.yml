@@ -13,6 +13,7 @@ dependencies:
   - df_tools_comment
   - df_tools_layout
   - df_tools_translation
+  - df_tools_workflow
   - content_browser
   - image
   - link
@@ -24,5 +25,4 @@ dependencies:
   - replicate_ui
   - text
   - taxonomy
-  - type_style
   - user

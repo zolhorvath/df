@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - lightning_workflow
     - menu_ui
 third_party_settings:
   lightning_workflow:
@@ -11,11 +12,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-  lightning_workflow:
-    workflow: editorial
-  type_style:
-    color: '#039BE5'
-    icon: book
 name: Article
 type: article
 description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'

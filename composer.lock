@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c0a4492c13e29dba34cdea1d6407748",
+    "content-hash": "4f996b4e335e91927b4e5d3517265c71",
     "packages": [
         {
             "name": "acquia/acf",
@@ -12345,48 +12345,6 @@
             }
         },
         {
-            "name": "drupal/type_style",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/type_style.git",
-                "reference": "486a8ec7c1c7dcd93790ee281c78cfa3dba90d78"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1513033985",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "samuel.mortenson",
-                    "homepage": "https://www.drupal.org/user/2582268"
-                }
-            ],
-            "description": "Adds configuration to distinctly style types (entity bundles).",
-            "homepage": "https://www.drupal.org/project/type_style",
-            "support": {
-                "source": "https://git.drupalcode.org/project/type_style"
-            },
-            "time": "2017-12-11T23:10:48+00:00"
-        },
-        {
             "name": "drupal/typed_data",
             "version": "1.0.0-alpha3",
             "source": {
@@ -21176,7 +21134,6 @@
         "drupal/replicate": 20,
         "drupal/replicate_ui": 20,
         "drupal/scenarios": 20,
-        "drupal/type_style": 20,
         "acquia/acf": 20,
         "drupal/basic_data": 20,
         "drupal/connection": 20,

@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - menu_ui
-    - type_style
 third_party_settings:
   menu_ui:
     available_menus:
@@ -12,9 +11,6 @@ third_party_settings:
   lightning_workflow:
     enabled: true
     workflow: editorial
-  type_style:
-    color: '#f44336'
-    icon: location_on
 name: Location
 type: location
 description: 'A content type that easily allows insertion of a map embed based on an address, photos and text about the location.'
