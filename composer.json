@@ -129,14 +129,6 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-12-27/2877751-39_2825555-20_combined.patch"
             },
-            "drupal/material_admin": {
-                "3048894 - Update materialize library to v1.0.0": "https://www.drupal.org/files/issues/2019-08-01/material_admin-update_materialize_library_to_v1-3048894-20.patch"
-            },
-            "drupal/material_admin_support": {
-                "Add Lightning's \"Audio File\" and \"Video File\" to the color install | https://www.drupal.org/node/3000992": "https://www.drupal.org/files/issues/2018-09-19/material_admin_support-add-video-audio-file-color-icons-0.patch",
-                "Support Media Library | https://www.drupal.org/node/3015073": "https://www.drupal.org/files/issues/2019-07-15/support-media-library-3015073-3.patch",
-                "3073534 - Modal Size Fix Breaks Layout Builder Modal ": "https://www.drupal.org/files/issues/2019-08-08/modal-size-fix-breaks-layout-builder-modal-3073534-02.patch"
-            },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
             },
@@ -225,8 +217,6 @@
         "drupal/leaflet": "1.22.0",
         "drupal/link_class": "1.4.0",
         "drupal/mailsystem": "4.1.0",
-        "drupal/material_admin": "1.x-dev",
-        "drupal/material_admin_support": "1.x-dev",
         "drupal/mautic": "1.1.0",
         "drupal/media_acquiadam": "1.36.0",
         "drupal/media_entity_video": "2.0.0-alpha1",

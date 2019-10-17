@@ -1,8 +1,0 @@
-dfs_admin.settings:
-  type: theme_settings
-  label: 'DFS Admin settings'
-  mapping:
-    dfs_admin_logo:
-      type: boolean
-    dfs_admin_site_name:
-      type: boolean
