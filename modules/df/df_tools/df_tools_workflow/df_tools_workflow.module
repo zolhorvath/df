@@ -65,6 +65,7 @@ function df_tools_workflow_form_alter(&$form, \Drupal\Core\Form\FormStateInterfa
     $form['revision_log']['widget'][0]['value']['#default_value'] = t('Created by @user on @date.', $replace);
     $form['revision_log']['widget']['#access'] = FALSE;
   }
+  $form['#attached']['library'][] = 'df_tools_workflow/df_tools_workflow';
 }
 
 /**

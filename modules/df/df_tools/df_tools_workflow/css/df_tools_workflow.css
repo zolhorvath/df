@@ -1,0 +1,89 @@
+/* Create New Draft */
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #create_new_draft {
+  background-color: #ef6c00;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #create_new_draft:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #create_new_draft:focus {
+  background-color: #ff7401;
+}
+
+/* Archive */
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #archive {
+  background-color: #00897b;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #archive:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #archive:focus {
+  background-color: #009a8a;
+}
+
+/* Send to review */
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #review {
+  background-color: #ff8f00;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #review:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #review:focus {
+  background-color: #ff9611;
+}
+
+/* Publish */
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #publish {
+  background-color: #689f38;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #publish:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-actions #publish:focus {
+  background-color: #70ac3c;
+}
+
+
+
+/* Create New Draft (New UI)*/
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #create_new_draft {
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #create_new_draft:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #create_new_draft:focus {
+  background-color: #de6400;
+  border-color: #de6400;
+}
+
+/* Archive (New UI)*/
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #archive {
+  background-color: #00897b;
+  border-color: #00897b;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #archive:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #archive:focus {
+  background-color: #00786c;
+  border-color: #00786c;
+}
+
+/* Send to review (New UI)*/
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #review {
+  background-color: #ff8f00;
+  border-color: #ff8f00;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #review:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #review:focus {
+  background-color: #ee8500;
+  border-color: #ee8500;
+}
+
+/* Publish (New UI)*/
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #publish {
+  background-color: #689f38;
+  border-color: #689f38;
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #publish:hover,
+.ui-dialog-off-canvas #drupal-off-canvas .moderation-sidebar-primary-tasks #publish:focus {
+  background-color: #609234;
+  border-color: #609234;
+}
