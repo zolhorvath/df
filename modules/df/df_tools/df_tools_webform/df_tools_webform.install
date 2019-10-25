@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function df_tools_webform_install() {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  // Clear cache to prevent webform class discovery errors.
+  drupal_flush_all_caches();
+}

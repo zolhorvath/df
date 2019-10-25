@@ -2,6 +2,8 @@ name: 'Demo Framework'
 type: profile
 description: 'Architects start here.'
 package: 'Demo Framework'
+distribution:
+  name: df
 core: 8.x
 base profile: lightning
 install:
@@ -10,14 +12,28 @@ install:
   - admin_toolbar_tools
   - adminimal_admin_toolbar
   - components
+  - color
   - contact
   - config_update
   - df_core
+  - df_tools_blocks
+  - df_tools_color
+  - df_tools_editor
+  - df_tools_frontend
+  - df_tools_landing_page
+  - df_tools_layout
+  - df_tools_media
+  - df_tools_menu
+  - df_tools_theming
+  - df_tools_translation
+  - df_tools_workflow
   - google_analytics
   - pathauto
-  - scenarios
+  - responsive_preview
+  - scenarios_contenthub
   - syslog
   - tour
+  - view_modes_display
 themes:
   - acquia_claro
   - one
@@ -25,6 +41,8 @@ exclude:
   - image_widget_crop
   - lightning_api
   - lightning_contact_form
+  - lightning_hero_block
+  - lightning_map_block
   - lightning_page
   - lightning_preview
   - lightning_roles
