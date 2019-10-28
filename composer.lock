@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40680ce4245da37ba48cb7eb79cfc895",
+    "content-hash": "1325f4594f31d160645eb228fea0dd47",
     "packages": [
         {
             "name": "acquia/acf",
@@ -763,7 +763,10 @@
                         "drush.services.yml": "^9"
                     }
                 },
-                "enable-patching": true
+                "enable-patching": true,
+                "patches_applied": {
+                    "Check property_exists on getDirectoryPath | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-10-28/cohesion-property_exists-getDirectoryPath.patch"
+                }
             },
             "description": "DX8 module",
             "homepage": "https://bitbucket.org/cohesion_dev/dx8-module",

@@ -159,6 +159,9 @@
             },
             "drupal/lightning_core": {
               "Tests using FixtureContext fail due to Content Hub 2.0 enabled | https://www.drupal.org/node/3055022": "https://www.drupal.org/files/issues/2019-05-15/lightning_core-ch-publisher-fixture-setup-0.patch"
+            },
+            "cohesion/dx8": {
+                "Check property_exists on getDirectoryPath | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-10-28/cohesion-property_exists-getDirectoryPath.patch"
             }
         },
         "patches-ignore": {
