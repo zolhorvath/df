@@ -9,15 +9,10 @@ dependencies:
     - image.style.crop_thumbnail
     - media.type.image
   module:
-    - field_layout
     - focal_point
     - layout_discovery
     - lightning_media
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: media.image.default
 targetEntityType: media
 bundle: image
