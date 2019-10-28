@@ -37,6 +37,7 @@ install:
 themes:
   - acquia_claro
   - one
+  - cohesion_theme
 exclude:
   - image_widget_crop
   - lightning_api
