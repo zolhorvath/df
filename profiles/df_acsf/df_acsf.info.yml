@@ -1,0 +1,24 @@
+name: 'ACSF DF'
+type: profile
+description: 'Demo Framework configured to install on ACSF'
+package: 'Demo Framework'
+core: 8.x
+base profile: df
+install:
+  - acsf
+  - acsf_sso 
+  - acsf_duplication
+themes:
+  - acquia_claro
+  - one
+exclude:
+  - image_widget_crop
+  - lightning_api
+  - lightning_contact_form
+  - lightning_hero_block
+  - lightning_map_block
+  - lightning_page
+  - lightning_preview
+  - lightning_roles
+  - bartik
+  - seven
