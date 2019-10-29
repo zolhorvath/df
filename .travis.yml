@@ -18,7 +18,7 @@ env:
   matrix:
     - SCENARIO=dfs_one
     - SCENARIO=none
-    - PROFILE=df_acsf
+
 addons:
   apt:
     packages:
