@@ -3,6 +3,7 @@ type: module
 description: 'Demo Framework Scenario for One.'
 core: 8.x
 package: 'Demo Framework Scenarios'
+scenario: dfs_one
 dependencies:
   - color
   - df_tools_articles

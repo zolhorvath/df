@@ -3,6 +3,7 @@ type: module
 description: 'Adds demo users for usage with other demos.'
 core: 8.x
 package: 'Demo Framework Tools Demos'
+scenario: df_tools_user_demo
 dependencies:
   - df_tools_user
   - scenarios_contenthub
