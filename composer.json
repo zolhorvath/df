@@ -231,6 +231,7 @@
         "drupal/layout_builder_modal": "1.0.0-alpha2",
         "drupal/leaflet": "1.22.0",
         "drupal/link_class": "1.4.0",
+        "drupal/linkit": "^4.3",
         "drupal/mailsystem": "4.1.0",
         "drupal/mautic": "1.1.0",
         "drupal/media_acquiadam": "1.36.0",
