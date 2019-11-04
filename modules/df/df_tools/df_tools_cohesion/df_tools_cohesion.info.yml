@@ -1,0 +1,16 @@
+name: DF Tools Cohesion
+type: module
+description: Contains configuration for an Acquia Cohesion demo.
+core: 8.x
+package: Demo Framework Tools
+dependencies:
+  - cohesion
+  - cohesion_base_styles
+  - cohesion_custom_styles
+  - cohesion_sync
+  - cohesion_website_settings
+  - cohesion_breakpoint_indicator
+  - cohesion_elements
+  - cohesion_style_helpers
+  - cohesion_templates
+  - lightning_layout

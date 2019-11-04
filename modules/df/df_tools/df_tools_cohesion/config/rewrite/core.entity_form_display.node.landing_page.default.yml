@@ -1,0 +1,15 @@
+dependencies:
+  config:
+    - field.field.node.landing_page.field_layout_canvas
+  module:
+    - cohesion_elements
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+  field_layout_canvas:
+    type: cohesion_layout_builder_widget
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
