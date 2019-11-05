@@ -1,3 +1,4 @@
+config_rewrite: replace
 langcode: en
 status: true
 dependencies:
@@ -6,11 +7,10 @@ dependencies:
     - field.field.media.image.field_tags
     - field.field.media.image.field_unsplash_image_id
     - field.field.media.image.image
-    - image.style.crop_thumbnail
+    - image.style.medium
     - media.type.image
   module:
     - focal_point
-    - layout_discovery
     - lightning_media
     - path
 id: media.image.default
@@ -46,10 +46,10 @@ content:
     type: image_focal_point
     weight: 2
     settings:
-      progress_indicator: throbber
-      preview_image_style: crop_thumbnail
+      preview_image_style: medium
       preview_link: true
       offsets: '50,50'
+      progress_indicator: throbber
     third_party_settings:
       lightning_media:
         file_links: true
