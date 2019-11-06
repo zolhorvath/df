@@ -37,6 +37,7 @@ a:hover, .link:hover {
 }
 
 .block-page-title-block,
+.page-title,
 .breadcrumb__item,
 .breadcrumb__link {
   color: #ffffff;
