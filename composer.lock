@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4464acc3b457a19dbc2e02d3c566b932",
+    "content-hash": "7341155c43d54e6bd657fd25b976bc4c",
     "packages": [
         {
             "name": "acquia/acf",
@@ -11831,17 +11831,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.14"
+                "reference": "8.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "bfc45a5ea3965cd8355927cd56a8f6a148cfc5e5"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "12c13141adb6b687fe36781ac9269a49ef810323"
             },
             "require": {
                 "drupal/core": "^8.6"
@@ -11850,6 +11850,7 @@
                 "drupal/search_api_solr": "2.* || 3.0 || 3.1"
             },
             "require-dev": {
+                "drupal/language_fallback_fix": "@dev",
                 "drupal/search_api_autocomplete": "@dev",
                 "drupal/search_api_db": "*"
             },
@@ -11864,8 +11865,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1562599986",
+                    "version": "8.x-1.15",
+                    "datestamp": "1573122785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11875,9 +11876,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Notice: Undefined index: total When we enable the module in the installation step | https://www.drupal.org/node/2931562": "https://www.drupal.org/files/issues/2931562-13--undefined_total_in_task_manager_batch_finish.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

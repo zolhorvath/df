@@ -148,9 +148,6 @@
             "drupal/radix": {
               "Integrate with OffCanvas (Layout Builder) | https://www.drupal.org/node/3053579": "https://www.drupal.org/files/issues/2019-05-14/integrate-with-offcanvas-3053579-3.patch"
             },
-            "drupal/search_api": {
-              "Notice: Undefined index: total When we enable the module in the installation step | https://www.drupal.org/node/2931562": "https://www.drupal.org/files/issues/2931562-13--undefined_total_in_task_manager_batch_finish.patch"
-            },
             "drupal/view_modes_display": {
               "PHP notice: only variables should be passed by reference. | https://www.drupal.org/node/3084016": "https://www.drupal.org/files/issues/2019-09-26/fix_php_notice-3084016-2.patch"
             },
