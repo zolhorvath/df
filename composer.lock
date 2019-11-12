@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f9ab5b1b9bb131f0c9cbfac92d4dcc3",
+    "content-hash": "8c25f735b8290aaab2479ba8e5ffed62",
     "packages": [
         {
             "name": "acquia/acf",
@@ -722,16 +722,16 @@
         },
         {
             "name": "cohesion/dx8",
-            "version": "5.6.2",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-module.git",
-                "reference": "03a220f935b955b7c43d88c61bc442baf0353c4a"
+                "reference": "18a8e0ff89cfb3a378863b30954d060c0787e6c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/03a220f935b955b7c43d88c61bc442baf0353c4a.zip",
-                "reference": "03a220f935b955b7c43d88c61bc442baf0353c4a",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/18a8e0ff89cfb3a378863b30954d060c0787e6c5.zip",
+                "reference": "18a8e0ff89cfb3a378863b30954d060c0787e6c5",
                 "shasum": ""
             },
             "require": {
@@ -754,7 +754,8 @@
                 "drupal/menu_link_attributes": "This module allows you to add attributes to your menu links or their wrapping <li> elements.",
                 "drupal/request_data_conditions": "Defines a set of conditions via the Drupal 8 Conditions Plugin API for use with the context module",
                 "drupal/search_api": "Provides a framework for easily creating searches on any entity known to Drupal, using any kind of search engine.",
-                "drupal/views_infinite_scroll": "Provides infinite scroll functionality to Views"
+                "drupal/views_infinite_scroll": "Provides infinite scroll functionality to Views",
+                "drupal/webform": "This module allows you to use webforms."
             },
             "type": "drupal-module",
             "extra": {
@@ -763,39 +764,36 @@
                         "drush.services.yml": "^9"
                     }
                 },
-                "enable-patching": true,
-                "patches_applied": {
-                    "Check property_exists on getDirectoryPath | https://www.drupal.org/node/2770791": "https://www.drupal.org/files/issues/2019-10-28/cohesion-property_exists-getDirectoryPath.patch"
-                }
+                "enable-patching": true
             },
             "description": "DX8 module",
             "homepage": "https://bitbucket.org/cohesion_dev/dx8-module",
             "support": {
-                "source": "https://bitbucket.org/cohesion_dev/dx8-module/src/03a220f935b955b7c43d88c61bc442baf0353c4a/?at=5.6.2"
+                "source": "https://bitbucket.org/cohesion_dev/dx8-module/src/18a8e0ff89cfb3a378863b30954d060c0787e6c5/?at=5.7.1"
             },
-            "time": "2019-11-08T10:20:29+00:00"
+            "time": "2019-11-12T14:46:49+00:00"
         },
         {
             "name": "cohesion/dx8-theme",
-            "version": "5.6.2",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-theme.git",
-                "reference": "10a60ed7609f22f56416c7a602c4d6a77af3afad"
+                "reference": "f2213b1ce2a4a725102f66c31e4bbb22e6b5a830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/cohesion_dev/dx8-theme/get/10a60ed7609f22f56416c7a602c4d6a77af3afad.zip",
-                "reference": "10a60ed7609f22f56416c7a602c4d6a77af3afad",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-theme/get/f2213b1ce2a4a725102f66c31e4bbb22e6b5a830.zip",
+                "reference": "f2213b1ce2a4a725102f66c31e4bbb22e6b5a830",
                 "shasum": ""
             },
             "type": "drupal-theme",
             "description": "DX8 base theme",
             "homepage": "https://bitbucket.org/cohesion_dev/dx8-theme",
             "support": {
-                "source": "https://bitbucket.org/cohesion_dev/dx8-theme/src/10a60ed7609f22f56416c7a602c4d6a77af3afad/?at=5.6.2"
+                "source": "https://bitbucket.org/cohesion_dev/dx8-theme/src/f2213b1ce2a4a725102f66c31e4bbb22e6b5a830/?at=5.7.1"
             },
-            "time": "2019-11-08T10:20:39+00:00"
+            "time": "2019-11-12T14:46:55+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -8681,6 +8679,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
                 {
                     "name": "balsama",
                     "homepage": "https://www.drupal.org/user/223087"
