@@ -433,7 +433,7 @@
             "version": "1.12.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:components/jqueryui.git",
+                "url": "https://github.com/components/jqueryui.git",
                 "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
             },
             "dist": {
@@ -2174,16 +2174,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c15dcd24b756f9e52ea7c3ae8227354f3628f11a"
+                "reference": "89a5c76c39c292f7798f964ab3c836c3f8192a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c15dcd24b756f9e52ea7c3ae8227354f3628f11a",
-                "reference": "c15dcd24b756f9e52ea7c3ae8227354f3628f11a",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/89a5c76c39c292f7798f964ab3c836c3f8192a55",
+                "reference": "89a5c76c39c292f7798f964ab3c836c3f8192a55",
                 "shasum": ""
             },
             "require": {
@@ -2253,7 +2253,7 @@
                 "riak",
                 "xcache"
             ],
-            "time": "2019-11-11T10:31:52+00:00"
+            "time": "2019-11-15T14:31:57+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -3630,7 +3630,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1492709942",
+                    "datestamp": "1573747386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8189,17 +8189,17 @@
         },
         {
             "name": "drupal/layout_builder_restrictions",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "7ea6c332b83c7c166a1632938783a68b5bf5440a"
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "4117113b236226f0d1c94df7d8e56e78b955534b"
             },
             "require": {
                 "drupal/core": "^8.5.0-rc1"
@@ -8213,8 +8213,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1564441086",
+                    "version": "8.x-2.3",
+                    "datestamp": "1573836185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8567,21 +8567,20 @@
         },
         {
             "name": "drupal/lightning_api",
-            "version": "4.3.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_api.git",
-                "reference": "8.x-4.3"
+                "reference": "8.x-4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-4.3.zip",
-                "reference": "8.x-4.3",
-                "shasum": "44daad62262a4c8f1ef0adbab03ea365025c5721"
+                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "744b4a96ce621c7caa32cdd4f66e1456e4d44fc9"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/consumers": "1.9",
                 "drupal/core": "*",
                 "drupal/lightning_core": "4.* || 5.*",
@@ -8593,6 +8592,7 @@
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/schema_metatag": "^1.3",
                 "vijaycs85/drupal-quality-checker": "^1.0"
             },
@@ -8603,8 +8603,8 @@
                     "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.3",
-                    "datestamp": "1573654984",
+                    "version": "8.x-4.4",
+                    "datestamp": "1573784585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8858,21 +8858,20 @@
         },
         {
             "name": "drupal/lightning_layout",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_layout.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "f431362e3b8515c4285a98a8bf39d4c50c3aba5f"
+                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "aad4a234c0f61b1fb9980133ffd70eeb5f541abc"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/bg_image_formatter": "^1.10",
                 "drupal/core": "*",
                 "drupal/ctools": "^3.0",
@@ -8889,6 +8888,7 @@
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/bg_image_formatter": "*",
                 "drupal/schema_metatag": "^1.3",
                 "drupal/simple_gmap": "*",
@@ -8903,8 +8903,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1573657986",
+                    "version": "8.x-2.3",
+                    "datestamp": "1573786986",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9008,24 +9008,23 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.13.0",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.13"
+                "reference": "8.x-3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.13.zip",
-                "reference": "8.x-3.13",
-                "shasum": "f645a60ba1f5e72dbd679fbeb090c3e2f30af55d"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.14.zip",
+                "reference": "8.x-3.14",
+                "shasum": "344d135d56d07e1bad7c6fbb29920b33822d6bca"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
                 "bower-asset/dropzone": "^5.1",
                 "bower-asset/slick-carousel": "^1.8",
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "*",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/dropzonejs": "2.0.0-alpha4",
@@ -9045,6 +9044,7 @@
                 "vardot/blazy": "^1.8"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/dropzonejs": "*",
                 "drupal/drupal-extension": "^3.4",
                 "drupal/facets": "^1.2",
@@ -9065,8 +9065,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.13",
-                    "datestamp": "1573669686",
+                    "version": "8.x-3.14",
+                    "datestamp": "1573792984",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9165,36 +9165,36 @@
         },
         {
             "name": "drupal/lightning_workflow",
-            "version": "3.12.0",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_workflow.git",
-                "reference": "8.x-3.12"
+                "reference": "8.x-3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.12.zip",
-                "reference": "8.x-3.12",
-                "shasum": "281004384b36fdd9d288fe7505ea3122900eb3e3"
+                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.14.zip",
+                "reference": "8.x-3.14",
+                "shasum": "50c2a6051c7a0e0be9ca7dcf72731be043a3af9b"
             },
             "require": {
-                "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/autosave_form": "^1.0",
                 "drupal/conflict": "2.0-alpha1",
                 "drupal/core": "*",
                 "drupal/diff": "^1.0",
                 "drupal/lightning_core": "3.* || 4.* || 5.*",
                 "drupal/moderation_dashboard": "^1.0",
-                "drupal/moderation_sidebar": "^1.2",
-                "oomphinc/composer-installers-extender": "^1.1"
+                "drupal/moderation_sidebar": "^1.2"
             },
             "require-dev": {
+                "cweagans/composer-patches": "^1.6.4",
+                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/drupal-extension": "^3.4",
                 "drupal/inline_entity_form": "^1.0",
                 "drupal/lightning_core": "*",
                 "drupal/schema_metatag": "^1.3",
                 "drush/drush": "^9.7",
+                "oomphinc/composer-installers-extender": "^1.1",
                 "vijaycs85/drupal-quality-checker": "^1.0",
                 "webflo/drupal-core-require-dev": "*",
                 "webmozart/assert": "^1.3",
@@ -9207,8 +9207,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.12",
-                    "datestamp": "1573683784",
+                    "version": "8.x-3.14",
+                    "datestamp": "1573837385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
