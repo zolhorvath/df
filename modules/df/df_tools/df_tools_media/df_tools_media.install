@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function df_tools_media_install() {
+  $images_dir = "public://images";
+  if (!is_dir($images_dir)) {
+    mkdir($images_dir);
+  }
+}
