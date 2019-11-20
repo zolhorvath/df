@@ -15,6 +15,7 @@ dependencies:
   - df_tools_workflow
   - content_browser
   - image
+  - language
   - link
   - inline_entity_form
   - menu_ui
