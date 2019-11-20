@@ -7,6 +7,5 @@ dependencies:
   - lightning_landing_page
   - df_core
   - df_tools_layout
-  - df_tools_translation
   - df_tools_workflow
   - auto_entitylabel

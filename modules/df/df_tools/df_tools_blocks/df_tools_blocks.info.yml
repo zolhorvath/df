@@ -12,7 +12,6 @@ dependencies:
   - df_tools_crop
   - df_tools_icons
   - df_tools_media
-  - df_tools_translation
   - node
   - image
   - lightning_banner_block

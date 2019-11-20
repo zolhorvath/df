@@ -5,7 +5,6 @@ core: 8.x
 package: Demo Framework Tools
 dependencies:
   - df_core
-  - df_tools_translation
   - node
   - image
   - link

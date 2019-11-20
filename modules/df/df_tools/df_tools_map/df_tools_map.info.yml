@@ -7,7 +7,6 @@ dependencies:
   - address
   - block_content
   - df_core
-  - df_tools_translation
   - geocoder
   - geocoder_address
   - geocoder_field

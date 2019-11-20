@@ -25,7 +25,6 @@ install:
   - df_tools_media
   - df_tools_menu
   - df_tools_theming
-  - df_tools_translation
   - df_tools_user_demo
   - df_tools_workflow
   - google_analytics

@@ -6,5 +6,4 @@ package: Demo Framework Tools
 dependencies:
   - df_core
   - df_tools_display
-  - df_tools_translation
   - shortcut
