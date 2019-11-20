@@ -27,7 +27,6 @@ dependencies:
 - df_tools_services
 - df_tools_slideshow
 - df_tools_theming
-- df_tools_translation
 - df_tools_user
 - df_tools_webform
 - df_tools_workflow
