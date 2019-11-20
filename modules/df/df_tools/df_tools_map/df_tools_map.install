@@ -4,6 +4,7 @@
  * Implements hook_install().
  */
 function df_tools_map_install() {
-  $entities = ['block_content' => ['map']];
-  df_tools_translation_enable_translation($entities);
+  if (function_exists('df_tools_translation_enable_translation')) {
+    df_tools_translation_enable_translation(['block_content' => ['map']]);
+  }
 }

@@ -10,7 +10,7 @@
  */
 function df_tools_slideshow_install() {
   // Enable translation for our block bundle.
-  $entities = ['block_content' => ['slideshow']];
-  df_tools_translation_enable_translation($entities);
-
+  if (function_exists('df_tools_translation_enable_translation')) {
+    df_tools_translation_enable_translation(['block_content' => ['slideshow']]);
+  }
 }

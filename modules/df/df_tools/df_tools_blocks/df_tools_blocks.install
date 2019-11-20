@@ -12,8 +12,9 @@ use Drupal\shortcut\Entity\Shortcut;
  */
 function df_tools_blocks_install() {
   // Enable translation for our block bundles.
-  $entities = ['block_content' => ['hero', 'media']];
-  df_tools_translation_enable_translation($entities);
+  if (function_exists('df_tools_translation_enable_translation')) {
+    df_tools_translation_enable_translation(['block_content' => ['hero', 'media']]);
+  }
 
   if (!\Drupal::service('config.installer')->isSyncing()) {
     // Add Hero to the default shortcut set.
