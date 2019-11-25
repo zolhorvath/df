@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c25f735b8290aaab2479ba8e5ffed62",
+    "content-hash": "d4cebb8134755484c5849b4a0088db40",
     "packages": [
         {
             "name": "acquia/acf",
@@ -2931,6 +2931,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "#3075535: Errors on inserting duplicate entries into acquia_contenthub_publisher_export_tracking table| https://www.drupal.org/node/3075535": "https://www.drupal.org/files/issues/2019-11-08/acquia_contenthub-3075535-publisher_tracking_table_merge-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

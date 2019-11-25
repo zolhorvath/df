@@ -11,6 +11,7 @@ projects[acquia_contenthub][download][type] = git
 projects[acquia_contenthub][download][url] = https://git.drupalcode.org/project/acquia_contenthub.git
 projects[acquia_contenthub][download][branch] = 2.x
 projects[acquia_contenthub][download][revision] = a43dbcfeabb581d7b1af7d365ddc681540dbfb87
+projects[acquia_contenthub][patch][] = https://www.drupal.org/files/issues/2019-11-08/acquia_contenthub-3075535-publisher_tracking_table_merge-3.patch
 projects[acsf][type] = module
 projects[acsf][version] = 2.62
 projects[address][type] = module

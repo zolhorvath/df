@@ -111,6 +111,9 @@
                 "#2996114: Argument 2 passed... | http://drupal.org/node/2996114":
                 "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch"
             },
+            "drupal/acquia_contenthub": {
+                "#3075535: Errors on inserting duplicate entries into acquia_contenthub_publisher_export_tracking table| https://www.drupal.org/node/3075535": "https://www.drupal.org/files/issues/2019-11-08/acquia_contenthub-3075535-publisher_tracking_table_merge-3.patch"
+            },
             "drupal/block_class": {
                 "#2998114: Integration with Drupal core's new Layout Builder| https://www.drupal.org/node2998114": "https://www.drupal.org/files/issues/2019-06-28/block_class-support-layout-builder-2998114-45.patch"
             },
