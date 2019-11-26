@@ -229,7 +229,7 @@
         "drupal/linkit": "^4.3",
         "drupal/mailsystem": "4.1.0",
         "drupal/mautic": "1.1.0",
-        "drupal/media_acquiadam": "1.36.0",
+        "drupal/media_acquiadam": "1.37.0",
         "drupal/media_entity_video": "2.0.0-alpha1",
         "drupal/menu_item_extras": "2.x-dev",
         "drupal/message": "1.0.0-rc2",

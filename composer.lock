@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8919ad5286919d4bdc765dc6b8f9eea",
+    "content-hash": "47138c7efc725f3cbece25a92bea46e2",
     "packages": [
         {
             "name": "acquia/acf",
@@ -9519,17 +9519,17 @@
         },
         {
             "name": "drupal/media_acquiadam",
-            "version": "1.36.0",
+            "version": "1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_acquiadam.git",
-                "reference": "8.x-1.36"
+                "reference": "8.x-1.37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.36.zip",
-                "reference": "8.x-1.36",
-                "shasum": "4335b72056bbad07814e2d5bfbbbcf5960bd4a10"
+                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.37.zip",
+                "reference": "8.x-1.37",
+                "shasum": "ad20b0711b52f0cfaa79bce1b0ee5c04bd467d54"
             },
             "require": {
                 "cweagans/php-webdam-client": "dev-master",
@@ -9544,7 +9544,6 @@
                 "drupal/fallback_formatter": "*",
                 "drupal/media": "*",
                 "drupal/media_acquiadam_example": "*",
-                "drupal/views-views": "*",
                 "phpunit/phpunit": "^6.5"
             },
             "type": "drupal-module",
@@ -9554,7 +9553,7 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.36",
+                    "version": "8.x-1.37",
                     "datestamp": "1574457487",
                     "security-coverage": {
                         "status": "covered",
