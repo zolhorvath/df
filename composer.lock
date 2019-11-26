@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26d32b8ec29e8db6ef45884c80719dd7",
+    "content-hash": "f8919ad5286919d4bdc765dc6b8f9eea",
     "packages": [
         {
             "name": "acquia/acf",
@@ -12830,17 +12830,17 @@
         },
         {
             "name": "drupal/view_modes_display",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/view_modes_display.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/view_modes_display-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "7f5bdfd35231a6b510dc2f2c1dea5ac0594a73be"
+                "url": "https://ftp.drupal.org/files/projects/view_modes_display-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "f35b1e1cdabc2ce3f40427eb022a27741c4fd762"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -12851,15 +12851,12 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
+                    "version": "8.x-2.1",
                     "datestamp": "1574436184",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "PHP notice: only variables should be passed by reference. | https://www.drupal.org/node/3084016": "https://www.drupal.org/files/issues/2019-09-26/fix_php_notice-3084016-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -13113,20 +13110,20 @@
         },
         {
             "name": "drupal/workbench_email",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/workbench_email.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/workbench_email-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "383658e0fde056186fc0196752a46dba84cd8523"
+                "url": "https://ftp.drupal.org/files/projects/workbench_email-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "d9ecbfa8b869005eaac4ff00434f5c72ed65111a"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.7"
             },
             "require-dev": {
                 "drupal/workbench_moderation": "*"
@@ -13137,7 +13134,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
+                    "version": "8.x-1.3",
                     "datestamp": "1573850284",
                     "security-coverage": {
                         "status": "covered",
