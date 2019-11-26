@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4cebb8134755484c5849b4a0088db40",
+    "content-hash": "26d32b8ec29e8db6ef45884c80719dd7",
     "packages": [
         {
             "name": "acquia/acf",
@@ -722,16 +722,16 @@
         },
         {
             "name": "cohesion/dx8",
-            "version": "5.7.1",
+            "version": "5.7.3",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-module.git",
-                "reference": "18a8e0ff89cfb3a378863b30954d060c0787e6c5"
+                "reference": "07da7dc594720b19ced5161e3fa064349a8c6f58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/18a8e0ff89cfb3a378863b30954d060c0787e6c5.zip",
-                "reference": "18a8e0ff89cfb3a378863b30954d060c0787e6c5",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/07da7dc594720b19ced5161e3fa064349a8c6f58.zip",
+                "reference": "07da7dc594720b19ced5161e3fa064349a8c6f58",
                 "shasum": ""
             },
             "require": {
@@ -769,31 +769,31 @@
             "description": "DX8 module",
             "homepage": "https://bitbucket.org/cohesion_dev/dx8-module",
             "support": {
-                "source": "https://bitbucket.org/cohesion_dev/dx8-module/src/18a8e0ff89cfb3a378863b30954d060c0787e6c5/?at=5.7.1"
+                "source": "https://bitbucket.org/cohesion_dev/dx8-module/src/07da7dc594720b19ced5161e3fa064349a8c6f58/?at=5.7.3"
             },
-            "time": "2019-11-12T14:46:49+00:00"
+            "time": "2019-11-19T14:30:08+00:00"
         },
         {
             "name": "cohesion/dx8-theme",
-            "version": "5.7.1",
+            "version": "5.7.3",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-theme.git",
-                "reference": "f2213b1ce2a4a725102f66c31e4bbb22e6b5a830"
+                "reference": "9e698f791804276f2576a0d6380d7cf47aafced6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/cohesion_dev/dx8-theme/get/f2213b1ce2a4a725102f66c31e4bbb22e6b5a830.zip",
-                "reference": "f2213b1ce2a4a725102f66c31e4bbb22e6b5a830",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-theme/get/9e698f791804276f2576a0d6380d7cf47aafced6.zip",
+                "reference": "9e698f791804276f2576a0d6380d7cf47aafced6",
                 "shasum": ""
             },
             "type": "drupal-theme",
             "description": "DX8 base theme",
             "homepage": "https://bitbucket.org/cohesion_dev/dx8-theme",
             "support": {
-                "source": "https://bitbucket.org/cohesion_dev/dx8-theme/src/f2213b1ce2a4a725102f66c31e4bbb22e6b5a830/?at=5.7.1"
+                "source": "https://bitbucket.org/cohesion_dev/dx8-theme/src/9e698f791804276f2576a0d6380d7cf47aafced6/?at=5.7.3"
             },
-            "time": "2019-11-12T14:46:55+00:00"
+            "time": "2019-11-19T14:30:27+00:00"
         },
         {
             "name": "commerceguys/addressing",
