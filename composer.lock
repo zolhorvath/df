@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47138c7efc725f3cbece25a92bea46e2",
+    "content-hash": "4eddb58e28673ce9a0e6241dd8373b57",
     "packages": [
         {
             "name": "acquia/acf",
@@ -151,27 +151,27 @@
         },
         {
             "name": "acquia/lightning",
-            "version": "4.0.4",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "3102e9146b67e878947ef674755bceaa762dbe47"
+                "reference": "fc28d44505be2c0b5bfe337b319bab268a72eecf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/3102e9146b67e878947ef674755bceaa762dbe47",
-                "reference": "3102e9146b67e878947ef674755bceaa762dbe47",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/fc28d44505be2c0b5bfe337b319bab268a72eecf",
+                "reference": "fc28d44505be2c0b5bfe337b319bab268a72eecf",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/claro": "^1.0",
-                "drupal/lightning_api": "^4.1",
-                "drupal/lightning_core": "^4.5",
-                "drupal/lightning_layout": "^2.1",
-                "drupal/lightning_media": "^3.11",
-                "drupal/lightning_workflow": "^3.7",
+                "drupal/lightning_api": "^4.3",
+                "drupal/lightning_core": "^4.7",
+                "drupal/lightning_layout": "^2.2",
+                "drupal/lightning_media": "^3.13",
+                "drupal/lightning_workflow": "^3.12",
                 "ext-dom": "*",
                 "oomphinc/composer-installers-extender": "^1.1"
             },
@@ -181,7 +181,9 @@
                 "drupal/media_entity_generic": "1.x-dev",
                 "drupal/schema_metatag": "^1.3",
                 "drush/drush": "^9.7",
-                "webflo/drupal-core-require-dev": "*"
+                "vijaycs85/drupal-quality-checker": "^1.2",
+                "webflo/drupal-core-require-dev": "*",
+                "weitzman/drupal-test-traits": "^1.3"
             },
             "bin": [
                 "lightning-subprofile"
@@ -227,7 +229,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2019-07-26T15:28:28+00:00"
+            "time": "2019-11-14T18:06:52+00:00"
         },
         {
             "name": "asm89/stack-cors",
