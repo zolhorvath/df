@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9a1d1ef2e1afa69bde62bed48071aad",
+    "content-hash": "883ae22c27c06959d4241b01bde5c9da",
     "packages": [
         {
             "name": "acquia/acf",
@@ -5327,6 +5327,7 @@
                     "#3074435: Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435": "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch",
                     "#2642122: Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122": "https://www.drupal.org/files/issues/2019-08-29/2642122-107.patch",
                     "#2996114: Argument 2 passed... | http://drupal.org/node/2996114": "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch",
+                    "#2241865: Do not create a new file entity to overwrite an existing entity": "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",

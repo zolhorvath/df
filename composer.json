@@ -107,7 +107,9 @@
                 "#2642122: Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122":
                 "https://www.drupal.org/files/issues/2019-08-29/2642122-107.patch",
                 "#2996114: Argument 2 passed... | http://drupal.org/node/2996114":
-                "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch"
+                "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch",
+                "#2241865: Do not create a new file entity to overwrite an existing entity":
+                "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch"
             },
             "drupal/acquia_contenthub": {
                 "#3075535: Errors on inserting duplicate entries into acquia_contenthub_publisher_export_tracking table| https://www.drupal.org/node/3075535": "https://www.drupal.org/files/issues/2019-11-08/acquia_contenthub-3075535-publisher_tracking_table_merge-3.patch"
