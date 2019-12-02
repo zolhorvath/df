@@ -11,7 +11,6 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/core-fatal_error
 projects[drupal][patch][] = https://www.drupal.org/files/issues/core-post-site-install-hook.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch
-projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch
