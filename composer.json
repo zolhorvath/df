@@ -142,6 +142,9 @@
                 "Quick edit compatibility | https://www.drupal.org/node/2733605": "https://www.drupal.org/files/issues/entity-browser-quickedit-2733605.patch",
                 "Combined patch | https://www.drupal.org/node/2825555 and https://www.drupal.org/node/2877751": "https://www.drupal.org/files/issues/2018-12-27/2877751-39_2825555-20_combined.patch"
             },
+            "drupal/gdpr": {
+                "Add icon to custom toolbar item | http://drupal.org/node/2972047": "https://www.drupal.org/files/issues/2019-12-03/add-icon-to-custom-toolbar-item-2972047-12.patch"
+            },
             "drupal/message_notify": {
                 "MessageNotifierBase calling assert()... | https://www.drupal.org/node/2966213": "https://www.drupal.org/files/issues/2018-04-25/message_notify-8.x-1.x-MessageNotifierBase-send-assert-0.patch"
             },
