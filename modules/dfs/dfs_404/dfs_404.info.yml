@@ -1,0 +1,8 @@
+name: 'DFS 404'
+type: module
+description: 'Demo Framework Scenario for 404 & 403 pages.'
+core: 8.x
+package: 'Demo Framework Scenarios'
+dependencies:
+  - df_tools_content
+  - pathauto
