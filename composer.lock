@@ -4445,12 +4445,12 @@
                     "homepage": "https://www.drupal.org/user/172527"
                 },
                 {
-                    "name": "ilchovuchkov",
-                    "homepage": "https://www.drupal.org/user/3568458"
-                },
-                {
                     "name": "vijaycs85",
                     "homepage": "https://www.drupal.org/user/93488"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
                 }
             ],
             "description": "Provides a configuration data and structure inspector tool",
@@ -5313,14 +5313,14 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/allow-2681947-20_0.patch",
+                    "Allow exposed-form-in-block for block displays | https://www.drupal.org/node/2681947": "https://www.drupal.org/files/issues/2019-09-30/2681947-33.patch",
                     "Field attachments not bubbled when rendering a saved field in Quick Edit | https://www.drupal.org/node/2851332": "https://www.drupal.org/files/issues/quickedit-render-field-attachments.patch",
                     "Fatal error when setMainContent() method is not called (block module not installed) | https://www.drupal.org/node/2819219": "https://www.drupal.org/files/issues/core-fatal_error_main_content_block-2819219-2.patch",
                     "Invoke hook after a site install is complete | https://www.drupal.org/node/2924549": "https://www.drupal.org/files/issues/core-post-site-install-hook.patch",
-                    "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2018-08-15/2873287-48.patch",
+                    "Dispatch events for changing content moderation states | https://www.drupal.org/node/2873287": "https://www.drupal.org/files/issues/2018-11-06/2873287-50.patch",
                     "Fatal error: Call to a member function url() on null | https://www.drupal.org/project/drupal/issues/2565247": "https://www.drupal.org/files/issues/member-function-url-fix-2565247-4.patch",
                     "#3015152: Support third party settings for components within a section | https://www.drupal.org/node/2998114": "https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch",
-                    "#3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2019-06-10/3045171-nestedform-36.patch",
+                    "#3045171: Form blocks rendered inside layout builder break save | http://drupal.org/node/3045171": "https://www.drupal.org/files/issues/2019-11-15/drupal-layout_builder_unable_to_save-3045171-103.patch",
                     "#2977587: Improve block listing in Layout Builder... | https://drupal.org/node/2977587": "https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch",
                     "#3069446: Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446": "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
                     "#3014277: ResourceTypes should know about their fields | http://drupal.org/node/3014277": "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
