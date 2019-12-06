@@ -6,3 +6,4 @@ package: 'Demo Framework Scenarios'
 dependencies:
   - df_tools_content
   - pathauto
+  - lightning_page

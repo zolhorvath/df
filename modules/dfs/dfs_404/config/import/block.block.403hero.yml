@@ -1,0 +1,31 @@
+uuid: 257088fd-3926-4fc0-be37-3751059729c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:eb18131c-7837-4602-9a17-a0201b7ff005'
+  module:
+    - block_content
+    - system
+  theme:
+    - one
+id: 403hero
+theme: one
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:eb18131c-7837-4602-9a17-a0201b7ff005'
+settings:
+  id: 'block_content:eb18131c-7837-4602-9a17-a0201b7ff005'
+  label: '403 Hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: /df/403
+    negate: false
+    context_mapping: {  }
