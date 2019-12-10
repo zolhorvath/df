@@ -1,0 +1,16 @@
+uuid: d6600cf5-9dd8-4b9d-861e-8fdc6dcf14c9
+langcode: en
+status: true
+dependencies: {  }
+id: df_default_pages
+label: 'DF default pages'
+description: ''
+use_admin_theme: false
+path: '/df/{parameter}'
+access_logic: and
+access_conditions: {  }
+parameters:
+  parameter:
+    machine_name: parameter
+    type: string
+    label: 'Path parameter'

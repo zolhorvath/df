@@ -1,0 +1,57 @@
+uuid: a7982b2b-2797-47de-9bff-14daf47051d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.df_default_pages
+  content:
+    - 'block_content:hero:be924954-b902-421f-b04b-6194e01c7898'
+  module:
+    - block_content
+    - system
+    - user
+id: df_default_pages-block_display-0
+label: 'DF 403 Page'
+variant: block_display
+variant_settings:
+  blocks:
+    185fa639-44f4-4325-9ed3-0eb2669e2288:
+      id: 'block_content:be924954-b902-421f-b04b-6194e01c7898'
+      label: 'DF 403 Hero'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: default
+      region: top
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 185fa639-44f4-4325-9ed3-0eb2669e2288
+      context_mapping: {  }
+    69bb20ae-ce23-44b5-a13b-70c13e57f41e:
+      id: user_login_block
+      label: 'User login'
+      provider: user
+      label_display: '0'
+      region: bottom
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 69bb20ae-ce23-44b5-a13b-70c13e57f41e
+      context_mapping: {  }
+  id: block_display
+  uuid: 4ba34c04-74b6-457b-95bd-f56b60c7a8dd
+  label: null
+  weight: 0
+  page_title: 'Please log in'
+page: df_default_pages
+weight: 0
+selection_criteria:
+  -
+    id: request_path
+    pages: /df/403
+    negate: false
+    context_mapping: {  }
+selection_logic: and
+static_context: {  }

@@ -27,8 +27,8 @@ install:
   - df_tools_menu
   - df_tools_user_demo
   - df_tools_workflow
+  - dfs_default
   - google_analytics
-  - lightning_page
   - pathauto
   - responsive_preview
   - scenarios_contenthub
@@ -46,6 +46,7 @@ exclude:
   - lightning_contact_form
   - lightning_hero_block
   - lightning_map_block
+  - lightning_page
   - lightning_preview
   - lightning_roles
   - bartik

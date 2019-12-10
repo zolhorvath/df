@@ -1,0 +1,8 @@
+name: 'DFS Default pages'
+type: module
+description: 'Demo Framework Scenario for default pages like 403 and 404.'
+core: 8.x
+package: 'Demo Framework Scenarios'
+dependencies:
+  - df_tools_content
+  - page_manager:page_manager

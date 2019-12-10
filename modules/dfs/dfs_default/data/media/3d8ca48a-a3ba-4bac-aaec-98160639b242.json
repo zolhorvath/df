@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/media\/image\/2?_format=hal_json"
+            "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -14,35 +14,35 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png",
+                "href": "",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_tags": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json",
+                "href": "http:\/\/default\/taxonomy\/term\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/image": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/images\/SzG0ncGBOeo.jpg"
+                "href": ""
             }
         ]
     },
     "mid": [
         {
-            "value": 2
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "195e090e-80e5-492f-ae18-18716c8b4755"
+            "value": "3d8ca48a-a3ba-4bac-aaec-98160639b242"
         }
     ],
     "vid": [
         {
-            "value": 2
+            "value": 1
         }
     ],
     "langcode": [
@@ -58,7 +58,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-12-04T02:21:50+00:00",
+            "value": "2019-12-10T20:40:07+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "a71d17c0-82f9-42a7-a7f2-aa78938c6405"
+                        "value": "c94afdc6-36af-469a-8d59-d98cbae30af0"
                     }
                 ],
                 "lang": "en"
@@ -91,7 +91,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
+                        "href": ""
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -99,17 +99,21 @@
                 },
                 "uuid": [
                     {
-                        "value": "05f80163-d6b1-4d56-af91-33d276218b1a"
+                        "value": "8fc15471-a473-49ef-9602-93931d700751"
                     }
                 ],
-                "lang": "en"
+                "lang": "en",
+                "alt": null,
+                "title": null,
+                "width": "1080",
+                "height": "720"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_tags": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+                        "href": "http:\/\/default\/taxonomy\/term\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/media_tags"
@@ -117,7 +121,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "61d839f4-1011-497a-9407-1bb15891436f"
+                        "value": "878863f6-4315-48f0-90db-6e2b7ed30bcd"
                     }
                 ],
                 "lang": "en"
@@ -127,7 +131,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/images\/SzG0ncGBOeo.jpg"
+                        "href": ""
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -135,28 +139,32 @@
                 },
                 "uuid": [
                     {
-                        "value": "231148c4-8774-4565-b153-82309aaf9afc"
+                        "value": "8fc15471-a473-49ef-9602-93931d700751"
                     }
-                ]
+                ],
+                "alt": "Map",
+                "title": null,
+                "width": "1080",
+                "height": "720"
             }
         ]
     },
     "name": [
         {
-            "value": "Key",
+            "value": "Map",
             "lang": "en"
         }
     ],
     "created": [
         {
-            "value": "2019-12-04T02:21:50+00:00",
+            "value": "2019-12-04T02:11:58+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-12-04T02:21:50+00:00",
+            "value": "2019-12-04T02:11:58+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -176,15 +184,15 @@
     "metatag": [
         {
             "value": {
-                "title": "| Demo Framework",
+                "title": "| Drush Site-Install",
                 "canonical_url": "http:\/\/default\/admin\/structure\/scenarios"
             }
         }
     ],
     "path": [
         {
-            "alias": "\/media\/image\/2",
-            "pid": 2,
+            "alias": "\/media\/image\/1",
+            "pid": 3,
             "langcode": "en",
             "lang": "en"
         }
@@ -196,7 +204,7 @@
     ],
     "field_unsplash_image_id": [
         {
-            "value": "SzG0ncGBOeo"
+            "value": "RkBTPqPEGDo"
         }
     ]
 }

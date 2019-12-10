@@ -8,12 +8,12 @@
 /**
  * Implements hook_scenarios_info().
  */
-function dfs_404_scenarios_info() {
+function dfs_default_scenarios_info() {
   return [
-    'dfs_404' => [
+    'dfs_default' => [
       'type' => 'module',
-      'label' => t('DFS 404'),
-      'description' => t('Demo Framework Scenario for default 403 and 404 pages.'),
+      'label' => t('DFS Default'),
+      'description' => t('Demo Framework Scenario for default pages like 403 and 404.'),
       'imports' => ['/data'],
     ],
   ];

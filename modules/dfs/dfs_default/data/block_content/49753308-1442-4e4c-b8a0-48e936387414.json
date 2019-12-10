@@ -6,11 +6,6 @@
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero"
         },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/revision_user": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
             {
                 "href": "http:\/\/default\/media\/image\/1?_format=hal_json",
@@ -50,43 +45,6 @@
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/revision_user": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "a71d17c0-82f9-42a7-a7f2-aa78938c6405"
-                    }
-                ]
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "3d8ca48a-a3ba-4bac-aaec-98160639b242"
-                    }
-                ],
-                "lang": "en"
-            }
-        ]
-    },
     "status": [
         {
             "value": true,
@@ -126,7 +84,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| Demo Framework",
+                "title": "| Drush Site-Install",
                 "canonical_url": "http:\/\/default\/admin\/structure\/scenarios"
             }
         }
@@ -176,6 +134,26 @@
             "lang": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d8ca48a-a3ba-4bac-aaec-98160639b242"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
     "field_second_line": [
         {
             "value": "Maybe one of the pages below?",

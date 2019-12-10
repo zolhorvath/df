@@ -1,0 +1,60 @@
+uuid: 5d806625-5903-4afa-a9d0-ccd207ee55f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.df_default_pages
+    - views.view.content_recent
+  content:
+    - 'block_content:hero:49753308-1442-4e4c-b8a0-48e936387414'
+  module:
+    - block_content
+    - system
+    - views
+id: df_default_pages-block_display-1
+label: 'DF 404 Page'
+variant: block_display
+variant_settings:
+  blocks:
+    30935871-6bb7-45fe-8b19-e5d902e95f96:
+      id: 'block_content:49753308-1442-4e4c-b8a0-48e936387414'
+      label: 'DF 404 Hero'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: default
+      region: top
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 30935871-6bb7-45fe-8b19-e5d902e95f96
+      context_mapping: {  }
+    34f6c268-bb8b-4d3f-b2e4-c0eb23942bda:
+      id: 'views_block:content_recent-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: '20'
+      region: bottom
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 34f6c268-bb8b-4d3f-b2e4-c0eb23942bda
+      context_mapping: {  }
+  id: block_display
+  uuid: da0b35ce-6d0e-4b6c-ab03-f03181ca937e
+  label: null
+  weight: 0
+  page_title: 'Page not found'
+page: df_default_pages
+weight: 0
+selection_criteria:
+  -
+    id: request_path
+    pages: /df/404
+    negate: false
+    context_mapping: {  }
+selection_logic: and
+static_context: {  }
