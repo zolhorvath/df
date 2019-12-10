@@ -17,6 +17,7 @@ install:
   - config_update
   - df_core
   - df_tools_blocks
+  - df_tools_content
   - df_tools_color
   - df_tools_editor
   - df_tools_frontend
@@ -28,6 +29,7 @@ install:
   - df_tools_user_demo
   - df_tools_workflow
   - google_analytics
+  - lightning_page
   - pathauto
   - responsive_preview
   - scenarios_contenthub
@@ -45,7 +47,6 @@ exclude:
   - lightning_contact_form
   - lightning_hero_block
   - lightning_map_block
-  - lightning_page
   - lightning_preview
   - lightning_roles
   - bartik

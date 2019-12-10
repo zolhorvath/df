@@ -8,7 +8,7 @@
 /**
  * Implements hook_scenarios_info().
  */
-function dfs_one_scenarios_info() {
+function dfs_404_scenarios_info() {
   return [
     'dfs_404' => [
       'type' => 'module',
