@@ -9,6 +9,9 @@ dependencies:
     - block_content
     - dfs_default
     - system
+    - user
+_core:
+  default_config_hash: 3f6d-av3XVUMr784k7Rr0f1GBClV0Bh_Fw3_ZkWwwE0
 id: df_default_pages-block_display-2
 label: 'DF Setup'
 variant: block_display
@@ -16,9 +19,9 @@ variant_settings:
   blocks:
     c833a5ff-b51c-4d5f-a44e-5f519c04fbf0:
       id: scenarios_uiblock
-      label: 'Scenarios UI Block'
+      label: 'Please allow a few minutes for the scenarios to load after submitting.'
       provider: dfs_default
-      label_display: '0'
+      label_display: visible
       region: bottom
       weight: 0
       css_classes: ''
@@ -38,6 +41,17 @@ variant_settings:
       css_classes: ''
       css_id: ''
       uuid: 30046c22-702b-40b6-ba77-dc76bfddaf87
+      context_mapping: {  }
+    0dc6dd53-d5cb-4339-be10-a01b33a23275:
+      id: user_login_block
+      label: 'Please login to setup your demo'
+      provider: user
+      label_display: visible
+      region: bottom
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 0dc6dd53-d5cb-4339-be10-a01b33a23275
       context_mapping: {  }
   id: block_display
   uuid: e379c222-989c-477b-87d9-30a238da0506
