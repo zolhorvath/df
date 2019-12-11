@@ -1,14 +1,19 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/1?_format=hal_json"
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero"
         },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
             {
-                "href": "http:\/\/default\/media\/image\/1?_format=hal_json",
+                "href": "http:\/\/default\/media\/image\/3?_format=hal_json",
                 "lang": "en"
             }
         ]
@@ -20,12 +25,12 @@
     ],
     "uuid": [
         {
-            "value": "49753308-1442-4e4c-b8a0-48e936387414"
+            "value": "5842f992-661d-4c08-819c-ad04b6d2d102"
         }
     ],
     "revision_id": [
         {
-            "value": 7
+            "value": 9
         }
     ],
     "langcode": [
@@ -41,10 +46,47 @@
     ],
     "revision_created": [
         {
-            "value": "2019-12-06T00:22:58+00:00",
+            "value": "2019-12-11T18:00:24+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "99819278-0b73-4d99-b9e1-7c8993513ab0"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/image\/3?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2e373f31-2f2b-48b3-a459-6dad97c1291b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
     "status": [
         {
             "value": true,
@@ -53,13 +95,13 @@
     ],
     "info": [
         {
-            "value": "DF 404 Hero",
+            "value": "DF Setup Hero",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2019-12-06T00:22:58+00:00",
+            "value": "2019-12-11T18:00:24+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -84,14 +126,14 @@
     "metatag": [
         {
             "value": {
-                "title": "| Demo Framework",
+                "title": "Demo Framework | Demo Framework",
                 "canonical_url": "http:\/\/default\/df\/setup"
             }
         }
     ],
     "field_callout_background_color": [
         {
-            "value": "#ffffff",
+            "value": "#FFFFFF",
             "lang": "en"
         }
     ],
@@ -102,7 +144,7 @@
     ],
     "field_callout_color": [
         {
-            "value": "#000000",
+            "value": "inherit",
             "lang": "en"
         }
     ],
@@ -113,7 +155,7 @@
     ],
     "field_first_line": [
         {
-            "value": "Sorry - we can't find the page you are looking for.",
+            "value": "Demo Setup",
             "lang": "en"
         }
     ],
@@ -124,7 +166,7 @@
     ],
     "field_gradient_color": [
         {
-            "value": "#ffffff",
+            "value": "#FFFFFF",
             "lang": "en"
         }
     ],
@@ -134,29 +176,9 @@
             "lang": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "3d8ca48a-a3ba-4bac-aaec-98160639b242"
-                    }
-                ],
-                "lang": "en"
-            }
-        ]
-    },
     "field_second_line": [
         {
-            "value": "Maybe one of the pages below?",
+            "value": "Choose your scenario",
             "lang": "en"
         }
     ],
@@ -167,7 +189,7 @@
     ],
     "field_text_color": [
         {
-            "value": "#000000",
+            "value": "inherit",
             "lang": "en"
         }
     ]

@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
+            "href": "http:\/\/default\/media\/image\/3?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -20,7 +20,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_tags": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/1?_format=hal_json",
+                "href": "http:\/\/default\/taxonomy\/term\/3?_format=hal_json",
                 "lang": "en"
             }
         ],
@@ -32,17 +32,17 @@
     },
     "mid": [
         {
-            "value": 1
+            "value": 3
         }
     ],
     "uuid": [
         {
-            "value": "3d8ca48a-a3ba-4bac-aaec-98160639b242"
+            "value": "2e373f31-2f2b-48b3-a459-6dad97c1291b"
         }
     ],
     "vid": [
         {
-            "value": 1
+            "value": 3
         }
     ],
     "langcode": [
@@ -58,7 +58,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-12-11T16:39:19+00:00",
+            "value": "2019-12-11T17:59:27+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -99,21 +99,21 @@
                 },
                 "uuid": [
                     {
-                        "value": "8fc15471-a473-49ef-9602-93931d700751"
+                        "value": "606b5037-256f-415f-996a-e9c90846468c"
                     }
                 ],
                 "lang": "en",
-                "alt": "Map",
+                "alt": "Lanterns",
                 "title": null,
-                "width": "1080",
-                "height": "720"
+                "width": "180",
+                "height": "180"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_tags": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/1?_format=hal_json"
+                        "href": "http:\/\/default\/taxonomy\/term\/3?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/media_tags"
@@ -121,7 +121,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "878863f6-4315-48f0-90db-6e2b7ed30bcd"
+                        "value": "65f7fb78-e906-423a-9688-f6176d235a1e"
                     }
                 ],
                 "lang": "en"
@@ -139,11 +139,11 @@
                 },
                 "uuid": [
                     {
-                        "value": "8fc15471-a473-49ef-9602-93931d700751"
+                        "value": "606b5037-256f-415f-996a-e9c90846468c"
                     }
                 ],
-                "alt": "Map",
-                "title": null,
+                "alt": "Lanterns",
+                "title": "",
                 "width": "1080",
                 "height": "720"
             }
@@ -151,20 +151,20 @@
     },
     "name": [
         {
-            "value": "Map",
+            "value": "Lanterns",
             "lang": "en"
         }
     ],
     "created": [
         {
-            "value": "2019-12-04T02:11:58+00:00",
+            "value": "2019-12-11T17:59:27+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2019-12-04T02:11:58+00:00",
+            "value": "2019-12-11T18:01:38+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -184,15 +184,15 @@
     "metatag": [
         {
             "value": {
-                "title": "| Demo Framework",
+                "title": "DF default pages | Demo Framework",
                 "canonical_url": "http:\/\/default\/df\/setup"
             }
         }
     ],
     "path": [
         {
-            "alias": "\/media\/image\/1",
-            "pid": 1,
+            "alias": "\/media\/image\/3",
+            "pid": 3,
             "langcode": "en",
             "lang": "en"
         }
@@ -200,11 +200,6 @@
     "field_media_in_library": [
         {
             "value": true
-        }
-    ],
-    "field_unsplash_image_id": [
-        {
-            "value": "RkBTPqPEGDo"
         }
     ]
 }

@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.df_default_pages
+  content:
+    - 'block_content:hero:5842f992-661d-4c08-819c-ad04b6d2d102'
+  module:
+    - block_content
+    - dfs_default
+    - system
+id: df_default_pages-block_display-2
+label: 'DF Setup'
+variant: block_display
+variant_settings:
+  blocks:
+    c833a5ff-b51c-4d5f-a44e-5f519c04fbf0:
+      id: scenarios_uiblock
+      label: 'Scenarios UI Block'
+      provider: dfs_default
+      label_display: '0'
+      region: bottom
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: c833a5ff-b51c-4d5f-a44e-5f519c04fbf0
+      context_mapping: {  }
+    30046c22-702b-40b6-ba77-dc76bfddaf87:
+      id: 'block_content:5842f992-661d-4c08-819c-ad04b6d2d102'
+      label: 'DF Setup Hero'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: default
+      region: top
+      weight: 0
+      css_classes: ''
+      css_id: ''
+      uuid: 30046c22-702b-40b6-ba77-dc76bfddaf87
+      context_mapping: {  }
+  id: block_display
+  uuid: e379c222-989c-477b-87d9-30a238da0506
+  label: null
+  weight: 0
+  page_title: 'Demo Framework Setup'
+page: df_default_pages
+weight: 0
+selection_criteria:
+  -
+    id: request_path
+    pages: /df/setup
+    negate: false
+    context_mapping: {  }
+selection_logic: and
+static_context: {  }
