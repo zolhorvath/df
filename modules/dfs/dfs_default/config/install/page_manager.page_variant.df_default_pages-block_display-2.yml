@@ -19,9 +19,9 @@ variant_settings:
   blocks:
     c833a5ff-b51c-4d5f-a44e-5f519c04fbf0:
       id: scenarios_uiblock
-      label: 'Scenarios UI Block'
+      label: 'Please wait a few minutes for the selected scenario to load.'
       provider: dfs_default
-      label_display: '0'
+      label_display: '1'
       region: bottom
       weight: -10
       css_classes: ''
