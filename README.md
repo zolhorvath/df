@@ -23,7 +23,7 @@ Now use the ``site-install`` command to install Drupal with the DF installation 
 
 You may now login to your site.
 
-  ``drush uli -l http://mysite.dd``
+  ``drush uli``
 
 
 ## Deploying Demo Framework using version control
