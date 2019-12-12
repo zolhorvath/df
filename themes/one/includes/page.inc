@@ -5,10 +5,17 @@
  */
 
 function one_preprocess_page(&$variables) {
-  // Add the class container if layout builder is not used.
-  if (!\Drupal::routeMatch()->getParameter('node') &&
-    !\Drupal::routeMatch()->getRouteObject()->hasOption('_layout_builder')) {
-      $variables['container_class'] = 'container';
+  // Make Layout Builder pages full width
+  if (\Drupal::routeMatch()->getParameter('node') ||
+    \Drupal::routeMatch()->getRouteObject()->hasOption('_layout_builder')) {
+    $variables['container_class'] = 'container-fluid full';
+  }
+  // Make Page Mangers pages full width
+  elseif (\Drupal::routeMatch()->getRouteObject()->hasDefault('page_manager_page')) {
+    $variables['container_class'] = 'container-fluid full';
+  }
+  else {
+    $variables['container_class'] = 'container';
   }
 
   // Set container for Meta Header
