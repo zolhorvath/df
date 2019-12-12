@@ -33,6 +33,7 @@ libraries/*
 private
 robots-replace.txt
 .ddev
+*sqlite*
 
 # Behat
 .behat.yml
