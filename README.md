@@ -9,41 +9,22 @@ Demo Framework is powered by [Lightning](https://www.drupal.org/project/lightnin
 
 The preferred way to install Demo Framework is using our [Composer-based project template][template]. It's easy!
 
-If you don't want to use Composer, you can install Demo Framework the traditional way by downloading a tarball from our [drupal.org project page](https://www.drupal.org/project/df).
+Once you have a docroot built, you can use DDev, Acquia Developer Studio or any other similar project to get started.
 
-Before installing Demo Framework via drupal.org or after building it from scratch using Drush Make, you must download a small number of PHP libraries that cannot currently be packaged automatically due to limitations with both drupal.org and Drush.
-
-  ``composer require "commerceguys/intl: ~0.7" "commerceguys/addressing: ~1.0" "commerceguys/zone: ~1.0" "embed/embed: ~2.2"``
-
-A build script is also provided that wraps the composer install command and moves everything into a target directory as well.
-
-  ``./build.sh ~/Destination``
-
-You can add in commands for composer here. We suggest using the --no-dev option unless you want to run behat and have DF manage your version of Drush used on the site.
-
-  ``./build.sh ~/Destination --no-dev``
-
-At this point, you will need to prepare your settings.php file just as you would for a normal Drupal install.
-
-We recommend Acquia Dev Desktop running ``PHP 5_6`` and using the ``Import local Drupal site...`` function.
+  ``ddev config --project-name df --project-type drupal8 && ddev start``
+  
+  or
+  
+  ``ads new webpsite``
 
 Now use the ``site-install`` command to install Drupal with the DF installation profile.
 
-  ``drush si df``
-
-Enable a DF Scenario using the ``enable-scenario`` command.
-
-  ``drush es dfs_tec``
-
-If everything worked correctly, you should see console output that some migrations ran.
+  ``drush si``
 
 You may now login to your site.
 
-  ``drush uli -l http://mysite.dd``
+  ``drush uli``
 
-You may also reset the content of a DF Scenario if it is enabled.
-
-  ``drush rs dfs_tec``
 
 ## Deploying Demo Framework using version control
 
@@ -59,12 +40,6 @@ libraries/*
 ```
 
 If you do not do so, you will see an error in the installation referring to missing modules.
-
-## Acquia Cloud
-
-If you are using Demo Framework's dev branch and wish to deploy to Acquia Cloud, you must change the drush version ot 8.1.15 -- we will update/remove this requirement whenever possible.
-
-  ``composer require "drush/drush 8.1.15"``
 
 ## Using the [Radix](https://www.drupal.org/project/radix) Sub Theme
 
