@@ -37,7 +37,7 @@ variant_settings:
       label_display: 0
       region: primary
       weight: '0'
-      css_classes: ''
+      css_classes: 'col-4 mx-auto'
       css_id: ''
       uuid: 52f023a8-e25c-469d-b376-884b80426b36
       context_mapping: {  }
