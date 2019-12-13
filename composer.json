@@ -100,8 +100,6 @@
                 "https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch",
                 "Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446":
                 "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
-                "ResourceTypes should know about their fields | http://drupal.org/node/3014277":
-                "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
                 "Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435":
                 "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch",
                 "Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122":
@@ -109,8 +107,11 @@
                 "Argument 2 passed... | http://drupal.org/node/2996114":
                 "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch",
                 "Do not create a new file entity to overwrite an existing entity | http://drupal.org/node/2241865":
-                "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
-                "Don't show the revision log message on creation of content, media, etc. | https://www.drupal.org/project/drupal/issues/3096906": "https://www.drupal.org/files/issues/2019-12-07/3096906-10.patch"
+                "https://www.drupal.org/files/issues/2019-12-05/2241865-8.8.patch",
+                "Don't show the revision log message on creation of content, media, etc. | https://www.drupal.org/project/drupal/issues/3096906":
+                "https://www.drupal.org/files/issues/2019-12-07/3096906-10.patch",
+                "Copy media library styles from Seven to Claro | https://www.drupal.org/node/3096566":
+                "https://www.drupal.org/files/issues/2019-12-05/claro-copy_media_library_styles-3096566-19.patch"
             },
             "drupal/acquia_contenthub": {
                 "Errors on inserting duplicate entries into acquia_contenthub_publisher_export_tracking table| http://drupal.org/node/3075535":
@@ -205,16 +206,17 @@
         }
     },
     "require": {
-        "acquia/lightning": "4.0.4",
+        "acquia/lightning": "4.1.0",
         "acquia/content-hub-php": "2.x-dev",
         "bower-asset/imagesloaded": "4.1.1",
         "bower-asset/jquery-ui-slider-pips": "1.11.3",
         "bower-asset/leaflet": "1.0.3",
         "bower-asset/masonry": "4.2.0",
-        "cohesion/dx8": "5.7.5",
-        "cohesion/dx8-theme": "5.7.5",
+        "cohesion/dx8": "5.7.7",
+        "cohesion/dx8-theme": "5.7.7",
         "npm-asset/fontawesome-iconpicker": "1.3.0",
         "drupal/acquia_contenthub": "2.x-dev",
+        "drupal/acquia_lift": "~4",
         "drupal/acsf": "2.62.0",
         "drupal/address": "1.7.0",
         "drupal/addtoany": "1.12.0",

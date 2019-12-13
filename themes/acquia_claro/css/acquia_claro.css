@@ -39,13 +39,11 @@
 }
 
 /* Media library */
-.media-library-item__attributes {
-  padding: 20px 25px;
-  width: calc(100% - 50px);
-}
-
 .media-library-item__preview {
-  padding-bottom: 58px;
+  padding-bottom: 50px;
+}
+.media-library-item__name {
+  padding: 10px;
 }
 
 /* Lightning Scheduler */

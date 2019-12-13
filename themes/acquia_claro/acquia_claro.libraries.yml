@@ -2,8 +2,8 @@ global:
   version: VERSION
   css:
     theme:
-      css/acquia_claro.css: {}
-      css/acquia_claro_colors.css: {}
+      css/acquia_claro.css: { weight: 1 }
+      css/acquia_claro_colors.css: { weight: 1 }
       '//fonts.googleapis.com/css?family=Material+Icons': { external: true }
   js:
     js/acquia_claro.js: {}
