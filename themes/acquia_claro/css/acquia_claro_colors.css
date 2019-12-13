@@ -268,11 +268,16 @@ tr:hover, tr:focus {
   border-color: #168ec4;
 }
 
-.media-library-item__attributes {
+.media-library-item__attributes,
+.media-library-item__click-to-select-trigger {
   background: #168ec4;
-  color: white;
 }
 
+.media-library-item__click-to-select-trigger img {
+  background: white;
+}
+
+.media-library-item__attributes,
 .media-library-item__attributes a,
 .media-library-widget .media-library-item__name a,
 .media-library-view--widget .media-library-item__name a,
