@@ -108,7 +108,10 @@
                 "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch",
                 "Do not create a new file entity to overwrite an existing entity | http://drupal.org/node/2241865":
                 "https://www.drupal.org/files/issues/2019-12-05/2241865-8.8.patch",
-                "Don't show the revision log message on creation of content, media, etc. | https://www.drupal.org/project/drupal/issues/3096906": "https://www.drupal.org/files/issues/2019-12-07/3096906-10.patch"
+                "Don't show the revision log message on creation of content, media, etc. | https://www.drupal.org/project/drupal/issues/3096906":
+                "https://www.drupal.org/files/issues/2019-12-07/3096906-10.patch",
+                "Copy media library styles from Seven to Claro | https://www.drupal.org/node/3096566":
+                "https://www.drupal.org/files/issues/2019-12-05/claro-copy_media_library_styles-3096566-19.patch"
             },
             "drupal/acquia_contenthub": {
                 "Errors on inserting duplicate entries into acquia_contenthub_publisher_export_tracking table| http://drupal.org/node/3075535":
