@@ -11890,7 +11890,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scenarios.git",
-                "reference": "20bafed529e317f1ba0ca47e66ef5b5d0ab6bc75"
+                "reference": "aedddd145fbb6d50e067fb8bf1da36c9d41475d1"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -11908,7 +11908,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.x-dev",
-                    "datestamp": "1573681984",
+                    "datestamp": "1576192080",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -11945,7 +11945,7 @@
                 "issues": "https://www.drupal.org/project/issues/scenarios",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-12-11T19:52:27+00:00"
+            "time": "2019-12-12T23:47:44+00:00"
         },
         {
             "name": "drupal/schemata",
