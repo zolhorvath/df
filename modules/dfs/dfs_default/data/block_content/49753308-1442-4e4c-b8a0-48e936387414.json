@@ -1,14 +1,14 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/1?_format=hal_json"
+            "href": "https:\/\/df.ddev.site\/block\/1?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/hero"
         },
         "http:\/\/drupal.org\/rest\/relation\/block_content\/hero\/field_hero_background": [
             {
-                "href": "http:\/\/default\/media\/image\/1?_format=hal_json",
+                "href": "https:\/\/df.ddev.site\/media\/image\/1?_format=hal_json",
                 "lang": "en"
             }
         ]
@@ -85,7 +85,7 @@
         {
             "value": {
                 "title": "| Demo Framework",
-                "canonical_url": "http:\/\/default\/df\/setup"
+                "canonical_url": "https:\/\/df.ddev.site\/df\/setup"
             }
         }
     ],
@@ -122,6 +122,11 @@
             "value": "h2"
         }
     ],
+    "field_gradient": [
+        {
+            "value": false
+        }
+    ],
     "field_gradient_color": [
         {
             "value": "#ffffff",
@@ -139,7 +144,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/media\/image\/1?_format=hal_json"
+                        "href": "https:\/\/df.ddev.site\/media\/image\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/media\/image"

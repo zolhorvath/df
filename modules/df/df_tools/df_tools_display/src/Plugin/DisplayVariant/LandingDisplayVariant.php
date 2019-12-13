@@ -41,10 +41,19 @@ class LandingDisplayVariant extends PageBlockDisplayVariant {
     }
 
     // Append the prefix before buildRegions.
-    $build['landing-top']['#prefix'] = '<div class="landing-display-' . $class . '">';
+    $build['landing-top']['#prefix'] = '<div class="landing-display-' . $class . ' container-fluid">';
 
     // Build the regions via PageBlockDisplayVariant::buildRegions.
     $build = parent::buildRegions($build);
+
+    // Add the row class to each region.
+    foreach ($this->getRegionAssignments() as $region => $blocks) {
+      if (!$blocks) {
+        continue;
+      }
+      $region_name = Html::getClass("block-region-$region");
+      $build[$region]['#prefix'] = '<div class="' . $region_name . ' row">';
+    }
 
     // Add suffix for wrapper after buildRegions.
     $build['landing-bottom']['#suffix'] = '</div>';

@@ -1,0 +1,5 @@
+default:
+  version: VERSION
+  css:
+    component:
+      css/scenarios_list_default.css: {}
