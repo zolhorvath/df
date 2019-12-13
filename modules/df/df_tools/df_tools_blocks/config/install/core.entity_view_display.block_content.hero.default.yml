@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.hero.field_callout_width
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_first_line_size
+    - field.field.block_content.hero.field_gradient
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
     - field.field.block_content.hero.field_hero_background
@@ -32,6 +33,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     label: hidden
+    region: content
+  field_gradient:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_hero_background:
     type: entity_reference_entity_view
@@ -85,6 +96,7 @@ hidden:
   field_callout_color: true
   field_callout_width: true
   field_first_line_size: true
+  field_gradient: true
   field_gradient_color: true
   field_hero_alignment: true
   field_second_line_size: true

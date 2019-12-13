@@ -147,22 +147,24 @@ function df_tools_blocks_block_content_view_alter(array &$build, EntityInterface
       $wrapper['#children']['field_first_line']['#attributes']['style'] = 'color: ' . $text_color;
       $wrapper['#children']['field_second_line']['#attributes']['style'] = 'color: ' . $text_color;
     }
-    $gradient_color = $entity->get('field_gradient_color')->getString();
-    if (preg_match($color_regex, $gradient_color)) {
-      switch ($alignment) {
-        case 'left':
-          $direction = 'to right';
-          break;
+    if ($entity->get('field_gradient')->getString()) {
+      $gradient_color = $entity->get('field_gradient_color')->getString();
+      if (preg_match($color_regex, $gradient_color)) {
+        switch ($alignment) {
+          case 'left':
+            $direction = 'to right';
+            break;
 
-        case 'right':
-          $direction = 'to left';
-          break;
+          case 'right':
+            $direction = 'to left';
+            break;
 
-        default:
-          $direction = 'to bottom';
-          break;
+          default:
+            $direction = 'to bottom';
+            break;
+        }
+        $build['field_hero_background']['#attributes']['style'] = "background-image: linear-gradient($direction, $gradient_color, transparent)";
       }
-      $build['field_hero_background']['#attributes']['style'] = "background-image: linear-gradient($direction, $gradient_color, transparent)";
     }
     $callout_color = $entity->get('field_callout_color')->getString();
     if (preg_match($color_regex, $callout_color)) {
@@ -287,6 +289,7 @@ function _layout_builder_block_form_alter(array $element, FormStateInterface $fo
       'field_text_color',
       'field_first_line_size',
       'field_second_line_size',
+      'field_gradient',
       'field_gradient_color',
       'field_callout_color',
       'field_callout_width',

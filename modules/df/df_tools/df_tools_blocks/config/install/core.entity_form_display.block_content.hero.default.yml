@@ -10,6 +10,7 @@ dependencies:
     - field.field.block_content.hero.field_callout_width
     - field.field.block_content.hero.field_first_line
     - field.field.block_content.hero.field_first_line_size
+    - field.field.block_content.hero.field_gradient
     - field.field.block_content.hero.field_gradient_color
     - field.field.block_content.hero.field_hero_alignment
     - field.field.block_content.hero.field_hero_background
@@ -69,6 +70,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_gradient:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_gradient_color:
     weight: 9
     settings:
@@ -78,7 +86,7 @@ content:
     type: string_textfield
     region: content
   field_hero_alignment:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -121,7 +129,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_text_color:
-    weight: 8
+    weight: 7
     settings:
       size: 60
       placeholder: ''
