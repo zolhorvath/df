@@ -107,7 +107,7 @@
                 "Argument 2 passed... | http://drupal.org/node/2996114":
                 "https://www.drupal.org/files/issues/2019-07-07/jsonapi_routes_config_catching.patch",
                 "Do not create a new file entity to overwrite an existing entity | http://drupal.org/node/2241865":
-                "https://www.drupal.org/files/issues/2019-03-15/2241865-63.patch",
+                "https://www.drupal.org/files/issues/2019-12-05/2241865-8.8.patch",
                 "Don't show the revision log message on creation of content, media, etc. | https://www.drupal.org/project/drupal/issues/3096906": "https://www.drupal.org/files/issues/2019-12-07/3096906-10.patch"
             },
             "drupal/acquia_contenthub": {
