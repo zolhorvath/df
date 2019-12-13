@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Set up the DF default page Scenario.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function dfs_default_install() {
+
+  // Set front page to scenarios loading page and the 403/404 pages
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('name', 'Demo Framework')
+    ->set('page.front', '/df/setup')
+    ->set('page.403', '/df/403')
+    ->set('page.404', '/df/404')
+    ->save(TRUE);
+}
