@@ -100,8 +100,6 @@
                 "https://www.drupal.org/files/issues/2019-07-19/2977587-140-DO-NOT-TEST.patch",
                 "Layout builder's \"Add Block\" sidebar menu UX improvements | http://drupal.org/node/3069446":
                 "https://www.drupal.org/files/issues/2019-07-22/core-layout_builder-inline-block-ux-7.patch",
-                "ResourceTypes should know about their fields | http://drupal.org/node/3014277":
-                "https://www.drupal.org/files/issues/2019-07-22/3014277-50.patch",
                 "Blocks added by Layout Builder should have 'Display title' unchecked | http://drupal.org/node/3074435":
                 "https://www.drupal.org/files/issues/2019-08-12/layout_builder_add_block-label-0.patch",
                 "Overriding already overridden libraries-override requires knowledge of previous libraries-overrides | http://drupal.org/node/2642122":
