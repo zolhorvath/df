@@ -205,7 +205,7 @@
         }
     },
     "require": {
-        "acquia/lightning": "4.0.4",
+        "acquia/lightning": "4.1.0",
         "acquia/content-hub-php": "2.x-dev",
         "bower-asset/imagesloaded": "4.1.1",
         "bower-asset/jquery-ui-slider-pips": "1.11.3",
