@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bf64bdb4de56d942e9c6872ccc19a72",
+    "content-hash": "0d51cae529923c8b63218bfa5d67c1d8",
     "packages": [
         {
             "name": "acquia/acf",
@@ -7437,17 +7437,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "8a1743d10d05b10c219466749a3e5df907bccc40"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "820b565d267ea5c9aa05ff433fde53a43706fd18"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -7469,7 +7469,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.3",
+                    "version": "8.x-2.4",
                     "datestamp": "1575971284",
                     "security-coverage": {
                         "status": "covered",
@@ -7539,17 +7539,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "7d4263317c331b8236cdf02b3ef0680af3974673"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "98a30341df6b4c8f8776c1f3db46798a1ee859fa"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -7561,7 +7561,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.6",
+                    "version": "8.x-1.7",
                     "datestamp": "1575405480",
                     "security-coverage": {
                         "status": "covered",
@@ -8539,17 +8539,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.22.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.22"
+                "reference": "8.x-1.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.22.zip",
-                "reference": "8.x-1.22",
-                "shasum": "90e7d207fb52896f37c0b02a5f32a38fc992690d"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.23.zip",
+                "reference": "8.x-1.23",
+                "shasum": "909837d6b879bb129daaa9d6c555a32831405679"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -8561,7 +8561,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.22",
+                    "version": "8.x-1.23",
                     "datestamp": "1574825586",
                     "security-coverage": {
                         "status": "covered",
@@ -11538,11 +11538,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/replicate_ui.git",
-                "reference": "52c83fc13d9228e30ab7994250822a79989b6ebb"
+                "reference": "fe5738259faf0fab3e5fd6f4e39deb6194d16ead"
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/replicate": "*"
+                "drupal/core": "^8 || ^9",
+                "drupal/replicate": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -11560,7 +11560,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -11584,12 +11584,12 @@
                     "homepage": "https://www.drupal.org/user/565800"
                 }
             ],
-            "description": "Replicate UI provides integration for Replicate with front-end site builder modules like VBO.",
+            "description": "Provides a UI for Replicate (local tasks, entity operations with a form)",
             "homepage": "https://www.drupal.org/project/replicate_ui",
             "support": {
                 "source": "https://git.drupalcode.org/project/replicate_ui"
             },
-            "time": "2019-10-04T18:41:52+00:00"
+            "time": "2019-12-16T17:11:40+00:00"
         },
         {
             "name": "drupal/responsive_preview",
