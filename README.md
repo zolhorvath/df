@@ -24,6 +24,12 @@ Now use the ``site-install`` command to install Drupal with the DF installation 
 You may now login to your site.
 
   ``drush uli``
+  
+By default, you will be asked to select a demo scenario to install.
+
+![Install Demo](https://user-images.githubusercontent.com/1102654/70927089-f9ff6600-1ff3-11ea-8d42-d37eb745056b.png)
+
+Installation may take a few minutes depending on your environment. ☕️
 
 
 ## Deploying Demo Framework using version control
