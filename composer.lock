@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40aba62c67b3bf0e387ab44e505e7573",
+    "content-hash": "7bf64bdb4de56d942e9c6872ccc19a72",
     "packages": [
         {
             "name": "acquia/acf",
@@ -418,7 +418,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -479,7 +479,7 @@
             "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Leaflet/Leaflet.git",
+                "url": "git@github.com:Leaflet/Leaflet.git",
                 "reference": "ed36a04aefd12cb92c78074fe63a8e460db1d464"
             },
             "dist": {
@@ -3067,17 +3067,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "2.62.0",
+            "version": "2.63.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-2.62"
+                "reference": "8.x-2.63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-2.62.zip",
-                "reference": "8.x-2.62",
-                "shasum": "df05b8770225c49507bfe91f962dad00f222379a"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-2.63.zip",
+                "reference": "8.x-2.63",
+                "shasum": "809bdf522af53068d34bdd44af9fd1b2ed68206d"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -3100,7 +3100,7 @@
                     "dev-8.x-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.62",
+                    "version": "8.x-2.63",
                     "datestamp": "1576067285",
                     "security-coverage": {
                         "status": "covered",
@@ -3168,7 +3168,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "2.62.0",
+            "version": "2.63.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -3179,7 +3179,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.62",
+                    "version": "8.x-2.63",
                     "datestamp": "1576067285",
                     "security-coverage": {
                         "status": "covered",
@@ -3241,7 +3241,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "2.62.0",
+            "version": "2.63.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -3253,7 +3253,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.62",
+                    "version": "8.x-2.63",
                     "datestamp": "1576067285",
                     "security-coverage": {
                         "status": "covered",
@@ -3315,7 +3315,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "2.62.0",
+            "version": "2.63.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -3326,7 +3326,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.62",
+                    "version": "8.x-2.63",
                     "datestamp": "1576067285",
                     "security-coverage": {
                         "status": "covered",
@@ -3739,17 +3739,17 @@
         },
         {
             "name": "drupal/asset_injector",
-            "version": "2.4.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/asset_injector.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "c377e8aa7ff9a0fcb180586173540450f22c93bc"
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "e861e46740c264b9313e7a52878e789f11af5ec2"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3760,8 +3760,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1575585185",
+                    "version": "8.x-2.6",
+                    "datestamp": "1575588784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7966,12 +7966,20 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "geek.merlin aka axel.rutz",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
                     "name": "joachim",
                     "homepage": "https://www.drupal.org/user/107701"
                 },
                 {
                     "name": "kaythay",
                     "homepage": "https://www.drupal.org/user/2182186"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
                 },
                 {
                     "name": "rszrama",
@@ -11472,10 +11480,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/replicate.git",
-                "reference": "dc877a3347d00666596dafaea3965803e8bacd9e"
+                "reference": "77a694ab24797b15caa84b39dab2ac4fb467ca69"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -11483,8 +11491,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+4-dev",
-                    "datestamp": "1538751780",
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1576514285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11496,6 +11504,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
@@ -11518,7 +11530,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/replicate"
             },
-            "time": "2018-10-05T15:02:51+00:00"
+            "time": "2019-12-16T16:42:23+00:00"
         },
         {
             "name": "drupal/replicate_ui",
@@ -12557,17 +12569,17 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "8.x-3.4"
+                "reference": "8.x-3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.4.zip",
-                "reference": "8.x-3.4",
-                "shasum": "7cb1944ca2659e426e20680ef8e7cd48747545c8"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.5.zip",
+                "reference": "8.x-3.5",
+                "shasum": "8e93d4dcf483b1558b800570af1d3b231b8fa6f3"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -12579,8 +12591,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.4",
-                    "datestamp": "1570445886",
+                    "version": "8.x-3.5",
+                    "datestamp": "1576429387",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -19902,16 +19914,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.3",
+            "version": "1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea"
+                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
-                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/579bb7356d91f9456ccd505f24ca8b667966a0a7",
+                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7",
                 "shasum": ""
             },
             "require": {
@@ -19946,7 +19958,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-08-09T12:45:53+00:00"
+            "time": "2019-12-15T19:12:40+00:00"
         },
         {
             "name": "phar-io/manifest",
