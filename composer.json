@@ -125,12 +125,6 @@
                 "Conflict with other modules implementing same action plugin | http://drupal.org/node/2834490":
                 "https://www.drupal.org/files/issues/contact-storage-action-namepsace-2834490-6.patch"
             },
-            "drupal/custom_body_class": {
-                "Remove node-type-class feature from module | http://drupal.org/node/3026806":
-                "https://www.drupal.org/files/issues/2019-02-19/remove-dependency-from-node-type-class-3026806.patch",
-                "Get error when revert a node. | http://drupal.org/node/2997700":
-                "https://www.drupal.org/files/issues/2019-01-05/get-error-when-revert-node-2997700-3.patch"
-            },
             "drupal/content_browser": {
                 "Combined Content Browser patch | http://drupal.org/node/2851687":
                 "https://www.drupal.org/files/issues/content-browser-2851687-2903529-combined-3.patch",
@@ -235,7 +229,6 @@
         "drupal/config_sync": "1.x-dev",
         "drupal/config_tools": "1.x-dev",
         "drupal/content_browser": "1.0.0-alpha4",
-        "drupal/custom_body_class": "1.2.0",
         "drupal/default_content": "1.0.0-alpha7",
         "drupal/default_content_deploy": "1.0.0-alpha6",
         "drupal/dx8_addtoany": "^1.1",
