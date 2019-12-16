@@ -3,3 +3,8 @@ default:
   css:
     component:
       css/scenarios_list_default.css: {}
+  js:
+    js/scenarios-list-default.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
