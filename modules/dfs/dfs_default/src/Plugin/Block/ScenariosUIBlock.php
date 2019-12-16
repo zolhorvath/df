@@ -32,6 +32,7 @@ class ScenariosUIBlock extends BlockBase {
   public function build() {
     $form = \Drupal::formBuilder()->getForm('Drupal\scenarios_ui\Form\ScenariosUIForm');
     $form['#attached']['library'][] = 'dfs_default/default';
+    $form['submit']['#value'] = $this->t('Install Demo');
     return $form;
   }
 
