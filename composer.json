@@ -169,7 +169,9 @@
             },
             "drupal/page_manager": {
               "Custom attributes in blocks | http://drupal.org/node/2710169":
-              "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch"
+              "https://www.drupal.org/files/issues/2710169-block-attributes-24.patch",
+              "Incorrect page_title title in browser toolbar | http://drupal.org/node/2752227":
+              "https://www.drupal.org/files/issues/2018-10-26/page_manager-incorrect-page_title-2752227-37-8.x.4.x.patch"
             },
             "drupal/radix": {
               "Integrate with OffCanvas (Layout Builder) | http://drupal.org/node/3053579":
