@@ -11868,3 +11868,7 @@ body.path-location #views-exposed-form-location-page-1 #edit-actions {
   padding: 0.5rem 0;
 }
 
+.block--type-hero {
+  width: 100%;
+}
+
