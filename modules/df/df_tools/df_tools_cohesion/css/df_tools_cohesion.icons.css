@@ -1,0 +1,16 @@
+/**
+ * @file
+ * df_tools_cohesion toolbar icon styling.
+ */
+
+
+.adminimal-admin-toolbar .toolbar-icon.toolbar-icon-cohesion-settings:before {
+  background-image: url(../icons/acacac/cohesion.svg);
+}
+
+.adminimal-admin-toolbar .menu-item--expanded:hover .toolbar-icon.toolbar-icon-cohesion-settings:before,
+.adminimal-admin-toolbar .toolbar-icon.toolbar-icon-cohesion-settings:hover:before,
+.adminimal-admin-toolbar .toolbar-icon.toolbar-icon-cohesion-settings:active:before,
+.adminimal-admin-toolbar .toolbar-icon.toolbar-icon-cohesion-settings.is-active:before {
+  background-image: url(../icons/ffffff/cohesion.svg);
+}
