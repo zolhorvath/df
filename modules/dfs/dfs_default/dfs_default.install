@@ -4,6 +4,7 @@
  * @file
  * Set up the DF default page Scenario.
  */
+use Drupal\user\Entity\Role;
 
 /**
  * Implements hook_install().
@@ -19,5 +20,8 @@ function dfs_default_install() {
     ->set('page.404', '/df/404')
     ->save(TRUE);
 
-   user_role_grant_permissions(0, ['view scenarios block']);
+   // Sets up the anon role to view the Scenarios block
+   $role = Role::load('anonymous');
+   $role->grantPermission('view scenarios block');
+   $role->save();
 }
