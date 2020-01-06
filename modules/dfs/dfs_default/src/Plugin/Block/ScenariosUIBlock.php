@@ -20,7 +20,7 @@ class ScenariosUIBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function blockAccess($account) {
-    if ($account->hasPermission('administer scenarios')) {
+    if ($account->hasPermission('view scenarios block')) {
       return AccessResult::allowed();
     }
     return AccessResult::forbidden();
@@ -33,6 +33,10 @@ class ScenariosUIBlock extends BlockBase {
     $form = \Drupal::formBuilder()->getForm('Drupal\scenarios_ui\Form\ScenariosUIForm');
     $form['#attached']['library'][] = 'dfs_default/default';
     $form['submit']['#value'] = $this->t('Install Demo');
+    $account = \Drupal::currentUser();
+    if (!$account->hasPermission('administer scenarios')) {
+      unset($form['submit']);
+    }
     return $form;
   }
 

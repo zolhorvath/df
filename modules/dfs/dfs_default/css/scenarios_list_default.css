@@ -1,3 +1,11 @@
-.path-frontpage .block-scenarios-uiblock {
-  margin-top: -400px;
+.path-frontpage .landing-display-default {
+  padding-top: 3em;
+  background-image: url("../images/paul-earle-wVjd0eWNqI8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 800px;
+}
+
+.path-frontpage .page__content {
+  padding-bottom: 0px;
 }

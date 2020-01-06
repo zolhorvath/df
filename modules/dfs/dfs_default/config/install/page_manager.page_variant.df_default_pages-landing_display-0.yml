@@ -17,20 +17,6 @@ label: 'DF Setup'
 variant: landing_display
 variant_settings:
   blocks:
-    de8e1bc9-7e76-4208-bc6d-5b7b2f70334d:
-      id: 'block_content:5842f992-661d-4c08-819c-ad04b6d2d102'
-      label: 'DF Setup Hero'
-      provider: block_content
-      label_display: 0
-      status: true
-      info: ''
-      view_mode: default
-      region: top
-      weight: '0'
-      css_classes: ''
-      css_id: ''
-      uuid: de8e1bc9-7e76-4208-bc6d-5b7b2f70334d
-      context_mapping: {  }
     646f1f34-36da-40ae-b7a4-0baf32386989:
       id: scenarios_uiblock
       label: 'Scenarios UI Block'
