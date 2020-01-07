@@ -26,6 +26,15 @@ All other DF  modules are in this repo, they are:
 
 ### Installation
 
+Local install:
+- `drush make build-df--local.make [docroot-dir]`
+  This copies the checked out df project instead of downloading it from remote.
+- `cd [docroot-dir]`
+- `drush si df --site-name="Demo Framework" [install_configure_form.df_scenario="none|dfs_med|dfs_wem"]`
+  Proposed df_scenario value is `none`, this allows to enable the scenario in a
+  separate step:
+- `drush df-es dfs_med|dfs_wem`
+
 Enable a Demo Framework Scenario using the ``df-es`` command provided by DF Admin.
 
   ``drush df-es dfs_dev``
@@ -74,4 +83,3 @@ As a standard across all of our internally built demos, there are some persistan
 - Editor: EricaWebb  (can edit content but cannot publish)
 - Reviewer: PaulSimon  (can edit content and publish it)
 - Marketer: EmilyPhillips  (can edit layouts and use the Panels IPE)
-

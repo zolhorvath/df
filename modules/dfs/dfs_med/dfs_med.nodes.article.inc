@@ -24,7 +24,7 @@ class DFSMEDEditorialNodes extends DemoFrameworkBaseNodesUUID {
     $this->source = new MigrateSourceCSV($import_path . 'dfs_med.nodes.article.csv', $this->csvcolumns(), array('header_rows' => 1));
     $this->destination = new MigrateDestinationNode('article');
     // Override body:format
-    $this->addFieldMapping('body:format')->defaultValue('full_html');
+    $this->addFieldMapping('body:format')->defaultValue('filtered_html');
     // Created
     $this->addFieldMapping('created', 'created')->defaultValue(strtotime("now"));
     // Image

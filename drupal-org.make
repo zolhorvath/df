@@ -8,6 +8,12 @@ projects[lightning_features][subdir] = "contrib"
 projects[lightning_features][download][type] = "git"
 projects[lightning_features][download][branch] = "7.x-1.x"
 
+; Override a Lighting dependency - patching revision_scheduler
+projects[revision_scheduler][version] = "1.0-rc1"
+projects[revision_scheduler][type] = "module"
+projects[revision_scheduler][subdir] = "contrib"
+projects[revision_scheduler][patch][] = "https://www.drupal.org/files/issues/2134833-id-not-null.patch"
+
 ; Lightning Manifests
 projects[assemble][type] = "module"
 projects[assemble][subdir] = "contrib"
