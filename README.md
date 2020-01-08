@@ -26,23 +26,26 @@ All other DF  modules are in this repo, they are:
 
 ### Installation
 
-Local install:
+---
+
+For managing (enable|reset) the scenatio migrations you will need php 5.6.
+BTW it seems that `dfs_med` and `dfs_wem` scenatios are usable with php 7.2 as well.
+
+#### Local install
+
 - `drush make build-df--local.make [docroot-dir]`
   This copies the checked out df project instead of downloading it from remote.
 - `cd [docroot-dir]`
 - `drush si df --site-name="Demo Framework" [install_configure_form.df_scenario="none|dfs_med|dfs_wem"]`
   Proposed df_scenario value is `none`, this allows to enable the scenario in a
-  separate step:
-- `drush df-es dfs_med|dfs_wem`
+  separate step.
 
-Enable a Demo Framework Scenario using the ``df-es`` command provided by DF Admin.
+---
 
-  ``drush df-es dfs_dev``
-
-If everything worked correctly, you should see console output that some migrations ran.
-
-You may now login to your site.
-
+- Enable a Demo Framework Scenario using the ``df-es`` command provided by DF Admin.
+  ``drush df-es dfs_med[|dfs_wem|dfs_dev]``
+  If everything worked correctly, you should see console output that some migrations ran.
+- You may now login to your site.
   ``drush uli -l http://mysite.dd``
 
 You may also reset the content of a Demo Framework Scenario if it is enabled.
